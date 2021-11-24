@@ -8,7 +8,7 @@
 // ----------------------------------------------------
 
 C_TEXT:C284($NomFic; $tParam; $tRes; $tErr)
-_O_C_STRING:C293(2; $FL; $Guillemet)
+C_TEXT:C284($FL; $Guillemet)
 C_TIME:C306($RefDoc)
 
 // ----------------------------------------------------
@@ -25,7 +25,7 @@ If (<>ZPC)  //On est Bien sur PC
 	// on crée un fichier reg
 	$NomFic:=$NomDossierREG+<>ZSéparateur+"TempRegeditPDF.reg"
 	
-	If (Test path name:C476($NomFic)=Is a document:K24:1)  // si document existe, on vire c'est un vieux
+	If (Test path name:C476($NomFic)=Est un document:K24:1)  // si document existe, on vire c'est un vieux
 		DELETE DOCUMENT:C159($NomFic)
 	End if 
 	
