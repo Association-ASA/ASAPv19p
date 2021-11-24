@@ -18,7 +18,7 @@
 
 //$res:=$es.or($es2)
 
-// OPH_mng // aide à l'écriture des requetes orda
+OPH_mng  // aide à l'écriture des requetes orda
 
 // -------- 
 
