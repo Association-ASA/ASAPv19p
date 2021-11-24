@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 // ----------------------------------------------------
 // {$1} : duration
 // {$2} : process number

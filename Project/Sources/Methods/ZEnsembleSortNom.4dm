@@ -1,14 +1,14 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 27/06/18, 07:40:44
-  // ----------------------------------------------------
-  // Méthode : ZEnsembleSortNom
-  // Description
-  // Méthode qui permet de nommer l'ensemble 
-  //  afin d'en coserver la trace
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 27/06/18, 07:40:44
+// ----------------------------------------------------
+// Méthode : ZEnsembleSortNom
+// Description
+// Méthode qui permet de nommer l'ensemble 
+//  afin d'en coserver la trace
+// ----------------------------------------------------
 
 ZDemEns:=Request:C163("Quel nom donner à cette sélection?")
 ZOnContinue:=True:C214  //permet de continuer 
@@ -28,14 +28,14 @@ If (OK=1)
 	End while 
 	If (ZOnContinue)  //le nom est bien rempli
 		READ WRITE:C146([XData:1])
-		QUERY:C277([XData:1];[XData:1]XNom:2=ZDemEns;*)
-		QUERY:C277([XData:1]; & [XData:1]XType:3=ZTypEns)
+		QUERY:C277([XData:1]; [XData:1]XNom:2=ZDemEns; *)
+		QUERY:C277([XData:1];  & [XData:1]XType:3=ZTypEns)
 		If (Records in selection:C76([XData:1])>0)  //il existe déjà le nom
 			CONFIRM:C162("Ce nom existe déjà: voulez vous le remplacer?")
 			If (OK=1)  // on veut remplacer l'ancien ensemble par le nouveau
-				If (ZVerrouTester (->[XData:1]))
+				If (ZVerrouTester(->[XData:1]))
 					DELETE RECORD:C58([XData:1])
-					  //destruction des fiches de [XData]
+					//destruction des fiches de [XData]
 				End if 
 			Else 
 				ZOnContinue:=False:C215  //il veut conserver l'ancien ensemble

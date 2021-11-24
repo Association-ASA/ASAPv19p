@@ -1,17 +1,17 @@
-//%attributes = {"publishedWeb":true}
-  //YImagePressePapiers
-  //Récupérer de PoleContact, Mimosa, le 10/09/99
-  //$1=POINTEUR VERS L'IMAGE RECEVANT LE PRESSE PAPIERS
-  //RETOURNE OK=1 SI TOUT S'EST BIEN PASSÉ
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+//YImagePressePapiers
+//Récupérer de PoleContact, Mimosa, le 10/09/99
+//$1=POINTEUR VERS L'IMAGE RECEVANT LE PRESSE PAPIERS
+//RETOURNE OK=1 SI TOUT S'EST BIEN PASSÉ
 
 
 C_POINTER:C301($1)
 
-  // Modifié par : Patrick EMANUEL (09/05/12)
+// Modifié par : Patrick EMANUEL (09/05/12)
 If (Pasteboard data size:C400(Données image:K20:3)>0)  //Le presse-papiers contient bien une image
 	
 	If (Picture size:C356($1->)#0)  //Si l'image de destination n'est pas vide…
-		  //"Remplacer l'image présente par celle du presse-papiers ?"    
+		//"Remplacer l'image présente par celle du presse-papiers ?"    
 		CONFIRM:C162("Remplacer l'image présente par celle du presse-papiers ?")  //…on doit confirmer l'écrasement
 		
 	Else   //Destination vide

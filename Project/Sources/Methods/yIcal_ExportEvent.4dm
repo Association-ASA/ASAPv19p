@@ -1,34 +1,34 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : Patrick EMANUEL
-  // Date et heure : 24/05/12
-  // ----------------------------------------------------
-  // Méthode : Ical_ExportEvent
-  // Description
-  // http://abcdrfc.free.fr/rfc-vf/rfc2445.html
-  // Format date : 20120522T170000 = 22 mai 2012, 17H00,00
-  // Format date : 20120522 = 22 mai 2012
-  //
-  // Paramètres
-  // ----------------------------------------------------
-  //Les propriétés classiques d'un composant VEVENT sont :
-  //2 = DTSTART: Date de début de l'événement
-  //3 = DTEND: Date de fin de l'événement
-  //1 = SUMMARY: Titre de l'événement
-  //LOCATION: Lieu de l'événement
-  //        "" par défauf. 
-  //CATEGORIES: Catégorie de l'événement(ex: Conférence, Fête, ...)
-  //        "" par défauf. 
-  //STATUS: Statut de l'événement(TENTATIVE, CONFIRMED, CANCELLED).
-  //        CONFIRMED par défauf. 
-  //4 = DESCRIPTION: Description de l'événement
-  //TRANSP: Définit si la ressource affectée à l'évenement est rendu indisponible(OPAQUE, TRANSPARENT)
-  //        TRANSPARENT par défauf. 
-  //    CATEGORIES =  "ANNIVERSARY", "APPOINTMENT", "BUSINESS", "EDUCATION", "HOLIDAY", "MEETING", "MISCELLANEOUS", "NON-WORKING HOURS",
-  //  "NOT IN OFFICE", "PERSONAL", "PHONE CALL", "SICK DAY", "SPECIAL OCCASION", "TRAVEL", "VACATION"
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : Patrick EMANUEL
+// Date et heure : 24/05/12
+// ----------------------------------------------------
+// Méthode : Ical_ExportEvent
+// Description
+// http://abcdrfc.free.fr/rfc-vf/rfc2445.html
+// Format date : 20120522T170000 = 22 mai 2012, 17H00,00
+// Format date : 20120522 = 22 mai 2012
+//
+// Paramètres
+// ----------------------------------------------------
+//Les propriétés classiques d'un composant VEVENT sont :
+//2 = DTSTART: Date de début de l'événement
+//3 = DTEND: Date de fin de l'événement
+//1 = SUMMARY: Titre de l'événement
+//LOCATION: Lieu de l'événement
+//        "" par défauf. 
+//CATEGORIES: Catégorie de l'événement(ex: Conférence, Fête, ...)
+//        "" par défauf. 
+//STATUS: Statut de l'événement(TENTATIVE, CONFIRMED, CANCELLED).
+//        CONFIRMED par défauf. 
+//4 = DESCRIPTION: Description de l'événement
+//TRANSP: Définit si la ressource affectée à l'évenement est rendu indisponible(OPAQUE, TRANSPARENT)
+//        TRANSPARENT par défauf. 
+//    CATEGORIES =  "ANNIVERSARY", "APPOINTMENT", "BUSINESS", "EDUCATION", "HOLIDAY", "MEETING", "MISCELLANEOUS", "NON-WORKING HOURS",
+//  "NOT IN OFFICE", "PERSONAL", "PHONE CALL", "SICK DAY", "SPECIAL OCCASION", "TRAVEL", "VACATION"
 
-C_POINTER:C301($1;$Pt)
-C_TEXT:C284($ICS;$ICSDocument)
+C_POINTER:C301($1; $Pt)
+C_TEXT:C284($ICS; $ICSDocument)
 
 $Pt:=$1  // Tableau contenant les informations de création d'une fiche ICS
 $CR:=Char:C90(13)+Char:C90(10)
@@ -56,7 +56,7 @@ $ICS:=$ICS+"STATUS:CONFIRMED"+$CR  // Statut de la réunion
 $ICS:=$ICS+"END:VEVENT"+$CR
 $ICS:=$ICS+"END:VCALENDAR"
 
-  // Export de l'évènement
+// Export de l'évènement
 $ICSDocument:=Temporary folder:C486+$Pt->{2}+".ics"  // nom du fichier, mais peut être différent
 
 If (Test path name:C476($ICSDocument)=Est un document:K24:1)  // si document existe, on vire c'est un vieux
@@ -65,13 +65,13 @@ End if
 
 $Ref:=Create document:C266($ICSDocument)
 If (OK=1)
-	SEND PACKET:C103($Ref;$ICS)
+	SEND PACKET:C103($Ref; $ICS)
 End if 
 CLOSE DOCUMENT:C267($Ref)
 
 Repeat   // Temps d'attente pour être sur de la disponibilité du document
-	DELAY PROCESS:C323(Current process:C322;10)
+	DELAY PROCESS:C323(Current process:C322; 10)
 Until (Test path name:C476($ICSDocument)=Est un document:K24:1)
 
-  // Intégration de l'évènement dans le calendrier
-  // zDOC_OpenDocument($ICSDocument)
+// Intégration de l'évènement dans le calendrier
+// zDOC_OpenDocument($ICSDocument)

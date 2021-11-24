@@ -1,33 +1,33 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : Claude
-  // Date et heure : 13/06/13, 10:11:46
-  // ----------------------------------------------------
-  // Méthode : SuiviAsaDia2
-  // Description
-  //
-  //
-  // Paramètres
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : Claude
+// Date et heure : 13/06/13, 10:11:46
+// ----------------------------------------------------
+// Méthode : SuiviAsaDia2
+// Description
+//
+//
+// Paramètres
+// ----------------------------------------------------
 
-C_LONGINT:C283($Salé;$FT;$NbA;$NbL;$NbN;$NbT;$NbInscrit;$Pos1;$Pos2;$Pos3;$TT)
+C_LONGINT:C283($Salé; $FT; $NbA; $NbL; $NbN; $NbT; $NbInscrit; $Pos1; $Pos2; $Pos3; $TT)
 C_TEXT:C284($Ligne)
 $Chem:=Data file:C490
-$Pos1:=Position:C15(":";$Chem)
-$Reste:=Substring:C12($Chem;($pos1+1))
-$Pos2:=Position:C15(":";$Reste)
-$Reste:=Substring:C12($Reste;($pos2+1))
-$Pos3:=Position:C15(":";$Reste)
-$Base:=Substring:C12($Chem;1;($Pos1+$Pos2+$Pos3))
+$Pos1:=Position:C15(":"; $Chem)
+$Reste:=Substring:C12($Chem; ($pos1+1))
+$Pos2:=Position:C15(":"; $Reste)
+$Reste:=Substring:C12($Reste; ($pos2+1))
+$Pos3:=Position:C15(":"; $Reste)
+$Base:=Substring:C12($Chem; 1; ($Pos1+$Pos2+$Pos3))
 $FichierAsaDia2:=$Base+"Dropbox:Asadia:asadia2.txt"
 If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
-	$Doc:=Open document:C264($FichierAsaDia2;Mode lecture:K24:5)
+	$Doc:=Open document:C264($FichierAsaDia2; Mode lecture:K24:5)
 	If (OK=1)
-		RECEIVE PACKET:C104($Doc;$Ligne;<>ZCR)  // première ligne = ET
-		C_TEXT:C284(Col1;Col2;Col3;Col4;Col5;Col6;Col7;Col4;0)
+		RECEIVE PACKET:C104($Doc; $Ligne; <>ZCR)  // première ligne = ET
+		C_TEXT:C284(Col1; Col2; Col3; Col4; Col5; Col6; Col7; Col4; 0)
 		$NbInscrit:=1  // cgm non décompté par la suite
 		$NbEt:=0
-		  // Les présents
+		// Les présents
 		$NbA:=0  // Alfort
 		$NbB:=0  // Belges
 		$NbL:=0  // Lyon
@@ -35,7 +35,7 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 		$NbT:=0  // Toulouse
 		$NbDGAL:=0  // DGAL
 		
-		  // Les enregistrés
+		// Les enregistrés
 		$NbEtr:=0
 		$NbAr:=0
 		$NbBr:=0
@@ -48,23 +48,23 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 		$NbDifr:=1
 		$NbLimite:=0
 		$NbEnr:=0
-		ARRAY TEXT:C222(TbUtilAD2EnvoiMail;0)
+		ARRAY TEXT:C222(TbUtilAD2EnvoiMail; 0)
 		$NomLimite:=""
-		ARRAY TEXT:C222($TbNomDep;0)
-		ARRAY TEXT:C222($TbNomAb;0)
-		ARRAY LONGINT:C221($TbNbreDep;0)
-		ARRAY LONGINT:C221($TbNbreCon;0)
-		ARRAY LONGINT:C221($TbNbreAb;0)
-		RECEIVE PACKET:C104($Doc;Ligne;<>ZCR)  //  ligne suivante
+		ARRAY TEXT:C222($TbNomDep; 0)
+		ARRAY TEXT:C222($TbNomAb; 0)
+		ARRAY LONGINT:C221($TbNbreDep; 0)
+		ARRAY LONGINT:C221($TbNbreCon; 0)
+		ARRAY LONGINT:C221($TbNbreAb; 0)
+		RECEIVE PACKET:C104($Doc; Ligne; <>ZCR)  //  ligne suivante
 		Repeat 
 			If (Ligne#"")
-				  // 1 ligne = 5 colonnes : 1=mail asa, 2=Nb de licence
-				  // 3=type de licence,  4=nbre de licence(s) utilisée(s)
-				  // 5=Adresse de récup
-				Col1:=DiaImportExtraitColonne 
-				Col2:=DiaImportExtraitColonne 
-				Col3:=DiaImportExtraitColonne 
-				Col4:=DiaImportExtraitColonne 
+				// 1 ligne = 5 colonnes : 1=mail asa, 2=Nb de licence
+				// 3=type de licence,  4=nbre de licence(s) utilisée(s)
+				// 5=Adresse de récup
+				Col1:=DiaImportExtraitColonne
+				Col2:=DiaImportExtraitColonne
+				Col3:=DiaImportExtraitColonne
+				Col4:=DiaImportExtraitColonne
 				Col5:=Ligne
 				If (Col1#"@cegeheme@")  // inutile de compter les cgm
 					$NbInscrit:=$NbInscrit+1
@@ -104,17 +104,17 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 							If (Num:C11(Col4)>0)
 								$NbDGALr:=$NbDGALr+Num:C11(Col4)
 							End if 
-							$Pos:=Position:C15("@";Col1)
-							$Pos2:=Position:C15(".gouv.fr";Col1)
-							$Dep:=Substring:C12(Col1;($Pos+1);($Pos2-$Pos-1))
-							$L:=Find in array:C230($TbNomDep;$Dep)
+							$Pos:=Position:C15("@"; Col1)
+							$Pos2:=Position:C15(".gouv.fr"; Col1)
+							$Dep:=Substring:C12(Col1; ($Pos+1); ($Pos2-$Pos-1))
+							$L:=Find in array:C230($TbNomDep; $Dep)
 							If ($L>0)
 								$TbNbreCon{$L}:=$TbNbreCon{$L}+Num:C11(Col4)
 								$TbNbreDep{$L}:=$TbNbreDep{$L}+1
 							Else 
-								APPEND TO ARRAY:C911($TbNomDep;$Dep)
-								APPEND TO ARRAY:C911($TbNbreCon;Num:C11(Col4))
-								APPEND TO ARRAY:C911($TbNbreDep;1)
+								APPEND TO ARRAY:C911($TbNomDep; $Dep)
+								APPEND TO ARRAY:C911($TbNbreCon; Num:C11(Col4))
+								APPEND TO ARRAY:C911($TbNbreDep; 1)
 							End if 
 							
 							
@@ -135,33 +135,33 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 					
 					If (Num:C11(Col4)>0)
 						$NbEnr:=$NbEnr+1
-						  //TABLEAU TEXTE(TbUtilAD2M;0)
-						  //TABLEAU DATE(TbUtilAD2D;0)
-						  //CHERCHER([XDonnées];[XDonnées]XNom="AsaDia2";*)
-						  //CHERCHER([XDonnées]; & [XDonnées]XType="AsaDia2")
-						  //Si (Enregistrements trouves([XDonnées])=0)
-						  //CREER ENREGISTREMENT([XDonnées])
-						  //[XDonnées]XNom:="AsaDia2"
-						  //[XDonnées]XType:="AsaDia2"
-						  //ZVariableVersblob (->[XDonnées]XBlob;->TbUtilAD2M;->TbUtilAD2D)
-						  //STOCKER ENREGISTREMENT([XDonnées])
-						  //Fin de si
+						//TABLEAU TEXTE(TbUtilAD2M;0)
+						//TABLEAU DATE(TbUtilAD2D;0)
+						//CHERCHER([XDonnées];[XDonnées]XNom="AsaDia2";*)
+						//CHERCHER([XDonnées]; & [XDonnées]XType="AsaDia2")
+						//Si (Enregistrements trouves([XDonnées])=0)
+						//CREER ENREGISTREMENT([XDonnées])
+						//[XDonnées]XNom:="AsaDia2"
+						//[XDonnées]XType:="AsaDia2"
+						//ZVariableVersblob (->[XDonnées]XBlob;->TbUtilAD2M;->TbUtilAD2D)
+						//STOCKER ENREGISTREMENT([XDonnées])
+						//Fin de si
 					End if 
-					  // ZBlobVersVariable (->[XDonnées]XBlob;->TbUtilAD2M;->TbUtilAD2D)
-					  //$L:=Chercher dans tableau(TbUtilAD2M;Col6)
-					  //$L2:=Chercher dans tableau(TbUtilAD2EnvoiMail;Col6)
-					  //Si ($L<0) & ($L2<0) & (Col6#"")
-					  //AJOUTER A TABLEAU(TbUtilAD2EnvoiMail;Col6)
-					  //Sinon
-					  //Si (($L>0) & (Col6#"") & ($L2<0))
-					  //Si (TbUtilAD2D{$L}>(Date du jour-30))
-					  //AJOUTER A TABLEAU(TbUtilAD2EnvoiMail;Col6)
-					  //Fin de si
-					  //Fin de si
-					  //Fin de si
+					// ZBlobVersVariable (->[XDonnées]XBlob;->TbUtilAD2M;->TbUtilAD2D)
+					//$L:=Chercher dans tableau(TbUtilAD2M;Col6)
+					//$L2:=Chercher dans tableau(TbUtilAD2EnvoiMail;Col6)
+					//Si ($L<0) & ($L2<0) & (Col6#"")
+					//AJOUTER A TABLEAU(TbUtilAD2EnvoiMail;Col6)
+					//Sinon
+					//Si (($L>0) & (Col6#"") & ($L2<0))
+					//Si (TbUtilAD2D{$L}>(Date du jour-30))
+					//AJOUTER A TABLEAU(TbUtilAD2EnvoiMail;Col6)
+					//Fin de si
+					//Fin de si
+					//Fin de si
 				End if 
 			End if 
-			RECEIVE PACKET:C104($Doc;Ligne;<>ZCR)  //  ligne suivante
+			RECEIVE PACKET:C104($Doc; Ligne; <>ZCR)  //  ligne suivante
 			
 		Until (Ligne="")
 	End if 
@@ -175,8 +175,8 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 	$Mess:=$Mess+String:C10($NbDGAL)+" pour la DGAL dont "+String:C10($NbDGALr)+" enregistrés;"+<>ZCR
 	$Mess:=$Mess+"Détail des départements : "+<>ZCR
 	$TT:=Size of array:C274($TbNomDep)
-	SORT ARRAY:C229($TbNomDep;$TbNbreDep;$TbNbreCon;>)
-	For ($Salé;1;$TT)
+	SORT ARRAY:C229($TbNomDep; $TbNbreDep; $TbNbreCon; >)
+	For ($Salé; 1; $TT)
 		
 		Case of 
 			: ($TbNbreCon{$Salé}=0)
@@ -200,19 +200,19 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 	If ($NbLimite>0)
 		$s:=(Num:C11($NbLimite>1)*" inscrits provisoires ont")+(Num:C11($NbLimite>1)*" inscrit provisoire a")
 		$Mess:=$Mess+<>ZCR+"ATTENTION, "+String:C10($NbLimite)+$s+" atteint la limite..."+<>ZCR
-		$Mess:=$Mess+Substring:C12($NomLimite;3)
+		$Mess:=$Mess+Substring:C12($NomLimite; 3)
 	End if 
 	
-	C_LONGINT:C283($Salé;$FT)
+	C_LONGINT:C283($Salé; $FT)
 	$Deb:=Date:C102("01/01/2018")
-	QUERY:C277([DiaData:45];[DiaData:45]XType:5="Wad3";*)
-	QUERY:C277([DiaData:45];[DiaData:45]XDate:3>$Deb)
-	SELECTION TO ARRAY:C260([DiaData:45]XNom:1;$TbLogin;[DiaData:45]XDate:3;$TbDate)
-	SORT ARRAY:C229($TbDate;$TbLogin;>)
+	QUERY:C277([DiaData:45]; [DiaData:45]XType:5="Wad3"; *)
+	QUERY:C277([DiaData:45]; [DiaData:45]XDate:3>$Deb)
+	SELECTION TO ARRAY:C260([DiaData:45]XNom:1; $TbLogin; [DiaData:45]XDate:3; $TbDate)
+	SORT ARRAY:C229($TbDate; $TbLogin; >)
 	$FT:=Size of array:C274($TbDate)
 	$Mess:=$Mess+<>ZCR2+"Fréquentation Web"+<>ZCR
 	$Compteur:=1
-	ARRAY TEXT:C222($TbVisiteur;8)
+	ARRAY TEXT:C222($TbVisiteur; 8)
 	$TbVisiteur{1}:="Abattoirs"
 	$TbVisiteur{2}:="ENVA"
 	$TbVisiteur{3}:="ENVL"
@@ -222,8 +222,8 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 	$TbVisiteur{7}:="CGM"
 	$TbVisiteur{8}:="Autres"
 	Repeat 
-		ARRAY LONGINT:C221($TbOccurence;0)
-		ARRAY LONGINT:C221($TbOccurence;8)
+		ARRAY LONGINT:C221($TbOccurence; 0)
+		ARRAY LONGINT:C221($TbOccurence; 8)
 		
 		$Mois:=Month of:C24($TbDate{$Compteur})
 		$OC:=True:C214
@@ -255,7 +255,7 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 					$visiteur:="Autres"
 					
 			End case 
-			$L:=Find in array:C230($TbVisiteur;$visiteur)
+			$L:=Find in array:C230($TbVisiteur; $visiteur)
 			$TbOccurence{$L}:=$TbOccurence{$L}+1
 			$Compteur:=$Compteur+1
 			If ($Compteur<=$FT)
@@ -265,16 +265,16 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 			End if 
 		End while 
 		$Mess:=$Mess+<>ZTbNomDuMois{$Mois}+<>ZCR2
-		For ($salé;1;8)
+		For ($salé; 1; 8)
 			$Mess:=$Mess+$TbVisiteur{$Salé}+<>ZTab+String:C10($TbOccurence{$Salé})+<>ZCR
 		End for 
 		$Mess:=$Mess+<>ZCR
 	Until ($Mois=Month of:C24(Current date:C33))
 	
-	  // A revoir // Modifié par : iMacASA2017 (13/04/2019)
-	  //  $Mess:=$Mess+Ad3DecomptePistePhotos
+	// A revoir // Modifié par : iMacASA2017 (13/04/2019)
+	//  $Mess:=$Mess+Ad3DecomptePistePhotos
 	
-	$Mess:=$Mess+<>ZCR2+"Liste des espions constatés"+<>ZCR+DiaSpy 
+	$Mess:=$Mess+<>ZCR2+"Liste des espions constatés"+<>ZCR+DiaSpy
 	
 	
 	$Objet:="Avancement de l'utilisation d'AsaDia 2"
@@ -282,16 +282,16 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 	$Corps:=$Corps+"Veuillez trouver ci-dessous l'avancement de l'utilisation d'AsaDia2"
 	$Corps:=$Corps+<>ZCR+$Mess+<>ZCR+"Bien cordialement."+<>ZCR
 	$Corps:=$Corps+"--"+<>ZCR+"L'équipe de l'ASA"+<>ZCR+"email : asa-spv@wanadoo.fr"+<>ZCR+"Portable : 06 07 97 96 21"
-	  // FIXER TEXTE DANS CONTENEUR($Corps)
-	  //ChercheDonneesCourielSortant($Corps)
-	  //TABLEAU TEXTE(TbMailMAJC;0)
-	  //AJOUTER A TABLEAU(TbMailMAJC;"vcarlier@vet-alfort.fr")
-	  //AJOUTER A TABLEAU(TbMailMAJC;"pierre.demont@vetagro-sup.fr")
-	  //AJOUTER A TABLEAU(TbMailMAJC;"jean-michel.cappelier@oniris-nantes.fr")
-	  //AJOUTER A TABLEAU(TbMailMAJC;"h.brugere@envt.fr")
-	  //AJOUTER A TABLEAU(TbMailMAJC;"chevalier-rna@orange.fr")
-	  //AJOUTER A TABLEAU(TbMailMAJC;"michel.mas@ensv.vetagro-sup.fr")
-	  //$OK:=EnvoiMailDiscret([XDonnées]XTexte;"asa-spv@wanadoo.fr";$Corps;"cegeheme@wanadoo.fr";->TbMailMAJC;$Objet)
+	// FIXER TEXTE DANS CONTENEUR($Corps)
+	//ChercheDonneesCourielSortant($Corps)
+	//TABLEAU TEXTE(TbMailMAJC;0)
+	//AJOUTER A TABLEAU(TbMailMAJC;"vcarlier@vet-alfort.fr")
+	//AJOUTER A TABLEAU(TbMailMAJC;"pierre.demont@vetagro-sup.fr")
+	//AJOUTER A TABLEAU(TbMailMAJC;"jean-michel.cappelier@oniris-nantes.fr")
+	//AJOUTER A TABLEAU(TbMailMAJC;"h.brugere@envt.fr")
+	//AJOUTER A TABLEAU(TbMailMAJC;"chevalier-rna@orange.fr")
+	//AJOUTER A TABLEAU(TbMailMAJC;"michel.mas@ensv.vetagro-sup.fr")
+	//$OK:=EnvoiMailDiscret([XDonnées]XTexte;"asa-spv@wanadoo.fr";$Corps;"cegeheme@wanadoo.fr";->TbMailMAJC;$Objet)
 	
 	$Objet:="Information en retour de l'utilisation d'AsaDia 2"
 	$Corps:="Chers Utilisateurs d'AsaDia 2,"+<>ZCR+<>ZCR
@@ -311,6 +311,6 @@ If (Test path name:C476($FichierAsaDia2)=Est un document:K24:1)
 		+"7, avenue du Général De Gaulle-94704 Maisons-Alfort Cedex"\
 		+<>ZCR+"Téléphone et fax : 01 56 29 36 30"+<>ZCR+"e-mail : asa-spv@wanadoo.fr"\
 		+<>ZCR+"Portable : 06 07 97 96 21"
-	  //AsaDia2MailInfo
+	//AsaDia2MailInfo
 	
 End if 

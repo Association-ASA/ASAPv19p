@@ -1,19 +1,19 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : MBPASA2015
-  // Date et heure : 01/04/16, 07:40:37
-  // ----------------------------------------------------
-  // Méthode : WebAfficheCommentaire
-  // Description
-  // Permet d'afficher le commentaire dans l'image en grand
-  //  en tentnt compte de la langue
-  // Paramètres $1 = nature du commentaire   {$2} = Langue
-  // ----------------------------------------------------
-C_LONGINT:C283($Salé;$FT)
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : MBPASA2015
+// Date et heure : 01/04/16, 07:40:37
+// ----------------------------------------------------
+// Méthode : WebAfficheCommentaire
+// Description
+// Permet d'afficher le commentaire dans l'image en grand
+//  en tentnt compte de la langue
+// Paramètres $1 = nature du commentaire   {$2} = Langue
+// ----------------------------------------------------
+C_LONGINT:C283($Salé; $FT)
 $Langue:=$2
-  // ZAmnistieInternationale
-$NatCom:=DiaWebTraduitTexte ($1;$Langue)
-$L:=Find in array:C230(<>TbNLF;[Diapositives:40]NomLesion:4)
+// ZAmnistieInternationale
+$NatCom:=DiaWebTraduitTexte($1; $Langue)
+$L:=Find in array:C230(<>TbNLF; [Diapositives:40]NomLesion:4)
 Case of 
 	: ($1="Description macroscopique")
 		$Val:=(Num:C11($2="A")*[Diapositives:40]CommentaireA:28)+(Num:C11($2="F")*[Diapositives:40]Commentaires:7)
@@ -29,12 +29,12 @@ Case of
 		
 	: ($1="Références réglementaires")
 		RELATE MANY:C262([Diapositives:40]NomLesion:4)
-		$Val:=DiaWebTraduitTexte ([DiaLesions:44]ReferenceReglementaireUE:17;$Langue)
+		$Val:=DiaWebTraduitTexte([DiaLesions:44]ReferenceReglementaireUE:17; $Langue)
 		
 End case 
 $Rep:=""
 If (Length:C16($Val)>0)
-	$Rep:=$Rep+"           "+Replace string:C233($Val;<>ZCR;"<br />")+<>ZCR
+	$Rep:=$Rep+"           "+Replace string:C233($Val; <>ZCR; "<br />")+<>ZCR
 Else 
 	Case of 
 		: ($1="@confo@")
@@ -54,6 +54,6 @@ Else
 	End case 
 	$Rep:=$Rep+"          </span> "+<>ZCR
 End if 
-  //Fin de si
+//Fin de si
 $0:=$Rep
-  //ZAmnistieInternationale
+//ZAmnistieInternationale

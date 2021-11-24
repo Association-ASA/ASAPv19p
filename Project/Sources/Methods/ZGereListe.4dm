@@ -1,27 +1,27 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 30/01/18, 07:58:43
-  // ----------------------------------------------------
-  // Méthode : ZGereListe
-  // Description
-  // // Historique : ZGèreListe V11 du 14/08/2010
-  //   Procédure globale qui permet de piloter l'utilisateur
-  //    suppose que les formats $2 & $3 possèdent les boutons voulus
-  //    et la variable VarNbFic dans l'en-tête qui sert à dénombrer les fiches
-  //
-  // Paramètres :  
-  // $1= pointeur sur la table de travail
-  // $2 = Pt de le champ expressif    
-  // $3= nom du formulaire projet support, "" si non
-  // Formulaires listes $4=liste d'affichage, $5= impression en liste,  $6 = liste visu
-  // Formulaires détaillés $7= saisie, $8= impression en page, $9 = visu en page
-  // $10= procédure à effectuer avant une destruction, "" sinon
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 30/01/18, 07:58:43
+// ----------------------------------------------------
+// Méthode : ZGereListe
+// Description
+// // Historique : ZGèreListe V11 du 14/08/2010
+//   Procédure globale qui permet de piloter l'utilisateur
+//    suppose que les formats $2 & $3 possèdent les boutons voulus
+//    et la variable VarNbFic dans l'en-tête qui sert à dénombrer les fiches
+//
+// Paramètres :  
+// $1= pointeur sur la table de travail
+// $2 = Pt de le champ expressif    
+// $3= nom du formulaire projet support, "" si non
+// Formulaires listes $4=liste d'affichage, $5= impression en liste,  $6 = liste visu
+// Formulaires détaillés $7= saisie, $8= impression en page, $9 = visu en page
+// $10= procédure à effectuer avant une destruction, "" sinon
+// ----------------------------------------------------
 
 
-C_TEXT:C284($3;$4;$5;$6;$7;$8;$9)  // noms des formats ou des méthode
-C_LONGINT:C283(ZNumTable;$ZNbEnr)
+C_TEXT:C284($3; $4; $5; $6; $7; $8; $9)  // noms des formats ou des méthode
+C_LONGINT:C283(ZNumTable; $ZNbEnr)
 C_POINTER:C301($1)
 C_BOOLEAN:C305($2)
 ZNumTable:=Table:C252($1)
@@ -31,7 +31,7 @@ ZNomChaDis:=Field name:C257(ZPtChamp)
 ZNomTable:=Table name:C256(ZPtTable)
 ZTypEns:=String:C10(Table:C252(ZPtTable))  // identifie par le numéro de fichier les ensembles crées
 
-ZMAJPrivilèges (ZPtTable)
+ZMAJPrivilèges(ZPtTable)
 
 If (ZModif)
 	READ WRITE:C146(ZPtTable->)
@@ -46,17 +46,17 @@ If ($ZNbEnr=0)  //autant ne pas afficher une liste vide
 End if 
 
 ZNomEnsembleAvant:="Ceusses avant table "+ZNomTable
-CREATE SET:C116(ZPtTable->;ZNomEnsembleAvant)
-  //  crée l'ensemble des résultats de recherche
+CREATE SET:C116(ZPtTable->; ZNomEnsembleAvant)
+//  crée l'ensemble des résultats de recherche
 ZAjoutEnr:=False:C215  //  initialise le booléen d'ajout
-ZFenetreOuvertureStandard 
-ZFenetreActualiseTitre 
+ZFenetreOuvertureStandard
+ZFenetreActualiseTitre
 
-CREATE EMPTY SET:C140(ZPtTable->;"UserSet")
-CREATE EMPTY SET:C140(ZPtTable->;"LockedSet")
-  // l'ensemble de la sélection avant modification
+CREATE EMPTY SET:C140(ZPtTable->; "UserSet")
+CREATE EMPTY SET:C140(ZPtTable->; "LockedSet")
+// l'ensemble de la sélection avant modification
 ZNomEnsembleAvant:="Ceusses avant table "+ZNomTable
-CREATE SET:C116(ZPtTable->;ZNomEnsembleAvant)
+CREATE SET:C116(ZPtTable->; ZNomEnsembleAvant)
 Case of 
 	: (Count parameters:C259>3)  //  loock cgm
 		
@@ -78,16 +78,16 @@ Case of
 		
 		ZNomForAffLis:=ZNomForSortie  // formulaire entrée
 		ZNomForAffSai:=ZNomForEntrée  // formulaire entrée
-		FORM SET OUTPUT:C54(ZPtTable->;ZNomForSortie)
-		FORM SET INPUT:C55(ZPtTable->;ZNomForEntrée)
+		FORM SET OUTPUT:C54(ZPtTable->; ZNomForSortie)
+		FORM SET INPUT:C55(ZPtTable->; ZNomForEntrée)
 		
-		  //Repeter 
+		//Repeter 
 		If (ZModif) & ($2)
 			READ WRITE:C146(ZPtTable->)
-			MODIFY SELECTION:C204(ZPtTable->;*)  //permet par double-clic de modifier l'enregistrement
+			MODIFY SELECTION:C204(ZPtTable->; *)  //permet par double-clic de modifier l'enregistrement
 		Else 
 			READ ONLY:C145(ZPtTable->)
-			DISPLAY SELECTION:C59(ZPtTable->;*)  //permet par double-clic de visualiser l'enregistrement
+			DISPLAY SELECTION:C59(ZPtTable->; *)  //permet par double-clic de visualiser l'enregistrement
 		End if 
 		
 	: (Count parameters:C259=3)  //  loock Liste hiérarchique
@@ -101,12 +101,12 @@ Case of
 		ZNomForAffSai:="Saisie"
 		ZNomForEntrée:=ZNomForAffSai  // formulaire entrée
 		ZNomForEntVis:="ListeVisu"
-		FORM SET OUTPUT:C54(ZPtTable->;"Sortie")
-		FORM SET INPUT:C55(ZPtTable->;"Saisie")
+		FORM SET OUTPUT:C54(ZPtTable->; "Sortie")
+		FORM SET INPUT:C55(ZPtTable->; "Saisie")
 		If (ZModif)
-			MODIFY SELECTION:C204(ZPtTable->;*)  //permet par double-clic de modifier l'enregistrement
+			MODIFY SELECTION:C204(ZPtTable->; *)  //permet par double-clic de modifier l'enregistrement
 		Else 
-			DISPLAY SELECTION:C59(ZPtTable->;*)  //permet par double-clic de visualiser l'enregistrement
+			DISPLAY SELECTION:C59(ZPtTable->; *)  //permet par double-clic de visualiser l'enregistrement
 		End if 
 		
 End case 

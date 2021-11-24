@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
 // ----------------------------------------------------
 // Nom utilisateur : cgm 

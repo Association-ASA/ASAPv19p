@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 // TRACE
 
 ARRAY LONGINT:C221($tbCode; 0)
@@ -6,11 +6,11 @@ ARRAY TEXT:C222($TabInt; 0)
 ARRAY TEXT:C222($TabLib; 0)
 C_LONGINT:C283($i; $erreur)
 C_TEXT:C284($PHP_Error_Txt)
-<<<<<<< HEAD
+ <<  <<  << <HEAD
 // je lis la pile d'erreur
 =======
 // Moi aussi
->>>>>>> 301247efa16f09ba1d2dc82354089c4dbfe6df1e
+ >>  >>  >> >301247efa16f09ba1d2dc82354089c4dbfe6df1e
 GET LAST ERROR STACK:C1015($tbCode; $TabInt; $TabLib)
 $erreur:=error
 BEEP:C151

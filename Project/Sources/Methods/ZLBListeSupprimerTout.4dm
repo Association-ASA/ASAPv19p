@@ -1,23 +1,23 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 01/02/18, 18:11:40
-  // ----------------------------------------------------
-  // Méthode : ZLBListeSupprimerTout
-  // Description
-  // Historique : ZAdieuSel V11 du 10/08/2010
-  //  MP de destruction de la sélection courante
-  //
-  // Paramètre {$1} = si existe s'adresse à la gestion LB
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 01/02/18, 18:11:40
+// ----------------------------------------------------
+// Méthode : ZLBListeSupprimerTout
+// Description
+// Historique : ZAdieuSel V11 du 10/08/2010
+//  MP de destruction de la sélection courante
+//
+// Paramètre {$1} = si existe s'adresse à la gestion LB
+// ----------------------------------------------------
 
-C_LONGINT:C283($FT;$Salé;$Reste)  // compteurs
+C_LONGINT:C283($FT; $Salé; $Reste)  // compteurs
 C_TEXT:C284($Pluriel)  //accord orthographique (s)
 C_TEXT:C284($Sémaphore)  // sémaphore de destruction sur le fichier
 
 
-  // Modifié par : Patrick EMANUEL (10/05/12)
+// Modifié par : Patrick EMANUEL (10/05/12)
 If (Count parameters:C259=1)
 	$LB:=True:C214
 Else 
@@ -27,37 +27,37 @@ End if
 If (ZSupprime)
 	$Ft:=Records in selection:C76(ZPtTable->)
 	MonSémaphore:="Adieu"+String:C10(Table:C252(ZPtTable))  // un sémaphore par fichier
-	If (ZTestSemaphore (MonSemaphore;"Une destruction est en cours sur un autre poste…"))
+	If (ZTestSemaphore(MonSemaphore; "Une destruction est en cours sur un autre poste…"))
 		
-		ZFenetreModaleAuCentre (450;60)
-		  // tentons de détruire la sélection
+		ZFenetreModaleAuCentre(450; 60)
+		// tentons de détruire la sélection
 		READ WRITE:C146(ZPtTable->)
 		
-		  // Modifié par : Patrick EMANUEL (10/05/12)
+		// Modifié par : Patrick EMANUEL (10/05/12)
 		If ($LB)
-			COPY SET:C600("ZFichesSurlignees";ZNomEnsembleAvant)  // Recopie de l'ensemble sélection LB sur ZNomEnsembleAvant
+			COPY SET:C600("ZFichesSurlignees"; ZNomEnsembleAvant)  // Recopie de l'ensemble sélection LB sur ZNomEnsembleAvant
 		Else 
-			CREATE SET:C116(ZPtTable->;ZNomEnsembleAvant)
+			CREATE SET:C116(ZPtTable->; ZNomEnsembleAvant)
 		End if 
 		
-		CREATE EMPTY SET:C140(ZPtTable->;"Sauves")
-		CREATE SET:C116(ZPtTable->;"Peloton")
+		CREATE EMPTY SET:C140(ZPtTable->; "Sauves")
+		CREATE SET:C116(ZPtTable->; "Peloton")
 		
 		START TRANSACTION:C239
-		For ($salé;1;$FT)
+		For ($salé; 1; $FT)
 			FIRST RECORD:C50(ZPtTable->)
-			If (ZVerrouTester (ZPtTable))
+			If (ZVerrouTester(ZPtTable))
 				If (ZBoumProc#"")
 					MESSAGE:C88(<>ZCR2+"         Actualisation des enregistrements liés à …"+ZPtChamp->)
 					EXECUTE FORMULA:C63(ZBoumProc)
 				End if 
 				MESSAGE:C88(<>ZCR2+"         Suppression de l'enregistrement…"+ZPtChamp->)
-				ZLBDetruitEnregistrement 
+				ZLBDetruitEnregistrement
 				USE SET:C118("Peloton")
 			End if 
 			
 		End for 
-		  //test de résistance comparée des fiches et de l'utilisateur…
+		//test de résistance comparée des fiches et de l'utilisateur…
 		OK:=1
 		While ((Records in set:C195("LockedSet")#0) & (OK=1))
 			MESSAGE:C88(<>ZCR2+"         Traitement des fiches verrouillées…")

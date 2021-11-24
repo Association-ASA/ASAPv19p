@@ -1,1 +1,1 @@
-DiaTraducChercheDansTb (->Colonne2)
+DiaTraducChercheDansTb(->Colonne2)

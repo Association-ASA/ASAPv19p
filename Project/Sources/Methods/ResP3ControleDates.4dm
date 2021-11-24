@@ -1,24 +1,24 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 04/08/18, 06:33:01
-  // ----------------------------------------------------
-  // Paramètre aucun
-  // ----------------------------------------------------
-  // Méthode : ResP3ControleDates
-  // Description
-  // Test de cohérence entre les dates 
-  // de démarrage de la campagne obtenue par AJAX
-  // Celle de réception du colis et de début des analyses
-  // Ceinture ET bretelles car normalement trapsé par JS
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 04/08/18, 06:33:01
+// ----------------------------------------------------
+// Paramètre aucun
+// ----------------------------------------------------
+// Méthode : ResP3ControleDates
+// Description
+// Test de cohérence entre les dates 
+// de démarrage de la campagne obtenue par AJAX
+// Celle de réception du colis et de début des analyses
+// Ceinture ET bretelles car normalement trapsé par JS
 
-QUERY:C277([RAEMACampagnes:20];[RAEMACampagnes:20]NumCampagne:2=<>NumCampagneEnCoursSaisie)
+QUERY:C277([RAEMACampagnes:20]; [RAEMACampagnes:20]NumCampagne:2=<>NumCampagneEnCoursSaisie)
 $DateEnvoiColis:=[RAEMACampagnes:20]DateEnvoiColis:3
-$DateReception:=Date:C102(WebTrouveValeurParNom ("Champ0101";->TbNomsP3;->TbValeursP3))
-$DateAnalyse:=Date:C102(WebTrouveValeurParNom ("Champ0103";->TbNomsP3;->TbValeursP3))
+$DateReception:=Date:C102(WebTrouveValeurParNom("Champ0101"; ->TbNomsP3; ->TbValeursP3))
+$DateAnalyse:=Date:C102(WebTrouveValeurParNom("Champ0103"; ->TbNomsP3; ->TbValeursP3))
 $DatesNonVides:=($DateReception#!00-00-00!) & ($DateAnalyse#!00-00-00!)
-$Ecran:=RaemaTraducUtiliseTableau (82)  // Texte d'alerte en différentes langues
+$Ecran:=RaemaTraducUtiliseTableau(82)  // Texte d'alerte en différentes langues
 Case of 
 	: (($DateReception<$DateEnvoiColis) & ($DatesNonVides))
 		MauvaisSyntaxe:=True:C214

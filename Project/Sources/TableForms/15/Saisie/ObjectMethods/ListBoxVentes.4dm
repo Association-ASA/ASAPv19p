@@ -1,1 +1,1 @@
-  // Recalcul du Total HT = PUHT*Qté
+// Recalcul du Total HT = PUHT*Qté

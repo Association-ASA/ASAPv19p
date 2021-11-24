@@ -14,10 +14,10 @@ $objet:=FORM Event:C1606
 $lbName:="Lb_Selection"
 
 Case of 
-	: ($event=On Load:K2:1)
+	: ($event=Sur chargement:K2:1)
 		var $file : 4D:C1709.file
 		$file:=File:C1566("/LOGS/request.json")
-		SET DATABASE PARAMETER:C642(Client log recording:K37:44; 2)
+		SET DATABASE PARAMETER:C642(Enreg requêtes client:K37:44; 2)
 		ds:C1482.startRequestLog($file)
 		
 		var $image : Picture
@@ -42,13 +42,13 @@ Case of
 		SET TIMER:C645(1)
 		
 		
-	: ($event=On Unload:K2:2)
-		SET DATABASE PARAMETER:C642(Client log recording:K37:44; 0)
+	: ($event=Sur libération:K2:2)
+		SET DATABASE PARAMETER:C642(Enreg requêtes client:K37:44; 0)
 		ds:C1482.stopRequestLog()
-		SHOW ON DISK:C922(Get 4D folder:C485(Logs folder:K5:19))
+		SHOW ON DISK:C922(Get 4D folder:C485(Dossier Logs:K5:19))
 		
 		
-	: ($event=On Timer:K2:25)
+	: ($event=Sur minuteur:K2:25)
 		SET TIMER:C645(0)
 		
 		var $es : Object
@@ -63,7 +63,7 @@ Case of
 		// $es : issu de la fonction menu de la classe interface
 		orda_affLBpersonnes($es)  //ZFenetreActualiseTitre
 		
-	: ($event=On Clicked:K2:4)
+	: ($event=Sur clic:K2:4)
 		$objetName:=$objet.objectName
 		
 		If (Form:C1466.current#Null:C1517)
@@ -98,7 +98,7 @@ Case of
 		End case 
 		
 		
-	: ($event=On Double Clicked:K2:5)
+	: ($event=Sur double clic:K2:5)
 		$objetName:=$objet.objectName
 		
 		If (Form:C1466.current#Null:C1517)

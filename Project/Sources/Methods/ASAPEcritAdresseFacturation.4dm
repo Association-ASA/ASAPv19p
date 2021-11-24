@@ -1,13 +1,13 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : iMacASA2017
-  // Date et heure : 24/07/19, 11:43:16
-  // ----------------------------------------------------
-  // Méthode : ASAPEcritAdresseFacturation
-  // Description
-  //   Méthode qui renvoie l'adresse de facturation
-  // d'après l'enregistrement de [PersonnesAdresses] pertinent
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : iMacASA2017
+// Date et heure : 24/07/19, 11:43:16
+// ----------------------------------------------------
+// Méthode : ASAPEcritAdresseFacturation
+// Description
+//   Méthode qui renvoie l'adresse de facturation
+// d'après l'enregistrement de [PersonnesAdresses] pertinent
+// ----------------------------------------------------
 $Nom:=[Personnes:12]NomLong:2
 $Adr1:=[PersonnesAdresses:11]LigneAdresse1:3
 If ($Nom#$Adr1)

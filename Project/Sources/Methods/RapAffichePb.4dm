@@ -1,14 +1,14 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : ASA
-  // Date et heure : 01/07/13, 15:16:41
-  // ----------------------------------------------------
-  // Méthode : RapAffichePb
-  // Description
-  // Permet d'afficher un écran d'erreur en actualisant le contenu
-  //  grace aux 5 Paramètres explicites
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur (OS) : ASA
+// Date et heure : 01/07/13, 15:16:41
+// ----------------------------------------------------
+// Méthode : RapAffichePb
+// Description
+// Permet d'afficher un écran d'erreur en actualisant le contenu
+//  grace aux 5 Paramètres explicites
+// ----------------------------------------------------
 
 TitreErreur:=$1  // titre de la page Web
 TypeErreur:=$2  // Annonce principale centrée rouge 

@@ -1,7 +1,7 @@
-//%attributes = {"publishedWeb":true}
-  // ZEnsembleCalcul V11 du 14/08/2010
-  //  permet d'effectuer le calcul sur ensemble
-  //appelée par le bouton standard BouCalculEns
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+// ZEnsembleCalcul V11 du 14/08/2010
+//  permet d'effectuer le calcul sur ensemble
+//appelée par le bouton standard BouCalculEns
 
 C_LONGINT:C283($ZFT)
 If ((ZVarEnsDep="") | (ZVarEnsArr=""))  //vérifions que les cases ne soient pas vides
@@ -9,13 +9,13 @@ If ((ZVarEnsDep="") | (ZVarEnsArr=""))  //vérifions que les cases ne soient pas
 Else 
 	Case of   // selon le bouton radio actif
 		: (RadioET=1)
-			INTERSECTION:C121("Dep";"Arr";"Transit")
+			INTERSECTION:C121("Dep"; "Arr"; "Transit")
 			
 		: (RadioOU=1)
-			UNION:C120("Dep";"Arr";"Transit")
+			UNION:C120("Dep"; "Arr"; "Transit")
 			
 		: (RadioSAUF=1)
-			DIFFERENCE:C122("Dep";"Arr";"Transit")
+			DIFFERENCE:C122("Dep"; "Arr"; "Transit")
 	End case 
 End if 
 $ZFT:=Records in set:C195("Transit")
@@ -30,4 +30,4 @@ Case of
 		$ZNbEnrFinal:=String:C10($ZFT)+" enregistrements"
 End case 
 
-(OBJECT Get pointer:C1124(Objet nommé:K67:5;"ZNbEnrFinal"))->:=$ZNbEnrFinal
+(OBJECT Get pointer:C1124(Objet nommé:K67:5; "ZNbEnrFinal"))->:=$ZNbEnrFinal

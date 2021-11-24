@@ -1,21 +1,21 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 06/09/15, 16:39:44
-  // ----------------------------------------------------
-  // Méthode : WebAffichePageAdherent
-  // Description
-  // Affiche la page des adhérents
-  //  
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 06/09/15, 16:39:44
+// ----------------------------------------------------
+// Méthode : WebAffichePageAdherent
+// Description
+// Affiche la page des adhérents
+//  
+// ----------------------------------------------------
 
-C_LONGINT:C283($Salé;$FT)
-ARRAY TEXT:C222($TbDoc;0)
-ARRAY REAL:C219($TbTot;0)
-QUERY:C277([XData:1];[XData:1]XType:3="FichiersAC")
-SELECTION TO ARRAY:C260([XData:1]XNom:2;$TbDoc;[XData:1]XDate:4;$TbDate;[XData:1]UUID:1;$TbUUID;[XData:1]XEntier:6;$TbNumAC)
-SORT ARRAY:C229($TbDoc;$TbDate;$TbUUID;$TbNumAC;<)
+C_LONGINT:C283($Salé; $FT)
+ARRAY TEXT:C222($TbDoc; 0)
+ARRAY REAL:C219($TbTot; 0)
+QUERY:C277([XData:1]; [XData:1]XType:3="FichiersAC")
+SELECTION TO ARRAY:C260([XData:1]XNom:2; $TbDoc; [XData:1]XDate:4; $TbDate; [XData:1]UUID:1; $TbUUID; [XData:1]XEntier:6; $TbNumAC)
+SORT ARRAY:C229($TbDoc; $TbDate; $TbUUID; $TbNumAC; <)
 $DerAsaContact:=$TbNumAC{1}
 
 $THTML:=""
@@ -56,7 +56,7 @@ $THTML:=$THTML+"<table align="+<>ZGuil+"center"+<>ZGuil+" width="+<>ZGuil+"100%"
 $FT:=Size of array:C274($TbDoc)
 $Compteur5:=1
 $THTML:=$THTML+"  <tr>"+<>ZCR
-For ($Salé;2;$FT)
+For ($Salé; 2; $FT)
 	$ACC:=$TbDoc{$Salé}
 	If ($Compteur5=6)
 		$Compteur5:=1
@@ -65,7 +65,7 @@ For ($Salé;2;$FT)
 	End if 
 	$NumACCourant:=String:C10($TbNumAC{$Salé})
 	$THTML:=$THTML+"  <td class="+<>ZGuil+"cellulebord"+<>ZGuil+" width="+<>ZGuil+"9%"+<>ZGuil+" align="+<>ZGuil+"center"+<>ZGuil+">"
-	$L:=Find in array:C230($TbDoc;("@"+$NumACCourant))
+	$L:=Find in array:C230($TbDoc; ("@"+$NumACCourant))
 	$NomMoisAn:=<>ZTbNomDuMois{Month of:C24($TbDate{$Salé})}+" "+String:C10(Year of:C25($TbDate{$Salé}))
 	$Title:="title="+<>ZGuil+$NomMoisAn+<>ZGuil
 	$THTML:=$THTML+"   <a "+$Title+" href="+<>ZGuil+"Aco"+$TbUUID{$Salé}+<>ZGuil+">"+<>ZCR
@@ -89,5 +89,5 @@ $THTML:=$THTML+"          "+<>ZCR
 $THTML:=$THTML+"      </img>"+<>ZCR
 $THTML:=$THTML+"  </a>"+<>ZCR
 $THTML:=$THTML+" </p>"+<>ZCR
-$THTML:=$THTML+ResRaemaCréationPied 
+$THTML:=$THTML+ResRaemaCréationPied
 WEB SEND TEXT:C677($THTML)

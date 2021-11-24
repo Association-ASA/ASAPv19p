@@ -1,9 +1,9 @@
-//%attributes = {"publishedWeb":true}
-  // ZFFeteDePaques  V11 du 14/08/2010
-  // fonction qui renvoie la date de paques
-  // $1= année concernée
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+// ZFFeteDePaques  V11 du 14/08/2010
+// fonction qui renvoie la date de paques
+// $1= année concernée
 
-C_LONGINT:C283($AnnéeConcernée;$Siècle;$NombreOr;$Soleil;$Lune;$Epact;$PleineLune)
+C_LONGINT:C283($AnnéeConcernée; $Siècle; $NombreOr; $Soleil; $Lune; $Epact; $PleineLune)
 
 $AnnéeConcernée:=$1
 $Siècle:=($AnnéeConcernée\100)+1

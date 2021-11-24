@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 // ----------------------------------------------------
 // $1 : object (signal)
 // $2: $customMessage (texte)

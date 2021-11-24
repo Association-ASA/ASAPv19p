@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 // ----------------------------------------------------
 // Nom utilisateur : cgm 
 // Date et heure : 06/04/18, 05:36:49
@@ -35,18 +35,18 @@
 $Objet.ZNomListeXData:="LB "+$Objet.table+(Num:C11(Not:C34(<>ZToutNeuf))*<>ZQuiCode)
 
 // Formulaire de saisie
-If (OB Get:C1224($Objet; "Saisie"; Is text:K8:3)="")  // Teste l'existence de la propriété ET son contenu
+If (OB Get:C1224($Objet; "Saisie"; Est un texte:K8:3)="")  // Teste l'existence de la propriété ET son contenu
 	//If (OB Is defined($Objet; "Saisie")) // Teste l'existence de la propriété et non son contenu
 	$Objet.Saisie:="Entrée"
 End if 
 
 // formulaire d'impression d'un enregistrement
-If (OB Get:C1224($Objet; "Fiche"; Is text:K8:3)="")
+If (OB Get:C1224($Objet; "Fiche"; Est un texte:K8:3)="")
 	$Objet.Fiche:="Entrée"
 End if 
 
 // formulaire sortie
-If (OB Get:C1224($Objet; "Sortie"; Is text:K8:3)="")
+If (OB Get:C1224($Objet; "Sortie"; Est un texte:K8:3)="")
 	$Objet.Sortie:="Liste"
 End if 
 
@@ -95,7 +95,7 @@ ZMAJPrivilèges($zptTable)
 
 //FORM SET INPUT(ZPtTable->; ZNomForEntrée)
 
-$GestionTableau:=OB Get:C1224($Objet; "Gestion tableaux"; Is boolean:K8:9)
+$GestionTableau:=OB Get:C1224($Objet; "Gestion tableaux"; Est un booléen:K8:9)
 If ($Objet.gestionFixe)
 	$Dialogue:=$Objet.Dialogue
 Else 
@@ -107,7 +107,7 @@ End if
 //ZFenetreOuvertureStandard
 //ZFenetreActualiseTitre
 
-$win:=Open form window:C675($Dialogue; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4; *)
+$win:=Open form window:C675($Dialogue; Form fenêtre standard:K39:10; Centrée horizontalement:K39:1; Centrée verticalement:K39:4; *)
 DIALOG:C40($Dialogue; $Objet)  // le format d'accueil doit être un formulaire projet
 
 CLOSE WINDOW:C154

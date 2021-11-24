@@ -1,13 +1,13 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 02/12/17, 08:15:07
-  // ----------------------------------------------------
-  // Méthode : WebEcritPageTexte
-  // Description
-  //  Ecrit la page de la liste des textes
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 02/12/17, 08:15:07
+// ----------------------------------------------------
+// Méthode : WebEcritPageTexte
+// Description
+//  Ecrit la page de la liste des textes
+// ----------------------------------------------------
 
 $THTML:=""
 $THTML:=$THTML+"    <br /> <br />"+<>ZCR
@@ -113,6 +113,6 @@ $THTML:=$THTML+"        </ul>"+<>ZCR
 $THTML:=$THTML+"         <br /><br />"+<>ZCR
 $THTML:=$THTML+"   </form>"+<>ZCR
 
-  // $THTML:=$THTML+"     <script type="+<>ZGuil+"text/javascript"+<>ZGuil+" src="+<>ZGuil+"js/asadia2.js"+<>ZGuil+"></script> <!-- jQuery AsaDia    -->"+<>ZCR
+// $THTML:=$THTML+"     <script type="+<>ZGuil+"text/javascript"+<>ZGuil+" src="+<>ZGuil+"js/asadia2.js"+<>ZGuil+"></script> <!-- jQuery AsaDia    -->"+<>ZCR
 
 WEB SEND TEXT:C677($THTML)

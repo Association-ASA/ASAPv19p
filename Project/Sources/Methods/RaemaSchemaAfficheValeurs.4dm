@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
 // ----------------------------------------------------
 // Nom utilisateur : cgm 
@@ -27,8 +27,8 @@ ARRAY BOOLEAN:C223(TbEscamotage; $FT)
 ARRAY BOOLEAN:C223(TbPrecision; $FT)
 $GaffeCode:=False:C215
 For ($Salé; 1; $FT)
-	TbEscamotage{$Salé}:=OB Get:C1224(TbArgumentsValeur{$Salé}; "Escamotage"; Is boolean:K8:9)
-	TbPrecision{$Salé}:=OB Get:C1224(TbArgumentsValeur{$Salé}; "Précision"; Is boolean:K8:9)
+	TbEscamotage{$Salé}:=OB Get:C1224(TbArgumentsValeur{$Salé}; "Escamotage"; Est un booléen:K8:9)
+	TbPrecision{$Salé}:=OB Get:C1224(TbArgumentsValeur{$Salé}; "Précision"; Est un booléen:K8:9)
 	$SupGel:=Num:C11(TbIdentifiantValeur{$Salé}[[3]]="A")
 	If ($GaffeCode=False:C215)
 		$GaffeCode:=Position:C15("a"; Substring:C12(TbIdentifiantValeur{$Salé}; 4))>0
@@ -39,6 +39,6 @@ If ($GaffeCode) | (SuppValeur=True:C214)
 	ARRAY TO SELECTION:C261(TbIdentifiantValeur; [RAEMAValeurs:23]Identifiant:3)
 	SuppValeur:=False:C215
 End if 
-LISTBOX SELECT ROW:C912(*; "ValeursListBox"; 0; lk remove from selection:K53:3)
+LISTBOX SELECT ROW:C912(*; "ValeursListBox"; 0; lk supprimer de sélection:K53:3)
 OBJECT SET VISIBLE:C603(*; "@lien"; False:C215)
 OBJECT SET VISIBLE:C603(*; "@prec"; False:C215)

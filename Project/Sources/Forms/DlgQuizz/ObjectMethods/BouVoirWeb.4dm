@@ -1,4 +1,4 @@
-$L:=Find in array:C230(<>TbNomInstitution;[QuizzQuestionnaires:35]Institution:4)
+$L:=Find in array:C230(<>TbNomInstitution; [QuizzQuestionnaires:35]Institution:4)
 $Sigle:=<>TbSigleInstitution{$L}
 If (<>Ajar)
 	$URL:="https://association.asa-spv.fr/creationquizz"+$Sigle+"_"

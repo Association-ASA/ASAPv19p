@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 //Method:OB_copyToSharedCollection
 //$1:Collection to copy from
 //$2:Shared Collection to copy to
@@ -10,14 +10,14 @@ C_LONGINT:C283($counter)
 For ($counter; 0; $1.length-1)
 	
 	Case of 
-		: (Value type:C1509($1[$counter])=Is object:K8:27)
+		: (Value type:C1509($1[$counter])=Est un objet:K8:27)
 			$2[$counter]:=New shared object:C1526
 			Use ($2[$counter])
 				//Element type is object, copy with OB_CopyObject
 				OB_CopyToSharedObject($1[$counter]; $2[$counter])
 			End use 
 			
-		: (Value type:C1509($1[$counter])=Is collection:K8:32)
+		: (Value type:C1509($1[$counter])=Est une collection:K8:32)
 			//Element type is collection, copy with OB_CopyCollection //Element type is collection, copy with OB_CopyCollection//Element type is collection, copy with OB_CopyCollection
 			$2[$counter]:=New shared collection:C1527
 			Use ($2[$counter])

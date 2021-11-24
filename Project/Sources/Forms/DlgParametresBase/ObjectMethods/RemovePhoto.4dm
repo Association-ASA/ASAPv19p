@@ -1,1 +1,1 @@
-ZConfiguration_SupprimeLogo 
+ZConfiguration_SupprimeLogo

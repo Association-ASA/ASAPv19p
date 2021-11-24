@@ -8,8 +8,8 @@ Case of
 	: ($evt=Sur après frappe clavier:K2:26)
 		$Test:="@"+Get edited text:C655+"@"
 		If (Length:C16($Test)>3)
-			QUERY:C277(ZPtTable->;[XUtilisateurs:2]Nom:2=$Test)
-			ZFenetreActualiseTitre 
+			QUERY:C277(ZPtTable->; [XUtilisateurs:2]Nom:2=$Test)
+			ZFenetreActualiseTitre
 		End if 
 		
 End case 

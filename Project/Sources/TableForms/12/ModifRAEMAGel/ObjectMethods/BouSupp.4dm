@@ -13,4 +13,4 @@ Case of
 		End if 
 End case 
 CANCEL:C270
-ZAmnistiePartielle (->[CampagneGelGermes:25])
+ZAmnistiePartielle(->[CampagneGelGermes:25])

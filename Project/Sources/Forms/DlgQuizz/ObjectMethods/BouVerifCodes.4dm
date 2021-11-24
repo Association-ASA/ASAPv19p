@@ -1,3 +1,3 @@
-QuizzVerifieCode 
+QuizzVerifieCode
 PUMQuestionnaire:=0
-QuizzAfficheLeQuestionnaire (PUMQuestionnaire)
+QuizzAfficheLeQuestionnaire(PUMQuestionnaire)

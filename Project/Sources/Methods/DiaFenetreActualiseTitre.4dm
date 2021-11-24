@@ -1,6 +1,6 @@
-//%attributes = {"publishedWeb":true}
-  //  ZActualiseTitreFenetre 6.0 du 30/08/98
-  //   met à jour le bandeau d'une liste
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+//  ZActualiseTitreFenetre 6.0 du 30/08/98
+//   met à jour le bandeau d'une liste
 
 ZNbEnr:=Records in selection:C76(ZPtTable->)
 ZVarTotEnr:=Records in table:C83(ZPtTable->)

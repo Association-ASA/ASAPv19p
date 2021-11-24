@@ -21,7 +21,7 @@ If (OK=1)
 	$VarImp9:=0
 	$VarImp10:=0
 	$VarImp11:=0
-	For ($salé;1;$TT)
+	For ($salé; 1; $TT)
 		VarImp1:=TbCampagnesConcernees{$salé}
 		VarImp2:=TbRASA{$salé}
 		VarImp3:=TbRADILVA{$salé}

@@ -1,38 +1,38 @@
-//%attributes = {"invisible":true}
-  // ----------------------------------------------------
+//%attributes = {"invisible":true,"lang":"fr"}
+// ----------------------------------------------------
 
-  // Date et heure : 31/07/09, 11:45:53
-  // ----------------------------------------------------
-  // Méthode : web_com_http_request
-  // Description
-  // Envoi un blob dans une variable post
-  // Recois un blob dans le $0
-  // Paramètres
-  // $1 = DATA a envoyer
-  // $2 = Ip du server a contacter EX : "192.168.12.26"
-  // $3 = Fichier sur le server a taper EX : "4D/service_clean_client.php"
-  // $0 = DATA de réponse de la requette HTTP (Contient les HEADERS HTTP à retirer avec d_t_http_remove_headers)
-  // ----------------------------------------------------
+// Date et heure : 31/07/09, 11:45:53
+// ----------------------------------------------------
+// Méthode : web_com_http_request
+// Description
+// Envoi un blob dans une variable post
+// Recois un blob dans le $0
+// Paramètres
+// $1 = DATA a envoyer
+// $2 = Ip du server a contacter EX : "192.168.12.26"
+// $3 = Fichier sur le server a taper EX : "4D/service_clean_client.php"
+// $0 = DATA de réponse de la requette HTTP (Contient les HEADERS HTTP à retirer avec d_t_http_remove_headers)
+// ----------------------------------------------------
 
 C_TEXT:C284($header)
 
-C_LONGINT:C283($lPayloadlength;$errorCode;$state;$tcpStream;$lPort;$iTCPConnectionType)
+C_LONGINT:C283($lPayloadlength; $errorCode; $state; $tcpStream; $lPort; $iTCPConnectionType)
 C_TEXT:C284($CRLF)
-C_TEXT:C284($tDir;$tHost;$tUsername;$tPassword)
+C_TEXT:C284($tDir; $tHost; $tUsername; $tPassword)
 
-C_TEXT:C284($3;$data)
-C_TEXT:C284($1;$tHost)
-C_TEXT:C284($2;$tDir)
+C_TEXT:C284($3; $data)
+C_TEXT:C284($1; $tHost)
+C_TEXT:C284($2; $tDir)
 
-C_TEXT:C284($0;$result)
+C_TEXT:C284($0; $result)
 
-C_BOOLEAN:C305($4;$https)
+C_BOOLEAN:C305($4; $https)
 
 C_BLOB:C604($cblob)
 
-  // - Output
+// - Output
 C_BOOLEAN:C305($exit)
-  // - Variables
+// - Variables
 $exit:=False:C215
 
 $tXMLMessage:=""
@@ -49,7 +49,7 @@ $https:=$4
 
 If (Count parameters:C259>=5)
 	
-	C_TEXT:C284($token;$5)
+	C_TEXT:C284($token; $5)
 	
 	$token:=$5
 	
@@ -63,7 +63,7 @@ End if
 
 If (Count parameters:C259>=6)
 	
-	C_TEXT:C284($requestType;$6)
+	C_TEXT:C284($requestType; $6)
 	
 	$requestType:=$6
 	
@@ -74,15 +74,15 @@ Else
 	
 End if 
 
-  //$data:="xmlMsg="+$data
+//$data:="xmlMsg="+$data
 
-  //d_m_logthis_serv ($data;"dev.log";Nom methode courante)
+//d_m_logthis_serv ($data;"dev.log";Nom methode courante)
 
-  //VARIABLE VERS BLOB($data;$cblob)
+//VARIABLE VERS BLOB($data;$cblob)
 
-TEXT TO BLOB:C554($data;$cblob;UTF8 texte sans longueur:K22:17)
-  //TEXTE VERS BLOB($data2;$cblob2;UTF8 Texte sans longueur )
-  //d_m_logthis_blob_serv ($cblob;"dev.log";Nom methode courante)
+TEXT TO BLOB:C554($data; $cblob; UTF8 texte sans longueur:K22:17)
+//TEXTE VERS BLOB($data2;$cblob2;UTF8 Texte sans longueur )
+//d_m_logthis_blob_serv ($cblob;"dev.log";Nom methode courante)
 
 $lPayloadlength:=BLOB size:C605($cblob)  //longueur du message
 
@@ -94,24 +94,24 @@ Else
 End if 
 
 
-  // $lPort:=443  //SSL`80 = default , 443 = SSL
+// $lPort:=443  //SSL`80 = default , 443 = SSL
 $iTCPConnectionType:=2  //0 = default, `2 =Synchronous SSL
 $tUsername:=<>CalendarCompte  // ""
 $tPassword:=<>CalendarMDP  // ""
-$errorCode:=IT_SetTimeOut (5)
+$errorCode:=IT_SetTimeOut(5)
 
 Repeat 
-	  //TCP_Open to create a connection
-	$errorCode:=TCP_Open ($tHost;$lPort;$tcpStream;$iTCPConnectionType)
+	//TCP_Open to create a connection
+	$errorCode:=TCP_Open($tHost; $lPort; $tcpStream; $iTCPConnectionType)
 	
 	If ($tcpStream=0)  //couldn't open stream
-		$errorCode:=TCP_Listen ($tDir;0;$lPort;20;$tcpStream)
-		$errorCode:=TCP_State ($tcpStream;$state)
+		$errorCode:=TCP_Listen($tDir; 0; $lPort; 20; $tcpStream)
+		$errorCode:=TCP_State($tcpStream; $state)
 	End if 
 	
-	  //====================================
-	  //send header
-	  //====================================
+	//====================================
+	//send header
+	//====================================
 	If ($errorCode=0)
 		
 		If ($lPayloadlength=0)
@@ -174,68 +174,68 @@ Repeat
 		
 		$header:=$header+$CRLF
 		
-		ZBaseAjouteTrace (Char:C90(Retour à la ligne:K15:40)+"HTTP REQ -> "+$tHost+$tDir+Char:C90(Retour à la ligne:K15:40)+$header+"SENDING "+$data+Char:C90(Retour à la ligne:K15:40)+Char:C90(Retour à la ligne:K15:40);"dev.log";Current method name:C684)
-		  //$tXMLMessage:=$header
-		$errorCode:=TCP_Send ($tcpStream;$header)
+		ZBaseAjouteTrace(Char:C90(Retour à la ligne:K15:40)+"HTTP REQ -> "+$tHost+$tDir+Char:C90(Retour à la ligne:K15:40)+$header+"SENDING "+$data+Char:C90(Retour à la ligne:K15:40)+Char:C90(Retour à la ligne:K15:40); "dev.log"; Current method name:C684)
+		//$tXMLMessage:=$header
+		$errorCode:=TCP_Send($tcpStream; $header)
 		
 	Else 
 		$exit:=True:C214
-		WEB_AdminMail ("Error on d_t_http_request_blob";"Error on TCP_STATE : HEADER, PARAMS ->  HOST: "+$tHost+" DIR:"+$tDir;Current method name:C684)
+		WEB_AdminMail("Error on d_t_http_request_blob"; "Error on TCP_STATE : HEADER, PARAMS ->  HOST: "+$tHost+" DIR:"+$tDir; Current method name:C684)
 	End if 
 	
-	  //====================================
-	  //send body
-	  //====================================
+	//====================================
+	//send body
+	//====================================
 	If ($errorCode=0)
 		
 		If ($lPayloadlength>0)
 			
-			  //d_m_logthis_blob_serv ($cblob;"dev.log";Nom methode courante)
+			//d_m_logthis_blob_serv ($cblob;"dev.log";Nom methode courante)
 			
-			$errorCode:=TCP_SendBLOB ($tcpStream;$cblob)
+			$errorCode:=TCP_SendBLOB($tcpStream; $cblob)
 			
-			  //$errorCode:=TCP_SendBLOB ($tcpStream;$cblob2)
+			//$errorCode:=TCP_SendBLOB ($tcpStream;$cblob2)
 			
 		End if 
 		
 	Else 
 		$exit:=True:C214
-		WEB_AdminMail ("Error on web_com_http_request";"Error on TCP_STATE : BODY, PARAMS ->  HOST: "+$tHost+" DIR:"+$tDir;Current method name:C684)
+		WEB_AdminMail("Error on web_com_http_request"; "Error on TCP_STATE : BODY, PARAMS ->  HOST: "+$tHost+" DIR:"+$tDir; Current method name:C684)
 	End if 
 	
-	  //====================================
-	  //receive response
-	  //====================================
+	//====================================
+	//receive response
+	//====================================
 	If ($errorCode=0)
 		
-		C_BLOB:C604($Blob_Reçu;$Blob_Concaténé)
-		C_LONGINT:C283($srcpos;$dstpos)
+		C_BLOB:C604($Blob_Reçu; $Blob_Concaténé)
+		C_LONGINT:C283($srcpos; $dstpos)
 		
 		C_TEXT:C284($result)
 		
 		Repeat 
 			
-			$errorCode:=TCP_ReceiveBLOB ($tcpStream;$Blob_Reçu)
-			$errorCode:=TCP_State ($tcpStream;$state)
+			$errorCode:=TCP_ReceiveBLOB($tcpStream; $Blob_Reçu)
+			$errorCode:=TCP_State($tcpStream; $state)
 			
 			$srcpos:=0
 			$dstpos:=BLOB size:C605($Blob_Concaténé)
-			  //Concaténation des données reçues
-			COPY BLOB:C558($Blob_Reçu;$Blob_Concaténé;$srcpos;$dstpos;BLOB size:C605($Blob_Reçu))
+			//Concaténation des données reçues
+			COPY BLOB:C558($Blob_Reçu; $Blob_Concaténé; $srcpos; $dstpos; BLOB size:C605($Blob_Reçu))
 			
 		Until ($state=0) | ($errorCode#0)
 		
 		If ($errorcode=0)
-			$errorCode:=TCP_Close ($tcpStream)  //TCP_Close to dispose of the con
+			$errorCode:=TCP_Close($tcpStream)  //TCP_Close to dispose of the con
 			
 			$result:=""
 			
-			  //BLOB VERS VARIABLE($Blob_Concaténé;$result)
-			$result:=BLOB to text:C555($Blob_Concaténé;UTF8 texte sans longueur:K22:17)
+			//BLOB VERS VARIABLE($Blob_Concaténé;$result)
+			$result:=BLOB to text:C555($Blob_Concaténé; UTF8 texte sans longueur:K22:17)
 			
 			
-			ZBaseAjouteTrace (Char:C90(Retour à la ligne:K15:40)+"HTTP RES <- "+$tHost+$tDir+" RESULT: "+Char:C90(Retour à la ligne:K15:40)+$result+Char:C90(Retour à la ligne:K15:40)+Char:C90(Retour à la ligne:K15:40);"dev.log";Current method name:C684)
-			ZBaseAjouteTrace ("HTTP END ---------------------------------------------------------------------------------------";"dev.log";Current method name:C684)
+			ZBaseAjouteTrace(Char:C90(Retour à la ligne:K15:40)+"HTTP RES <- "+$tHost+$tDir+" RESULT: "+Char:C90(Retour à la ligne:K15:40)+$result+Char:C90(Retour à la ligne:K15:40)+Char:C90(Retour à la ligne:K15:40); "dev.log"; Current method name:C684)
+			ZBaseAjouteTrace("HTTP END ---------------------------------------------------------------------------------------"; "dev.log"; Current method name:C684)
 			$0:=$result
 			$exit:=True:C214
 		End if 

@@ -1,35 +1,35 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 05/03/19, 05:25:13
-  // ----------------------------------------------------
-  // Méthode : AdGibierHTMLPhotoTimbrePoste
-  // Description
-  // Méthode qui écrit le HTML d'une page AsaDia gibier
-  //  avec 2 photos timbre poste
-  // ----------------------------------------------------
-C_LONGINT:C283($LDia;$LLes;$TailleMaxN;$LargeurPhotoN;$LargeurBlocN;$NumImageN)
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 05/03/19, 05:25:13
+// ----------------------------------------------------
+// Méthode : AdGibierHTMLPhotoTimbrePoste
+// Description
+// Méthode qui écrit le HTML d'une page AsaDia gibier
+//  avec 2 photos timbre poste
+// ----------------------------------------------------
+C_LONGINT:C283($LDia; $LLes; $TailleMaxN; $LargeurPhotoN; $LargeurBlocN; $NumImageN)
 
 $NumImageN:=$1
 $NumImage:=String:C10($NumImageN)
 $Largeur:=$2
 $PhotoUnique:=(Count parameters:C259=3)
-$LDia:=Find in array:C230(<>TbDiaposNumOrdreDiapos;$NumImageN)
-$LLes:=Find in array:C230(<>TbLesionsNomLesion;<>TbDiaposNomLesion{$LDia})
+$LDia:=Find in array:C230(<>TbDiaposNumOrdreDiapos; $NumImageN)
+$LLes:=Find in array:C230(<>TbLesionsNomLesion; <>TbDiaposNomLesion{$LDia})
 $NomLésion:=<>TbDiaposNomLesion{$LDia}
 $NomMotif:=<>TbDiaposMotifSaisieDGAL{$LDia}
 $DiapoLiée:=<>TbDiaposRefPhotoLiéesGibier{$LDia}
 $NomOrgane:=<>TbDiaposOrgane{$LDia}
 $NomEspece:=<>TbDiaposEspece{$LDia}
-$Commentaire:=Replace string:C233(<>TbDiaposComF{$LDia};<>ZCR;"<br />")
-$Commentaire:=Replace string:C233($Commentaire;" . ";"<br />")
-$NPCDia:=Replace string:C233(<>TbDiaposNPC{$LDia};<>ZCR;"<br />")
-$NPCLésion:=Replace string:C233(<>TbLesionsNPC{$LLes};<>ZCR;"<br />")
+$Commentaire:=Replace string:C233(<>TbDiaposComF{$LDia}; <>ZCR; "<br />")
+$Commentaire:=Replace string:C233($Commentaire; " . "; "<br />")
+$NPCDia:=Replace string:C233(<>TbDiaposNPC{$LDia}; <>ZCR; "<br />")
+$NPCLésion:=Replace string:C233(<>TbLesionsNPC{$LLes}; <>ZCR; "<br />")
 $NPCFinal:=(Num:C11($NPCDia="")*$NPCLésion)+(Num:C11($NPCDia#"")*$NPCDia)
-$FR:=Replace string:C233(<>TbLesionsFicheReflexe{$LLes};<>ZCR;"<br />")
-$FR:=Replace string:C233($FR;" . ";"<br />")
-$Reglementation:=Replace string:C233(<>TbLesionsReglementUE{$LLes};<>ZCR;"<br />")
+$FR:=Replace string:C233(<>TbLesionsFicheReflexe{$LLes}; <>ZCR; "<br />")
+$FR:=Replace string:C233($FR; " . "; "<br />")
+$Reglementation:=Replace string:C233(<>TbLesionsReglementUE{$LLes}; <>ZCR; "<br />")
 $THTML:="<!DOCTYPE html>"+<>ZCR
 $THTML:=$THTML+"<html>"+<>ZCR
 $THTML:=$THTML+"  <head>"+<>ZCR
@@ -54,7 +54,7 @@ $THTML:=$THTML+"    </div>"+<>ZCR
 
 $LargeurN:=Num:C11($Largeur)
 
-$TailleMaxN:=OB Get:C1224(<>TbDiaposObjetDiapo{$LDia};"MaxDim";Est un entier long:K8:6)
+$TailleMaxN:=OB Get:C1224(<>TbDiaposObjetDiapo{$LDia}; "MaxDim"; Est un entier long:K8:6)
 $TailleMaxA:=String:C10($TailleMaxN)
 If ($PhotoUnique)
 	$LargeurBlocN:=$LargeurN-90
@@ -74,12 +74,12 @@ End if
 $LargeurCorpsadg:=String:C10((2*$LargeurBlocN)+60)+"px"
 
 $THTML:=$THTML+"    <div id="+<>ZGuil+"corpsadg"+<>ZGuil+" width="+<>ZGuil+$LargeurCorpsadg+<>ZGuil+">"+<>ZCR
-$Triplette:=Uppercase:C13($NomLésion[[1]])+Substring:C12($NomLésion;2)+" sur "+Lowercase:C14($NomOrgane)+" de "+Lowercase:C14($NomEspece)
+$Triplette:=Uppercase:C13($NomLésion[[1]])+Substring:C12($NomLésion; 2)+" sur "+Lowercase:C14($NomOrgane)+" de "+Lowercase:C14($NomEspece)
 $THTML:=$THTML+"        <p class="+<>ZGuil+"adtitrepage"+<>ZGuil+">"+$Triplette+"</p>"+<>ZCR
 
 $CDImage:="PhotosAsaDia/"
 
-  // Bloc 1 = image cliquée
+// Bloc 1 = image cliquée
 
 $THTML:=$THTML+"        <div id="+<>ZGuil+"bloc1"+<>ZGuil+" class="+<>ZGuil+"blocphotogibier"+<>ZGuil+" width="+<>ZGuil+$LargeurBlocA+<>ZGuil+" taillemax="+<>ZGuil+$TailleMaxA+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"          <img src="+<>ZGuil+$CDImage+$NumImage+"r.jpg"+<>ZGuil+" alt="+<>ZGuil+"photo 1"+<>ZGuil+" id="+<>ZGuil+"photo1"+<>ZGuil+" width="+<>ZGuil+$LargeurBlocA+<>ZGuil+"/>"+<>ZCR
@@ -91,16 +91,16 @@ $THTML:=$THTML+"         </div>"+<>ZCR
 $THTML:=$THTML+"        </div>"+<>ZCR2
 
 If ($PhotoUnique=False:C215)
-	  // Bloc2 = image associée
-	$LDia:=Find in array:C230(<>TbDiaposRefPhotoPrincipaleGibie;$DiapoLiée)
+	// Bloc2 = image associée
+	$LDia:=Find in array:C230(<>TbDiaposRefPhotoPrincipaleGibie; $DiapoLiée)
 	$NumImage:=String:C10(<>TbDiaposNumOrdreDiapos{$LDia})
-	$LLes:=Find in array:C230(<>TbLesionsNomLesion;<>TbDiaposNomLesion{$LDia})
+	$LLes:=Find in array:C230(<>TbLesionsNomLesion; <>TbDiaposNomLesion{$LDia})
 	$NomOrgane:=<>TbDiaposOrgane{$LDia}
 	$Commentaire:=<>TbDiaposComF{$LDia}
 	$LargeurN:=Num:C11($Largeur)
 	$LargeurBlocN:=($LargeurN-60)/2
 	$LargeurBlocA:=String:C10($LargeurBlocN)+"px"
-	$TailleMaxN:=OB Get:C1224(<>TbDiaposObjetDiapo{$LDia};"MaxDim";Est un entier long:K8:6)
+	$TailleMaxN:=OB Get:C1224(<>TbDiaposObjetDiapo{$LDia}; "MaxDim"; Est un entier long:K8:6)
 	$TailleMaxA:=String:C10($TailleMaxN)
 	If ($LargeurBlocN>$TailleMaxN)
 		$LargeurBlocN:=$TailleMaxN

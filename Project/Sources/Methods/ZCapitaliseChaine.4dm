@@ -1,29 +1,29 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : Association QualiSoft
-  // Date et heure : 07/05/18, 16:22:57
-  // ----------------------------------------------------
-  // Paramètres
-  // $1 = Chaine à traiter retournée dans $Chaine
-  // $2 = Type de traitement (Entier long)
-  // {$3} = Longueur minimale des mots à capitaliser (0 par défaut)
-  // ----------------------------------------------------
-  // Méthode : ZBaseTraiteChaine
-  // Description
-  //  Récupéré initialement de Pole Contact, Mimosa
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : Association QualiSoft
+// Date et heure : 07/05/18, 16:22:57
+// ----------------------------------------------------
+// Paramètres
+// $1 = Chaine à traiter retournée dans $Chaine
+// $2 = Type de traitement (Entier long)
+// {$3} = Longueur minimale des mots à capitaliser (0 par défaut)
+// ----------------------------------------------------
+// Méthode : ZBaseTraiteChaine
+// Description
+//  Récupéré initialement de Pole Contact, Mimosa
 
-  //  Valeurs possibles pour $2 
-  //   1 = Enlever les espaces devant
-  //   2 = Enlever les espaces après
-  //   3 = Enlever les espaces devant et après
-  //   4 = Capitalisation de la première de chaque mot
-  //   8 = Suppression des espaces redoublés
-  //   15 = Tous les traitements
+//  Valeurs possibles pour $2 
+//   1 = Enlever les espaces devant
+//   2 = Enlever les espaces après
+//   3 = Enlever les espaces devant et après
+//   4 = Capitalisation de la première de chaque mot
+//   8 = Suppression des espaces redoublés
+//   15 = Tous les traitements
 
 
-C_TEXT:C284($1;$Chaine;$Chaine)
-C_LONGINT:C283($2;$3;$i;$n;$Position)
-C_BOOLEAN:C305($SupprimerEspacesAvant;$SupprimerEspacesApres;$CapitaliserPremiereLettre;$TesterLongueurMinimale;$TraiterEspacesRedondant)
+C_TEXT:C284($1; $Chaine; $Chaine)
+C_LONGINT:C283($2; $3; $i; $n; $Position)
+C_BOOLEAN:C305($SupprimerEspacesAvant; $SupprimerEspacesApres; $CapitaliserPremiereLettre; $TesterLongueurMinimale; $TraiterEspacesRedondant)
 
 $TesterLongueurMinimale:=(Count parameters:C259=3)
 $Position:=-10000  //Valeur absurde
@@ -44,16 +44,16 @@ If ($Chaine#"")
 	
 	If ($TraiterEspacesRedondant)
 		Repeat 
-			$Chaine:=Replace string:C233($Chaine;"  ";" ")  //Suppression des espaces redoublés
-		Until (Position:C15("  ";$Chaine)=0)
+			$Chaine:=Replace string:C233($Chaine; "  "; " ")  //Suppression des espaces redoublés
+		Until (Position:C15("  "; $Chaine)=0)
 	End if   //$TraiterEspacesRedondant
 	
 	$n:=Length:C16($Chaine)
 	
 	If ($SupprimerEspacesAvant)
-		For ($i;1;$n)
+		For ($i; 1; $n)
 			If ($Chaine[[$i]]#" ")
-				$Chaine:=Substring:C12($Chaine;$i)
+				$Chaine:=Substring:C12($Chaine; $i)
 				$i:=$n
 			End if 
 		End for 
@@ -67,7 +67,7 @@ If ($Chaine#"")
 			$n:=$n-1
 		Until ($Chaine[[$n]]#" ")
 		
-		$Chaine:=Substring:C12($Chaine;2;$n-1)  //On ne prend pas en compte *
+		$Chaine:=Substring:C12($Chaine; 2; $n-1)  //On ne prend pas en compte *
 	End if   //$SupprimerEspacesApres
 	
 	If ($CapitaliserPremiereLettre)
@@ -77,7 +77,7 @@ If ($Chaine#"")
 			$Chaine:=Lowercase:C14($Chaine)  //Tout en minuscules par défaut
 			$Chaine[[1]]:=Uppercase:C13($Chaine[[1]])  //Première lettre en majuscules
 			
-			For ($i;2;$n-1)  //Pour chaque lettre
+			For ($i; 2; $n-1)  //Pour chaque lettre
 				If ($Chaine[[$i]]=" ")  //Espace
 					If ($TesterLongueurMinimale)
 						If (($i-$Position)<=$3)  //Mot trop court (test toujours faux au premier passage)

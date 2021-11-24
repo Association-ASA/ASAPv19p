@@ -1,5 +1,5 @@
 If (ZdDNL#0)
-	DiaInsèreLésion 
+	DiaInsèreLésion
 Else 
 	ALERT:C41("Désignez la lésion à insérer")
 End if 

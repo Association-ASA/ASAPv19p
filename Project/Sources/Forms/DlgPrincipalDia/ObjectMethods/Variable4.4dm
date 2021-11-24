@@ -1,1 +1,1 @@
-DiaMAJSplash 
+DiaMAJSplash

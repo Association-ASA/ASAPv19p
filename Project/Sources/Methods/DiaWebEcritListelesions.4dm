@@ -1,35 +1,35 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 30/03/16, 13:37:26
-  // ----------------------------------------------------
-  // Méthode : WebEcritListelesions              
-  // Description
-  // Fonction qui écrit le critère de lésion dans la diagnose
-  //  Liste DGAL pour la France et Liste ENV les estrangers
-  // Paramètres : $1=langue  {$2) existe restreint le tableau affiché à $2->
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 30/03/16, 13:37:26
+// ----------------------------------------------------
+// Méthode : WebEcritListelesions              
+// Description
+// Fonction qui écrit le critère de lésion dans la diagnose
+//  Liste DGAL pour la France et Liste ENV les estrangers
+// Paramètres : $1=langue  {$2) existe restreint le tableau affiché à $2->
+// ----------------------------------------------------
 
 $Langue:=$1
-C_LONGINT:C283($Salé;$FT)
-ARRAY TEXT:C222($TbNLLC;0)
+C_LONGINT:C283($Salé; $FT)
+ARRAY TEXT:C222($TbNLLC; 0)
 If ($Langue#"F")
 	$PtTbRef:=Get pointer:C304("<>TbNL"+$Langue)
-	COPY ARRAY:C226($PtTbRef->;$TbNLLC)
+	COPY ARRAY:C226($PtTbRef->; $TbNLLC)
 Else 
 	If (Count parameters:C259=2)
 		C_POINTER:C301($2)
-		COPY ARRAY:C226($2->;$TbNLLC)
+		COPY ARRAY:C226($2->; $TbNLLC)
 	Else 
-		COPY ARRAY:C226(<>TbMotifLibelleMotifSaisieDGAL;$TbNLLC)
+		COPY ARRAY:C226(<>TbMotifLibelleMotifSaisieDGAL; $TbNLLC)
 	End if 
 End if 
 
-SORT ARRAY:C229($TbNLLC;>)
+SORT ARRAY:C229($TbNLLC; >)
 $THTML:=""
 $FT:=Size of array:C274($TbNLLC)
-For ($Salé;1;$FT)
+For ($Salé; 1; $FT)
 	If ($TbNLLC{$Salé}#"")
 		$THTML:=$THTML+"            <option class="+<>ZGuil+"changerequete"+<>ZGuil+">"+$TbNLLC{$Salé}+"</option>"+<>ZCR
 	End if 

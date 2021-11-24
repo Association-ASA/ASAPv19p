@@ -1,20 +1,20 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : MBPASA2015
-  // Date et heure : 24/09/21, 10:30:21
-  // ----------------------------------------------------
-  // Méthode : DiaWebAbouleOrganesSains
-  // Description
-  // Méthode qui écrit le HTML de la page
-  //   des organes sains
-  // ----------------------------------------------------
-C_LONGINT:C283($Salé;$FT)
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : MBPASA2015
+// Date et heure : 24/09/21, 10:30:21
+// ----------------------------------------------------
+// Méthode : DiaWebAbouleOrganesSains
+// Description
+// Méthode qui écrit le HTML de la page
+//   des organes sains
+// ----------------------------------------------------
+C_LONGINT:C283($Salé; $FT)
 
 $Langue:="F"
 $Titre:="Organes sains"
 $THTML:=$Titre+"£P9£"
 $NomPDF:="Organes sainsF"+$Langue
-  //$THTML:=$THTML+DiaWebCreationHTMLAide ($Langue;1;$NomPDF)+"<br /><br />"
+//$THTML:=$THTML+DiaWebCreationHTMLAide ($Langue;1;$NomPDF)+"<br /><br />"
 $THTML:=$THTML+"   <p class="+<>ZGuil+"adtitrepage"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"     <br />Anatomie des organes sains"+<>ZCR
 $THTML:=$THTML+"   </p>"+<>ZCR
@@ -27,12 +27,12 @@ $THTML:=$THTML+"      <img src="+<>ZGuil+"images/FAQ.png"+<>ZGuil+" id="+<>ZGuil
 $THTML:=$THTML+"    </a>"+<>ZCR
 $THTML:=$THTML+"  </div>"+<>ZCR
 $THTML:=$THTML+"  <div id="+<>ZGuil+"faqcontenu"+<>ZGuil+"></div>"+<>ZCR
-  // $THTML:=$THTML+"   <form method="+<>ZGuil+"post"+<>ZGuil+" action="+<>ZGuil+"PageGibiercegeheme@wanadoo.fr"+<>ZGuil+">"+<>ZCR
-  //$THTML:=$THTML+"     <input id="+<>ZGuil+"flagA"+<>ZGuil+" width="+<>ZGuil+"30px"+<>ZGuil+" type="+<>ZGuil+"image"+<>ZGuil+" src="+<>ZGuil+"images/Icone Gibier.jpg"+<>ZGuil+" alt="+<>ZGuil+"Aller sur la page diagnose gibier"+<>ZGuil+" title="+<>ZGuil+"Aller sur la page diagnose gibier"+<>ZGuil+">"+<>ZCR
-  //$THTML:=$THTML+"   </form> "+<>ZCR
+// $THTML:=$THTML+"   <form method="+<>ZGuil+"post"+<>ZGuil+" action="+<>ZGuil+"PageGibiercegeheme@wanadoo.fr"+<>ZGuil+">"+<>ZCR
+//$THTML:=$THTML+"     <input id="+<>ZGuil+"flagA"+<>ZGuil+" width="+<>ZGuil+"30px"+<>ZGuil+" type="+<>ZGuil+"image"+<>ZGuil+" src="+<>ZGuil+"images/Icone Gibier.jpg"+<>ZGuil+" alt="+<>ZGuil+"Aller sur la page diagnose gibier"+<>ZGuil+" title="+<>ZGuil+"Aller sur la page diagnose gibier"+<>ZGuil+">"+<>ZCR
+//$THTML:=$THTML+"   </form> "+<>ZCR
 $THTML:=$THTML+"      <br />"+<>ZCR
-QUERY:C277([DiaData:45];[DiaData:45]XType:5="OrganeSainGibier";*)
-QUERY:C277([DiaData:45]; & [DiaData:45]XAlpha:14="Sanglier")
+QUERY:C277([DiaData:45]; [DiaData:45]XType:5="OrganeSainGibier"; *)
+QUERY:C277([DiaData:45];  & [DiaData:45]XAlpha:14="Sanglier")
 $THTML:=$THTML+"    <div id="+<>ZGuil+"pavespeceorgane"+<>ZGuil+" class="+<>ZGuil+"pavespeceorgane"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"     <p class="+<>ZGuil+"choixcritere"+<>ZGuil+">Choisissez l'espèce</p>"+<>ZCR
 $THTML:=$THTML+"        <div class="+<>ZGuil+"cac2"+<>ZGuil+">"+<>ZCR
@@ -48,10 +48,10 @@ $THTML:=$THTML+"        </div>"+<>ZCR2
 $THTML:=$THTML+"       <p class="+<>ZGuil+"choixcritere"+<>ZGuil+">Choisissez l'organe</p>"+<>ZCR
 $THTML:=$THTML+"        <div class="+<>ZGuil+"cac2"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"          <p class="+<>ZGuil+"cac"+<>ZGuil+" id="+<>ZGuil+"organe"+<>ZGuil+">"+<>ZCR
-DISTINCT VALUES:C339([DiaData:45]XTexte:7;$TbOrgane)
-SORT ARRAY:C229($TbOrgane;>)
+DISTINCT VALUES:C339([DiaData:45]XTexte:7; $TbOrgane)
+SORT ARRAY:C229($TbOrgane; >)
 $FT:=Size of array:C274($TbOrgane)
-For ($Salé;1;$FT)
+For ($Salé; 1; $FT)
 	$Checked:=Num:C11($TbOrgane{$Salé}="Foie")*(" checked="+<>ZGuil+""+<>ZGuil)
 	$THTML:=$THTML+"           <input type="+<>ZGuil+"radio"+<>ZGuil+" class="+<>ZGuil+"casorg"+<>ZGuil+" id="+<>ZGuil+"anato"+$TbOrgane{$Salé}+<>ZGuil
 	$THTML:=$THTML+" name="+<>ZGuil+"organe"+<>ZGuil+$Checked+" />"+$TbOrgane{$Salé}+"<br />"+<>ZCR
@@ -61,8 +61,8 @@ $THTML:=$THTML+"        </div>"+<>ZCR2
 $THTML:=$THTML+"    </div>"+<>ZCR2  // fin de div id="pavespeceorgane"
 
 $THTML:=$THTML+"    <div id="+<>ZGuil+"pavephotos"+<>ZGuil+" class="+<>ZGuil+"pavephotos"+<>ZGuil+">"+<>ZCR
-QUERY SELECTION:C341([DiaData:45];[DiaData:45]XTexte:7="Foie")
+QUERY SELECTION:C341([DiaData:45]; [DiaData:45]XTexte:7="Foie")
 
-$THTML:=$THTML+DiaEcritHTMLPhotoOrganeSain 
+$THTML:=$THTML+DiaEcritHTMLPhotoOrganeSain
 $THTML:=$THTML+"    </div>"+<>ZCR
 WEB SEND TEXT:C677($THTML)

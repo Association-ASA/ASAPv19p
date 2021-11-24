@@ -320,7 +320,7 @@ If ($OC)
 	End if 
 	
 	
-	LISTBOX SELECT ROW:C912(*; "Lb_Tableaux"; 0; lk remove from selection:K53:3)
+	LISTBOX SELECT ROW:C912(*; "Lb_Tableaux"; 0; lk supprimer de sélection:K53:3)
 	ZNbEnr:=Size of array:C274(TbPerNum)
 	ZFenetreActualiseTitre
 End if 

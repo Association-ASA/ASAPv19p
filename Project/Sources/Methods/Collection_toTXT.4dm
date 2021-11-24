@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedSoap":false,"publishedWeb":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false}
+//%attributes = {"invisible":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedSoap":false,"publishedWeb":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false,"lang":"fr"}
 // PM: "collectionToTxt"
 
 C_COLLECTION:C1488($col; $1)
@@ -21,15 +21,15 @@ End if
 If (Count parameters:C259>2)  // $3 or automatic standard timeInfo
 	$timeInfo:=$3
 Else 
-	$timeInfo:=String:C10(Current date:C33; System date long:K1:3)+" "+Lowercase:C14(String:C10(Current time:C178; HH MM AM PM:K7:5))
+	$timeInfo:=String:C10(Current date:C33; Système date long:K1:3)+" "+Lowercase:C14(String:C10(Current time:C178; h mn Matin Après Midi:K7:5))
 End if 
 
 ON ERR CALL:C155("BASE_noERROR")
 C_TEXT:C284($lineBreak)
 If (Is macOS:C1572)
-	$lineBreak:=Char:C90(Line feed:K15:40)
+	$lineBreak:=Char:C90(Retour à la ligne:K15:40)
 Else 
-	$lineBreak:=Char:C90(Carriage return:K15:38)+Char:C90(Line feed:K15:40)
+	$lineBreak:=Char:C90(Retour chariot:K15:38)+Char:C90(Retour à la ligne:K15:40)
 End if 
 
 $srcTxtStart:=""
@@ -53,7 +53,7 @@ $colReplace.push(New object:C1471("from"; "\n"; "to"; " "))
 $headRowTxt:=""
 $colKeys:=New collection:C1472
 If ($col.length>0)
-	If (Value type:C1509($col[0])=Is object:K8:27)
+	If (Value type:C1509($col[0])=Est un objet:K8:27)
 		$colKeys:=OB Keys:C1719($col[0])
 	End if 
 End if 
@@ -63,7 +63,7 @@ If ($colKeys.length>0)
 	$rowSuffix:=""
 	$cellPrefix:="\""
 	$cellSuffix:="\""
-	$cellSeparator:=Char:C90(Tab:K15:37)
+	$cellSeparator:=Char:C90(Tabulation:K15:37)
 	$rowSeparator:=$lineBreak
 	$headRowTxt:=$rowPrefix+$cellPrefix+$colKeys.join($cellSuffix+$cellSeparator+$cellPrefix)+$cellSuffix+$rowSuffix+$rowSeparator
 End if 
@@ -72,7 +72,7 @@ $rowPrefix:=""
 $rowSuffix:=""
 $cellPrefix:="\""
 $cellSuffix:="\""
-$cellSeparator:=Char:C90(Tab:K15:37)
+$cellSeparator:=Char:C90(Tabulation:K15:37)
 $rowSeparator:=$lineBreak
 If ($colKeys.length>0)
 	$colBodyRow:=$col.map("colMapJoin"; $rowPrefix; $rowSuffix; $cellPrefix; $cellSuffix; $cellSeparator; $colReplace; $colKeys)

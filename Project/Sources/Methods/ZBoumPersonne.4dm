@@ -1,13 +1,13 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : iMacASA2017
-  // Date et heure : 25/02/19, 05:09:02
-  // ----------------------------------------------------
-  // Méthode : ZBoumPersonne
-  // Description
-  // Méthode qui assure la destruction des enregistrements 
-  // des tables périphériques liées à la personne détruite 
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : iMacASA2017
+// Date et heure : 25/02/19, 05:09:02
+// ----------------------------------------------------
+// Méthode : ZBoumPersonne
+// Description
+// Méthode qui assure la destruction des enregistrements 
+// des tables périphériques liées à la personne détruite 
+// ----------------------------------------------------
 $LE:=Read only state:C362([Personnes:12])
 
 READ WRITE:C146(*)
@@ -74,7 +74,7 @@ Else
 		DELETE SELECTION:C66([WebConnexions:13])
 		DELETE SELECTION:C66([CampagneParticipations:17])
 	End if 
-	ZAmnistieInternationale 
+	ZAmnistieInternationale
 	If ($LE=False:C215)
 		READ WRITE:C146([Personnes:12])
 	End if 

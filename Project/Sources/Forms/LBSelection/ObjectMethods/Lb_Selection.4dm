@@ -4,10 +4,10 @@ Case of
 		If (ZModif)
 			MODIFY RECORD:C57(ZPtTable->)  //permet par double-clic de modifier l'enregistrement
 		Else 
-			C_LONGINT:C283($C;$L)
-			LISTBOX GET CELL POSITION:C971(*;"Lb_Balance";$C;$L)
-			GOTO SELECTED RECORD:C245(ZPtTable->;$L)
-			DIALOG:C40(ZPtTable->;ZNomForEntrée)  //permet par double-clic de visualiser l'enregistrement
+			C_LONGINT:C283($C; $L)
+			LISTBOX GET CELL POSITION:C971(*; "Lb_Balance"; $C; $L)
+			GOTO SELECTED RECORD:C245(ZPtTable->; $L)
+			DIALOG:C40(ZPtTable->; ZNomForEntrée)  //permet par double-clic de visualiser l'enregistrement
 		End if 
 		
 End case 

@@ -5,7 +5,7 @@ Case of
 		Annee2:=Num:C11(Year of:C25(Current date:C33)-1)
 		Annee1:=Num:C11(Year of:C25(Current date:C33)-2)
 		
-		  // Initialisation des variables du tableau
+		// Initialisation des variables du tableau
 		TotalFRP1:=0
 		TotalFRP2:=0
 		TotalFRP3:=0
@@ -54,16 +54,16 @@ Case of
 		NumFacEditeG2:=0
 		NumFacEditeG3:=0
 		
-		$Millesime3:=Substring:C12(String:C10(Annee3);3;2)
-		$Millesime2:=Substring:C12(String:C10(Annee2);3;2)
-		$Millesime1:=Substring:C12(String:C10(Annee1);3;2)
+		$Millesime3:=Substring:C12(String:C10(Annee3); 3; 2)
+		$Millesime2:=Substring:C12(String:C10(Annee2); 3; 2)
+		$Millesime1:=Substring:C12(String:C10(Annee1); 3; 2)
 		
-		For ($Fumé;1;6)
-			ARRAY TEXT:C222($TbNumFacNonPaye;0)
-			ARRAY TEXT:C222($TbFacEditées;0)
-			ARRAY TEXT:C222($TbFacImpayéesFR;0)
-			ARRAY TEXT:C222($TbFacImpayéesET;0)
-			ARRAY TEXT:C222($TbFacImpayéesOM;0)
+		For ($Fumé; 1; 6)
+			ARRAY TEXT:C222($TbNumFacNonPaye; 0)
+			ARRAY TEXT:C222($TbFacEditées; 0)
+			ARRAY TEXT:C222($TbFacImpayéesFR; 0)
+			ARRAY TEXT:C222($TbFacImpayéesET; 0)
+			ARRAY TEXT:C222($TbFacImpayéesOM; 0)
 			
 			$TotalImpayéFRG:=0
 			$TotalImpayéETG:=0
@@ -93,16 +93,16 @@ Case of
 				$TotalOMP:=Get pointer:C304("TotalOMP"+String:C10($fumé))
 				$RCT:="RT"
 			End if 
-			QUERY:C277([Factures:15];[Factures:15]NumFacture:3=($Millesime->+"/"+$RCT+"@"))
-			SELECTION TO ARRAY:C260([Factures:15]NumFacture:3;$TbNumFacture;[Factures:15]Regle:12;$TbReglé;[Factures:15]TotalTTC:10;$TbTotalTTC;[Factures:15]UUIDPersonne:2;$TbUUIDPer;[Factures:15]LocalitePays:16;$TbLocalitePays)
+			QUERY:C277([Factures:15]; [Factures:15]NumFacture:3=($Millesime->+"/"+$RCT+"@"))
+			SELECTION TO ARRAY:C260([Factures:15]NumFacture:3; $TbNumFacture; [Factures:15]Regle:12; $TbReglé; [Factures:15]TotalTTC:10; $TbTotalTTC; [Factures:15]UUIDPersonne:2; $TbUUIDPer; [Factures:15]LocalitePays:16; $TbLocalitePays)
 			$TT:=Size of array:C274($TbNumFacture)
-			For ($salé;1;$TT)
-				$L:=Find in array:C230($TbNumFacture;$TbNumFacture{$Salé}+"A")
+			For ($salé; 1; $TT)
+				$L:=Find in array:C230($TbNumFacture; $TbNumFacture{$Salé}+"A")
 				Case of 
-						  //: ($L<0) & ($TbNumFacture{$Salé}#"@D") & ($TbNumFacture{$Salé}#"@A") & ($TbReglé{$salé}=Faux)
-						  //AJOUTER À TABLEAU($TbNumFacNonPaye;$TbNumFacture{$Salé})
+						//: ($L<0) & ($TbNumFacture{$Salé}#"@D") & ($TbNumFacture{$Salé}#"@A") & ($TbReglé{$salé}=Faux)
+						//AJOUTER À TABLEAU($TbNumFacNonPaye;$TbNumFacture{$Salé})
 					: ($L<0) & ($TbNumFacture{$Salé}#"@D") & ($TbNumFacture{$Salé}#"@A") & ($TbReglé{$salé}=False:C215) & ($TbLocalitePays{$salé}="France")
-						APPEND TO ARRAY:C911($TbFacImpayéesFR;$TbNumFacture{$Salé})
+						APPEND TO ARRAY:C911($TbFacImpayéesFR; $TbNumFacture{$Salé})
 						If ($fumé>3)
 							$TotalImpayéFRG:=$TotalImpayéFRG+$TbTotalTTC{$salé}
 						Else 
@@ -110,7 +110,7 @@ Case of
 						End if 
 						
 					: ($L<0) & ($TbNumFacture{$Salé}#"@D") & ($TbNumFacture{$Salé}#"@A") & ($TbReglé{$salé}=False:C215) & ($TbLocalitePays{$salé}="Etrangers")
-						APPEND TO ARRAY:C911($TbFacImpayéesET;$TbNumFacture{$Salé})
+						APPEND TO ARRAY:C911($TbFacImpayéesET; $TbNumFacture{$Salé})
 						If ($fumé>3)
 							$TotalImpayéETG:=$TotalImpayéETG+$TbTotalTTC{$salé}
 						Else 
@@ -118,7 +118,7 @@ Case of
 						End if 
 						
 					: ($L<0) & ($TbNumFacture{$Salé}#"@D") & ($TbNumFacture{$Salé}#"@A") & ($TbReglé{$salé}=False:C215) & ($TbLocalitePays{$salé}="Outre Mer")
-						APPEND TO ARRAY:C911($TbFacImpayéesOM;$TbNumFacture{$Salé})
+						APPEND TO ARRAY:C911($TbFacImpayéesOM; $TbNumFacture{$Salé})
 						If ($fumé>3)
 							$TotalImpayéOMG:=$TotalImpayéOMG+$TbTotalTTC{$salé}
 						Else 
@@ -127,7 +127,7 @@ Case of
 						
 				End case 
 				If ($L<0) & ($TbNumFacture{$Salé}#"@D") & ($TbNumFacture{$Salé}#"@A")
-					APPEND TO ARRAY:C911($TbFacEditées;$TbNumFacture{$Salé})
+					APPEND TO ARRAY:C911($TbFacEditées; $TbNumFacture{$Salé})
 				End if 
 			End for 
 			$NumFacEdite->:=Size of array:C274($TbFacEditées)

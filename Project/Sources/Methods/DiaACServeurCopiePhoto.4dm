@@ -1,15 +1,15 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : iMacASA2017
-  // Date et heure : 18/04/20, 07:00:15
-  // ----------------------------------------------------
-  // Méthode : DiaServeurCopiePhoto
-  // Description
-  // Méthode qui fait copier par le serveur 
-  //  la photo dont le n° est passé en paramètre
-  // Paramètres : N° de la photo (numérique)
-  // ----------------------------------------------------
-C_LONGINT:C283($1;$NumPhotoN)
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : iMacASA2017
+// Date et heure : 18/04/20, 07:00:15
+// ----------------------------------------------------
+// Méthode : DiaServeurCopiePhoto
+// Description
+// Méthode qui fait copier par le serveur 
+//  la photo dont le n° est passé en paramètre
+// Paramètres : N° de la photo (numérique)
+// ----------------------------------------------------
+C_LONGINT:C283($1; $NumPhotoN)
 If (Application type:C494=4D mode distant:K5:5)
 	ALERT:C41("Cette méthode est à exécuter sur le serveur...")
 Else 
@@ -30,25 +30,25 @@ Else
 		
 		
 		
-		  // Copie de la photo principale
+		// Copie de la photo principale
 		$Cible:=<>PermCheDossierAsaDiaWeb+String:C10($1)+".jpg"
 		If (Test path name:C476($Cible)=Est un document:K24:1)
 			DELETE DOCUMENT:C159($Cible)
 		End if 
-		COPY DOCUMENT:C541($SourceIG;$Cible)
+		COPY DOCUMENT:C541($SourceIG; $Cible)
 		
-		  // Copie de la grande imagette
+		// Copie de la grande imagette
 		$Cible:=<>PermCheDossierAsaDiaWeb+String:C10($1)+"i.jpg"
 		If (Test path name:C476($Cible)=Est un document:K24:1)
 			DELETE DOCUMENT:C159($Cible)
 		End if 
-		COPY DOCUMENT:C541($SourceGI;$Cible)
+		COPY DOCUMENT:C541($SourceGI; $Cible)
 		
-		  // Copie de la petite imagette
+		// Copie de la petite imagette
 		$Cible:=<>PermCheDossierAsaDiaWeb+String:C10($1)+"is.jpg"
 		If (Test path name:C476($Cible)=Est un document:K24:1)
 			DELETE DOCUMENT:C159($Cible)
 		End if 
-		COPY DOCUMENT:C541($SourcePI;$Cible)
+		COPY DOCUMENT:C541($SourcePI; $Cible)
 	End if 
 End if 

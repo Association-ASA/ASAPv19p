@@ -1,6 +1,6 @@
-//%attributes = {"publishedWeb":true}
-  // ZFinirEnBeauté V11 du 09/08/2010
-  //  permet d'éviter de quitter brutalement
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+// ZFinirEnBeauté V11 du 09/08/2010
+//  permet d'éviter de quitter brutalement
 
 ON EVENT CALL:C190("")
 
@@ -25,7 +25,7 @@ Case of
 		$LStartingProcess:=4
 End case 
 
-For ($i;$LStartingProcess;$LNumberOfProcesses)
+For ($i; $LStartingProcess; $LNumberOfProcesses)
 	$LProcessState:=Process state:C330($i)
 	Case of 
 		: ($LProcessState=Suspendu:K13:6)
@@ -35,7 +35,7 @@ For ($i;$LStartingProcess;$LNumberOfProcesses)
 			RESUME PROCESS:C320($i)
 	End case 
 End for 
-ZAmnistieInternationale 
+ZAmnistieInternationale
 
 FLUSH CACHE:C297  //Cela ne peut pas faire de mal
 

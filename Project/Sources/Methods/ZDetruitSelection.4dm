@@ -1,7 +1,7 @@
-//%attributes = {"publishedWeb":true}
-  // ZDestroyListe V11 du 14/08/2010
-  //  MP de destruction de la sélection affichée
-  //  Utilise ZAdieuSélection
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+// ZDestroyListe V11 du 14/08/2010
+//  MP de destruction de la sélection affichée
+//  Utilise ZAdieuSélection
 
 C_LONGINT:C283($FT)
 If (ZSupprime)
@@ -18,7 +18,7 @@ If (ZSupprime)
 			If (OK=1)
 				CONFIRM:C162("Etait-il à jeun ??!")
 				If (OK=1)
-					ZAdieuSel 
+					ZAdieuSel
 				End if 
 			End if 
 		End if 

@@ -1,9 +1,9 @@
-//%attributes = {"publishedWeb":true}
-  //ZCouleurFeu
-  // V11 du 10/08/2010
-  //Retourne la couleur (Verte ou Bleu) du feu correspondant à $1
-  //$1 : Champ concerné
-  // {$2} : si existe vrai = Date; Faux = Numérique  sinon texte
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+//ZCouleurFeu
+// V11 du 10/08/2010
+//Retourne la couleur (Verte ou Bleu) du feu correspondant à $1
+//$1 : Champ concerné
+// {$2} : si existe vrai = Date; Faux = Numérique  sinon texte
 
 C_PICTURE:C286($0)
 C_BOOLEAN:C305($2)

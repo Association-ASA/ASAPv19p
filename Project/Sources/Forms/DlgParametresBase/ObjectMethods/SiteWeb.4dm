@@ -1,1 +1,1 @@
-OPEN URL:C673((OBJECT Get pointer:C1124(Objet nommé:K67:5;"WebSite"))->)
+OPEN URL:C673((OBJECT Get pointer:C1124(Objet nommé:K67:5; "WebSite"))->)

@@ -1,8 +1,8 @@
-//%attributes = {"publishedWeb":true}
-  // RepereLesObjets
-For ($salé;1;4)
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+// RepereLesObjets
+For ($salé; 1; 4)
 	$NomFleche:=String:C10($Salé)+"1"
-	OBJECT GET COORDINATES:C663(*;$NomFleche;Fgauche;Fhaut;Fdroite;Fbas)
+	OBJECT GET COORDINATES:C663(*; $NomFleche; Fgauche; Fhaut; Fdroite; Fbas)
 	Case of 
 		: ($Salé=1)  // fleche à droite
 			YBF:=-(Fhaut+((Fbas-Fhaut)/2))
@@ -26,9 +26,9 @@ For ($salé;1;4)
 	TbO{$Salé}:=String:C10(XBF)+" "+String:C10(YBF)
 End for 
 
-For ($salé;1;4)
+For ($salé; 1; 4)
 	$NomFleche:=String:C10($Salé)+"1V"
-	OBJECT GET COORDINATES:C663(*;$NomFleche;Fgauche;Fhaut;Fdroite;Fbas)
+	OBJECT GET COORDINATES:C663(*; $NomFleche; Fgauche; Fhaut; Fdroite; Fbas)
 	Case of 
 		: ($Salé=1)  // fleche à droite
 			YBF:=-(Fhaut+((Fbas-Fhaut)/2))

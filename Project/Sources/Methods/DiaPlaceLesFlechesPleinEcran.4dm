@@ -1,8 +1,8 @@
-//%attributes = {}
-  // PlaceLesFlechesPleinEcran
+//%attributes = {"lang":"fr"}
+// PlaceLesFlechesPleinEcran
 If (LesFlechesSontLà)  //
-	DiaReplaceLesFlechesPleinEcran 
+	DiaReplaceLesFlechesPleinEcran
 Else 
-	DiaReplaceLesFlechesPleinEcran 
-	DiaMetsLesFlechesPleinEcran 
+	DiaReplaceLesFlechesPleinEcran
+	DiaMetsLesFlechesPleinEcran
 End if 

@@ -1,4 +1,4 @@
-C_OBJECT:C1216($status;$email)
+C_OBJECT:C1216($status; $email)
 
 $Menu:="Mail confirmation colis supp;Mail confirmation boîtes iso"
 $VarChoixUtilisateur:=Pop up menu:C542($Menu)
@@ -7,18 +7,18 @@ $VarChoixUtilisateur:=Pop up menu:C542($Menu)
 Case of 
 	: $VarChoixUtilisateur=1  // Envoi confirmation colis supp
 		$Année:=Year of:C25(Current date:C33)
-		$NumCampagneMars:=RaemaTrouveNumCampagneParAn ($Année;1)
-		$NumCampagneOctobre:=RaemaTrouveNumCampagneParAn ($Année;3)
+		$NumCampagneMars:=RaemaTrouveNumCampagneParAn($Année; 1)
+		$NumCampagneOctobre:=RaemaTrouveNumCampagneParAn($Année; 3)
 		
-		QUERY:C277([CampagneParticipations:17];[CampagneParticipations:17]UUIDPersonne:2=[Personnes:12]UUID:1;*)
-		QUERY:C277([CampagneParticipations:17]; & [CampagneParticipations:17]NumCampagne:3=$NumCampagneMars)
-		$NumColisSuppARMars:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5;"NbreColisSupAvecRapport"))
-		$NumColisSuppSRMars:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5;"NbreColisSupSansRapport"))
+		QUERY:C277([CampagneParticipations:17]; [CampagneParticipations:17]UUIDPersonne:2=[Personnes:12]UUID:1; *)
+		QUERY:C277([CampagneParticipations:17];  & [CampagneParticipations:17]NumCampagne:3=$NumCampagneMars)
+		$NumColisSuppARMars:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5; "NbreColisSupAvecRapport"))
+		$NumColisSuppSRMars:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5; "NbreColisSupSansRapport"))
 		
-		QUERY:C277([CampagneParticipations:17];[CampagneParticipations:17]UUIDPersonne:2=[Personnes:12]UUID:1;*)
-		QUERY:C277([CampagneParticipations:17]; & [CampagneParticipations:17]NumCampagne:3=$NumCampagneOctobre)
-		$NumColisSuppAROctobre:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5;"NbreColisSupAvecRapport"))
-		$NumColisSuppSROctobre:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5;"NbreColisSupSansRapport"))
+		QUERY:C277([CampagneParticipations:17]; [CampagneParticipations:17]UUIDPersonne:2=[Personnes:12]UUID:1; *)
+		QUERY:C277([CampagneParticipations:17];  & [CampagneParticipations:17]NumCampagne:3=$NumCampagneOctobre)
+		$NumColisSuppAROctobre:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5; "NbreColisSupAvecRapport"))
+		$NumColisSuppSROctobre:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5; "NbreColisSupSansRapport"))
 		
 		If ($NumColisSuppARMars+$NumColisSuppSRMars+$NumColisSuppAROctobre+$NumColisSuppSROctobre)>0
 			$MailDevis:=""
@@ -45,16 +45,16 @@ Case of
 			End if 
 			$MailDevis:=$MailDevis+<>ZCR+"Restant à votre disposition."+<>ZCR+"Cordialement,"+<>ZCR2+"L'équipe de l'ASA"
 			
-			$AdEmail:=OB Get:C1224([Personnes:12]Arguments:7;"EMail";Est un texte:K8:3)
+			$AdEmail:=OB Get:C1224([Personnes:12]Arguments:7; "EMail"; Est un texte:K8:3)
 			$AdEmails:=Request:C163("Le mail va être envoyé à "+$AdEmail+". Ajouter des destinataires ou laisser cette case vide. Séparer les adresses par une virgule. Si vous annulez, le texte sera copié dans le press papier.")
 			If (OK=1)
 				$Sujet:="Confirmation de commande de colis supplémentaires"
 				$email:=New object:C1471
-				$transporter:=ASAPCreationtransporter 
+				$transporter:=ASAPCreationtransporter
 				$email.from:="asa-spv@wanadoo.fr"
 				$email.subject:=$Sujet
 				$email.to:="asa-spv@wanadoo.fr,"+$AdEmail+","+$AdEmails
-				  //$email.to:="riouall.eloise@orange.fr"
+				//$email.to:="riouall.eloise@orange.fr"
 				$email.textBody:=$MailDevis
 				$status:=$transporter.send($email)  // Envoi du message
 				MailOK:=($status.success)
@@ -70,16 +70,16 @@ Case of
 	: $VarChoixUtilisateur=2  // Envoi confirmation boîtes isothermes
 		
 		$Année:=Year of:C25(Current date:C33)
-		$NumCampagneMars:=RaemaTrouveNumCampagneParAn ($Année;1)
-		$NumCampagneOctobre:=RaemaTrouveNumCampagneParAn ($Année;3)
+		$NumCampagneMars:=RaemaTrouveNumCampagneParAn($Année; 1)
+		$NumCampagneOctobre:=RaemaTrouveNumCampagneParAn($Année; 3)
 		
-		QUERY:C277([CampagneParticipations:17];[CampagneParticipations:17]UUIDPersonne:2=[Personnes:12]UUID:1;*)
-		QUERY:C277([CampagneParticipations:17]; & [CampagneParticipations:17]NumCampagne:3=$NumCampagneMars)
-		$BoiteIsoMars:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5;"BoîteIsotherme"))
+		QUERY:C277([CampagneParticipations:17]; [CampagneParticipations:17]UUIDPersonne:2=[Personnes:12]UUID:1; *)
+		QUERY:C277([CampagneParticipations:17];  & [CampagneParticipations:17]NumCampagne:3=$NumCampagneMars)
+		$BoiteIsoMars:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5; "BoîteIsotherme"))
 		
-		QUERY:C277([CampagneParticipations:17];[CampagneParticipations:17]UUIDPersonne:2=[Personnes:12]UUID:1;*)
-		QUERY:C277([CampagneParticipations:17]; & [CampagneParticipations:17]NumCampagne:3=$NumCampagneOctobre)
-		$BoiteIsoOctobre:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5;"BoîteIsotherme"))
+		QUERY:C277([CampagneParticipations:17]; [CampagneParticipations:17]UUIDPersonne:2=[Personnes:12]UUID:1; *)
+		QUERY:C277([CampagneParticipations:17];  & [CampagneParticipations:17]NumCampagne:3=$NumCampagneOctobre)
+		$BoiteIsoOctobre:=Num:C11(OB Get:C1224([CampagneParticipations:17]Arguments:5; "BoîteIsotherme"))
 		
 		If ($BoiteIsoMars+$BoiteIsoOctobre)>0
 			$MailDevis:=""
@@ -97,16 +97,16 @@ Case of
 			
 			$MailDevis:=$MailDevis+<>ZCR+"Restant à votre disposition."+<>ZCR+"Cordialement,"+<>ZCR2+"L'équipe de l'ASA"
 			
-			$AdEmail:=OB Get:C1224([Personnes:12]Arguments:7;"EMail";Est un texte:K8:3)
+			$AdEmail:=OB Get:C1224([Personnes:12]Arguments:7; "EMail"; Est un texte:K8:3)
 			$AdEmails:=Request:C163("Le mail va être envoyé à "+$AdEmail+". Ajouter des destinataires ou laisser cette case vide. Séparer les adresses par une virgule. Si vous annulez, le texte sera copié dans le press papier.")
 			If (OK=1)
 				$Sujet:="Confirmation de commande de colis supplémentaires"
 				$email:=New object:C1471
-				$transporter:=ASAPCreationtransporter 
+				$transporter:=ASAPCreationtransporter
 				$email.from:="asa-spv@wanadoo.fr"
 				$email.subject:=$Sujet
 				$email.to:="asa-spv@wanadoo.fr,"+$AdEmail+","+$AdEmails
-				  //$email.to:="riouall.eloise@orange.fr"
+				//$email.to:="riouall.eloise@orange.fr"
 				$email.textBody:=$MailDevis
 				$status:=$transporter.send($email)  // Envoi du message
 				MailOK:=($status.success)

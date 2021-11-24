@@ -1,4 +1,4 @@
-DiaSimuleLienAlpha (->[DiaLesions:44]NomLesion:1;->[Diapositives:40]NomLesion:4;False:C215;"")
+DiaSimuleLienAlpha(->[DiaLesions:44]NomLesion:1; ->[Diapositives:40]NomLesion:4; False:C215; "")
 [Diapositives:40]GrandTypeLesionnel:5\
 :=\
 [DiaLesions:44]GrandTypeLesionnel:2\
@@ -30,9 +30,9 @@ DiaSimuleLienAlpha (->[DiaLesions:44]NomLesion:1;->[Diapositives:40]NomLesion:4;
 _O_ARRAY STRING:C218\
 (\
 80\
-;\
+; \
 ZdDNLR\
-;\
+; \
 0\
 )\
 
@@ -45,7 +45,7 @@ $Rang\
 Position:C15\
 (\
 <>ZCR\
-;\
+; \
 $NPC\
 )\
 
@@ -56,17 +56,17 @@ $Rang\
 0\
 )\
 
-	ZAjoutLigne \
+	ZAjoutLigne\
 		(\
 		->\
 		ZdDNLR\
-		;\
+		; \
 		Substring:C12\
 		(\
 		$NPC\
-		;\
+		; \
 		1\
-		;\
+		; \
 		$Rang\
 		-\
 		1\
@@ -78,11 +78,11 @@ $Rang\
 		Substring:C12\
 		(\
 		$NPC\
-		;\
+		; \
 		$Rang\
 		+\
 		1\
-		;\
+		; \
 		10000\
 		)\
 		
@@ -91,7 +91,7 @@ $Rang\
 		Position:C15\
 		(\
 		<>ZCR\
-		;\
+		; \
 		$NPC\
 		)\
 		
@@ -109,26 +109,26 @@ VarSaisieNomLésion\
 :=\
 [DiaLesions:44]LesionsApparentees:10\
 
-  // plaçons le PUM Hiérarchique sur la valeur choisie
+// plaçons le PUM Hiérarchique sur la valeur choisie
 For \
 (\
 $salé\
-;\
+; \
 1\
-;\
+; \
 1000\
 )\
 
 	GET LIST ITEM:C378\
 		(\
 		LTL\
-		;\
+		; \
 		$Salé\
-		;\
+		; \
 		NumElément\
-		;\
+		; \
 		TextElément\
-		;\
+		; \
 		RefSousListe\
 		)\
 		
@@ -142,20 +142,20 @@ $salé\
 		For \
 			(\
 			$fumé\
-			;\
+			; \
 			1\
-			;\
+			; \
 			1000\
 			)\
 			
 			GET LIST ITEM:C378\
 				(\
 				RefSousListe\
-				;\
+				; \
 				$fumé\
-				;\
+				; \
 				NumSElément\
-				;\
+				; \
 				TextSElément\
 				)\
 				
@@ -185,7 +185,7 @@ End for \
 SELECT LIST ITEMS BY REFERENCE:C630\
 (\
 LTL\
-;\
+; \
 NumSElément\
 )\
 

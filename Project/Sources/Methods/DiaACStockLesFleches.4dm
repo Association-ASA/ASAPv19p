@@ -1,28 +1,28 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : iMacASA2017
-  // Date et heure : 19/04/20, 09:18:17
-  // ----------------------------------------------------
-  // Méthode : AntichambreStockLesFleches
-  // Description
-  // Méthode qui stocke les changements opérés
-  //  sur la page 2 de Antichambre 2
-  // Paramètre : aucun
-  // ----------------------------------------------------
-CONFIRM:C162("Désirez-vous enregistrer les modifications ????";"Oui c'est bien ça";"Mais, non")
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : iMacASA2017
+// Date et heure : 19/04/20, 09:18:17
+// ----------------------------------------------------
+// Méthode : AntichambreStockLesFleches
+// Description
+// Méthode qui stocke les changements opérés
+//  sur la page 2 de Antichambre 2
+// Paramètre : aucun
+// ----------------------------------------------------
+CONFIRM:C162("Désirez-vous enregistrer les modifications ????"; "Oui c'est bien ça"; "Mais, non")
 If (OK=1)
-	  // Stockage des flèches
-	  //repérage des flèches
-	For ($Salé;1;4)
+	// Stockage des flèches
+	//repérage des flèches
+	For ($Salé; 1; 4)
 		TbTb{$Salé}:=""
 		$NomFleche:=String:C10($Salé)+"1"
 		$Pt:=Get pointer:C304("VarC"+$NomFleche)
 		$PtA:=Get pointer:C304("VarC"+$NomFleche+"A")
-		OBJECT GET COORDINATES:C663(*;$NomFleche;Fgauche;Fhaut;Fdroite;Fbas)
-		OBJECT GET COORDINATES:C663(VarImage;FgaucheI;FhautI;FdroiteI;FbasI)
+		OBJECT GET COORDINATES:C663(*; $NomFleche; Fgauche; Fhaut; Fdroite; Fbas)
+		OBJECT GET COORDINATES:C663(VarImage; FgaucheI; FhautI; FdroiteI; FbasI)
 		$LargeurPhoto:=FdroiteI-FgaucheI
 		$HauteurPhoto:=FbasI-FhautI
-		  //déduisons les proportions des coordonnées du bout de la fleche
+		//déduisons les proportions des coordonnées du bout de la fleche
 		If (FBas<Bas)  // La flèche est dans le cadre
 			Case of 
 				: (VarImageFleche=0)  // Flèche pointe à droite
@@ -49,10 +49,10 @@ If (OK=1)
 		End if 
 		
 	End for 
-	ZVariableVersBlob (->[Diapositives:40]BlobFleches:21;->TbTb;->TbLHT;->TbTCa)
+	ZVariableVersBlob(->[Diapositives:40]BlobFleches:21; ->TbTb; ->TbLHT; ->TbTCa)
 	[Diapositives:40]DiapoCommentaire:26:=(BLOB size:C605([Diapositives:40]BlobFleches:21)>0)
 	
-	  // le commentaire de la photographie
+	// le commentaire de la photographie
 	[Diapositives:40]Commentaires:7:=VarComDia
 	SAVE RECORD:C53([Diapositives:40])
 	

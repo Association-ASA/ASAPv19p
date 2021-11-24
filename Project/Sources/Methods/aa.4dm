@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 //$ValeurCourante:="@cuire@"
 
 //QUERY([Personnes]; [PersonnesAdresses]LigneAdresse1=$ValeurCourante; *)

@@ -1,6 +1,6 @@
 If (BouCadenas=1)
 	READ WRITE:C146(*)
 Else 
-	ZAmnistieInternationale 
+	ZAmnistieInternationale
 End if 
-QuizzAfficheLeQuestionnaire (PUMQuestionnaire)
+QuizzAfficheLeQuestionnaire(PUMQuestionnaire)

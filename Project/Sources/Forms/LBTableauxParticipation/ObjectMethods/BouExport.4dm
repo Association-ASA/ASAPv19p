@@ -1,8 +1,8 @@
 $Menu:="Export Chrono ASA;Export Chrono ADILVA;Export Chrono Etranger;Export DHL"
 $VarChoixUtilisateur:=Pop up menu:C542($Menu)
 
-ARRAY TEXT:C222($TbLaboASA;0)
-ARRAY TEXT:C222($TbUUIDPersonne;0)
+ARRAY TEXT:C222($TbLaboASA; 0)
+ARRAY TEXT:C222($TbUUIDPersonne; 0)
 If (PUMNumCampagneSuivi{PUMNumCampagneSuivi}="@A")
 	$RAEMAGel:=True:C214
 	$RAEMAPoudre:=False:C215
@@ -13,17 +13,17 @@ End if
 
 Case of 
 	: $VarChoixUtilisateur=1  // Export Chrono ASA
-		QUERY:C277([Personnes:12];[CampagneParticipations:17]NumCampagne:3=PUMNumCampagneSuivi{PUMNumCampagneSuivi};*)
-		QUERY BY ATTRIBUTE:C1331([Personnes:12]; & ;[Personnes:12]Arguments:7;"Association";#;"Adilva@";*)  // Pas l'ADILVA
-		QUERY BY ATTRIBUTE:C1331([Personnes:12]; & ;[CampagneParticipations:17]Arguments:5;"Transporteur";=;"Chronopost@";*)
-		QUERY:C277([Personnes:12]; & [PersonnesAdresses:11]Pays:8="France")
-		SELECTION TO ARRAY:C260([Personnes:12]UUID:1;$TbUUIDPersonne)
+		QUERY:C277([Personnes:12]; [CampagneParticipations:17]NumCampagne:3=PUMNumCampagneSuivi{PUMNumCampagneSuivi}; *)
+		QUERY BY ATTRIBUTE:C1331([Personnes:12];  & ; [Personnes:12]Arguments:7; "Association"; #; "Adilva@"; *)  // Pas l'ADILVA
+		QUERY BY ATTRIBUTE:C1331([Personnes:12];  & ; [CampagneParticipations:17]Arguments:5; "Transporteur"; =; "Chronopost@"; *)
+		QUERY:C277([Personnes:12];  & [PersonnesAdresses:11]Pays:8="France")
+		SELECTION TO ARRAY:C260([Personnes:12]UUID:1; $TbUUIDPersonne)
 		$TT:=Size of array:C274($TbUUIDPersonne)
 		$Rapport:=""
-		For ($Salé;1;$TT)
-			$NumLabo:=ASAPTrouveNumeroLaboParUUID ($TbUUIDPersonne{$Salé})
+		For ($Salé; 1; $TT)
+			$NumLabo:=ASAPTrouveNumeroLaboParUUID($TbUUIDPersonne{$Salé})
 			$IdentifiantParticip:=$NumLabo+"_"+PUMNumCampagneSuivi{PUMNumCampagneSuivi}+"_"
-			$L:=Find in array:C230(<>TbLotoIdentifiantParticipation;$IdentifiantParticip)
+			$L:=Find in array:C230(<>TbLotoIdentifiantParticipation; $IdentifiantParticip)
 			$BoiteIso:=<>TbLotoBoiteIsotherme{$L}*"BI"
 			If (<>TbLotoTransporteur{$L}="Chronopost10")
 				$CodeChrono:="2"
@@ -37,11 +37,11 @@ Case of
 					$ColisCS:=""
 				End if 
 				
-				  //Si (<>TbLotoNbColisPoudreSR{$L}>1) | (<>TbLotoNbColisPoudreAR{$L}>1)
-				  //$ColisCS:="CSCS"
-				  //Sinon 
-				  //$ColisCS:=""
-				  //Fin de si 
+				//Si (<>TbLotoNbColisPoudreSR{$L}>1) | (<>TbLotoNbColisPoudreAR{$L}>1)
+				//$ColisCS:="CSCS"
+				//Sinon 
+				//$ColisCS:=""
+				//Fin de si 
 				
 				If (<>TbLotoSansPathogene{$L}=True:C214)
 					$SansPatho:="SP"
@@ -76,13 +76,13 @@ Case of
 				$PoidsColis:=3
 			End if 
 			
-			  //Si ($ColisCS="CSCS")
-			  //$PoidsColis:=5
-			  //Fin de si 
+			//Si ($ColisCS="CSCS")
+			//$PoidsColis:=5
+			//Fin de si 
 			
-			$L2:=Find in array:C230(<>TbPerUUID;$TbUUIDPersonne{$Salé})
+			$L2:=Find in array:C230(<>TbPerUUID; $TbUUIDPersonne{$Salé})
 			$Pays:=<>TbPerAdrLivPays{$L2}
-			$L4:=Find in array:C230(<>TbNomPays;$Pays)
+			$L4:=Find in array:C230(<>TbNomPays; $Pays)
 			If ($L4>0)
 				$VarCodepays:=<>TbCodeIsoASA{$L4}
 			Else 
@@ -98,18 +98,18 @@ Case of
 		ALERT:C41("L'export a été copié dans votre presse papier. Il ne vous reste plus qu'à le coller dans le fichier Chronospost")
 		
 	: $VarChoixUtilisateur=2  // Export Chrono ADILVA
-		QUERY:C277([Personnes:12];[CampagneParticipations:17]NumCampagne:3=PUMNumCampagneSuivi{PUMNumCampagneSuivi};*)
-		QUERY BY ATTRIBUTE:C1331([Personnes:12]; & ;[Personnes:12]Arguments:7;"Association";=;"Adilva@";*)  // l'ADILVA
-		QUERY BY ATTRIBUTE:C1331([Personnes:12]; & ;[CampagneParticipations:17]Arguments:5;"Transporteur";=;"Chronopost@";*)
-		QUERY:C277([Personnes:12]; & [PersonnesAdresses:11]Pays:8="France")
+		QUERY:C277([Personnes:12]; [CampagneParticipations:17]NumCampagne:3=PUMNumCampagneSuivi{PUMNumCampagneSuivi}; *)
+		QUERY BY ATTRIBUTE:C1331([Personnes:12];  & ; [Personnes:12]Arguments:7; "Association"; =; "Adilva@"; *)  // l'ADILVA
+		QUERY BY ATTRIBUTE:C1331([Personnes:12];  & ; [CampagneParticipations:17]Arguments:5; "Transporteur"; =; "Chronopost@"; *)
+		QUERY:C277([Personnes:12];  & [PersonnesAdresses:11]Pays:8="France")
 		
-		SELECTION TO ARRAY:C260([Personnes:12]UUID:1;$TbUUIDPersonne)
+		SELECTION TO ARRAY:C260([Personnes:12]UUID:1; $TbUUIDPersonne)
 		$TT:=Size of array:C274($TbUUIDPersonne)
 		$Rapport:=""
-		For ($Salé;1;$TT)
-			$NumLabo:=ASAPTrouveNumeroLaboParUUID ($TbUUIDPersonne{$Salé})
+		For ($Salé; 1; $TT)
+			$NumLabo:=ASAPTrouveNumeroLaboParUUID($TbUUIDPersonne{$Salé})
 			$IdentifiantParticip:=$NumLabo+"_"+PUMNumCampagneSuivi{PUMNumCampagneSuivi}+"_"
-			$L:=Find in array:C230(<>TbLotoIdentifiantParticipation;$IdentifiantParticip)
+			$L:=Find in array:C230(<>TbLotoIdentifiantParticipation; $IdentifiantParticip)
 			$BoiteIso:=<>TbLotoBoiteIsotherme{$L}*"BI"
 			If (<>TbLotoTransporteur{$L}="Chronopost10")
 				$CodeChrono:="2"
@@ -123,11 +123,11 @@ Case of
 				Else 
 					$ColisCS:=""
 				End if 
-				  //Si (<>TbLotoNbColisPoudreSR{$L}>1) | (<>TbLotoNbColisPoudreAR{$L}>1)
-				  //$ColisCS:="CSCS"
-				  //Sinon 
-				  //$ColisCS:=""
-				  //Fin de si 
+				//Si (<>TbLotoNbColisPoudreSR{$L}>1) | (<>TbLotoNbColisPoudreAR{$L}>1)
+				//$ColisCS:="CSCS"
+				//Sinon 
+				//$ColisCS:=""
+				//Fin de si 
 			End if 
 			
 			If ($RAEMAGel)
@@ -152,16 +152,16 @@ Case of
 				: ($BoiteIso="BI@")
 					$PoidsColis:=8
 					
-					  //: ($ColisCS="CSCS")
-					  //$PoidsColis:=5
+					//: ($ColisCS="CSCS")
+					//$PoidsColis:=5
 					
 				: ($ColisCS="CS")
 					$PoidsColis:=3
 			End case 
 			
-			$L2:=Find in array:C230(<>TbPerUUID;$TbUUIDPersonne{$Salé})
+			$L2:=Find in array:C230(<>TbPerUUID; $TbUUIDPersonne{$Salé})
 			$Pays:=<>TbPerAdrLivPays{$L2}
-			$L4:=Find in array:C230(<>TbNomPays;$Pays)
+			$L4:=Find in array:C230(<>TbNomPays; $Pays)
 			If ($L4>0)
 				$VarCodepays:=<>TbCodeIsoASA{$L4}
 			Else 
@@ -171,7 +171,7 @@ Case of
 			
 			
 		End for 
-		$L3:=Find in array:C230(<>TbPerUUID;"894F58BDDADB445C9B4723EBF222A4B2")
+		$L3:=Find in array:C230(<>TbPerUUID; "894F58BDDADB445C9B4723EBF222A4B2")
 		$Rapport:=$Rapport+"ADIL"+String:C10($TT+1)+<>ZTAB+<>TbPerNomLong{$L3}+<>ZTAB+<>ZTAB+<>TbPerAdrLivAd2{$L3}+<>ZTAB+<>TbPerAdrLivAd3{$L3}+<>ZTAB+<>TbPerAdrLivCP{$L3}+<>ZTAB+<>TbPerAdrLivVille{$L3}+<>ZTAB+("0"+<>TbPAPhonePro{$L3})+<>ZTAB+<>TbPAEmailLivraison{$L3}+<>ZTAB+<>TbPANomContact{$L3}+<>ZTAB+<>ZTAB+"FR"+<>ZTAB+<>ZTAB+<>ZTAB+<>ZTAB+"13"+<>ZTAB+"1"+<>ZTAB+"1S"+<>ZCR
 		
 		SET TEXT TO PASTEBOARD:C523($Rapport)
@@ -180,18 +180,18 @@ Case of
 		
 	: $VarChoixUtilisateur=3  // Export Chrono Etranger
 		
-		QUERY:C277([Personnes:12];[CampagneParticipations:17]NumCampagne:3=PUMNumCampagneSuivi{PUMNumCampagneSuivi};*)
-		  //CHERCHER PAR ATTRIBUT([Personnes]; & ;[Personnes]Arguments;"Association";#;"Adilva";*)  // Pas l'ADILVA
-		QUERY BY ATTRIBUTE:C1331([Personnes:12]; & ;[CampagneParticipations:17]Arguments:5;"Transporteur";=;"Chronopost@";*)
-		QUERY:C277([Personnes:12]; & [PersonnesAdresses:11]Pays:8#"";*)
-		QUERY:C277([Personnes:12]; & [PersonnesAdresses:11]Pays:8#"FRANCE")
-		SELECTION TO ARRAY:C260([Personnes:12]UUID:1;$TbUUIDPersonne)
+		QUERY:C277([Personnes:12]; [CampagneParticipations:17]NumCampagne:3=PUMNumCampagneSuivi{PUMNumCampagneSuivi}; *)
+		//CHERCHER PAR ATTRIBUT([Personnes]; & ;[Personnes]Arguments;"Association";#;"Adilva";*)  // Pas l'ADILVA
+		QUERY BY ATTRIBUTE:C1331([Personnes:12];  & ; [CampagneParticipations:17]Arguments:5; "Transporteur"; =; "Chronopost@"; *)
+		QUERY:C277([Personnes:12];  & [PersonnesAdresses:11]Pays:8#""; *)
+		QUERY:C277([Personnes:12];  & [PersonnesAdresses:11]Pays:8#"FRANCE")
+		SELECTION TO ARRAY:C260([Personnes:12]UUID:1; $TbUUIDPersonne)
 		$TT:=Size of array:C274($TbUUIDPersonne)
 		$Rapport:=""
-		For ($Salé;1;$TT)
-			$NumLabo:=ASAPTrouveNumeroLaboParUUID ($TbUUIDPersonne{$Salé})
+		For ($Salé; 1; $TT)
+			$NumLabo:=ASAPTrouveNumeroLaboParUUID($TbUUIDPersonne{$Salé})
 			$IdentifiantParticip:=$NumLabo+"_"+PUMNumCampagneSuivi{PUMNumCampagneSuivi}+"_"
-			$L:=Find in array:C230(<>TbLotoIdentifiantParticipation;$IdentifiantParticip)
+			$L:=Find in array:C230(<>TbLotoIdentifiantParticipation; $IdentifiantParticip)
 			$BoiteIso:=<>TbLotoBoiteIsotherme{$L}*"BI"
 			If ($RAEMAPoudre)
 				If (<>TbLotoNbColisPoudreSR{$L}>0) | (<>TbLotoNbColisPoudreAR{$L}>0)
@@ -199,11 +199,11 @@ Case of
 				Else 
 					$ColisCS:=""
 				End if 
-				  //Si (<>TbLotoNbColisPoudreSR{$L}>1) | (<>TbLotoNbColisPoudreAR{$L}>1)
-				  //$ColisCS:="CSCS"
-				  //Sinon 
-				  //$ColisCS:=""
-				  //Fin de si 
+				//Si (<>TbLotoNbColisPoudreSR{$L}>1) | (<>TbLotoNbColisPoudreAR{$L}>1)
+				//$ColisCS:="CSCS"
+				//Sinon 
+				//$ColisCS:=""
+				//Fin de si 
 			End if 
 			
 			If ($RAEMAGel)
@@ -228,16 +228,16 @@ Case of
 				: ($BoiteIso="BI@")
 					$PoidsColis:=8
 					
-					  //: ($ColisCS="CSCS")
-					  //$PoidsColis:=5
+					//: ($ColisCS="CSCS")
+					//$PoidsColis:=5
 					
 				: ($ColisCS="CS")
 					$PoidsColis:=3
 			End case 
 			
-			$L2:=Find in array:C230(<>TbPerUUID;$TbUUIDPersonne{$Salé})
+			$L2:=Find in array:C230(<>TbPerUUID; $TbUUIDPersonne{$Salé})
 			$Pays:=<>TbPerAdrLivPays{$L2}
-			$L4:=Find in array:C230(<>TbNomPays;$Pays)
+			$L4:=Find in array:C230(<>TbNomPays; $Pays)
 			If ($L4>0)
 				$VarCodepays:=<>TbCodeIsoASA{$L4}
 			Else 
@@ -252,16 +252,16 @@ Case of
 		ALERT:C41("L'export a été copié dans votre presse papier. Il ne vous reste plus qu'à le coller dans le fichier Chronospost")
 		
 	: $VarChoixUtilisateur=4  // Export DHL
-		QUERY:C277([Personnes:12];[CampagneParticipations:17]NumCampagne:3=PUMNumCampagneSuivi{PUMNumCampagneSuivi};*)
-		  // CHERCHER PAR ATTRIBUT([Personnes]; & ;[Personnes]Arguments;"Association";#;"Adilva";*)  // Pas l'ADILVA
-		QUERY BY ATTRIBUTE:C1331([Personnes:12]; & ;[CampagneParticipations:17]Arguments:5;"Transporteur";=;"DHL@")
-		SELECTION TO ARRAY:C260([Personnes:12]UUID:1;$TbUUIDPersonne)
+		QUERY:C277([Personnes:12]; [CampagneParticipations:17]NumCampagne:3=PUMNumCampagneSuivi{PUMNumCampagneSuivi}; *)
+		// CHERCHER PAR ATTRIBUT([Personnes]; & ;[Personnes]Arguments;"Association";#;"Adilva";*)  // Pas l'ADILVA
+		QUERY BY ATTRIBUTE:C1331([Personnes:12];  & ; [CampagneParticipations:17]Arguments:5; "Transporteur"; =; "DHL@")
+		SELECTION TO ARRAY:C260([Personnes:12]UUID:1; $TbUUIDPersonne)
 		$TT:=Size of array:C274($TbUUIDPersonne)
 		$Rapport:=""
-		For ($Salé;1;$TT)
-			$NumLabo:=ASAPTrouveNumeroLaboParUUID ($TbUUIDPersonne{$Salé})
+		For ($Salé; 1; $TT)
+			$NumLabo:=ASAPTrouveNumeroLaboParUUID($TbUUIDPersonne{$Salé})
 			$IdentifiantParticip:=$NumLabo+"_"+PUMNumCampagneSuivi{PUMNumCampagneSuivi}+"_"
-			$L:=Find in array:C230(<>TbLotoIdentifiantParticipation;$IdentifiantParticip)
+			$L:=Find in array:C230(<>TbLotoIdentifiantParticipation; $IdentifiantParticip)
 			$BoiteIso:=<>TbLotoBoiteIsotherme{$L}*"BI"
 			If ($RAEMAPoudre)
 				If (<>TbLotoNbColisPoudreSR{$L}>0) | (<>TbLotoNbColisPoudreAR{$L}>0)
@@ -269,11 +269,11 @@ Case of
 				Else 
 					$ColisCS:=""
 				End if 
-				  //Si (<>TbLotoNbColisPoudreSR{$L}>1) | (<>TbLotoNbColisPoudreAR{$L}>1)
-				  //$ColisCS:="CSCS"
-				  //Sinon 
-				  //$ColisCS:=""
-				  //Fin de si 
+				//Si (<>TbLotoNbColisPoudreSR{$L}>1) | (<>TbLotoNbColisPoudreAR{$L}>1)
+				//$ColisCS:="CSCS"
+				//Sinon 
+				//$ColisCS:=""
+				//Fin de si 
 			End if 
 			
 			If ($RAEMAGel)
@@ -303,8 +303,8 @@ Case of
 					: ($ColisCS="CS") & ($BoiteIso="BI@")
 						$PoidsColis:=10
 						
-						  //: ($ColisCS="CSCS")
-						  //$PoidsColis:=5
+						//: ($ColisCS="CSCS")
+						//$PoidsColis:=5
 						
 					: ($ColisCS="CS")
 						$PoidsColis:=3
@@ -329,7 +329,7 @@ Case of
 				End case 
 			End if 
 			
-			$L2:=Find in array:C230(<>TbPerUUID;$TbUUIDPersonne{$Salé})
+			$L2:=Find in array:C230(<>TbPerUUID; $TbUUIDPersonne{$Salé})
 			$Pays:=<>TbPerAdrLivPays{$L2}
 			$CompteClient:="223836565"
 			If ($Pays="France")
@@ -340,15 +340,15 @@ Case of
 					$CompteClient:="963511601"
 				End if 
 			End if 
-			$L4:=Find in array:C230(<>TbNomPays;$Pays)
+			$L4:=Find in array:C230(<>TbNomPays; $Pays)
 			If ($L4>0)
 				$VarCodepays:=<>TbCodeIsoASA{$L4}
 			Else 
 				$VarCodepays:=""
 			End if 
-			  //$Rapport:=$Rapport+"Marchandises"+<>ZTAB+$CodeProduit+<>ZTAB+<>ZTAB+<>ZTAB+$CompteClient+<>ZTAB+"ECHANTILLONS POUR ANALYSES"+<>ZTAB+$CodeClientDestinataire+<>ZTAB+<>TbPerAdrLivAd1{$L2}+<>ZTAB+<>TbPANomContact{$L2}+<>ZTAB
-			  //$Rapport:=$Rapport+<>TbPerAdrLivAd2{$L2}+<>ZTAB+<>TbPerAdrLivAd3{$L2}+<>ZTAB+<>TbPerAdrLivAd4{$L2}+<>ZTAB+<>TbPerAdrLivVille{$L2}+<>ZTAB+<>TbPerAdrLivCP{$L2}+<>ZTAB+$VarCodepays+<>ZTAB+("0"+<>TbPAPhonePro{$L2})+<>ZTAB+<>TbPAEmailLivraison{$L2}+<>ZTAB
-			  //$Rapport:=$Rapport+"10"+<>ZTAB+"EUR"+<>ZTAB+"1"+<>ZTAB+Chaîne($PoidsColis)+<>ZTAB+<>ZTAB+"ECHANTILLONS POUR ANALYSES POUDRE DE LAIT"+<>ZTAB+"10"+<>ZTAB+"FR"+<>ZTAB+"PROFORMA"+<>ZCR
+			//$Rapport:=$Rapport+"Marchandises"+<>ZTAB+$CodeProduit+<>ZTAB+<>ZTAB+<>ZTAB+$CompteClient+<>ZTAB+"ECHANTILLONS POUR ANALYSES"+<>ZTAB+$CodeClientDestinataire+<>ZTAB+<>TbPerAdrLivAd1{$L2}+<>ZTAB+<>TbPANomContact{$L2}+<>ZTAB
+			//$Rapport:=$Rapport+<>TbPerAdrLivAd2{$L2}+<>ZTAB+<>TbPerAdrLivAd3{$L2}+<>ZTAB+<>TbPerAdrLivAd4{$L2}+<>ZTAB+<>TbPerAdrLivVille{$L2}+<>ZTAB+<>TbPerAdrLivCP{$L2}+<>ZTAB+$VarCodepays+<>ZTAB+("0"+<>TbPAPhonePro{$L2})+<>ZTAB+<>TbPAEmailLivraison{$L2}+<>ZTAB
+			//$Rapport:=$Rapport+"10"+<>ZTAB+"EUR"+<>ZTAB+"1"+<>ZTAB+Chaîne($PoidsColis)+<>ZTAB+<>ZTAB+"ECHANTILLONS POUR ANALYSES POUDRE DE LAIT"+<>ZTAB+"10"+<>ZTAB+"FR"+<>ZTAB+"PROFORMA"+<>ZCR
 			
 			$Rapport:=$Rapport+<>ZTAB+<>ZTAB+"P"+<>ZTAB+"10"+<>ZTAB+"EUR"+<>ZTAB+$CodeClientDestinataire+<>ZTAB+"ECHANTILLONS POUR ANALYSES"+<>ZTAB+<>ZTAB+<>TbPerAdrLivAd1{$L2}+<>ZTAB+<>TbPANomContact{$L2}+<>ZTAB
 			$Rapport:=$Rapport+<>TbPerAdrLivAd2{$L2}+<>ZTAB+<>TbPerAdrLivAd3{$L2}+<>ZTAB+<>TbPerAdrLivAd4{$L2}+<>ZTAB+<>TbPerAdrLivCP{$L2}+<>ZTAB+<>TbPerAdrLivVille{$L2}+<>ZTAB+$VarCodepays+<>ZTAB+<>ZTAB+<>ZTAB+<>ZTAB+("0"+<>TbPAPhonePro{$L2})+<>ZTAB+<>TbPAEmailLivraison{$L2}+<>ZTAB

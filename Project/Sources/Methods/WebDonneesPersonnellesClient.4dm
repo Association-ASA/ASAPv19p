@@ -1,17 +1,17 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : iMacASA2017
-  // Date et heure : 20/10/19, 07:50:07
-  // ----------------------------------------------------
-  // Méthode : WebDonneesPersonnellesClient
-  // Description
-  // 
-  //
-  // Paramètre $1 = message du Web  type "DonneesPersonnelles123"
-  //           $2 = langue choisie par l'utilisateur
-  //           $3 = UUID du laboratoire
-  //           $4 = Ligne dans les tableaux généraux des personnes
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : iMacASA2017
+// Date et heure : 20/10/19, 07:50:07
+// ----------------------------------------------------
+// Méthode : WebDonneesPersonnellesClient
+// Description
+// 
+//
+// Paramètre $1 = message du Web  type "DonneesPersonnelles123"
+//           $2 = langue choisie par l'utilisateur
+//           $3 = UUID du laboratoire
+//           $4 = Ligne dans les tableaux généraux des personnes
+// ----------------------------------------------------
 
 $Mess:=$1
 $Langue:=$2
@@ -19,7 +19,7 @@ $UUID:=$3
 $LigneTbGnxA:=$4
 
 $LigneTbGnx:=Num:C11($LigneTbGnxA)
-  // les variables utilisés dans les données personnelles
+// les variables utilisés dans les données personnelles
 VarNomPersonneContact:=<>TbPANomContact{$LigneTbGnx}
 VarAdresseLivraison:="<br  />"+<>TbPerAdrLivAd1{$LigneTbGnx}\
 +(Num:C11(<>TbPerAdrLivAd2{$LigneTbGnx}#"")*("<br  />"+<>TbPerAdrLivAd2{$LigneTbGnx}))\
@@ -39,5 +39,5 @@ VarFaxFacturation:=<>TbPAFaxPro{$LigneTbGnx}
 VarMailPersonneFacturation:=<>TbPANomContact{$LigneTbGnx}  // Voir avec CGM adresse facturation
 VarMailPersonneRapport:=<>TbPAEmailRAEMA{$LigneTbGnx}
 VarMailPersonneCommunication:=<>TbPAEMail{$LigneTbGnx}
-$THTML:=WebEspaceHTMLDonneesPerso ($Langue;$UUID)
+$THTML:=WebEspaceHTMLDonneesPerso($Langue; $UUID)
 WEB SEND TEXT:C677($THTML)

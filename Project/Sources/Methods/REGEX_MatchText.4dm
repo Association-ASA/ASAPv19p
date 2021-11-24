@@ -1,18 +1,18 @@
-//%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Method : REGEX_MatchText
-  // Created 28/09/07 by Vincent
-  // ----------------------------------------------------
-  // Description
-  // Alias "QF_REMatchText"
-  // ----------------------------------------------------
-  // Paramètres
-  // $1 = Regular expression
-  // $2 = Target text
-  // $3 = {Array of matches (Pointer)}
-  // $4 = {Regular expression flags}
-  // $0 = Error result
-  // ----------------------------------------------------
+//%attributes = {"invisible":true,"lang":"fr"}
+// ----------------------------------------------------
+// Method : REGEX_MatchText
+// Created 28/09/07 by Vincent
+// ----------------------------------------------------
+// Description
+// Alias "QF_REMatchText"
+// ----------------------------------------------------
+// Paramètres
+// $1 = Regular expression
+// $2 = Target text
+// $3 = {Array of matches (Pointer)}
+// $4 = {Regular expression flags}
+// $0 = Error result
+// ----------------------------------------------------
 
 C_LONGINT:C283($0)
 C_TEXT:C284($1)
@@ -21,19 +21,19 @@ C_POINTER:C301($3)
 C_LONGINT:C283($4)
 
 C_BOOLEAN:C305($Boo_OK)
-C_LONGINT:C283($Lon_i;$Lon_Options;$Lon_Parameters;$Lon_Size;$Lon_Start)
+C_LONGINT:C283($Lon_i; $Lon_Options; $Lon_Parameters; $Lon_Size; $Lon_Start)
 C_POINTER:C301($Ptr_Array)
-C_TEXT:C284($Txt_Buffer;$Txt_Error_Method;$Txt_Pattern;$Txt_Target)
+C_TEXT:C284($Txt_Buffer; $Txt_Error_Method; $Txt_Pattern; $Txt_Target)
 
-ARRAY LONGINT:C221($tLon_Lengths;0x0000)
-ARRAY LONGINT:C221($tLon_Positions;0x0000)
+ARRAY LONGINT:C221($tLon_Lengths; 0x0000)
+ARRAY LONGINT:C221($tLon_Positions; 0x0000)
 
 If (False:C215)
-	C_LONGINT:C283(REGEX_MatchText ;$0)
-	C_TEXT:C284(REGEX_MatchText ;$1)
-	C_TEXT:C284(REGEX_MatchText ;$2)
-	C_POINTER:C301(REGEX_MatchText ;$3)
-	C_LONGINT:C283(REGEX_MatchText ;$4)
+	C_LONGINT:C283(REGEX_MatchText; $0)
+	C_TEXT:C284(REGEX_MatchText; $1)
+	C_TEXT:C284(REGEX_MatchText; $2)
+	C_POINTER:C301(REGEX_MatchText; $3)
+	C_LONGINT:C283(REGEX_MatchText; $4)
 End if 
 
 $Lon_Parameters:=Count parameters:C259
@@ -53,7 +53,7 @@ Else
 		End if 
 	End if 
 	
-	$Txt_Pattern:=REGEX_Options ($Lon_Options)+$1
+	$Txt_Pattern:=REGEX_Options($Lon_Options)+$1
 	$Txt_Target:=$2
 	
 	If (Not:C34(Is nil pointer:C315($Ptr_Array)))
@@ -69,7 +69,7 @@ Else
 	
 	Repeat 
 		
-		$Boo_OK:=Match regex:C1019($Txt_Pattern;$Txt_Target;$Lon_Start;$tLon_Positions;$tLon_Lengths)
+		$Boo_OK:=Match regex:C1019($Txt_Pattern; $Txt_Target; $Lon_Start; $tLon_Positions; $tLon_Lengths)
 		
 		If ($Boo_OK)
 			
@@ -77,9 +77,9 @@ Else
 			
 			$Lon_Size:=Size of array:C274($tLon_Positions)
 			
-			For ($Lon_i;0;$Lon_Size;1)
+			For ($Lon_i; 0; $Lon_Size; 1)
 				
-				$Txt_Buffer:=Substring:C12($Txt_Target;$tLon_Positions{$Lon_i};$tLon_Lengths{$Lon_i})
+				$Txt_Buffer:=Substring:C12($Txt_Target; $tLon_Positions{$Lon_i}; $tLon_Lengths{$Lon_i})
 				
 				If ($tLon_Lengths{$Lon_i}=0)
 					
@@ -103,7 +103,7 @@ Else
 							
 						Else 
 							
-							APPEND TO ARRAY:C911($Ptr_Array->;$Txt_Buffer)
+							APPEND TO ARRAY:C911($Ptr_Array->; $Txt_Buffer)
 							
 						End if 
 						

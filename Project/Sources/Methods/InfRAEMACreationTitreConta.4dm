@@ -1,15 +1,15 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 27/11/16, 04:35:46
-  // ----------------------------------------------------
-  // Méthode : InfRAEMACreationTitreConta
-  // Description
-  // Crée le haut de la page de contamination
-  //
-  // Paramètre $1 = N° de campagne
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 27/11/16, 04:35:46
+// ----------------------------------------------------
+// Méthode : InfRAEMACreationTitreConta
+// Description
+// Crée le haut de la page de contamination
+//
+// Paramètre $1 = N° de campagne
+// ----------------------------------------------------
 
 $NumRaema:=$1
 $Langue:=$2

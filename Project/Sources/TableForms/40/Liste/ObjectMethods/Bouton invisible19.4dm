@@ -1,1 +1,1 @@
-ORDER BY:C49([Diapositives:40];[Diapositives:40]NomLesion:4;>)
+ORDER BY:C49([Diapositives:40]; [Diapositives:40]NomLesion:4; >)

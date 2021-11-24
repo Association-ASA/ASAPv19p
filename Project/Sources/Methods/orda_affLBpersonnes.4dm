@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 #DECLARE($es : Object)
 
 var $coll : Collection

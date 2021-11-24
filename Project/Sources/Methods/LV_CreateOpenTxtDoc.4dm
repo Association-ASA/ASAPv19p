@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedSoap":false,"publishedWeb":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false}
+//%attributes = {"invisible":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedSoap":false,"publishedWeb":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false,"lang":"fr"}
 // PM: "yCreateOpenTxtDoc" (new LV 20.05.20, 21:50:16)
 // $0 - C_BOOLEAN - Result successfully executed
 // $1 - C_TEXT - SrcTxt for document to create and open

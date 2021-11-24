@@ -1,13 +1,13 @@
-//%attributes = {}
-  // ZBaseErreurIC
-  // ******************************
-  // Créée le 22 Sep 1999 à 15:21:04
-  // Utilisateur 4D: Designer /  Machine: Mac Jean-Luc /  Possesseur: Jean-Luc Pelle
-  // $Suite :=  IC_Erreur(nroErreur;"Nom_De_La_Commande";0-1-2;"»Variable)
-  //Parametre 3 :  0 -> Pas de message
-  //             1 -> afficher une alerte
-  //            2 -> valoriser une variable
-  // ******************************
+//%attributes = {"lang":"fr"}
+// ZBaseErreurIC
+// ******************************
+// Créée le 22 Sep 1999 à 15:21:04
+// Utilisateur 4D: Designer /  Machine: Mac Jean-Luc /  Possesseur: Jean-Luc Pelle
+// $Suite :=  IC_Erreur(nroErreur;"Nom_De_La_Commande";0-1-2;"»Variable)
+//Parametre 3 :  0 -> Pas de message
+//             1 -> afficher une alerte
+//            2 -> valoriser une variable
+// ******************************
 
 C_LONGINT:C283($1)
 C_TEXT:C284($2)
@@ -18,7 +18,7 @@ If (Count parameters:C259=4)
 	$4->:=""
 End if 
 
-$ErrorTxt:=": "+IT_ErrorText ($1)
+$ErrorTxt:=": "+IT_ErrorText($1)
 Case of 
 	: ($1=0)  //Pas d errreur 
 		$0:=True:C214
@@ -38,4 +38,4 @@ Case of
 		$0:=False:C215
 		
 End case 
-  //`
+//`

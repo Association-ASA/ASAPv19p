@@ -1,3 +1,3 @@
-RapChangeColonne (->TbRapMailNonEnvoi)
+RapChangeColonne(->TbRapMailNonEnvoi)
 
 

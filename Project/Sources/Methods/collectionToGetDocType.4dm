@@ -1,12 +1,12 @@
-//%attributes = {"invisible":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedSoap":false,"publishedWeb":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false}
-  // PM: "collectionToGetDocType" (new LV 20.05.20, 22:20:43)
-  // $0 - C_TEXT - docType qualified for "collectionTo" |".html"|".csv"|".md"|".txt"|".tsv"|".xml"|".json"|
-  // $1 - C_TEXT - docType
-  // Get a document type qualified for "collectionTo"
-  // Last change: LV 20.05.20, 22:20:43
+//%attributes = {"invisible":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedSoap":false,"publishedWeb":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false,"lang":"fr"}
+// PM: "collectionToGetDocType" (new LV 20.05.20, 22:20:43)
+// $0 - C_TEXT - docType qualified for "collectionTo" |".html"|".csv"|".md"|".txt"|".tsv"|".xml"|".json"|
+// $1 - C_TEXT - docType
+// Get a document type qualified for "collectionTo"
+// Last change: LV 20.05.20, 22:20:43
 
 C_TEXT:C284($0)
-C_TEXT:C284($docType;$1)
+C_TEXT:C284($docType; $1)
 
 If (Count parameters:C259>0)
 	$docType:=$1
@@ -49,4 +49,4 @@ End case
 
 $0:=$docType
 
-  // - EOF -
+// - EOF -

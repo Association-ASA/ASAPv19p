@@ -1,29 +1,29 @@
-//%attributes = {}
-  // ResP1ConstruitP2Gel <- ResP1MF
+//%attributes = {"lang":"fr"}
+// ResP1ConstruitP2Gel <- ResP1MF
 
-C_LONGINT:C283($Salé;$FT)
-  // recherche des [CampagneGelGermes] à la campagne Gel actuelle pour le laboratoire actuel
+C_LONGINT:C283($Salé; $FT)
+// recherche des [CampagneGelGermes] à la campagne Gel actuelle pour le laboratoire actuel
 $identifiantParticipation:=NumLaboActuelA+"_"+NumCampagneActuelle+"_"
-$LigneTableauParticipation:=Find in array:C230(<>TbLotoIdentifiantParticipation;$identifiantParticipation)
+$LigneTableauParticipation:=Find in array:C230(<>TbLotoIdentifiantParticipation; $identifiantParticipation)
 
 If ($LigneTableauParticipation<0)
 	$Test:=NumLaboActuelA+"_"+NumCampagneActuelle
-	$LigneTableauParticipation:=Find in array:C230(<>TbLotoNumLaboRapportCampagne;$Test)
+	$LigneTableauParticipation:=Find in array:C230(<>TbLotoNumLaboRapportCampagne; $Test)
 	
 	If ($LigneTableauParticipation>0)
-		$pos:=Position:C15("_";<>TbLotoNumLaboRapportCampagne{$LigneTableauParticipation})
-		NumLaboActuelA:=Substring:C12(<>TbLotoNumLaboRapportCampagne{$LigneTableauParticipation};1;($pos-1))
+		$pos:=Position:C15("_"; <>TbLotoNumLaboRapportCampagne{$LigneTableauParticipation})
+		NumLaboActuelA:=Substring:C12(<>TbLotoNumLaboRapportCampagne{$LigneTableauParticipation}; 1; ($pos-1))
 	End if 
 End if 
-  // Fabrication du tableau des germes du laboratoire. 
-  // + cas du testeur =13 avec TestLabo13=Vrai initialisé dans WebClicParticipant
+// Fabrication du tableau des germes du laboratoire. 
+// + cas du testeur =13 avec TestLabo13=Vrai initialisé dans WebClicParticipant
 
 
-  // Affichage des seuls germes commandés
+// Affichage des seuls germes commandés
 TestLabo13:=(NumLaboActuelA="13")
 
 If ($LigneTableauParticipation>0) | (TestLabo13)
-	$THTML:=ResRaemaCréationET ("Choix des germes pertinents")
+	$THTML:=ResRaemaCréationET("Choix des germes pertinents")
 	$THTML:=$THTML+"      <p class="+<>ZGuil+"rougeRAEMA"+<>ZGuil+"> <br /> "+<>ZCR
 	$THTML:=$THTML+"      <u>Attention :</u>  Nous vous rappelons que si vous envoyez plusieurs saisies à l’ASA, seule la dernière sera prise en compte <br />"
 	$THTML:=$THTML+"      </p>"+<>ZCR
@@ -33,7 +33,7 @@ If ($LigneTableauParticipation>0) | (TestLabo13)
 	$THTML:=$THTML+"    </p>"+<>ZCR
 	$THTML:=$THTML+"    <p> <br /> </p>"+<>ZCR
 	$THTML:=$THTML+""+<>ZCR
-	  // ET du tableau des choix
+	// ET du tableau des choix
 	$THTML:=$THTML+"   <form name="+<>ZGuil+"form1"+<>ZGuil+" method="+<>ZGuil+"Post"+<>ZGuil+" action="+<>ZGuil+"mw2ResP2MF"+<>ZGuil+"> "+<>ZCR
 	$THTML:=$THTML+"    <p> <input type="+<>ZGuil+"hidden"+<>ZGuil+" name="+<>ZGuil+"hiddenField"+<>ZGuil+" value="+<>ZGuil+UUIDParticipation+<>ZGuil+" /> </p> "+<>ZCR
 	$THTML:=$THTML+"    <p> <input type="+<>ZGuil+"hidden"+<>ZGuil+" name="+<>ZGuil+"langage"+<>ZGuil+" value="+<>ZGuil+LangueCourante+<>ZGuil+" /> </p> "+<>ZCR
@@ -42,24 +42,24 @@ If ($LigneTableauParticipation>0) | (TestLabo13)
 	$THTML:=$THTML+"        <tr>"+<>ZCR
 	$THTML:=$THTML+"            <th class="+<>ZGuil+"colonne2"+<>ZGuil+">Germe choisi</th>"+<>ZCR
 	$THTML:=$THTML+"            <th class="+<>ZGuil+"colonne2rc"+<>ZGuil+">N°</th>"+<>ZCR
-	  //$THTML:=$THTML+"            <th class="+<>ZGuil+"colonne2rc"+<>ZGuil+">Nb de pots</th>"+<>ZCR
+	//$THTML:=$THTML+"            <th class="+<>ZGuil+"colonne2rc"+<>ZGuil+">Nb de pots</th>"+<>ZCR
 	$THTML:=$THTML+"        </tr>"+<>ZCR2
-	  // LIGNES du tableau des choix
+	// LIGNES du tableau des choix
 	$Impaire:=True:C214  // gestion des lignes paires ou impaires
 	
 	$FT:=Size of array:C274(<>TbPtTbParticipeGermeGEL)
-	For ($Salé;1;$FT)
+	For ($Salé; 1; $FT)
 		If (<>TbPtTbParticipeGermeGEL{$Salé}->{$LigneTableauParticipation}#"") | (TestLabo13)
 			$PaireImpaire:=Num:C11($Impaire)*"im"
 			$THTML:=$THTML+"        <tr class="+<>ZGuil+"ligne"+$PaireImpaire+"paire"+<>ZGuil+">"+<>ZCR
 			$THTML:=$THTML+"            <td class="+<>ZGuil+"rccolonne1"+<>ZGuil+">"+<>ZCR
 			$THTML:=$THTML+"              <input type="+<>ZGuil+"checkbox"+<>ZGuil+" name="+<>ZGuil+"rgcb"+String:C10($Salé)+<>ZGuil
-			$THTML:=$THTML+" value="+<>ZGuil+"checkbox"+<>ZGuil+ResP1SortValeurBoiteP2 (String:C10($Salé);True:C214)
+			$THTML:=$THTML+" value="+<>ZGuil+"checkbox"+<>ZGuil+ResP1SortValeurBoiteP2(String:C10($Salé); True:C214)
 			$THTML:=$THTML+" />"+<>TbNomGermeSchémaGEL{$Salé}+<>ZCR+"            </td>"+<>ZCR
 			$THTML:=$THTML+"            <td class="+<>ZGuil+"rccolonne2"+<>ZGuil+">"+<>ZCR
 			$THTML:=$THTML+"                <input class="+<>ZGuil+"rccolonne2"+<>ZGuil+" type="+<>ZGuil+"text"+<>ZGuil
 			$THTML:=$THTML+" name="+<>ZGuil+"rgtextfield"+String:C10($Salé)+<>ZGuil+" size="+<>ZGuil+"6"+<>ZGuil
-			$THTML:=$THTML+" value="+<>ZGuil+ResP1SortValeurChampP2 (String:C10($Salé);True:C214)+<>ZGuil+" />"+<>ZCR
+			$THTML:=$THTML+" value="+<>ZGuil+ResP1SortValeurChampP2(String:C10($Salé); True:C214)+<>ZGuil+" />"+<>ZCR
 			$THTML:=$THTML+"            </td>"+<>ZCR
 			$THTML:=$THTML+"        </tr>"+<>ZCR2
 			$Impaire:=Not:C34($Impaire)
@@ -81,7 +81,7 @@ If ($LigneTableauParticipation>0) | (TestLabo13)
 	$THTML:=$THTML+"   </form>"+<>ZCR
 	
 Else 
-	$THTML:=ResRaemaCréationET ("Saisie du RAEMA gel impossible")
+	$THTML:=ResRaemaCréationET("Saisie du RAEMA gel impossible")
 	$THTML:=$THTML+"<br /><br /> <br /><br />"+<>ZCR
 	$THTML:=$THTML+"<p class="+<>ZGuil+"hautpage rouge"+<>ZGuil+">"+<>ZCR
 	$THTML:=$THTML+"Vérification des données"+<>ZCR
@@ -101,8 +101,8 @@ Else
 	$THTML:=$THTML+"</p>"+<>ZCR
 End if 
 
-$THTML:=$THTML+ResRaemaCréationPied 
+$THTML:=$THTML+ResRaemaCréationPied
 $Pragma:="pragma: no-cache"
 WEB SET HTTP HEADER:C660($Pragma)
 WEB SEND TEXT:C677($THTML)
-  // FIXER TEXTE DANS CONTENEUR($THTML)
+// FIXER TEXTE DANS CONTENEUR($THTML)

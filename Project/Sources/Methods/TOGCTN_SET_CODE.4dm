@@ -1,17 +1,17 @@
-//%attributes = {"invisible":true}
-  // method: TOGCTN_SET_CODE
-  // convenience method to set container code based off ptr to button, value, and container
-  // $1 (Text) - Button method path
-  // $2 (Pointer) - Poiinter to toggle object
-  // $3 - Button name
-  // $4 (Text) - Container name
-  // $5 (Text) - Value name
-  // $6 (Pointer) - Field Pointer
+//%attributes = {"invisible":true,"lang":"fr"}
+// method: TOGCTN_SET_CODE
+// convenience method to set container code based off ptr to button, value, and container
+// $1 (Text) - Button method path
+// $2 (Pointer) - Poiinter to toggle object
+// $3 - Button name
+// $4 (Text) - Container name
+// $5 (Text) - Value name
+// $6 (Pointer) - Field Pointer
 
-C_TEXT:C284($1;$buttonMethodPath;$3;$button;$4;$container;$5;$val)
-C_POINTER:C301($2;$togPtr;$6;$fieldPtr)
-C_TEXT:C284($togName;$code;$containerPath;$tableName;$fieldName;$settingName)
-C_LONGINT:C283($tblNum;$fldNum)
+C_TEXT:C284($1; $buttonMethodPath; $3; $button; $4; $container; $5; $val)
+C_POINTER:C301($2; $togPtr; $6; $fieldPtr)
+C_TEXT:C284($togName; $code; $containerPath; $tableName; $fieldName; $settingName)
+C_LONGINT:C283($tblNum; $fldNum)
 
 $buttonMethodPath:=$1
 $togPtr:=$2
@@ -20,10 +20,10 @@ $container:=$4
 $val:=$5
 $fieldPtr:=$6
 
-  // programatically edit container code
-$containerPath:=Replace string:C233($buttonMethodPath;$button;$container)
+// programatically edit container code
+$containerPath:=Replace string:C233($buttonMethodPath; $button; $container)
 
-RESOLVE POINTER:C394($togPtr;$togName;$tblNum;$fldNum)
+RESOLVE POINTER:C394($togPtr; $togName; $tblNum; $fldNum)
 
 If ($tblNum#-1)
 	$tableName:=Table name:C256($fieldPtr)
@@ -38,7 +38,7 @@ If ($tblNum#-1)
 	$code:=$code+$settingName+":=False\nElse\n$valPtr->:=\"On\"\n"+$settingName+":=True\nEnd if\nEnd case"
 	
 Else 
-	RESOLVE POINTER:C394($fieldPtr;$FieldName;$tblNum;$fldNum)
+	RESOLVE POINTER:C394($fieldPtr; $FieldName; $tblNum; $fldNum)
 	
 	$code:="Case of \n: (Form event=On Clicked)\nC_PICTURE($pic)\nC_OBJECT($togObj)\nC_LONGINT($pos)\n"
 	$code:=$code+"C_POINTER($valPtr;$fieldPtr)\n$togObj:="+$togName
@@ -49,6 +49,6 @@ Else
 	
 End if 
 
-  //If ((Not(Is compiled mode)) & (<>QS_TBX_Component_Mode))
-  //METHOD SET CODE($containerPath;$code)
-  //End if 
+//If ((Not(Is compiled mode)) & (<>QS_TBX_Component_Mode))
+//METHOD SET CODE($containerPath;$code)
+//End if 

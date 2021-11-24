@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 // Méthode : ZPDFRestoreRegistre V11 du10/08/2010
 // Description
 // Permet de Restaurer le Registre pour l'impression en PDF
@@ -25,7 +25,7 @@ If (<>ZPC)  //On est Bien sur PC
 	// on crée un fichier reg
 	$NomFic:=$NomDossierREG+<>ZSéparateur+"TempRegeditPDF.reg"
 	
-	If (Test path name:C476($NomFic)=Is a document:K24:1)  // si document existe, on vire c'est un vieux
+	If (Test path name:C476($NomFic)=Est un document:K24:1)  // si document existe, on vire c'est un vieux
 		DELETE DOCUMENT:C159($NomFic)
 	End if 
 	

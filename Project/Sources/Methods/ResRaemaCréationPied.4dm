@@ -1,5 +1,5 @@
-//%attributes = {}
-  // RaemaCréationPied
+//%attributes = {"lang":"fr"}
+// RaemaCréationPied
 $THTML:=""
 $THTML:=$THTML+"      </div>"+<>ZCR
 $THTML:=$THTML+"    </div>"+<>ZCR

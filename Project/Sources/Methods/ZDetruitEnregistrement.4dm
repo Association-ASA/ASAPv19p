@@ -1,35 +1,35 @@
-//%attributes = {"publishedWeb":true}
+//%attributes = {"publishedWeb":true,"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 04/04/18, 10:12:36
-  // ----------------------------------------------------
-  // Méthode : ZDetruitEnregistrement
-  // Description
-  // Historique
-  // //  ZDestroyEnr V11 du 14/08/2010
-  //  utilisée par le bouton standard ZBouSupEnr
-  //  supprime l'enregistrement courant
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 04/04/18, 10:12:36
+// ----------------------------------------------------
+// Méthode : ZDetruitEnregistrement
+// Description
+// Historique
+// //  ZDestroyEnr V11 du 14/08/2010
+//  utilisée par le bouton standard ZBouSupEnr
+//  supprime l'enregistrement courant
+// ----------------------------------------------------
 
 
 
 If (ZSupprime)
-	CREATE SET:C116(ZPtTable->;"Avant Carnage")
+	CREATE SET:C116(ZPtTable->; "Avant Carnage")
 	USE SET:C118("Userset")
-	DIFFERENCE:C122("Avant Carnage";"Userset";"Avant Carnage")
+	DIFFERENCE:C122("Avant Carnage"; "Userset"; "Avant Carnage")
 	CONFIRM:C162("Voulez-vous VRAIMENT détruire cette fiche")
 	If (OK=1)
 		READ WRITE:C146(ZPtTable->)
 		LOAD RECORD:C52(ZPtTable->)
-		If (ZVerrouTester (ZPtTable))  //  la fiche est destructible
+		If (ZVerrouTester(ZPtTable))  //  la fiche est destructible
 			START TRANSACTION:C239
 			ON ERR CALL:C155("ZAnnuleTransaction")
-			  //  l'enregistrement est-il destructible ? ZBoumProc est elle correcte?
+			//  l'enregistrement est-il destructible ? ZBoumProc est elle correcte?
 			If (ZBoumProc#"")  //  initialisée dans ZGereListe
 				EXECUTE FORMULA:C63(ZBoumProc)  // procédure de mise à jour logique
 			End if 
-			ZVerrouAttendre (ZPtTable)
+			ZVerrouAttendre(ZPtTable)
 			DELETE RECORD:C58(ZPtTable->)
 			VALIDATE TRANSACTION:C240
 			ON ERR CALL:C155("")
@@ -37,7 +37,7 @@ If (ZSupprime)
 	End if 
 	USE SET:C118("Avant Carnage")
 	CLEAR SET:C117("Avant Carnage")
-	ZFenetreActualiseTitre 
+	ZFenetreActualiseTitre
 Else 
 	ALERT:C41("Désolé, vous ne pouvez pas détruire cette fiche")
 End if 

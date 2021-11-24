@@ -1,6 +1,6 @@
 READ WRITE:C146([DiaTextesWeb:38])
-QUERY:C277([DiaTextesWeb:38];[DiaTextesWeb:38]IDTexteWeb:1=TbIDTexte{PUMTextes})
-ZFenetreModaleAuCentre (450;350)
+QUERY:C277([DiaTextesWeb:38]; [DiaTextesWeb:38]IDTexteWeb:1=TbIDTexte{PUMTextes})
+ZFenetreModaleAuCentre(450; 350)
 VarNomGeneral:=[DiaTextesWeb:38]TitreTexte:2
 VarNomFichier:=[DiaTextesWeb:38]NomDuFichier:5
 VarAuteurRevue:=[DiaTextesWeb:38]AuteurRevue:4

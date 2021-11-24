@@ -10,32 +10,32 @@ Else
 	CONFIRM:C162("Abandonner le devis RAEMA gel pour le labo "+$NumLaboA+" ???")
 	If (OK=1)
 		READ WRITE:C146([PersonnesDevis:30])
-		GOTO RECORD:C242([PersonnesDevis:30];Colonne2N{Colonne1EC})
+		GOTO RECORD:C242([PersonnesDevis:30]; Colonne2N{Colonne1EC})
 		[PersonnesDevis:30]Valide:8:=False:C215
 		[PersonnesDevis:30]Caduc:7:="Caduc par abandon"
 		SAVE RECORD:C53([PersonnesDevis:30])
-		$UUIDLabo:=ASAPTrouveUUIDLaboParNumero (Num:C11($NumLaboA))
+		$UUIDLabo:=ASAPTrouveUUIDLaboParNumero(Num:C11($NumLaboA))
 		READ WRITE:C146([CampagneParticipations:17])
-		QUERY:C277([CampagneParticipations:17];[CampagneParticipations:17]NumCampagne:3=<>CampagneDevisRGMai;*)
-		QUERY:C277([CampagneParticipations:17]; | [CampagneParticipations:17]NumCampagne:3=<>CampagneDevisRGDec;*)
-		QUERY:C277([CampagneParticipations:17]; & [CampagneParticipations:17]UUIDPersonne:2=$UUIDLabo)
+		QUERY:C277([CampagneParticipations:17]; [CampagneParticipations:17]NumCampagne:3=<>CampagneDevisRGMai; *)
+		QUERY:C277([CampagneParticipations:17];  | [CampagneParticipations:17]NumCampagne:3=<>CampagneDevisRGDec; *)
+		QUERY:C277([CampagneParticipations:17];  & [CampagneParticipations:17]UUIDPersonne:2=$UUIDLabo)
 		READ WRITE:C146([CampagneGelGermes:25])
 		RELATE MANY SELECTION:C340([CampagneGelGermes:25]UUIDParticipation:2)
 		DELETE SELECTION:C66([CampagneGelGermes:25])
 		DELETE SELECTION:C66([CampagneParticipations:17])
-		ZAmnistiePartielle (->[CampagneGelGermes:25])
-		ZAmnistiePartielle (->[CampagneParticipations:17])
-		GA15FabriqueTbDevisRAEMAGel 
+		ZAmnistiePartielle(->[CampagneGelGermes:25])
+		ZAmnistiePartielle(->[CampagneParticipations:17])
+		GA15FabriqueTbDevisRAEMAGel
 		
-		  // Rendre caducs les devis du même laboratoire
-		  //$Pivot:=Date("15/12/"+Chaîne(Num(VarPermMilleRaemaGel)-1))
-		QUERY:C277([PersonnesDevis:30];[PersonnesDevis:30]UUIDPersonne:6=Colonne1EC{Colonne1EC};*)  // même n° de labo
-		  // CHERCHER([XData];&[XData]XDate>$Pivot;*)
-		QUERY:C277([PersonnesDevis:30]; & [PersonnesDevis:30]Valide:8=False:C215)
-		APPLY TO SELECTION:C70([PersonnesDevis:30];[PersonnesDevis:30]Caduc:7:="Caduc par doublon")
-		  //LISTBOX SUPPRIMER LIGNES(ListBoxNumLabo;ListBoxNumLabo)
-		ZViderSelectionCourante (->[PersonnesDevis:30])
-		GA15FabriqueTbDevisRAEMAGel 
+		// Rendre caducs les devis du même laboratoire
+		//$Pivot:=Date("15/12/"+Chaîne(Num(VarPermMilleRaemaGel)-1))
+		QUERY:C277([PersonnesDevis:30]; [PersonnesDevis:30]UUIDPersonne:6=Colonne1EC{Colonne1EC}; *)  // même n° de labo
+		// CHERCHER([XData];&[XData]XDate>$Pivot;*)
+		QUERY:C277([PersonnesDevis:30];  & [PersonnesDevis:30]Valide:8=False:C215)
+		APPLY TO SELECTION:C70([PersonnesDevis:30]; [PersonnesDevis:30]Caduc:7:="Caduc par doublon")
+		//LISTBOX SUPPRIMER LIGNES(ListBoxNumLabo;ListBoxNumLabo)
+		ZViderSelectionCourante(->[PersonnesDevis:30])
+		GA15FabriqueTbDevisRAEMAGel
 		
 	End if 
 End if 

@@ -2,10 +2,10 @@ $evt:=Form event code:C388
 
 Case of 
 	: ($evt=Sur chargement:K2:1)
-		ASAPFactureSurChargement 
+		ASAPFactureSurChargement
 		
 		
 	: ($evt=Sur validation:K2:3)
-		ASAPFactureSurValidation 
+		ASAPFactureSurValidation
 		
 End case 

@@ -1,5 +1,5 @@
-//%attributes = {}
-  // BlancCases
+//%attributes = {"lang":"fr"}
+// BlancCases
 VarMail1:=""
 VarMail2:=""
 VarMail3:=""

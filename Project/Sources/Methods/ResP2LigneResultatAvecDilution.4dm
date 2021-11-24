@@ -1,13 +1,13 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 24/07/18, 15:15:12
-  // ----------------------------------------------------
-  // Paramètre $1= Compteur de boucle  ($Fumé)
-  // ----------------------------------------------------
-  // Méthode : ResP2LigneResultatAvecDilution <= ResP2HtmlResultats  <=  ResP2CreationLignesOKP3 <= ResP2FabriqueRaemaRestreint <=  ResP2MF = traitement de la page 2
-  // Description : Ecrit le HTML des lignes de résultats avec diution
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 24/07/18, 15:15:12
+// ----------------------------------------------------
+// Paramètre $1= Compteur de boucle  ($Fumé)
+// ----------------------------------------------------
+// Méthode : ResP2LigneResultatAvecDilution <= ResP2HtmlResultats  <=  ResP2CreationLignesOKP3 <= ResP2FabriqueRaemaRestreint <=  ResP2MF = traitement de la page 2
+// Description : Ecrit le HTML des lignes de résultats avec diution
 
 
 $Fumé:=$1
@@ -16,10 +16,10 @@ $ClasseColonne3Parité:=(Num:C11($Fumé%2=1)*"colonne3impaire")+(Num:C11($Fumé%
 $ClasseLigneParité:=(Num:C11($Fumé%2=1)*"ligneimpaire")+(Num:C11($Fumé%2=0)*"lignepaire")
 $NumEchantillon:=TbNumEch{$Fumé}
 $Rang:=Compteur+$Fumé-1
-$IDLigneDilution:=Substring:C12(<>TbRefLigne{$Rang};3)
-$IDLigneConcentration:=Substring:C12(<>TbRefLigne{$Rang+5};3)
-$DilutionAntérieure:=WebTrouveValeurParNom (("champ"+$IDLigneDilution);->TbAncNomsP3;->TbAncValeursP3)
-$ConcentrationAntérieure:=WebTrouveValeurParNom (("champ"+$IDLigneConcentration);->TbAncNomsP3;->TbAncValeursP3)
+$IDLigneDilution:=Substring:C12(<>TbRefLigne{$Rang}; 3)
+$IDLigneConcentration:=Substring:C12(<>TbRefLigne{$Rang+5}; 3)
+$DilutionAntérieure:=WebTrouveValeurParNom(("champ"+$IDLigneDilution); ->TbAncNomsP3; ->TbAncValeursP3)
+$ConcentrationAntérieure:=WebTrouveValeurParNom(("champ"+$IDLigneConcentration); ->TbAncNomsP3; ->TbAncValeursP3)
 $Echantillon:=(Num:C11(LangueCourante="F")*"Échantillon n°")+(Num:C11(LangueCourante="A")*"Sample n°")
 $Unité:=(Num:C11(LangueCourante="F")*"(ufc/g)")+(Num:C11(LangueCourante="A")*"(cfu/g)")
 $THTML:=""

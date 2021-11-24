@@ -1,23 +1,23 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : iMacASA2017
-  // Date et heure : 30/05/20, 19:14:29
-  // ----------------------------------------------------
-  // Méthode : QuizzSauvegardesAffiche
-  // Description
-  // Méthode qui renvoie la page des sauvegardes disponibles
-  // Paramètre : $1=message AJAX de type Histoire + n° du questionnaire
-  // ----------------------------------------------------
-C_LONGINT:C283($Salé;$FT)
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : iMacASA2017
+// Date et heure : 30/05/20, 19:14:29
+// ----------------------------------------------------
+// Méthode : QuizzSauvegardesAffiche
+// Description
+// Méthode qui renvoie la page des sauvegardes disponibles
+// Paramètre : $1=message AJAX de type Histoire + n° du questionnaire
+// ----------------------------------------------------
+C_LONGINT:C283($Salé; $FT)
 $Mess:=$1
 
 $NumQuestionnaireN:=Num:C11($Mess)
-QUERY:C277([DiaData:45];[DiaData:45]XType:5="ExportDonnées";*)
-QUERY:C277([DiaData:45]; & [DiaData:45]XEntier:2=$NumQuestionnaireN)
-ORDER BY:C49([DiaData:45];[DiaData:45]XDate:3;<;[DiaData:45]XHeure:13;<)
-SELECTION TO ARRAY:C260([DiaData:45]XDate:3;$TbDate;[DiaData:45]XHeure:13;$TbHeure;[DiaData:45]XTexteSup:8;$TbAction)
-LONGINT ARRAY FROM SELECTION:C647([DiaData:45];$TbNumEnrXDonnees)
-QUERY:C277([QuizzQuestionnaires:35];[QuizzQuestionnaires:35]ID:1=$NumQuestionnaireN)
+QUERY:C277([DiaData:45]; [DiaData:45]XType:5="ExportDonnées"; *)
+QUERY:C277([DiaData:45];  & [DiaData:45]XEntier:2=$NumQuestionnaireN)
+ORDER BY:C49([DiaData:45]; [DiaData:45]XDate:3; <; [DiaData:45]XHeure:13; <)
+SELECTION TO ARRAY:C260([DiaData:45]XDate:3; $TbDate; [DiaData:45]XHeure:13; $TbHeure; [DiaData:45]XTexteSup:8; $TbAction)
+LONGINT ARRAY FROM SELECTION:C647([DiaData:45]; $TbNumEnrXDonnees)
+QUERY:C277([QuizzQuestionnaires:35]; [QuizzQuestionnaires:35]ID:1=$NumQuestionnaireN)
 $THTML:=""
 $THTML:=$THTML+"  <div id="+<>ZGuil+"alerte"+<>ZGuil+"></div>"+<>ZCR
 $THTML:=$THTML+"  <div id="+<>ZGuil+"headerquizz"+<>ZGuil+" class="+<>ZGuil+"textecentre"+<>ZGuil+">"+<>ZCR
@@ -42,7 +42,7 @@ $THTML:=$THTML+"       <td class="+<>ZGuil+"tbhistoireet"+<>ZGuil+" width="+<>ZG
 $THTML:=$THTML+"      </tr>"+<>ZCR
 
 $ft:=Size of array:C274($TbDate)
-For ($Salé;1;$FT)
+For ($Salé; 1; $FT)
 	$THTML:=$THTML+"      <tr class="+<>ZGuil+"tbhistoireligne"+<>ZGuil+">"+<>ZCR
 	$THTML:=$THTML+"       <td class="+<>ZGuil+"tbhistoireligne"+<>ZGuil+">"+String:C10($TbDate{$Salé})+"</td>"+<>ZCR
 	$THTML:=$THTML+"       <td class="+<>ZGuil+"tbhistoireligne"+<>ZGuil+">"+String:C10($TbHeure{$Salé})+<>ZCR

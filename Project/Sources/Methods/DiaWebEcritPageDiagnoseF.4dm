@@ -1,2 +1,2 @@
-//%attributes = {}
-DiaWebEcritPageDiagnose ("F";False:C215)
+//%attributes = {"lang":"fr"}
+DiaWebEcritPageDiagnose("F"; False:C215)

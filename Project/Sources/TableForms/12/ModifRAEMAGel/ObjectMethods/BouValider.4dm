@@ -69,7 +69,7 @@ Case of
 			CANCEL:C270
 			
 			
-			  // Des colis supplémentaires ont-ils été ajoutés
+			// Des colis supplémentaires ont-ils été ajoutés
 			$ColisARaprès:=ARBacillus+ARPseudomonas+ARLactique+ARLMens+ARLMsep  // Reste à codé après avoir homogénéisé le calcul des numéros liés
 			
 			
@@ -77,4 +77,4 @@ Case of
 			CANCEL:C270
 		End if 
 End case 
-ZAmnistiePartielle (->[CampagneGelGermes:25])
+ZAmnistiePartielle(->[CampagneGelGermes:25])

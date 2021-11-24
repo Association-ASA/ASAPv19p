@@ -1,15 +1,15 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 27/09/15, 08:11:40
-  // ----------------------------------------------------
-  // Méthode : HTMLColonneDébut
-  // Description
-  // Paramètres
-  // $1= nom de la classe
-  // {$2} = vrai si retour à la ligne préalable
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 27/09/15, 08:11:40
+// ----------------------------------------------------
+// Méthode : HTMLColonneDébut
+// Description
+// Paramètres
+// $1= nom de la classe
+// {$2} = vrai si retour à la ligne préalable
+// ----------------------------------------------------
 
 
 C_BOOLEAN:C305($2)

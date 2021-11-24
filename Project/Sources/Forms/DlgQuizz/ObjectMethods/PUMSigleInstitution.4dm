@@ -1,1 +1,1 @@
-QuizzAfficheGestionPhotosSup 
+QuizzAfficheGestionPhotosSup

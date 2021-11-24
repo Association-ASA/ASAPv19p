@@ -1,10 +1,10 @@
-//%attributes = {"publishedWeb":true}
-  // PlaceLesFleches
-  //repère des fleches
-  //{$1} présent si vertical
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+// PlaceLesFleches
+//repère des fleches
+//{$1} présent si vertical
 If (LesFlechesSontLà)
-	DiaReplaceLesFleches 
+	DiaReplaceLesFleches
 Else 
-	DiaReplaceLesFleches 
-	DiaMetsLesFleches 
+	DiaReplaceLesFleches
+	DiaMetsLesFleches
 End if 

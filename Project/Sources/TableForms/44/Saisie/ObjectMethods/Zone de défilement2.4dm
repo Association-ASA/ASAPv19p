@@ -1,3 +1,3 @@
 If (<>PermConcepteur)
-	DiaReverseLesion 
+	DiaReverseLesion
 End if 

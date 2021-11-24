@@ -1,5 +1,5 @@
-//%attributes = {}
-  // RapRègleCadran
+//%attributes = {"lang":"fr"}
+// RapRègleCadran
 $TTMNE:=Size of array:C274(TbRapMailNonEnvoi)
 $TTME:=Size of array:C274(TbRapMailEnvoi)
 CadMailNonEnv:=(100*$TTMNE)/($TTMNE+$TTME)

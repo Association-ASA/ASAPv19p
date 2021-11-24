@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 #DECLARE($signal : Object; $expected : Integer)
 
 Use ($signal)

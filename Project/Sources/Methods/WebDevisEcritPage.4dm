@@ -1,14 +1,14 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 24/12/18, 16:28:59
-  // ----------------------------------------------------
-  // Paramètres
-  // ----------------------------------------------------
-  // Méthode : WebDevisEcritPage
-  // Description
-  // // méthode qui écrit le HTML initial de la page du devis
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 24/12/18, 16:28:59
+// ----------------------------------------------------
+// Paramètres
+// ----------------------------------------------------
+// Méthode : WebDevisEcritPage
+// Description
+// // méthode qui écrit le HTML initial de la page du devis
 
 $UUIDLabo:=$1
 $THTML:=""
@@ -28,10 +28,10 @@ $THTML:=$THTML+" </div>"+<>ZCR2
 
 $THTML:=$THTML+" <div id="+<>ZGuil+"corps"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"  <br /><br />"+<>ZCR
-  // <>AnCourantDevisRGA est défini dans ASAPFabriqueTbPrestations
+// <>AnCourantDevisRGA est défini dans ASAPFabriqueTbPrestations
 $THTML:=$THTML+"  <p class="+<>ZGuil+"grandtitrepage"+<>ZGuil+">Devis RAEMA gel : année "+<>AnCourantDevisRGA+"</p>"+<>ZCR
 $THTML:=$THTML+"  <div id="+<>ZGuil+"devarticle"+<>ZGuil+" class="+<>ZGuil+"textebanalgrand"+<>ZGuil+">"+<>ZCR
-  //$THTML:=$THTML+"   <br />"+<>ZCR
+//$THTML:=$THTML+"   <br />"+<>ZCR
 If ($UUIDLabo="")
 	$THTML:=$THTML+"   <p class="+<>ZGuil+"grandhautpage"+<>ZGuil+">Participez-vous déjà au RAEMA ?</p>"+<>ZCR
 	$THTML:=$THTML+"   <p class="+<>ZGuil+"textecentre"+<>ZGuil+">"+<>ZCR
@@ -40,9 +40,9 @@ If ($UUIDLabo="")
 	$THTML:=$THTML+"   </p>"+<>ZCR
 	Association:="ASA"
 End if 
-  // Zone de formulaire qui réagira à l'envoi par WebDevisRecevoir
+// Zone de formulaire qui réagira à l'envoi par WebDevisRecevoir
 $THTML:=$THTML+"   <form action="+<>ZGuil+"WebDevisRecevoir"+$UUIDLabo+<>ZGuil+" method="+<>ZGuil+"post"+<>ZGuil+">"+<>ZCR
-  // Zone d'identification si le laboratoire a déjà participé au RAEMA
+// Zone d'identification si le laboratoire a déjà participé au RAEMA
 If ($UUIDLabo="")
 	$THTML:=$THTML+"    <div id="+<>ZGuil+"identificationlabo"+<>ZGuil+">"+<>ZCR
 	$THTML:=$THTML+"       <p class="+<>ZGuil+"grandhautpagedecale"+<>ZGuil+">Identifiez-vous</p>"+<>ZCR
@@ -59,7 +59,7 @@ If ($UUIDLabo#"")
 End if 
 $THTML:=$THTML+"       <p id="+<>ZGuil+"detaillabo"+<>ZGuil+" class="+<>ZGuil+"textecentre"+<>ZGuil+"></p>"+<>ZCR
 
-  // Zone d'identification si le laboratoire n'a jamais participé au RAEMA
+// Zone d'identification si le laboratoire n'a jamais participé au RAEMA
 $THTML:=$THTML+"    <div id="+<>ZGuil+"nouveaulabo"+<>ZGuil+" class="+<>ZGuil+"textedecale30"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"     <p class="+<>ZGuil+"grandhautpagedecale"+<>ZGuil+">Précisez nom et coordonnées de votre laboratoire </p>"+<>ZCR
 $THTML:=$THTML+"     <table>"+<>ZCR
@@ -108,45 +108,45 @@ $THTML:=$THTML+"     </table>"+<>ZCR
 $THTML:=$THTML+"    </div>"+<>ZCR
 $THTML:=$THTML+"    <div id="+<>ZGuil+"detailraemagel"+<>ZGuil+">"+<>ZCR
 
-  // Emplacement du futur programme de campagne et du prix
+// Emplacement du futur programme de campagne et du prix
 If ($UUIDLabo#"")
-	$L:=Find in array:C230(<>TbPerUUID;$UUIDLabo)
+	$L:=Find in array:C230(<>TbPerUUID; $UUIDLabo)
 	If ($L>0)
 		$Code:=<>TbPerIdentificateur{$L}
 		
-		$NumLabo:=RAEMADemoduleMdPWeb ($Code)
+		$NumLabo:=RAEMADemoduleMdPWeb($Code)
 		$Mess:="ECdevisid"+String:C10($NumLabo)+"_"+$Code
-		$THTML:=$THTML+WebDevisIdentification ($Mess)
+		$THTML:=$THTML+WebDevisIdentification($Mess)
 	End if 
 End if 
 $THTML:=$THTML+"    </div>"+<>ZCR
 $THTML:=$THTML+"   </form>"+<>ZCR
 $THTML:=$THTML+"  </div>"+<>ZCR
-  // bloc des tarifs et du baratin d'explication des règles de facturation
+// bloc des tarifs et du baratin d'explication des règles de facturation
 $THTML:=$THTML+"  <div id="+<>ZGuil+"devaside"+<>ZGuil+" class="+<>ZGuil+"textebanal"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"    <br /><br />"+<>ZCR
-  // Les tarifs
+// Les tarifs
 $THTML:=$THTML+"   <span class="+<>ZGuil+"textebanalgrand"+<>ZGuil+"><b>Les Tarifs "+<>AnCourantDevisRGA+"</b><br /></span> <br />"+<>ZCR
 $THTML:=$THTML+"    <b>Pour les 2 campagnes</b><br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G21")+" € H.T. pour 1 essai <br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G22")+" € H.T. pour 2 essais<br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G23")+" € H.T. pour 3 essais<br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G24")+" € H.T. pour 4 essais<br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G25")+" € H.T. pour 5 essais<br />         "+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G21")+" € H.T. pour 1 essai <br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G22")+" € H.T. pour 2 essais<br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G23")+" € H.T. pour 3 essais<br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G24")+" € H.T. pour 4 essais<br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G25")+" € H.T. pour 5 essais<br />         "+<>ZCR
 $THTML:=$THTML+"    <b>Pour une seule campagne</b><br /> "+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G11")+" € H.T. pour 1 essai <br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G12")+" € H.T. pour 2 essais <br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G13")+" € H.T. pour 3 essais <br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G14")+" € H.T. pour 4 essais <br />"+<>ZCR
-$THTML:=$THTML+"    - "+WebDevisCracheTarifRG ("G15")+" € H.T. pour 5 essais <br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G11")+" € H.T. pour 1 essai <br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G12")+" € H.T. pour 2 essais <br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G13")+" € H.T. pour 3 essais <br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G14")+" € H.T. pour 4 essais <br />"+<>ZCR
+$THTML:=$THTML+"    - "+WebDevisCracheTarifRG("G15")+" € H.T. pour 5 essais <br />"+<>ZCR
 $THTML:=$THTML+"      <br />"+<>ZCR
-$THTML:=$THTML+"    Pot supplémentaire <b>AVEC</b> rapport "+WebDevisCracheTarifRG ("GPA")+" € H.T. par pot. <br />"+<>ZCR
-$THTML:=$THTML+"    Pot supplémentaire <b>SANS</b> rapport "+WebDevisCracheTarifRG ("GPS")+" € H.T. par pot.<br /> "+<>ZCR
+$THTML:=$THTML+"    Pot supplémentaire <b>AVEC</b> rapport "+WebDevisCracheTarifRG("GPA")+" € H.T. par pot. <br />"+<>ZCR
+$THTML:=$THTML+"    Pot supplémentaire <b>SANS</b> rapport "+WebDevisCracheTarifRG("GPS")+" € H.T. par pot.<br /> "+<>ZCR
 $THTML:=$THTML+"    <br />"+<>ZCR
 If (Association="@ADILVA@")
 	$THTML:=$THTML+"    <span class ="+<>ZGuil+"rouge"+<>ZGuil+"><b>Une remise de 10% est appliquée pour les laboratoires ADILVA. Le tarif remisé s'affichera lors de la génération de votre devis</b></span><br /> <br />"+<>ZCR
 End if 
-  // Le principe de facturation
+// Le principe de facturation
 $THTML:=$THTML+"    <b>Principe de facturation</b><br />"+<>ZCR
 $THTML:=$THTML+"    Pour une demande sur une seule campagne, le tarif est appliqué pour les pots de l’envoi principal,"+<>ZCR
 $THTML:=$THTML+"    le ou les envois secondaires avec rapport COFRAC ou non et les pots supplémentaires.<br />"+<>ZCR

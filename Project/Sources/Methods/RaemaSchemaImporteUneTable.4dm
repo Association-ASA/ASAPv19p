@@ -1,15 +1,15 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 06/08/18, 08:12:41
-  // ----------------------------------------------------
-  // Paramètres
-  // ----------------------------------------------------
-  // Méthode : RaemaSchemaImporteUneTable
-  // Description = méthode qui importe 
-  // le enregistrements des [RAEMAGermes], [RAEMALignes] et [RAEMAValeurs]
-  // à partir du fichier d'export
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 06/08/18, 08:12:41
+// ----------------------------------------------------
+// Paramètres
+// ----------------------------------------------------
+// Méthode : RaemaSchemaImporteUneTable
+// Description = méthode qui importe 
+// le enregistrements des [RAEMAGermes], [RAEMALignes] et [RAEMAValeurs]
+// à partir du fichier d'export
 
 C_TEXT:C284($ReceptionA)
 If (Count parameters:C259=0)

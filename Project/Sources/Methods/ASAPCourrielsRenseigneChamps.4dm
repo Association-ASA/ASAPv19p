@@ -1,19 +1,19 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 15/01/19, 14:58:14
-  // ----------------------------------------------------
-  // Paramètres
-  // ----------------------------------------------------
-  // Méthode : ASAPCourrielsRenseigneChamps
-  // Description
-  // Méthode qui remplit les variables de courriel
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 15/01/19, 14:58:14
+// ----------------------------------------------------
+// Paramètres
+// ----------------------------------------------------
+// Méthode : ASAPCourrielsRenseigneChamps
+// Description
+// Méthode qui remplit les variables de courriel
 
 If (Count parameters:C259=0)
-	$L:=Find in array:C230(<>TbPerUUID;[Personnes:12]UUID:1)
+	$L:=Find in array:C230(<>TbPerUUID; [Personnes:12]UUID:1)
 Else 
-	$L:=Find in array:C230(<>TbPerUUID;$1)
+	$L:=Find in array:C230(<>TbPerUUID; $1)
 End if 
 VarNomLong:=<>TbPerNomLong{$L}
 VarAdressePerso:=<>TbPerAdrPerAd1{$L}\
@@ -42,7 +42,7 @@ VarNumAdhérent:=<>TbPerNumPersonne{$L}
 VarMdPAdhérent:=<>TbPAMotDePasse{$L}
 VarNumRAEMA:=String:C10(<>TbPerNumLaboRAEMA{$L})
 VarMdpRAEMA:=<>TbPerIdentificateur{$L}
-VarDateJour:=String:C10(Current date:C33;3)
+VarDateJour:=String:C10(Current date:C33; 3)
 VarCivilités:=<>TbPACivilités{$L}
 VarPrénom:=<>TbPAPrénom{$L}
 VarNomContact:=<>TbPANomContact{$L}
@@ -62,13 +62,13 @@ If (VarProforma#"")
 	VarNumURLProforma:=<>TbPAURLProforma{$L}
 End if 
 If (MailAdherent=False:C215)
-	$L2:=Find in array:C230(TbUUIDFacMail;<>TbPerUUID{$L})
+	$L2:=Find in array:C230(TbUUIDFacMail; <>TbPerUUID{$L})
 	If ($L2>0)
 		VarNumFacture:=TbNumFacMail{$L2}
-		VarMontantFacture:=String:C10(TbTTCFacMail{$L2};"### ### ##0.00€")
+		VarMontantFacture:=String:C10(TbTTCFacMail{$L2}; "### ### ##0.00€")
 		VarAdresseFacture:=TbAdrFacMail{$L2}
-		VarDateFacturation:=String:C10(TbDateFacMail{$L2};3)
-		$NumFacture_:=Replace string:C233(VarNumFacture;"/";"_")
+		VarDateFacturation:=String:C10(TbDateFacMail{$L2}; 3)
+		$NumFacture_:=Replace string:C233(VarNumFacture; "/"; "_")
 		VarURLFacture:="https://association.asa-spv.fr/PDF/Factures/"+String:C10(VarNumAdhérent)+"/"+$NumFacture_+".pdf"
 	Else 
 		VarNumFacture:=""
@@ -77,7 +77,7 @@ If (MailAdherent=False:C215)
 		VarDateFacturation:=""
 	End if 
 End if 
-  //VarNumFacture:=[Factures]NumFacture
-  //VarMontantFacture:=Chaîne([Factures]TotalTTC;"### ### ##0.00€")
-  //VarAdresseFacture:=[Factures]AdresseFacturation
-  //VarDateFacturation:=Chaîne([Factures]DateFacture;3)
+//VarNumFacture:=[Factures]NumFacture
+//VarMontantFacture:=Chaîne([Factures]TotalTTC;"### ### ##0.00€")
+//VarAdresseFacture:=[Factures]AdresseFacturation
+//VarDateFacturation:=Chaîne([Factures]DateFacture;3)

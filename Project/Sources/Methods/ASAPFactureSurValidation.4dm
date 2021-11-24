@@ -1,14 +1,14 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : ASA
-  // Date et heure : 24/09/19, 11:22:10
-  // ----------------------------------------------------
-  // Méthode : ASAPFactureSurValidation
-  // Description
-  // 
-  //
-  // Paramètres
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : ASA
+// Date et heure : 24/09/19, 11:22:10
+// ----------------------------------------------------
+// Méthode : ASAPFactureSurValidation
+// Description
+// 
+//
+// Paramètres
+// ----------------------------------------------------
 If (Is new record:C668([Factures:15]))
 	Case of 
 		: (PUMTypeFacture=1)  // Cotisation individuelle

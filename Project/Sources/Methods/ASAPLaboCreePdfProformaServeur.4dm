@@ -1,36 +1,36 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : ASA
-  // Date et heure : 26/02/21, 13:49:25
-  // ----------------------------------------------------
-  // Méthode : ASAPLaboCreePdfProformaServeur
-  // Description
-  // Méthode exécutée par le serveur pour créer les pdf
-  //
-  // Paramètres
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : ASA
+// Date et heure : 26/02/21, 13:49:25
+// ----------------------------------------------------
+// Méthode : ASAPLaboCreePdfProformaServeur
+// Description
+// Méthode exécutée par le serveur pour créer les pdf
+//
+// Paramètres
+// ----------------------------------------------------
 $NumCampagne:=$1
 
-C_LONGINT:C283($Salé;$FT)
+C_LONGINT:C283($Salé; $FT)
 
-QUERY:C277([RAEMACampagnes:20];[RAEMACampagnes:20]NumCampagne:2=$NumCampagne)
+QUERY:C277([RAEMACampagnes:20]; [RAEMACampagnes:20]NumCampagne:2=$NumCampagne)
 VarDate:=[RAEMACampagnes:20]DateEnvoiColis:3
-QUERY:C277([Personnes:12];[CampagneParticipations:17]NumCampagne:3=$NumCampagne;*)
-QUERY BY ATTRIBUTE:C1331([Personnes:12]; & ;[Personnes:12]Arguments:7;"Proforma";#;Null:C1517)
+QUERY:C277([Personnes:12]; [CampagneParticipations:17]NumCampagne:3=$NumCampagne; *)
+QUERY BY ATTRIBUTE:C1331([Personnes:12];  & ; [Personnes:12]Arguments:7; "Proforma"; #; Null:C1517)
 
 $FT:=Records in selection:C76([Personnes:12])
 
-For ($Salé;1;$FT)
-	$NumLaboN:=Num:C11(ASAPTrouveNumeroLaboParUUID ([Personnes:12]UUID:1))
-	$L:=Find in array:C230(<>TbPerNumLaboRAEMA;$NumLaboN)  // Rang dans tableaux généraux personnes
+For ($Salé; 1; $FT)
+	$NumLaboN:=Num:C11(ASAPTrouveNumeroLaboParUUID([Personnes:12]UUID:1))
+	$L:=Find in array:C230(<>TbPerNumLaboRAEMA; $NumLaboN)  // Rang dans tableaux généraux personnes
 	$identifiantParticipation:=String:C10($NumLaboN)+"_"+$NumCampagne+"_"
-	$LP:=Find in array:C230(<>TbLotoIdentifiantParticipation;$identifiantParticipation)  // Rang dans tableaux généraux participation
+	$LP:=Find in array:C230(<>TbLotoIdentifiantParticipation; $identifiantParticipation)  // Rang dans tableaux généraux participation
 	$Proforma:=<>TbLotoProformaPoudre{$LP}
 	
 	If ($Proforma#"") & (<>TbPAAssociation{$L}#"LRAR-M")
 		Case of 
 			: ($NumLaboN=469)
-				  //(<>TbPAAssociation{$L}="ASA - LRAR-M")  // si "Marocain"  = 6 Kg     45 cm x 37 cm x 25 cm
+				//(<>TbPAAssociation{$L}="ASA - LRAR-M")  // si "Marocain"  = 6 Kg     45 cm x 37 cm x 25 cm
 				VarPoids:="6 Kg"
 				VarDim:="40cm x 37cm x 25cm"
 				
@@ -92,18 +92,18 @@ For ($Salé;1;$FT)
 		End if 
 		
 		NumCampagne:=$NumCampagne
-		ZPDFImprimer ($NomProforma;$ChemCible;"ASAPImprimeFacture";$Format)
+		ZPDFImprimer($NomProforma; $ChemCible; "ASAPImprimeFacture"; $Format)
 		
 		READ WRITE:C146([Personnes:12])
-		  //$URL:=Remplacer chaîne($DocProforma;Séparateur dossier;"/")
+		//$URL:=Remplacer chaîne($DocProforma;Séparateur dossier;"/")
 		$URLProforma:="https://association.asa-spv.fr/pdf/Proforma/"+String:C10($NumLaboN)+"_"+$UUIDLabo+"/ProformaRAEMA.pdf"
-		  //https://association.asa-spv.fr/PJCourriels/POUVOIR_POUR_AG_2021.pdf
+		//https://association.asa-spv.fr/PJCourriels/POUVOIR_POUR_AG_2021.pdf
 		
 		
-		OB SET:C1220([Personnes:12]Arguments:7;"URLProforma";$URLProforma)
+		OB SET:C1220([Personnes:12]Arguments:7; "URLProforma"; $URLProforma)
 		SAVE RECORD:C53([Personnes:12])
 	End if 
 	NEXT RECORD:C51([Personnes:12])
 End for 
-ZAmnistieInternationale 
+ZAmnistieInternationale
 

@@ -1,29 +1,29 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 24/11/19, 07:01:59
-  // ----------------------------------------------------
-  // Méthode : ASAPImportationGlobale1
-  // Description
-  // Méthode qui importe les données 
-  //   en provenance de GestAsa et de Biblio
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 24/11/19, 07:01:59
+// ----------------------------------------------------
+// Méthode : ASAPImportationGlobale1
+// Description
+// Méthode qui importe les données 
+//   en provenance de GestAsa et de Biblio
+// ----------------------------------------------------
 
 
 CONFIRM:C162("Importer le fichier d'exportation des poudres avec rapport")
 $OC:=(OK=1)
 If ($OC)
-	ASAPImportePoudresSupAR 
+	ASAPImportePoudresSupAR
 End if 
 
 If ($OC)
 	CONFIRM:C162("Importer le fichier des adhérents")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteAdherents 
+		ASAPImporteAdherents
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -31,9 +31,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier des factures")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteFactures 
+		ASAPImporteFactures
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -41,9 +41,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier des prestations")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImportePrestations 
+		ASAPImportePrestations
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -51,9 +51,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier des ventes")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteVentes 
+		ASAPImporteVentes
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -61,9 +61,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier RAEMA1")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteRAEMA1Descriptif 
+		ASAPImporteRAEMA1Descriptif
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -71,9 +71,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier RAEMA2")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteRAEMA2Lignes 
+		ASAPImporteRAEMA2Lignes
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -81,9 +81,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier RAEMA3")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteRAEMA3Valeurs 
+		ASAPImporteRAEMA3Valeurs
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -91,9 +91,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier RAEMA4")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteRAEMA4ValeursSup 
+		ASAPImporteRAEMA4ValeursSup
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 

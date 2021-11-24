@@ -1,14 +1,14 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 24/07/18, 15:08:50
-  // ----------------------------------------------------
-  // Paramètre aucun
-  // ----------------------------------------------------
-  // Méthode : ResP2LigneAttentionPoudre <= ResP2HtmlResultats  <=  ResP2CreationLignesOKP3 <= ResP2FabriqueRaemaRestreint <=  ResP2MF = traitement de la page 2
-  // Description : écrit le HTML du bloc d'avertissement sur les valeurs à noter pour les dilutions et les résultats
-  // 
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 24/07/18, 15:08:50
+// ----------------------------------------------------
+// Paramètre aucun
+// ----------------------------------------------------
+// Méthode : ResP2LigneAttentionPoudre <= ResP2HtmlResultats  <=  ResP2CreationLignesOKP3 <= ResP2FabriqueRaemaRestreint <=  ResP2MF = traitement de la page 2
+// Description : écrit le HTML du bloc d'avertissement sur les valeurs à noter pour les dilutions et les résultats
+// 
 $THTML:=""
 If (RaemaPoudre)
 	If (LangueCourante="A")

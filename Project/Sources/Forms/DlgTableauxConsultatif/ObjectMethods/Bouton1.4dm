@@ -1,17 +1,17 @@
-C_LONGINT:C283($HauteurRestante;$HauteurMax;$TT;$Fumé)
+C_LONGINT:C283($HauteurRestante; $HauteurMax; $TT; $Fumé)
 _O_PAGE SETUP:C299("ImpressionTbConsultatif")
 PRINT SETTINGS:C106(2)
 GET PRINTABLE AREA:C703($HauteurMax)  // Hauteur d'impression possible
 $HauteurRestante:=$HauteurMax
 If (OK=1)
-	For ($Fumé;1;6)
+	For ($Fumé; 1; 6)
 		PUMDomaine:=$Fumé
 		If ($Fumé=1)
 			$Domaine:=" pour toutes les domaines"
-			RetourCalculTableauConsultatif 
+			RetourCalculTableauConsultatif
 		Else 
 			$Domaine:=" pour le domaine "+PUMDomaine{$Fumé}
-			RetourCalculTableauConsultatif (True:C214)
+			RetourCalculTableauConsultatif(True:C214)
 		End if 
 		VarTitre:="Tableau récapitulatif du Groupe Consultatif "+$Domaine+" du "+String:C10(VarDateDebut)+" au "+String:C10(VarDateFin)
 		
@@ -34,7 +34,7 @@ If (OK=1)
 		$VarImp9:=0
 		$VarImp10:=0
 		$VarImp11:=0
-		For ($salé;1;$TT)
+		For ($salé; 1; $TT)
 			VarImp1:=TbCampagnesConcernees{$salé}
 			VarImp2:=TbRASA{$salé}
 			VarImp3:=TbRADILVA{$salé}

@@ -1,17 +1,17 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 27/09/15, 08:01:28
-  // ----------------------------------------------------
-  // Méthode : ResRaemaCréationET
-  // Description
-  // Création du début des pages de saisie des résultats 
-  // et de récupération des rapports
-  // Paramètre : $1 = Titre de la page Web
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 27/09/15, 08:01:28
+// ----------------------------------------------------
+// Méthode : ResRaemaCréationET
+// Description
+// Création du début des pages de saisie des résultats 
+// et de récupération des rapports
+// Paramètre : $1 = Titre de la page Web
+// ----------------------------------------------------
 
-C_TEXT:C284($THTML;$1)
+C_TEXT:C284($THTML; $1)
 $TitrePage:=$1
 
 $THTML:=""

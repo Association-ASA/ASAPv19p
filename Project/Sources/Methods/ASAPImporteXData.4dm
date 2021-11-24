@@ -1,6 +1,6 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-SET CHANNEL:C77(10;"")
+SET CHANNEL:C77(10; "")
 If (OK=1)
 	RECEIVE VARIABLE:C81($var)
 	If ($Var="XData")
@@ -12,11 +12,11 @@ End if
 
 
 
-  //Procédure d'export
-  //CHERCHER([XData];[XData]XType="TraductionEC";*)
-  //CHERCHER([XData]; & [XData]XNom="Traduction de l'espace client")
-  //RÉGLER SÉRIE(12;"")
-  //$Envoi:="XData"
-  //ENVOYER VARIABLE($Envoi)
-  //ENVOYER ENREGISTREMENT([XData])
-  //RÉGLER SÉRIE(11)
+//Procédure d'export
+//CHERCHER([XData];[XData]XType="TraductionEC";*)
+//CHERCHER([XData]; & [XData]XNom="Traduction de l'espace client")
+//RÉGLER SÉRIE(12;"")
+//$Envoi:="XData"
+//ENVOYER VARIABLE($Envoi)
+//ENVOYER ENREGISTREMENT([XData])
+//RÉGLER SÉRIE(11)

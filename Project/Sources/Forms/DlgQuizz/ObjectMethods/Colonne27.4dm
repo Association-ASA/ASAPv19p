@@ -1,1 +1,1 @@
-QuizzPhotosAfficheQuestionnaire 
+QuizzPhotosAfficheQuestionnaire

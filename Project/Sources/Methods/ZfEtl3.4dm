@@ -1,20 +1,20 @@
-//%attributes = {"publishedWeb":true}
-  // ZfETL  V11 du 14/08/2010
-  //Appelée par ZfETL
-  // $1 = chaine de 3 chiffres
-  //écrit en toute lettre une  chaine de 3 chiffres
-  //Utilise les tableaux <>ZtbETL initialisé par ZInitTbDiamants
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+// ZfETL  V11 du 14/08/2010
+//Appelée par ZfETL
+// $1 = chaine de 3 chiffres
+//écrit en toute lettre une  chaine de 3 chiffres
+//Utilise les tableaux <>ZtbETL initialisé par ZInitTbDiamants
 
 
-  // formatons $1
+// formatons $1
 $CAT:=("0"*(3-Length:C16($1)))+$1
-  // initialisons chacun ces termes
-$Car1:=Substring:C12($CAT;1;1)
-$Car2:=Substring:C12($CAT;2;1)
-$Car3:=Substring:C12($CAT;3;1)
+// initialisons chacun ces termes
+$Car1:=Substring:C12($CAT; 1; 1)
+$Car2:=Substring:C12($CAT; 2; 1)
+$Car3:=Substring:C12($CAT; 3; 1)
 
 
-  //les centaines
+//les centaines
 $Pluriel:=""
 If ($car1="0")
 	$ETL1:=""
@@ -27,7 +27,7 @@ Else
 	End if 
 End if 
 
-  // les deux autres
+// les deux autres
 $Valeur:=Num:C11($Car2+$Car3)
 If ($Valeur<21)
 	$ETL2:=<>ZTbETLVingt{$Valeur}

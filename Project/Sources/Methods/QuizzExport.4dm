@@ -1,19 +1,19 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 29.09.19, 07:08:30
-  // ----------------------------------------------------
-  // Méthode : QuizzExport
-  // Description
-  // Méthode qui exporte la totalité du quizz 
-  //  à destination d'une base 4D si pas de paramètre
-  //  et {$1} = Id du questionnaire à sauvegarder sinon
-  //  sauvegarde tous les questionnaires
-  //  et {$2} = contexte de la sauvegarde
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 29.09.19, 07:08:30
+// ----------------------------------------------------
+// Méthode : QuizzExport
+// Description
+// Méthode qui exporte la totalité du quizz 
+//  à destination d'une base 4D si pas de paramètre
+//  et {$1} = Id du questionnaire à sauvegarder sinon
+//  sauvegarde tous les questionnaires
+//  et {$2} = contexte de la sauvegarde
+// ----------------------------------------------------
 
-C_LONGINT:C283($Salé;$FT)
+C_LONGINT:C283($Salé; $FT)
 $OC:=True:C214
 $UnSeulQuestionnaire:=(Count parameters:C259>0)
 If ($UnSeulQuestionnaire)
@@ -22,48 +22,48 @@ If ($UnSeulQuestionnaire)
 	If (Count parameters:C259=2)
 		$Action:="Sauvegarde à la demande de l'utilisateur"
 		If ($2#"Sauvegarde@")
-			$Mess:=Substring:C12($2;19)
+			$Mess:=Substring:C12($2; 19)
 			Case of 
 				: ($Mess="QI@")  //  Insertion d'une question principale
-					  // ALLER À ENREGISTREMENT([QuizzQuestions];NumEnrConcerné)
-					$Pos:=Position:C15(".";[QuizzQuestions:34]CodeQuestion:5)
-					$RangQuestionA:=Substring:C12([QuizzQuestions:34]CodeQuestion:5;($Pos+1))
+					// ALLER À ENREGISTREMENT([QuizzQuestions];NumEnrConcerné)
+					$Pos:=Position:C15("."; [QuizzQuestions:34]CodeQuestion:5)
+					$RangQuestionA:=Substring:C12([QuizzQuestions:34]CodeQuestion:5; ($Pos+1))
 					$Action:="Insertion d'une question principale avant la question "+$RangQuestionA
 					$Action:=$Action+" : "+[QuizzQuestions:34]LibelQuestion:3
 					
 				: ($Mess="QS@")  //  Suppression d'une question
-					  // ALLER À ENREGISTREMENT([QuizzQuestions];NumEnrConcerné)
-					$Pos:=Position:C15(".";[QuizzQuestions:34]CodeQuestion:5)
-					$CodeQuestion:=Substring:C12([QuizzQuestions:34]CodeQuestion:5;($Pos+1))
+					// ALLER À ENREGISTREMENT([QuizzQuestions];NumEnrConcerné)
+					$Pos:=Position:C15("."; [QuizzQuestions:34]CodeQuestion:5)
+					$CodeQuestion:=Substring:C12([QuizzQuestions:34]CodeQuestion:5; ($Pos+1))
 					$Action:="Suppression de question "+$CodeQuestion
 					$Action:=$Action+" : "+[QuizzQuestions:34]LibelQuestion:3
 					
 				: ($Mess="QR@")  //  Ajout d'une réponse en bas de liste
-					  // ALLER À ENREGISTREMENT([QuizzQuestions];NumEnrConcerné)
+					// ALLER À ENREGISTREMENT([QuizzQuestions];NumEnrConcerné)
 					$Action:="Ajout d'une réponse en bas de liste de la question "
-					$Pos:=Position:C15(".";[QuizzQuestions:34]CodeQuestion:5)
-					$CodeQuestion:=Substring:C12([QuizzQuestions:34]CodeQuestion:5;($Pos+1))
+					$Pos:=Position:C15("."; [QuizzQuestions:34]CodeQuestion:5)
+					$CodeQuestion:=Substring:C12([QuizzQuestions:34]CodeQuestion:5; ($Pos+1))
 					$Action:=$Action+$CodeQuestion+" : "+[QuizzQuestions:34]LibelQuestion:3
 					
 					
 				: ($Mess="RI@")  //  Insertion d'une réponse
-					  // ALLER À ENREGISTREMENT([QuizzReponses];NumEnrConcerné)
-					$Pos:=Position:C15(".";[QuizzReponses:33]CodeReponse:5)
-					$CodeRéponse:=Substring:C12([QuizzReponses:33]CodeReponse:5;($Pos+1))
+					// ALLER À ENREGISTREMENT([QuizzReponses];NumEnrConcerné)
+					$Pos:=Position:C15("."; [QuizzReponses:33]CodeReponse:5)
+					$CodeRéponse:=Substring:C12([QuizzReponses:33]CodeReponse:5; ($Pos+1))
 					$Action:="Insertion d'une réponse avant "+$CodeRéponse
 					$Action:=$Action+" : "+[QuizzReponses:33]LibelReponse:3
 					
 				: ($Mess="RS@")  //  Suppression d'une question
-					  // ALLER À ENREGISTREMENT([QuizzReponses];NumEnrConcerné)
-					$Pos:=Position:C15(".";[QuizzReponses:33]CodeReponse:5)
-					$CodeRéponse:=Substring:C12([QuizzReponses:33]CodeReponse:5;($Pos+1))
+					// ALLER À ENREGISTREMENT([QuizzReponses];NumEnrConcerné)
+					$Pos:=Position:C15("."; [QuizzReponses:33]CodeReponse:5)
+					$CodeRéponse:=Substring:C12([QuizzReponses:33]CodeReponse:5; ($Pos+1))
 					$Action:="Suppression de la réponse "+$CodeRéponse
 					$Action:=$Action+" : "+[QuizzReponses:33]LibelReponse:3
 					
 				: ($Mess="RQ@")  //  Ajout d'une question liée à la réponse
-					  // ALLER À ENREGISTREMENT([QuizzReponses];NumEnrConcerné)
-					$Pos:=Position:C15(".";[QuizzReponses:33]CodeReponse:5)
-					$CodeRéponse:=Substring:C12([QuizzReponses:33]CodeReponse:5;($Pos+1))
+					// ALLER À ENREGISTREMENT([QuizzReponses];NumEnrConcerné)
+					$Pos:=Position:C15("."; [QuizzReponses:33]CodeReponse:5)
+					$CodeRéponse:=Substring:C12([QuizzReponses:33]CodeReponse:5; ($Pos+1))
 					$Action:="Ajout d'une question liée à la réponse "+$CodeRéponse
 					$Action:=$Action+" : "+[QuizzReponses:33]LibelReponse:3
 					
@@ -72,22 +72,22 @@ If ($UnSeulQuestionnaire)
 			End case 
 		End if 
 	End if 
-	  // le dossier de réception
+	// le dossier de réception
 	$CDDos:=Get 4D folder:C485(Dossier base:K5:14)+"RécupQuizz"+Séparateur dossier:K24:12
 	If (Test path name:C476($CDDos)#Est un dossier:K24:2)
 		CREATE FOLDER:C475($CDDos)
 	End if 
-	  // le fichier écrit
-	$L:=Find in array:C230(<>TbQuestionnaireId;$IdQuestionnaireN)
+	// le fichier écrit
+	$L:=Find in array:C230(<>TbQuestionnaireId; $IdQuestionnaireN)
 	If ($L>0)
 		$LibelQuestionnaire:=<>TbQuestionnaireTitre{$L}+" par "+<>TbQuestionnaireAuteur{$L}+"_"
 		$NomCourt:="Sauve_"+$IdQuestionnaireA+"_"+Generate UUID:C1066+".txt"
 		$CDFichier:=$CDDos+$NomCourt
 	End if 
 	$OC:=($L>0)
-	SET CHANNEL:C77(12;$CDFichier)
+	SET CHANNEL:C77(12; $CDFichier)
 Else 
-	SET CHANNEL:C77(12;"")
+	SET CHANNEL:C77(12; "")
 End if 
 If ($OC)
 	<>MonBoolPasErreur:=True:C214
@@ -95,12 +95,12 @@ If ($OC)
 	$Var:="QuizzQuestionnaires"
 	SEND VARIABLE:C80($Var)
 	If ($UnSeulQuestionnaire)
-		QUERY:C277([QuizzQuestionnaires:35];[QuizzQuestionnaires:35]ID:1=Num:C11($1))
+		QUERY:C277([QuizzQuestionnaires:35]; [QuizzQuestionnaires:35]ID:1=Num:C11($1))
 	Else 
 		ALL RECORDS:C47([QuizzQuestionnaires:35])
 	End if 
 	$FT:=Records in selection:C76([QuizzQuestionnaires:35])
-	For ($Salé;1;$FT)
+	For ($Salé; 1; $FT)
 		$Var:="Une autre"
 		SEND VARIABLE:C80($Var)
 		SEND RECORD:C78([QuizzQuestionnaires:35])
@@ -112,12 +112,12 @@ If ($OC)
 	$Var:="QuizzQuestions"
 	SEND VARIABLE:C80($Var)
 	If ($UnSeulQuestionnaire)
-		QUERY:C277([QuizzQuestions:34];[QuizzQuestions:34]CodeQuestion:5=($1+".@"))
+		QUERY:C277([QuizzQuestions:34]; [QuizzQuestions:34]CodeQuestion:5=($1+".@"))
 	Else 
 		ALL RECORDS:C47([QuizzQuestions:34])
 	End if 
 	$FT:=Records in selection:C76([QuizzQuestions:34])
-	For ($Salé;1;$FT)
+	For ($Salé; 1; $FT)
 		$Var:="Une autre"
 		SEND VARIABLE:C80($Var)
 		SEND RECORD:C78([QuizzQuestions:34])
@@ -128,12 +128,12 @@ If ($OC)
 	$Var:="QuizzReponses"
 	SEND VARIABLE:C80($Var)
 	If ($UnSeulQuestionnaire)
-		QUERY:C277([QuizzReponses:33];[QuizzReponses:33]CodeReponse:5=($1+".@"))
+		QUERY:C277([QuizzReponses:33]; [QuizzReponses:33]CodeReponse:5=($1+".@"))
 	Else 
 		ALL RECORDS:C47([QuizzReponses:33])
 	End if 
 	$FT:=Records in selection:C76([QuizzReponses:33])
-	For ($Salé;1;$FT)
+	For ($Salé; 1; $FT)
 		$Var:="Une autre"
 		SEND VARIABLE:C80($Var)
 		SEND RECORD:C78([QuizzReponses:33])
@@ -144,12 +144,12 @@ If ($OC)
 	$Var:="QuizzPhotos"
 	SEND VARIABLE:C80($Var)
 	If ($UnSeulQuestionnaire)
-		QUERY:C277([QuizzPhotos:36];[QuizzPhotos:36]CodePhoto:5=($1+".@"))
+		QUERY:C277([QuizzPhotos:36]; [QuizzPhotos:36]CodePhoto:5=($1+".@"))
 	Else 
 		ALL RECORDS:C47([QuizzPhotos:36])
 	End if 
 	$FT:=Records in selection:C76([QuizzPhotos:36])
-	For ($Salé;1;$FT)
+	For ($Salé; 1; $FT)
 		$Var:="Une autre"
 		SEND VARIABLE:C80($Var)
 		SEND RECORD:C78([QuizzPhotos:36])

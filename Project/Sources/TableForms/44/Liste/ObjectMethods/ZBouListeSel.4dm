@@ -1,2 +1,2 @@
-ZCalculUserSet 
-ORDER BY:C49([DiaLesions:44];[DiaLesions:44]NomLesion:1;>)
+ZCalculUserSet
+ORDER BY:C49([DiaLesions:44]; [DiaLesions:44]NomLesion:1; >)

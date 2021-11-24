@@ -1,24 +1,24 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 12/12/16, 09:35:48
-  // ----------------------------------------------------
-  // Méthode : WebDevisImprime
-  // Description
-  // Imprime le devis reçu par le Web
-  // ET = 0 -> 85
-  // Campagne 
-  // Desiste 105 -> 139
-  // Annonce 105 -> 178  VarTitreCampagne 
-  // Ligne 1 et 2 178 -> 20 VarTitreLigne Var1 -> Var5
-  // Ligne 3 223 -> 257  Var1 -> Var5
-  // Pied 260 -> 440  VarAdresse VarPrixHT
-  // Paramètres :
-  // $1 = Pointeur sur Tb de Noms    $2 = Pointeur sur Tb de Valeurs
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 12/12/16, 09:35:48
+// ----------------------------------------------------
+// Méthode : WebDevisImprime
+// Description
+// Imprime le devis reçu par le Web
+// ET = 0 -> 85
+// Campagne 
+// Desiste 105 -> 139
+// Annonce 105 -> 178  VarTitreCampagne 
+// Ligne 1 et 2 178 -> 20 VarTitreLigne Var1 -> Var5
+// Ligne 3 223 -> 257  Var1 -> Var5
+// Pied 260 -> 440  VarAdresse VarPrixHT
+// Paramètres :
+// $1 = Pointeur sur Tb de Noms    $2 = Pointeur sur Tb de Valeurs
+// ----------------------------------------------------
 
-C_LONGINT:C283($Salé;$FT;$HautMax)
+C_LONGINT:C283($Salé; $FT; $HautMax)
 
 
 $PtTbNoms:=->TbNoms
@@ -35,57 +35,57 @@ VarAdresse:=""
 
 GET PRINTABLE AREA:C703($HautMax)
 $HautCourante:=0
-  // Impression du blanc pour papier à ET
+// Impression du blanc pour papier à ET
 ContexteImpression:="Vide"
 VarHauteurVide:=100
 $H:=Print form:C5("DevisRaemaGel")
 $HautCourante:=$HautCourante+VarHauteurVide
-<>CampagneDevisRGMai:=RaemaTrouveNumCampagneParAn (<>AnCourantDevisRGN;2)
-<>CampagneDevisRGDec:=RaemaTrouveNumCampagneParAn (<>AnCourantDevisRGN;4)
+<>CampagneDevisRGMai:=RaemaTrouveNumCampagneParAn(<>AnCourantDevisRGN; 2)
+<>CampagneDevisRGDec:=RaemaTrouveNumCampagneParAn(<>AnCourantDevisRGN; 4)
 VarAnneeGel:="RAEMA Gel "+<>AnCourantDevisRGA
-  // Impression de l'ET
+// Impression de l'ET
 ContexteImpression:="ET"
 $H:=Print form:C5("DevisRaemaGel")
 $HautCourante:=$HautCourante+$H
-  // La campagne de Mai
-$L:=Find in array:C230($PtTbNoms->;"cbmai@")
+// La campagne de Mai
+$L:=Find in array:C230($PtTbNoms->; "cbmai@")
 
 If ($L>0)  // Il a coché au moins une case de la campagne de mai
-	  // Impression de l'Annonce
+	// Impression de l'Annonce
 	VarTitreCampagne:="Participation au RAEMA GEL "+<>CampagneDevisRGMai+" (Mai "+<>AnCourantDevisRGA+")"
 	ContexteImpression:="Annonce"
 	$H:=Print form:C5("DevisRaemaGel")
 	$HautCourante:=$HautCourante+$H
 	
-	  // impression des lignes des germes
-	ARRAY TEXT:C222($TbPetitNomGerme;0)
-	ARRAY TEXT:C222($TbPetitNomGermeRaccourciMai;0)
-	ARRAY TEXT:C222($TbPetitNomGermeRaccourciDec;0)
-	ARRAY TEXT:C222($TbNomWebGermeDec;0)
-	ARRAY TEXT:C222($TbNomWebGermeMai;0)
-	C_TEXT:C284($NomWebGermeRaccourciDec;$NomWebGermeRaccourciMai)
+	// impression des lignes des germes
+	ARRAY TEXT:C222($TbPetitNomGerme; 0)
+	ARRAY TEXT:C222($TbPetitNomGermeRaccourciMai; 0)
+	ARRAY TEXT:C222($TbPetitNomGermeRaccourciDec; 0)
+	ARRAY TEXT:C222($TbNomWebGermeDec; 0)
+	ARRAY TEXT:C222($TbNomWebGermeMai; 0)
+	C_TEXT:C284($NomWebGermeRaccourciDec; $NomWebGermeRaccourciMai)
 	Repeat 
-		APPEND TO ARRAY:C911($TbPetitNomGerme;$PtTbNoms->{$L})
-		$L:=Find in array:C230($PtTbNoms->;"cbmai@";($L+1))
+		APPEND TO ARRAY:C911($TbPetitNomGerme; $PtTbNoms->{$L})
+		$L:=Find in array:C230($PtTbNoms->; "cbmai@"; ($L+1))
 	Until ($L=-1)
 	
 	$TT:=Size of array:C274($TbPetitNomGerme)
-	For ($fumé;1;$TT)
-		$NomWebGermeRaccourciMai:=Substring:C12($TbPetitNomGerme{$fumé};6)
-		$L3:=Find in array:C230(<>TbPetitNomGermeWeb;$NomWebGermeRaccourciMai)
+	For ($fumé; 1; $TT)
+		$NomWebGermeRaccourciMai:=Substring:C12($TbPetitNomGerme{$fumé}; 6)
+		$L3:=Find in array:C230(<>TbPetitNomGermeWeb; $NomWebGermeRaccourciMai)
 		$NomWebGermeMai:=<>TbNomGermeSchémaGEL{$L3}
-		APPEND TO ARRAY:C911($TbPetitNomGermeRaccourciMai;$NomWebGermeMai)
+		APPEND TO ARRAY:C911($TbPetitNomGermeRaccourciMai; $NomWebGermeMai)
 	End for 
 	
 	$FT:=Size of array:C274(<>TbNomGermemai)
 	$RemarqueCOFRAC:=False:C215
-	For ($Salé;1;$FT)
-		  //$PetitNomGerme:=Sous chaîne($TbPetitNomGerme{$Salé};6)
-		  //$L:=Chercher dans tableau(<>TbPetitNomGermeWeb;$PetitNomGerme)
-		  //$NomGermeSchéma:=<>TbNomGermeSchémaGEL{$l}
-		  //$L:=Chercher dans tableau(<>TbNomGermedec;$NomGermeSchéma)
+	For ($Salé; 1; $FT)
+		//$PetitNomGerme:=Sous chaîne($TbPetitNomGerme{$Salé};6)
+		//$L:=Chercher dans tableau(<>TbPetitNomGermeWeb;$PetitNomGerme)
+		//$NomGermeSchéma:=<>TbNomGermeSchémaGEL{$l}
+		//$L:=Chercher dans tableau(<>TbNomGermedec;$NomGermeSchéma)
 		
-		$L2:=Find in array:C230($TbPetitNomGermeRaccourciMai;<>TbNomGermemai{$Salé})
+		$L2:=Find in array:C230($TbPetitNomGermeRaccourciMai; <>TbNomGermemai{$Salé})
 		$Cofrac:=Num:C11(<>TbCofracGermemai{$Salé})*"*"
 		
 		If ($L2=-1)
@@ -105,11 +105,11 @@ If ($L>0)  // Il a coché au moins une case de la campagne de mai
 			End if 
 			Var1:=<>TbNomGermemai{$Salé}+$Cofrac
 			Var2:=Char:C90(9989)
-			$L:=Find in array:C230(<>TbNomGermeSchémaGEL;(<>TbNomGermemai{$Salé}))
+			$L:=Find in array:C230(<>TbNomGermeSchémaGEL; (<>TbNomGermemai{$Salé}))
 			$PetitNomGermeWeb:=<>TbPetitNomGermeWeb{$L}
-			$L:=Find in array:C230($PtTbNoms->;("nbpotsuparmai"+$PetitNomGermeWeb))
+			$L:=Find in array:C230($PtTbNoms->; ("nbpotsuparmai"+$PetitNomGermeWeb))
 			Var3:=$PtTbValeurs->{$L}
-			$L:=Find in array:C230($PtTbNoms->;("nbpotsupsrmai"+$PetitNomGermeWeb))
+			$L:=Find in array:C230($PtTbNoms->; ("nbpotsupsrmai"+$PetitNomGermeWeb))
 			Var4:=$PtTbValeurs->{$L}
 			ContexteImpression:="Lignemilieu"
 			$H:=Print form:C5("DevisRaemaGel")
@@ -135,36 +135,36 @@ Else
 End if 
 
 
-  // La campagne de décembre
-$L:=Find in array:C230($PtTbNoms->;"cbdec@")
+// La campagne de décembre
+$L:=Find in array:C230($PtTbNoms->; "cbdec@")
 If ($L>0)  // Il a coché au moins une case de la campagne de dec
-	  // Impression de l'Annonce
+	// Impression de l'Annonce
 	VarTitreCampagne:="Participation au RAEMA GEL "+<>CampagneDevisRGDec+" (décembre "+<>AnCourantDevisRGA+")"
 	ContexteImpression:="Annonce"
 	$H:=Print form:C5("DevisRaemaGel")
 	$HautCourante:=$HautCourante+$H
 	
-	  // impression des lignes des germes
-	ARRAY TEXT:C222($TbPetitNomGerme;0)
+	// impression des lignes des germes
+	ARRAY TEXT:C222($TbPetitNomGerme; 0)
 	Repeat 
-		APPEND TO ARRAY:C911($TbPetitNomGerme;$PtTbNoms->{$L})
-		$L:=Find in array:C230($PtTbNoms->;"cbdec@";($L+1))
+		APPEND TO ARRAY:C911($TbPetitNomGerme; $PtTbNoms->{$L})
+		$L:=Find in array:C230($PtTbNoms->; "cbdec@"; ($L+1))
 	Until ($L=-1)
 	$TT:=Size of array:C274($TbPetitNomGerme)
-	For ($fumé;1;$TT)
-		$NomWebGermeRaccourciDec:=Substring:C12($TbPetitNomGerme{$fumé};6)
-		$L3:=Find in array:C230(<>TbPetitNomGermeWeb;$NomWebGermeRaccourciDec)
-		APPEND TO ARRAY:C911($TbPetitNomGermeRaccourciDec;<>TbNomGermeSchémaGEL{$L3})
+	For ($fumé; 1; $TT)
+		$NomWebGermeRaccourciDec:=Substring:C12($TbPetitNomGerme{$fumé}; 6)
+		$L3:=Find in array:C230(<>TbPetitNomGermeWeb; $NomWebGermeRaccourciDec)
+		APPEND TO ARRAY:C911($TbPetitNomGermeRaccourciDec; <>TbNomGermeSchémaGEL{$L3})
 	End for 
 	
 	$FT:=Size of array:C274(<>TbNomGermedec)
 	$RemarqueCOFRAC:=False:C215
-	For ($Salé;1;$FT)
-		  //$PetitNomGerme:=Sous chaîne($TbPetitNomGerme{$Salé};6)
-		  //$L:=Chercher dans tableau(<>TbPetitNomGermeWeb;$PetitNomGerme)
-		  //$NomGermeSchéma:=<>TbNomGermeSchémaGEL{$l}
-		  //$L:=Chercher dans tableau(<>TbNomGermedec;$NomGermeSchéma)
-		$L2:=Find in array:C230($TbPetitNomGermeRaccourciDec;<>TbNomGermedec{$Salé})
+	For ($Salé; 1; $FT)
+		//$PetitNomGerme:=Sous chaîne($TbPetitNomGerme{$Salé};6)
+		//$L:=Chercher dans tableau(<>TbPetitNomGermeWeb;$PetitNomGerme)
+		//$NomGermeSchéma:=<>TbNomGermeSchémaGEL{$l}
+		//$L:=Chercher dans tableau(<>TbNomGermedec;$NomGermeSchéma)
+		$L2:=Find in array:C230($TbPetitNomGermeRaccourciDec; <>TbNomGermedec{$Salé})
 		$Cofrac:=Num:C11(<>TbCofracGermedec{$Salé})*"*"
 		
 		If ($L2=-1)
@@ -184,11 +184,11 @@ If ($L>0)  // Il a coché au moins une case de la campagne de dec
 			End if 
 			Var1:=<>TbNomGermedec{$Salé}+$Cofrac
 			Var2:=Char:C90(9989)
-			$L:=Find in array:C230(<>TbNomGermeSchémaGEL;(<>TbNomGermedec{$Salé}))
+			$L:=Find in array:C230(<>TbNomGermeSchémaGEL; (<>TbNomGermedec{$Salé}))
 			$PetitNomGermeWeb:=<>TbPetitNomGermeWeb{$L}
-			$L:=Find in array:C230($PtTbNoms->;("nbpotsupardec"+$PetitNomGermeWeb))
+			$L:=Find in array:C230($PtTbNoms->; ("nbpotsupardec"+$PetitNomGermeWeb))
 			Var3:=$PtTbValeurs->{$L}
-			$L:=Find in array:C230($PtTbNoms->;("nbpotsupsrdec"+$PetitNomGermeWeb))
+			$L:=Find in array:C230($PtTbNoms->; ("nbpotsupsrdec"+$PetitNomGermeWeb))
 			Var4:=$PtTbValeurs->{$L}
 			ContexteImpression:="Lignemilieu"
 			$H:=Print form:C5("DevisRaemaGel")
@@ -214,7 +214,7 @@ End if
 
 
 
-  // Impression du blanc avant pied
+// Impression du blanc avant pied
 $Vide:=$HautMax-$HautCourante-210
 If ($Vide>0)
 	ContexteImpression:="Vide"
@@ -223,35 +223,35 @@ If ($Vide>0)
 End if 
 
 
-  // Impression du pied de page
-  //$NumLabo:=WebTrouveValeurParNom ("numlabo";$PtTbNoms;$PtTbValeurs)
+// Impression du pied de page
+//$NumLabo:=WebTrouveValeurParNom ("numlabo";$PtTbNoms;$PtTbValeurs)
 
-  //$L:=Chercher dans tableau(<>TbPerNumLaboRAEMAA;$NumLabo)
-  //Si ($L>0)
-  //VarAdresse:="Laboratoire n°"+$NumLabo+<>ZCR+"("+<>TBPERNOMLONG{$L}+")"
-  //Sinon 
-  //VarAdresse:=WebTrouveValeurParNom ("Nom";$PtTbNoms;$PtTbValeurs)+<>ZCR
-  //VarAdresse:=VarAdresse+WebTrouveValeurParNom ("adresse";$PtTbNoms;$PtTbValeurs)+<>ZCR
-  //VarAdresse:=VarAdresse+WebTrouveValeurParNom ("CP";$PtTbNoms;$PtTbValeurs)+"-"
-  //VarAdresse:=VarAdresse+WebTrouveValeurParNom ("Ville";$PtTbNoms;$PtTbValeurs)+<>ZCR
-  //VarAdresse:=VarAdresse+WebTrouveValeurParNom ("Pays";$PtTbNoms;$PtTbValeurs)+<>ZCR
-  //VarAdresse:=VarAdresse+"email : "+WebTrouveValeurParNom ("mail";$PtTbNoms;$PtTbValeurs)+<>ZCR
-  //Fin de si 
+//$L:=Chercher dans tableau(<>TbPerNumLaboRAEMAA;$NumLabo)
+//Si ($L>0)
+//VarAdresse:="Laboratoire n°"+$NumLabo+<>ZCR+"("+<>TBPERNOMLONG{$L}+")"
+//Sinon 
+//VarAdresse:=WebTrouveValeurParNom ("Nom";$PtTbNoms;$PtTbValeurs)+<>ZCR
+//VarAdresse:=VarAdresse+WebTrouveValeurParNom ("adresse";$PtTbNoms;$PtTbValeurs)+<>ZCR
+//VarAdresse:=VarAdresse+WebTrouveValeurParNom ("CP";$PtTbNoms;$PtTbValeurs)+"-"
+//VarAdresse:=VarAdresse+WebTrouveValeurParNom ("Ville";$PtTbNoms;$PtTbValeurs)+<>ZCR
+//VarAdresse:=VarAdresse+WebTrouveValeurParNom ("Pays";$PtTbNoms;$PtTbValeurs)+<>ZCR
+//VarAdresse:=VarAdresse+"email : "+WebTrouveValeurParNom ("mail";$PtTbNoms;$PtTbValeurs)+<>ZCR
+//Fin de si 
 
-$L:=Find in array:C230(<>TbPerNumLaboRAEMA;NumLabo)
+$L:=Find in array:C230(<>TbPerNumLaboRAEMA; NumLabo)
 If ($L>0)
 	VarAdresse:="Laboratoire n°"+String:C10(NumLabo)+<>ZCR+"("+<>TBPERNOMLONG{$L}+")"
 Else 
-	VarAdresse:=WebTrouveValeurParNom ("Nom";$PtTbNoms;$PtTbValeurs)+<>ZCR
-	VarAdresse:=VarAdresse+WebTrouveValeurParNom ("adresse";$PtTbNoms;$PtTbValeurs)+<>ZCR
-	VarAdresse:=VarAdresse+WebTrouveValeurParNom ("CP";$PtTbNoms;$PtTbValeurs)+"-"
-	VarAdresse:=VarAdresse+WebTrouveValeurParNom ("Ville";$PtTbNoms;$PtTbValeurs)+<>ZCR
-	VarAdresse:=VarAdresse+WebTrouveValeurParNom ("Pays";$PtTbNoms;$PtTbValeurs)+<>ZCR
-	VarAdresse:=VarAdresse+"email : "+WebTrouveValeurParNom ("mail";$PtTbNoms;$PtTbValeurs)+<>ZCR
+	VarAdresse:=WebTrouveValeurParNom("Nom"; $PtTbNoms; $PtTbValeurs)+<>ZCR
+	VarAdresse:=VarAdresse+WebTrouveValeurParNom("adresse"; $PtTbNoms; $PtTbValeurs)+<>ZCR
+	VarAdresse:=VarAdresse+WebTrouveValeurParNom("CP"; $PtTbNoms; $PtTbValeurs)+"-"
+	VarAdresse:=VarAdresse+WebTrouveValeurParNom("Ville"; $PtTbNoms; $PtTbValeurs)+<>ZCR
+	VarAdresse:=VarAdresse+WebTrouveValeurParNom("Pays"; $PtTbNoms; $PtTbValeurs)+<>ZCR
+	VarAdresse:=VarAdresse+"email : "+WebTrouveValeurParNom("mail"; $PtTbNoms; $PtTbValeurs)+<>ZCR
 End if 
 
 
 
-VarPrixHT:=WebTrouveValeurParNom ("valht";$PtTbNoms;$PtTbValeurs)
+VarPrixHT:=WebTrouveValeurParNom("valht"; $PtTbNoms; $PtTbValeurs)
 ContexteImpression:="Pied"
 $H:=Print form:C5("DevisRaemaGel")

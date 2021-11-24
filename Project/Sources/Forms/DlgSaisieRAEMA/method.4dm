@@ -4,6 +4,6 @@ Case of
 		SuppValeur:=False:C215
 		SuppLigne:=False:C215
 		Supp:=False:C215
-		RaemaSchemaMFDlgChargement 
+		RaemaSchemaMFDlgChargement
 		
 End case 

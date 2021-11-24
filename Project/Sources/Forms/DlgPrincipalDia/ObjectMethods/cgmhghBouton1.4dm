@@ -1,17 +1,17 @@
 QUERY:C277(\
-[DiaData:45];\
+[DiaData:45]; \
 [DiaData:45]XNom:1=\
-"IVC";\
+"IVC"; \
 *\
 )\
 
 QUERY:C277(\
-[DiaData:45];\
+[DiaData:45]; \
  & \
 [DiaData:45]XType:5=\
 "IVC")\
 
-ZVerrouAttendre (->[DiaData:45])
+ZVerrouAttendre(->[DiaData:45])
 DELETE SELECTION:C66(\
 [DiaData:45])\
 
@@ -42,12 +42,12 @@ If (\
 $TD4)\
 
 	SET DOCUMENT PROPERTIES:C478(\
-		$CD4;\
-		False:C215;\
-		True:C214;\
-		$DC;\
-		$HC;\
-		$DM;\
+		$CD4; \
+		False:C215; \
+		True:C214; \
+		$DC; \
+		$HC; \
+		$DM; \
 		$HC)\
 		
 	DELETE DOCUMENT:C159(\

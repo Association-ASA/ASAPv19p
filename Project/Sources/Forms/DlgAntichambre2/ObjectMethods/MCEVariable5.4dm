@@ -12,5 +12,5 @@ Case of
 		SensFleche:="Flèche en haut"
 End case 
 $NomFleche:=String:C10(VarImageFleche+1)+"1"
-  //PtChampCourant:=Pointeur vers("VarC"+$NomFleche)
-  //OBJET FIXER SAISISSABLE(PtChampCourant->;(CaseSaisie=1))
+//PtChampCourant:=Pointeur vers("VarC"+$NomFleche)
+//OBJET FIXER SAISISSABLE(PtChampCourant->;(CaseSaisie=1))

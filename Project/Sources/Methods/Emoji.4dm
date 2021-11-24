@@ -1,26 +1,26 @@
-//%attributes = {}
-  //YEmoji method  (JPR)
+//%attributes = {"lang":"fr"}
+//YEmoji method  (JPR)
 
-  //Emoji Char := Emoji (Unicode Code Point in Hex)
+//Emoji Char := Emoji (Unicode Code Point in Hex)
 
-  //Ex : ALERT("Don't do that "+Emoji("270B")+" if you care!")
-C_REAL:C285($real;$valueR)
-C_LONGINT:C283($l;$i;$long;$sign)
+//Ex : ALERT("Don't do that "+Emoji("270B")+" if you care!")
+C_REAL:C285($real; $valueR)
+C_LONGINT:C283($l; $i; $long; $sign)
 
 $unicode:=$1
 
-$unicode:=Replace string:C233($unicode;"U+";"")
+$unicode:=Replace string:C233($unicode; "U+"; "")
 $char:=""
 If (Length:C16($unicode)>2)
 	
-	  //Converts a Hex string into a real one
+	//Converts a Hex string into a real one
 	$valueR:=0
 	$l:=Length:C16($unicode)
 	If ($l>0)
 		$unicode:=Uppercase:C13($unicode)
 		$digit:=0
 		$sign:=1
-		For ($i;1;$l)
+		For ($i; 1; $l)
 			$asc:=Character code:C91($unicode[[$i]])
 			$good:=True:C214
 			If (($asc>47) & ($asc<58))
@@ -54,7 +54,7 @@ If (Length:C16($unicode)>2)
 			$char:=Char:C90($valueR)
 			
 		: (($valueR>=55296) & ($valueR<=57343))  //U+D800 to U+DFFF
-			  //No encoding
+			//No encoding
 			
 		: (($valueR>=57344) & ($valueR<=65535))  //U+E000 to U+FFFF
 			$char:=Char:C90($valueR)

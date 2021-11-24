@@ -1,14 +1,14 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 26/01/19, 20:09:33
-  // ----------------------------------------------------
-  // Paramètres
-  // ----------------------------------------------------
-  // Méthode : ASAPLaboRechercheStandard
-  // Description
-  // Méthode qui recherche les laboratoires selon une recherche ASAP
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 26/01/19, 20:09:33
+// ----------------------------------------------------
+// Paramètres
+// ----------------------------------------------------
+// Méthode : ASAPLaboRechercheStandard
+// Description
+// Méthode qui recherche les laboratoires selon une recherche ASAP
 
 
 $F:=Open form window:C675("DlgRecherchePerso")

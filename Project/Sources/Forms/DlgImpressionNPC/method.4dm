@@ -1,1 +1,1 @@
-OBJECT SET RGB COLORS:C628(VarComparaison;Couleur;0x00FFFFFF)
+OBJECT SET RGB COLORS:C628(VarComparaison; Couleur; 0x00FFFFFF)

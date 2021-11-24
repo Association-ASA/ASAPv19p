@@ -1,1 +1,1 @@
-VarBanque:=YSaisieAssiste (->PUMBanque;2;True:C214)
+VarBanque:=YSaisieAssiste(->PUMBanque; 2; True:C214)

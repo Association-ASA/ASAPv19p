@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 // ----------------------------------------------------
 // Nom utilisateur (OS) : MBPASA2015
 // Date et heure : 22/11/21, 10:52:45

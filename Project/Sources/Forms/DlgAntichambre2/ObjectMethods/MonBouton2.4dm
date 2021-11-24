@@ -1,7 +1,7 @@
 
 If (LesFlechesSontLà)
-	DiaACReplaceLesFleches 
+	DiaACReplaceLesFleches
 Else 
-	DiaACReplaceLesFleches 
-	DiaAC2MetsLesFleches 
+	DiaACReplaceLesFleches
+	DiaAC2MetsLesFleches
 End if 

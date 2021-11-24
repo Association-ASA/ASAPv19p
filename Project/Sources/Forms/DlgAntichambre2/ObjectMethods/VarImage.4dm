@@ -1,1 +1,1 @@
-DiaDeplaceFlecheLesionWeb (VarImageFleche)
+DiaDeplaceFlecheLesionWeb(VarImageFleche)

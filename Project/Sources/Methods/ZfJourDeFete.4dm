@@ -1,8 +1,8 @@
-//%attributes = {"publishedWeb":true}
-  //ZfJourDeFete 
-  // décrit, pour une année donnée les jours de fête français
-ARRAY DATE:C224(TbDatesFériées;12)
-VarPaques:=ZFeteDePaques (VarAnnée)
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+//ZfJourDeFete 
+// décrit, pour une année donnée les jours de fête français
+ARRAY DATE:C224(TbDatesFériées; 12)
+VarPaques:=ZFeteDePaques(VarAnnée)
 TbDatesFériées{1}:=VarPaques
 VarLundiDePaques:=VarPaques+1
 TbDatesFériées{2}:=VarLundiDePaques

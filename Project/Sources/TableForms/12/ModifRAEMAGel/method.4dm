@@ -3,10 +3,10 @@ $evt:=Form event code:C388
 Case of 
 	: $evt=Sur chargement:K2:1
 		$UUIDLabo:=[Personnes:12]UUID:1
-		NumLaboA:=ASAPTrouveNumeroLaboParUUID ($UUIDLabo)
+		NumLaboA:=ASAPTrouveNumeroLaboParUUID($UUIDLabo)
 		VarTitre:="Modification de la campagne "+NumCampagneDevisGel+" pour le labo n° "+NumLaboA
-		QUERY:C277([CampagneParticipations:17];[CampagneParticipations:17]UUIDPersonne:2=$UUIDLabo;*)
-		QUERY:C277([CampagneParticipations:17];[CampagneParticipations:17]NumCampagne:3=NumCampagneDevisGel)
+		QUERY:C277([CampagneParticipations:17]; [CampagneParticipations:17]UUIDPersonne:2=$UUIDLabo; *)
+		QUERY:C277([CampagneParticipations:17]; [CampagneParticipations:17]NumCampagne:3=NumCampagneDevisGel)
 		RELATE MANY SELECTION:C340([CampagneGelGermes:25]UUIDParticipation:2)
 		$FT:=Records in selection:C76([CampagneGelGermes:25])
 		
@@ -30,7 +30,7 @@ Case of
 		ARLMsep:=0
 		SrLMsep:=0
 		
-		For ($salé;1;$FT)
+		For ($salé; 1; $FT)
 			Case of 
 				: [CampagneGelGermes:25]NomDuGerme:3="BACILLUS CEREUS"
 					CBBacillus:=True:C214
@@ -61,6 +61,6 @@ Case of
 			NEXT RECORD:C51([CampagneGelGermes:25])
 			
 		End for 
-		  // Avant de modifier les [CampagneGelGermes], y a-il des colis supplémentaires avec rapport
+		// Avant de modifier les [CampagneGelGermes], y a-il des colis supplémentaires avec rapport
 		ColisARavant:=ARBacillus+ARPseudomonas+ARLactique+ARLMens+ARLMsep
 End case 

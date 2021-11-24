@@ -1,14 +1,14 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 24/11/19, 07:01:59
-  // ----------------------------------------------------
-  // Méthode : ASAPImportationGlobale2
-  // Description
-  // Méthode qui importe les données 
-  //   en provenance de GestAsa et de Biblio
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 24/11/19, 07:01:59
+// ----------------------------------------------------
+// Méthode : ASAPImportationGlobale2
+// Description
+// Méthode qui importe les données 
+//   en provenance de GestAsa et de Biblio
+// ----------------------------------------------------
 $OC:=True:C214
 ALL RECORDS:C47([Personnes:12])
 If (Records in selection:C76([Personnes:12])=0)
@@ -19,9 +19,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier des participations")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteParticipations 
+		ASAPImporteParticipations
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -29,9 +29,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier des RAEMA gel")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteRAEMAGel 
+		ASAPImporteRAEMAGel
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -39,9 +39,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier des connexions Web")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteConnexions 
+		ASAPImporteConnexions
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -49,9 +49,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier des demandes de devis RAEMA gel")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteDevisRaemaGel 
+		ASAPImporteDevisRaemaGel
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -60,9 +60,9 @@ If ($OC)
 	CONFIRM:C162("Importer le fichier des commentaires des internautes")
 	$OC:=(OK=1)
 	If ($OC)
-		ASAPImporteComSaisieRes 
+		ASAPImporteComSaisieRes
 	Else 
-		ASAPViderBase 
+		ASAPViderBase
 	End if 
 End if 
 
@@ -74,5 +74,5 @@ Else
 End if 
 CONFIRM:C162("Voulez-vous lancer la vérification de cohérence ?")
 If (OK=1)
-	ASAPImportationVerifieCoherence 
+	ASAPImportationVerifieCoherence
 End if 

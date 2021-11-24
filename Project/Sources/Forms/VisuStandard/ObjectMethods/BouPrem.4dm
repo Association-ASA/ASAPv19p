@@ -1,1 +1,1 @@
-ZGereClicBoutonNavigationSaisie ("BouPrem")
+ZGereClicBoutonNavigationSaisie("BouPrem")

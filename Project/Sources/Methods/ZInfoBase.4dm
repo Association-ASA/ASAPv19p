@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 // ----------------------------------------------------
 // Nom utilisateur (OS) : Association QualiSoft
 // Date et heure : 03/05/18, 19:47:00

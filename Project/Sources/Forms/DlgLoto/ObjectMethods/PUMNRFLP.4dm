@@ -1,1 +1,1 @@
-RaemaLotoFabriquePage 
+RaemaLotoFabriquePage

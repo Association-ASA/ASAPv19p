@@ -1,5 +1,4 @@
-//%attributes = {}
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 /*  OB_get_byPath (object; xPath) -> value
 $1: object or entity
 $2: dotted notation path to a property
@@ -28,12 +27,12 @@ var $i; $valueType : Integer
 ARRAY LONGINT:C221($aLen; 0)
 ARRAY LONGINT:C221($aPos; 0)
 
-$path_c:=Split string:C1554($2; "."; sk ignore empty strings:K86:1+sk trim spaces:K86:2)
+$path_c:=Split string:C1554($2; "."; sk ignorer chaîne vide:K86:1+sk couper espaces:K86:2)
 
 If ($path_c.length>0)
 	$value:=$object
 	
-	For each ($property_t; $path_c) While ((Value type:C1509($value)#Is undefined:K8:13) & (Not:C34($done)))
+	For each ($property_t; $path_c) While ((Value type:C1509($value)#Est une variable indéfinie:K8:13) & (Not:C34($done)))
 		$i:=-1
 		$queryStr:=""
 		
@@ -51,7 +50,7 @@ If ($path_c.length>0)
 		$valueType:=Value type:C1509($value)
 		
 		Case of 
-			: ($valueType#Is object:K8:27) & ($valueType#Is collection:K8:32)
+			: ($valueType#Est un objet:K8:27) & ($valueType#Est une collection:K8:32)
 				$value:=$value[$property_t]
 				$done:=True:C214
 				

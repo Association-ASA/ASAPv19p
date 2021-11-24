@@ -1,9 +1,9 @@
-//%attributes = {}
-  // RapEnvoiMailLabo
+//%attributes = {"lang":"fr"}
+// RapEnvoiMailLabo
 C_DATE:C307($VarDateDebCamp)
 $OC:=True:C214
 $NumCampagne:=<>PUMCampagne{<>PUMCampagne}
-$L:=Find in array:C230(<>TbCampagnesNumCampagne;$NumCampagne)
+$L:=Find in array:C230(<>TbCampagnesNumCampagne; $NumCampagne)
 $VarDateDebCamp:=<>TbCampagnesDateLimiteReponse{$L}
 If ($VarDateDebCamp>(Current date:C33-30))
 	$Mess:="Je m'étonne qu'on envoie les mails de récupération des rapports du RAEMA "
@@ -19,5 +19,5 @@ If (Length:C16(VarTexteCourriel)<600)
 End if 
 
 If ($OC)
-	RapEnvoyerLesMails 
+	RapEnvoyerLesMails
 End if 

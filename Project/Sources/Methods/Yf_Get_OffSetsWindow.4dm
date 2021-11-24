@@ -1,18 +1,18 @@
-//%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Method : Yf_Get_OffSetsWindow
-  // Created 22/04/98 by Vincent de Lachaux for 4DPOP
-  // ----------------------------------------------------
-  // Description
-  // Retourne l'offset pour chaque type de fenêtre
-  // ----------------------------------------------------
+//%attributes = {"invisible":true,"lang":"fr"}
+// ----------------------------------------------------
+// Method : Yf_Get_OffSetsWindow
+// Created 22/04/98 by Vincent de Lachaux for 4DPOP
+// ----------------------------------------------------
+// Description
+// Retourne l'offset pour chaque type de fenêtre
+// ----------------------------------------------------
 
 C_LONGINT:C283($0)
 C_LONGINT:C283($1)
 C_BOOLEAN:C305($2)
 
 C_BOOLEAN:C305($Boo_Windows)
-C_LONGINT:C283($Lon_dH;$Lon_dV;$Lon_Type)
+C_LONGINT:C283($Lon_dH; $Lon_dV; $Lon_Type)
 
 $Boo_Windows:=<>ZPC
 

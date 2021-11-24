@@ -1,1 +1,1 @@
-DiaMajusculeCommentaire 
+DiaMajusculeCommentaire

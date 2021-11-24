@@ -1,1 +1,1 @@
-ZConfiguration_Stocke 
+ZConfiguration_Stocke

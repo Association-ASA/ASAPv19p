@@ -1,15 +1,15 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 22/05/19, 17:24:12
-  // ----------------------------------------------------
-  // Méthode : Ad3TrouveVisiteur
-  // Description
-  // Méthode qui renvoie le type de visiteur
-  //  en fonction du login
-  // Paramètres$1=login
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 22/05/19, 17:24:12
+// ----------------------------------------------------
+// Méthode : Ad3TrouveVisiteur
+// Description
+// Méthode qui renvoie le type de visiteur
+//  en fonction du login
+// Paramètres$1=login
+// ----------------------------------------------------
 $login:=$1
 Case of 
 	: ($login="@gouv.fr")

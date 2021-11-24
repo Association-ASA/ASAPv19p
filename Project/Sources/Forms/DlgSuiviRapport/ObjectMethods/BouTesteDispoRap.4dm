@@ -1,10 +1,10 @@
 
 
 
-QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; & ;[XTachesDeFond:10]ObjetTdF:2;"DateHeureDebutExécution";=;Current date:C33;*)
-QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; & ;[XTachesDeFond:10]ObjetTdF:2;"NomMéthode";=;"RapPlaceDocumentsDansWeb";*)
-QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; & ;[XTachesDeFond:10]ObjetTdF:2;"Accompli";=;False:C215;*)
-QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; & ;[XTachesDeFond:10]ObjetTdF:2;"Destinataire";=;"serveur")
+QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];  & ; [XTachesDeFond:10]ObjetTdF:2; "DateHeureDebutExécution"; =; Current date:C33; *)
+QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];  & ; [XTachesDeFond:10]ObjetTdF:2; "NomMéthode"; =; "RapPlaceDocumentsDansWeb"; *)
+QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];  & ; [XTachesDeFond:10]ObjetTdF:2; "Accompli"; =; False:C215; *)
+QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];  & ; [XTachesDeFond:10]ObjetTdF:2; "Destinataire"; =; "serveur")
 
 $OC:=True:C214
 $Ordre:=0
@@ -20,21 +20,21 @@ End if
 If ($OC)
 	CREATE RECORD:C68([XTachesDeFond:10])
 	[XTachesDeFond:10]OrdrePassage:4:=$Ordre
-	OB SET:C1220([XTachesDeFond:10]ObjetTdF:2;"DateHeureDebutExécution";Timestamp:C1445)
-	OB SET:C1220([XTachesDeFond:10]ObjetTdF:2;"Accompli";False:C215)
-	OB SET:C1220([XTachesDeFond:10]ObjetTdF:2;"NomMéthode";"RapPlaceDocumentsDansWeb")
-	OB SET:C1220([XTachesDeFond:10]ObjetTdF:2;"Destinataire";"serveur")
+	OB SET:C1220([XTachesDeFond:10]ObjetTdF:2; "DateHeureDebutExécution"; Timestamp:C1445)
+	OB SET:C1220([XTachesDeFond:10]ObjetTdF:2; "Accompli"; False:C215)
+	OB SET:C1220([XTachesDeFond:10]ObjetTdF:2; "NomMéthode"; "RapPlaceDocumentsDansWeb")
+	OB SET:C1220([XTachesDeFond:10]ObjetTdF:2; "Destinataire"; "serveur")
 	SAVE RECORD:C53([XTachesDeFond:10])
 End if 
 
-DELAY PROCESS:C323(Current process:C322;1200)
-QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];[XTachesDeFond:10]ObjetTdF:2;"DateHeureDebutExécution";=;Current date:C33;*)
-QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; & ;[XTachesDeFond:10]ObjetTdF:2;"NomMéthode";=;"RapPlaceDocumentsDansWeb";*)
-QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; & ;[XTachesDeFond:10]ObjetTdF:2;"Accompli";=;False:C215)
+DELAY PROCESS:C323(Current process:C322; 1200)
+QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; [XTachesDeFond:10]ObjetTdF:2; "DateHeureDebutExécution"; =; Current date:C33; *)
+QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];  & ; [XTachesDeFond:10]ObjetTdF:2; "NomMéthode"; =; "RapPlaceDocumentsDansWeb"; *)
+QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];  & ; [XTachesDeFond:10]ObjetTdF:2; "Accompli"; =; False:C215)
 While (Records in selection:C76([XTachesDeFond:10])>0)
-	DELAY PROCESS:C323(Current process:C322;600)
-	QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];[XTachesDeFond:10]ObjetTdF:2;"DateHeureDebutExécution";=;Current date:C33;*)
-	QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; & ;[XTachesDeFond:10]ObjetTdF:2;"NomMéthode";=;"RapPlaceDocumentsDansWeb";*)
-	QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; & ;[XTachesDeFond:10]ObjetTdF:2;"Accompli";=;False:C215)
+	DELAY PROCESS:C323(Current process:C322; 600)
+	QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10]; [XTachesDeFond:10]ObjetTdF:2; "DateHeureDebutExécution"; =; Current date:C33; *)
+	QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];  & ; [XTachesDeFond:10]ObjetTdF:2; "NomMéthode"; =; "RapPlaceDocumentsDansWeb"; *)
+	QUERY BY ATTRIBUTE:C1331([XTachesDeFond:10];  & ; [XTachesDeFond:10]ObjetTdF:2; "Accompli"; =; False:C215)
 End while 
-$Prc:=Execute on server:C373("ASAPMAJCheminDocument";0)
+$Prc:=Execute on server:C373("ASAPMAJCheminDocument"; 0)

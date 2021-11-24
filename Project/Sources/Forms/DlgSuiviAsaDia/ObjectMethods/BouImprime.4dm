@@ -1,2 +1,2 @@
-DiaEditeConnexions 
+DiaEditeConnexions
 

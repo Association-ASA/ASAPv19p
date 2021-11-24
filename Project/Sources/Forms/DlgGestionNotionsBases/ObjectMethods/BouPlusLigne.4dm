@@ -1,7 +1,7 @@
 
 CONFIRM:C162("Créer un nouveau texte pour le Web ?")
 If (OK=1)
-	ZFenetreModaleAuCentre (450;350)
+	ZFenetreModaleAuCentre(450; 350)
 	DIALOG:C40("DlgTextesChoixNouveau")
 	CLOSE WINDOW:C154
 	If (BouOK=1)
@@ -18,9 +18,9 @@ If (OK=1)
 		[DiaTextesWebParagraphes:37]OrdreAffichage:12:=100000
 		[DiaTextesWebParagraphes:37]NiveauTitre:13:=1
 		SAVE RECORD:C53([DiaTextesWebParagraphes:37])
-		APPEND TO ARRAY:C911(PUMTextes;VarNomGeneral)
-		APPEND TO ARRAY:C911(TbIDTexte;[DiaTextesWeb:38]IDTexteWeb:1)
-		DiaWebTextesAfficheGestion 
+		APPEND TO ARRAY:C911(PUMTextes; VarNomGeneral)
+		APPEND TO ARRAY:C911(TbIDTexte; [DiaTextesWeb:38]IDTexteWeb:1)
+		DiaWebTextesAfficheGestion
 		PUMTextes:=Size of array:C274(PUMTextes)
 	End if 
 End if 

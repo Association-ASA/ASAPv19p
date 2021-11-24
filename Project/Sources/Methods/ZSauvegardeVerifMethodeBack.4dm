@@ -1,24 +1,24 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : MBPASA2015
-  // Date et heure : 04/05/18, 10:34:12
-  // ----------------------------------------------------
-  // Paramètres
-  // $1(Entier long): 
-  //  si = 1 $3 = MESSAGE (Message de progression)
-  //  si = 2 $3 = Vérification terminée Texte du message OK 
-  //(sauf que ce n'est pas envoyé avec Tout Vérifier)
-  //  si = 3 $3 = Message d'erreur sur n° $4 = table si $2=4, = index si $2=8
-  //  si = 4 $3 = Fin d’exécution ("Done")
-  //  si = 5 $3 = Message de Warning sur n° $4 = table si $2=4, = index si $2=8 
-  // ----------------------------------------------------
-  // Méthode : ZSauvegardeVerifMethodeBack
-  // Description
-  // Permet de savoir comment la vérification s'est passée
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : MBPASA2015
+// Date et heure : 04/05/18, 10:34:12
+// ----------------------------------------------------
+// Paramètres
+// $1(Entier long): 
+//  si = 1 $3 = MESSAGE (Message de progression)
+//  si = 2 $3 = Vérification terminée Texte du message OK 
+//(sauf que ce n'est pas envoyé avec Tout Vérifier)
+//  si = 3 $3 = Message d'erreur sur n° $4 = table si $2=4, = index si $2=8
+//  si = 4 $3 = Fin d’exécution ("Done")
+//  si = 5 $3 = Message de Warning sur n° $4 = table si $2=4, = index si $2=8 
+// ----------------------------------------------------
+// Méthode : ZSauvegardeVerifMethodeBack
+// Description
+// Permet de savoir comment la vérification s'est passée
 
 
 
-C_LONGINT:C283($1;$2;$4;$5)
+C_LONGINT:C283($1; $2; $4; $5)
 C_TEXT:C284($3)
 
 Case of 

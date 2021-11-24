@@ -1,15 +1,15 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 29/09/19, 07:21:55
-  // ----------------------------------------------------
-  // Méthode : QuizzImport
-  // Description
-  // Importe les enregistrements d'un quizz
-  //  exporté par QuizzExport
-  // ----------------------------------------------------
-SET CHANNEL:C77(10;"")
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 29/09/19, 07:21:55
+// ----------------------------------------------------
+// Méthode : QuizzImport
+// Description
+// Importe les enregistrements d'un quizz
+//  exporté par QuizzExport
+// ----------------------------------------------------
+SET CHANNEL:C77(10; "")
 If (OK=1)
 	RECEIVE VARIABLE:C81($Var)
 	If ($Var#"QuizzQuestionnaires")
@@ -26,10 +26,10 @@ If (OK=1)
 			$Var:=""
 			RECEIVE VARIABLE:C81($Var)
 		End while 
-		  // $Var="in"
+		// $Var="in"
 		
 		RECEIVE VARIABLE:C81($Var)
-		  // $Var="QuizzQuestions"
+		// $Var="QuizzQuestions"
 		READ WRITE:C146([QuizzQuestions:34])
 		ALL RECORDS:C47([QuizzQuestions:34])
 		DELETE SELECTION:C66([QuizzQuestions:34])
@@ -41,7 +41,7 @@ If (OK=1)
 			$Var:=""
 			RECEIVE VARIABLE:C81($Var)
 		End while 
-		  // $Var="QuizzReponses"
+		// $Var="QuizzReponses"
 		
 		READ WRITE:C146([QuizzReponses:33])
 		ALL RECORDS:C47([QuizzReponses:33])
@@ -55,7 +55,7 @@ If (OK=1)
 			RECEIVE VARIABLE:C81($Var)
 		End while 
 		
-		  // $Var="QuizzPhotos"
+		// $Var="QuizzPhotos"
 		READ WRITE:C146([QuizzPhotos:36])
 		ALL RECORDS:C47([QuizzPhotos:36])
 		DELETE SELECTION:C66([QuizzPhotos:36])

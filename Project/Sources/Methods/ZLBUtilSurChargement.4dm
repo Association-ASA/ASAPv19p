@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 // ----------------------------------------------------
 // Nom utilisateur (OS) : iMacASA2017
 // Date et heure : 22/04/18, 16:06:25
@@ -79,7 +79,7 @@ OBJECT SET VISIBLE:C603(*; "BouModifMdP"; Not:C34(ZModif))
 VarNomUtil:=[XUtilisateurs:2]Nom:2
 
 // Le serveur de mail
-<>ServeurFAM:=OB Get:C1224([XUtilisateurs:2]ObjetUtilisateur:13; "ServeurFAM"; Is text:K8:3)
+<>ServeurFAM:=OB Get:C1224([XUtilisateurs:2]ObjetUtilisateur:13; "ServeurFAM"; Est un texte:K8:3)
 If (<>ServeurFAM="")
 	<>ServeurFAM:="Orange"
 End if 

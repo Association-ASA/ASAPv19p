@@ -1,4 +1,4 @@
-//%attributes = {"publishedWeb":true}
+//%attributes = {"publishedWeb":true,"lang":"fr"}
 Case of   // Ecrivons une ligne pour chaque région
 	: ($Département="01")
 		$Département:="Ain ("+$Département+")"

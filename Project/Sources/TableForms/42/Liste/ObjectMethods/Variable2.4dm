@@ -2,7 +2,7 @@ $MCE:=<>Boss & Macintosh command down:C546
 If ($MCE)
 	READ WRITE:C146([DiaData:45])
 End if 
-QUERY:C277([DiaData:45];[DiaData:45]XType:5="MdR")
+QUERY:C277([DiaData:45]; [DiaData:45]XType:5="MdR")
 If (BLOB size:C605([DiaData:45]XBlob:11)=0) | $mce
 	If (Records in selection:C76([DiaData:45])=0)
 		CREATE RECORD:C68([DiaData:45])
@@ -14,8 +14,8 @@ If (BLOB size:C605([DiaData:45]XBlob:11)=0) | $mce
 	If (OK=1)
 		CLOSE DOCUMENT:C267($Doc)
 		CheminDoc:=document
-		ZVerrouAttendre (->[DiaData:45])
-		DOCUMENT TO BLOB:C525(CheminDoc;[DiaData:45]XBlob:11)
+		ZVerrouAttendre(->[DiaData:45])
+		DOCUMENT TO BLOB:C525(CheminDoc; [DiaData:45]XBlob:11)
 		SAVE RECORD:C53([DiaData:45])
 		UNLOAD RECORD:C212([DiaData:45])
 		READ ONLY:C145([DiaData:45])
@@ -26,6 +26,6 @@ Else
 		$Doc:=Create document:C266(CheminDoc)
 		CLOSE DOCUMENT:C267($Doc)
 	End if 
-	BLOB TO DOCUMENT:C526(CheminDoc;[DiaData:45]XBlob:11)
+	BLOB TO DOCUMENT:C526(CheminDoc; [DiaData:45]XBlob:11)
 	OPEN URL:C673(CheminDoc)
 End if 

@@ -1,14 +1,14 @@
-//%attributes = {"publishedWeb":true}
+//%attributes = {"publishedWeb":true,"lang":"fr"}
 
 
-  // ZBaseNombreHasardEncadré
-  //Retourne un nombre au hasard entre BorneSup et BorneInf
-  //le 22/08/99
+// ZBaseNombreHasardEncadré
+//Retourne un nombre au hasard entre BorneSup et BorneInf
+//le 22/08/99
 C_LONGINT:C283($1)  //Borne inf
 C_LONGINT:C283($2)  // Borne sup
 C_LONGINT:C283($0)
 
-C_LONGINT:C283($Max;$Min)
+C_LONGINT:C283($Max; $Min)
 $Min:=$1
 $Max:=$2
 

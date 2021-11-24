@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 //Method: OB_copyToSharedObject
 //$1: Object to copy from
 //$2: Shared Object to copy to
@@ -10,14 +10,14 @@ OB GET PROPERTY NAMES:C1232($1; $arrNames; $arrTypes)
 For ($counter; 1; Size of array:C274($arrNames))
 	Case of 
 			//Attribute type is object, copy with OB_CopyObject again
-		: ($arrTypes{$counter}=Is object:K8:27)
+		: ($arrTypes{$counter}=Est un objet:K8:27)
 			$2[$arrNames{$counter}]:=New shared object:C1526
 			Use ($2[$arrNames{$counter}])
 				OB_CopyToSharedObject($1[$arrNames{$counter}]; $2[$arrNames{$counter}])
 			End use 
 			
 			//Attribute type is collection, copy with OB_CopyCollection
-		: ($arrTypes{$counter}=Is collection:K8:32)
+		: ($arrTypes{$counter}=Est une collection:K8:32)
 			$2[$arrNames{$counter}]:=New shared collection:C1527
 			Use ($2[$arrNames{$counter}])
 				OB_CopyToSharedCollection($1[$arrNames{$counter}]; $2[$arrNames{$counter}])

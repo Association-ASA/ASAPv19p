@@ -1,17 +1,17 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 24/07/18, 15:18:21
-  // ----------------------------------------------------
-  // Paramètres
-  // ----------------------------------------------------
-  // Méthode : ResP2PiedResultatAvecDilution
-  // Description : écrit le HTML du pied de bloc 
-  //  incluant l'avertissement du calcul du zscore
-  // 
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 24/07/18, 15:18:21
+// ----------------------------------------------------
+// Paramètres
+// ----------------------------------------------------
+// Méthode : ResP2PiedResultatAvecDilution
+// Description : écrit le HTML du pied de bloc 
+//  incluant l'avertissement du calcul du zscore
+// 
 
-$Germe:=Substring:C12(<>TbRefGerme{Compteur};3)
+$Germe:=Substring:C12(<>TbRefGerme{Compteur}; 3)
 $THTML:=""
 $THTML:=$THTML+"<tr id="+<>ZGuil+"zscore"+$Germe+<>ZGuil+" class="+<>ZGuil+"fondres"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"      <td></td>"+<>ZCR

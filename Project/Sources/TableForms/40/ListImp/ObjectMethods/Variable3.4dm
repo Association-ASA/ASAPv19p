@@ -1,1 +1,1 @@
-VarTriple:=DiaAfficheTriplette 
+VarTriple:=DiaAfficheTriplette

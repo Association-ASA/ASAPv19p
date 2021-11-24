@@ -1,3 +1,3 @@
-QuizzImportTotal 
+QuizzImportTotal
 PUMQuestionnaire:=0
-QuizzAfficheLeQuestionnaire (PUMQuestionnaire)
+QuizzAfficheLeQuestionnaire(PUMQuestionnaire)

@@ -1,1 +1,1 @@
-ZNewsAffichePalette 
+ZNewsAffichePalette

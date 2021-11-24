@@ -1,1 +1,1 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}

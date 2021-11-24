@@ -1,5 +1,5 @@
-//%attributes = {}
-OBJECT SET VISIBLE:C603(*;"@FTNC";False:C215)
+//%attributes = {"lang":"fr"}
+OBJECT SET VISIBLE:C603(*; "@FTNC"; False:C215)
 Case of 
 	: (RadRI=1)
 		[RetoursFiches:24]TypeRetour:5:="Retour d'information"
@@ -7,6 +7,6 @@ Case of
 		[RetoursFiches:24]TypeRetour:5:="Demande d'information"
 	: (RadR=1)
 		[RetoursFiches:24]TypeRetour:5:="Réclamation"
-		OBJECT SET VISIBLE:C603(*;"@FTNC";True:C214)
+		OBJECT SET VISIBLE:C603(*; "@FTNC"; True:C214)
 		
 End case 

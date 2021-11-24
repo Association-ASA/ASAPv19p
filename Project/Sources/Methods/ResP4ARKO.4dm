@@ -1,7 +1,7 @@
-//%attributes = {}
-  // ResP4ARKO
+//%attributes = {"lang":"fr"}
+// ResP4ARKO
 
-$THTML:=ResRaemaCréationET ("Pb envoi courriel")
+$THTML:=ResRaemaCréationET("Pb envoi courriel")
 $THTML:=$THTML+"         <br /><br />"+<>ZCR
 $THTML:=$THTML+"         <p class="+<>ZGuil+"titrepage"+<>ZGuil+">VERIFICATION DE L'ENVOI DU  COURRIEL</p><br /><br />"+<>ZCR
 $THTML:=$THTML+"         <p class="+<>ZGuil+"textecentre"+<>ZGuil+">Un incident s'est produit pendant l'envoi de votre courriel :</p>"+<>ZCR
@@ -14,5 +14,5 @@ $THTML:=$THTML+"        <p class="+<>ZGuil+"textecentre"+<>ZGuil+"> Si le probl�
 $THTML:=$THTML+"          <a href="+<>ZGuil+"mailto:asa-spv@wanadoo.fr"+<>ZGuil+">Envoyer un mail à l'ASA</a>"+<>ZCR
 $THTML:=$THTML+"        </p><br/>"
 $THTML:=$THTML+"</body>"+<>ZCR
-$THTML:=$THTML+ResRaemaCréationPied 
+$THTML:=$THTML+ResRaemaCréationPied
 WEB SEND TEXT:C677($THTML)

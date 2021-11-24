@@ -11,24 +11,24 @@ Case of
 		
 		If (Length:C16($TestSimple)>0)
 			If (Is nil pointer:C315(ZPtChampClefs))  // pas de champ qui stocke le descriptif de ZPtTable
-				  // On va tester tous les champs texte
-				$L:=Find in array:C230(<>TbNumChampTableBase;ZNumTable)
-				QUERY:C277(ZPtTable->;<>TbPtChampBase{$L}->=$TestEtendu;*)
+				// On va tester tous les champs texte
+				$L:=Find in array:C230(<>TbNumChampTableBase; ZNumTable)
+				QUERY:C277(ZPtTable->; <>TbPtChampBase{$L}->=$TestEtendu; *)
 				Repeat 
-					$L:=Find in array:C230(<>TbNumChampTableBase;ZNumTable;($L+1))
+					$L:=Find in array:C230(<>TbNumChampTableBase; ZNumTable; ($L+1))
 					If ($L>0)
 						If (Type:C295(<>TbPtChampBase{$L}->)=Est un texte:K8:3) | (Type:C295(<>TbPtChampBase{$L}->)=Est un champ alpha:K8:1)
-							QUERY:C277(ZPtTable->; | <>TbPtChampBase{$L}->=$TestEtendu;*)
+							QUERY:C277(ZPtTable->;  | <>TbPtChampBase{$L}->=$TestEtendu; *)
 						End if 
 					End if 
 				Until ($L=-1)
 				QUERY:C277(ZPtTable->)
 			Else 
-				$Soundex:=ZSoundexFrance (Get edited text:C655)
+				$Soundex:=ZSoundexFrance(Get edited text:C655)
 				If (Length:C16($TestSimple)>0)
-					QUERY:C277(ZPtTable->;ZPtChampClefs->%$TestSimple;*)
-					QUERY:C277(ZPtTable->; | ZPtChampClefs->%$Soundex)
-					ZFenetreActualiseTitre 
+					QUERY:C277(ZPtTable->; ZPtChampClefs->%$TestSimple; *)
+					QUERY:C277(ZPtTable->;  | ZPtChampClefs->%$Soundex)
+					ZFenetreActualiseTitre
 				End if 
 			End if 
 		End if 

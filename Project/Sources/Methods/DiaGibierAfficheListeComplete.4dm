@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 $F:=Open form window:C675("DlgAsaDiaGibier")
 VarCDListePhotos:=""
 VarCDDossierPhotos:=""

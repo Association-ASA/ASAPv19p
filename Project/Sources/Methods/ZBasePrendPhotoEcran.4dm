@@ -1,44 +1,44 @@
-//%attributes = {"invisible":true,"shared":true}
-  // =========================================== 
-  // PROJECT METHOD: HELP_ScreenshotToFile 
-  // PARAMETERS: $0 = path to file containing screenshot 
-  // DESCRIPTION: Take a screenshot in PNG format of the screen where the frontmost 
-  // window is located and returns the path to the file containing it. 
-  // macOS support for multiple screens. On Windows you get all screens. 
+//%attributes = {"invisible":true,"shared":true,"lang":"fr"}
+// =========================================== 
+// PROJECT METHOD: HELP_ScreenshotToFile 
+// PARAMETERS: $0 = path to file containing screenshot 
+// DESCRIPTION: Take a screenshot in PNG format of the screen where the frontmost 
+// window is located and returns the path to the file containing it. 
+// macOS support for multiple screens. On Windows you get all screens. 
 
-  // CREATED BY: Tim Nevels, Innovative Solutions ©2018 
-  // DATE: 1/5/18 
-  // LAST MODIFIED: 
-  // By Patrick EMANUEL
-  // ============================================ 
-  // http://4d.1045681.n5.nabble.com/ScreenshotToFile-Method-td5756240.html
-  // see also: http://www.nirsoft.net/utils/nircmd.html
-  // see also: http://dailymactips.com/take-screenshots-on-your-mac-using-the-terminal-application/
+// CREATED BY: Tim Nevels, Innovative Solutions ©2018 
+// DATE: 1/5/18 
+// LAST MODIFIED: 
+// By Patrick EMANUEL
+// ============================================ 
+// http://4d.1045681.n5.nabble.com/ScreenshotToFile-Method-td5756240.html
+// see also: http://www.nirsoft.net/utils/nircmd.html
+// see also: http://dailymactips.com/take-screenshots-on-your-mac-using-the-terminal-application/
 
 
-C_TEXT:C284($0;$filePath_t;$1)
+C_TEXT:C284($0; $filePath_t; $1)
 
-C_TEXT:C284($fileName_t;$screenRectOption_t;$command_t;$inputStream_t;$outputStream_t;$errorStream_t)
-C_LONGINT:C283($left;$top;$right;$bottom)
+C_TEXT:C284($fileName_t; $screenRectOption_t; $command_t; $inputStream_t; $outputStream_t; $errorStream_t)
+C_LONGINT:C283($left; $top; $right; $bottom)
 
-  // create temporary file path 
-$fileName_t:="Screenshot "+String:C10(Current date:C33;ISO date:K1:8;Current time:C178)+".png"
-$fileName_t:=Replace string:C233($fileName_t;"/";"-")  // replace slashes with dashes in file name 
-$fileName_t:=Replace string:C233($fileName_t;":";".")  // replace colons with periods in file name 
-$filePath_t:=Get 4D folder:C485(Dossier Logs:K5:19;*)+$fileName_t
+// create temporary file path 
+$fileName_t:="Screenshot "+String:C10(Current date:C33; ISO date:K1:8; Current time:C178)+".png"
+$fileName_t:=Replace string:C233($fileName_t; "/"; "-")  // replace slashes with dashes in file name 
+$fileName_t:=Replace string:C233($fileName_t; ":"; ".")  // replace colons with periods in file name 
+$filePath_t:=Get 4D folder:C485(Dossier Logs:K5:19; *)+$fileName_t
 
-  // Add the possibility to define your own folder to receive screenshots
+// Add the possibility to define your own folder to receive screenshots
 If (Count parameters:C259=1)
 	If (Test path name:C476($1)=Est un dossier:K24:2)
 		$filePath_t:=$1+$fileName_t
 	End if 
 End if 
 
-SET ENVIRONMENT VARIABLE:C812("_4D_OPTION_HIDE_CONSOLE";"true")
+SET ENVIRONMENT VARIABLE:C812("_4D_OPTION_HIDE_CONSOLE"; "true")
 
 If (Not:C34(<>ZPC))  // Mac
 	
-	  // Options available with ScreenCapture command line
+	// Options available with ScreenCapture command line
 	Begin SQL
 		/*
 		All Of The Flags You Can Use With The Screencapture Command
@@ -71,26 +71,26 @@ If (Not:C34(<>ZPC))  // Mac
 		*/
 	End SQL
 	
-	  // get screen coordinates 
-	  //SCREEN COORDINATES($left;$top;$right;$bottom;GetCurrentScreenNumber)
-	SCREEN COORDINATES:C438($left;$top;$right;$bottom;Menu bar screen:C441)
+	// get screen coordinates 
+	//SCREEN COORDINATES($left;$top;$right;$bottom;GetCurrentScreenNumber)
+	SCREEN COORDINATES:C438($left; $top; $right; $bottom; Menu bar screen:C441)
 	$screenRectOption_t:="-R"+String:C10($left)+","+String:C10($top)+","+String:C10($right)+","+String:C10($bottom)
 	
-	  // get screenshot 
+	// get screenshot 
 	$command_t:="screencapture "+$screenRectOption_t+" '"+Convert path system to POSIX:C1106($filePath_t)+"'"
-	LAUNCH EXTERNAL PROCESS:C811($command_t;$inputStream_t;$outputStream_t;$errorStream_t)
+	LAUNCH EXTERNAL PROCESS:C811($command_t; $inputStream_t; $outputStream_t; $errorStream_t)
 	
 Else   // Windows 
 	
 	$Path:=Get 4D folder:C485(Dossier Resources courant:K5:16)+"nircmd"+Séparateur dossier:K24:12+"nircmdc.exe"
 	If (Test path name:C476($Path)=Est un document:K24:1)
 		
-		  // get screenshot 
+		// get screenshot 
 		$command_t:=Get 4D folder:C485(Dossier Resources courant:K5:16)+"nircmd"+Séparateur dossier:K24:12+"nircmdc.exe savescreenshotfull "+Char:C90(Guillemets:K15:41)+$filePath_t+Char:C90(Guillemets:K15:41)
-		LAUNCH EXTERNAL PROCESS:C811($command_t;$inputStream_t;$outputStream_t;$errorStream_t)
+		LAUNCH EXTERNAL PROCESS:C811($command_t; $inputStream_t; $outputStream_t; $errorStream_t)
 		
 		If ($errorStream_t#"")
-			ALERT:C41("Nircmdc.exe screen capture problem.\n"+$errorStream_t;"Error")
+			ALERT:C41("Nircmdc.exe screen capture problem.\n"+$errorStream_t; "Error")
 		End if 
 		
 	Else 
@@ -98,5 +98,5 @@ Else   // Windows
 	End if 
 End if 
 
-  // return file path 
+// return file path 
 $0:=$filePath_t

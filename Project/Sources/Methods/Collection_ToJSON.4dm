@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedSoap":false,"publishedWeb":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false}
+//%attributes = {"invisible":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedSoap":false,"publishedWeb":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false,"lang":"fr"}
 // PM: "collectionToJson" (new LV 21.05.20, 09:03:40)
 // $1 - C_COLLECTION - Collection to dump out as JSON
 // $2 - C_TEXT - Name of the list for titles and filename (when empty than auto created)
@@ -22,12 +22,12 @@ End if
 If (Count parameters:C259>2)  // $3 or automatic standard timeInfo
 	$timeInfo:=$3
 Else 
-	$timeInfo:=String:C10(Current date:C33; System date long:K1:3)+" "+Lowercase:C14(String:C10(Current time:C178; HH MM AM PM:K7:5))
+	$timeInfo:=String:C10(Current date:C33; Système date long:K1:3)+" "+Lowercase:C14(String:C10(Current time:C178; h mn Matin Après Midi:K7:5))
 End if 
 
 $colKeys:=New collection:C1472
 If ($col.length>0)
-	If (Value type:C1509($col[0])=Is object:K8:27)
+	If (Value type:C1509($col[0])=Est un objet:K8:27)
 		$colKeys:=OB Keys:C1719($col[0])
 	End if 
 End if 

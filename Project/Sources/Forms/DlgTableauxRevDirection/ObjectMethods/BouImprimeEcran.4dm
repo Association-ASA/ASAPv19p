@@ -8,6 +8,6 @@ If (OK=1)
 		$Domaine:=" pour la catégorie "+PUMDomaine{PUMDomaine}
 	End if 
 	VarTitre:="Tableaux pour le RAEMA "+$TypeRaema+$Domaine
-	$H:=Print form:C5([RetoursFiches:24];"DlgTableauxRevueDirection")
+	$H:=Print form:C5([RetoursFiches:24]; "DlgTableauxRevueDirection")
 	PAGE BREAK:C6
 End if 

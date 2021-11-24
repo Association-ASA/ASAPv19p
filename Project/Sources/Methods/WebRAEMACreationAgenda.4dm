@@ -1,20 +1,20 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 16/03/16, 16:31:06
-  // ----------------------------------------------------
-  // Méthode : WebRAEMACreationAgenda
-  // Description
-  // Permet la création automatique de l'agenda des RAEMA
-  // à partir des renseignements des schéma des RAEMA
-  // Paramètres : $1 = Vrai si récents et faux sinon
-  // {$2} = version anglaise si existe
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 16/03/16, 16:31:06
+// ----------------------------------------------------
+// Méthode : WebRAEMACreationAgenda
+// Description
+// Permet la création automatique de l'agenda des RAEMA
+// à partir des renseignements des schéma des RAEMA
+// Paramètres : $1 = Vrai si récents et faux sinon
+// {$2} = version anglaise si existe
+// ----------------------------------------------------
 
-C_LONGINT:C283($Salé;$FT)
-C_BOOLEAN:C305($recents;$1)
-ARRAY TEXT:C222($TbNomFichiers;4)
+C_LONGINT:C283($Salé; $FT)
+C_BOOLEAN:C305($recents; $1)
+ARRAY TEXT:C222($TbNomFichiers; 4)
 $TbNomFichiers{1}:="raemaactualites.shtml"  // Page agenda RAEMA Récents en Français
 $TbNomFichiers{2}:="raemaactualitesA.shtml"  // Page agenda RAEMA Récents en Anglais
 $TbNomFichiers{3}:="raemaagendaancien.shtml"  // Page agenda RAEMA Anciens en Français
@@ -69,11 +69,11 @@ $THTML:=$THTML+"   <div id="+<>ZGuil+"contenu1"+<>ZGuil+" class="+<>ZGuil+"texte
 $THTML:=$THTML+"    <!--4dinclude menuraema.shtml-->"+<>ZCR
 $THTML:=$THTML+"     <br /> <br />"+<>ZCR2
 
-  // Le titre de la page
+// Le titre de la page
 $An:=Year of:C25(Current date:C33)
 $dateDébut:=Date:C102("01/01/"+String:C10($An-1))
 If ($recents)
-	QUERY:C277([RAEMACampagnes:20];[RAEMACampagnes:20]DateEnvoiColis:3>$dateDébut)
+	QUERY:C277([RAEMACampagnes:20]; [RAEMACampagnes:20]DateEnvoiColis:3>$dateDébut)
 	If ($anglais)
 		$type:="List of recent RAEMA (since "+String:C10($An-1)
 		$textelien:="Access to old RAEMA campaigns"
@@ -83,7 +83,7 @@ If ($recents)
 	End if 
 	
 Else 
-	QUERY:C277([RAEMACampagnes:20];[RAEMACampagnes:20]DateEnvoiColis:3<$dateDébut)
+	QUERY:C277([RAEMACampagnes:20]; [RAEMACampagnes:20]DateEnvoiColis:3<$dateDébut)
 	If ($anglais)
 		$type:="List of old RAEMA (2007 to "+String:C10($An-2)
 		$textelien:="Back to the latest RAEMA campaigns"
@@ -94,11 +94,11 @@ Else
 End if 
 $THTML:=$THTML+"    <p class="+<>ZGuil+"grandtitrepage"+<>ZGuil+">"+$type+")</p> <br />"+<>ZCR
 
-  // liste des RAEMA
+// liste des RAEMA
 $FT:=Records in selection:C76([RAEMACampagnes:20])
-ORDER BY:C49([RAEMACampagnes:20];[RAEMACampagnes:20]DateEnvoiColis:3;<)
-For ($Salé;1;$FT)
-	$THTML:=$THTML+WebEcritUneCampagne ($anglais)
+ORDER BY:C49([RAEMACampagnes:20]; [RAEMACampagnes:20]DateEnvoiColis:3; <)
+For ($Salé; 1; $FT)
+	$THTML:=$THTML+WebEcritUneCampagne($anglais)
 	NEXT RECORD:C51([RAEMACampagnes:20])
 End for 
 
@@ -121,5 +121,5 @@ If (Test path name:C476($CD)=Est un document:K24:1)
 	DELETE DOCUMENT:C159($CD)
 End if 
 $Doc:=Create document:C266($CD)
-SEND PACKET:C103($Doc;$THTML)
+SEND PACKET:C103($Doc; $THTML)
 CLOSE DOCUMENT:C267($Doc)

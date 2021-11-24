@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
 // ----------------------------------------------------
 // Nom utilisateur : cgm 
@@ -20,7 +20,7 @@ $H1:=Milliseconds:C459
 VarChampRecherche:=[Personnes:12]ChampRecherche:6
 LISTBOX SELECT ROW:C912(*; "ListBoxAdh"; TbPerNom)
 OBJECT SET SCROLL POSITION:C906(*; "ListBoxAdh"; TbPerNom)
-VarPrénom:=OB Get:C1224([Personnes:12]Arguments:7; "Prénom"; Is text:K8:3)
+VarPrénom:=OB Get:C1224([Personnes:12]Arguments:7; "Prénom"; Est un texte:K8:3)
 VarAnnonceAdh:=VarPrénom+" "+[Personnes:12]NomLong:2
 
 // gestion d'un nouvel enregistrement et de l'affichage de la barre de titre
@@ -46,10 +46,10 @@ CacCA:=0
 CacBureau:=0
 CacAD:=0
 CacADG:=0
-CacCA:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "CA"; Is boolean:K8:9))
-CacBureau:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "Bureau"; Is boolean:K8:9))
-CacAD:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "AsaDia"; Is boolean:K8:9))
-CacADG:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "AsaDia Gibier"; Is boolean:K8:9))
+CacCA:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "CA"; Est un booléen:K8:9))
+CacBureau:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "Bureau"; Est un booléen:K8:9))
+CacAD:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "AsaDia"; Est un booléen:K8:9))
+CacADG:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "AsaDia Gibier"; Est un booléen:K8:9))
 //$Pt:=OBJET Lire pointeur(Objet nommé;"CacBureau")
 //$Pt->:=Num(OB Lire([Personnes]Arguments;"Bureau";Est un booléen))
 
@@ -71,10 +71,10 @@ ARRAY TEXT:C222(TbMailsSansArobase; 0)
 ASAPPerFabriqueTbMailsLabo("EMail"; True:C214; False:C215; False:C215; False:C215)
 ASAPPerFabriqueTbMailsLabo("EMailBis"; True:C214; False:C215; False:C215; False:C215)
 
-VarRemarque:=OB Get:C1224([Personnes:12]Arguments:7; "Remarques"; Is text:K8:3)
-VarTelPro:=OB Get:C1224([Personnes:12]Arguments:7; "PhonePro"; Is text:K8:3)
-VarTelPerso:=OB Get:C1224([Personnes:12]Arguments:7; "TelephonePerso"; Is text:K8:3)
-VarPortable:=OB Get:C1224([Personnes:12]Arguments:7; "Portable"; Is text:K8:3)
+VarRemarque:=OB Get:C1224([Personnes:12]Arguments:7; "Remarques"; Est un texte:K8:3)
+VarTelPro:=OB Get:C1224([Personnes:12]Arguments:7; "PhonePro"; Est un texte:K8:3)
+VarTelPerso:=OB Get:C1224([Personnes:12]Arguments:7; "TelephonePerso"; Est un texte:K8:3)
+VarPortable:=OB Get:C1224([Personnes:12]Arguments:7; "Portable"; Est un texte:K8:3)
 
 
 // Les adresses
@@ -92,7 +92,7 @@ Else
 End if 
 
 // La facturation
-CaCTVA:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "NonSoumisTVA"; Is text:K8:3)="Vrai")
+CaCTVA:=Num:C11(OB Get:C1224([Personnes:12]Arguments:7; "NonSoumisTVA"; Est un texte:K8:3)="Vrai")
 RELATE MANY:C262([Personnes:12]UUID:1)
 
 // rappel des ventes
@@ -148,9 +148,9 @@ End for
 
 // Les courriels
 // Envoi des mails en texte brut (case à cocher BaCMailTexteBrut page 4)
-$MailTexteBrutB:=OB Get:C1224([Personnes:12]Arguments:7; "MailTexteBrut"; Is boolean:K8:9)
+$MailTexteBrutB:=OB Get:C1224([Personnes:12]Arguments:7; "MailTexteBrut"; Est un booléen:K8:9)
 BaCMailTexteBrut:=Num:C11($MailTexteBrutB)
-LISTBOX SELECT ROW:C912(*; "ListBoxPersonnesCourriels"; 0; lk remove from selection:K53:3)
+LISTBOX SELECT ROW:C912(*; "ListBoxPersonnesCourriels"; 0; lk supprimer de sélection:K53:3)
 ORDER BY:C49([PersonnesCourriels:31]; [PersonnesCourriels:31]DateCourriel:4; <)
 PREVIOUS RECORD:C110([PersonnesCourriels:31])
 

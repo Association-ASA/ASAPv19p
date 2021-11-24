@@ -1,4 +1,4 @@
-C_LONGINT:C283($Salé;$FT)
+C_LONGINT:C283($Salé; $FT)
 
 $evt:=Form event code:C388
 Case of 
@@ -6,7 +6,7 @@ Case of
 		$T:=Get edited text:C655
 		If (Length:C16($T)>2)
 			$Test:="@"+$T+"@"
-			QUERY:C277([DiaLesions:44];[DiaLesions:44]NomLesion:1=$Test)
+			QUERY:C277([DiaLesions:44]; [DiaLesions:44]NomLesion:1=$Test)
 			$FT:=Records in selection:C76([DiaLesions:44])
 			Case of 
 				: ($FT=0)
@@ -18,24 +18,24 @@ Case of
 					
 					
 				: ($FT>1)
-					ARRAY TEXT:C222($TbNomLesion;$FT)
-					ARRAY TEXT:C222($TbNomLesionAffichée;$FT)
-					ORDER BY:C49([DiaLesions:44];[DiaLesions:44]NomLesion:1;>)
-					SELECTION TO ARRAY:C260([DiaLesions:44]NomLesion:1;$TbNomLesion)
+					ARRAY TEXT:C222($TbNomLesion; $FT)
+					ARRAY TEXT:C222($TbNomLesionAffichée; $FT)
+					ORDER BY:C49([DiaLesions:44]; [DiaLesions:44]NomLesion:1; >)
+					SELECTION TO ARRAY:C260([DiaLesions:44]NomLesion:1; $TbNomLesion)
 					$FT:=Size of array:C274($TbNomLesion)
-					For ($Salé;1;$FT)
+					For ($Salé; 1; $FT)
 						$NLCourant:=$TbNomLesion{$Salé}
-						$TbNomLesionAffichée{$Salé}:=Replace string:C233($NLCourant;"(";" ")
-						$TbNomLesionAffichée{$Salé}:=Replace string:C233($TbNomLesionAffichée{$Salé};")";" ")
+						$TbNomLesionAffichée{$Salé}:=Replace string:C233($NLCourant; "("; " ")
+						$TbNomLesionAffichée{$Salé}:=Replace string:C233($TbNomLesionAffichée{$Salé}; ")"; " ")
 					End for 
 					
-					$Menu:=ZTableauVersTexte (->$TbNomLesionAffichée;";")
+					$Menu:=ZTableauVersTexte(->$TbNomLesionAffichée; ";")
 					$Li:=Pop up menu:C542($Menu)
 					VarNomLésion:=$TbNomLesion{$Li}
 			End case 
 		End if 
 		
 	: ($evt=Sur données modifiées:K2:15)
-		OB SET:C1220([DiaData:45]XObjet:15;"Lésion";VarNomLésion)
+		OB SET:C1220([DiaData:45]XObjet:15; "Lésion"; VarNomLésion)
 		SAVE RECORD:C53([DiaData:45])
 End case 

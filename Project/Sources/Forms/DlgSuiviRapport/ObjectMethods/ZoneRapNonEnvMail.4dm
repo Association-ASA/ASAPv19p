@@ -1,1 +1,1 @@
-RapAfficheParticipation (Self:C308)
+RapAfficheParticipation(Self:C308)

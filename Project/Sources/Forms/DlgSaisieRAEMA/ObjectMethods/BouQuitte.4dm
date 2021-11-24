@@ -7,14 +7,14 @@ If (Size of array:C274(TbNR)>0)
 			GOTO OBJECT:C206(VarDateFinCamp)
 		End if 
 	Else 
-		RaemaSchemaStockPage 
-		RaemaInitPUMCampagne 
-		ASAPFabriqueTbCampagnesToutes 
-		ASAPFabriqueTbCampagneUne 
-		ASAPFabriqueTbPrestations 
-		  // ASAPFabriqueTbRAEMACourant 
-		ZAmnistieInternationale 
-		$PR:=Execute on server:C373("WebEcritAgendaAJAR";0;"EcritureHTMLPageWeb")
+		RaemaSchemaStockPage
+		RaemaInitPUMCampagne
+		ASAPFabriqueTbCampagnesToutes
+		ASAPFabriqueTbCampagneUne
+		ASAPFabriqueTbPrestations
+		// ASAPFabriqueTbRAEMACourant 
+		ZAmnistieInternationale
+		$PR:=Execute on server:C373("WebEcritAgendaAJAR"; 0; "EcritureHTMLPageWeb")
 		CANCEL:C270
 	End if 
 Else 

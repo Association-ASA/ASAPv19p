@@ -3,9 +3,9 @@ Case of
 		
 	: (Form event code:C388=Sur chargement:K2:1)
 		
-		  // you have to choose between these options !
-		  // ***** EITHER ***** static clock (declared as time) 
-		  // *****   OR  ***** dynamic clck (declared as longint)
+		// you have to choose between these options !
+		// ***** EITHER ***** static clock (declared as time) 
+		// *****   OR  ***** dynamic clck (declared as longint)
 		
 		
 		If (True:C214)  //   dynamic clock sample

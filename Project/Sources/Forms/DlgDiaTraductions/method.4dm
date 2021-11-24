@@ -5,7 +5,7 @@ Case of
 		
 		C_LONGINT:C283(VarNbLignes)
 		
-		ARRAY TEXT:C222(PUMTraduc;5)
+		ARRAY TEXT:C222(PUMTraduc; 5)
 		PUMTraduc{1}:="Nom de la lésion"
 		PUMTraduc{2}:="Description de la lésion"
 		PUMTraduc{3}:="Fiche réflexe de la lésion"
@@ -13,12 +13,12 @@ Case of
 		PUMTraduc{5}:="Textes"
 		PUMTraduc:=0
 		
-		ARRAY TEXT:C222(Colonne1;0)
-		ARRAY TEXT:C222(Colonne2;0)
-		ARRAY LONGINT:C221(Colonne3N;0)
+		ARRAY TEXT:C222(Colonne1; 0)
+		ARRAY TEXT:C222(Colonne2; 0)
+		ARRAY LONGINT:C221(Colonne3N; 0)
 		VarTestF:=""
 		
-		ARRAY LONGINT:C221(PUMTaille;5)
+		ARRAY LONGINT:C221(PUMTaille; 5)
 		PUMTaille{1}:=1
 		PUMTaille{2}:=2
 		PUMTaille{3}:=3
@@ -26,10 +26,10 @@ Case of
 		PUMTaille{5}:=5
 		PUMTaille:=1
 		
-		  // Ad3FabriqueTbTraduc 
-		ARRAY BOOLEAN:C223(TbLignesMasque;0)
+		// Ad3FabriqueTbTraduc 
+		ARRAY BOOLEAN:C223(TbLignesMasque; 0)
 		
 		VarNbLignes:=0
 		VarNbSouligne:=0
-		OBJECT SET VISIBLE:C603(*;"tradtext@";PUMTraduc=5)
+		OBJECT SET VISIBLE:C603(*; "tradtext@"; PUMTraduc=5)
 End case 

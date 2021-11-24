@@ -1,4 +1,4 @@
 CONFIRM:C162("Désirez-vous VRAIMENT quitter AsaDia ?")
 If (OK=1)
-	ZFinirEnBeauté 
+	ZFinirEnBeauté
 End if 

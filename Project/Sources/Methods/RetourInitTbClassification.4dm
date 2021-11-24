@@ -1,21 +1,21 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : Admin
-  // Date et heure : 29/09/16, 14:32:19
-  // ----------------------------------------------------
-  // Méthode : RetourInitTbClassification
-  // Description
-  // 
-  //
-  // Paramètres
-  // ----------------------------------------------------
-QUERY:C277([XData:1];[XData:1]XNom:2="Classification des retours";*)
-QUERY:C277([XData:1]; & [XData:1]XType:3="ClassificationRetours")
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : Admin
+// Date et heure : 29/09/16, 14:32:19
+// ----------------------------------------------------
+// Méthode : RetourInitTbClassification
+// Description
+// 
+//
+// Paramètres
+// ----------------------------------------------------
+QUERY:C277([XData:1]; [XData:1]XNom:2="Classification des retours"; *)
+QUERY:C277([XData:1];  & [XData:1]XType:3="ClassificationRetours")
 If (Records in selection:C76([XData:1])=0)
 	CREATE RECORD:C68([XData:1])
 	[XData:1]XNom:2:="Classification des retours"
 	[XData:1]XType:3:="ClassificationRetours"
-	ARRAY TEXT:C222(PUMClassInfo;15)
+	ARRAY TEXT:C222(PUMClassInfo; 15)
 	PUMClassInfo{1}:="I1-Problème de saisie des résultats"
 	PUMClassInfo{2}:="I2-Problème de téléchargement des rapports"
 	PUMClassInfo{3}:="I3-N’a pas reçu le mail pour le téléchargement des rapports"
@@ -31,10 +31,10 @@ If (Records in selection:C76([XData:1])=0)
 	PUMClassInfo{13}:="I13-Problème attestation"
 	PUMClassInfo{14}:="I14-Problème impression Bon de commande"
 	$ListeInfo:=New list:C375
-	ARRAY TO LIST:C287(PUMClassInfo;$ListeInfo)
+	ARRAY TO LIST:C287(PUMClassInfo; $ListeInfo)
 	PUMClassInfo{15}:="Ajouter une valeur"
 	
-	ARRAY TEXT:C222(PUMClassTech;31)
+	ARRAY TEXT:C222(PUMClassTech; 31)
 	PUMClassTech{1}:="T1-Correspondance numéro d’échantillon/colis"
 	PUMClassTech{2}:="T2-Demande de précision du protocole"
 	PUMClassTech{3}:="T3-Demande de précision de la conservation"
@@ -66,18 +66,18 @@ If (Records in selection:C76([XData:1])=0)
 	PUMClassTech{29}:="T29-Demande infos sur les paramètres à analyser"
 	PUMClassTech{30}:="T30-Demande infos sur formation"
 	$ListeTech:=New list:C375
-	ARRAY TO LIST:C287(PUMClassTech;$ListeTech)
+	ARRAY TO LIST:C287(PUMClassTech; $ListeTech)
 	PUMClassTech{31}:="Ajouter une valeur"
 	
-	ARRAY TEXT:C222(PUMClassQual;4)
+	ARRAY TEXT:C222(PUMClassQual; 4)
 	PUMClassQual{1}:="Q1-Demande d’attestation COFRAC de l’ASA"
 	PUMClassQual{2}:="Q2-Evaluation des fournisseurs"
 	PUMClassQual{3}:="Q3-Conformité RAEMA aux exigences EIL accrédité"
 	$ListeQual:=New list:C375
-	ARRAY TO LIST:C287(PUMClassQual;$ListeQual)
+	ARRAY TO LIST:C287(PUMClassQual; $ListeQual)
 	PUMClassQual{4}:="Ajouter une valeur"
 	
-	ARRAY TEXT:C222(PUMClassStat;8)
+	ARRAY TEXT:C222(PUMClassStat; 8)
 	PUMClassStat{1}:="S1-Correspondance groupe/milieu"
 	PUMClassStat{2}:="S2-Demande d’information sur les groupes"
 	PUMClassStat{3}:="S3-Demande de valeurs statistiques supplémentaires"
@@ -86,10 +86,10 @@ If (Records in selection:C76([XData:1])=0)
 	PUMClassStat{6}:="S6-Demande rapport pour audit"
 	PUMClassStat{7}:="S7-Erreur rapport"
 	$ListeStat:=New list:C375
-	ARRAY TO LIST:C287(PUMClassStat;$ListeStat)
+	ARRAY TO LIST:C287(PUMClassStat; $ListeStat)
 	PUMClassStat{8}:="Ajouter une valeur"
 	
-	ARRAY TEXT:C222(PUMClassAdmi;47)
+	ARRAY TEXT:C222(PUMClassAdmi; 47)
 	PUMClassAdmi{1}:="A1-Demande de délai supplémentaire pour la saisie"
 	PUMClassAdmi{2}:="A2-Problème de réception du mail d’information"
 	PUMClassAdmi{3}:="A3-Problème d’acheminement des échantillons"
@@ -137,35 +137,35 @@ If (Records in selection:C76([XData:1])=0)
 	PUMClassAdmi{45}:="A45-Problème espace participant/adhérent"
 	PUMClassAdmi{46}:="A46-"
 	$ListeAdm:=New list:C375
-	ARRAY TO LIST:C287(PUMClassAdmi;$ListeAdm)
+	ARRAY TO LIST:C287(PUMClassAdmi; $ListeAdm)
 	PUMClassAdmi{47}:="Ajouter une valeur"
 	
 	$ListeClass:=New list:C375
-	APPEND TO LIST:C376($ListeClass;"Administratif";1;$ListeAdm;False:C215)
-	APPEND TO LIST:C376($ListeClass;"Informatique";2;$ListeInfo;False:C215)
-	APPEND TO LIST:C376($ListeClass;"Qualité";3;$ListeQual;False:C215)
-	APPEND TO LIST:C376($ListeClass;"Statistique";4;$ListeTech;False:C215)
-	APPEND TO LIST:C376($ListeClass;"Technique";5;$ListeTech;False:C215)
-	LIST TO BLOB:C556($ListeClass;[XData:1]XBlob:13)
+	APPEND TO LIST:C376($ListeClass; "Administratif"; 1; $ListeAdm; False:C215)
+	APPEND TO LIST:C376($ListeClass; "Informatique"; 2; $ListeInfo; False:C215)
+	APPEND TO LIST:C376($ListeClass; "Qualité"; 3; $ListeQual; False:C215)
+	APPEND TO LIST:C376($ListeClass; "Statistique"; 4; $ListeTech; False:C215)
+	APPEND TO LIST:C376($ListeClass; "Technique"; 5; $ListeTech; False:C215)
+	LIST TO BLOB:C556($ListeClass; [XData:1]XBlob:13)
 	
-	OB SET ARRAY:C1227([XData:1]XObjet:18;"Administratif";PUMClassAdmi)
-	OB SET ARRAY:C1227([XData:1]XObjet:18;"Informatique";PUMClassInfo)
-	OB SET ARRAY:C1227([XData:1]XObjet:18;"Qualité";PUMClassQual)
-	OB SET ARRAY:C1227([XData:1]XObjet:18;"Statistique";PUMClassStat)
-	OB SET ARRAY:C1227([XData:1]XObjet:18;"Technique";PUMClassTech)
+	OB SET ARRAY:C1227([XData:1]XObjet:18; "Administratif"; PUMClassAdmi)
+	OB SET ARRAY:C1227([XData:1]XObjet:18; "Informatique"; PUMClassInfo)
+	OB SET ARRAY:C1227([XData:1]XObjet:18; "Qualité"; PUMClassQual)
+	OB SET ARRAY:C1227([XData:1]XObjet:18; "Statistique"; PUMClassStat)
+	OB SET ARRAY:C1227([XData:1]XObjet:18; "Technique"; PUMClassTech)
 	
 	SAVE RECORD:C53([XData:1])
 Else 
-	ARRAY TEXT:C222(PUMClassAdmi;0)
-	ARRAY TEXT:C222(PUMClassInfo;0)
-	ARRAY TEXT:C222(PUMClassQual;0)
-	ARRAY TEXT:C222(PUMClassStat;0)
-	ARRAY TEXT:C222(PUMClassTech;0)
-	OB GET ARRAY:C1229([XData:1]XObjet:18;"Administratif";PUMClassAdmi)
-	OB GET ARRAY:C1229([XData:1]XObjet:18;"Informatique";PUMClassInfo)
-	OB GET ARRAY:C1229([XData:1]XObjet:18;"Qualité";PUMClassQual)
-	OB GET ARRAY:C1229([XData:1]XObjet:18;"Statistique";PUMClassStat)
-	OB GET ARRAY:C1229([XData:1]XObjet:18;"Technique";PUMClassTech)
+	ARRAY TEXT:C222(PUMClassAdmi; 0)
+	ARRAY TEXT:C222(PUMClassInfo; 0)
+	ARRAY TEXT:C222(PUMClassQual; 0)
+	ARRAY TEXT:C222(PUMClassStat; 0)
+	ARRAY TEXT:C222(PUMClassTech; 0)
+	OB GET ARRAY:C1229([XData:1]XObjet:18; "Administratif"; PUMClassAdmi)
+	OB GET ARRAY:C1229([XData:1]XObjet:18; "Informatique"; PUMClassInfo)
+	OB GET ARRAY:C1229([XData:1]XObjet:18; "Qualité"; PUMClassQual)
+	OB GET ARRAY:C1229([XData:1]XObjet:18; "Statistique"; PUMClassStat)
+	OB GET ARRAY:C1229([XData:1]XObjet:18; "Technique"; PUMClassTech)
 	ListeClass:=BLOB to list:C557([XData:1]XBlob:13)
 End if 
-OBJECT SET VISIBLE:C603(*;"BouDelClass";False:C215)
+OBJECT SET VISIBLE:C603(*; "BouDelClass"; False:C215)

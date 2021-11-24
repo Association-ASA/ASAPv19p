@@ -10,13 +10,13 @@ If (TbRapMailNonParticipation>0)
 	End if 
 	If ($OC)
 		READ WRITE:C146([CampagneParticipations:17])
-		QUERY:C277([CampagneParticipations:17];[CampagneParticipations:17]UUID:1=$Lab;*)
-		QUERY:C277([CampagneParticipations:17]; & [CampagneParticipations:17]NumCampagne:3=$NumRaemaActuel)
+		QUERY:C277([CampagneParticipations:17]; [CampagneParticipations:17]UUID:1=$Lab; *)
+		QUERY:C277([CampagneParticipations:17];  & [CampagneParticipations:17]NumCampagne:3=$NumRaemaActuel)
 		If ([CampagneParticipations:17]TexteParticipation:4="@envoi du mail@")
-			OB SET:C1220([CampagneParticipations:17]Arguments:5;"ParticipeKO";False:C215)
+			OB SET:C1220([CampagneParticipations:17]Arguments:5; "ParticipeKO"; False:C215)
 			SAVE RECORD:C53([CampagneParticipations:17])
-			RapInitTbRecupRapports (True:C214)
-			WebHistoireConnexion ($Lab;12;True:C214;$NumRaemaActuel)
+			RapInitTbRecupRapports(True:C214)
+			WebHistoireConnexion($Lab; 12; True:C214; $NumRaemaActuel)
 		Else 
 			ALERT:C41("Je ne peux remettre comme participant un laboratoire qui n'a pas envoyé de réponse...")
 		End if 

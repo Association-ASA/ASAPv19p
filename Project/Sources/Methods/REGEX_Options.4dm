@@ -1,11 +1,11 @@
-//%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Method : REGEX_Options
-  // Created 28/09/07 by Vincent
-  // ----------------------------------------------------
-  // Description
-  //
-  // ----------------------------------------------------
+//%attributes = {"invisible":true,"lang":"fr"}
+// ----------------------------------------------------
+// Method : REGEX_Options
+// Created 28/09/07 by Vincent
+// ----------------------------------------------------
+// Description
+//
+// ----------------------------------------------------
 C_TEXT:C284($0)
 C_LONGINT:C283($1)
 
@@ -13,8 +13,8 @@ C_LONGINT:C283($Lon_Options)
 C_TEXT:C284($Txt_Pattern)
 
 If (False:C215)
-	C_TEXT:C284(REGEX_Options ;$0)
-	C_LONGINT:C283(REGEX_Options ;$1)
+	C_TEXT:C284(REGEX_Options; $0)
+	C_LONGINT:C283(REGEX_Options; $1)
 End if 
 
 $Lon_Options:=$1

@@ -1,23 +1,23 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 20/04/19, 07:17:42
-  // ----------------------------------------------------
-  // Méthode : WebQuizzEcritPageDepart
-  // Description
-  //   Méthode exécutée sur réception dans Sur connexion Web
-  //  du message "creationquizz"+ Sigle de l'institution
-  // Paramètre : $1 = message reçu
-  // ----------------------------------------------------
-C_LONGINT:C283($Salé;$FT)
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 20/04/19, 07:17:42
+// ----------------------------------------------------
+// Méthode : WebQuizzEcritPageDepart
+// Description
+//   Méthode exécutée sur réception dans Sur connexion Web
+//  du message "creationquizz"+ Sigle de l'institution
+// Paramètre : $1 = message reçu
+// ----------------------------------------------------
+C_LONGINT:C283($Salé; $FT)
 $Mess:=$1
 
 $CGM:=($Mess="@_")
 
-$SigleInstitution:=Substring:C12($Mess;13+(Num:C11($Mess="@quizz@")))
+$SigleInstitution:=Substring:C12($Mess; 13+(Num:C11($Mess="@quizz@")))
 If ($CGM)
-	$SigleInstitution:=Substring:C12($SigleInstitution;1;Length:C16($SigleInstitution)-1)
+	$SigleInstitution:=Substring:C12($SigleInstitution; 1; Length:C16($SigleInstitution)-1)
 End if 
 Case of 
 	: ($SigleInstitution="vas")
@@ -61,11 +61,11 @@ Case of
 		$InitialeInstitution:="C"
 		$Thème:="Lésions du poumon et de la plèvre"
 	Else 
-		  // TRACE
+		// TRACE
 End case 
 $CDPDFCatalogue:=<>PermCheDosPdf+"Catalogue"+$SigleInstitution+".pdf"
 If (Test path name:C476($CDPDFCatalogue)#Est un document:K24:1)
-	QuizzImpCatalogue ($SigleInstitution)
+	QuizzImpCatalogue($SigleInstitution)
 End if 
 CREATE RECORD:C68([DiaData:45])
 [DiaData:45]XType:5:="LoginConcepteur"
@@ -75,7 +75,7 @@ CREATE RECORD:C68([DiaData:45])
 [DiaData:45]XAlpha:14:="Page principale"
 SAVE RECORD:C53([DiaData:45])
 
-QUERY:C277([QuizzQuestionnaires:35];[QuizzQuestionnaires:35]Institution:4=$NomInstitution)
+QUERY:C277([QuizzQuestionnaires:35]; [QuizzQuestionnaires:35]Institution:4=$NomInstitution)
 $FT:=Records in selection:C76([QuizzQuestionnaires:35])
 
 $THTML:=""
@@ -90,10 +90,10 @@ $THTML:=$THTML+"    <link href="+<>ZGuil+"styles/jquery-ui.css"+<>ZGuil+" rel="+
 $THTML:=$THTML+"    <link href="+<>ZGuil+"styles/multiple-select.css"+<>ZGuil+" rel="+<>ZGuil+"stylesheet"+<>ZGuil+"/>"+<>ZCR
 $THTML:=$THTML+"    <link rel="+<>ZGuil+"stylesheet"+<>ZGuil+" href="+<>ZGuil+"styles/tooltip.css"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"    <link href="+<>ZGuil+"styles/evaluation.css"+<>ZGuil+" rel="+<>ZGuil+"stylesheet"+<>ZGuil+" type="+<>ZGuil+"text/css"+<>ZGuil+">"+<>ZCR
-  // le javascript de la base jQuery
+// le javascript de la base jQuery
 $THTML:=$THTML+"    <script src="+<>ZGuil+"js/jquery-1.11.3.js"+<>ZGuil+"></script>"+<>ZCR
 $THTML:=$THTML+"    <script src="+<>ZGuil+"js/jquery-ui.min.js"+<>ZGuil+"></script>"+<>ZCR
-  // jQuery UI pour tips
+// jQuery UI pour tips
 $THTML:=$THTML+"    <script>"+<>ZCR
 $THTML:=$THTML+"      $(function() {"+<>ZCR
 $THTML:=$THTML+"        $( document ).tooltip();"+<>ZCR
@@ -139,7 +139,7 @@ $THTML:=$THTML+"       <p class="+<>ZGuil+"evaltitretableau"+<>ZGuil+">Liste des
 $THTML:=$THTML+"         <input class="+<>ZGuil+"titrepage"+<>ZGuil+" type="+<>ZGuil+"submit"+<>ZGuil
 $THTML:=$THTML+" name="+<>ZGuil+"nouveau"+$SigleInstitution+<>ZGuil+" value="+<>ZGuil+"Ajouter un nouveau questionnaire"+<>ZGuil+" />       "
 $THTML:=$THTML+"</p>"+<>ZCR
-  // recherche et affichage des questionnaires existants
+// recherche et affichage des questionnaires existants
 If ($FT=0)
 	CREATE RECORD:C68([QuizzQuestionnaires:35])
 	[QuizzQuestionnaires:35]Institution:4:=$NomInstitution
@@ -148,7 +148,7 @@ If ($FT=0)
 End if 
 RELATE MANY:C262([QuizzQuestionnaires:35]ID:1)
 If (Records in selection:C76([QuizzQuestions:34])=0)
-	  // une question
+	// une question
 	CREATE RECORD:C68([QuizzQuestions:34])
 	[QuizzQuestions:34]IDQuestionnaire:2:=[QuizzQuestionnaires:35]ID:1
 	[QuizzQuestions:34]LibelQuestion:3:=""
@@ -158,7 +158,7 @@ End if
 RELATE MANY:C262([QuizzQuestions:34]ID:1)
 If (Records in selection:C76([QuizzReponses:33])=0)
 	
-	  // deux réponses
+	// deux réponses
 	CREATE RECORD:C68([QuizzReponses:33])
 	[QuizzReponses:33]IDQuestion:2:=[QuizzQuestions:34]ID:1
 	[QuizzReponses:33]LibelReponse:3:=""
@@ -173,7 +173,7 @@ If (Records in selection:C76([QuizzReponses:33])=0)
 	
 	$FT:=1
 End if 
-For ($Salé;1;$FT)
+For ($Salé; 1; $FT)
 	$THTML:=$THTML+"       <p class="+<>ZGuil+"evallignetableau"+<>ZGuil+">"+[QuizzQuestionnaires:35]Titre:3+"  "
 	$THTML:=$THTML+"         <input class="+<>ZGuil+"titrepage"+<>ZGuil+" type="+<>ZGuil+"submit"+<>ZGuil
 	$THTML:=$THTML+" name="+<>ZGuil+"envoi"+String:C10([QuizzQuestionnaires:35]ID:1)+<>ZGuil+" value="+<>ZGuil+"Voir"+<>ZGuil+" />"
@@ -183,14 +183,14 @@ End for
 
 $THTML:=$THTML+"       <p class="+<>ZGuil+"evaltitretableau"+<>ZGuil+"><br />Photos pour les questionnaires   "
 $THTML:=$THTML+"       </p>"+<>ZCR
-QUERY:C277([DiaData:45];[DiaData:45]XAlpha:14=$SigleInstitution;*)
-QUERY:C277([DiaData:45]; & [DiaData:45]XBool:9=False:C215;*)
-QUERY:C277([DiaData:45]; & [DiaData:45]XType:5="QuizzPhoto")
-DISTINCT VALUES:C339([DiaData:45]XTexte:7;TbPUMListeEspece)
-DISTINCT VALUES:C339([DiaData:45]XTexteSup:8;TbPUMListeLesion)
-$THTML:=$THTML+QuizzListePhotosQuizz ($SigleInstitution)
+QUERY:C277([DiaData:45]; [DiaData:45]XAlpha:14=$SigleInstitution; *)
+QUERY:C277([DiaData:45];  & [DiaData:45]XBool:9=False:C215; *)
+QUERY:C277([DiaData:45];  & [DiaData:45]XType:5="QuizzPhoto")
+DISTINCT VALUES:C339([DiaData:45]XTexte:7; TbPUMListeEspece)
+DISTINCT VALUES:C339([DiaData:45]XTexteSup:8; TbPUMListeLesion)
+$THTML:=$THTML+QuizzListePhotosQuizz($SigleInstitution)
 $THTML:=$THTML+"       <br /><br /><br />"+<>ZCR
-  // fin Modifié par : cgm (16/06/2020)
+// fin Modifié par : cgm (16/06/2020)
 $THTML:=$THTML+"     </form><br /><br /><br />"+<>ZCR
 
 
@@ -203,5 +203,5 @@ $THTML:=$THTML+"  </body>"+<>ZCR2
 
 $THTML:=$THTML+"</html>"+<>ZCR
 WEB SEND TEXT:C677($THTML)
-QuizzFabriqueTbGeneraux 
-ZAmnistieInternationale 
+QuizzFabriqueTbGeneraux
+ZAmnistieInternationale

@@ -1,14 +1,14 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : iMacASA2017
-  // Date et heure : 18/12/19, 16:14:12
-  // ----------------------------------------------------
-  // Méthode : WebEcritPageDepartFr
-  // Description
-  // Méthode qui écrit la page d'identification d'AsaDia
-  //
-  // Paramètres
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : iMacASA2017
+// Date et heure : 18/12/19, 16:14:12
+// ----------------------------------------------------
+// Méthode : WebEcritPageDepartFr
+// Description
+// Méthode qui écrit la page d'identification d'AsaDia
+//
+// Paramètres
+// ----------------------------------------------------
 $THTML:=""
 $THTML:=$THTML+"<!DOCTYPE html>"+<>ZCR
 $THTML:=$THTML+"<html>"+<>ZCR
@@ -16,7 +16,7 @@ $THTML:=$THTML+""+<>ZCR
 $THTML:=$THTML+"<head>"+<>ZCR
 $THTML:=$THTML+"<title>Identification</title>"+<>ZCR
 $THTML:=$THTML+"    <meta http-equiv="+<>ZGuil+"Content-Type"+<>ZGuil+" content="+<>ZGuil+"text/html; charset=UTF-8"+<>ZGuil+" />"+<>ZCR
-  //$THTML:=$THTML+"    <meta http-equiv="+<>ZGuil+"Pragma"+<>ZGuil+" content="+<>ZGuil+"no-cache"+<>ZGuil+"/>"+<>ZCR
+//$THTML:=$THTML+"    <meta http-equiv="+<>ZGuil+"Pragma"+<>ZGuil+" content="+<>ZGuil+"no-cache"+<>ZGuil+"/>"+<>ZCR
 $THTML:=$THTML+"    <link href="+<>ZGuil+"styles/style-asa.css"+<>ZGuil+" rel="+<>ZGuil+"stylesheet"+<>ZGuil+" type="+<>ZGuil+"text/css"+<>ZGuil+" />"+<>ZCR
 $THTML:=$THTML+"    <link href="+<>ZGuil+"styles/style-asadia.css"+<>ZGuil+" rel="+<>ZGuil+"stylesheet"+<>ZGuil+" type="+<>ZGuil+"text/css"+<>ZGuil+" />"+<>ZCR
 $THTML:=$THTML+"    <script src="+<>ZGuil+"js/jquery-1.11.3.js"+<>ZGuil+"></script>"+<>ZCR
@@ -24,10 +24,10 @@ $THTML:=$THTML+"    <script src="+<>ZGuil+"js/jquery-ui.min.js"+<>ZGuil+"></scri
 $THTML:=$THTML+"  </head>"+<>ZCR
 $THTML:=$THTML+""+<>ZCR
 $THTML:=$THTML+"<body>"+<>ZCR
-  //$THTML:=$THTML+"<!-- BEGIN QUALITYSSL SITE SEAL CODE 2.0//-->"+<>ZCR
-  //$THTML:=$THTML+"<a href="+<>ZGuil+"http://www.qualityssl.com/"+<>ZGuil+" target="+<>ZGuil+"_blank"+<>ZGuil+">"+<>ZCR
-  //$THTML:=$THTML+"<img src="+<>ZGuil+"https://association.asa-spv.fr/images/qualityssl_siteseal.gif"+<>ZGuil+" width="+<>ZGuil+"120"+<>ZGuil+" height="+<>ZGuil+"60"+<>ZGuil+" border="+<>ZGuil+"0"+<>ZGuil+" alt="+<>ZGuil+"QualitySSL Site Seal"+<>ZGuil+" Title="+<>ZGuil+"High Assurance SSL provided by QualitySSL"+<>ZGuil+"></a>"+<>ZCR
-  //$THTML:=$THTML+"<!-- END QUALITYSSL SITE SEAL CODE 2.0//-->"+<>ZCR
+//$THTML:=$THTML+"<!-- BEGIN QUALITYSSL SITE SEAL CODE 2.0//-->"+<>ZCR
+//$THTML:=$THTML+"<a href="+<>ZGuil+"http://www.qualityssl.com/"+<>ZGuil+" target="+<>ZGuil+"_blank"+<>ZGuil+">"+<>ZCR
+//$THTML:=$THTML+"<img src="+<>ZGuil+"https://association.asa-spv.fr/images/qualityssl_siteseal.gif"+<>ZGuil+" width="+<>ZGuil+"120"+<>ZGuil+" height="+<>ZGuil+"60"+<>ZGuil+" border="+<>ZGuil+"0"+<>ZGuil+" alt="+<>ZGuil+"QualitySSL Site Seal"+<>ZGuil+" Title="+<>ZGuil+"High Assurance SSL provided by QualitySSL"+<>ZGuil+"></a>"+<>ZCR
+//$THTML:=$THTML+"<!-- END QUALITYSSL SITE SEAL CODE 2.0//-->"+<>ZCR
 $THTML:=$THTML+"  <div id="+<>ZGuil+"header"+<>ZGuil+" align="+<>ZGuil+"center"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"    <a href="+<>ZGuil+"https://association.asa-spv.fr:500"+<>ZGuil+">"+<>ZCR
 $THTML:=$THTML+"      <img src="+<>ZGuil+"images/bandeau.jpg"+<>ZGuil+" alt="+<>ZGuil+"logo"+<>ZGuil+" width="+<>ZGuil+"1008"+<>ZGuil+" > </img>"+<>ZCR

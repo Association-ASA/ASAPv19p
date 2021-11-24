@@ -1,13 +1,13 @@
-//%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : Patrick EMANUEL
-  // ----------------------------------------------------
-  // Méthode : Base_FermeLesProcess
-  // Description
-  // 
-  //
-  // Paramètres
-  // ----------------------------------------------------
+//%attributes = {"invisible":true,"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : Patrick EMANUEL
+// ----------------------------------------------------
+// Méthode : Base_FermeLesProcess
+// Description
+// 
+//
+// Paramètres
+// ----------------------------------------------------
 
 If (<>OnContinue)
 	
@@ -35,7 +35,7 @@ If (<>OnContinue)
 			$LStartingProcess:=4
 	End case 
 	
-	For ($i;$LStartingProcess;$LNumberOfProcesses)
+	For ($i; $LStartingProcess; $LNumberOfProcesses)
 		$LProcessState:=Process state:C330($i)
 		Case of 
 			: ($LProcessState=Détruit:K13:1)  // -1

@@ -1,18 +1,18 @@
-//%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Method : REGEX_SubstituteText
-  // Created 28/09/07 by Vincent
-  // ----------------------------------------------------
-  // Description
-  // Alias "QF_RESubstituteText"
-  // ----------------------------------------------------
-  // Paramètres
-  //$1 = Regular expression
-  //$2 = Replacement text
-  //$3 = Target text
-  //$4 = Regular expression flags
-  //$0 = Error result
-  // ----------------------------------------------------
+//%attributes = {"invisible":true,"lang":"fr"}
+// ----------------------------------------------------
+// Method : REGEX_SubstituteText
+// Created 28/09/07 by Vincent
+// ----------------------------------------------------
+// Description
+// Alias "QF_RESubstituteText"
+// ----------------------------------------------------
+// Paramètres
+//$1 = Regular expression
+//$2 = Replacement text
+//$3 = Target text
+//$4 = Regular expression flags
+//$0 = Error result
+// ----------------------------------------------------
 C_LONGINT:C283($0)
 C_TEXT:C284($1)
 C_TEXT:C284($2)
@@ -20,22 +20,22 @@ C_POINTER:C301($3)
 C_LONGINT:C283($4)
 
 C_BOOLEAN:C305($Boo_OK)
-C_LONGINT:C283($Lon_i;$Lon_Index;$Lon_Options;$Lon_Parameters;$Lon_Size;$Lon_Start)
-C_TEXT:C284($Txt_Buffer;$Txt_Error_Method;$Txt_Pattern;$Txt_Replacement;$Txt_Target)
+C_LONGINT:C283($Lon_i; $Lon_Index; $Lon_Options; $Lon_Parameters; $Lon_Size; $Lon_Start)
+C_TEXT:C284($Txt_Buffer; $Txt_Error_Method; $Txt_Pattern; $Txt_Replacement; $Txt_Target)
 
-ARRAY LONGINT:C221($tLon_Lengths;0x0000)
-ARRAY LONGINT:C221($tLon_Positions;0x0000)
-ARRAY LONGINT:C221($tLon_Tempo_Index;0x0000)
-ARRAY LONGINT:C221($tLon_Tempo_Lengths;0x0000)
-ARRAY LONGINT:C221($tLon_Tempo_Positions;0x0000)
-ARRAY TEXT:C222($tTxt_Tempo;0x0000)
+ARRAY LONGINT:C221($tLon_Lengths; 0x0000)
+ARRAY LONGINT:C221($tLon_Positions; 0x0000)
+ARRAY LONGINT:C221($tLon_Tempo_Index; 0x0000)
+ARRAY LONGINT:C221($tLon_Tempo_Lengths; 0x0000)
+ARRAY LONGINT:C221($tLon_Tempo_Positions; 0x0000)
+ARRAY TEXT:C222($tTxt_Tempo; 0x0000)
 
 If (False:C215)
-	C_LONGINT:C283(REGEX_SubstituteText ;$0)
-	C_TEXT:C284(REGEX_SubstituteText ;$1)
-	C_TEXT:C284(REGEX_SubstituteText ;$2)
-	C_POINTER:C301(REGEX_SubstituteText ;$3)
-	C_LONGINT:C283(REGEX_SubstituteText ;$4)
+	C_LONGINT:C283(REGEX_SubstituteText; $0)
+	C_TEXT:C284(REGEX_SubstituteText; $1)
+	C_TEXT:C284(REGEX_SubstituteText; $2)
+	C_POINTER:C301(REGEX_SubstituteText; $3)
+	C_LONGINT:C283(REGEX_SubstituteText; $4)
 End if 
 
 $Lon_Parameters:=Count parameters:C259
@@ -50,7 +50,7 @@ Else
 		$Lon_Options:=$4
 	End if 
 	
-	$Txt_Pattern:=REGEX_Options ($Lon_Options)+$1
+	$Txt_Pattern:=REGEX_Options($Lon_Options)+$1
 	$Txt_Replacement:=$2
 	$Txt_Target:=$3->
 	
@@ -64,7 +64,7 @@ Else
 		
 		Repeat 
 			
-			$Boo_OK:=Match regex:C1019($Txt_Pattern;$Txt_Target;$Lon_Start;$tLon_Positions;$tLon_Lengths)
+			$Boo_OK:=Match regex:C1019($Txt_Pattern; $Txt_Target; $Lon_Start; $tLon_Positions; $tLon_Lengths)
 			
 			If ($Boo_OK)
 				
@@ -72,9 +72,9 @@ Else
 				
 				$Lon_Size:=Size of array:C274($tLon_Positions)
 				
-				For ($Lon_i;0;$Lon_Size;1)
+				For ($Lon_i; 0; $Lon_Size; 1)
 					
-					$Txt_Buffer:=Substring:C12($Txt_Target;$tLon_Positions{$Lon_i};$tLon_Lengths{$Lon_i})
+					$Txt_Buffer:=Substring:C12($Txt_Target; $tLon_Positions{$Lon_i}; $tLon_Lengths{$Lon_i})
 					
 					If ($tLon_Positions{$Lon_i}>0)
 						$Lon_Start:=$tLon_Positions{$Lon_i}+$tLon_Lengths{$Lon_i}
@@ -94,11 +94,11 @@ Else
 					
 					If ($Boo_OK)
 						
-						APPEND TO ARRAY:C911($tTxt_Tempo;$Txt_Buffer)
+						APPEND TO ARRAY:C911($tTxt_Tempo; $Txt_Buffer)
 						
-						APPEND TO ARRAY:C911($tLon_Tempo_Positions;$tLon_Positions{$Lon_i})
-						APPEND TO ARRAY:C911($tLon_Tempo_Lengths;$tLon_Lengths{$Lon_i})
-						APPEND TO ARRAY:C911($tLon_Tempo_Index;$Lon_Index)
+						APPEND TO ARRAY:C911($tLon_Tempo_Positions; $tLon_Positions{$Lon_i})
+						APPEND TO ARRAY:C911($tLon_Tempo_Lengths; $tLon_Lengths{$Lon_i})
+						APPEND TO ARRAY:C911($tLon_Tempo_Index; $Lon_Index)
 						
 						$Lon_Index:=$Lon_Index+1
 						
@@ -126,16 +126,16 @@ Else
 					
 					$Txt_Buffer:="\\"+String:C10($tLon_Tempo_Index{$Lon_Index})
 					
-					If (Position:C15($Txt_Buffer;$Txt_Replacement)>0)
+					If (Position:C15($Txt_Buffer; $Txt_Replacement)>0)
 						
-						$Txt_Replacement:=Replace string:C233($Txt_Replacement;$Txt_Buffer;$tTxt_Tempo{$Lon_Index})
+						$Txt_Replacement:=Replace string:C233($Txt_Replacement; $Txt_Buffer; $tTxt_Tempo{$Lon_Index})
 						
 					End if 
 					
 				Else 
 					
-					$3->:=Delete string:C232($3->;$tLon_Tempo_Positions{$Lon_Index};$tLon_Tempo_Lengths{$Lon_Index})
-					$3->:=Insert string:C231($3->;$Txt_Replacement;$tLon_Tempo_Positions{$Lon_Index})
+					$3->:=Delete string:C232($3->; $tLon_Tempo_Positions{$Lon_Index}; $tLon_Tempo_Lengths{$Lon_Index})
+					$3->:=Insert string:C231($3->; $Txt_Replacement; $tLon_Tempo_Positions{$Lon_Index})
 					$Txt_Replacement:=$2
 					
 				End if 

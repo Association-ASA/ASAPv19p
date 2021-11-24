@@ -1,6 +1,6 @@
 $evt:=Form event code:C388
 
-If ($evt=On Load:K2:1)
+If ($evt=Sur chargement:K2:1)
 	ARRAY LONGINT:C221($Tb; 0)
 	VarNomGermeSchema:=""
 	VarNomGermeCampagne:=""

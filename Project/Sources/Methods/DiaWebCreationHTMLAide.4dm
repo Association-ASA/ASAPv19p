@@ -1,17 +1,17 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm
-  // Date et heure : 19/04/18, 08:32:46
-  // ----------------------------------------------------
-  // Méthode : WebCreationHTMLAide
-  // Description
-  // Ecrit le HTML des icônes d'aide (mode d'emploi et vidéo)
-  //
-  // Paramètres : $1= Langue courante
-  //  $2 = 0 si pas d'aide, 1 si aide sans vidéo,  2 si aide avec vidéo
-  // $3 = nom du fichier pdf de l'aide,
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm
+// Date et heure : 19/04/18, 08:32:46
+// ----------------------------------------------------
+// Méthode : WebCreationHTMLAide
+// Description
+// Ecrit le HTML des icônes d'aide (mode d'emploi et vidéo)
+//
+// Paramètres : $1= Langue courante
+//  $2 = 0 si pas d'aide, 1 si aide sans vidéo,  2 si aide avec vidéo
+// $3 = nom du fichier pdf de l'aide,
+// ----------------------------------------------------
 $Langue:=$1
 $PortéeAide:=$2
 $Page:=$3
@@ -19,8 +19,8 @@ $NomFichierPDFAide:=$Page+$Langue
 $LangueFrançaise:=($Langue="F")
 $CDFichierAide:="pdf/"+$NomFichierPDFAide+".pdf"
 $CDImageAide:="images/Aide"+$Langue+".png"
-  //$CDImageAide:=(Num($Langue#"F")*"images/Help.png")+(Num($Langue="F")*"images/Aide.png")
-$AideEnPdf:=DiaWebTraduitTexte ("Aide";$Langue)+" PDF"
+//$CDImageAide:=(Num($Langue#"F")*"images/Help.png")+(Num($Langue="F")*"images/Aide.png")
+$AideEnPdf:=DiaWebTraduitTexte("Aide"; $Langue)+" PDF"
 $THTML:=""
 If ($PortéeAide>0)
 	$THTML:=$THTML+"   <div id="+<>ZGuil+"aidepdfvideo"+<>ZGuil+">"+<>ZCR
@@ -41,7 +41,7 @@ If ($PortéeAide>0)
 		$THTML:=$THTML+"    </a>"+<>ZCR
 	End if 
 	
-	  // Modifié par : cgm (03/12/2018)
+	// Modifié par : cgm (03/12/2018)
 	$THTML:=$THTML+"  </div>"+<>ZCR
 	If ($LangueFrançaise)
 		$THTML:=$THTML+"  <div id="+<>ZGuil+"faqcontenu"+<>ZGuil+"></div>"+<>ZCR

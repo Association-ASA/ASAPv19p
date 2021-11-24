@@ -1,13 +1,13 @@
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : MBPASA2015
-  // Date et heure : 25/12/15, 07:57:07
-  // ----------------------------------------------------
-  // Méthode : DlgGestionNotionsBases.BouCreerEnr
-  // Description
-  // 
-  //
-  // Paramètres
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur (OS) : MBPASA2015
+// Date et heure : 25/12/15, 07:57:07
+// ----------------------------------------------------
+// Méthode : DlgGestionNotionsBases.BouCreerEnr
+// Description
+// 
+//
+// Paramètres
+// ----------------------------------------------------
 [DiaTextesWebParagraphes:37]CorpsParagraphe:8:=VarTexte
 [DiaTextesWebParagraphes:37]NomLesion:10:=VarNomLésion
 [DiaTextesWebParagraphes:37]MotifSaisie:11:=VarNomMotif

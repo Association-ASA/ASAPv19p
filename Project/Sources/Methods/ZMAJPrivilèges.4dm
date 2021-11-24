@@ -1,19 +1,19 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 30/01/18, 07:07:26
-  // ----------------------------------------------------
-  // Méthode : ZMAJPrivilèges
-  // Description
-  //     Historique : ZMAJPrivilèges V11 du 15/08/2010
-  //  actualise les modalités d'accès à la table passée en en paramètre 
-  //   avec les [XDroits] vrai ou faux selon la catégorie d'utilisateur
-  //   en associant les tables non sensibles adéquates logiquement liées
-  //   (exemple la gestion des [XUtilisateurs] suppose celles de [XAttributions] et [XDroits])
-  // Paramètre : $1: = Pt sur table de travail
-  //  Appelée (entre autres) par ZGèreListe
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 30/01/18, 07:07:26
+// ----------------------------------------------------
+// Méthode : ZMAJPrivilèges
+// Description
+//     Historique : ZMAJPrivilèges V11 du 15/08/2010
+//  actualise les modalités d'accès à la table passée en en paramètre 
+//   avec les [XDroits] vrai ou faux selon la catégorie d'utilisateur
+//   en associant les tables non sensibles adéquates logiquement liées
+//   (exemple la gestion des [XUtilisateurs] suppose celles de [XAttributions] et [XDroits])
+// Paramètre : $1: = Pt sur table de travail
+//  Appelée (entre autres) par ZGèreListe
+// ----------------------------------------------------
 
 
 If (Not:C34(<>ZToutNeuf))
@@ -22,12 +22,12 @@ If (Not:C34(<>ZToutNeuf))
 	$NumTable:=Table:C252($1)
 	Case of 
 		: (($NumTable=2) | ($NumTable=3))
-			  // [XUtilisateurs] = table 2   [XFonctions] = table 3 
-			ZAccèsTable (->[XUtilisateurs:2])  // 
+			// [XUtilisateurs] = table 2   [XFonctions] = table 3 
+			ZAccèsTable(->[XUtilisateurs:2])  // 
 			
 		: (($NumTable=Table:C252(->[Personnes:12])) | ($NumTable=Table:C252(->[Prestations:26])) | ($NumTable=Table:C252(->[RetoursFiches:24])) | ($NumTable=Table:C252(->[CourrielsTypes:28])) | ($NumTable=Table:C252(->[CampagneParticipations:17])))
-			  // Tables 
-			ZAccèsTable (->[Personnes:12])  // 
+			// Tables 
+			ZAccèsTable(->[Personnes:12])  // 
 			
 		: ($NumTable=Table:C252(->[DiaUtilisateurs:14]))
 			ZAjout:=True:C214

@@ -1,7 +1,7 @@
-//%attributes = {}
-  // InfRAEMACreationTbConta <- RaemaInfEcritP2
+//%attributes = {"lang":"fr"}
+// InfRAEMACreationTbConta <- RaemaInfEcritP2
 $Langue:=$1
-C_LONGINT:C283($Salé;$FT;$Fumé)
+C_LONGINT:C283($Salé; $FT; $Fumé)
 If ($Langue="F")
 	$TitreNumEch:="Numéro de vos échantillons"
 	$NomGermes:="Noms des germes"
@@ -28,13 +28,13 @@ $THTML:=$THTML+"      <td class="+<>ZGuil+"hauttbech"+<>ZGuil+">"+TbNumEch{5}+"<
 $THTML:=$THTML+"    </tr>"+<>ZCR
 $Pair:=True:C214
 
-For ($Fumé;1;11)
+For ($Fumé; 1; 11)
 	$Pair:=Not:C34($Pair)
 	$CouleurLigne:="ligne"+(Num:C11($Pair)*"in")+"paire"
 	$THTML:=$THTML+"    <tr class="+<>ZGuil+$CouleurLigne+<>ZGuil+">"+<>ZCR  // Ligne germe 1
 	$THTML:=$THTML+"      <td>"+TbNomGermeConta{$Fumé}+"</td>"+<>ZCR
-	For ($Salé;1;5)
-		$L:=Find in array:C230(TbNumEchT;TbNumEch{$Salé})
+	For ($Salé; 1; 5)
+		$L:=Find in array:C230(TbNumEchT; TbNumEch{$Salé})
 		$Pt:=Get pointer:C304("TbSerie"+String:C10($L)+"Conta")
 		$THTML:=$THTML+"      <td>"+$Pt->{$Fumé}+"</td>"+<>ZCR
 	End for 

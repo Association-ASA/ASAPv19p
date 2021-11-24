@@ -1,6 +1,6 @@
-//%attributes = {}
-  // HTMLColonneFin
-  // {$1} =  vrai si la colonne est la dernière
+//%attributes = {"lang":"fr"}
+// HTMLColonneFin
+// {$1} =  vrai si la colonne est la dernière
 C_BOOLEAN:C305($1)
 
 $Texte:=<>ZCR+"            </td>"+<>ZCR

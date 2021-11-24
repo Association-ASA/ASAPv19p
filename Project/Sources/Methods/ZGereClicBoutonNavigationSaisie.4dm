@@ -1,17 +1,17 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 22/04/18, 07:11:08
-  // ----------------------------------------------------
-  // Méthode : ZGereClicBoutonNavigationSaisie
-  // Description
-  // Méthode qui permet de gérer la navigation dans la sélection
-  //    à partir du formulaire projet SaisieStandard 
-  //    commun à une gestion séléection ou tableau
-  // Paramètre : $1 = Nom du bouton cliqué
-  // ----------------------------------------------------
-  //$H1:=Nombre de millisecondes
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 22/04/18, 07:11:08
+// ----------------------------------------------------
+// Méthode : ZGereClicBoutonNavigationSaisie
+// Description
+// Méthode qui permet de gérer la navigation dans la sélection
+//    à partir du formulaire projet SaisieStandard 
+//    commun à une gestion séléection ou tableau
+// Paramètre : $1 = Nom du bouton cliqué
+// ----------------------------------------------------
+//$H1:=Nombre de millisecondes
 
 $NomBouton:=$1
 $ListeIncluse:=False:C215
@@ -48,7 +48,7 @@ If (GestionTableau)
 		End if 
 	End if 
 	
-	GOTO RECORD:C242(ZPtTable->;TbNumEnr{LigneClic})
+	GOTO RECORD:C242(ZPtTable->; TbNumEnr{LigneClic})
 	
 Else 
 	
@@ -72,7 +72,7 @@ If (ZAvantProc#"")
 	EXECUTE METHOD:C1007(ZAvantProc)
 End if 
 
-ZGereVisuBoutonNavigationSaisie 
-  //$H2:=Nombre de millisecondes
-  //FIXER TEXTE DANS CONTENEUR(chaine($H2-$H1))
+ZGereVisuBoutonNavigationSaisie
+//$H2:=Nombre de millisecondes
+//FIXER TEXTE DANS CONTENEUR(chaine($H2-$H1))
 

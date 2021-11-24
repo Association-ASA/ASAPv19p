@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
 // ----------------------------------------------------
 // Nom utilisateur : cgm 
@@ -27,7 +27,7 @@ End if
 VarNbreLabos:=[RAEMACampagnes:20]NbParticipants:6
 VarDateWebCamp:=[RAEMACampagnes:20]DateMiseEnLigne:5
 CaseAccredite:=1
-CaseRI:=Num:C11(OB Get:C1224([RAEMACampagnes:20]Arguments:7; "Disponibilité du rapport individuel"; Is boolean:K8:9))
+CaseRI:=Num:C11(OB Get:C1224([RAEMACampagnes:20]Arguments:7; "Disponibilité du rapport individuel"; Est un booléen:K8:9))
 
 
 $derlettre:=$NumRAEMA[[Length:C16($NumRAEMA)]]
@@ -41,8 +41,8 @@ Else
 	$NumTypeCampagne:="Campagne n° "+$NumRAEMA+" (RAEMA "+$poudregel+(CaseAccredite*" sous accréditation")+") : "
 End if 
 $NbreLabosA:=String:C10(VarNbreLabos)
-$CDRG:="pdf"+Folder separator:K24:12+"RG"+$NumRAEMA+$DocLangue+".pdf"
-$CDRI:="pdf"+Folder separator:K24:12+"RI"+$NumRAEMA+$DocLangue+".pdf"
+$CDRG:="pdf"+Séparateur dossier:K24:12+"RG"+$NumRAEMA+$DocLangue+".pdf"
+$CDRI:="pdf"+Séparateur dossier:K24:12+"RI"+$NumRAEMA+$DocLangue+".pdf"
 $CDRGWeb:="pdf/RG"+$NumRAEMA+$DocLangue+".pdf"
 $CDRIWeb:="pdf/RI"+$NumRAEMA+$DocLangue+".pdf"
 
@@ -96,8 +96,8 @@ If (VarDateWebCamp#!00-00-00!)
 	$THTML:=$THTML+"         </a>"+<>ZCR
 	
 	If (CaseRI=1)  // Le rapport individuel est préssenti
-		$CDRIComplet:=Get 4D folder:C485(HTML Root folder:K5:20)+$CDRI
-		If (Test path name:C476($CDRIComplet)=Is a document:K24:1)
+		$CDRIComplet:=Get 4D folder:C485(Dossier racine HTML:K5:20)+$CDRI
+		If (Test path name:C476($CDRIComplet)=Est un document:K24:1)
 			$RI:=(Num:C11($Anglais)*"Individual Report")+(Num:C11(Not:C34($Anglais))*"Rapport individuel")
 			$THTML:=$THTML+"        <br />"+<>ZCR+"       <a href="+<>ZGuil+$CDRIWeb+<>ZGuil+<>ZCR
 			$THTML:=$THTML+"          target="+<>ZGuil+"_blank"+<>ZGuil+">"+$RI+<>ZCR

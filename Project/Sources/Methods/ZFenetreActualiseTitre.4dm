@@ -1,16 +1,16 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 30/01/18, 08:39:18
-  // ----------------------------------------------------
-  // Méthode : ZFenetreActualiseTitre
-  // Description
-  //   Historique : ZActualiseTitreFenetre V11 du 10/08/2010
-  //   met à jour le bandeau d'une liste
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 30/01/18, 08:39:18
+// ----------------------------------------------------
+// Méthode : ZFenetreActualiseTitre
+// Description
+//   Historique : ZActualiseTitreFenetre V11 du 10/08/2010
+//   met à jour le bandeau d'une liste
+// ----------------------------------------------------
 
 If (GestionTableau)
-	$ZNbEnr:=LISTBOX Get number of rows:C915(*;"Lb_Tableaux")
+	$ZNbEnr:=LISTBOX Get number of rows:C915(*; "Lb_Tableaux")
 	$ZVarTotEnr:=Records in table:C83(ZPtTable->)
 Else 
 	$ZNbEnr:=Records in selection:C76(ZPtTable->)
@@ -18,15 +18,15 @@ Else
 End if 
 
 If (ZNomTable="x@")
-	$NomTable:=Substring:C12(ZNomTable;2)
+	$NomTable:=Substring:C12(ZNomTable; 2)
 Else 
 	$NomTable:=ZNomTable
 End if 
-  //Si (ZIciListeH)  //  gestion des liste hiérarchiques
-  //$Mess:=ZNomTable+" : Liste hiérarchique de "+Chaîne(ZNbEnr)
-  //$Mess:=$Mess+" enregistrements parmi "+Chaîne(ZVarTotEnr)
-  //EXÉCUTER FORMULE(ZDerMéthode)  //  permet de mettre la liste hiérarchique à jour
-  //Sinon 
+//Si (ZIciListeH)  //  gestion des liste hiérarchiques
+//$Mess:=ZNomTable+" : Liste hiérarchique de "+Chaîne(ZNbEnr)
+//$Mess:=$Mess+" enregistrements parmi "+Chaîne(ZVarTotEnr)
+//EXÉCUTER FORMULE(ZDerMéthode)  //  permet de mettre la liste hiérarchique à jour
+//Sinon 
 
 Case of 
 	: ($ZNbEnr=0)
@@ -46,13 +46,13 @@ Case of
 		$Mess:=$NomTable+" : "+String:C10($ZNbEnr)
 		$Mess:=$Mess+" enregistrements parmi "+String:C10($ZVarTotEnr)
 End case 
-  //Fin de si 
-  //Au cas ou 
-  //: (ZSensDuTri="<")
-  //TRIER(ZPtTable->;ZPtChamp->;<)
+//Fin de si 
+//Au cas ou 
+//: (ZSensDuTri="<")
+//TRIER(ZPtTable->;ZPtChamp->;<)
 
-  //: (ZSensDuTri=">")
-  //TRIER(ZPtTable->;ZPtChamp->;>)
-  //Fin de cas 
+//: (ZSensDuTri=">")
+//TRIER(ZPtTable->;ZPtChamp->;>)
+//Fin de cas 
 
 SET WINDOW TITLE:C213($Mess)

@@ -1,21 +1,21 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : iMacASA2017
-  // Date et heure : 24/11/19, 06:45:30
-  // ----------------------------------------------------
-  // Méthode : ASAPViderBase
-  // Description
-  // Méthode qui vide les données conjoncturelles
-  //  en vue d'une importation des données de Biblio et GestAsa
-  // Paramètres
-  // ----------------------------------------------------
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : iMacASA2017
+// Date et heure : 24/11/19, 06:45:30
+// ----------------------------------------------------
+// Méthode : ASAPViderBase
+// Description
+// Méthode qui vide les données conjoncturelles
+//  en vue d'une importation des données de Biblio et GestAsa
+// Paramètres
+// ----------------------------------------------------
 READ WRITE:C146(*)
 ALL RECORDS:C47([CampagneGelGermes:25])
 DELETE SELECTION:C66([CampagneGelGermes:25])
 ALL RECORDS:C47([CampagneParticipations:17])
 DELETE SELECTION:C66([CampagneParticipations:17])
-  //TOUT SÉLECTIONNER([CourrielsTypes])
-  //SUPPRIMER SÉLECTION([CourrielsTypes])
+//TOUT SÉLECTIONNER([CourrielsTypes])
+//SUPPRIMER SÉLECTION([CourrielsTypes])
 ALL RECORDS:C47([Factures:15])
 DELETE SELECTION:C66([Factures:15])
 ALL RECORDS:C47([Personnes:12])

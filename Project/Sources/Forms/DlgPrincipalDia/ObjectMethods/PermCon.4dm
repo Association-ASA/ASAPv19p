@@ -9,6 +9,6 @@ Case of
 	: ($Evt=Sur clic:K2:4)
 		ZXCarLaProc:="ChangeConcepteur "
 		CANCEL:C270
-		  //ZZZDéplombe 
+		//ZZZDéplombe 
 		
 End case 

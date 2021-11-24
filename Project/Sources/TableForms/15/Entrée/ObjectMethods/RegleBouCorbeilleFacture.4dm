@@ -6,7 +6,7 @@ If (ok=1)
 	SAVE RECORD:C53([Factures:15])
 	RELATE MANY:C262([Factures:15]NumFacture:3)
 	$FT:=Records in selection:C76([Ventes:16])
-	For ($Salé;1;$FT)
+	For ($Salé; 1; $FT)
 		[Ventes:16]DateReglement:12:=!00-00-00!
 		[Ventes:16]NumCheque:11:=""
 		[Ventes:16]Banque:10:=""
@@ -14,4 +14,4 @@ If (ok=1)
 		NEXT RECORD:C51([Ventes:16])
 	End for 
 End if 
-OBJECT SET VISIBLE:C603(*;"regle@";False:C215)
+OBJECT SET VISIBLE:C603(*; "regle@"; False:C215)

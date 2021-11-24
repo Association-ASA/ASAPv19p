@@ -1,6 +1,6 @@
 $Evt:=Form event code:C388
 Case of 
-	: ($Evt=On Load:K2:1)
+	: ($Evt=Sur chargement:K2:1)
 		// Initialisation de toutes les variables 
 		CacAppelTel:=[RetoursFiches:24]Appel:4
 		
@@ -22,7 +22,7 @@ Case of
 		//VarCreateurFiche
 		
 		
-	: ($Evt=On Printing Detail:K2:18)
+	: ($Evt=Sur impression corps:K2:18)
 		//OBJET FIXER FORMATAGE([Factures]TotalHT;<>PermEnE)
 		//OBJET FIXER FORMATAGE([Factures]TotalTVA;<>PermEnE)
 		//OBJET FIXER FORMATAGE([Factures]TotalTTC;<>PermEnE)

@@ -1,7 +1,7 @@
-//%attributes = {"publishedWeb":true}
-  //  ZArrêterSurClicSouris V11 du 10/08/2010
-  //  Méthode appelée sur evenement pour arrêter quelque chose
-  //  par clic de souris
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+//  ZArrêterSurClicSouris V11 du 10/08/2010
+//  Méthode appelée sur evenement pour arrêter quelque chose
+//  par clic de souris
 
 If (MouseDown=1)
 	If (<>OnReste) & (Not:C34(<>OnContinue))

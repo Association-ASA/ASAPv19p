@@ -5,7 +5,7 @@ Case of
 			[Factures:15]NumFacture:3:=[Factures:15]NumFacture:3+"D"
 		Else 
 			$NumFacture:=[Factures:15]NumFacture:3
-			$pos:=Position:C15("D";$NumFacture)
-			[Factures:15]NumFacture:3:=Substring:C12([Factures:15]NumFacture:3;1;$pos-1)
+			$pos:=Position:C15("D"; $NumFacture)
+			[Factures:15]NumFacture:3:=Substring:C12([Factures:15]NumFacture:3; 1; $pos-1)
 		End if 
 End case 

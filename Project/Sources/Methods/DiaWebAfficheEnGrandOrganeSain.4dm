@@ -1,30 +1,30 @@
-//%attributes = {}
-  // ----------------------------------------------------
-  // Nom utilisateur (OS) : MBPASA2015
-  // Date et heure : 07/10/21, 09:54:28
-  // ----------------------------------------------------
-  // Méthode : DiaWebAfficheEnGrandOrganeSain
-  // Description
-  // Méthode qui renvoie l'image en grand d'un organe sain
-  //
-  // Paramètre : $1=message ajax type 
-  // "imageengrandanat£"+nom du fichier de l'image+"£"+Largeur Ecran+"£"+Hauteur Ecran
-  // ----------------------------------------------------
-C_LONGINT:C283($Pos;$NumEnrImage;$NumImageN)
+//%attributes = {"lang":"fr"}
+// ----------------------------------------------------
+// Nom utilisateur (OS) : MBPASA2015
+// Date et heure : 07/10/21, 09:54:28
+// ----------------------------------------------------
+// Méthode : DiaWebAfficheEnGrandOrganeSain
+// Description
+// Méthode qui renvoie l'image en grand d'un organe sain
+//
+// Paramètre : $1=message ajax type 
+// "imageengrandanat£"+nom du fichier de l'image+"£"+Largeur Ecran+"£"+Hauteur Ecran
+// ----------------------------------------------------
+C_LONGINT:C283($Pos; $NumEnrImage; $NumImageN)
 
 
 $Mess:=$1
 $Langue:="F"
 $Prefixe:="imageengrandanat£"
-$Mess:=Substring:C12($Mess;Length:C16($Prefixe)+1)  // quizzaffichepleinecranPhotoAsadia/
+$Mess:=Substring:C12($Mess; Length:C16($Prefixe)+1)  // quizzaffichepleinecranPhotoAsadia/
 
-ARRAY TEXT:C222($TbMess;0)
-ZTexteVersTableau ($Mess;->$TbMess;"£")
-  // $TbMess = 1:Nom de l'image; 2:largeur écran; 3:Hauteur écran
+ARRAY TEXT:C222($TbMess; 0)
+ZTexteVersTableau($Mess; ->$TbMess; "£")
+// $TbMess = 1:Nom de l'image; 2:largeur écran; 3:Hauteur écran
 
-$CDImage:=Replace string:C233($TbMess{1};"i.jpg";".jpg")
-$NomImage:=Substring:C12($CDImage;14)  // élimination de PhotosAsaDia
-$NomImage:=Substring:C12($NomImage;1;Length:C16($NomImage)-4)  // élimination de .jpg
+$CDImage:=Replace string:C233($TbMess{1}; "i.jpg"; ".jpg")
+$NomImage:=Substring:C12($CDImage; 14)  // élimination de PhotosAsaDia
+$NomImage:=Substring:C12($NomImage; 1; Length:C16($NomImage)-4)  // élimination de .jpg
 $Largeur:=$TbMess{2}+"px"
 $Hauteur:=$TbMess{3}+"px"
 
@@ -84,13 +84,13 @@ $THTML:=$THTML+"    <script type="+<>ZGuil+"text/javascript"+<>ZGuil+" src="+<>Z
 $THTML:=$THTML+"  </body>"+<>ZCR2
 $THTML:=$THTML+"</html>"+<>ZCR
 
-  //FIXER TEXTE DANS CONTENEUR($THTML)
+//FIXER TEXTE DANS CONTENEUR($THTML)
 $NomFichier:=$NomImage+".shtml"
 $CD:=Get 4D folder:C485(Dossier racine HTML:K5:20)+$NomFichier
 If (Test path name:C476($CD)=Est un document:K24:1)
 	DELETE DOCUMENT:C159($CD)
 End if 
 $Doc:=Create document:C266($CD)
-SEND PACKET:C103($Doc;$THTML)
+SEND PACKET:C103($Doc; $THTML)
 CLOSE DOCUMENT:C267($Doc)
 WEB SEND TEXT:C677($NomFichier)

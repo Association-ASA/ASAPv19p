@@ -1,4 +1,4 @@
-//%attributes = {"publishedWeb":true}
+//%attributes = {"publishedWeb":true,"lang":"fr"}
 // ZDéclareVarDiamant 7.0 du 13/01/01, modifiée en V11 le 20/07/2010
 // Modifié par : Association QualiSoft (02/05/2018)
 // Déclarations des variables standard et des variables interprocess 
@@ -22,10 +22,10 @@ C_PICTURE:C286(<>FeuVert; <>FeuRouge; <>MarqueVert; <>MarqueRouge)
 
 //Gestion des boutons
 
-READ PICTURE FILE:C678(Get 4D folder:C485(Current resources folder:K5:16)+Replace string:C233("images/FeuVert.jpg"; "/"; Folder separator:K24:12); <>FeuVert)
-READ PICTURE FILE:C678(Get 4D folder:C485(Current resources folder:K5:16)+Replace string:C233("images/FeuRouge.jpg"; "/"; Folder separator:K24:12); <>FeuRouge)
-READ PICTURE FILE:C678(Get 4D folder:C485(Current resources folder:K5:16)+Replace string:C233("images/MarqueVerte.jpg"; "/"; Folder separator:K24:12); <>MarqueVerte)
-READ PICTURE FILE:C678(Get 4D folder:C485(Current resources folder:K5:16)+Replace string:C233("images/MarqueRouge.jpg"; "/"; Folder separator:K24:12); <>MarqueRouge)
+READ PICTURE FILE:C678(Get 4D folder:C485(Dossier Resources courant:K5:16)+Replace string:C233("images/FeuVert.jpg"; "/"; Séparateur dossier:K24:12); <>FeuVert)
+READ PICTURE FILE:C678(Get 4D folder:C485(Dossier Resources courant:K5:16)+Replace string:C233("images/FeuRouge.jpg"; "/"; Séparateur dossier:K24:12); <>FeuRouge)
+READ PICTURE FILE:C678(Get 4D folder:C485(Dossier Resources courant:K5:16)+Replace string:C233("images/MarqueVerte.jpg"; "/"; Séparateur dossier:K24:12); <>MarqueVerte)
+READ PICTURE FILE:C678(Get 4D folder:C485(Dossier Resources courant:K5:16)+Replace string:C233("images/MarqueRouge.jpg"; "/"; Séparateur dossier:K24:12); <>MarqueRouge)
 
 // Variables interprocess standard
 
@@ -33,7 +33,7 @@ READ PICTURE FILE:C678(Get 4D folder:C485(Current resources folder:K5:16)+Replac
 <>ZDateDuJour:=Current date:C33  //Date constante même si on traverse minuit pendant la session
 <>ZHeureCourante:=Current time:C178
 <>ZHeureDerniereAction:=<>ZHeureCourante
-<>ZSéparateur:=Folder separator:K24:12
+<>ZSéparateur:=Séparateur dossier:K24:12
 <>ZPCServeur:=(<>ZSéparateur#":")
 
 //Initialisation du tableau  (popup) de Date
@@ -48,7 +48,7 @@ STRING LIST TO ARRAY:C511(21000; <>PopDate)  // un peu crypto...
 <>ZTab:="\t"
 <>ZCRWeb:=<>ZCR+Char:C90(10)
 
-<>ZPermMille:=Substring:C12(String:C10(Year of:C25(<>ZDateDuJour)); System date long:K1:3; 2)
+<>ZPermMille:=Substring:C12(String:C10(Year of:C25(<>ZDateDuJour)); Système date long:K1:3; 2)
 // Extrait le millésime de l'année 99=1999 / 00=2000
 
 <>ZQuiVaLà:=""

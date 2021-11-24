@@ -1,10 +1,10 @@
 $evt:=Form event code:C388
 Case of 
 	: ($evt=Sur chargement:K2:1)
-		DiaSurChargementDiapo 
+		DiaSurChargementDiapo
 		
 	: ($evt=Sur validation:K2:3)
-		DiaSurValidationDiapo 
+		DiaSurValidationDiapo
 		
 End case 
 [Diapositives:40]Espece:3:=[Diapositives:40]Espece:3

@@ -1,10 +1,10 @@
-//%attributes = {"publishedWeb":true}
-  // DeplaceFlecheLesion
+//%attributes = {"publishedWeb":true,"lang":"fr"}
+// DeplaceFlecheLesion
 $DébutNomFleche:=String:C10($1+1)  // choix de l'image radio (type de fleche)
 $T:=False:C215
 $NomFleche:=$DébutNomFleche+"1"+(Num:C11(VarImageVerticale)*"V")
-OBJECT GET COORDINATES:C663(VarImageV;$G;$H;$D;$B)
-GET MOUSE:C468(sourisX;sourisY;boutonSouris)
+OBJECT GET COORDINATES:C663(VarImageV; $G; $H; $D; $B)
+GET MOUSE:C468(sourisX; sourisY; boutonSouris)
 XClic:=sourisX
 YClic:=-sourisY
 Xa:=XClic
@@ -15,7 +15,7 @@ Xp:=Xr/($D-$G)
 Yp:=Yr/($B-$H)
 $NomChamp:="C"+$NomFleche
 $NomBouton:="B"+$NomFleche
-OBJECT GET COORDINATES:C663(*;$NomFleche;Fgauche;Fhaut;Fdroite;Fbas)
+OBJECT GET COORDINATES:C663(*; $NomFleche; Fgauche; Fhaut; Fdroite; Fbas)
 Case of 
 	: ($1=0)  // fleche à droite
 		YBF:=-(Fhaut+((Fbas-Fhaut)/2))
@@ -43,12 +43,12 @@ Case of
 End case 
 XDep:=XClic-XBF
 YDep:=YBF-YClic
-OBJECT MOVE:C664(*;$NomFleche;XDep;YDep)
-OBJECT MOVE:C664(*;$NomChamp;XDep;YDep)
-OBJECT MOVE:C664(*;$NomBouton;XDep;YDep)
-OBJECT SET ENTERABLE:C238(*;$NomChamp;True:C214)
+OBJECT MOVE:C664(*; $NomFleche; XDep; YDep)
+OBJECT MOVE:C664(*; $NomChamp; XDep; YDep)
+OBJECT MOVE:C664(*; $NomBouton; XDep; YDep)
+OBJECT SET ENTERABLE:C238(*; $NomChamp; True:C214)
 $Pt:=Get pointer:C304("Var"+$NomChamp)
 If ($Pt->="")
-	OBJECT SET FONT SIZE:C165(*;$NomChamp;10)
+	OBJECT SET FONT SIZE:C165(*; $NomChamp; 10)
 End if 
-GOTO OBJECT:C206(*;$NomChamp)
+GOTO OBJECT:C206(*; $NomChamp)

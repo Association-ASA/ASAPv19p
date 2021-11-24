@@ -1,1 +1,1 @@
-GA13AffecteCodeFacturation 
+GA13AffecteCodeFacturation

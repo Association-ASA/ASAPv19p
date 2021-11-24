@@ -1,24 +1,24 @@
-//%attributes = {}
+//%attributes = {"lang":"fr"}
 
-  // ----------------------------------------------------
-  // Nom utilisateur : cgm 
-  // Date et heure : 17/02/16, 14:50:40
-  // ----------------------------------------------------
-  // Méthode : RAEMADemoduleMdPWeb
-  // Description
-  // Extrait le mot de passe ou le n° de labo 
-  // Paramètres : 
-  // $1 = chaine à décoder = le mot de passe 10 caractères
-  // $0 = n° labo raema (numérique) si nombre de paramètre = 1
-  // {$2} si existe renvoie le numéro d'adhérent (numérique)
-  // ----------------------------------------------------
+// ----------------------------------------------------
+// Nom utilisateur : cgm 
+// Date et heure : 17/02/16, 14:50:40
+// ----------------------------------------------------
+// Méthode : RAEMADemoduleMdPWeb
+// Description
+// Extrait le mot de passe ou le n° de labo 
+// Paramètres : 
+// $1 = chaine à décoder = le mot de passe 10 caractères
+// $0 = n° labo raema (numérique) si nombre de paramètre = 1
+// {$2} si existe renvoie le numéro d'adhérent (numérique)
+// ----------------------------------------------------
 
 
 C_LONGINT:C283($0)
 
 $Chiffre:=""
 If (Count parameters:C259=2)  // on cherche le n° d'adhérent
-	$A:=Substring:C12($1;1;5)
+	$A:=Substring:C12($1; 1; 5)
 	Case of 
 		: ($A="H@")  // le code adherent n'a qu'un seul caractère
 			$Chiffre:=String:C10(Character code:C91($A[[2]])-112)
@@ -35,7 +35,7 @@ If (Count parameters:C259=2)  // on cherche le n° d'adhérent
 	
 Else   // on cherche le n° de RAEMA
 	
-	$R:=Substring:C12($1;6;5)
+	$R:=Substring:C12($1; 6; 5)
 	Case of 
 		: ($R="R@")  // le code raema n'a qu'un seul caractère
 			$Chiffre:=String:C10(Character code:C91($R[[2]])-112)

@@ -1,9 +1,9 @@
-//%attributes = {}
-  // RapInitEti
-  // permet d'afficher l'entête des colonnes de la gestion des rapports
-  // $1 = Pt sur tableau à remplir
+//%attributes = {"lang":"fr"}
+// RapInitEti
+// permet d'afficher l'entête des colonnes de la gestion des rapports
+// $1 = Pt sur tableau à remplir
 $Pt:=$1
-RESOLVE POINTER:C394($Pt;NomVar;NumTable;NumChamp)
+RESOLVE POINTER:C394($Pt; NomVar; NumTable; NumChamp)
 $TT:=Size of array:C274($Pt->)
 $S:=Num:C11($TT>1)*"s"
 $Nb:=String:C10($TT)
