@@ -19,7 +19,7 @@ $Type : Critère principal de recherche de l'adresse
 				$result:=""
 				
 			Else 
-				$result:=$e.CodePostal+" "+$e.Pays
+				$result:=$e.CodePostal+" "+$e.Ville
 			End if 
 			
 		Else 
@@ -27,8 +27,40 @@ $Type : Critère principal de recherche de l'adresse
 		End if 
 		
 	Else 
-		$result:=$e.CodePostal+" "+$e.Pays
+		$result:=$e.CodePostal+" "+$e.Ville
 	End if 
+	
+	
+	
+Function recupPays($type : Text)->$result : Text
+/*
+$Type : Critère principal de recherche de l'adresse
+{$type2} = $2: Critère secondaire pris en compte en cas d'absence d'adresse avec le critère principal
+*/
+	var $e : Object
+	
+	$e:=This:C1470.PersonnesAdresses_Personnes.query("TypeAdresse =:1"; $type).first()
+	
+	If ($e=Null:C1517)
+		If (Count parameters:C259=2)
+			$type:=$2
+			$e:=This:C1470.PersonnesAdresses_Personnes.query("TypeAdresse =:1"; $type).first()
+			
+			If ($e=Null:C1517)
+				$result:=""
+				
+			Else 
+				$result:=$e.Pays
+			End if 
+			
+		Else 
+			$result:=""
+		End if 
+		
+	Else 
+		$result:=$e.Pays
+	End if 
+	
 	
 	// -------------------
 	

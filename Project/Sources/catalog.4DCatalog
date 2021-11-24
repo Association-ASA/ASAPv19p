@@ -230,7 +230,7 @@
 		<table_extra input_form="Entrée" output_form="Sortie">
 			<editor_table_info displayable_fields_count="10">
 				<color red="211" green="229" blue="240" alpha="255"/>
-				<coordinates left="719.43359375" top="18.5" width="141.4140625" height="267.87890625"/>
+				<coordinates left="828.28173828125" top="0" width="141.4140625" height="267.87890625"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -249,7 +249,7 @@
 		<table_extra trigger_delete="true" input_form="Global" output_form="ListeTout">
 			<editor_table_info displayable_fields_count="9">
 				<color red="168" green="206" blue="226" alpha="255"/>
-				<coordinates left="428.2956237793" top="97.796875" width="163.375" height="236.6171875"/>
+				<coordinates left="422.16790771485" top="19.653594970703" width="163.375" height="236.6171875"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -273,7 +273,7 @@
 		<table_extra input_form="Entrée" output_form="Liste">
 			<editor_table_info displayable_fields_count="15">
 				<color red="237" green="211" blue="181" alpha="255"/>
-				<coordinates left="1011.5768432617" top="8.171875" width="198.859375" height="362.61328125"/>
+				<coordinates left="1120.424987793" top="0" width="198.859375" height="362.61328125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -326,7 +326,7 @@
 		<table_extra trigger_delete="true" input_form="Saisietout" output_form="Sortie">
 			<editor_table_info displayable_fields_count="17">
 				<color red="246" green="254" blue="244" alpha="255"/>
-				<coordinates left="1.62109375" top="545.0703125" width="165.484375" height="401.48046875"/>
+				<coordinates left="0" top="443.220703125" width="165.484375" height="401.48046875"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -353,7 +353,7 @@
 		<table_extra trigger_delete="true" input_form="Entrée" output_form="Sortie">
 			<editor_table_info displayable_fields_count="12">
 				<color red="250" green="254" blue="249" alpha="255"/>
-				<coordinates left="218.76953125" top="633.90234375" width="143.765625" height="303.0234375"/>
+				<coordinates left="306.13327026367" top="555.89129638672" width="143.765625" height="303.0234375"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -367,7 +367,7 @@
 		<table_extra trigger_delete="true" input_form="Visu" output_form="Liste">
 			<editor_table_info displayable_fields_count="6">
 				<color red="237" green="211" blue="181" alpha="255"/>
-				<coordinates left="712.88932291667" top="320.08203125" width="178.18359375" height="181.8203125"/>
+				<coordinates left="726.52286783855" top="301.04678344727" width="178.18359375" height="181.8203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -500,7 +500,7 @@
 		<table_extra input_form="Entrée" output_form="Sortie">
 			<editor_table_info displayable_fields_count="6">
 				<color red="237" green="211" blue="181" alpha="255"/>
-				<coordinates left="1006.30859375" top="392.2109375" width="203.5390625" height="175.26171875"/>
+				<coordinates left="1085.0329589844" top="392.12152099609" width="203.5390625" height="175.26171875"/>
 			</editor_table_info>
 		</table_extra>
 	</table>

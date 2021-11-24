@@ -154,6 +154,32 @@
 						},
 						{
 							"header": {
+								"name": "Header5",
+								"text": "Header5",
+								"icon": "",
+								"dataSource": ""
+							},
+							"name": "Colonne5",
+							"footer": {
+								"name": "Pied5"
+							},
+							"dataSource": "This:C1470.recupAdresse(\"Livraison\"; \"Facturation\")"
+						},
+						{
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2"
+							},
+							"name": "Colonne8",
+							"footer": {
+								"name": "Pied8"
+							},
+							"dataSource": "Formula from string:C1601(Form:C1466.formula).call(This:C1470)",
+							"dataSourceTypeHint": "number",
+							"enterable": false
+						},
+						{
+							"header": {
 								"name": "Header2",
 								"text": "Header2"
 							},
@@ -174,65 +200,6 @@
 							},
 							"dataSource": "This:C1470.Caduc",
 							"dataSourceTypeHint": "boolean"
-						},
-						{
-							"header": {
-								"name": "Header4",
-								"text": "Header4"
-							},
-							"name": "Colonne4",
-							"footer": {
-								"name": "Pied4"
-							},
-							"dataSource": "This:C1470.Identificateur"
-						},
-						{
-							"header": {
-								"name": "Header5",
-								"text": "Header5",
-								"icon": "",
-								"dataSource": ""
-							},
-							"name": "Colonne5",
-							"footer": {
-								"name": "Pied5"
-							},
-							"dataSource": "This:C1470.recupAdresse(\"Livraison\"; \"Facturation\")"
-						},
-						{
-							"header": {
-								"name": "Header6",
-								"text": "Header6"
-							},
-							"name": "Colonne6",
-							"footer": {
-								"name": "Pied6"
-							},
-							"dataSource": "This:C1470.recupMail(\"EmailRAEMA\")"
-						},
-						{
-							"header": {
-								"name": "Entête1",
-								"text": "Entête1"
-							},
-							"name": "Colonne7",
-							"footer": {
-								"name": "Pied7"
-							},
-							"dataSource": "This:C1470.recupMail(\"EmailCompta\")"
-						},
-						{
-							"header": {
-								"name": "Entête2",
-								"text": "Entête2"
-							},
-							"name": "Colonne8",
-							"footer": {
-								"name": "Pied8"
-							},
-							"dataSource": "Formula from string:C1601(Form:C1466.formula).call(This:C1470)",
-							"dataSourceTypeHint": "number",
-							"enterable": false
 						}
 					]
 				},

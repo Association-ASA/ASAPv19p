@@ -62,7 +62,6 @@ Case of
 			Form:C1466.premiereOuverture:=False:C215
 		End if 
 		
-		// orda_affLBpersonnes2($es)
 		
 	: ($event=On Clicked:K2:4)
 		$objetName:=$objet.objectName
