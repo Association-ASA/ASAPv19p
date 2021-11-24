@@ -1,5 +1,5 @@
-//%attributes = {"lang":"fr"}
-#DECLARE($es : Object)
+//%attributes = {"executedOnServer":true}
+#DECLARE($es : Object)->$coll : Collection
 
 var $coll : Collection
 $coll:=New collection:C1472
@@ -19,4 +19,3 @@ If ($es#Null:C1517)
 	End for each 
 	
 End if 
-Form:C1466.esColl:=$coll
