@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+    <head>
+            <title>Asa Contact</title>
+            <!--4dinclude HeaderASA.shtml-->
+    
+    </head>
+    
+    <body>
+        <div id="header" align="center">
+                <!--4dinclude bandeau.shtml-->
+        </div>
+
+        <div id="corps">
+            <br /><br />
+            <div id="contenu1" class="textebanalgrand" >
+
+							<p class="titrepage">
+									L’ASA publie une lettre d’information <b> « ASACONTACT » </b><br />chaque semestre où sont développés :
+							</p>
+							<br />
+							<p class="imageasadia">
+								<img src="IMAGES/AsaContact40.jpg" alt="AsaContact" width="125px"/>
+							</p>
+							<p class="textedecalegrand">
+								<br />
+							-	des articles de fond<br />
+							-	des comptes-rendus de participation à des manifestations scientifiques<br />
+							-	des analyses de la réglementation en hygiène des aliments et de la Santé Publique Vétérinaire<br />
+							-	des brèves d’articles scientifiques à vocation pluridisciplinaire.
+							</p>
+						 
+									<br /><br /><br />
+							<p class="titrepage">
+								LISTE DES ANCIENS ASA CONTACTS
+							</p>
+							<p class="textecentre">
+								Pour télécharger les numéros, cliquer sur le lien
+							</p>
+                    <!--4dinclude AsaContactTb.shtml-->
+                    <br /> <br />
+              <p class="titrepage">Les adhérents trouveront les numéros récents dans leur
+                <a href="w2adherents.shtml">
+                  espace dédié
+                </a>
+              </p>
+              <br />
+            </div>
+        </div>  
+        <div id="pied">
+            
+         <!--4dinclude pied.shtml-->
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,234 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Onglet": {
+					"type": "tab",
+					"top": 69,
+					"left": 42,
+					"width": 551,
+					"height": 348,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "arrayText",
+					"memorizeValue": true,
+					"labels": [
+						"Select obsolete command to update"
+					],
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"BT1": {
+					"type": "button",
+					"top": 97,
+					"left": -15,
+					"width": 10,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"BT2": {
+					"type": "button",
+					"top": 130,
+					"left": -15,
+					"width": 10,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 437,
+					"left": 432,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Buttons_13",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValid": {
+					"type": "button",
+					"top": 437,
+					"left": 512,
+					"width": 81,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Apply",
+					"class": "Buttons_13",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 431,
+					"left": 126,
+					"width": 279,
+					"height": 33,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "This function will apply only on closed method for selected deprecated commands"
+				},
+				"Picture817500": {
+					"type": "picture",
+					"top": 10,
+					"left": 529,
+					"width": 64,
+					"height": 64,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/icons/icn_settings.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"LbSetup": {
+					"type": "listbox",
+					"top": 108,
+					"left": 61,
+					"width": 519,
+					"height": 224,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"singleClickEdit": true,
+					"rowHeight": "20px",
+					"headerHeight": "2em",
+					"dataSource": "Form:C1466.options",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"alternateFill": "#D1DFFF",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.toDo",
+							"dataSourceTypeHint": "boolean",
+							"width": 71,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"alternateFill": "#D1DFFF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "ToUpdate",
+								"text": "To Update"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "This:C1470.toUpdate",
+							"width": 205,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"alternateFill": "#D1DFFF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Command",
+								"text": "Command"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.action",
+							"width": 243,
+							"minWidth": 10,
+							"maxWidth": 243,
+							"enterable": false,
+							"alternateFill": "#D1DFFF",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "ActionList",
+								"text": "Action"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Option1": {
+					"type": "checkbox",
+					"top": 340,
+					"left": 74,
+					"width": 506,
+					"height": 29,
+					"dataSource": "Form:C1466.option1",
+					"text": "Change Special caracters (9|10|13|34) by \\t \\n \\r \\\"",
+					"focusable": false
+				},
+				"Option2": {
+					"type": "checkbox",
+					"top": 365,
+					"left": 74,
+					"width": 506,
+					"height": 29,
+					"dataSource": "Form:C1466.option2",
+					"text": "Change arguments like \"xxx\"+\"yyy\"  by  \"xxxyyy\"",
+					"focusable": false
+				}
+			}
+		}
+	]
+}

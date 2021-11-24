@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ASA : Les permanents</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="cgcorpsperm" >
+			<br /> <br />
+                      <ul class="breadcrumb">
+                        <li><a href="w2asapermanents.shtml">organigramme</a></li>
+                        <li><a href="w2asapermanents3.shtml">Fonction technique</a></li>
+                        <li><a href="w2asapermanents2.shtml">Fonction secrétariat</a></li>			
+                      </ul>
+		      
+			<br /><br />
+			<p class="cgTITREPERM cgmarges">
+				FONCTION SECRETARIAT	
+			</p>
+			
+						
+			<div id="SEC" class="cgSEC2" >
+				<p class="cgTITREPERM">
+				Accueil téléphonique principal
+				</p>
+				<div class="cgimages">
+					<img src="images/XMini.png" alt="X" width="160" />
+          <br />
+					<b>Poste à pourvoir</b> <br />
+					<i>Secrétaire</i><br /><br />
+					Vous répondra sur : <br />
+					
+					<ul class="cgLISTESEC">
+						<li>les informations administratives</li>
+						<li>le traitement des demandes informatiques</li>
+						<li>la facturation</li>
+            <li>l'inscription (suppléante)</li>
+						<li>les transporteurs (suppléante)</li>
+						<li>la réception des résultats (suppléante)</li>
+					</ul>
+				</div>
+			</div>
+			<div id="SEC2" class="cgSEC2" >
+				<p class="cgTITREPERM">
+					Accueil téléphonique suppléante
+				</p>
+				<div class="cgimages">
+					<img src="images/GS.jpg" alt="Ghislaine Serveaux" width="300" />
+					<b>Ghislaine SERVEAUX</b> <br />
+					<i>Agent Administratif</i><br /><br />
+					Vous répond sur : <br />
+					<ul class="cgLISTESEC">
+						<li>les informations administratives</li>
+						<li>l'inscription</li>
+						<li>les transporteurs</li>
+						<li>la réception des résultats</li>
+						<li>le traitement des demandes informatiques</li>
+						<br />
+					</ul>
+					
+				</div>
+			</div>
+			
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

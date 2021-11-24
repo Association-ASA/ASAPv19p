@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Histoire d'AsaDia</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+							 <!--4dinclude menuAsadia.shtml-->
+				<br/>
+			 <p class="grandtitrepage">
+			  Asadia <br />l'origine, l'état actuel et les projets
+			 </p>
+			  <br />
+						AsaDia est le logiciel de gestion des photographies de lésions d'abattoir
+			  des animaux de boucherie et de charcuterie.<br />
+			  Ce projet est, à plus d'un titre, un exemple emblématique du savoir faire de l'ASA.<br />
+			  Initialement conçu pour accomplir un devoir de mémoire en pérennisant les superbes collections
+			  de diapositives de nos "anciens", <b>AsaDia 1</b> a bien vite pris la route plus ambitieuse de devenir
+			  un logiciel de gestion de ces images permettant <b>l'aide au diagnostic</b> et la <b>formation</b>
+			  pour les élèves des établissements d'enseignement et les agents
+			  chargés de l'inspection vétérinaire en abattoir.<br />
+			  <img class="imageasadiad" src="images/asadialistes.jpeg" width="300px"/>
+			  Pour ce faire, nous avons eu recours aux établissements d'enseignement vétérinaire français,
+			  auxquels se sont joints nos amis belges de l'Université de Liège, pour définir une <b>nomenclature scientifique unique</b>
+			  pour les lésions rencontrées à l’abattoir pour les espèces bovine, équine, porcine, ovine et caprine.
+			  <br />
+			  <img class="imageasadia" src="images/asadialistes.png" />
+			  Cette nomenclature a été prise en compte par l'administration française
+			  qui nous a fait part de besoins spécifiques liés à la pratique d'inspection.<br />
+			  De là est née une liste opérationnelle publiée sous forme de note de service
+			  <a href="http://agriculture.gouv.fr/telecharger/59869?%20%20%20%20%20%20%20%20%20%20token=56c0f3e0174a24a9c8c240cb4cf09fa3." target="_blank">NS DGAL/SDSSA/N2013-8180 du 6 novembre 2013</a>
+			  et qui, intégrée récemment à l’application nationale dédiée à l’inspection sanitaire des animaux
+			  et des viandes à l’abattoir, sert de base aux remontées épidémiologiques du terrain.
+			   <br /><br />
+			  <b>AsaDia 2</b>, évolution importante du projet, est née de la nécessité d'actualiser
+			  cette liste opérationnelle parallèlement à la nouvelle réglementation européenne
+			  et en tenant compte des besoins spécifiques exprimés par l’administration
+			  et liés aux pratiques d’inspection.<br />
+			  <img class="imageasadiad" src="images/asadiadetaillesion.png" width="400px"/>
+			  Profitant de cette nécessité d'évolution, l'ASA a lancé une enquête de
+			  satisfaction d'AsaDia version 1 auprès de ses utilisateurs en abattoir.<br />
+			  Cette enquête a révélé une satisfaction globale mais a aussi mis en évidence des regrets
+			  concernant la taille réduite des photos et l'absence d'indications directement sur les photographies
+			  qui auraient permis de localiser les éléments lésionnels décrits dans le commentaire.<br />
+			  AsaDia 2 comprend aussi les éléments d'anatomie normale et de pathologie générale 
+			  de façon à permettre une révision des données essentielles à l'inspection en abattoir.<br /><br />
+			  
+			  Les bénéficiaires sont les agents chargés de l'inspection post-mortem en abattoir
+			  et les étudiants des établissements d'enseignement des lésions.<br />
+			  <img class="imageasadia" src="images/Asadia2utilisation.png" width="300px"/>
+			  Pour les premiers, une convention liant la DGAL à l'ASA a permis une diffusion,
+			  via un téléchargement de l’application à partir d’un serveur FTP,
+			  à tous les services d'inspection des abattoirs communiqués par la DGAL ou qui en faisaient la demande.<br />
+			  Plus de 1000 licences ont été enregistrées sur les ordinateurs des services d'inspection des abattoirs.<br />
+			  La totalité des départements pourvus d'abattoirs se sont enregistrés.
+			  C'est dire que l'objectif d'une large diffusion opérationnelle est atteint.<br /><br />
+				<img class="imageasadiad" src="images/Asadia2formation.png" width="300px"/>
+				
+			  <br /><br />
+			  Concernant l'enseignement, l'ASA a mis gratuitement à disposition AsaDia pour les étudiants,
+			  le temps de leurs études.<br />
+			  Les écoles vétérinaires et l'INFOMA l'utilisent pour l'enseignement.<br /><br />
+			  <br /><br />
+			  <b>AsaDia 3</b>, paru sur le Web depuis 2016, a fait l'objet d'améliorations importantes
+			  largement inspirées des conclusions de l'enquête de satisfaction effectuée auprès des utilisateurs en abattoir.<br />
+			  Les experts de l'ASA ont, reprenant et actualisant le travail remarquable publié dans la "revue jaune" d'Alfort,
+			  formalisé les éléments d'anatomie pathologique spéciale de façon à décrire l'ensemble des lésions
+			  (organe par organe, espèce par espèce) que l'on peut trouver en abattoir.<br />
+			  Le développement d'une fonction "Ne pas confondre" permet de mettre en exergue les critères de diagnostic différentiel
+			  entre des images de lésions ressemblantes.<br />
+			  La fonction "Paniers" a été implémentée début 2018 : elle consiste en la possibilité de recruter certaines diapositives
+			  dans une collection nommée panier en allusion aux paniers droits et carrousels des projecteurs de diapositives.<br />
+			  Le recrutement des photos se fait aussi bien à partir des photos en liste que celles en pleine page grâce à une icône spécifique.<br />	
+			  En 2019, un volet traitant des lésions du gibier a vu le jour.<br />
+			  En 2020, nous avons initié une démarche pour inclure, dans AsaDia, des questionnaires qui ont pour but l'auto-formation des visiteurs :
+			  A chaque réponse, un argumentaire est donné pour expliquer en quoi elle est bonne ou mauvaise et, à la fin du questionnaire
+			  un bilan des connaissances est affiché.<br /><br />
+			  Par ailleurs, nous avons fait faire une traduction en anglais pour permettre une diffusion à des pays non francophones.<br />
+			  La version russe de cet outil a pu être réalisée grâce à financement octroyé par l’Italie, 
+			  dans le cadre d’un projet de jumelage de l’OIE entre établissements d’enseignement vétérinaire.<br />
+			  D'autres projets de traduction sont attendus.<br /><br />
+			  
+			  
+			  Le développement d'une interface Web permet de consulter AsaDia directement sur Internet :
+			  <a href="https://association.asa-spv.fr/asadia/">accéder à AsaDia 3</a>. <br />
+			  Ce mode de publication permet d'effectuer des mises à jour régulières et c'est pourquoi la diffusion
+			  de cette version d'AsaDia n'est actuellement plus que sous forme d'abonnement Web.
+			    <a href="https://association.asa-spv.fr/pdf/BdCAsaDia.pdf">S'abonner à AsaDia</a>. <br /><br /> 
+			</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+		
+	</body>
+	
+</html>
+	

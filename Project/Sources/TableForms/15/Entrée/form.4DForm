@@ -1,0 +1,1109 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "SaisieStandard",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "MiniBarre",
+	"markerBody": 455,
+	"markerBreak": 455,
+	"markerFooter": 465,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onDataChange",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"NouveauRectangle": {
+					"type": "rectangle",
+					"top": 441,
+					"left": 1036,
+					"width": 443,
+					"height": 153,
+					"fill": "transparent"
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 117,
+					"left": 850,
+					"width": 189,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Adresse de Facturation : "
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 259,
+					"left": 121,
+					"width": 136,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Date de la facture : "
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 296,
+					"left": 160,
+					"width": 153,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "N° Bon de Commande : "
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 259,
+					"left": 368,
+					"width": 136,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "N° de Facture : "
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 680,
+					"left": 714,
+					"width": 136,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Total HT : "
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 728,
+					"left": 714,
+					"width": 136,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Total TTC : "
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 704,
+					"left": 714,
+					"width": 136,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Total TVA : "
+				},
+				"AdresseFacturation": {
+					"type": "input",
+					"top": 117,
+					"left": 1044,
+					"width": 241,
+					"height": 113,
+					"dataSource": "[Factures:15]AdresseFacturation:5",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateFacture": {
+					"type": "input",
+					"top": 259,
+					"left": 262,
+					"width": 80,
+					"height": 17,
+					"dataSource": "[Factures:15]DateFacture:4",
+					"dataSourceTypeHint": "date",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onDataChange"
+					]
+				},
+				"NumBonCommande": {
+					"type": "input",
+					"top": 296,
+					"left": 319,
+					"width": 330,
+					"height": 17,
+					"dataSource": "[Factures:15]NumBonCommande:14",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NumFacture": {
+					"type": "input",
+					"top": 259,
+					"left": 509,
+					"width": 158,
+					"height": 17,
+					"dataSource": "[Factures:15]NumFacture:3",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TotalHT": {
+					"type": "input",
+					"top": 680,
+					"left": 855,
+					"width": 83,
+					"height": 17,
+					"dataSource": "[Factures:15]TotalHT:8",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.00 €",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TotalTTC": {
+					"type": "input",
+					"top": 728,
+					"left": 855,
+					"width": 83,
+					"height": 17,
+					"dataSource": "[Factures:15]TotalTTC:10",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.00 €",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TotalTVA": {
+					"type": "input",
+					"top": 704,
+					"left": 855,
+					"width": 83,
+					"height": 17,
+					"dataSource": "[Factures:15]TotalTVA:9",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.00 €",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 74,
+					"left": 49,
+					"width": 136,
+					"height": 17,
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 74,
+					"left": 557,
+					"width": 136,
+					"height": 17,
+					"textAlign": "right",
+					"text": "UUIDPersonne : "
+				},
+				"UUID": {
+					"type": "input",
+					"top": 74,
+					"left": 190,
+					"width": 347,
+					"height": 17,
+					"dataSource": "[Factures:15]UUID:1",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UUIDPersonne": {
+					"type": "input",
+					"top": 74,
+					"left": 702,
+					"width": 336,
+					"height": 17,
+					"dataSource": "[Factures:15]UUIDPersonne:2",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 174,
+					"left": 130,
+					"width": 145,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Numéro de labo :\r"
+				},
+				"RadLabo": {
+					"type": "radio",
+					"top": 128,
+					"left": 308,
+					"width": 109,
+					"height": 25,
+					"dataSource": "RadLabo",
+					"text": "Laboratoire",
+					"focusable": false,
+					"radioGroup": "Groupe5",
+					"method": "ObjectMethods/RadLabo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadAdh": {
+					"type": "radio",
+					"top": 128,
+					"left": 442,
+					"width": 91,
+					"height": 25,
+					"dataSource": "RadAdh",
+					"text": "Adhérent",
+					"focusable": false,
+					"radioGroup": "Groupe5",
+					"method": "ObjectMethods/RadAdh.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadPro": {
+					"type": "radio",
+					"top": 128,
+					"left": 558,
+					"width": 91,
+					"height": 25,
+					"dataSource": "RadPro",
+					"text": "Prospect",
+					"focusable": false,
+					"radioGroup": "Groupe5",
+					"method": "ObjectMethods/RadPro.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadPar": {
+					"type": "radio",
+					"top": 128,
+					"left": 675,
+					"width": 91,
+					"height": 25,
+					"dataSource": "RadPar",
+					"text": "Partenaire",
+					"focusable": false,
+					"radioGroup": "Groupe5",
+					"method": "ObjectMethods/RadPar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarCode": {
+					"type": "input",
+					"top": 174,
+					"left": 285,
+					"width": 63,
+					"height": 17,
+					"dataSource": "VarCode",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarCode.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 174,
+					"left": 429,
+					"width": 46,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Nom :"
+				},
+				"VarNom": {
+					"type": "input",
+					"top": 174,
+					"left": 487,
+					"width": 337,
+					"height": 17,
+					"dataSource": "VarNom",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarNom.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 172,
+					"left": 383,
+					"width": 29,
+					"height": 22,
+					"fontFamily": "Police système Courant",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "OU"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 211,
+					"left": 143,
+					"width": 130,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Type de facture :"
+				},
+				"CaseDevis": {
+					"type": "checkbox",
+					"top": 207,
+					"left": 766,
+					"width": 95,
+					"height": 19,
+					"dataSource": "CaseDevis",
+					"text": "Devis",
+					"focusable": false,
+					"method": "ObjectMethods/CaseDevis.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PUMTypeFacture": {
+					"type": "dropdown",
+					"top": 207,
+					"left": 278,
+					"width": 350,
+					"height": 24,
+					"dataSource": "PUMTypeFacture",
+					"focusable": false,
+					"textAlign": "center",
+					"method": "ObjectMethods/PUMTypeFacture.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxVentes": {
+					"type": "listbox",
+					"top": 366,
+					"left": 84,
+					"width": 849,
+					"height": 303,
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxVentes",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#FDE5FF",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"rowHeight": "1em",
+					"columns": [
+						{
+							"name": "TbCodePresta",
+							"dataSource": "TbCodePresta",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#FDE5FF",
+							"textAlign": "center",
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Code",
+								"text": "Code",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss"
+							},
+							"verticalAlign": "middle"
+						},
+						{
+							"name": "TbPrestation",
+							"dataSource": "TbPrestation",
+							"width": 393,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#FDE5FF",
+							"textAlign": "left",
+							"fontWeight": "bold",
+							"events": [
+								"onDataChange",
+								"onAfterKeystroke"
+							],
+							"method": "ObjectMethods/TbPrestation.4dm",
+							"header": {
+								"name": "Entête1",
+								"text": "Prestation",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							},
+							"verticalAlign": "middle",
+							"rowHeightAuto": true,
+							"truncateMode": "none",
+							"wordwrap": "normal"
+						},
+						{
+							"name": "TbPrixUHT",
+							"dataSource": "TbPrixUHT",
+							"dataSourceTypeHint": "number",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "###,##0.00 €",
+							"alternateFill": "#FDE5FF",
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/TbPrixUHT.4dm",
+							"header": {
+								"name": "Entête2",
+								"text": "Prix UHT",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							},
+							"verticalAlign": "middle"
+						},
+						{
+							"name": "TbQuantite",
+							"dataSource": "TbQuantite",
+							"dataSourceTypeHint": "number",
+							"width": 79,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#FDE5FF",
+							"textAlign": "center",
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/TbQuantite.4dm",
+							"header": {
+								"name": "Entête3",
+								"text": "Quantité",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							},
+							"verticalAlign": "middle"
+						},
+						{
+							"name": "TbPrixHT",
+							"dataSource": "TbPrixHT",
+							"dataSourceTypeHint": "number",
+							"width": 74,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "###,###,##0.00 €",
+							"alternateFill": "#FDE5FF",
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Prix HT",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							},
+							"verticalAlign": "middle"
+						},
+						{
+							"name": "TbTauxTVA",
+							"dataSource": "TbTauxTVA",
+							"dataSourceTypeHint": "number",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "##0.00 %",
+							"alternateFill": "#FDE5FF",
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/TbTauxTVA.4dm",
+							"header": {
+								"name": "Entête5",
+								"text": "Taux TVA",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							},
+							"verticalAlign": "middle"
+						},
+						{
+							"name": "TbPrixTTC",
+							"dataSource": "TbPrixTTC",
+							"dataSourceTypeHint": "number",
+							"width": 69,
+							"minWidth": 10,
+							"maxWidth": 69,
+							"numberFormat": "###,###,##0.00 €",
+							"alternateFill": "#FDE5FF",
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Prix TTC",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss"
+							},
+							"verticalAlign": "middle"
+						}
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 134,
+					"left": 143,
+					"width": 145,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Type de personne :\r"
+				},
+				"Image3": {
+					"type": "picture",
+					"top": 128,
+					"left": 121,
+					"width": 28,
+					"height": 28,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image3.png"
+				},
+				"Image4": {
+					"type": "picture",
+					"top": 168,
+					"left": 121,
+					"width": 28,
+					"height": 28,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image4.png"
+				},
+				"Image5": {
+					"type": "picture",
+					"top": 205,
+					"left": 121,
+					"width": 28,
+					"height": 28,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image5.png"
+				},
+				"Image6": {
+					"type": "picture",
+					"top": 202,
+					"left": 718,
+					"width": 28,
+					"height": 28,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image6.png"
+				},
+				"Image7": {
+					"type": "picture",
+					"top": 290,
+					"left": 121,
+					"width": 28,
+					"height": 28,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image7.png"
+				},
+				"BouPlus": {
+					"type": "pictureButton",
+					"top": 366,
+					"left": 953,
+					"width": 40,
+					"height": 40,
+					"dataSource": "BouPlus",
+					"picture": "/RESOURCES/Images/Buttons/BoutonPlus.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/BouPlus.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouMoins": {
+					"type": "pictureButton",
+					"top": 417,
+					"left": 953,
+					"width": 40,
+					"height": 40,
+					"dataSource": "BouMoins",
+					"picture": "/RESOURCES/Images/Buttons/BoutonMoins.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/BouMoins.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 111,
+					"left": 569,
+					"width": 218,
+					"height": 17,
+					"text": "(En cours de développement)"
+				},
+				"NouveauImage8": {
+					"type": "picture",
+					"top": 354,
+					"left": 1120,
+					"width": 263,
+					"height": 25,
+					"pictureFormat": "scaled",
+					"picture": "Images/NouveauImage8.png"
+				},
+				"RegleVarBanque": {
+					"type": "input",
+					"top": 459,
+					"left": 1174,
+					"width": 245,
+					"height": 17,
+					"dataSource": "VarBanque",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/RegleVarBanque.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"RegleVarNumCheque": {
+					"type": "input",
+					"top": 489,
+					"left": 1174,
+					"width": 163,
+					"height": 17,
+					"dataSource": "VarNumCheque",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RegleTexte1": {
+					"type": "text",
+					"top": 459,
+					"left": 1076,
+					"width": 90,
+					"height": 16,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Banque :"
+				},
+				"RegleTexte2": {
+					"type": "text",
+					"top": 489,
+					"left": 1076,
+					"width": 90,
+					"height": 16,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "N° chèque :"
+				},
+				"RegleVarDateReglement": {
+					"type": "input",
+					"top": 519,
+					"left": 1174,
+					"width": 163,
+					"height": 17,
+					"dataSource": "VarDateReglement",
+					"dataSourceTypeHint": "date",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RegleTexte3": {
+					"type": "text",
+					"top": 519,
+					"left": 1026,
+					"width": 140,
+					"height": 16,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Date réglement :"
+				},
+				"RegleVarSommeRéglée": {
+					"type": "input",
+					"top": 549,
+					"left": 1174,
+					"width": 163,
+					"height": 17,
+					"dataSource": "VarSommeRéglée",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"numberFormat": "### ##0.00 €",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RegleTexte4": {
+					"type": "text",
+					"top": 549,
+					"left": 1026,
+					"width": 140,
+					"height": 16,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Somme réglée :"
+				},
+				"NouveauLigne": {
+					"type": "line",
+					"top": 378,
+					"left": 1119,
+					"width": 264,
+					"height": 1
+				},
+				"NouveauBouNewPaiement": {
+					"type": "pictureButton",
+					"top": 387,
+					"left": 1119,
+					"width": 45,
+					"height": 45,
+					"dataSource": "BouNewPaiement",
+					"tooltip": "Entrer un nouveau paiement",
+					"picture": "/RESOURCES/Images/Buttons/BoutonPaiementF.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/NouveauBouNewPaiement.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NouveauBouSauvegarder": {
+					"type": "pictureButton",
+					"top": 387,
+					"left": 1229,
+					"width": 45,
+					"height": 45,
+					"dataSource": "BouSauvegarder",
+					"tooltip": "Sauvegarder le paiement",
+					"picture": "/RESOURCES/Images/Buttons/BoutonSauvergarderF.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/NouveauBouSauvegarder.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NouveauBouEnvoyer": {
+					"type": "pictureButton",
+					"top": 387,
+					"left": 1339,
+					"width": 45,
+					"height": 45,
+					"dataSource": "BouEnvoyer",
+					"tooltip": "Prévenir le laboratoire du paiement",
+					"picture": "/RESOURCES/Images/Buttons/BoutonEnvoyerF.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/NouveauBouEnvoyer.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouImprime": {
+					"type": "pictureButton",
+					"top": 716,
+					"left": 958,
+					"width": 48,
+					"height": 48,
+					"dataSource": "BouImprime",
+					"picture": "/RESOURCES/Images/Buttons/BoutonImprimer.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/BouImprime.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Image9": {
+					"type": "picture",
+					"top": 328,
+					"left": 121,
+					"width": 28,
+					"height": 28,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image9.png"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 334,
+					"left": 147,
+					"width": 224,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Année des prestations voulues :"
+				},
+				"VarAnnée": {
+					"type": "input",
+					"top": 334,
+					"left": 377,
+					"width": 272,
+					"height": 17,
+					"dataSource": "VarAnnée",
+					"dataSourceTypeHint": "number",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RegleBouCorbeilleFacture": {
+					"type": "pictureButton",
+					"top": 559,
+					"left": 1440,
+					"width": 30,
+					"height": 30,
+					"dataSource": "BouCorbeilleFacture",
+					"tooltip": "Prévenir le laboratoire du paiement",
+					"picture": "/RESOURCES/Images/Buttons/BouCorbeilleFacture.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/RegleBouCorbeilleFacture.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CaseAdilva": {
+					"type": "checkbox",
+					"top": 333,
+					"left": 702,
+					"width": 129,
+					"height": 19,
+					"dataSource": "CaseAdilva",
+					"text": "Remise ADILVA",
+					"focusable": false,
+					"method": "ObjectMethods/CaseAdilva.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Imprimer la facture",
+					"top": 713,
+					"left": 1022,
+					"width": 252,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton.4dm"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe5": [
+				"RadLabo",
+				"RadAdh",
+				"RadPro",
+				"RadPar"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 3
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Cahier du CIV</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+      <div id="contenu1" class="textebanalgrand">
+  
+          <br/> <br/>
+          
+        <p class="titrepage"> Le bien-être et la protection des animaux, de l’élevage à l’abattoir</p>
+        <p class="textepetit">
+          Auteurs : Hélène CHARDON, Hubert BRUGERE, Pierre-Michel Rosner, ASA <br/>
+          Éditeur : CIV<br/>
+          Date de publication : 07/2015<br/>
+          Thématiques : Abattoir, Bien-être animal,<br/>
+          Elevage, Marché aux bestiaux, Transport des animaux<br/>
+          Espèces : Bovin, Caprin, Equin, Ovin, Porcin<br/>
+          Type de document : Publications du CIV<br/>
+          Appartient à la collection «Les Cahiers bien-être animal»<br/>
+        </p>
+        <p class="imageasa textepetitcentre">
+          <a href="https://dl.dropboxusercontent.com/u/33352203/CIV2-VF.pdf">
+            <img src="images/civgrand.jpeg" alt="Cahier du CIV" width="180px" />
+          </a>
+          <br />
+          Cliquer sur l'image pour télécharger le cahier
+        </p>
+        <p>
+          <br/>
+          Dans l’optique de faciliter la connaissance et la compréhension des sujets de société
+          liés aux filières élevage et viandes, le Centre d’Information des Viandes (CIV) a décidé de consacrer,
+          pour la première fois, un de ses Cahiers au thème du bien-être et la protection des animaux,
+          depuis l’élevage jusqu’à l’abattoir. Dans la logique de la collection,
+          ce Cahier propose différents éléments permettant à toute personne intéressée de construire
+          ou d’approfondir sa réflexion sur cette thématique.
+          Il s’appuie pour cela sur des publications scientifiques et juridiques, des textes réglementaires
+          et des rapports émanant d’institutions et d’organismes officiels.
+          <br/>
+          Dans sa première partie, ce cahier traite de la construction de la législation française actuelle
+          en matière de protection des animaux d’élevage. Il rappelle en premier lieu l’évolution
+          au cours du temps des représentations que l’Homme s’est fait des animaux et en conséquence des conceptions
+          de son rapport avec eux. En lien avec ces représentations, il montre de quelle façon le statut juridique
+          des animaux s’est progressivement dessiné.
+          Enfin, il présente l’élaboration de l’arsenal réglementaire en matière de protection animale.
+          <br/>
+          La seconde partie expose le rôle et les missions des principaux acteurs de la protection animale en France,
+          de l’élevage jusqu’à l’abattoir.
+          Les professionnels des filières de production animale sont particulièrement impliqués.
+          Mais d’autres acteurs contribuent également à la mise en œuvre de la législation
+          ainsi qu’à l’amélioration permanente des conditions de bien-être des animaux d’élevage :
+          représentants de l’Etat, vétérinaires, chercheurs, associations de protection animale, etc.
+          <br/><br/>
+          
+        </p>
+      </div>
+    </div>
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

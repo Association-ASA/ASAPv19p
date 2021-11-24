@@ -1,0 +1,4178 @@
+﻿{
+	"Sources/Methods/___QST_CreateComponent.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/mQST_4Dcommand.4dm": {
+		"left": 52,
+		"top": 399,
+		"width": 1424,
+		"height": 795
+	},
+	"Sources/Methods/mQST_executeMethod.4dm": {
+		"left": 124,
+		"top": 216,
+		"width": 1220,
+		"height": 1031
+	},
+	"Sources/Methods/QS_TOOLBOX_init.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1097
+	},
+	"Sources/Methods/signal_addResult.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/RAPPORT_exportForms.4dm": {
+		"left": 797,
+		"top": 128,
+		"width": 1251,
+		"height": 978
+	},
+	"Sources/Methods/RAPPORT_creations.4dm": {
+		"left": 797,
+		"top": 103,
+		"width": 1251,
+		"height": 1003
+	},
+	"Sources/Methods/BASE_getTablesList.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/QS_Init.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/TOOLS_readSymbolFile.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1097
+	},
+	"Sources/Methods/WKR_updateMethodsInformation.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/DatabaseMethods/onStartup.4dm": {
+		"left": 770,
+		"top": 186,
+		"width": 1220,
+		"height": 923
+	},
+	"Trash/Methods/(QS_TOOLBOX_init1).4dm": {
+		"left": 141,
+		"top": 331,
+		"width": 1498,
+		"height": 748
+	},
+	"Sources/Methods/_Start.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/QS_TOOLBOX.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/QS_TOOLBOX_4Dpop.4dm": {
+		"left": 952,
+		"top": 367,
+		"width": 1486,
+		"height": 830
+	},
+	"Sources/Methods/FE_getFormAttributes.4dm": {
+		"left": 91,
+		"top": 215,
+		"width": 1747,
+		"height": 802
+	},
+	"Sources/Forms/_FormExplorer/ObjectMethods/myLH.4dm": {
+		"left": 0,
+		"top": 203,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/FE_LH_ElementClicked.4dm": {
+		"left": 0,
+		"top": 203,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/QS_menu_4DPop.4dm": {
+		"left": 52,
+		"top": 424,
+		"width": 1486,
+		"height": 830
+	},
+	"Sources/Methods/_Read_Me.4dm": {
+		"left": 241,
+		"top": 184,
+		"width": 1501,
+		"height": 796
+	},
+	"Sources/Methods/__Menu_mng_execute.4dm": {
+		"left": 297,
+		"top": 175,
+		"width": 1040,
+		"height": 760
+	},
+	"Sources/Methods/__4DCommand.4dm": {
+		"left": 99,
+		"top": 128,
+		"width": 1390,
+		"height": 851
+	},
+	"Sources/Methods/__Converter.4dm": {
+		"left": 11,
+		"top": 128,
+		"width": 1652,
+		"height": 901
+	},
+	"Sources/Methods/__DataExplorer.4dm": {
+		"left": 755,
+		"top": 139,
+		"width": 834,
+		"height": 1084
+	},
+	"Sources/Methods/__dbOverview.4dm": {
+		"left": 345,
+		"top": 146,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Methods/__displayCollections.4dm": {
+		"left": 88,
+		"top": 206,
+		"width": 1460,
+		"height": 773
+	},
+	"Sources/Methods/__FormExplorer.4dm": {
+		"left": 475,
+		"top": 249,
+		"width": 1604,
+		"height": 891
+	},
+	"Sources/Methods/__methodAnalyser.4dm": {
+		"left": 583,
+		"top": 199,
+		"width": 1510,
+		"height": 747
+	},
+	"Sources/Methods/__MethodManager.4dm": {
+		"left": 583,
+		"top": 199,
+		"width": 1510,
+		"height": 747
+	},
+	"Sources/Methods/__MethodsCallChain.4dm": {
+		"left": 298,
+		"top": 240,
+		"width": 1033,
+		"height": 711
+	},
+	"Sources/Methods/__MethodsPallet.4dm": {
+		"left": 67,
+		"top": 115,
+		"width": 1424,
+		"height": 894
+	},
+	"Sources/Methods/__SearchAndControl.4dm": {
+		"left": 583,
+		"top": 199,
+		"width": 1510,
+		"height": 747
+	},
+	"Sources/Methods/__StructureAnalysis.4dm": {
+		"left": 583,
+		"top": 199,
+		"width": 1510,
+		"height": 747
+	},
+	"Sources/Methods/__VCS.4dm": {
+		"left": 583,
+		"top": 199,
+		"width": 1510,
+		"height": 747
+	},
+	"Sources/Methods/_onEvent.4dm": {
+		"left": 246,
+		"top": 221,
+		"width": 1221,
+		"height": 809
+	},
+	"Sources/Methods/MM_filterBy.4dm": {
+		"left": 127,
+		"top": 145,
+		"width": 1022,
+		"height": 1115
+	},
+	"Sources/Methods/MM_getMethodAttributes.4dm": {
+		"left": 54,
+		"top": 128,
+		"width": 1473,
+		"height": 881
+	},
+	"Sources/Methods/MM_setMethodAttributes.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1209
+	},
+	"Sources/Methods/WKR_setCollToDiamond.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Trash/Methods/(SHARED_saveProperties).4dm": {
+		"left": 149,
+		"top": 161,
+		"width": 1498,
+		"height": 723
+	},
+	"Trash/Methods/(METHODS_SaveArrays).4dm": {
+		"left": 149,
+		"top": 161,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/MM_massiveBeautify.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/COMMANDS_used.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/signal_setNew.4dm": {
+		"left": 214,
+		"top": 155,
+		"width": 1220,
+		"height": 923
+	},
+	"Sources/Methods/COMMAND_nested.4dm": {
+		"left": 449,
+		"top": 149,
+		"width": 1148,
+		"height": 731
+	},
+	"Sources/Methods/mQST_dbAnalysis.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/QST_initVariables.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/COMMANDS_nested.4dm": {
+		"left": 513,
+		"top": 187,
+		"width": 1130,
+		"height": 822
+	},
+	"Sources/Methods/CONVERTER_getMethodWithToken.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/QS_TOOLBOX_start.4dm": {
+		"left": 288,
+		"top": 228,
+		"width": 1220,
+		"height": 1028
+	},
+	"Sources/Methods/floatWindow_close.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/floatWindow_update.4dm": {
+		"left": 129,
+		"top": 129,
+		"width": 1424,
+		"height": 871
+	},
+	"Sources/Methods/floatWindow_send.4dm": {
+		"left": 853,
+		"top": 236,
+		"width": 1150,
+		"height": 817
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/searchSQL1.4dm": {
+		"left": 108,
+		"top": 228,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/MP_searchByOrda.4dm": {
+		"left": 155,
+		"top": 357,
+		"width": 1498,
+		"height": 598
+	},
+	"Sources/Methods/MM_updateInformation.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/displayInfo.4dm": {
+		"left": 278,
+		"top": 431,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/searchInCollection.4dm": {
+		"left": 108,
+		"top": 253,
+		"width": 1498,
+		"height": 698
+	},
+	"Sources/Methods/COMMANDS_btn_propertySelect.4dm": {
+		"left": 217,
+		"top": 267,
+		"width": 1543,
+		"height": 730
+	},
+	"Sources/Methods/VCS_create4Djs.4dm": {
+		"left": 119,
+		"top": 197,
+		"width": 1548,
+		"height": 828
+	},
+	"Sources/Methods/CM_crossReference.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/SC_checkDeclrVariables.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/CF_action.4dm": {
+		"left": 83,
+		"top": 364,
+		"width": 1747,
+		"height": 723
+	},
+	"Sources/Methods/PLUGIN_listCommands.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/TOOLS_Object_Get_type.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/TOOLS_Get4DKonstant.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/TOOLS_Get4DKeyword.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/TOOLS_composantMethodList.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/TOOLS_systemKeyword.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/variables_restore.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/d3_export.4dm": {
+		"left": 169,
+		"top": 141,
+		"width": 1148,
+		"height": 853
+	},
+	"Sources/Methods/MCC_d3_addCalleesBundling.4dm": {
+		"left": 169,
+		"top": 116,
+		"width": 1148,
+		"height": 878
+	},
+	"Sources/Methods/MCC_tidy_addCallees.4dm": {
+		"left": 513,
+		"top": 187,
+		"width": 1130,
+		"height": 822
+	},
+	"Sources/Methods/MCC_d3_addCallees.4dm": {
+		"left": 513,
+		"top": 187,
+		"width": 1130,
+		"height": 822
+	},
+	"Sources/Methods/METHODS_analyseOne.4dm": {
+		"left": 139,
+		"top": 220,
+		"width": 1518,
+		"height": 789
+	},
+	"Sources/Methods/PROCESS_notTooMuch.4dm": {
+		"left": 161,
+		"top": 103,
+		"width": 1291,
+		"height": 852
+	},
+	"Sources/Methods/MM_restoreList.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Forms/_MethodManager/method.4dm": {
+		"left": 288,
+		"top": 86,
+		"width": 1220,
+		"height": 1009
+	},
+	"Sources/Methods/MM_LB_rightClick.4dm": {
+		"left": 21,
+		"top": 128,
+		"width": 1659,
+		"height": 882
+	},
+	"Sources/Methods/MM_sortByLastUpdate.4dm": {
+		"left": 88,
+		"top": 362,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/MethodsPaths.4dm": {
+		"left": 88,
+		"top": 362,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/MM_reduceByLatest.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/fromWhen.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1115
+	},
+	"Sources/Methods/MM_startSearch.4dm": {
+		"left": 166,
+		"top": 196,
+		"width": 1730,
+		"height": 1022
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/form.searchInMethod.4dm": {
+		"left": 110,
+		"top": 223,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/searchMethod.4dm": {
+		"left": 55,
+		"top": 153,
+		"width": 1473,
+		"height": 856
+	},
+	"Sources/Methods/displayCollections.4dm": {
+		"left": 202,
+		"top": 177,
+		"width": 1865,
+		"height": 1072
+	},
+	"Sources/Forms/_displayCollections/method.4dm": {
+		"left": 188,
+		"top": 200,
+		"width": 1810,
+		"height": 1106
+	},
+	"Sources/Forms/_Deprecated/method.4dm": {
+		"left": 110,
+		"top": 223,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Methods/METHOD_check_events.4dm": {
+		"left": 241,
+		"top": 184,
+		"width": 1501,
+		"height": 796
+	},
+	"Sources/Methods/METHOD_check_OpenClose.4dm": {
+		"left": 513,
+		"top": 187,
+		"width": 1130,
+		"height": 822
+	},
+	"Sources/Methods/MCC_LH_clicked.4dm": {
+		"left": 412,
+		"top": 247,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Forms/_MethodsPallet/method.4dm": {
+		"left": 166,
+		"top": 196,
+		"width": 1730,
+		"height": 1022
+	},
+	"Sources/Forms/_MethodMassiveAttrUpdate/method.4dm": {
+		"left": 348,
+		"top": 250,
+		"width": 1680,
+		"height": 682
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/btn_beautify.4dm": {
+		"left": 110,
+		"top": 223,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/BT3.4dm": {
+		"left": 110,
+		"top": 223,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Forms/_dbOverview/method.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Forms/_dbOverview/ObjectMethods/Help.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/variables_save.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1115
+	},
+	"Sources/Methods/MM_graphviz_AllNeighboring.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/Graphviz_neightbouring.4dm": {
+		"left": 251,
+		"top": 376,
+		"width": 1789,
+		"height": 906
+	},
+	"Sources/Methods/MA_analyzer.4dm": {
+		"left": 241,
+		"top": 159,
+		"width": 1184,
+		"height": 936
+	},
+	"Sources/Methods/Graphviz_exportDocument.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1334,
+		"height": 779
+	},
+	"Sources/Methods/MA_LH_clicked.4dm": {
+		"left": 241,
+		"top": 184,
+		"width": 1501,
+		"height": 796
+	},
+	"Sources/Methods/MM_export_HTML.4dm": {
+		"left": 241,
+		"top": 210,
+		"width": 1501,
+		"height": 770
+	},
+	"Sources/Methods/MM_magikCommentExecution.4dm": {
+		"left": 1316,
+		"top": 145,
+		"width": 1217,
+		"height": 1112
+	},
+	"Sources/Methods/MM_clearComment.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/MM_CorrectDeprecated.4dm": {
+		"left": 383,
+		"top": 131,
+		"width": 1284,
+		"height": 922
+	},
+	"Sources/Methods/MM_createComment.4dm": {
+		"left": 266,
+		"top": 229,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/MM_saveMethodsAttributes.4dm": {
+		"left": 833,
+		"top": 258,
+		"width": 1342,
+		"height": 1056
+	},
+	"Sources/Methods/METHOD_check_setName.4dm": {
+		"left": 241,
+		"top": 184,
+		"width": 1184,
+		"height": 911
+	},
+	"Sources/Methods/x_io_confirm_yesNo.4dm": {
+		"left": 55,
+		"top": 153,
+		"width": 1473,
+		"height": 856
+	},
+	"Sources/Methods/LINKS_Export.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/MM_massiveMagikComment.4dm": {
+		"left": 2,
+		"top": 128,
+		"width": 1459,
+		"height": 882
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/copyResult.4dm": {
+		"left": 518,
+		"top": 240,
+		"width": 1158,
+		"height": 663
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/btnSave.4dm": {
+		"left": 110,
+		"top": 223,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Methods/MM_copyToPasteboard.4dm": {
+		"left": 266,
+		"top": 229,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/METHOD_check_depreceated.4dm": {
+		"left": 57,
+		"top": 158,
+		"width": 1747,
+		"height": 827
+	},
+	"Sources/Methods/FE_createDOTfile.4dm": {
+		"left": 91,
+		"top": 215,
+		"width": 1747,
+		"height": 802
+	},
+	"Sources/Methods/DATA_updateMethodsInfo.4dm": {
+		"left": 54,
+		"top": 128,
+		"width": 1473,
+		"height": 881
+	},
+	"Sources/Methods/METHOD_simplifyCodeText.4dm": {
+		"left": 147,
+		"top": 120,
+		"width": 1578,
+		"height": 1034
+	},
+	"Sources/Methods/RAPPORT_exportMethods.4dm": {
+		"left": 251,
+		"top": 376,
+		"width": 1789,
+		"height": 906
+	},
+	"Sources/Methods/QS_createMenu.4dm": {
+		"left": 1455,
+		"top": 193,
+		"width": 1105,
+		"height": 1048
+	},
+	"Sources/Methods/SC_4DServer_Optimizer.4dm": {
+		"left": 326,
+		"top": 324,
+		"width": 1498,
+		"height": 748
+	},
+	"Sources/Methods/SC_checkSetName.4dm": {
+		"left": 188,
+		"top": 226,
+		"width": 1810,
+		"height": 1080
+	},
+	"Sources/Methods/SC_DB_checkName.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/SC_displayVariables.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/SC_Events_vs_Methods.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/SC_list_OpenClosureCommand.4dm": {
+		"left": 188,
+		"top": 226,
+		"width": 1810,
+		"height": 1080
+	},
+	"Sources/Methods/SC_lookAtFormat.4dm": {
+		"left": 227,
+		"top": 128,
+		"width": 1347,
+		"height": 788
+	},
+	"Sources/Methods/SC_search_If_False.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/SC_TIPSFromDoc.4dm": {
+		"left": 282,
+		"top": 125,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/stats_parseMethodsAttributes.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/TOOLS_ReadOnly.4dm": {
+		"left": 88,
+		"top": 230,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/__Menu_mng_action.4dm": {
+		"left": 182,
+		"top": 339,
+		"width": 1390,
+		"height": 826
+	},
+	"Trash/Methods/(QST_exchangeVariablesWithServer).4dm": {
+		"left": 230,
+		"top": 140,
+		"width": 1680,
+		"height": 707
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/form.onlyProjectMethod.4dm": {
+		"left": 120,
+		"top": 175,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Methods/______wp.4dm": {
+		"left": 786,
+		"top": 307,
+		"width": 1220,
+		"height": 1056
+	},
+	"Sources/Methods/__tool_CollectionFromCommand.4dm": {
+		"left": 255,
+		"top": 306,
+		"width": 1494,
+		"height": 1009
+	},
+	"Sources/Methods/TOOLS_Get4DCommand.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1115
+	},
+	"Sources/Methods/COMMANDS_LH_set_restriction.4dm": {
+		"left": 163,
+		"top": 280,
+		"width": 1473,
+		"height": 688
+	},
+	"Sources/Methods/COMMANDS_set_restriction.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/QST_initStorage.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1097
+	},
+	"Sources/Methods/x_btnPopup_coll.4dm": {
+		"left": 1455,
+		"top": 219,
+		"width": 1105,
+		"height": 1022
+	},
+	"Sources/Forms/__Menu_og/ObjectMethods/btn_action.4dm": {
+		"left": 1455,
+		"top": 219,
+		"width": 1105,
+		"height": 1022
+	},
+	"Sources/Methods/_MNU_mng_popup.4dm": {
+		"left": 1455,
+		"top": 219,
+		"width": 1105,
+		"height": 1022
+	},
+	"Sources/Methods/COMMANDS_LH_create.4dm": {
+		"left": 288,
+		"top": 151,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/StorageCounter.4dm": {
+		"left": 176,
+		"top": 134,
+		"width": 1280,
+		"height": 865
+	},
+	"Sources/DatabaseMethods/onExit.4dm": {
+		"left": 62,
+		"top": 307,
+		"width": 1747,
+		"height": 852
+	},
+	"Sources/Forms/_4dCommand/method.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/LH_updateTB.4dm": {
+		"left": 912,
+		"top": 427,
+		"width": 1213,
+		"height": 763
+	},
+	"Trash/Methods/(CM_analyse_vs_methods).4dm": {
+		"left": 141,
+		"top": 255,
+		"width": 1475,
+		"height": 744
+	},
+	"Trash/Methods/(CM_analyse_vs_methods_1).4dm": {
+		"left": 155,
+		"top": 332,
+		"width": 1498,
+		"height": 623
+	},
+	"Sources/Methods/___update_QST.4dm": {
+		"left": 383,
+		"top": 106,
+		"width": 1284,
+		"height": 947
+	},
+	"Sources/Methods/GET_FOLDER_AND_FILES_PATH.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/viewLogFile.4dm": {
+		"left": 139,
+		"top": 165,
+		"width": 1604,
+		"height": 865
+	},
+	"Sources/Methods/stats_method_call.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/stats_parseCommand.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/stats_method.4dm": {
+		"left": 32,
+		"top": 224,
+		"width": 1462,
+		"height": 722
+	},
+	"Sources/Methods/BASE_NewSelf.4dm": {
+		"left": 217,
+		"top": 267,
+		"width": 1543,
+		"height": 730
+	},
+	"Sources/Forms/_dataByOrda/ObjectMethods/tablelist.4dm": {
+		"left": 35,
+		"top": 244,
+		"width": 1387,
+		"height": 712
+	},
+	"Sources/Methods/STRCT_displayRelations.4dm": {
+		"left": 35,
+		"top": 244,
+		"width": 1387,
+		"height": 712
+	},
+	"Sources/Forms/_DataExplorer/ObjectMethods/tablelist.4dm": {
+		"left": 35,
+		"top": 244,
+		"width": 1387,
+		"height": 712
+	},
+	"Sources/Methods/BASE_RenameLocalVariables.4dm": {
+		"left": 119,
+		"top": 197,
+		"width": 1548,
+		"height": 828
+	},
+	"Sources/Methods/PROCESS_sleep.4dm": {
+		"left": 113,
+		"top": 134,
+		"width": 1220,
+		"height": 983
+	},
+	"Sources/Methods/TOOL_TraceIfNotCompiled.4dm": {
+		"left": 870,
+		"top": 195,
+		"width": 1026,
+		"height": 888
+	},
+	"Sources/Methods/x_btn_toggleReadTxt.4dm": {
+		"left": 870,
+		"top": 195,
+		"width": 1026,
+		"height": 888
+	},
+	"Sources/Methods/x_btn_toggleRead.4dm": {
+		"left": 149,
+		"top": 141,
+		"width": 1387,
+		"height": 735
+	},
+	"Sources/Methods/floatWindow_save.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Forms/_displayCollections/ObjectMethods/display Collections.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/floatWindow_launch.4dm": {
+		"left": 262,
+		"top": 158,
+		"width": 1342,
+		"height": 1084
+	},
+	"Sources/Forms/debug_floatWindow/method.4dm": {
+		"left": 920,
+		"top": 248,
+		"width": 1387,
+		"height": 686
+	},
+	"Sources/Methods/LB_STATUS_BAR.4dm": {
+		"left": 149,
+		"top": 190,
+		"width": 1387,
+		"height": 686
+	},
+	"Sources/Methods/LINK_RemoveProperty.4dm": {
+		"left": 149,
+		"top": 165,
+		"width": 1396,
+		"height": 868
+	},
+	"Trash/Methods/(WP_EditFormula).4dm": {
+		"left": 110,
+		"top": 223,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Methods/WDW_WaitUntilOpened.4dm": {
+		"left": 406,
+		"top": 242,
+		"width": 823,
+		"height": 696
+	},
+	"Trash/Methods/(Win_waitUntilOpened).4dm": {
+		"left": 406,
+		"top": 242,
+		"width": 823,
+		"height": 696
+	},
+	"Sources/Methods/VCS_toggleTokens.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/floatWindow_writeToStorage.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/helpCollectionAttributes.4dm": {
+		"left": -40,
+		"top": 213,
+		"width": 1436,
+		"height": 699
+	},
+	"Sources/Methods/MM_getCodeToDisplay.4dm": {
+		"left": 88,
+		"top": 362,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/MM_commentInMarkdown.4dm": {
+		"left": 88,
+		"top": 362,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/UTIL_noPicturePath.4dm": {
+		"left": 135,
+		"top": 169,
+		"width": 1221,
+		"height": 809
+	},
+	"Sources/Methods/LH_btn_updateStatus.4dm": {
+		"left": 52,
+		"top": 180,
+		"width": 1443,
+		"height": 829
+	},
+	"Sources/Methods/LINKS_InitOptions.4dm": {
+		"left": 124,
+		"top": 155,
+		"width": 1473,
+		"height": 793
+	},
+	"Sources/Forms/__Menu_og/method.4dm": {
+		"left": 431,
+		"top": 179,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/MM_BtnUpdate.4dm": {
+		"left": 2,
+		"top": 128,
+		"width": 1459,
+		"height": 882
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/BtnUpdate.4dm": {
+		"left": 2,
+		"top": 128,
+		"width": 1459,
+		"height": 882
+	},
+	"Sources/Methods/CM_displayByType.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/CM_toggleBtnSave.4dm": {
+		"left": 13,
+		"top": 214,
+		"width": 1286,
+		"height": 750
+	},
+	"Sources/Methods/COMMANDS_getSyntax.4dm": {
+		"left": 278,
+		"top": 431,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/METHOD_codeMirror_display.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Methods/COMMANDS_Translation.4dm": {
+		"left": 525,
+		"top": 204,
+		"width": 1058,
+		"height": 658
+	},
+	"Sources/Methods/CONVERTER_mng.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/CONVERTER_translateCode.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/MCC_callees.4dm": {
+		"left": 240,
+		"top": 183,
+		"width": 1543,
+		"height": 907
+	},
+	"Sources/Methods/floatWindow_scroll.4dm": {
+		"left": 258,
+		"top": 320,
+		"width": 1436,
+		"height": 649
+	},
+	"Sources/Forms/_Wizard/method.4dm": {
+		"left": 83,
+		"top": 176,
+		"width": 1360,
+		"height": 784
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/create_structure_file_b.4dm": {
+		"left": 526,
+		"top": 346,
+		"width": 1387,
+		"height": 686
+	},
+	"Sources/Forms/_dataByOrda/method.4dm": {
+		"left": 110,
+		"top": 223,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Methods/x_btn_toggleSetTxt.4dm": {
+		"left": 870,
+		"top": 195,
+		"width": 1026,
+		"height": 888
+	},
+	"Sources/Methods/VCS_FindPrevious_Version.4dm": {
+		"left": 1323,
+		"top": 173,
+		"width": 834,
+		"height": 1084
+	},
+	"Sources/Methods/STRCT_selectRelation.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/stats_fixPushButtonWithColor.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/DATA_DisplayListbox.4dm": {
+		"left": 108,
+		"top": 253,
+		"width": 1498,
+		"height": 698
+	},
+	"Sources/Methods/DATA_createList.4dm": {
+		"left": 108,
+		"top": 253,
+		"width": 1498,
+		"height": 698
+	},
+	"Sources/Methods/DATA_displayDetail.4dm": {
+		"left": 263,
+		"top": 213,
+		"width": 1148,
+		"height": 706
+	},
+	"Sources/Methods/HIER_export_To_File.4dm": {
+		"left": 54,
+		"top": 161,
+		"width": 1473,
+		"height": 738
+	},
+	"Sources/Forms/_FormExplorer/method.4dm": {
+		"left": 0,
+		"top": 203,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/LH_clearList.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Forms/_MethodAnalyser/method.4dm": {
+		"left": 241,
+		"top": 184,
+		"width": 1501,
+		"height": 796
+	},
+	"Sources/Forms/_MethodsCallChain/method.4dm": {
+		"left": 240,
+		"top": 158,
+		"width": 1543,
+		"height": 932
+	},
+	"Sources/Forms/_Converter/method.4dm": {
+		"left": 364,
+		"top": 158,
+		"width": 1130,
+		"height": 747
+	},
+	"Sources/Methods/LH_openCollapse.4dm": {
+		"left": 357,
+		"top": 418,
+		"width": 1543,
+		"height": 730
+	},
+	"Sources/Methods/menu_getThem.4dm": {
+		"left": 88,
+		"top": 232,
+		"width": 1498,
+		"height": 648
+	},
+	"Sources/Methods/VCS_Refresh.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/TOOLS_GetContrainst.4dm": {
+		"left": 271,
+		"top": 142,
+		"width": 1498,
+		"height": 698
+	},
+	"Sources/Methods/mQST_setup.4dm": {
+		"left": 641,
+		"top": 263,
+		"width": 1498,
+		"height": 698
+	},
+	"Sources/Methods/mQST_restart4D.4dm": {
+		"left": 155,
+		"top": 210,
+		"width": 1548,
+		"height": 826
+	},
+	"Sources/Methods/mQST_reports.4dm": {
+		"left": 52,
+		"top": 399,
+		"width": 1424,
+		"height": 795
+	},
+	"Sources/Methods/___version.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/QS_Toolbox_init_start.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/TOOLS_SymbolFile_analyze.4dm": {
+		"left": 0,
+		"top": 128,
+		"width": 1548,
+		"height": 878
+	},
+	"Sources/Methods/TOOL_return4Dversion.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/BASE_noERROR.4dm": {
+		"left": 160,
+		"top": 355,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/METHOD_getVariables.4dm": {
+		"left": 0,
+		"top": 128,
+		"width": 1548,
+		"height": 878
+	},
+	"Sources/Methods/TOOLS_SymbolFile_declaration.4dm": {
+		"left": 513,
+		"top": 187,
+		"width": 1130,
+		"height": 822
+	},
+	"Sources/Methods/key_createKey.4dm": {
+		"left": 1455,
+		"top": 219,
+		"width": 1105,
+		"height": 1022
+	},
+	"Sources/Methods/key_getLicence.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/key_createKeyForCustomer.4dm": {
+		"left": 1455,
+		"top": 219,
+		"width": 1105,
+		"height": 1022
+	},
+	"Trash/Methods/(TOOLS_SymboleFile_properties).4dm": {
+		"left": 0,
+		"top": 217,
+		"width": 1436,
+		"height": 729
+	},
+	"Sources/Methods/QST_createExternalDB.4dm": {
+		"left": 288,
+		"top": 228,
+		"width": 1220,
+		"height": 1028
+	},
+	"Sources/Methods/TOOL_TRACE_On.4dm": {
+		"left": 169,
+		"top": 116,
+		"width": 1148,
+		"height": 878
+	},
+	"Sources/Methods/TOOLS_SymbolFileAnalyse.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1209
+	},
+	"Sources/Methods/METHODS_getSyntax.4dm": {
+		"left": 278,
+		"top": 431,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/__Menu_mng.4dm": {
+		"left": 912,
+		"top": 453,
+		"width": 1213,
+		"height": 737
+	},
+	"Sources/Methods/key_toStorage.4dm": {
+		"left": 71,
+		"top": 165,
+		"width": 1234,
+		"height": 955
+	},
+	"Sources/Methods/METHODS_remove_4Dkeywords.4dm": {
+		"left": 168,
+		"top": 149,
+		"width": 1400,
+		"height": 797
+	},
+	"Sources/Forms/_Copyrights/ObjectMethods/TxtCopyrights.4dm": {
+		"left": 163,
+		"top": 131,
+		"width": 1291,
+		"height": 877
+	},
+	"Sources/Forms/_Copyrights/method.4dm": {
+		"left": 135,
+		"top": 169,
+		"width": 1221,
+		"height": 809
+	},
+	"Sources/Methods/Collection_toHTML.4dm": {
+		"left": 160,
+		"top": 355,
+		"width": 1390,
+		"height": 826
+	},
+	"Trash/Methods/(_releaseNotes).4dm": {
+		"left": 163,
+		"top": 156,
+		"width": 1291,
+		"height": 852
+	},
+	"Sources/Methods/METHOD_getCleanCode.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/struct_toolStructure.4dm": {
+		"left": 937,
+		"top": 201,
+		"width": 1543,
+		"height": 855
+	},
+	"Sources/Methods/METHODS_clearCode.4dm": {
+		"left": 51,
+		"top": 211,
+		"width": 1360,
+		"height": 784
+	},
+	"Sources/Methods/METHODS_get4dInformation.4dm": {
+		"left": 54,
+		"top": 136,
+		"width": 1473,
+		"height": 794
+	},
+	"Sources/Methods/MM_analyzer.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1209
+	},
+	"Sources/Methods/TOOLS_cleanWorkers.4dm": {
+		"left": 1064,
+		"top": 147,
+		"width": 1220,
+		"height": 1012
+	},
+	"Sources/Methods/MM_calleesCallers.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Methods/Collection_toCSV.4dm": {
+		"left": 870,
+		"top": 195,
+		"width": 1026,
+		"height": 888
+	},
+	"Sources/Methods/Collection_toMd.4dm": {
+		"left": 507,
+		"top": 221,
+		"width": 1291,
+		"height": 852
+	},
+	"Sources/Methods/Collection_toTXT.4dm": {
+		"left": 870,
+		"top": 195,
+		"width": 1026,
+		"height": 888
+	},
+	"Sources/Methods/Collection_ToXML.4dm": {
+		"left": 507,
+		"top": 221,
+		"width": 1291,
+		"height": 852
+	},
+	"Sources/Methods/Collection_ToJSON.4dm": {
+		"left": 507,
+		"top": 196,
+		"width": 1291,
+		"height": 877
+	},
+	"Sources/Methods/TOOL_getFormDynamicExport.4dm": {
+		"left": 316,
+		"top": 343,
+		"width": 1789,
+		"height": 906
+	},
+	"Sources/Forms/_MethodsCallChain/ObjectMethods/myLH.4dm": {
+		"left": 363,
+		"top": 353,
+		"width": 1543,
+		"height": 932
+	},
+	"Sources/Forms/_displayCollections/ObjectMethods/LB_Information.4dm": {
+		"left": 359,
+		"top": 231,
+		"width": 1810,
+		"height": 1106
+	},
+	"Sources/Methods/DATA_copyToPasteboard.4dm": {
+		"left": 276,
+		"top": 219,
+		"width": 1148,
+		"height": 706
+	},
+	"Sources/Methods/FE_createGraphviz.4dm": {
+		"left": 91,
+		"top": 215,
+		"width": 1747,
+		"height": 802
+	},
+	"Sources/Methods/FE_exportFormJSON.4dm": {
+		"left": 92,
+		"top": 542,
+		"width": 1747,
+		"height": 802
+	},
+	"Sources/Methods/FE_ScreenShot.4dm": {
+		"left": 0,
+		"top": 203,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/LOG_CreateLine.4dm": {
+		"left": 52,
+		"top": 399,
+		"width": 1424,
+		"height": 795
+	},
+	"Sources/Methods/LB_ResizeLine.4dm": {
+		"left": 255,
+		"top": 235,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/LB_ListBox_To_PasteBoard.4dm": {
+		"left": 439,
+		"top": 239,
+		"width": 1896,
+		"height": 1069
+	},
+	"Sources/Methods/_MNU_Start.4dm": {
+		"left": 288,
+		"top": 228,
+		"width": 1220,
+		"height": 1028
+	},
+	"Sources/Methods/QS_DB_Restore_Param.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/QST_DB_SetUp.4dm": {
+		"left": 431,
+		"top": 123,
+		"width": 1495,
+		"height": 1143
+	},
+	"Sources/Methods/VCS_Tables.4dm": {
+		"left": 1455,
+		"top": 219,
+		"width": 1105,
+		"height": 1022
+	},
+	"Sources/Methods/QST_DB_Indexes.4dm": {
+		"left": 113,
+		"top": 134,
+		"width": 1220,
+		"height": 983
+	},
+	"Sources/Methods/GraphvizAndNicmcd_Available.4dm": {
+		"left": 113,
+		"top": 134,
+		"width": 1703,
+		"height": 944
+	},
+	"Sources/Methods/CF_myProgress.4dm": {
+		"left": 254,
+		"top": 234,
+		"width": 1397,
+		"height": 644
+	},
+	"Trash/Methods/(sharedCollection).4dm": {
+		"left": 871,
+		"top": 159,
+		"width": 1130,
+		"height": 822
+	},
+	"Trash/Methods/(sharedObject).4dm": {
+		"left": 124,
+		"top": 192,
+		"width": 1130,
+		"height": 822
+	},
+	"Trash/Methods/(TOOLS_quickStart).4dm": {
+		"left": 300,
+		"top": 146,
+		"width": 1130,
+		"height": 797
+	},
+	"Sources/Forms/_SearchAndControl/method.4dm": {
+		"left": 222,
+		"top": 199,
+		"width": 1525,
+		"height": 808
+	},
+	"Sources/Forms/_SearchAndControl/ObjectMethods/LB_Information.4dm": {
+		"left": 233,
+		"top": 151,
+		"width": 2193,
+		"height": 1169
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/TxtQuery.4dm": {
+		"left": 404,
+		"top": 153,
+		"width": 1130,
+		"height": 797
+	},
+	"Sources/Methods/COLL_exportAsText.4dm": {
+		"left": 279,
+		"top": 163,
+		"width": 1130,
+		"height": 772
+	},
+	"Sources/Methods/QS_miniVersionR.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/LH_add_Icon.4dm": {
+		"left": 213,
+		"top": 147,
+		"width": 1473,
+		"height": 687
+	},
+	"Trash/Methods/(INIT_AUTO_COMPLETION).4dm": {
+		"left": 0,
+		"top": 153,
+		"width": 1680,
+		"height": 857
+	},
+	"Sources/Methods/_userGuide.4dm": {
+		"left": 272,
+		"top": 156,
+		"width": 1148,
+		"height": 756
+	},
+	"Sources/Forms/_userGuide/method.4dm": {
+		"left": 135,
+		"top": 169,
+		"width": 1221,
+		"height": 809
+	},
+	"Sources/Forms/_Copyrights/ObjectMethods/btn_action.4dm": {
+		"left": 166,
+		"top": 195,
+		"width": 1285,
+		"height": 741
+	},
+	"Sources/Methods/x_trim_left.4dm": {
+		"left": 110,
+		"top": 198,
+		"width": 1498,
+		"height": 698
+	},
+	"Trash/Methods/(METHODS_getConstant).4dm": {
+		"left": 496,
+		"top": 328,
+		"width": 1148,
+		"height": 731
+	},
+	"Trash/Methods/(METHODS_getPlugIn).4dm": {
+		"left": 110,
+		"top": 198,
+		"width": 1498,
+		"height": 698
+	},
+	"Trash/Methods/(METHODS_getCommands).4dm": {
+		"left": 93,
+		"top": 201,
+		"width": 1498,
+		"height": 787
+	},
+	"Sources/Methods/GetIndexType.4dm": {
+		"left": 357,
+		"top": 444,
+		"width": 1543,
+		"height": 704
+	},
+	"Sources/Methods/menu_toHLlist.4dm": {
+		"left": 513,
+		"top": 187,
+		"width": 1130,
+		"height": 822
+	},
+	"Sources/Methods/METHOD_getDeclarationType.4dm": {
+		"left": 125,
+		"top": 353,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/x_btnPopup_val.4dm": {
+		"left": 163,
+		"top": 157,
+		"width": 1291,
+		"height": 851
+	},
+	"Sources/Methods/MM_createNeighboringGraph.4dm": {
+		"left": 160,
+		"top": 355,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/MP_renameVariable.4dm": {
+		"left": 169,
+		"top": 141,
+		"width": 1148,
+		"height": 853
+	},
+	"Sources/Methods/mQST_MNU_Start.4dm": {
+		"left": 654,
+		"top": 412,
+		"width": 1424,
+		"height": 821
+	},
+	"Sources/Methods/OTHERS_ImportDUMP.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/QST_licence.4dm": {
+		"left": 71,
+		"top": 165,
+		"width": 1234,
+		"height": 955
+	},
+	"Sources/Methods/RAPPORT_buildSummary.4dm": {
+		"left": 365,
+		"top": 216,
+		"width": 1789,
+		"height": 906
+	},
+	"Sources/Methods/RAPPORT_exportStructure.4dm": {
+		"left": 322,
+		"top": 243,
+		"width": 1789,
+		"height": 880
+	},
+	"Sources/Methods/SC_findSubformByName.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/SC_list_Index.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/SC_list_Relations.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/SC_list_styleSheets.4dm": {
+		"left": 331,
+		"top": 228,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Methods/SC_pictureFrom4DLibrary.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/stats_getFieldStat.4dm": {
+		"left": 32,
+		"top": 224,
+		"width": 1462,
+		"height": 722
+	},
+	"Sources/Methods/STRCT_buildRelations.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/STRCT_displayTableInfo.4dm": {
+		"left": 110,
+		"top": 231,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/STRCT_displayField.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/STRCT_GetTablesAndFields.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/SUPPORT_DisplayJSON.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Trash/Methods/(testVar).4dm": {
+		"left": 0,
+		"top": 167,
+		"width": 1436,
+		"height": 779
+	},
+	"Sources/Methods/SUPPORT_form_GetJSON.4dm": {
+		"left": 161,
+		"top": 292,
+		"width": 1604,
+		"height": 840
+	},
+	"Sources/Methods/VCS_CreateNewPoint.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_allVersions_lb.4dm": {
+		"left": 266,
+		"top": 279,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Forms/_dbOverview/ObjectMethods/lbMissingForeinIndex1.4dm": {
+		"left": 334,
+		"top": 222,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Forms/_4dCommand/ObjectMethods/myLH.4dm": {
+		"left": 278,
+		"top": 431,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_dbOverview/ObjectMethods/lbMissingForeinIndex.4dm": {
+		"left": 334,
+		"top": 247,
+		"width": 1498,
+		"height": 648
+	},
+	"Sources/Forms/_dbOverview/ObjectMethods/stats_getUniquenessErr.4dm": {
+		"left": 334,
+		"top": 247,
+		"width": 1498,
+		"height": 648
+	},
+	"Sources/Methods/zfCheckEmail.4dm": {
+		"left": 334,
+		"top": 247,
+		"width": 1498,
+		"height": 648
+	},
+	"Sources/Forms/_VCS/method.4dm": {
+		"left": 135,
+		"top": 169,
+		"width": 1221,
+		"height": 809
+	},
+	"Sources/Forms/_StructureAnalysis/method.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/container1.4dm": {
+		"left": 334,
+		"top": 247,
+		"width": 1498,
+		"height": 648
+	},
+	"Sources/Forms/_progress/method.4dm": {
+		"left": 334,
+		"top": 247,
+		"width": 1498,
+		"height": 648
+	},
+	"Sources/Methods/VCS_Compare.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/stats_countIndexes.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/Init_storage.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1097
+	},
+	"Sources/Methods/key_startFromScratch.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Forms/_displayCollections/ObjectMethods/killLicence.4dm": {
+		"left": 295,
+		"top": 360,
+		"width": 1221,
+		"height": 687
+	},
+	"Sources/Methods/__Wizard.4dm": {
+		"left": 71,
+		"top": 165,
+		"width": 1234,
+		"height": 955
+	},
+	"Sources/Methods/QS_PARAM_AFFECTATION.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/METHOD_MIMOSA_Enjoliver.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/stats_describeQueryExecution.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/x_og_magikComment.4dm": {
+		"left": 278,
+		"top": 431,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/MP_ListToPaperboard.4dm": {
+		"left": 403,
+		"top": 135,
+		"width": 1130,
+		"height": 772
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/btnCopyToPasteboard.4dm": {
+		"left": 863,
+		"top": 339,
+		"width": 1130,
+		"height": 772
+	},
+	"Sources/Methods/export_toFile.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/FE_GetObjectDetails.4dm": {
+		"left": 160,
+		"top": 355,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/stats_missingForeignIndex.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/OB_windowNumberToStorage.4dm": {
+		"left": 262,
+		"top": 158,
+		"width": 1342,
+		"height": 1084
+	},
+	"Trash/Methods/(OB_CopyToSharedCollection).4dm": {
+		"left": 0,
+		"top": 128,
+		"width": 1680,
+		"height": 882
+	},
+	"Sources/Methods/OB_CopyToSharedCollection.4dm": {
+		"left": 182,
+		"top": 339,
+		"width": 1390,
+		"height": 826
+	},
+	"Trash/Methods/(OB_CopyToSharedObject).4dm": {
+		"left": 216,
+		"top": 133,
+		"width": 1435,
+		"height": 792
+	},
+	"Sources/Methods/OB_CopyToSharedObject.4dm": {
+		"left": 515,
+		"top": 113,
+		"width": 963,
+		"height": 846
+	},
+	"Sources/Methods/OB_IsEqual.4dm": {
+		"left": 525,
+		"top": 279,
+		"width": 979,
+		"height": 729
+	},
+	"Sources/Methods/OB_keys.4dm": {
+		"left": 870,
+		"top": 195,
+		"width": 1026,
+		"height": 888
+	},
+	"Trash/Methods/(OBJ_SetObject2List).4dm": {
+		"left": 155,
+		"top": 307,
+		"width": 1498,
+		"height": 648
+	},
+	"Sources/Methods/STO_openWindow.4dm": {
+		"left": 297,
+		"top": 175,
+		"width": 1040,
+		"height": 760
+	},
+	"Sources/Methods/STO_textToStorage.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Trash/Methods/(plurial).4dm": {
+		"left": 525,
+		"top": 279,
+		"width": 979,
+		"height": 729
+	},
+	"Sources/Methods/HELP_ScreenShotToFile.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/BASE_GetError.4dm": {
+		"left": 357,
+		"top": 444,
+		"width": 1543,
+		"height": 704
+	},
+	"Sources/Methods/CM_decorate.4dm": {
+		"left": 169,
+		"top": 116,
+		"width": 1148,
+		"height": 878
+	},
+	"Sources/Methods/WP_ExportForms.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/BASE_OpenByCommandK.4dm": {
+		"left": 161,
+		"top": 292,
+		"width": 1604,
+		"height": 840
+	},
+	"Sources/Methods/QST_CREATE_FOLDERS.4dm": {
+		"left": 288,
+		"top": 228,
+		"width": 1220,
+		"height": 1028
+	},
+	"Sources/Methods/FILE_GetRessourceApplication.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1115
+	},
+	"Sources/Methods/_progress.4dm": {
+		"left": 131,
+		"top": 153,
+		"width": 1040,
+		"height": 810
+	},
+	"Trash/Methods/(_____test).4dm": {
+		"left": 131,
+		"top": 130,
+		"width": 1040,
+		"height": 810
+	},
+	"Sources/Methods/zGetProjMethods.4dm": {
+		"left": 131,
+		"top": 155,
+		"width": 1040,
+		"height": 785
+	},
+	"Sources/Methods/zcreateListCalleeAndCaller.4dm": {
+		"left": 297,
+		"top": 125,
+		"width": 1040,
+		"height": 810
+	},
+	"Sources/Methods/zTestCollection.4dm": {
+		"left": 368,
+		"top": 181,
+		"width": 987,
+		"height": 780
+	},
+	"Sources/Methods/QST_progress_start.4dm": {
+		"left": 833,
+		"top": 258,
+		"width": 1342,
+		"height": 1056
+	},
+	"Sources/Methods/progressBar_update.4dm": {
+		"left": 51,
+		"top": 185,
+		"width": 1789,
+		"height": 1046
+	},
+	"Sources/Methods/FE_exportForm.4dm": {
+		"left": 797,
+		"top": 128,
+		"width": 1251,
+		"height": 978
+	},
+	"Sources/Methods/QST_progress_compileData.4dm": {
+		"left": 496,
+		"top": 328,
+		"width": 1148,
+		"height": 731
+	},
+	"Sources/Methods/SC_listAllObjects.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/SC_lookAtObjectType.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/progressBar_getSvg_object.4dm": {
+		"left": 51,
+		"top": 185,
+		"width": 1789,
+		"height": 1046
+	},
+	"Sources/Methods/progressBar_getSvg.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/progressBar_inWindow.4dm": {
+		"left": 334,
+		"top": 222,
+		"width": 1498,
+		"height": 673
+	},
+	"Sources/Methods/progressBar_getSvg_LB.4dm": {
+		"left": 294,
+		"top": 315,
+		"width": 1498,
+		"height": 648
+	},
+	"Sources/Methods/MM_removeFirstLine.4dm": {
+		"left": 88,
+		"top": 362,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/z____test.4dm": {
+		"left": 56,
+		"top": 175,
+		"width": 1460,
+		"height": 773
+	},
+	"Sources/Forms/_debug_floatWindow/method.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Trash/Methods/(4DInfo_report).4dm": {
+		"left": -38,
+		"top": 317,
+		"width": 1436,
+		"height": 699
+	},
+	"Trash/Methods/(COLL_saveAndRestore_LB_Col_Pos).4dm": {
+		"left": 13,
+		"top": 189,
+		"width": 1286,
+		"height": 775
+	},
+	"Trash/Methods/(COLL_exportToListboxAsObject).4dm": {
+		"left": 13,
+		"top": 189,
+		"width": 1286,
+		"height": 775
+	},
+	"Sources/Methods/Collection_Sort.4dm": {
+		"left": 13,
+		"top": 189,
+		"width": 1286,
+		"height": 775
+	},
+	"Sources/Methods/COLOR_RGBToHSL.4dm": {
+		"left": 13,
+		"top": 189,
+		"width": 1286,
+		"height": 775
+	},
+	"Sources/Methods/collFindTrue.4dm": {
+		"left": 513,
+		"top": 187,
+		"width": 1130,
+		"height": 822
+	},
+	"Trash/Methods/(createListCalleeAndCaller).4dm": {
+		"left": 131,
+		"top": 130,
+		"width": 1040,
+		"height": 810
+	},
+	"Sources/Methods/Col_HSLtoRGB.4dm": {
+		"left": 797,
+		"top": 128,
+		"width": 1251,
+		"height": 978
+	},
+	"Sources/Methods/STRCT_getColorTable.4dm": {
+		"left": 131,
+		"top": 153,
+		"width": 1040,
+		"height": 810
+	},
+	"Sources/Methods/STRCT_colorizer.4dm": {
+		"left": 131,
+		"top": 153,
+		"width": 1040,
+		"height": 810
+	},
+	"Sources/Methods/zSearchInObject.4dm": {
+		"left": 0,
+		"top": 161,
+		"width": 1035,
+		"height": 789
+	},
+	"Sources/Methods/stats_missingKeyIndex.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/stats_tablesInformation.4dm": {
+		"left": 251,
+		"top": 350,
+		"width": 1789,
+		"height": 932
+	},
+	"Sources/Methods/stats_relations.4dm": {
+		"left": 345,
+		"top": 146,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Methods/stats_schemas.4dm": {
+		"left": 345,
+		"top": 146,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Methods/stats_getMissingForeignIndex.4dm": {
+		"left": 345,
+		"top": 146,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Methods/stats_getCompositeIndex.4dm": {
+		"left": 345,
+		"top": 146,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Methods/stats_getUniquenessErr.4dm": {
+		"left": 495,
+		"top": 136,
+		"width": 1005,
+		"height": 819
+	},
+	"Sources/Methods/stats_getForeignKeyClusterErr.4dm": {
+		"left": 345,
+		"top": 146,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Methods/stats_getFieldIndex.4dm": {
+		"left": 163,
+		"top": 255,
+		"width": 1473,
+		"height": 713
+	},
+	"Sources/Methods/stats_getTableStats.4dm": {
+		"left": 345,
+		"top": 146,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Forms/__Menu_og/ObjectMethods/visuCollection.4dm": {
+		"left": 88,
+		"top": 206,
+		"width": 1460,
+		"height": 773
+	},
+	"Sources/Methods/stat_wkr_count.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/Config_getLanguage.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/BASE_bytesToSTR.4dm": {
+		"left": 293,
+		"top": 136,
+		"width": 1271,
+		"height": 823
+	},
+	"Sources/Methods/XML_Creer_Document.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1115
+	},
+	"Sources/Methods/XML_Element_Delete.4dm": {
+		"left": 95,
+		"top": 103,
+		"width": 1278,
+		"height": 627
+	},
+	"Sources/Methods/XML_Element_Read.4dm": {
+		"left": 95,
+		"top": 103,
+		"width": 1278,
+		"height": 627
+	},
+	"Sources/Methods/XML_Element_Update.4dm": {
+		"left": 95,
+		"top": 103,
+		"width": 1278,
+		"height": 627
+	},
+	"Trash/Methods/(Compiler_start).4dm": {
+		"left": 280,
+		"top": 144,
+		"width": 1349,
+		"height": 856
+	},
+	"Sources/Methods/XML_compiler_create.4dm": {
+		"left": 288,
+		"top": 151,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/Collection_Extract.4dm": {
+		"left": 404,
+		"top": 303,
+		"width": 1349,
+		"height": 831
+	},
+	"Sources/Methods/WP_highLightText.4dm": {
+		"left": 428,
+		"top": 273,
+		"width": 1173,
+		"height": 548
+	},
+	"Sources/Methods/z___testComment.4dm": {
+		"left": 21,
+		"top": 128,
+		"width": 1659,
+		"height": 882
+	},
+	"Sources/Methods/zz___testRun.4dm": {
+		"left": 500,
+		"top": 278,
+		"width": 1130,
+		"height": 772
+	},
+	"Sources/Methods/QS_menu_pushItem.4dm": {
+		"left": 160,
+		"top": 355,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/mQST_dbcallees.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Methods/stats_addPrimaryKeys.4dm": {
+		"left": 54,
+		"top": 161,
+		"width": 1473,
+		"height": 738
+	},
+	"Sources/Methods/stats_getForeignIndexStats.4dm": {
+		"left": 345,
+		"top": 171,
+		"width": 1159,
+		"height": 837
+	},
+	"Sources/Methods/mQST_methodsCallChain.4dm": {
+		"left": 124,
+		"top": 216,
+		"width": 1220,
+		"height": 1031
+	},
+	"Sources/Methods/LH_messageProcessingData.4dm": {
+		"left": 67,
+		"top": 414,
+		"width": 1424,
+		"height": 595
+	},
+	"Sources/Forms/_MethodsCallChain/ObjectMethods/rd54.4dm": {
+		"left": 77,
+		"top": 191,
+		"width": 1373,
+		"height": 768
+	},
+	"Sources/Methods/METHOD_codeMirror_setContent.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Forms/_MethodsCallChain/ObjectMethods/webZone.4dm": {
+		"left": 363,
+		"top": 353,
+		"width": 1543,
+		"height": 932
+	},
+	"Sources/Methods/UPDT_WriteMethod.4dm": {
+		"left": 161,
+		"top": 292,
+		"width": 1604,
+		"height": 840
+	},
+	"Sources/Methods/CONVERTER_saveAS.4dm": {
+		"left": 309,
+		"top": 186,
+		"width": 1360,
+		"height": 810
+	},
+	"Sources/Methods/INDENT_Texte.4dm": {
+		"left": 168,
+		"top": 141,
+		"width": 1130,
+		"height": 822
+	},
+	"Sources/Methods/CL_RgxReplaceInCol.4dm": {
+		"left": 10,
+		"top": 121,
+		"width": 744,
+		"height": 782
+	},
+	"Sources/Methods/LV_4DCmdAndConst.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/LV_CreateOpenTxtDoc.4dm": {
+		"left": 870,
+		"top": 195,
+		"width": 1026,
+		"height": 888
+	},
+	"Sources/Methods/LV_StripComments.4dm": {
+		"left": 266,
+		"top": 254,
+		"width": 1498,
+		"height": 698
+	},
+	"Sources/Methods/LV_StripTimes.4dm": {
+		"left": 131,
+		"top": 130,
+		"width": 1040,
+		"height": 810
+	},
+	"Sources/Methods/LV_RegexMatchG.4dm": {
+		"left": 101,
+		"top": 205,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Forms/webAreaForm/ObjectMethods/oWebArea.4dm": {
+		"left": 748,
+		"top": 260,
+		"width": 1040,
+		"height": 785
+	},
+	"Sources/Methods/doMatchRegex.4dm": {
+		"left": 364,
+		"top": 208,
+		"width": 1130,
+		"height": 697
+	},
+	"Sources/Methods/doParseGetTokens.4dm": {
+		"left": 334,
+		"top": 128,
+		"width": 1162,
+		"height": 878
+	},
+	"Sources/Methods/doReplaceRegex.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/getMatchRegex.4dm": {
+		"left": 366,
+		"top": 142,
+		"width": 1548,
+		"height": 853
+	},
+	"Sources/Methods/getParseResult4DCode.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/getReplaceRegex.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/LV_GetCodeKeywords.4dm": {
+		"left": 364,
+		"top": 208,
+		"width": 1130,
+		"height": 697
+	},
+	"Sources/Methods/testRegex.4dm": {
+		"left": 364,
+		"top": 208,
+		"width": 1130,
+		"height": 697
+	},
+	"Sources/Classes/firstClass.4dm": {
+		"left": 83,
+		"top": 128,
+		"width": 1130,
+		"height": 697
+	},
+	"Sources/Methods/Object_GetAction.4dm": {
+		"left": 357,
+		"top": 138,
+		"width": 1130,
+		"height": 722
+	},
+	"Sources/Forms/_displayCollections/ObjectMethods/btn1.4dm": {
+		"left": 163,
+		"top": 150,
+		"width": 1473,
+		"height": 818
+	},
+	"Sources/Methods/x_btn_toggleToggle.4dm": {
+		"left": 156,
+		"top": 153,
+		"width": 1159,
+		"height": 837
+	},
+	"Sources/Methods/LV_RegexReplaceG.4dm": {
+		"left": 10,
+		"top": 121,
+		"width": 744,
+		"height": 782
+	},
+	"Trash/Methods/(zMatchRegexG).4dm": {
+		"left": 647,
+		"top": 185,
+		"width": 976,
+		"height": 812
+	},
+	"Sources/Forms/webAreaForm/method.4dm": {
+		"left": 297,
+		"top": 150,
+		"width": 1040,
+		"height": 785
+	},
+	"Sources/Forms/_webParseForm/ObjectMethods/oWebArea.4dm": {
+		"left": 334,
+		"top": 128,
+		"width": 1162,
+		"height": 878
+	},
+	"Sources/Forms/_webParseForm/method.4dm": {
+		"left": 135,
+		"top": 169,
+		"width": 1221,
+		"height": 809
+	},
+	"Sources/Methods/Parser_4DCodeStart.4dm": {
+		"left": 127,
+		"top": 335,
+		"width": 1604,
+		"height": 865
+	},
+	"Sources/Methods/openWebAreaForm.4dm": {
+		"left": 127,
+		"top": 335,
+		"width": 1604,
+		"height": 865
+	},
+	"Trash/Methods/(Parser_4DCodeInit).4dm": {
+		"left": 364,
+		"top": 208,
+		"width": 1130,
+		"height": 697
+	},
+	"Sources/Methods/Parser_4DCodeKill.4dm": {
+		"left": 124,
+		"top": 193,
+		"width": 1220,
+		"height": 1054
+	},
+	"Sources/Methods/Parser_4DcodeTest.4dm": {
+		"left": 861,
+		"top": 651,
+		"width": 1604,
+		"height": 891
+	},
+	"Sources/Methods/Parser_getParseResult4DCodeSum.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Methods/Parser_doParseGetTokensSum.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Methods/CM_analysisEnd.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/VCS_ListExports.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_BuildArrays.4dm": {
+		"left": 74,
+		"top": 228,
+		"width": 1402,
+		"height": 759
+	},
+	"Sources/Methods/VCS_Get_Exported_Info.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_Get_TimeStampExported.4dm": {
+		"left": 1323,
+		"top": 173,
+		"width": 834,
+		"height": 1084
+	},
+	"Sources/Methods/VCS_GetOldVersion.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_SearchAllVersions.4dm": {
+		"left": 629,
+		"top": 211,
+		"width": 1040,
+		"height": 785
+	},
+	"Sources/Forms/_VCS/ObjectMethods/btn_settings.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/COLL_findId.4dm": {
+		"left": 74,
+		"top": 228,
+		"width": 1402,
+		"height": 759
+	},
+	"Sources/Methods/VCS_ManageAllProjects.4dm": {
+		"left": 23,
+		"top": 137,
+		"width": 834,
+		"height": 841
+	},
+	"Sources/Methods/VCS_GetAllProjects.4dm": {
+		"left": 23,
+		"top": 137,
+		"width": 834,
+		"height": 841
+	},
+	"Sources/Methods/updateVCSapplication.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1227,
+		"height": 1097
+	},
+	"Sources/Methods/VCS_recordNewChanges.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_CreateStampPoint.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_ExportPaths.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_Get_LatestExport_Number.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_MethodPaths.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_Get_CurrentStamp.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_List_All_Exported.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/VCS_UpdateOldVersion.4dm": {
+		"left": 214,
+		"top": 154,
+		"width": 1424,
+		"height": 840
+	},
+	"Sources/Methods/UTIL_epoch.4dm": {
+		"left": 484,
+		"top": 407,
+		"width": 1173,
+		"height": 568
+	},
+	"Sources/Methods/MM_getMMdifferences.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Forms/_debug_floatWindow/ObjectMethods/message_lb.4dm": {
+		"left": 153,
+		"top": 131,
+		"width": 1277,
+		"height": 814
+	},
+	"Sources/Forms/_Converter/ObjectMethods/btnConvert.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/TRANS_Translation.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/INDENT_StartUp.4dm": {
+		"left": 99,
+		"top": 128,
+		"width": 1390,
+		"height": 851
+	},
+	"Sources/Methods/MM_controlFlows.4dm": {
+		"left": 99,
+		"top": 128,
+		"width": 1390,
+		"height": 851
+	},
+	"Sources/Classes/foodies.4dm": {
+		"left": 99,
+		"top": 128,
+		"width": 1390,
+		"height": 851
+	},
+	"Sources/Classes/foodie_button.4dm": {
+		"left": 99,
+		"top": 128,
+		"width": 1390,
+		"height": 851
+	},
+	"Sources/Methods/FORM_goToThisOneElse.4dm": {
+		"left": 258,
+		"top": 320,
+		"width": 1436,
+		"height": 649
+	},
+	"Sources/Methods/stats_changePKfromIntToUUID.4dm": {
+		"left": 258,
+		"top": 320,
+		"width": 1436,
+		"height": 649
+	},
+	"Sources/Methods/MM_initDecorate.4dm": {
+		"left": 666,
+		"top": 215,
+		"width": 1220,
+		"height": 956
+	},
+	"Trash/Methods/(CF_update).4dm": {
+		"left": 139,
+		"top": 245,
+		"width": 1518,
+		"height": 764
+	},
+	"Sources/Methods/STRCT_displayTableInformation.4dm": {
+		"left": 110,
+		"top": 231,
+		"width": 1543,
+		"height": 817
+	},
+	"Trash/Methods/(__aaa__temp).4dm": {
+		"left": 76,
+		"top": 221,
+		"width": 1518,
+		"height": 764
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/searchInMethod.4dm": {
+		"left": 54,
+		"top": 355,
+		"width": 1473,
+		"height": 856
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/form.searchInMethod.4dm": {
+		"left": 281,
+		"top": 171,
+		"width": 1148,
+		"height": 706
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/onlyProjectMethod.4dm": {
+		"left": 166,
+		"top": 196,
+		"width": 1730,
+		"height": 1022
+	},
+	"Sources/Methods/DATE_ConvertAsText.4dm": {
+		"left": 38,
+		"top": 148,
+		"width": 1718,
+		"height": 933
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/BtnUpdate.4dm": {
+		"left": 160,
+		"top": 355,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/COLL_generate_check_HASH.4dm": {
+		"left": 169,
+		"top": 141,
+		"width": 1148,
+		"height": 853
+	},
+	"Sources/Forms/_MethodsCallChain/ObjectMethods/rd50.4dm": {
+		"left": 176,
+		"top": 134,
+		"width": 1280,
+		"height": 865
+	},
+	"Sources/Forms/_maximize/ObjectMethods/webZone.4dm": {
+		"left": 363,
+		"top": 379,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_maximize/method.4dm": {
+		"left": 363,
+		"top": 379,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/LH_assign.4dm": {
+		"left": 169,
+		"top": 116,
+		"width": 1148,
+		"height": 878
+	},
+	"Sources/Methods/FE_build_LH.4dm": {
+		"left": 169,
+		"top": 103,
+		"width": 1148,
+		"height": 903
+	},
+	"Sources/Methods/getConvertToProjectLogs.4dm": {
+		"left": 697,
+		"top": 253,
+		"width": 1141,
+		"height": 1112
+	},
+	"Sources/Methods/Dropbox_DownloadFile.4dm": {
+		"left": 110,
+		"top": 281,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/key_checkAndGetLicence.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/SC_conversionLogs.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/SC_show_DatafilePath.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/webComment.4dm": {
+		"left": 95,
+		"top": 155,
+		"width": 1585,
+		"height": 854
+	},
+	"Sources/Methods/MM_selectMethodToDisplay.4dm": {
+		"left": 95,
+		"top": 132,
+		"width": 1585,
+		"height": 877
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/BtnUpdate1.4dm": {
+		"left": 95,
+		"top": 132,
+		"width": 1585,
+		"height": 877
+	},
+	"Sources/Methods/mQST_DataExplorer.4dm": {
+		"left": 396,
+		"top": 162,
+		"width": 1585,
+		"height": 877
+	},
+	"Sources/Methods/METHODS_hasDescription.4dm": {
+		"left": 51,
+		"top": 211,
+		"width": 1360,
+		"height": 784
+	},
+	"Sources/Methods/emoji.4dm": {
+		"left": 88,
+		"top": 362,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/MethodsPaths.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/BtnSearch.4dm": {
+		"left": 166,
+		"top": 196,
+		"width": 1730,
+		"height": 1022
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/searchMethod.4dm": {
+		"left": 11,
+		"top": 103,
+		"width": 1652,
+		"height": 907
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/Onglet.4dm": {
+		"left": 282,
+		"top": 156,
+		"width": 1585,
+		"height": 876
+	},
+	"Sources/Methods/MM_option_manager.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 984
+	},
+	"Sources/Methods/Graphviz_execute.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1082,
+		"height": 881
+	},
+	"Sources/Methods/Graphviz_neighboresCreation.4dm": {
+		"left": 156,
+		"top": 128,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Methods/FE_Edit_form.4dm": {
+		"left": 0,
+		"top": 203,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/TOGOBJ_SET_VAL.4dm": {
+		"left": 451,
+		"top": 242,
+		"width": 778,
+		"height": 488
+	},
+	"Sources/Methods/LIST_LIBRARY_PiCTS.4dm": {
+		"left": 54,
+		"top": 161,
+		"width": 1473,
+		"height": 738
+	},
+	"Sources/Methods/TOOLS_Export_ListPicture.4dm": {
+		"left": 54,
+		"top": 161,
+		"width": 1473,
+		"height": 738
+	},
+	"Sources/Methods/TOOLS_ExportIndexAsJSON.4dm": {
+		"left": 0,
+		"top": 128,
+		"width": 1548,
+		"height": 878
+	},
+	"Sources/Methods/_cleanRessourcesFolder.4dm": {
+		"left": 241,
+		"top": 184,
+		"width": 1501,
+		"height": 796
+	},
+	"Sources/Methods/EXPORT_HTML_Start.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1082,
+		"height": 881
+	},
+	"Sources/Methods/MM_inFolderList.4dm": {
+		"left": 127,
+		"top": 145,
+		"width": 1022,
+		"height": 1115
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/BtnSearch.4dm": {
+		"left": 797,
+		"top": 128,
+		"width": 1251,
+		"height": 978
+	},
+	"Trash/Methods/(MM_getFoldersList).4dm": {
+		"left": 135,
+		"top": 128,
+		"width": 962,
+		"height": 819
+	},
+	"Sources/Methods/key_update.4dm": {
+		"left": 101,
+		"top": 205,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/CM_displayAll.4dm": {
+		"left": 282,
+		"top": 131,
+		"width": 1585,
+		"height": 901
+	},
+	"Sources/Methods/FE_getSourcePath.4dm": {
+		"left": 282,
+		"top": 156,
+		"width": 1585,
+		"height": 876
+	},
+	"Sources/Methods/CF_setMagic.4dm": {
+		"left": 587,
+		"top": 129,
+		"width": 1162,
+		"height": 1032
+	},
+	"Sources/Forms/_4dCommand/ObjectMethods/btn_property.4dm": {
+		"left": 52,
+		"top": 180,
+		"width": 1443,
+		"height": 829
+	},
+	"Sources/Methods/TOOL_getScreenShot.4dm": {
+		"left": 91,
+		"top": 160,
+		"width": 1471,
+		"height": 849
+	},
+	"Sources/Forms/_FormExplorer/ObjectMethods/Documentation.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/BASE_OpenAForm.4dm": {
+		"left": 254,
+		"top": 234,
+		"width": 1397,
+		"height": 644
+	},
+	"Sources/Methods/TOOL_fileSlowDown.4dm": {
+		"left": 194,
+		"top": 432,
+		"width": 1548,
+		"height": 774
+	},
+	"Sources/Methods/VCS_SaveFirstTime.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1209
+	},
+	"Sources/Methods/key_create1stTime.4dm": {
+		"left": 131,
+		"top": 222,
+		"width": 1486,
+		"height": 856
+	},
+	"Sources/Forms/_Setup/ObjectMethods/RestoreSetUp.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Forms/_Setup/method.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/Str_GetTableOrProjectForm.4dm": {
+		"left": 687,
+		"top": 196,
+		"width": 1098,
+		"height": 670
+	},
+	"Sources/Methods/FE_getObjectsAndMethods.4dm": {
+		"left": 91,
+		"top": 215,
+		"width": 1747,
+		"height": 802
+	},
+	"Sources/Methods/FE_formLoad.4dm": {
+		"left": 367,
+		"top": 189,
+		"width": 1604,
+		"height": 943
+	},
+	"Sources/Forms/_Copyrights/ObjectMethods/renewLicence.4dm": {
+		"left": 67,
+		"top": 165,
+		"width": 1424,
+		"height": 844
+	},
+	"Sources/Methods/SC_lookAtEvents.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/key_renewLicence.4dm": {
+		"left": 120,
+		"top": 137,
+		"width": 963,
+		"height": 821
+	},
+	"Sources/Forms/_displayCollections/ObjectMethods/Redo.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Forms/_displayCollections/ObjectMethods/copyCheck.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/SC_deprecatedCommand.4dm": {
+		"left": 299,
+		"top": 120,
+		"width": 1278,
+		"height": 850
+	},
+	"Sources/Forms/_Copyrights/ObjectMethods/copyrights.4dm": {
+		"left": 67,
+		"top": 165,
+		"width": 1424,
+		"height": 844
+	},
+	"Sources/Methods/XSLT_Get_folder.4dm": {
+		"left": 384,
+		"top": 317,
+		"width": 1569,
+		"height": 1069
+	},
+	"Sources/Methods/Get_html_verify_log.4dm": {
+		"left": 384,
+		"top": 317,
+		"width": 1569,
+		"height": 1069
+	},
+	"Sources/Methods/IMG_Template_Export_Library.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1334,
+		"height": 779
+	},
+	"Sources/Methods/IMG_Template_Import_Library.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1249,
+		"height": 1005
+	},
+	"Sources/Methods/LINKS_UpdateDOM.4dm": {
+		"left": 183,
+		"top": 152,
+		"width": 1510,
+		"height": 772
+	},
+	"Sources/Methods/OTHERS_PictureLibraryExport.4dm": {
+		"left": 161,
+		"top": 292,
+		"width": 1604,
+		"height": 840
+	},
+	"Sources/Methods/PIC_GetPicture.4dm": {
+		"left": 262,
+		"top": 158,
+		"width": 1342,
+		"height": 1084
+	},
+	"Sources/Methods/PLUGIN_getResource.4dm": {
+		"left": 139,
+		"top": 213,
+		"width": 1486,
+		"height": 831
+	},
+	"Sources/Methods/QS_TOOL_Execute_OnHost.4dm": {
+		"left": 1351,
+		"top": 154,
+		"width": 1022,
+		"height": 1143
+	},
+	"Sources/Methods/TOOLS_List_DeprecatedPicture.4dm": {
+		"left": 95,
+		"top": 155,
+		"width": 1585,
+		"height": 854
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/LibraryImport.4dm": {
+		"left": 95,
+		"top": 155,
+		"width": 1585,
+		"height": 854
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/LibraryExport1.4dm": {
+		"left": 95,
+		"top": 155,
+		"width": 1585,
+		"height": 854
+	},
+	"Sources/Methods/stats_parseVerifyLogs.4dm": {
+		"left": 32,
+		"top": 224,
+		"width": 1462,
+		"height": 722
+	},
+	"Sources/Methods/GetAutoIncrement.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/GetAutoUUID.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/GetIndexNum.4dm": {
+		"left": 180,
+		"top": 161,
+		"width": 1140,
+		"height": 769
+	},
+	"Sources/Methods/GetMobileExposure.4dm": {
+		"left": 459,
+		"top": 312,
+		"width": 1604,
+		"height": 891
+	},
+	"Sources/Methods/GetUniqueness.4dm": {
+		"left": 254,
+		"top": 183,
+		"width": 1397,
+		"height": 695
+	},
+	"Sources/Methods/SC_check_If_False.4dm": {
+		"left": 515,
+		"top": 138,
+		"width": 963,
+		"height": 821
+	},
+	"Sources/Methods/SetMobileExposure.4dm": {
+		"left": 109,
+		"top": 157,
+		"width": 1493,
+		"height": 851
+	},
+	"Sources/Methods/TOOLS_executeSQLcommands.4dm": {
+		"left": 345,
+		"top": 146,
+		"width": 1159,
+		"height": 862
+	},
+	"Sources/Methods/TOOLS_Get_Table_PK.4dm": {
+		"left": 54,
+		"top": 161,
+		"width": 1473,
+		"height": 738
+	},
+	"Sources/Methods/UTIL_Is_Field_Nullable.4dm": {
+		"left": 54,
+		"top": 128,
+		"width": 1473,
+		"height": 881
+	},
+	"Sources/Methods/LB_buildByCollection.4dm": {
+		"left": 188,
+		"top": 226,
+		"width": 1810,
+		"height": 1080
+	},
+	"Sources/Methods/LB_Init_Start.4dm": {
+		"left": 336,
+		"top": 243,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/LB_Clear_Columns.4dm": {
+		"left": 336,
+		"top": 268,
+		"width": 1102,
+		"height": 1044
+	},
+	"Sources/Methods/CM_filterCalleesCallers.4dm": {
+		"left": 288,
+		"top": 130,
+		"width": 1220,
+		"height": 931
+	},
+	"Sources/Methods/TOOL_executeMethod.4dm": {
+		"left": 188,
+		"top": 200,
+		"width": 1810,
+		"height": 1106
+	},
+	"Sources/Forms/_SearchAndControl/ObjectMethods/btn11.4dm": {
+		"left": 639,
+		"top": 151,
+		"width": 1221,
+		"height": 857
+	},
+	"Sources/Forms/_SearchAndControl/ObjectMethods/btn_settings.4dm": {
+		"left": 639,
+		"top": 151,
+		"width": 1221,
+		"height": 857
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/btn_power.4dm": {
+		"left": 124,
+		"top": 155,
+		"width": 1473,
+		"height": 793
+	},
+	"Sources/Methods/TOOL_plurial.4dm": {
+		"left": 366,
+		"top": 117,
+		"width": 1548,
+		"height": 878
+	},
+	"Sources/Methods/QST_minimalVersion.4dm": {
+		"left": 1323,
+		"top": 173,
+		"width": 834,
+		"height": 1084
+	},
+	"Sources/Methods/mQST_structureAnalysis.4dm": {
+		"left": 128,
+		"top": 242,
+		"width": 1747,
+		"height": 989
+	},
+	"Sources/Forms/__Menu_og/ObjectMethods/btn_help.4dm": {
+		"left": 912,
+		"top": 453,
+		"width": 1213,
+		"height": 737
+	},
+	"Sources/Forms/_Copyrights/ObjectMethods/webComment.4dm": {
+		"left": 912,
+		"top": 453,
+		"width": 1213,
+		"height": 737
+	},
+	"Sources/Methods/SC_GDPR.4dm": {
+		"left": 137,
+		"top": 110,
+		"width": 1780,
+		"height": 1083
+	},
+	"Sources/Methods/LB_displayCellContent.4dm": {
+		"left": 233,
+		"top": 151,
+		"width": 2193,
+		"height": 1169
+	},
+	"Sources/Forms/_Report_Options/method.4dm": {
+		"left": 367,
+		"top": 215,
+		"width": 1604,
+		"height": 917
+	},
+	"Sources/Methods/RAPPORT_WP_Settings.4dm": {
+		"left": 367,
+		"top": 128,
+		"width": 1251,
+		"height": 978
+	},
+	"Sources/Methods/TOGCTN_SET_IMAGE.4dm": {
+		"left": 590,
+		"top": 209,
+		"width": 1638,
+		"height": 1071
+	},
+	"Sources/Methods/TOGOBJ_SET_IMAGES.4dm": {
+		"left": 590,
+		"top": 183,
+		"width": 1638,
+		"height": 1097
+	},
+	"Sources/Methods/UTIL_PIC_TO_B64_TEXT.4dm": {
+		"left": 590,
+		"top": 209,
+		"width": 1638,
+		"height": 1071
+	},
+	"Sources/Methods/TOOLS_ResetDebugButtons.4dm": {
+		"left": 139,
+		"top": 165,
+		"width": 1604,
+		"height": 865
+	},
+	"Sources/Forms/_splashScreen/method.4dm": {
+		"left": 288,
+		"top": 111,
+		"width": 1220,
+		"height": 956
+	},
+	"Sources/Methods/TOOLS_Get_CommandList.4dm": {
+		"left": 755,
+		"top": 139,
+		"width": 834,
+		"height": 1084
+	},
+	"Sources/Methods/IsTableJournaled.4dm": {
+		"left": 357,
+		"top": 444,
+		"width": 1543,
+		"height": 704
+	},
+	"Sources/Methods/FE_viewFormJSON.4dm": {
+		"left": 161,
+		"top": 267,
+		"width": 1604,
+		"height": 865
+	},
+	"Sources/Methods/aa4D_Host_GetDBParam.4dm": {
+		"left": 161,
+		"top": 292,
+		"width": 1604,
+		"height": 840
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/BtnReport.4dm": {
+		"left": 88,
+		"top": 237,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/MM_btnReports.4dm": {
+		"left": 160,
+		"top": 355,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/QS_restoreParam.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/EXPORT_HTML_QueryTree.4dm": {
+		"left": 83,
+		"top": 335,
+		"width": 1747,
+		"height": 752
+	},
+	"Sources/Methods/EXPORT_HTML_End.4dm": {
+		"left": 439,
+		"top": 239,
+		"width": 1896,
+		"height": 1069
+	},
+	"Sources/Methods/Graphviz_check.4dm": {
+		"left": 465,
+		"top": 134,
+		"width": 1453,
+		"height": 1055
+	},
+	"Sources/Methods/ENV_FIndMyPublicIP.4dm": {
+		"left": 38,
+		"top": 148,
+		"width": 1718,
+		"height": 933
+	},
+	"Sources/Methods/REGEX_Get_Pattern.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Methods/TOOLS_RecordEvents.4dm": {
+		"left": 53,
+		"top": 287,
+		"width": 1543,
+		"height": 881
+	},
+	"Sources/Forms/_MethodAnalyser/ObjectMethods/webZone.4dm": {
+		"left": 0,
+		"top": 177,
+		"width": 1543,
+		"height": 932
+	},
+	"Sources/Forms/_MethodManager/ObjectMethods/webZone.4dm": {
+		"left": 88,
+		"top": 362,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_FormExplorer/ObjectMethods/webZone.4dm": {
+		"left": 0,
+		"top": 203,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_4dCommand/ObjectMethods/webZone.4dm": {
+		"left": 278,
+		"top": 431,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/webZone.4dm": {
+		"left": 166,
+		"top": 196,
+		"width": 1730,
+		"height": 1022
+	},
+	"Sources/Methods/PLUGIN_getCommands.4dm": {
+		"left": 139,
+		"top": 213,
+		"width": 1486,
+		"height": 831
+	},
+	"Sources/Methods/SC_getWebOptions.4dm": {
+		"left": 255,
+		"top": 210,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_4dCommand/ObjectMethods/btn_helpWeb.4dm": {
+		"left": 177,
+		"top": 399,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Forms/_4dCommand/ObjectMethods/searchCommands.4dm": {
+		"left": 217,
+		"top": 267,
+		"width": 1543,
+		"height": 730
+	},
+	"Sources/Methods/MA_LH_search.4dm": {
+		"left": 812,
+		"top": 628,
+		"width": 1424,
+		"height": 769
+	},
+	"Sources/Forms/_Converter/ObjectMethods/GotoPage.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Forms/_Converter/ObjectMethods/form.obsolete.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Forms/_Converter/ObjectMethods/btnSwitchLanguages.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Forms/_Converter/ObjectMethods/ToggleViewTokens.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Forms/_Converter/ObjectMethods/btnGetMethodWithToken.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Forms/_Copyrights/ObjectMethods/QualiSoft.4dm": {
+		"left": 130,
+		"top": 183,
+		"width": 1543,
+		"height": 817
+	},
+	"Sources/Methods/ZCapitalizeString.4dm": {
+		"left": 147,
+		"top": 145,
+		"width": 1578,
+		"height": 1009
+	},
+	"Sources/Methods/BASE_GetPoliceStyle.4dm": {
+		"left": 342,
+		"top": 129,
+		"width": 1407,
+		"height": 1015
+	},
+	"Sources/Methods/HTML_escapeCharacters.4dm": {
+		"left": 124,
+		"top": 165,
+		"width": 2249,
+		"height": 1082
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/ListeTables.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/METHODS_Remove_Compilers.4dm": {
+		"left": 104,
+		"top": 189,
+		"width": 1543,
+		"height": 806
+	},
+	"Sources/Methods/METHODS_getOnlyPorjectPaths.4dm": {
+		"left": 104,
+		"top": 189,
+		"width": 1543,
+		"height": 806
+	},
+	"Sources/Methods/mQST_methodManager.4dm": {
+		"left": 52,
+		"top": 399,
+		"width": 1424,
+		"height": 795
+	},
+	"Trash/Methods/(VarToCompilerDirectives).4dm": {
+		"left": 492,
+		"top": 221,
+		"width": 1424,
+		"height": 769
+	},
+	"Trash/Methods/(compilerDirectivesToVar).4dm": {
+		"left": 449,
+		"top": 164,
+		"width": 1424,
+		"height": 796
+	},
+	"Trash/Methods/(compilerDeclareToComment).4dm": {
+		"left": 492,
+		"top": 246,
+		"width": 1424,
+		"height": 744
+	},
+	"Trash/Methods/(macroVarToCompilerDirective).4dm": {
+		"left": 492,
+		"top": 196,
+		"width": 1424,
+		"height": 794
+	},
+	"Trash/Methods/(macroCreateCommentFromVariables).4dm": {
+		"left": 492,
+		"top": 221,
+		"width": 1424,
+		"height": 769
+	},
+	"Trash/Methods/(macroCompilerDirectivesToVar).4dm": {
+		"left": 449,
+		"top": 139,
+		"width": 1424,
+		"height": 821
+	},
+	"Sources/Forms/_debug_floatWindow/ObjectMethods/bSave.4dm": {
+		"left": 166,
+		"top": 195,
+		"width": 1285,
+		"height": 741
+	},
+	"Sources/Methods/collectionToGetDocType.4dm": {
+		"left": 101,
+		"top": 230,
+		"width": 1543,
+		"height": 856
+	},
+	"Sources/Methods/key_checkKey.4dm": {
+		"left": 131,
+		"top": 222,
+		"width": 1486,
+		"height": 856
+	},
+	"Sources/Methods/MM_changeGraphvizStatus.4dm": {
+		"left": 111,
+		"top": 286,
+		"width": 987,
+		"height": 963
+	},
+	"Sources/Methods/Get_type_name.4dm": {
+		"left": 139,
+		"top": 213,
+		"width": 1486,
+		"height": 831
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/searchInMethod.4dm": {
+		"left": 166,
+		"top": 196,
+		"width": 1730,
+		"height": 1022
+	},
+	"Sources/Forms/_MethodsPallet/ObjectMethods/BtnCopy.4dm": {
+		"left": 166,
+		"top": 195,
+		"width": 1285,
+		"height": 741
+	},
+	"Sources/Forms/_displayCollections/ObjectMethods/btn_settings.4dm": {
+		"left": 316,
+		"top": 144,
+		"width": 1364,
+		"height": 811
+	},
+	"Sources/Methods/QS_pushPropertiesValue.4dm": {
+		"left": 115,
+		"top": 335,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/TOOLS_ImportIndexAsJSON.4dm": {
+		"left": 182,
+		"top": 339,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/OB_InsertToSharedCollection.4dm": {
+		"left": 182,
+		"top": 339,
+		"width": 1390,
+		"height": 826
+	},
+	"Sources/Methods/Str_IsNumeric.4dm": {
+		"left": 147,
+		"top": 120,
+		"width": 1578,
+		"height": 1034
+	},
+	"Sources/Methods/Str_Implode2D.4dm": {
+		"left": 147,
+		"top": 120,
+		"width": 1578,
+		"height": 1034
+	},
+	"Sources/Methods/STO_TraiteChaine.4dm": {
+		"left": 147,
+		"top": 120,
+		"width": 1578,
+		"height": 1034
+	},
+	"Sources/Methods/FORM_LH_getDataSource.4dm": {
+		"left": 316,
+		"top": 343,
+		"width": 1789,
+		"height": 906
+	},
+	"Sources/Methods/RAPPORT_export1methodType.4dm": {
+		"left": 465,
+		"top": 109,
+		"width": 1453,
+		"height": 1080
+	},
+	"Sources/Methods/TOOL_trimCharacters.4dm": {
+		"left": 481,
+		"top": 237,
+		"width": 1789,
+		"height": 906
+	},
+	"Sources/Methods/SUPPORT_tablesAndFieldsList.4dm": {
+		"left": 937,
+		"top": 201,
+		"width": 1543,
+		"height": 855
+	},
+	"Sources/Methods/TOOLS_BtnLookAt.4dm": {
+		"left": 323,
+		"top": 156,
+		"width": 1810,
+		"height": 1132
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/struct_copyTo.4dm": {
+		"left": 937,
+		"top": 201,
+		"width": 1543,
+		"height": 855
+	},
+	"Sources/Methods/SUPPORT_Draw_Structure.4dm": {
+		"left": 323,
+		"top": 156,
+		"width": 1810,
+		"height": 1132
+	},
+	"Sources/Forms/_StructureAnalysis/ObjectMethods/struct_Get_Info_Structure.4dm": {
+		"left": 323,
+		"top": 156,
+		"width": 1810,
+		"height": 1132
+	},
+	"Sources/Methods/TOOLS_Export_Drawn_Structure.4dm": {
+		"left": 323,
+		"top": 156,
+		"width": 1810,
+		"height": 1132
+	},
+	"Sources/Methods/LB_BlockEvents.4dm": {
+		"left": 222,
+		"top": 224,
+		"width": 1525,
+		"height": 783
+	},
+	"Sources/Methods/LB_setHeights.4dm": {
+		"left": 381,
+		"top": 150,
+		"width": 1102,
+		"height": 1044
+	},
+	"Sources/Methods/SC_get_licenceInfos.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/SC_getWebServerInformation.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/LB_ResizeHeader.4dm": {
+		"left": 399,
+		"top": 429,
+		"width": 1498,
+		"height": 723
+	},
+	"Trash/Methods/(LB_setEvents).4dm": {
+		"left": 326,
+		"top": 349,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/TOOLS_get_TIPS_under_collection.4dm": {
+		"left": 326,
+		"top": 349,
+		"width": 1498,
+		"height": 723
+	},
+	"Sources/Methods/LB_HIGHLIGHT_CELL.4dm": {
+		"left": 326,
+		"top": 324,
+		"width": 1498,
+		"height": 748
+	},
+	"Sources/Methods/SC_displayTIPS.4dm": {
+		"left": 381,
+		"top": 125,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/SC_get_DB_Parameters.4dm": {
+		"left": 307,
+		"top": 130,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/SC_list_Components.4dm": {
+		"left": 255,
+		"top": 210,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/SC_list_PlugIns.4dm": {
+		"left": 255,
+		"top": 210,
+		"width": 1543,
+		"height": 906
+	},
+	"Sources/Methods/SC_list_systemFormat.4dm": {
+		"left": 282,
+		"top": 125,
+		"width": 1102,
+		"height": 1069
+	},
+	"Sources/Methods/RAPPORT_coverPage.4dm": {
+		"left": 367,
+		"top": 128,
+		"width": 1251,
+		"height": 978
+	},
+	"Sources/Methods/RAPPORT_headerFooter.4dm": {
+		"left": 367,
+		"top": 128,
+		"width": 1251,
+		"height": 978
+	},
+	"Sources/Methods/CM_filterByDate.4dm": {
+		"left": 797,
+		"top": 102,
+		"width": 1251,
+		"height": 1004
+	},
+	"Sources/Methods/network_mount.4dm": {
+		"left": 797,
+		"top": 128,
+		"width": 1251,
+		"height": 978
+	},
+	"Sources/Methods/SUPPORT_VersionApplication.4dm": {
+		"left": 1178,
+		"top": 180,
+		"width": 1342,
+		"height": 1110
+	},
+	"Sources/Methods/SC_get_Configuration.4dm": {
+		"left": 484,
+		"top": 136,
+		"width": 1289,
+		"height": 1084
+	},
+	"Sources/Methods/QS_s_Get_DB_Name.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1115
+	},
+	"Sources/Methods/QST_killProcesses.4dm": {
+		"left": 124,
+		"top": 193,
+		"width": 1220,
+		"height": 1054
+	},
+	"Sources/Methods/variables_readyToBeSaved.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1209
+	},
+	"Sources/Methods/savingData.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1209
+	},
+	"Sources/Methods/savingDataRestore.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Forms/_MethodMassiveAttrUpdate/ObjectMethods/btnApply.4dm": {
+		"left": 833,
+		"top": 258,
+		"width": 1342,
+		"height": 1056
+	},
+	"Sources/Methods/MM_massiveUpdatetAttributes.4dm": {
+		"left": 833,
+		"top": 230,
+		"width": 1342,
+		"height": 1084
+	},
+	"Sources/Methods/MM_updateAttributes.4dm": {
+		"left": 833,
+		"top": 258,
+		"width": 1342,
+		"height": 1056
+	},
+	"Sources/Methods/symbols_getData.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1209
+	},
+	"Sources/Methods/symbols_s_getData.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1865,
+		"height": 1209
+	},
+	"Sources/Methods/licence_checkKey.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1022,
+		"height": 1097
+	},
+	"Sources/Methods/COMMANDS_restrictions.4dm": {
+		"left": 202,
+		"top": 180,
+		"width": 1495,
+		"height": 1087
+	},
+	"Sources/Methods/QS_PARAMS_LOAD.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/QS_PARAMS_SAVE.4dm": {
+		"left": 202,
+		"top": 152,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/STRCT_GetDatabaseStructure.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/STRCT_GetIndex.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	},
+	"Sources/Methods/STRCT_GetRelations.4dm": {
+		"left": 431,
+		"top": 151,
+		"width": 1495,
+		"height": 1115
+	}
+}

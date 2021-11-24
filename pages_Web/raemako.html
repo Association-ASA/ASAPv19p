@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Vérification des saisies</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a href="w2index.shtml" class="titrepage">
+					<img src="images/logoasa.jpg" alt="logo" width="528" />  
+      </a>
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				<p class="hautpage">
+					<!--  To return to the site of the ASA, click on the picture above   -->
+          Pour retourner au site de l'ASA, cliquez sur l'image ci-dessus
+				</p>
+					<br /><br /> 
+				<p class="hautpage rouge">
+					<!--     Web connection problem-->
+          VERIFICATION DES SAISIES
+				</p>
+        <br />
+				<p class="hautpage">
+					<!--Following the sending of the previous page <br />
+          a problem occurred that does not allow us to process your data
+          -->
+          Après vérification des informations que vous avez saisies,<br />
+          il apparaît que le formulaire est incorrect pour la raison suivante :<br /><br />
+          <!--4DVar MotifRefus-->
+				</p>
+						<br />
+				<p class='textecentre'>
+						<br />
+					<!--Click on the button to return to the start page-->
+          Cliquer sur le bouton ci-dessous pour compléter le formulaire
+          <br />
+          <button name="retour" value="Retourner au questionnaire" class="titrepage"  onclick="history.back()" >
+            Retourner au questionnaire
+          </button>
+				</p>
+							<br /><br /><br />
+				<p class="hautpage"> 
+					<!--if the problem remains, contact the association-->
+          Si le problème persiste, contactez l'association
+						<br />						
+					<a href="mailto:asa-spv@wanadoo.fr">
+						<!--Send an email to ASA-->
+            Envoyer un mail à l'ASA
+					</a>
+				</p>
+      </div>
+    </div>
+    
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

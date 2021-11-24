@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				
+			<br/>
+			
+		 
+		 <p class="titrepage">Publications de l'ASA </p>
+ 		<br/>
+      <p class="plus textecentre">
+        Le contr&ocirc;le en santé publique agronomique et vétérinaire
+      </p>
+      <p class="textecentre">Analyse d&#8217;une politique publique
+      <br />2012
+      <br />212 pages
+      <br />X. Delomez<br /><br />
+      Pour obtenir des extraits du livre, cliquer sur les liens suivants :<br />
+      <a href="pdf/LivreXDTdM.pdf">Table des mati&egrave;re</a>
+      <a href="pdf/LivreXDIntroduction.pdf">Introduction</a>
+      <a href="pdf/LivreXDBib.pdf">Bibliographie</a>
+      </p> 
+     <br />
+      <p class="textebanal">
+        La nécessité de contr&ocirc;les sanitaires fait l&#8217;objet 
+        d&#8217;un consensus. C&#8217;est tout particuli&egrave;rement le cas 
+        en mati&egrave;re de sécurité sanitaire de l&#8217;alimentation 
+        o&ugrave; chaque crise est l&#8217;occasion de demander leur renforcement. 
+        à l&#8217;heure o&ugrave; les moyens des administrations publiques 
+        doivent se réduire, ces contr&ocirc;les doivent-ils également 
+        payer leur écot d&#8217;économie ? N&#8217;y a-t-il pas 
+        un risque majeur pour la santé publique ? Si ces économies 
+        doivent &ecirc;tre réalisées, dans quelles bornes doit-on 
+        les contenir ?
+        <br />
+        à partir d&#8217;une analyse approfondie et détaillée 
+        de la politique publique de santé publique agronomique et vétérinaire, 
+        dont il montre le caract&egrave;re permanent et universel, l&#8217;auteur 
+        nous propose une lecture nouvelle du r&ocirc;le des activités de 
+        contr&ocirc;le sanitaire. Il met ainsi en évidence la place essentielle 
+        qu&#8217;y tient la confiance des ressortissants dont nous faisons tous 
+        partie. Il démontre l&#8217;importance de la compétence 
+        technique des agents et le r&ocirc;le, sans doute trop sous estimé, 
+        des suites qui sont données à leurs constats. Il propose 
+        une analyse renouvelée de la structuration des autorités 
+        publiques qui ont en charge la politique de santé publique agronomique 
+        et vétérinaire. Il s&#8217;ins&egrave;re ainsi parfaitement 
+        dans le mouvement tr&egrave;s actuel de recherche d&#8217;une administration 
+        publique plus efficace car attentive à l&#8217;utilisation pertinente 
+        des moyens qui lui sont alloués.
+        <br />
+        Cet ouvrage est particuli&egrave;rement destiné à tous ceux 
+        qui participent à la conception ou la mise en oeuvre d&#8217;une 
+        politique publique de santé publique agronomique et vétérinaire; 
+        aux &laquo; responsables qualité &raquo; qui, dans le privé, 
+        doivent également mettre en place des contr&ocirc;les dans ce domaine 
+        et s&#8217;interrogent sur la limite des ressources à y consacrer; 
+        à tous ceux enfin qui s&#8217;intéressent à la définition 
+        des politiques publiques et à l&#8217;arbitrage des moyens qui 
+        doivent leur &ecirc;tre octroyés.
+       </p>
+        <br /> <br />
+        <p>Xavier Delomez, docteur vétérinaire, a 
+            exercé diverses responsabilités au sein des services 
+            de contr&ocirc;le sanitaire agronomique et vétérinaire 
+            fran&ccedil;ais. Il est l&#8217;auteur de plusieurs ouvrages et notamment 
+            d&#8217;une analyse remarquée des pouvoirs de police en santé 
+            publique vétérinaire (2004 - épuisé) et, 
+            sous un pseudonyme de réserve, en 2006, d'une analyse de la 
+            crise de alimentaire de la &quot;vache folle&quot; : &quot;Comprendre 
+            les crises alimentaires&quot; édité chez l'Harmatan.
+        </p>
+	<br />
+	</div>
+ </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

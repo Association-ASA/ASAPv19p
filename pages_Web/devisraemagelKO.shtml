@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Devis RAEMA Gel</title>
+		<!--4dinclude HeaderRaema.shtml-->
+	</head>
+	
+	<body>
+    
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+      <br/><br/><br /><br /><br /><br />
+		<p class="titrepage">Devis RAEMA gel : année 2018</p>
+			<br /><br /><br /><br /><br /><br />
+			<p class="titrepage">
+				Les prix du RAEMA gel 2018 seront fixés par le Conseil d'Administration de l'ASA le jeudi 14 décembre 2017.<br />
+				Le formulaire de demande de devis sera disponible dès le mardi 26 décembre 2017.<br /><br />
+				Nous vous remercions de votre compréhension <br />et espérons que vous participerez aux campagnes RAEMA gel 2018.
+			</p>
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+		<script type="text/javascript" src="js/devisraemagel.js"></script>
+	</body>
+    
+</html>
+
+

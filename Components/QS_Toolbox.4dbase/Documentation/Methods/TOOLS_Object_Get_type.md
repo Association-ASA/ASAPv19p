@@ -1,0 +1,1 @@
+﻿## TOOLS_Object_Get_type($1)---

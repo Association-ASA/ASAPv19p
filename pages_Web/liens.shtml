@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Identification</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+			<div id="contenu1" class="textebanalgrand">
+				 <br /><br />
+        <p class="titrepage">Pour accéder aux liens, cliquez sur un thème</p>
+          <br /> <br />
+        <p class="textedecale">
+          <a href="w2liensHA.html">Hygiène alimentaire</a><br />
+          <a href="w2liensOS.html">Organisations scientifiques </a><br />
+          <a href="w2liensMini.html">Ministères et sites officiels </a><br />
+          <a href="w2liensQ.html">Qualité</a><br />
+          <a href="w2liensR.html">Réglementation </a><br />
+          <a href="w2liensPro.html">Professionnels  </a><br />
+          <a href="w2liensLP.html">Liens Pratiques  </a>
+        </p>
+        <br />
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

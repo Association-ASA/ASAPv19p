@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+
+<head>
+  <title>Saisie des identifiants</title>
+<link href="styles/style-raema.css" rel="stylesheet" type="text/css" />
+  <script src="js/raema.js" type="text/javascript"></script>
+<noscript>
+Votre navigateur semble ne pas accepter le javascript : 
+modifier le réglage dans les options (Internet explorer 
+ou dans les préférences (Firefox) pour activer la reconnaissance de javascript 
+afin de profiter d'une réactivité plus grande aux erreurs de saisie.
+</noscript>
+
+   <!--4dinclude HeaderAsa.shtml-->
+</head>
+
+    <body>
+<div id="header" align="center">
+    <a href="../index.shtml">  
+    	<img src="images/LOGOASA.gif" alt="logo" width="529" height="119"> 
+    	</img> 
+    </a>
+</div>
+
+<div id="corps">
+  <p class="hautpage">Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus</p>
+  
+<div id="colonne">    
+<!--4dif <>SaisieOK-->
+    <!--4dinclude colonnesaisie.shtml-->
+<!--4delse-->
+    <!--4dinclude colonnepassaisie.shtml-->
+<!--4dendif-->
+</div>
+
+<div id="contenu" class="textebanalgrand">
+       <p align="center"><font size="3"><strong>Veuillez entrer votre code RAEMA</strong><br />
+  <em>(le n° de votre laboratoire dans les rapports de campagne) </em><br />
+  et le mot de passe qui vous a été communiqué par l'ASA.<br />
+  </font>
+    </p>
+    <br />
+  <form name="form1" method="POST" action="mw2ResP1MF">
+  <table width="30%" border="0" class="textedecale">
+    <tr>
+      <td width="11%" >
+        <a href="w2saisieraemaA.shtml">
+        	<img src="images/gbretagne.gif" width="64" 
+        	height="50" border="0" alt="British"/>
+        </a>
+      </td>
+      <td width="89%" class="tbcentrev petittextevert">
+      	Click on the flag for the english version
+      </td>
+    </tr>
+  </table>
+    <br /><br />
+  <p align="center">
+    <input name="hiddenField" type="hidden" value="F" />
+  </p>
+    
+  <table width="98%" border="10" align="center" bordercolor="#0033FF">
+    <tr> 
+      <td width="49%" bordercolor="1"> 
+        <div align="right"> 
+          <label for="CodeRaema">Code RAEMA </label>
+        </div></td>
+      <td width="51%"> 
+      	<input type="text" name="CodeRaema" size="5" maxlenght="4" /> 
+      	
+      </td>
+    </tr>
+    <tr> 
+    <tr> <td class="petittextevert">&#160;</td></tr>
+      <td bordercolor="1"> 
+        <div align="right"> 
+          <label for="MdP">Mot de passe </label>
+        </div></td>
+      <td> <input type="text" name="MdP" onBlur="Verif_mdp(this)" /> </td>
+    </tr>
+    <tr> 
+      <td bordercolor="1"> 
+        <div align="right"><br />
+        </div></td>
+    </tr>
+    <tr> 
+      <td bordercolor="1"> 
+        <p align="right">
+          <input class="titrepage" type="submit" name="submit" value="Valider la saisie" />
+        </p>
+      </td>
+      <td align="center"> <div align="left" valign="center"> 
+          <input type="reset" name="Submit2" value="Effacer les données" />
+        </div></td>
+    </tr>
+  </table>
+  
+  </form>
+    <!--
+    <p class="textecentre petittextevert">
+      Le serveur ne peut actuellement pas envoyer des mails <br />
+      et vous ne pourrez donc pas recevoir d'accusé de réception de votre saisie.<br />
+      Vous pouvez cependant saisir vos résultats qui seront enregistrés.<br />
+      Nous travaillons activement à la résolution de ce problème <br />
+      et vous prions de bien vouloir excuser le dérangement induit.
+    </p>
+     -->
+    
+</div>
+
+</div>
+
+        <!--4dinclude pied.shtml-->
+
+
+</body>
+</html>

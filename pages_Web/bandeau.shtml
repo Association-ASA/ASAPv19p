@@ -1,0 +1,6 @@
+
+					<img src="images/logoasa.jpg" alt="logo" width="528" />  
+					<br /><p class="grandtitrecentre">Association de santé publique vétérinaire (asa-spv)</p><br />
+					<div id="menu" >
+						<!--4dinclude menu.shtml-->
+					</div>

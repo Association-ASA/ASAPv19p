@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/QS_toolbox.css" />
+    </head>
+
+    <body>
+        <table style="background-color:#AADDFF;color:black; border-radius: 10px;">
+            <div>
+                <div class="description">
+                    <tr>
+                        <td style="font-weight:bold;font-size=8"><!--#4DTEXT $1--></td>
+                    </tr>
+                </div>
+
+                <tr>
+                    <td class="description">Structure location :</td><td colspan="7"><!--#4DTEXT $2--></td>
+                </tr>
+
+                <tr>
+                    <td class="description">Doc generated on :</td><td colspan="7"><!--#4DTEXT $3--></td>
+                </tr>
+                <tr>
+                    <td class="description">Last Modification :</td><td colspan="7"><!--#4DTEXT $4--> @ <!--#4DTEXT $5--></td>
+                </tr>
+                <tr>
+                    <td class="description">Preemtive :</td><td colspan="7"><!--#4DTEXT $22--></td>
+                </tr>
+                <tr>
+                <!--#4DIF ($6)-->
+                    <td class="proprietes" width="80"><input type="checkbox" name="invisible" checked="checked" disabled="disabled"/>Inv.</td>
+                <!--#4DELSE-->
+                     <td class="proprietes" width="80"><input type="checkbox" name="invisible" disabled="disabled"/>Inv.</td>
+                 <!--#4DENDIF-->
+
+                <!--#4DIF ($7)-->
+                    <td class="proprietes" width="80"><input type="checkbox" name="invisible" checked="checked" disabled="disabled"/>WEB</td>
+                <!--#4DELSE-->
+                     <td class="proprietes" width="80"><input type="checkbox" name="invisible" disabled="disabled"/>WEB</td>
+                 <!--#4DENDIF-->
+
+                <!--#4DIF ($8)-->
+                    <td class="proprietes" width="80"><input type="checkbox" name="invisible" checked="checked" disabled="disabled"/>SOAP</td>
+                <!--#4DELSE-->
+                     <td class="proprietes" width="80"><input type="checkbox" name="invisible" disabled="disabled"/>SOAP</td>
+                 <!--#4DENDIF-->
+
+                <!--#4DIF ($9)-->
+                    <td class="proprietes" width="80"><input type="checkbox" name="invisible" checked="checked" disabled="disabled"/>WSDL</td>
+                <!--#4DELSE-->
+                     <td class="proprietes" width="80"><input type="checkbox" name="invisible" disabled="disabled"/>WSDL</td>
+                 <!--#4DENDIF-->
+
+                <!--#4DIF ($10)-->
+                    <td class="proprietes" width="80"><input type="checkbox" name="invisible" checked="checked" disabled="disabled"/>Shared</td>
+                <!--#4DELSE-->
+                     <td class="proprietes" width="80"><input type="checkbox" name="invisible" disabled="disabled"/>Shared</td>
+                 <!--#4DENDIF-->
+
+                <!--#4DIF ($11)-->
+                    <td class="proprietes" width="80"><input type="checkbox" name="invisible" checked="checked" disabled="disabled"/>SQL</td>
+                <!--#4DELSE-->
+                     <td class="proprietes" width="80"><input type="checkbox" name="invisible" disabled="disabled"/>SQL</td>
+                 <!--#4DENDIF-->
+
+                <!--#4DIF ($12)-->
+                    <td class="proprietes" width="80"><input type="checkbox" name="invisible" checked="checked" disabled="disabled"/>Sur Serveur</td>
+                <!--#4DELSE-->
+                     <td class="proprietes" width="80"><input type="checkbox" name="invisible" disabled="disabled"/>On Server</td>
+                 <!--#4DENDIF-->
+                </tr>
+                <tr>
+                    <td class="proprietes" width="180">Lines #: <!--#4DTEXT $16--></td>
+                    <td class="proprietes" width="180">Empty #: <!--#4DTEXT $17--></td>
+                    <td class="proprietes" width="180">Comments #: <!--#4DTEXT $18--></td>
+                    <td class="proprietes" width="180">Call #: <!--#4DTEXT $19--></td>
+                    <td class="proprietes" width="180">Complexity #: <!--#4DTEXT $20--></td>
+                    <td class="proprietes" width="180">4D Mobile : <!--#4DTEXT $15--></td>
+
+                </tr>
+            </div>
+        </table>
+
+        <!--#4DIF ($23)-->
+            <div style="text-align:center;">		
+                <!--#4DHTML $21-->
+            </div> 
+            
+        <!--#4DELSE-->
+			 <br/><div class="methodCalls"><b>Call methods:</b><br/>
+                <!--#4DLOOP w_MethodCallees_at-->
+                <!--#4DIF w_MethodCallees_at{w_MethodCallees_at}="N/A"-->
+                 <!--#4DTEXT w_MethodCallees_at{w_MethodCallees_at}--><br/>
+                   <!--#4DELSE-->
+                    <a href="<!--#4DHTML w_MethodCallees_at{w_MethodCallees_at}-->.html" onclick="window.document.location='<!--#4DHTML w_MethodCallees_at{w_MethodCallees_at}-->.html';">
+                    <!--#4DHTML w_MethodCallees_at{w_MethodCallees_at}--></a><br/>
+                   <!--#4DENDIF-->
+                   <!--#4DENDLOOP--> 
+            </div>
+
+            <div class="methodCalls"><b>Callers methods:</b><br/>
+                <!--#4DLOOP w_MethodCallers_at-->
+                 <!--#4DIF w_MethodCallers_at{w_MethodCallers_at}="N/A"-->
+                 <!--#4DTEXT w_MethodCallers_at{w_MethodCallers_at}--><br/>
+                  <!--#4DELSE-->
+                    <a href="<!--#4DHTML w_MethodCallers_at{w_MethodCallers_at}-->.html" onclick="window.document.location='<!--#4DHTML w_MethodCallers_at{w_MethodCallers_at}-->.html';">
+                    <!--#4DHTML w_MethodCallers_at{w_MethodCallers_at}--></a><br/>
+                    <!--#4DENDIF-->
+                   <!--#4DENDLOOP--> 
+            </div><br/>
+        <!--#4DENDIF-->
+
+        <div class="method" style="float:left;width:60%;">
+            <tr>
+                <td colspan="6" style="font-size=8px"><!--#4DHTML $13--></td>
+            </tr>
+        </div>
+        <div class="method" style="float:right;width:40%;">
+  			<tr>
+                <td colspan="6" style="font-size=8px"><!--#4DHTML $14--></td>
+            </tr>
+        </div>
+    </body>
+</html>

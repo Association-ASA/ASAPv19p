@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>AsaDia 3</title>
+		<!--4dinclude HeaderAsaDia.shtml-->
+    <link href="styles/table.css" rel="stylesheet" type="text/css" />
+    <link href="styles/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="styles/multiple-select.css" rel="stylesheet"/>
+
+	</head>
+	
+	<body>
+		<div id="header" class="textecentre">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		<div id="corps">
+			<form method="post" action="mw2WebEcritPageDiagnoseA">
+        <input id="flagA" width="30px" type="image" src="images/DrapeauA.gif" alt="Envoyer !">
+      </form> 
+      <br />
+      
+      <div id="paveautrequelesions">
+        <p class="choixcritere">Choisissez  les espèces</p>
+        <div class="cac2">
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacbv" name="bovins" />Bovins</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacov" name="ovins" />Ovins</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacca" name="caprins" />Caprins</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacpo" name="porcins" />Porcins</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="baceq" name="équins" />Equins</p>
+        </div>
+        
+        <p class="choixcritere">Choisissez  les organes</p>
+        <p class="souschoixcritere">Appareil digestif : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox" class="casorg" id="baclan" name="langue">Langue</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacoes" name="oesophage">Œsophage</input></p>  
+          <p class="cac"><input type="checkbox" class="casorg" id="bactd" name="tube digestif">Tube digestif</input> </p>    
+          <p class="cac"><input type="checkbox" class="casorg" id="bacfoie" name="foie">Foie</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacpan" name="pancreas">Pancréas</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacpert" name="péritoine">Péritoine</input> </p>  
+          <p class="cac"><input type="checkbox" class="casorg" id="bacfres" name="fressure">Fressure </input> </p> 
+        </div>
+            
+        <p class="souschoixcritere">Appareil respiratoire :</p>
+        <div class="cacesp"> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactrac" name="trachee" />Trachée</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacpou" name="poumon" />Poumon</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacple" name="plèvre" />Plèvre</p> 
+        </div>
+        
+        <p class="souschoixcritere">Appareil circulatoire : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="baccoe" name="coeur" />Cœur</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacperc" name="péricarde" />Péricarde</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacvs" name="vaisseaux sanguins" />Vaisseaux sanguins</p> 
+        </div>
+      
+        <p class="souschoixcritere">Appareil ostéo-musculaire :</p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacos" name="os et articulation" />Os et articulation</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacmus" name="muscles" />Muscles </p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="baccar" name="carcasse" />Carcasse </p> 
+        </div>
+        
+        <p class="souschoixcritere">Appareil génito-urinaire : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacrein" name="rein" />Rein</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacves" name="vessie" />Vessie</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacagf" name="appareil génital femelle" />Appareil génital femelle</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacagm" name="appareil génital mâle" />Appareil génital mâle</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacmam" name="mamelle" />Mamelle</p>
+        </div>
+        
+        <p class="souschoixcritere">Autres :  </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactca" name="tissu conjonctivo-adipeux" />Tissu conjonctivo-adipeux</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacnl" name="noeud lymphatique" />Nœud lymphatique</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacrate" name="rate " />Rate</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacthym" name="thymus" />Thymus</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactet" name="tête" />Tête</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacpeau" name="peau" />Peau</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacsur" name="surrenales" />Surrénales</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacthyr" name="thyroide" />Thyroide</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacsn" name="système nerveux" />Système nerveux</p>
+        </div>
+        
+      </div>
+      <div id="pavelesions" class="paveles">
+        <span class="choixcritere">Choisissez  les lésions</span><br/>
+        <span class="textebanal">
+          Nomenclature : <input type="radio" id="dgal" name="nom" value="operationnel" checked />réglementaire    
+          <input type="radio" id="asa" name="nom" value="scientifique" />anatomo-pathologique <br />
+          <!-- Anciennement champ de recherche
+          Rechercher dans la liste : 
+          <input id="rechliste" type="text" class="champ" placeholder="Texte à rechercher" />
+          -->
+        </span>
+        <div  id="criteres" class="changerequete">
+        
+          <select class="textebanal" id="lesion" name="organe" size="50" width="530px" multiple>
+            <option>Abcès non spécifique à localisation unique</option>
+            <option class="grise">Abcès non spécifiques à localisations multiples</option>
+            <option>Abcès omphalophlébitiques</option>
+            <option>Abcès par corps étranger</option>
+            <option>Abcès pyléphlébitiques</option>
+            <option>Abcès pyohémiques</option>
+            <option>Actinobacillose/Actinomycose</option>
+            <option>Altérations et anomalies : moisissures</option>
+            <option>Altérations et anomalies : putréfaction profonde (puanteur d'os)</option>
+            <option>Altérations et anomalies : putréfaction superficielle (limon)</option>
+            <option>Altérations et anomalies : souillures autres que liées au contenu digestif</option>
+            <option>Altérations et anomalies : tiquetage musculaire</option>
+            <option>Altérations et anomalies : tiquetage pulmonaire</option>
+            <option>Altérations et anomalies : tiquetage rénal </option>
+            <option>Altérations et anomalies souillures d'origine digestive</option>
+            <option>Amyotrophie localisée</option>
+            <option>Arthrite unique</option>
+            <option>Arthrites multiples</option>
+            <option>Broncho-pneumonie fibreuse</option>
+            <option>Broncho-pneumonie fibrinocongestive</option>
+            <option>Broncho-pneumonie gangreneuse</option>
+            <option>Broncho-pneumonie mucopurulente</option>
+            <option>Brucellose aiguë (Lésions de)</option>
+            <option>Cachexie</option>
+            <option>Calcinose</option>
+            <option>Charbon (lésions de)</option>
+            <option>Congestion diffuse de l’intestin </option>
+            <option>Congestion généralisée</option>
+            <option>Congestion généralisée avec hémorragies multiples</option>
+            <option>Congestion passive</option>
+            <option>Couleur anormale</option>
+            <option>Couleur anormale : anthracose pulmonaire</option>
+            <option>Couleur anormale : céroïdose</option>
+            <option>Couleur anormale : mélanose</option>
+            <option>Couleur anormale : ochronose</option>
+            <option>Couleur anormale : ostéohémochromatose</option>
+            <option>Cysticercose hépatopéritonéale</option>
+            <option>Cysticercose musculaire généralisée</option>
+            <option>Cysticercose musculaire localisée : forme dégénérée</option>
+            <option>Cysticercose musculaire localisée : forme vivante</option>
+            <option>Cytostéatonécrose</option>
+            <option>Dermite non parasitaire (ou lésions de )</option>
+            <option>Distomatose avec observation de douves à l’ouverture des canaux biliaires (Lésions de)</option>
+            <option>Distomatose sans observation de douves à l’ouverture des canaux biliaires (Lésions de) </option>
+            <option>Echinococcose (Lésions d')</option>
+            <option>Emphysème pulmonaire</option>
+            <option>Endocardite fibreuse</option>
+            <option>Endocardite fibrineuse</option>
+            <option>Entérite congestive</option>
+            <option>Entérite fibreuse</option>
+            <option>Entérite hypertrophiante</option>
+            <option>Escarres et autres plaies cutanées</option>
+            <option>Gale (lésions de)</option>
+            <option>Gangrène</option>
+            <option>Hémarthrose</option>
+            <option>Hépatite insulaire nécrosante</option>
+            <option>Hépatite interstitielle fibreuse</option>
+            <option>Hépatite toxi-infectieuse</option>
+            <option>Hydronéphrose</option>
+            <option>Hypodermose (ou lésion d')</option>
+            <option>Ictère</option>
+            <option>Infiltration hémorragique</option>
+            <option>Infiltration hémorragique liée à une fracture</option>
+            <option>Infiltration séreuse du tissu conjonctif</option>
+            <option>Kyste</option>
+            <option>Lymphadénite caséeuse des petits ruminants</option>
+            <option>Lymphadénite généralisée</option>
+            <option>Mammite</option>
+            <option>Métrite</option>
+            <option>Morve (lésions de)</option>
+            <option>Myosite éosinophilique</option>
+            <option>Myosite localisée</option>
+            <option>Myosite oedémateuse des jeunes bovins</option>
+            <option>Néphrite glomérulo-épithéliale</option>
+            <option>Néphrite interstitielle fibreuse</option>
+            <option>Néphrite maculeuse</option>
+            <option>Néphrite thrombo-embolique</option>
+            <option>Odeur anormale</option>
+            <option>Odeur sexuelle prononcée</option>
+            <option>Oedème</option>
+            <option>Ostéodystrophie</option>
+            <option>Ostéomyélite</option>
+            <option>Péricardite congestive</option>
+            <option>Péricardite fibreuse</option>
+            <option>Péricardite fibrineuse</option>
+            <option>Péricardite gangreneuse</option>
+            <option>Péricardite purulente</option>
+            <option>Péritonite congestive</option>
+            <option>Péritonite fibreuse</option>
+            <option>Péritonite fibrineuse</option>
+            <option>Péritonite gangreneuse</option>
+            <option>Péritonite purulente</option>
+            <option>Phlegmon</option>
+            <option>Pleurésie congestive</option>
+            <option>Pleurésie fibreuse</option>
+            <option>Pleurésie fibrineuse</option>
+            <option>Pleurésie purulente</option>
+            <option>Pneumonie congestive</option>
+            <option>Pneumonie fibreuse</option>
+            <option>Processus tumoral généralisé</option>
+            <option>Processus tumoral généralisé : lymphosarcome</option>
+            <option>Processus tumoral généralisé : mélanosarcome</option>
+            <option>Processus tumoral localisé</option>
+            <option>Pyélonéphrite</option>
+            <option>Réticulopéritonite stabilisée</option>
+            <option>Rouget (Lésions de)</option>
+            <option>Sarcosporidiose (Lésions de)</option>
+            <option>Schwannome</option>
+            <option>Sclérose hépatique</option>
+            <option>Sclérose musculaire</option>
+            <option>Sclérose musculaire iatrogène</option>
+            <option>Stéatose</option>
+            <option>Stomatite</option>
+            <option>Strongylose (Lésions de)</option>
+            <option>Teigne (ou lésions de)</option>
+            <option>Télangiectasie maculeuse</option>
+            <option>Tuberculose généralisée (Lésion fortement évocatrice de )</option>
+            <option>Tuberculose localisée (Lésion fortement évocatrice de )</option>
+            <option>Viande à évolution anormale : myopathie exsudative dépigmentaire</option>
+            <option>Viande à évolution anormale : viande fiévreuse</option>
+            <option>Viande à évolution anormale : viande surmenée</option>
+            <option>Viande immature</option>
+            <option>Viande saigneuse</option>
+            <option>Viandes résultant du parage de la plaie de saignée</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- Le cadre où se trouve la formule et le résultat de la recherche    -->
+      <p id="formule" class="resrech">
+      </p>
+      
+      <!-- Le paragraphe où se trouve le bouton de visualisation des photographies    -->
+      <p id="boutonvoir" class="textecentre">
+          <button id="bouvisenombreuse" class="textebanalgrand">Voir les photographies</button>
+      </p>
+      
+      <!-- La division où se trouve le tableau des résultats de recherche    -->
+      <div id="tbphotos" class="tbphotos">
+      </div>
+      <!--La division où se trouvait la photo aside   
+      <div id="photolesion" class="textecentre">
+        
+      </div>
+      -->
+      <!--La division où se trouvait le bouton de la liste 
+      <div id="boutontrieusephotos" class="textecentre">
+      </div>
+      -->
+      <!--La division où se trouvait la photo aside   
+      <div id="photoliste" class="trieuse">
+      </div>
+      -->
+      
+      <!-- La division où se trouve la liste des images si < 20    -->
+      <div id="trieusephotos" class="trieuse">
+      </div>
+    </div>  
+		<div id="pied">
+					<!--4dinclude pied.shtml-->
+		</div>
+   
+     <script type="text/javascript" src="js/dataTable.js"></script><!-- jQuery dataTable    -->
+     <script type="text/javascript" src="js/asadia.js"></script> <!-- jQuery AsaDia    -->
+     <script src="js/multiple-select.js"></script>
+    <script>
+        $('select').multipleSelect({
+          isOpen: true,
+          keepOpen: true
+        });
+    </script>
+	</body>
+	
+</html>

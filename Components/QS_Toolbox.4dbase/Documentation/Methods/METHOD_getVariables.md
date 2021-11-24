@@ -1,0 +1,1 @@
+﻿## METHOD_getVariables($1;$2)---

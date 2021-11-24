@@ -1,0 +1,418 @@
+
+@import "reset.css";
+
+/*page de CSS de l'évaluation */
+
+#headerquizz{
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+    text-align: center;
+}
+
+#cdf{
+    margin-top: 30px;;
+    margin-left: 30px;
+    line-height: 0.5;   
+}
+
+
+#annoncequestionnaire{
+    width: 1200px;
+}
+
+
+#annonce1{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#annonce2{
+    width: 60%;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+#corpscdf{
+    margin-top: 30px;;
+    margin-left: 30px;
+    line-height: 2;
+    position: relative;
+    width: 3000px;
+}
+
+#detailquestion{
+    width:500px;
+    position:absolute;
+    right:25px;
+    top:25px;
+    border: dashed;
+}
+#pied {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    border: 1px solid #C8AD7F;
+}
+.tabledepart{
+    width:60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.champquestion{
+    margin-top : 60px;
+}
+
+.champquestionsecondaire{
+    margin-top : 5px;
+    margin-left: 10px;
+}
+
+.champquizz{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    width: 540px;
+    height:48px;
+    resize: none;
+    vertical-align: middle;
+    margin-bottom: 4pt;
+}
+
+.areaobjectifs{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    width: 400px;
+    height:160px;
+    margin-top: 6px;
+}
+
+.areaquizz{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: black;
+    width: 400px;
+    height:60px;
+    margin-top: 6px;
+}
+
+.selectquizz {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.imagequizz{
+    cursor: zoom-in;
+}
+
+.blocphoto{
+    line-height: 1;
+    margin-left : 130px;
+}
+
+.photoquizz{
+    display: inline-block;
+    line-height: 1;
+    vertical-align: top;
+    width : 300px;
+    text-align: center;
+}
+
+.petittexte{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-style: italic ;
+}
+.champlistephoto{
+    text-align: left;
+    margin-left : 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.textareaphoto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    width: 300px;
+    height:150px;
+    resize: none;
+    
+}
+
+.evaltitretableau{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    color: #555;
+
+  }
+    
+.evallignetableau{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-right: 15px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #222;
+  }
+
+.reponse{
+    display: inline-block;
+    line-height: 1;
+  }
+  
+::placeholder {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    color: #222;
+  }
+
+.imagesurvol{
+    cursor: pointer;
+  }
+
+.curseurbouton{
+    cursor: pointer;
+  }
+
+.titrepage {
+    color: #9c3500;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+.textebanalgrand {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+.textenews {
+    text-align: center;
+    line-height: 12px;
+    font-size: 14px;
+    color: green;
+  }
+
+.quizzquestion {
+    text-align: left;
+    margin-left : 150px;
+    margin-top : 100px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+.quizzreponse{
+    margin-left:40px;
+    margin-top:20px;
+    font-size:24px;
+    font-weight:300;
+    cursor: pointer;
+  }
+  
+  .quizzcasereponse{
+    margin-left:40px;
+    margin-top:20px;
+    font-size:18px;
+    font-weight:600;
+  }
+  
+ .quizzblocphoto{
+    display: inline-block;
+    width: 310px;
+    vertical-align: top;
+    margin-bottom: 20px;
+    font-size:12px;
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .quizzconsigne{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size:18px;
+    font-weight:600;
+    background-color: #ededed;
+    color: green ;
+    padding: 12px;
+}
+
+.textedecale{
+    margin-left: 30px;
+}
+
+.textebilan{
+    margin-left: 50px;
+    width: 1000px;
+    font-size:18px;
+    color: #222;
+}
+
+.tablerepmultiple{
+    width:60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center
+  }
+  
+.tablebilan{
+    width:1000px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+.tbbilanligne {
+   border:1px solid black; 
+   font-size: 16px;
+   text-align:center;
+   vertical-align: middle;
+   padding: 15px;
+  }
+  
+.tbbilanet {
+   border:1px solid black; 
+   background-color:silver;
+   font-size: 16px;
+   font-weight: 600;
+   text-align:center;
+  }
+
+.tablehistoire{
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+
+.tbhistoireligne {
+   border:1px solid black;
+   font-size: 18px;
+   text-align:center;
+   vertical-align: middle;
+   font-weight: 600;
+   padding: 15px;
+  }
+  
+.tbhistoireet {
+   border:1px solid black; 
+   background-color:silver;
+   font-size: 18px;
+   font-weight: 600;
+   text-align:center;
+   vertical-align: middle;
+   height: 36px;
+}
+  
+.centrevertical{
+   vertical-align: middle;
+  }
+
+.lignetableaurepmultiple{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    color: #222;
+  }
+  
+  .emoticon{
+    font-size: 64px;
+  }
+  
+  .emoticonbilan{
+    font-size: 36px;
+  }
+
+.ligne{
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.hautpage {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#listephotosquizz{
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comphoto{
+   display: inline-block;
+   vertical-align: top;
+   width:400px;
+   font-size: 10px;
+   font-style: italic;
+   padding: 9px;
+}
+
+.champlistephotossup{
+  width: 400px;
+  height: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.comphotor{
+   display: inline-block;
+   vertical-align: top;
+   width:180px;
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.petittexter{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 10px;
+   font-style: italic ;
+   padding: 5px;
+   text-align: center;
+   line-height: 1;
+}
+
+.petittextel{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 10px;
+   font-style: italic ;
+   padding: 5px;
+   text-align: left;
+   line-height: 1;
+}
+   
+.textareaphotor{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  width: 180px;
+  height: 100px;
+  resize: none;
+ }
+
+.champannoncephotor{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+}

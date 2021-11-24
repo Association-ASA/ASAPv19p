@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+                          <br />
+            <ul class="breadcrumb">
+								<li><a href="w2exemplealisample0.html">Exemple</a></li>
+								<li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+								<li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+								<li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+								<li><a href="w2exemplealisample4.html">Unités classées</a></li>
+								<li><a href="w2exemplealisample5.html">2 classes</a></li>
+								<li><a href="#"></a></li>								
+						</ul>
+						 <br />
+					
+            <ul class="breadcrumb">
+                <li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+                <li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+                <li><a href="w2exemplealisample8.html">Plan simple</a></li>
+                <li><a href="w2exemplealisample9.html">A partir de NQA NQL</a></li>
+                <li><a href="w2exemplealisample10.html">Analyse du résultat</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+						
+					 <br />
+            <ul class="breadcrumb">
+                <li><a href="w2exemplealisample11.html">Echantillonnage double</a></li>
+                <li><a href="w2exemplealisample12.html">Loi binomiale</a></li>
+                <li><a href="w2exemplealisample13.html">A partir de NQA NQL</a></li>
+                <li><a href="w2exemplealisample14.html">Analyse du résultat</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+						<br />
+					
+            <ul class="breadcrumb">
+                <li><a href="w2exemplealisample0.html">Exemple</a></li>
+                <li><a href="w2exemplealisample15.html">Unités non classées</a></li>
+                <li><a href="w2exemplealisample16.html">Ecart-type connu</a></li>
+                <li><a href="w2exemplealisample17.html">Simple</a></li>
+                <li><a href="w2exemplealisample18.html">Plan simple</a></li>
+                <li><a href="w2exemplealisample19.html">A partir de NQA NQL</a></li>
+                <li><a href="w2exemplealisample20.html">Analyse du résultat</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+						
+						<br />
+				
+            <ul class="breadcrumb">
+                <li><a href="w2exemplealisample0.html">Exemple</a></li>
+                <li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+                <li><a href="w2exemplealisample21.html">Contrôle d'un processus</a></li>
+            </ul>
+              <br />
+            <p class="titrepage">EXEMPLE <br /><br /></p>
+            <p>
+              Après avoir mis en place les plans de contrôle sur vos produits finis, vous décidez 
+              de réaliser également un contr&ocirc;le de la doseuse pour détecter 
+              des déréglages de celle-ci. Ce contrôle doit vous permettre 
+              de détecter des diminutions du poids des unités pour répondre 
+              aux exigences de votre client mais également des augmentations du poids 
+              qui se traduisent pour vous par une perte économique.
+            </p>
+            <P ALIGN="JUSTIFY">Reprenons l'arbre de décision.</P>
+            <P ALIGN="JUSTIFY">
+              Cette fois-ci, vous voulez contrôler un processus &#151; cliquez 
+              sur le bouton pour poursuivre.
+            </P>
+            <P ALIGN="JUSTIFY"><IMG SRC="images/Image23.gif" WIDTH=970 HEIGHT=600 border="0" usemap="#Map" /> 
+              <map name="Map">
+                <area shape="rect" coords="345,114,552,165" href="w2exemplealisample22.html" />
+              </map>
+            </P>
+			</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

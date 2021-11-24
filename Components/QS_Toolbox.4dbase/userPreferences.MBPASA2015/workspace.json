@@ -1,0 +1,73 @@
+{
+	"editors": [
+		{
+			"type": "explorer"
+		},
+		{
+			"type": "method",
+			"id": 2147483626,
+			"previousTabType": "method",
+			"previousTabID": 2147483138,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "_Start"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483138,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "STO_openWindow"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483553,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "__Menu_mng_execute"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483328,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "__StructureAnalysis"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483224,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "BASE_noERROR"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483318,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "QS_Toolbox_init_start"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483183,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "QS_Init"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147482997,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "QS_TOOLBOX"
+			}
+		}
+	]
+}

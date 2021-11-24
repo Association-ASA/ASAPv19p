@@ -1,0 +1,1 @@
+﻿## $0:=LV_CoverStrings($1)---

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>AsaContact</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps2" class="textebanalgrand">
+      <br /><br /><br /><br />
+      <p class="titrepage">ASA Contact 46 est arrivé !!!</p>
+			<br /><br />
+      <div width="25%" class="imageasag textedecale">
+        <img src="IMAGES/AsaContact46.png" width="250" />
+      </div>
+      <div width="30%" class="textedecale">
+        <span class="plus">SOMMAIRE</span> <br />
+
+									Edito p. 1 par <b>Brigitte ENRIQUEZ</b> <br />
+									<b>ARTICLES DE FOND </b><br />
+									Contamination des oeufs par le Fipronil - Importance et conséquences p. 3 et 4 par <b>Jeanne BRUGERE-PICOUX</b> <br />
+									L’Amitraze  p. 5 par <b>Brigitte ENRIQUEZ</b> <br />
+									9ème Workshop sur les essais d’aptitude en chimie analytique, microbiologie et médecine - Portoroz (Slovénie)
+									du 09 au 12 Octobre 2017 p.6 à 8 par <b>Leila ALI MANDJEE</b> <br />
+									Vivons-nous la tête en bas ? p. 9 et 10 par <b>Brigitte ENRIQUEZ</b> <br />
+									Toxicologie animale et base de données p. 11 et 13 par <b>Claude GRANDMONTAGNE</b> <br />
+									<b>BREVES</b> <br />
+									Biofutur AVRIL 2017 p. 14 - 15 par François SIMON <br />
+									<b>INFORMATIONS / DIVERS</b> <br />
+									La vie secrète des Arbres p. 16  par Gilles QUINET<br />
+									<b>VIE DE L’ASSOCIATION</b> <br />
+									Vie de l’Association p. 17 par <b>Gilles QUINET</b> <br />
+      </div>
+          
+      <br /><br />
+      <p class="hautpage">
+					Pour télécharger AsaContact 46, cliquez sur le lien suivant : <br />
+					<a id="ac" href="https://www.dropbox.com/s/1a55jy1uppwz3hb/asacontact46.pdf?dl=0">AsaContact 46</a>
+			</p>
+				
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+    
+      <script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery     -->
+			<script type="text/javascript" src="/js/asacontact.js"></script>
+
+	</body>
+	
+</html>

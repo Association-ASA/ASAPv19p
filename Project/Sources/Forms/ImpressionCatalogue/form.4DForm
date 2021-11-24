@@ -1,0 +1,374 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 211,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"CadrePlus": {
+					"type": "rectangle",
+					"top": 56,
+					"left": 1,
+					"width": 570,
+					"height": 154,
+					"fill": "transparent",
+					"borderRadius": 5
+				},
+				"CadreMoins": {
+					"type": "rectangle",
+					"top": 56,
+					"left": 1,
+					"width": 570,
+					"height": 119,
+					"fill": "transparent",
+					"borderRadius": 5
+				},
+				"Texte": {
+					"type": "text",
+					"top": 1,
+					"left": 3,
+					"width": 526,
+					"height": 21,
+					"class": "Titre_petit",
+					"textAlign": "center",
+					"text": "Catalogue des photographies originales"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 31,
+					"left": 4,
+					"width": 498,
+					"height": 17,
+					"dataSource": "VarCategorie",
+					"class": "Champ_grand",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage1": {
+					"type": "input",
+					"top": 74,
+					"left": 13,
+					"width": 100,
+					"height": 100,
+					"dataSource": "VarImage1",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage2": {
+					"type": "input",
+					"top": 74,
+					"left": 126,
+					"width": 100,
+					"height": 100,
+					"dataSource": "VarImage2",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage3": {
+					"type": "input",
+					"top": 74,
+					"left": 239,
+					"width": 100,
+					"height": 100,
+					"dataSource": "VarImage3",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage4": {
+					"type": "input",
+					"top": 74,
+					"left": 352,
+					"width": 100,
+					"height": 100,
+					"dataSource": "VarImage4",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage5": {
+					"type": "input",
+					"top": 74,
+					"left": 465,
+					"width": 100,
+					"height": 100,
+					"dataSource": "VarImage5",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarType1": {
+					"type": "input",
+					"top": 61,
+					"left": 13,
+					"width": 93,
+					"height": 15,
+					"dataSource": "VarType1",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarType2": {
+					"type": "input",
+					"top": 61,
+					"left": 126,
+					"width": 93,
+					"height": 15,
+					"dataSource": "VarType2",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarType3": {
+					"type": "input",
+					"top": 61,
+					"left": 239,
+					"width": 93,
+					"height": 15,
+					"dataSource": "VarType3",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarType4": {
+					"type": "input",
+					"top": 61,
+					"left": 352,
+					"width": 93,
+					"height": 15,
+					"dataSource": "VarType4",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarType5": {
+					"type": "input",
+					"top": 61,
+					"left": 465,
+					"width": 93,
+					"height": 15,
+					"dataSource": "VarType5",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarCom1": {
+					"type": "input",
+					"top": 176,
+					"left": 13,
+					"width": 93,
+					"height": 29,
+					"dataSource": "VarCom1",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarCom2": {
+					"type": "input",
+					"top": 176,
+					"left": 126,
+					"width": 93,
+					"height": 29,
+					"dataSource": "VarCom2",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarCom3": {
+					"type": "input",
+					"top": 176,
+					"left": 239,
+					"width": 93,
+					"height": 29,
+					"dataSource": "VarCom3",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarCom4": {
+					"type": "input",
+					"top": 176,
+					"left": 352,
+					"width": 93,
+					"height": 29,
+					"dataSource": "VarCom4",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarCom5": {
+					"type": "input",
+					"top": 176,
+					"left": 465,
+					"width": 93,
+					"height": 29,
+					"dataSource": "VarCom5",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarPagination": {
+					"type": "input",
+					"top": 6,
+					"left": 474,
+					"width": 93,
+					"height": 11,
+					"dataSource": "VarPagination",
+					"class": "Petite_écriture",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

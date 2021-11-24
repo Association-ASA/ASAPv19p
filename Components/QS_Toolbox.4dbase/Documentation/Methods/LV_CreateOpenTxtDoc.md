@@ -1,0 +1,1 @@
+﻿## $0:=LV_CreateOpenTxtDoc($1;$2;$3)---

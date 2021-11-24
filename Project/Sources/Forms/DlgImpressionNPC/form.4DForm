@@ -1,0 +1,209 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 554,
+	"markerBreak": 556,
+	"markerFooter": 556,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 88,
+					"left": 19,
+					"width": 538,
+					"height": 140,
+					"fill": "transparent"
+				},
+				"VarTitre": {
+					"type": "input",
+					"top": 34,
+					"left": 19,
+					"width": 533,
+					"height": 29,
+					"dataSource": "VarTitre",
+					"class": "Titre",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarPagination": {
+					"type": "input",
+					"top": 10,
+					"left": 404,
+					"width": 148,
+					"height": 13,
+					"dataSource": "VarPagination",
+					"class": "Petite_écriture",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarPhoto1": {
+					"type": "input",
+					"top": 90,
+					"left": 26,
+					"width": 100,
+					"height": 100,
+					"dataSource": "VarPhoto1",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarPhoto2": {
+					"type": "input",
+					"top": 91,
+					"left": 142,
+					"width": 100,
+					"height": 100,
+					"dataSource": "VarPhoto2",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarComparaison": {
+					"type": "input",
+					"top": 96,
+					"left": 259,
+					"width": 293,
+					"height": 140,
+					"dataSource": "VarComparaison",
+					"class": "Etiquette_petite",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 76,
+					"left": 26,
+					"width": 105,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "Photo de réference"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 76,
+					"left": 142,
+					"width": 101,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "Photo NPC"
+				},
+				"VarTriplette1": {
+					"type": "input",
+					"top": 195,
+					"left": 26,
+					"width": 100,
+					"height": 30,
+					"dataSource": "VarTriplette1",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 7,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette2": {
+					"type": "input",
+					"top": 195,
+					"left": 142,
+					"width": 101,
+					"height": 30,
+					"dataSource": "VarTriplette2",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 7,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 76,
+					"left": 263,
+					"width": 369,
+					"height": 13,
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"text": "Commentaire du NPC"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 89,
+					"left": 133,
+					"height": 140,
+					"strokeWidth": 0.1
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 89,
+					"left": 249,
+					"height": 140,
+					"strokeWidth": 0.1
+				}
+			}
+		}
+	]
+}

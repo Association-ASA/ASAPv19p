@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		
+		<!--4dinclude HeaderAsa.shtml-->
+		<title><!--4dVAR TitrePage--></title>
+	</head>
+	
+	
+	<body>
+		<div id="header" align="center">
+			<a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+		</div>
+		
+		<div id="corps">
+			
+		
+			<div id="contenu1">
+				<p class="hautpage">
+					Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus
+				</p>
+					<br /><br /> <br /><br />
+				<p class="hautpage rouge">
+					ENREGISTREMENT DES DONNEES
+				</p>
+				<p class="hautpage">
+					ATTENTION
+						<br />
+					Votre travail est "sauvegardé" c'est-à-dire qu'
+					<span class="rouge">il ne nous est pas parvenu</span> 
+					mais que vous pouvez vous reloguer quand vous le désirez : 
+					les écrans vous seront représentés dans l'état actuel 
+					afin que vous puissiez compléter la saisie.
+          <br /><br /> <br />
+          Si ce n'était pas votre intention, cliquez sur le bouton 
+          "Retour au questionnaire" pour compléter votre saisie 
+          et de nous la faire parvenir grâce au bouton "Envoyer à l'ASA" 
+          (et non "Sauvegarder sans envoyer")
+          <br />
+          <input class="titrepage" type="button" name="Précédente" value="Retour au questionnaire" onClick="history.go(-1)" />
+        </p>
+        
+							<br /><br /><br /><br /><br /><br />
+				<p class="hautpage">
+					Pour toute question, contacter l'association
+						<br />						
+					<a href="mailto:asa-spv@wanadoo.fr">
+						Envoyer un mail à l'ASA
+					</a>
+				</p>
+				
+			</div>
+		
+		</div>
+    <div id="pied">
+				<!--4dinclude pied.shtml-->
+		</div>
+	</body>
+</html>
+

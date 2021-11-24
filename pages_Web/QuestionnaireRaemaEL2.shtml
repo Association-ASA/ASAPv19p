@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+     <!--4dinclude HeaderRaema.shtml-->
+<title>Questionnaire</title>
+</head>
+
+    <body>
+<div id="header" align="center">
+    <a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+</div>
+
+<div id="corps">
+    
+
+<div id="contenu" class="textebanalgrand">
+<p class="hautpage">Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus</p>   
+<br /><br />
+<p class="titrepage">QUESTIONNAIRE SUR LE RAEMA
+</p>
+<p class="hautpage">
+      Comme annoncé, l'ASA vous propose de prendre connaissance des résultats 
+      du questionnaire précédent<br /> et de remplir le questionnaire 
+      complémentaire afin de conna&icirc;tre votre avis sur le RAEMA.<br /><br />
+      Pour récupérer les conclusions du précédent questionnaire :
+      <a href="/PDF/concluquestion.pdf"> 
+ cliquer ici
+</a>
+      <br /><br />
+    </p>
+    <form action="<!--4dvar MethodeASuivre-->" method="post" name="form1" id="form1">
+    <p>
+<input type="hidden" name="hiddenField" value="<!--4dVAR MotDePasseActuel-->" />
+</p>
+
+      <p class="xdtitrepage">Concernant les conclusions du dernier questionnaire :
+      </p>
+      
+      <p>Désirez-vous pouvoir acquérir des jeux de poudre supplémentaires
+      </p>
+      <p class="textedecale30">  Oui<input type="radio" name="radiopoudre" value="radiopoudreplus" />&nbsp;&nbsp;
+    	Non <input type="radio" name="radiopoudre" value="radiopoudremoins" />
+      </p>
+       
+        
+      <p>Si Oui, désirez-vous que les résultats obtenus avec les poudres 
+        complémentaires soient pris en compte dans l'exploitation statistique du RAEMA ?
+      </p>
+      <p class="textedecale30">  Oui<input type="radio" name="radiopoudreoui" value="radiopoudrecompte" />&nbsp;&nbsp;
+    	Non <input type="radio" name="radiopoudreoui" value="radiopoudrecomptepas" />
+      </p>
+    	<br /><br />
+      <p class="xdtitrepage">
+    		Concernant le fonctionnement du RAEMA :
+      </p>
+      
+      <p class="xdtitrelivre"> <strong>Gestion administrative du RAEMA</strong>
+        <br />
+        <table width="100%" class="tbquest" >
+          <tr> 
+          	<td class="hauttb2" width="40%">Sujet traité</td>
+          	<td class="hauttb2" width="25%"> Degré de satisfaction</td>
+          	<td class="hauttb3" width="35%">Remarque</td>
+          </tr> 
+          
+          <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Inscription  &agrave; une campagne d'intercomparaison
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumgainscription" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Forme et contenu du contrat RAEMA
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumgacontrat" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+           <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Facturation du RAEMA
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumgafacturation" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Connaissance des dates d'envoi des échantillons 
+          	et du délai de réponse
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumgadates" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+        </table>
+        
+       <br /><br /> 	
+        	<p class="xdtitrelivre"> <strong>Communication avec les laboratoires</strong>
+        <br />
+        <table width="100%" class="tbquest" >
+          <tr> 
+          	<td class="hauttb2" width="40%">Sujet traité</td>
+          	<td class="hauttb2" width="25%"> Degré de satisfaction</td>
+          	<td class="hauttb3" width="35%">Remarque</td>
+          </tr> 
+          
+          <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Qualité de l'accueil téléphonique
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumcomphone" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Qualité des échanges par courriel
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumcommail" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+           <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Disponibilité des correspondants
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumcomdispo" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Qualité de l'orientation des mails pour la réponse
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumcomorientation" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+        </table>
+        
+        
+        <br /><br /> 	
+        	<p class="xdtitrelivre"> <strong>Logistique du RAEMA</strong>
+        <br />
+        <table width="100%" class="tbquest" >
+          <tr> 
+          	<td class="hauttb2" width="40%">Sujet traité</td>
+          	<td class="hauttb2" width="25%"> Degré de satisfaction</td>
+          	<td class="hauttb3" width="35%">Remarque</td>
+          </tr> 
+          
+          <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Délai d'acheminement des colis
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumlogdelaiach" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Etat des colis &agrave; l'arrivée
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumlogetatcolis" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+           <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Etat des échantillons &agrave; l'arrivée
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumlogetatech" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Respect des quantités livrées 
+          	(si plusieurs colis sont demandés)
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumlogqteech" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Traitement par l'ASA des problèmes de livraison
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumlogttpbliv" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+        </table>
+        
+        
+        <br /><br /> 	
+        	<p class="xdtitrelivre"> <strong>Le rapport de campagne</strong>
+        <br />
+        <table width="100%" class="tbquest" >
+          <tr> 
+          	<td class="hauttb2" width="40%">Sujet traité</td>
+          	<td class="hauttb2" width="25%"> Degré de satisfaction</td>
+          	<td class="hauttb3" width="35%">Remarque</td>
+          </tr> 
+          
+          <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Date d'envoi des rapports
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumrapdateenvoi" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Facilité &agrave; récupérer le rapport
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumraprecup" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+           <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Facilité &agrave; interpréter et exploiter le rapport
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumraplecture" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr>
+          
+        </table>
+        
+        
+        <br /><br /> 	
+        	<p class="xdtitrelivre"> <strong>Productions de l'ASA</strong>
+        <br />
+        <table width="100%" class="tbquest" >
+          <tr> 
+          	<td class="hauttb2" width="40%">Sujet traité</td>
+          	<td class="hauttb2" width="25%"> Degré de satisfaction</td>
+          	<td class="hauttb3" width="35%">Remarque</td>
+          </tr> 
+          
+          <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	AsaContact (la publication de l'Asa)
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumprodasacontact" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	AsaDia (l'atlas des lésions d'abattoir)
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumprodasadia" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+           <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Alisample (logiciel d'échantillonnage)
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumprodalisample" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr>
+          
+        </table>
+        
+        <br /><br /> 	
+        	<p class="xdtitrelivre"> <strong>Site Internet de l'ASA</strong>
+        <br />
+        <table width="100%" class="tbquest" >
+          <tr> 
+          	<td class="hauttb2" width="40%">Sujet traité</td>
+          	<td class="hauttb2" width="25%"> Degré de satisfaction</td>
+          	<td class="hauttb3" width="35%">Remarque</td>
+          </tr> 
+          
+          <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Facilité de navigation
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumsitefacile" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Qualité de l'information          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumsitequalite" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+           <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Facilité d'utilisation pour répondre au RAEMA
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumsiterecuprapport" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr>
+          </table>
+          
+          
+          <br /><br /> 	
+        	<p class="xdtitrelivre"> <strong>Réclamations</strong>
+        <br />
+        <table width="100%" class="tbquest" >
+          <tr> 
+          	<td class="hauttb2" width="40%">Sujet traité</td>
+          	<td class="hauttb2" width="25%"> Degré de satisfaction</td>
+          	<td class="hauttb3" width="35%">Remarque</td>
+          </tr> 
+          
+          <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Disponibilité de la fiche de réclamation
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumrecfiche" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Délai de réponse aux réclamations
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumrecdelai" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+           <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Pertinence de la réponse aux réclamations
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumrecpertinence" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfait</option>
+              <option value="2">Satisfait</option>
+              <option value="3">Peu satisfait</option>
+              <option value="4">Non satisfait</option>
+              <option value="5">Non concerné</option>
+              <option value="6">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr>
+          
+        </table>
+        
+<br /><br /> 	
+        	<p class="xdtitrelivre"> <strong>Compétitivité du RAEMA</strong>
+        <br />
+        <table width="100%" class="tbquest" >
+          <tr> 
+          	<td class="hauttb2" width="40%">Sujet traité</td>
+          	<td class="hauttb2" width="25%"> Degré de satisfaction</td>
+          	<td class="hauttb3" width="35%">Remarque</td>
+          </tr> 
+          
+          <tr class="ligneimpairequest" > 
+          	<td class="colonne1 ">
+          	Trouvez-vous le prix du RAEMA classique
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumcompetprixclas" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfaisant</option>
+              <option value="2">Correct</option>
+              <option value="3">Trop élevé</option>
+              <option value="4">Non concerné</option>
+              <option value="5">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+          
+           <tr class="lignepairequest" > 
+          	<td class="colonne1 ">
+          	Trouvez-vous le prix du RAEMA complémentaire
+          	</td>
+          	<td class="colonne2 "> 
+          	<select name="pumcompetprixcomp" class="pum">
+              <option value="0" selected="selected">Choisir ...</option>
+              <option value="1">Très satisfaisant</option>
+              <option value="2">Correct</option>
+              <option value="3">Trop élevé</option>
+              <option value="4">Non concerné</option>
+              <option value="5">Ne se prononce pas</option>
+            </select>
+            </td>
+          	<td class="colonne3 ">
+          	<textarea name="textarea" cols="40" rows="2"></textarea>
+          	</td>
+          </tr> 
+        </table>        
+        
+      
+		</p>
+      <br /><br />
+      <p class="plusbleu">Quels sont les éléments autres que vous souhaitez voir 
+        prendre en compte ?</p>
+      <p> 
+        <textarea name="textareafin" cols="120" rows="20"></textarea>
+      </p>
+      <br /><br />
+      <p class="titrepage"> 
+        <input class="titrepage" type="submit" name="Submit" value="Envoyer" />
+        </p>
+      <p class="titrepage"> 
+        Merci d'avoir répondu &agrave; ce questionnaire ! <br />
+      </p>
+      
+      </form>
+<br /><br /> <br /><br />
+
+    
+    
+    
+</div>
+
+</div>
+
+        <!--4dinclude pied.shtml-->
+
+
+</body>
+</html>

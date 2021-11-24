@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Contact avec l'ASA</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+				<div id="header" align="center">
+					<!--4dinclude bandeau.shtml-->
+				</div>
+				<div id="corps">
+							<br /><br />
+							<br /><br />
+
+						<p class="grandhautpage">Nous contacter</p>
+						<div style="background-image:url(images/Fondboitecontact.jpg); height: 600px;">
+						<br /><br />
+							<p class="titrepage rouge">
+												Prière de remplir TOUS les champs ci-dessous et de répondre à la question.
+							</p>
+							
+							<form name="question" method="post" action="mw2WebRecevoirQuestion">
+								<table class="tableauquestion">
+									<tr> 
+												<td class="colonneadroite"> 
+																	<label for="Nom">Nom <span class="rouge">*</span> </label>
+												</td>
+												
+												<td class="colonneagauche"> 
+																	<input class="colonneagauche" type="text" name="Nom" size="35" maxlenght="35" /> 
+												</td>
+									</tr>
+									<tr> 
+												<td class="colonneadroite"> 
+													 <label for="Prenom">Prénom <span class="rouge">*</span> </label>
+												</td>
+												<td class="colonneagauche"> 
+																	<input class="colonneagauche" type="text" name="Prenom" size="35" maxlenght="35" /> 
+												</td>
+									</tr>
+									<tr> 
+												<td class="colonneadroite"> 
+													<label for="mail">Adresse mail <span class="rouge">*</span> </label>
+												</td>
+												<td class="colonneagauche"> 
+													<input class="colonneagauche" type="text" name="mail" size="65" maxlenght="65" /> 
+												</td>
+								 </tr>
+								 <tr> 
+												<td class="colonneadroite"> 
+													<label for="sujet">Sujet <span class="rouge">*</span> </label>
+												</td>
+												<td class="colonneagauche"> 
+													<input class="colonneagauche" type="text" name="sujet" size="65" maxlenght="200" /> 
+												</td>
+								 </tr>
+								 <tr> 
+												<td class="colonneadroite"> 
+														<label for="message">Message <span class="rouge">*</span> </label>
+												</td>
+												<td class="colonneagauche"> 
+													<textarea name="message" rows="15" cols="80"></textarea>
+												</td>
+								 </tr>
+								</table>
+								<br /><br />
+                <img id="question" src="images/antirobot.png" alt="question" />
+                <br /><br />
+                <p class="textecentre">
+										<input type="text" name="question" size="5px" placeholder="??" />        <input class="paragraphe" type="submit" name="submit" value="Soumettre le formulaire" />
+								</p>
+								
+							 
+							</form>
+							<br /><br /> <br /><br />								
+						</div>
+				</div>
+				
+				<div id="pied">
+					<!--4dinclude pied.shtml-->
+				</div>
+	</body>
+</html>

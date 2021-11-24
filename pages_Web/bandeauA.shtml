@@ -1,0 +1,8 @@
+    <img src="images/bandeau.jpg" alt="logo" width="1024" />
+    <br /><br /><br />
+    <ul id="menubar">
+      <li><a href="http://asa-spv.asso.fr">Visit  The ASA Website</a></li>
+      <li><a href="mw2WebEcritPageDiagnoseA">Find a lesion</a></li>
+      <li><a href="mw2WebAbouleListeLesionA">List of lesions</a></li>
+      <li><a href="mw2WebAbouleListeDiapoA">List of photos</a></li>
+    </ul>

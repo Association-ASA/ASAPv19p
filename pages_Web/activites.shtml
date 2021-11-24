@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Activités scientifiques</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+      <div id="contenu2" class="textebanalgrand">
+  
+          <br/> <br/>
+          
+          <p class="titrepage"> Activités scientifiques </p>
+        <div id="colonne1">
+          <p class="asimagetexted"><img src="images/activscience.PNG"/></p>
+          <br/>
+          <p class="cgtextebanalgrand">
+            <br />
+            L 'ASA est un forum interdisciplinaire, un lieu de rencontres et d'échanges 
+            entre les personnes, sociétés ou associations qui s'intéressent 
+            à la Santé Publique en rapport avec les animaux et à la 
+            sécurité des aliments.
+          </p>
+          <br/>
+          <p class="cgtextebanalgrand">
+            L 'ASA organise : <br/> <br/>
+            - Des manifestations scientifiques et des journées d'études 
+            sur tous les sujets de Santé Publique en rapport avec les animaux.<br/>
+          </p>
+          <br/>
+          <!--    
+          <p class="cgtextepetit">
+            Cliquez sur le lien pour voir les éléments de la dernière 
+            conférence sur l'importance de l'inspection en santé publique vétérinaire. 
+            <a href="w2importanceinspectionspv.shtml">Voir la conférence</a>
+          </p>
+          <br />
+           -->
+          <p class="cgtextebanalgrand">
+            - Des consultations et des conseils techniques et juridiques sont dispensés par une équipe 
+              pluridisciplinaire, dans une indépendance totale.
+          </p>
+          <br/>
+          <p class="cgtextebanalgrand">
+            - Des formations et sensibilisations des professionnels, des usagers et des consommateurs.
+          </p>
+          <br/><br/>
+        </div>
+        <div id="colonne2">
+          <p class="titrepage">Activités récentes</p>
+          <p class="textepetitcentre">
+            <a href="w2civ.shtml">
+              <img src="images/civ.jpeg" alt="Cahier du CIV" width="180px" />
+            </a>
+            <br />
+            Cahier du CIV sur le bien-être animal <br /><br /><br />    
+          </p>                                        
+          
+          <p class="textepetitcentre">
+            <a href="w2timisoara.shtml">
+              <img src="images/Timisoara/Timisoara2.JPG" alt="Colloque à Timisoara" width="180px" />
+            </a>
+            <br />
+            5e Conférence Internationale <br />sur les Essais d’Aptitude
+            <br />Timisoara, septembre 2015<br /><br />
+          </p>
+          
+          <p class="textepetitcentre">
+            <a href="w2sa2015.shtml">
+              <img src="images/SAoct2015.JPG" alt="Réunion santé animale sauvage" width="180px" />
+            </a>
+            <br />
+            Groupe de travail européen sur l'établissement de lignes directrices pour la surveillance,
+            la notification et la gestion de dangers prioritaires dans la faune sauvage.
+          </p>
+        </div>
+      </div>
+    </div>
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

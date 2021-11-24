@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>L'ARET</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+        <br/><br/>
+        <div class="imageasadia">
+          <img src="images/aret.png" alt="logo de l'ARET" />
+        </div>
+				L'ARET (Association pour la Recherche en Toxicologie) a été créée en 1989 par un groupe constitué autour d'enseignants et d'anciens étudiants du 3ème cycle de Toxicologie, animé par le Pr Puiseux-Dao (Paris VII).
+        Depuis, l'origine de ses membres s'est fortement diversifiée: organismes publics de recherche, universités, industrie et laboratoires privés, collectivités.<br/> 
+        L'objectif de l'ARET est de promouvoir la recherche et la formation dans tous les domaines de la Toxicologie (clinique, expérimentale, environnementale alimentaire),
+        de susciter des échanges pluridisciplinaires, de favoriser le partage  et le retour d'expérience.<br/><br/>
+        Outre ces objectifs scientifiques et techniques, l'association axe une grande part de ses efforts sur un soutien à ses membres, en particulier les jeunes diplômés,
+        dans leur recherche de situations professionnelles qui leur permettent de mettre en valeur leurs compétences.<br/><br/>
+        L’ARET organise un congrès annuel en général sur deux journées qui a lieu de façon alternée sur Paris ou en province (<a href="pdf/16colprogv14.pdf" >à Rovaltain en 2016</a>).<br/>
+        Les thématiques de ses congrès figurent sur le <a href="http://aret.asso.fr/" target="_blank">site de l’association </a>.<br/>
+        Ses financements proviennent des <a href="http://aret.asso.fr/cotisation.html" target="_blank">cotisations des adhérents</a>, des dons, des sponsors (comme l’ASA, l’ANSES…).<br/>
+        <br/>
+        <p class="textecentre"><b>La Vice Présidente de l'ARET : Pr Brigitte Enriquez (ENVAlfort)</b></p>      <br/>
+		</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+	

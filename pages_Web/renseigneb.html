@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+     <!--4dinclude HeaderAsa.shtml-->
+<title>Nouvel essai</title>
+</head>
+
+    <body>
+<div id="header" align="center">
+    <a href="../index.shtml">  <img src="images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+</div>
+
+<div id="corps">
+    
+<div id="colonne">    
+<!--4dif <>SaisieOK-->
+    <!--4dinclude colonnesaisie.shtml-->
+<!--4delse-->
+    <!--4dinclude colonnepassaisie.shtml-->
+<!--4dendif-->
+</div>
+
+<div id="contenu">
+ <br /><br />
+   <p class="titrepage">
+   Merci de remplir COMPLETEMENT le formulaire pour pouvoir vous enregistrer
+  </p>
+  <br /><br />
+<form name="form1" method="POST" action="RecupFormulaire" class="textedecale">
+      	<p>N&deg; d'adhérent 
+        	<input type="text" name="NumAdh" size="5">
+    	</p>
+    	<br />
+        <p>Nom 
+        <input type="text" name="Nom" size="30">
+        &nbsp; Prénom 
+        <input type="text" name="Prénom" size="30">
+      </p>
+      <br />
+      <p>
+       <label for="Rue">Adresse professionnelle</label>
+       <br />
+       <textarea name="Rue" cols="40" rows="5"></textarea>
+      </p>
+    <p>Code postal professionnel 
+      <input type="text" name="CP" maxlength="6" size="6">
+    	Localité professionnelle 
+      <input type="text" name="ville" size="35">
+    </p>
+    <br />
+    <p>e mail 
+      <input type="text" name="adresse d'email" size="50">
+    </p>
+   <br />
+    <p>Entrez le mot de passe que vous proposez 
+      <input type="text" name="MdP1" size="30" maxlength="30">
+    </p>
+    <p>Confirmer ce mot de passe 
+      <input type="text" name="MdP2" size="30" maxlength="30">
+    </p>
+    <br />
+    <p class="textecentre">
+      <input type="reset" name="Submit2" value="Effacer">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <input type="submit" name="Submit" value="Envoyer">
+    </p>
+</form>
+    
+    
+    
+</div>
+
+</div>
+
+        <!--4dinclude pied.shtml-->
+
+
+</body>
+</html>

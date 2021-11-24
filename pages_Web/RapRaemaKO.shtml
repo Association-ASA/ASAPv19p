@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<!--4dinclude HeaderRaema.shtml-->
+		<title> <!--4DVar TitreErreur--></title>
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119" /> </a>
+		</div>
+		
+		<div id="corps">
+			
+			<div id="contenu">
+        <br /><br /><br />
+				<p class="hautpage rouge">
+          <!--4DVar TypeErreur-->
+        </p>
+					<br /><br />
+				<p class="hautpage">
+          <!--4DVar MotifErreur1--><br />
+          <!--4DVar MotifErreur2--><br />
+          <!--4DVar MotifErreur3--><br />
+          <br /><br />
+          Cliquer sur le bouton ci-dessous pour revenir à la page précédente.	  
+           <br /> <input type="button" value="Retour au questionnaire" name="Précédente" onClick="history.go(-1)" />
+            <br /><br />
+          <p class="hautpage"> 
+            Si le problème persiste, contacter l'association.
+            <br />
+            <a href="mailto:asa-spv@wanadoo.fr">
+              Envoyer un mail à l'ASA
+            </a>
+          </p>
+        </p>  
+			</div>
+		
+		</div>
+		
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+		
+	</body>
+</html>

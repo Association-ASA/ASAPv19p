@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Rapports de campagne</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemarapportsA.shtml">
+        <img  src="images/DrapeauA.gif" alt="english flag" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+        
+				<!--4dinclude menuraema.shtml-->					
+				<br />
+        <p class="grandtitrepage">
+            Les rapports de campagne du RAEMA
+        </p>
+				<br />
+        Chaque campagne du RAEMA conduit, pour les participants,
+        à la production de deux rapports de campagne : un <b>rapport général</b> et un <b>rapport individuel</b>.
+       
+        <p class="grandhautpage">
+         <br />
+         Le Rapport général
+        </p>
+				<div class="imageasadiad">
+          <a href="pdf/RG60.pdf">
+            <img width="150" alt="Rapport général" src="images/RG.PNG" />
+          </a>
+          <p class="textepetitcentre">
+            Cliquez sur l'image pour <br />télécharger un exemple
+          </p>
+        </div>
+        <div class="cgtexteimaged taille16">
+          Le rapport général comporte trois parties :
+          
+          <p class="grandhautpagedecale">
+            Les considérations générales
+          </p>
+          Cette partie comprend le <b>nombre des participants</b> à la campagne,
+          la répartition en jours des <b>délais d'acheminement des colis</b>,
+          le <b>niveau de concentration</b> de chaque germe proposé,
+          le <b>poids</b> de l'ensemble des objets soumis à essai,
+          les conditions des <b>contrôles d'homogénéité</b> réalisés,
+          la <b>nature des flores</b> à dénombrer.
+          <br />
+          
+          <p class="grandhautpagedecale">
+            L'exploitation des comptes rendus d'analyses
+          </p>
+          Elle comprend les renseignements concernant le <b>traitement de l'échantillon</b>
+          tel que communiqué par le laboratoire ainsi que les <b>paramètres</b> 
+          (méthode, nature et mode de préparation du milieu)
+          , température et durée d'incubation) pour chaque germe recherché.
+          
+          <p class="grandhautpagedecale">
+            L'évaluation de la performance
+          </p>
+          L'évaluation de la performance est réalisée en <b>justesse</b> pour les campagnes du RAEMA.<br />
+          Une évaluation en <b>fidélité</b> est en outre réalisée pour le RAEMA poudre.<br />
+          La <b>valeur assignée</b> de la contamination, l'<b>écart-type pour l’évaluation de l’aptitude</b>
+          et l'<b>écart-type interlaboratoires</b> sont donnés pour chaque germe en log UFC/g.<br />
+          En outre, l'<b>écart-type de fidélité</b> et celui de <b>reproductibilité</b> sont donnés
+          pour le RAEMA poudre.
+        </div>
+        
+        <p class="grandhautpage">
+         <br />
+         Le Rapport individuel
+        </p>
+				<div class="imageasadiad">
+          <a href="pdf/cr individuel raema49.pdf">
+            <img width="150" alt="Rapport individuel" src="images/RI.PNG" />
+          </a>
+          <p class="textepetitcentre">
+            Cliquez sur l'image pour <br />télécharger un exemple
+          </p>
+        </div>
+        <div class="cgtexteimaged taille16">
+          Le rapport individuel comporte deux parties :
+          
+          <p class="grandhautpagedecale">
+            Les données de <b>justesse</b>
+          </p>
+          Pour chaque germe concerné, une page donne le résultat obtenu par le laboratoire (en ufc/g et en log10 ufc/g),
+          le z-score obtenu ainsi que des considérations générales sur les résultats de l'ensemble des laboratoires
+          pour ce germe (nombre de laboratoire réalisant l'essai, nombre de laboratoires inclus dans l'analyse statistique,
+          valeur assignée de la contamination, l'<b>écart-type pour l’évaluation de l’aptitude</b>,
+          le nombre de laboratoires satisfaisants ou avec des signes surveillance ou action).</b>
+          Un graphique représentant les résultats de l'ensemble des participants
+          montre aussi une étoile permettant au laboratoire concerné de se situer parmi les autres.
+          
+          
+         
+          <p class="grandhautpagedecale">
+            Les données de <b>fidélité</b>
+          </p>
+          Pour le RAEMA poudre, le rapport individuel relate les données de fidélité.<br />
+          Pour chaque dénombrement de germe, on a les <b>5 résultats</b> (en ufc/g et en log10 ufc/g)
+          l'<b>écart-type</b> et l'<b>indice</b> de fidélité.
+          Comme pour la justesse, un graphique représentant les résultats de l'ensemble des participants
+          montre aussi une étoile permettant au laboratoire concerné de se situer parmi les autres.
+          <br />
+          
+          <p class="grandhautpagedecale">
+            L’évolution de la performance
+          </p>
+          Pour le RAEMA poudre, les données de justesse, de fidélité et de recherche sont <b>suivies dans le temps</b>.
+          Le laboratoire dispose ainsi de l’évolution de ses performances.
+          <br /><br />
+        </div>
+      </div>
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+	

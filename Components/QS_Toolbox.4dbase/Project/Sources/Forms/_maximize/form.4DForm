@@ -1,0 +1,179 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "QS_Toolbox: Call Chain Methods",
+	"memorizeGeometry": false,
+	"formSizeAnchor": "limite",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"menuBar": "Barre #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onCloseBox",
+		"onUnload",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"BT1": {
+					"type": "button",
+					"top": 97,
+					"left": -15,
+					"width": 10,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"limite": {
+					"type": "line",
+					"top": 626,
+					"left": 1104,
+					"width": 19,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"ctrlW": {
+					"type": "button",
+					"top": 5,
+					"left": 1168,
+					"width": 145,
+					"height": 25,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/_UI"
+					},
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "ctrl-W"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 1128,
+					"height": 69,
+					"sizingX": "grow",
+					"fill": "#AED581",
+					"stroke": "#6495ED"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 1,
+					"width": 1128,
+					"height": 16,
+					"sizingX": "grow",
+					"fill": "#E2DECB",
+					"stroke": "transparent"
+				},
+				"VersionComposant": {
+					"type": "input",
+					"top": 70,
+					"left": 1022,
+					"width": 88,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_Componant_Version",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bdd": {
+					"type": "input",
+					"top": 23,
+					"left": 352,
+					"width": 594,
+					"height": 25,
+					"sizingX": "grow",
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_DBName+\" - Call Chain Methods\"",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"contextMenu": "none",
+					"enterable": false,
+					"focusable": false
+				},
+				"Image5": {
+					"type": "picture",
+					"top": 2,
+					"left": 1038,
+					"width": 60,
+					"height": 60,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/pictures/QS_Toolbox.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"webZone": {
+					"type": "webArea",
+					"top": 90,
+					"left": 1,
+					"width": 1122,
+					"height": 536,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "web_URL",
+					"webEngine": "embedded",
+					"borderStyle": "none",
+					"method": "ObjectMethods/webZone.4dm",
+					"events": [
+						"onEndURLLoading"
+					]
+				},
+				"Close": {
+					"type": "button",
+					"text": "Close",
+					"top": 71,
+					"left": 1,
+					"width": 94,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 17
+}

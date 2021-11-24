@@ -1,0 +1,1 @@
+﻿## $0:=GetAutoIncrement($1;$2)---

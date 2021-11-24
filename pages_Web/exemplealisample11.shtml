@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+            <br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample0.html">Exemple</a></li>
+            <li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+            <li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+            <li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+            <li><a href="w2exemplealisample4.html">Unités classées</a></li>
+            <li><a href="w2exemplealisample5.html">2 classes</a></li>
+            <li><a href="#"></a></li>								
+        </ul>
+						<br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+            <li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+            <li><a href="w2exemplealisample8.html">Plan simple</a></li>
+            <li><a href="w2exemplealisample9.html">A partir de NQA NQL</a></li>
+            <li><a href="w2exemplealisample10.html">Analyse du résultat</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+					<br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample11.html">Echantillonnage double</a></li>
+        </ul>
+          <br />
+        <p class="titrepage">EXEMPLE</p>
+
+        <p class="textepage">
+          Le nombre d'unités à contrôler étant très important
+          (temps de contrôle non compatible avec le planning de travail), vous pouvez choisir
+          d'utiliser un échantillonnage double. <br /> <br />
+        </p>
+        <p class="textepage">
+          <b>Reprenons l'arbre de décision à l'étape du choix de la méthode d'échantillonnage.</b>
+            <br />
+          Choisissez cette fois-ci l'échantillonnage double -
+          <span class= "titrepage">cliquez sur le bouton "double" pour poursuivre
+              <br /> <br />
+          </span>
+        </p>
+       <p class="textcentre"><img src="images/Image11.gif" WIDTH=900 HEIGHT=540 border="0" usemap="#Map" /> 
+          <map name="Map">
+            <area shape="rect" coords="287,108,462,224" href="w2exemplealisample12.html" />
+          </map>
+        </p>
+        <br />
+      </div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

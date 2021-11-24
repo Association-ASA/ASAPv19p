@@ -1,0 +1,1 @@
+﻿## aa4D_Host_GetDBParam---## Restrictions**Current 4D version: 4D v18R6**Cannot be preemptif due to following information, ***except if*** there is/are called by a CALL FORM command:|Type|Variable / Method name||------|------||*4D Command*|`Get database parameter`||*4D Command*|`Get database parameter`|

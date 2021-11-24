@@ -1,0 +1,1 @@
+﻿## METHODS_getSyntax($1;$2)---

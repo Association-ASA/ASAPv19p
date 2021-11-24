@@ -1,0 +1,336 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1000,
+	"height": 640,
+	"markerBody": 481,
+	"markerBreak": 481,
+	"markerFooter": 491,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Image3": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 1043,
+					"height": 836,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Fond Blanc.png"
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 603,
+					"left": 835,
+					"width": 162,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image1.png"
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 608,
+					"left": 832,
+					"width": 25,
+					"height": 20,
+					"dataSource": "ZZ9",
+					"action": "cancel",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 608,
+					"left": 859,
+					"width": 26,
+					"height": 20,
+					"dataSource": "ZZ1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Premier enreg"
+					},
+					"action": "firstRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 608,
+					"left": 887,
+					"width": 29,
+					"height": 25,
+					"dataSource": "ZZ2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg précédent"
+					},
+					"action": "previousRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 608,
+					"left": 920,
+					"width": 28,
+					"height": 25,
+					"dataSource": "ZZ3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. suivant"
+					},
+					"action": "nextRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable20": {
+					"type": "button",
+					"top": 606,
+					"left": 948,
+					"width": 21,
+					"height": 25,
+					"dataSource": "ZZ4",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Dernier enreg"
+					},
+					"action": "lastRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 594,
+					"left": 968,
+					"width": 29,
+					"height": 45,
+					"stroke": "#FFFFFF",
+					"strokeWidth": 0.1
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte16": {
+					"type": "text",
+					"top": 43,
+					"left": 52,
+					"width": 897,
+					"height": 19,
+					"stroke": "#000000",
+					"class": "Etiquette_grande",
+					"textAlign": "center",
+					"text": "Motivation en fait, motif principal :"
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 223,
+					"left": 60,
+					"width": 106,
+					"height": 71,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Classement Sous Produits Animaux "
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 281,
+					"left": 11,
+					"width": 156,
+					"height": 127,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Eléments de communication destinés aux éleveurs :"
+				},
+				"LibelleMotifRetrait": {
+					"type": "input",
+					"top": 61,
+					"left": 17,
+					"width": 963,
+					"height": 29,
+					"dataSource": "[DiaMotifSaisieDGAL:42]LibelleMotifSaisieDGAL:1",
+					"stroke": "#000000",
+					"class": "Titre",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RefRegEuropeenne": {
+					"type": "input",
+					"top": 118,
+					"left": 174,
+					"width": 765,
+					"height": 136,
+					"dataSource": "[DiaMotifSaisieDGAL:42]RefRegEuropeenne:5",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ClassementNonConsoHumaine": {
+					"type": "input",
+					"top": 239,
+					"left": 172,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[DiaMotifSaisieDGAL:42]ClassementNonConsoHumaine:6",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Précisions": {
+					"type": "input",
+					"top": 281,
+					"left": 173,
+					"width": 579,
+					"height": 84,
+					"dataSource": "[DiaMotifSaisieDGAL:42]InformationEleveurs:11",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 118,
+					"left": 37,
+					"width": 131,
+					"height": 71,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Motivation en droit en vigueur : "
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 420,
+					"left": 11,
+					"width": 156,
+					"height": 155,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Définition\rPrécisions\rObservations\rà l’usage des services d’inspection en abattoir : "
+				},
+				"Précisions1": {
+					"type": "input",
+					"top": 420,
+					"left": 173,
+					"width": 579,
+					"height": 84,
+					"dataSource": "[DiaMotifSaisieDGAL:42]PrecisionsEleveur:7",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

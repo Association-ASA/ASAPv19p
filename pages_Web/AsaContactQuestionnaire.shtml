@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <title>Questionnaire</title>
+  <meta name="keywords" content="asa, sante, publique, veterinaire, association, hygiene, aliment, 
+   alimentaire, intercomparasion, cofrac, accreditation, abattoir, photographies, asadia, inspection, 
+   médecine, pharmacien, droit" />
+   <meta name="description" content="l'asa a pour but la promotion de la santé publique vétérinaire" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Pragma" content="no-cache" />
+   <link href="styles/style-asa.css" rel="stylesheet" type="text/css" />
+   <link href="styles/style-clarisse.css" rel="stylesheet" type="text/css" />
+   <link href="styles/style-claude.css" rel="stylesheet" type="text/css" />
+   <link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="header" align="center">
+    <a href="../index.shtml">
+      <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119" />
+    </a>
+    <br />
+    <p class="hautpage">
+      Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus
+    </p>
+  </div>
+  <div id="corps">
+    <div class="encadreq">
+    <p class="titrepage">Questionnaire sur AsaContact</p>
+    <p class="hautpage">
+      L'ASA vous propose de remplir ce questionnaire qui ne vous prendra que quelques minutes mais nous permettra 
+      de mieux connaître vos besoins et de faire évoluer AsaContact.
+    </p>
+    </div>
+    <br /><br />
+    <div id="contenu1" class="textebanalgrand">
+      <form action="mw2RaemaQSMFAC" method="post">
+        <p class="grandhautpagedecaleq">Consultez-vous la lettre d'information semestrielle AsaContact :</p>
+        <p class="choixpossiblesq">
+          <input name="Q01" value="Q01R01BR" type="radio" id="Q1R1" /> Oui          
+          <input name="Q01" value="Q01R02BR" type="radio" id="Q1R2" /> Non 
+        </p>
+        <p class="grandhautpagedecaleq" id="CacheQ1R1Q">La consultez-vous : </p>
+        <p class="choixpossiblesq" id="CacheQ1R1R">
+          <input name="Q02" value="Q02R01BR" type="radio" id="Q2R1" /> A chaque nouvelle édition<br />
+          <input name="Q02" value="Q02R02BR" type="radio" id="Q2R2" /> Sans fréquence particulière<br />
+          <input name="Q02" value="Q02R03BR" type="radio" id="Q2R1" /> Assez régulièrement<br />
+          <input name="Q02" value="Q02R04BR" type="radio" id="Q2R2" /> Quand j’ai le temps<br />
+        </p>
+        <p class="grandhautpagedecaleq" id="CacheQ1R2Q">Pourquoi ? </p>
+        <p class="choixpossiblesq" id="CacheQ1R2R">
+          <input name="Q03" value="Q03R01BR" type="radio" id="Q3R1" /> Manque de temps<br />
+          <input name="Q03" value="Q03R02BR" type="radio" id="Q3R2" /> Les sujets traités ne m'intéressent pas<br />
+          <input name="Q03" value="Q03R03BR" type="radio" id="Q3R1" /> Je ne suis pas parvenu à le télécharger<br />
+          <input name="Q03" value="Q03R04BR" type="radio" id="Q3R2" /> Je ne connaissais pas son existence<br />
+        </p>
+        <br />
+        <br />
+        <p class="grandhautpagedecaleq">Est-il suffisamment mis en valeur sur le site de l’ASA ?</p>
+        <p class="choixpossiblesq">
+          <input name="Q04" value="Q04R01BR" type="radio" id="Q4R1" /> Oui          
+          <input name="Q04" value="Q04R02BR" type="radio" id="Q4R2" /> Non
+        </p>
+        <br />
+        <p class="commentairesq" id="CacheQ4R2R">
+          Comment pensez-vous le rendre plus « visible » ?
+          <textarea cols="80" rows="4" name="Q04t"></textarea>
+        </p>
+        <br />
+         <p class="grandhautpagedecaleq">Les articles vous semblent-ils intéressants ?</p>
+        <p class="choixpossiblesq">
+          <input name="Q05" value="Q05R01BR" type="radio" id="Q5R1" /> Oui          
+          <input name="Q05" value="Q05R02BR" type="radio" id="Q5R2" /> Non
+        </p>
+        <br />
+        <p class="grandhautpagedecaleq" id="CacheQ5R1Q">Quels articles vous semblent les plus intéressants ?</p>
+        <p class="choixpossiblesq" id="CacheQ5R1R">
+          <input name="Q06" value="Q06R01BR" type="radio" id="Q6R1" /> Les articles de fond<br />
+          <input name="Q06" value="Q06R02BR" type="radio" id="Q6R2" /> Les comptes-rendus de participation à des manifestations scientifiques<br />
+          <input name="Q06" value="Q06R03BR" type="radio" id="Q6R3" /> Les analyses de la réglementation en hygiène des aliments et de la Santé Publique Vétérinaire<br />
+          <input name="Q06" value="Q06R04BR" type="radio" id="Q6R4" /> Les brèves d’articles scientifiques à vocation pluridisciplinaire<br />
+          <input name="Q06" value="Q06R05BR" type="radio" id="Q6R5" /> L’éditorial<br />
+          <input name="Q06" value="Q06R06BR" type="radio" id="Q6R6" /> La vie de l’association<br />
+        </p>
+        <br />
+        <p class="grandhautpagedecaleq">Pouvez-vous citer au moins deux articles qui ont attiré votre intérêt ces deux dernières années? En quoi vous ont-ils été utiles ?</p>
+        <p class="commentairesq">
+          <textarea cols="80" rows="4" name="Q07t"></textarea>
+        </p>
+        <br />
+        <p class="grandhautpagedecaleq">Y a-t-il des rubriques (absentes jusqu’à ce jour) que vous souhaitez voir intégrées ?</p>
+        <p class="choixpossiblesq">
+          <input name="Q08" value="Q08R01BR" type="radio" id="Q8R1" /> Oui          
+          <input name="Q08" value="Q08R02BR" type="radio" id="Q8R2" /> Non
+        </p>
+        <br />
+        <p class="commentairesq" id="CacheQ8R1R">
+          La ou lesquelles ? <br />
+          <textarea cols="80" rows="4" name="Q08t"></textarea>
+        </p>
+        <br />
+        <p class="grandhautpagedecaleq">Souhaitez-vous disposer d'un moteur de recherche pour trouver les articles d'AsaContact ?</p>
+        <p class="choixpossiblesq">
+          <input name="Q09" value="Q09R01BR" type="radio" id="Q9R1" /> Oui          
+          <input name="Q09" value="Q09R02BR" type="radio" id="Q9R2" /> Non
+        </p>
+         <br />
+        <div class="pieddivq">
+					<div class="colonneq"></div>
+					<div class="colonneq "></div>
+					<div class="colonneq"><input type="image" src="images/validerq.jpeg" width="80%" /></div>
+				</div>
+        <br />
+      </form>
+    </div>
+  </div>
+
+  <div id="pied">
+    Site officiel de l'association Animal - Société - Aliment (ASA) <br /> Adresse : Bâtiment Zundel - Ecole Nationale Vétérinaire d'Alfort -
+    7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex &nbsp;&nbsp;&nbsp;FRANCE<br />
+    Téléphone : <b>+ 33 (0)1 56 29 36 30</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax : <b>+ 33 (0)9 61 24 33 81</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br />
+    <em>Pour signaler un problème, cliquez sur le lien suivant 
+    <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+    <br /><br />
+  </div>
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/asacontact.js"></script>
+
+
+</body>

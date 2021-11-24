@@ -1,0 +1,810 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1200,
+	"height": 720,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"MCEBouton1": {
+					"type": "button",
+					"top": 665,
+					"left": 747,
+					"width": 159,
+					"height": 24,
+					"dataSource": "BouStockeFleche",
+					"text": "Enregistrer la flèche",
+					"class": "Boutons",
+					"focusable": false,
+					"method": "ObjectMethods/MCEBouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MonBouton2": {
+					"type": "button",
+					"top": 692,
+					"left": 747,
+					"width": 159,
+					"height": 24,
+					"dataSource": "BouPlaceF",
+					"shortcutKey": "[right arrow]",
+					"text": "Voir les explications",
+					"class": "Boutons",
+					"focusable": false,
+					"method": "ObjectMethods/MonBouton2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Popup Liste déroulante": {
+					"type": "dropdown",
+					"top": 674,
+					"left": 541,
+					"width": 57,
+					"height": 22,
+					"dataSource": "PUMTC",
+					"dataSourceTypeHint": "arrayNumber",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/Popup Liste déroulante.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Case à cocher2": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 383,
+					"width": 153,
+					"height": 19,
+					"dataSource": "CaseSaisie",
+					"text": "Champ Saisissable",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/Case à cocher2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 665,
+					"left": 602,
+					"width": 112,
+					"height": 39,
+					"dataSource": "Bouton",
+					"text": "Changer la taille",
+					"class": "Boutons",
+					"method": "ObjectMethods/Bouton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton4": {
+					"type": "button",
+					"top": 671,
+					"left": 1086,
+					"width": 95,
+					"height": 37,
+					"dataSource": "BouQuit",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Quitter",
+					"class": "Titre",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouVideTb": {
+					"type": "button",
+					"top": 692,
+					"left": 918,
+					"width": 161,
+					"height": 24,
+					"dataSource": "BouVideTb",
+					"text": "Supprimer les explications",
+					"class": "Boutons",
+					"method": "ObjectMethods/BouVideTb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton10": {
+					"type": "button",
+					"top": 665,
+					"left": 918,
+					"width": 161,
+					"height": 24,
+					"dataSource": "BouSansCom",
+					"text": "Photo sans commentaire",
+					"class": "Boutons",
+					"method": "ObjectMethods/Bouton10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton13": {
+					"type": "button",
+					"top": 679,
+					"left": 70,
+					"width": 90,
+					"height": 21,
+					"dataSource": "Bouton7",
+					"shortcutKey": "[left arrow]",
+					"text": "Majuscule",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MCEVariable5": {
+					"type": "pictureButton",
+					"top": 667,
+					"left": 317,
+					"width": 35,
+					"height": 38,
+					"dataSource": "VarImageFleche",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sens Fleche"
+					},
+					"columnCount": 4,
+					"picture": "/RESOURCES/Images/Fleches.png",
+					"switchContinuously": true,
+					"loopBackToFirstFrame": true,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/MCEVariable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Case à cocher": {
+					"type": "checkbox",
+					"top": 679,
+					"left": 180,
+					"width": 128,
+					"height": 19,
+					"dataSource": "CasePlacerFleche",
+					"text": "Placer la flèche",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/Case à cocher.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"MCEBouton1",
+				"MonBouton2",
+				"Popup Liste déroulante",
+				"Case à cocher2",
+				"Bouton",
+				"Bouton4",
+				"BouVideTb",
+				"Bouton10",
+				"Bouton13",
+				"Case à cocher"
+			]
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 42,
+					"left": 75,
+					"width": 800,
+					"height": 528,
+					"dataSource": "VarImage",
+					"dataSourceTypeHint": "picture",
+					"class": "default",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton invisible": {
+					"type": "button",
+					"top": 42,
+					"left": 75,
+					"width": 800,
+					"height": 528,
+					"dataSource": "BouPlaceFleche",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 42,
+					"left": 889,
+					"width": 191,
+					"height": 14,
+					"class": "Boutons",
+					"textAlign": "left",
+					"text": "Commentaires de la diapositive"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 59,
+					"left": 889,
+					"width": 303,
+					"height": 466,
+					"dataSource": "VarComDia",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Diagnose image1": {
+					"type": "pictureButton",
+					"top": 925,
+					"left": 1401,
+					"width": 35,
+					"height": 39,
+					"dataSource": "VarImageFlecheD",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre"
+					},
+					"columnCount": 4,
+					"picture": "var:",
+					"loopBackToFirstFrame": true,
+					"borderStyle": "raised",
+					"method": "ObjectMethods/Diagnose image1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cgmBouton8": {
+					"type": "button",
+					"top": 437,
+					"left": 895,
+					"width": 297,
+					"height": 26,
+					"dataSource": "BouVideTb",
+					"text": "Enregistrer les changements de commentaire",
+					"class": "Boutons",
+					"focusable": false,
+					"method": "ObjectMethods/cgmBouton8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 7,
+					"left": 211,
+					"width": 912,
+					"height": 29,
+					"dataSource": "VarAfficheTriplette",
+					"class": "Titre",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 584,
+					"left": 75,
+					"width": 995,
+					"height": 14,
+					"class": "Boutons",
+					"textAlign": "left",
+					"text": "Description type de la lésion"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 603,
+					"left": 75,
+					"width": 1116,
+					"height": 61,
+					"dataSource": "VarDesType",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 575,
+					"left": 532,
+					"width": 659,
+					"height": 82,
+					"resizingMode": "legacy",
+					"dataSource": "List Box",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbTb",
+							"dataSource": "TbTb",
+							"width": 644,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"dataSource": "Entête2"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"C11": {
+					"type": "input",
+					"top": 968,
+					"left": 233,
+					"width": 119,
+					"height": 57,
+					"dataSource": "VarC11",
+					"class": "Petite_écriture",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C11.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C21": {
+					"type": "input",
+					"top": 917,
+					"left": 374,
+					"width": 119,
+					"height": 57,
+					"dataSource": "VarC21",
+					"class": "Petite_écriture",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C21.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C31": {
+					"type": "input",
+					"top": 965,
+					"left": 528,
+					"width": 120,
+					"height": 57,
+					"dataSource": "VarC31",
+					"class": "Petite_écriture",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C31.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C41": {
+					"type": "input",
+					"top": 1007,
+					"left": 678,
+					"width": 120,
+					"height": 57,
+					"dataSource": "VarC41",
+					"class": "Petite_écriture",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C41.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"41": {
+					"type": "picture",
+					"top": 974,
+					"left": 721,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/41.png"
+				},
+				"31": {
+					"type": "picture",
+					"top": 975,
+					"left": 494,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/31.png"
+				},
+				"21": {
+					"type": "picture",
+					"top": 971,
+					"left": 416,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/21.png"
+				},
+				"11": {
+					"type": "picture",
+					"top": 978,
+					"left": 351,
+					"width": 33,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/11.png"
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"cgmBouton8",
+				"List Box",
+				"C11",
+				"C21",
+				"C31",
+				"C41"
+			]
+		},
+		{
+			"objects": {
+				"Variable2": {
+					"type": "input",
+					"top": 34,
+					"left": 90,
+					"width": 400,
+					"height": 600,
+					"dataSource": "VarImageV",
+					"dataSourceTypeHint": "picture",
+					"class": "default",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton invisible1": {
+					"type": "button",
+					"top": 34,
+					"left": 90,
+					"width": 400,
+					"height": 600,
+					"dataSource": "BouPlaceFlecheV",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 88,
+					"left": 604,
+					"width": 219,
+					"height": 14,
+					"class": "Boutons",
+					"textAlign": "left",
+					"text": "Commentaires de la diapositive"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 104,
+					"left": 605,
+					"width": 541,
+					"height": 346,
+					"dataSource": "VarComDia",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"C11V": {
+					"type": "input",
+					"top": 949,
+					"left": 272,
+					"width": 85,
+					"height": 46,
+					"dataSource": "VarC11V",
+					"class": "Petite_écriture",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C11V.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C21V": {
+					"type": "input",
+					"top": 902,
+					"left": 394,
+					"width": 85,
+					"height": 46,
+					"dataSource": "VarC21V",
+					"class": "Petite_écriture",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C21V.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C31V": {
+					"type": "input",
+					"top": 945,
+					"left": 533,
+					"width": 85,
+					"height": 46,
+					"dataSource": "VarC31V",
+					"class": "Petite_écriture",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C31V.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C41V": {
+					"type": "input",
+					"top": 983,
+					"left": 702,
+					"width": 85,
+					"height": 46,
+					"dataSource": "VarC41V",
+					"class": "Petite_écriture",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C41V.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"B11V": {
+					"type": "button",
+					"top": 954,
+					"left": 389,
+					"width": 30,
+					"height": 35,
+					"dataSource": "Variable2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre1"
+					},
+					"display": false,
+					"method": "ObjectMethods/B11V.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"B21V": {
+					"type": "button",
+					"top": 980,
+					"left": 423,
+					"width": 30,
+					"height": 32,
+					"dataSource": "Variable2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre12"
+					},
+					"display": false,
+					"method": "ObjectMethods/B21V.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"B31V": {
+					"type": "button",
+					"top": 953,
+					"left": 472,
+					"width": 30,
+					"height": 32,
+					"dataSource": "Variable2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre123"
+					},
+					"display": false,
+					"method": "ObjectMethods/B31V.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"B41V": {
+					"type": "button",
+					"top": 920,
+					"left": 728,
+					"width": 30,
+					"height": 32,
+					"dataSource": "Variable2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre1234"
+					},
+					"display": false,
+					"method": "ObjectMethods/B41V.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"41V": {
+					"type": "picture",
+					"top": 950,
+					"left": 726,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/41V.png"
+				},
+				"31V": {
+					"type": "picture",
+					"top": 951,
+					"left": 499,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/31V.png"
+				},
+				"21V": {
+					"type": "picture",
+					"top": 947,
+					"left": 421,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/21V.png"
+				},
+				"11V": {
+					"type": "picture",
+					"top": 954,
+					"left": 356,
+					"width": 33,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/11V.png"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 20,
+					"left": 602,
+					"width": 560,
+					"height": 29,
+					"dataSource": "VarAfficheTriplette",
+					"class": "Titre",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 482,
+					"left": 604,
+					"width": 995,
+					"height": 14,
+					"class": "Boutons",
+					"textAlign": "left",
+					"text": "Description type de la lésion"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 501,
+					"left": 605,
+					"width": 541,
+					"height": 181,
+					"dataSource": "VarDesType",
+					"class": "Champ_normal",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable2",
+				"C11V",
+				"C21V",
+				"C31V",
+				"C41V"
+			]
+		}
+	]
+}

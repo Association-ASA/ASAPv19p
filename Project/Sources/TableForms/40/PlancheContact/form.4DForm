@@ -1,0 +1,105 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectangle1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 106,
+	"markerBreak": 106,
+	"markerFooter": 106,
+	"events": [
+		"onPrintingDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 0,
+					"width": 98,
+					"height": 102,
+					"fill": "automatic"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 26,
+					"left": 4,
+					"width": 90,
+					"height": 60,
+					"dataSource": "VarImageDia",
+					"dataSourceTypeHint": "picture",
+					"class": "default",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 4,
+					"left": 1,
+					"width": 94,
+					"height": 18,
+					"dataSource": "VarT",
+					"textAlign": "center",
+					"fontFamily": "Times",
+					"fontSize": 6,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 93,
+					"left": 4,
+					"width": 90,
+					"height": 9,
+					"dataSource": "VarNR",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

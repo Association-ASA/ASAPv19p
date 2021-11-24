@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Pourquoi adhérer à l' ASA ?</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanal">
+				 <br />
+					<p class="titrepage"> Association au service des hommes, des animaux et de leur santé </p>
+				
+				
+				L’ASA, association sans but lucratif, a pour vocation essentielle de se consacrer à l’examen de tous les rapports de la Santé Publique
+				avec les Animaux, leur environnement et leurs produits. Elle est au service des personnes, des sociétés et des associations qui attendent
+				une réponse impartiale d’expert à leurs questions.  
+				
+				<br /><br />
+				Selon vos centres d’intérêts vous êtes :<br />
+				<br />
+						
+				<p class="cgtitredecale">Responsables de laboratoires</p>
+				<p class="cgimagetexted"><img src="images/laboratoire.PNG"
+					alt="Responsables de laboratoires"
+					width="150"
+					height="150"
+					/>
+				</p>
+				<p class="cgtexteimaged">
+					<br />
+				Vous pouvez évaluer la performance de votre laboratoire via la participation
+				au Réseau d’Analyses et d’Echanges en Microbiologie des Aliments (RAEMA). 
+				L’ASA est accréditée en tant qu’organisateur de comparaison inter-laboratoires
+				par le COFRAC depuis 2007 (Accréditation N°1-1836), selon le référentiel ISO 17043.
+				Deux campagnes RAEMA poudre et deux campagnes RAEMA gel
+				permettent d’évaluer votre performance individuelle basée sur la justesse et la fidélité.
+				<a href="w2raemaabonnement.shtml">En savoir plus </a><br /><br /><br /><br />
+				</p>
+
+
+
+				<p class="cgtitredecale">Enseignants, Etudiants</p>
+				<p class="cgimagetexted"><img src="images/formations.PNG"
+					alt="Enseignants, Etudiants"
+					width="150"
+					height="150"
+					/>
+				</p>
+				<p class="cgtexteimaged">
+					<br />
+				L’Asa vous apporte les outils de formation et d’apprentissage en matière d’anatomie pathologique vétérinaire grâce à AsaDia. Cet atlas
+				de référence des lésions d’abattoir soit 1600 photographies analysées et commentées par les experts et spécialistes français et étrangers
+				de formation vétérinaire, concerne les espèces bovine, ovine, caprine, équine et  porcine.
+				AsaDia vous apportera tous les éléments nécessaires pour mieux vous informer sur les pathologies que vous serez à même de rencontrer.
+				<a href="w2asadia.shtml">En savoir plus </a><br /><br /><br /><br />
+				</p>
+
+
+
+				<p class="cgtitredecale">Responsables d’abattoirs</p>
+				<p class="cgimagetexted"><img src="images/Abattoir.png"
+					alt="Responsables d’abattoirs"
+					width="150"
+					height="150"
+					/>
+				</p>
+				<p class="cgtexteimaged">
+					<br />
+				<u><b>Expertise</u> : </b> L'ASA peut mobiliser à la demande des responsables d'abattoir un réseau d'experts capables
+				de réaliser des audits et de proposer des solutions pour la maîtrise des risques sanitaires lors des opérations d’abattage.<br />
+				<u><b>AsaDia</u> : </b> l'atlas des lésions d'abattoir constitue un outil de diagnostic de terrain vous permettant de mieux
+				connaître la qualité de vos produits et partant de mieux gérer vos échanges commerciaux (meilleure appréhension de la qualité
+				sanitaire, rigueur dans la gestion des saisies et des recours juridiques) 
+				<a href="w2asadia.shtml">En savoir plus </a><br /><br /><br /><br />
+				</p>
+
+				
+				
+				<p class="cgtitredecale">Industries agroalimentaires et dérivés</p>
+				<p class="cgimagetexted"><img src="images/industrie.PNG"
+					alt="Industries agroalimentaires et dérivés"
+					width="150"
+					height="150"
+					/>
+				</p>
+				<p class="cgtexteimaged">
+					<br />
+				Les professionnels et les usagers peuvent consulter l’ASA pour des conseils techniques ou juridiques, dispensés par une équipe pluridisciplinaire,
+				dans une indépendance totale, et pour des formations de sensibilisation à des problèmes relevant de la santé publique vétérinaire, toujours en rapport
+				avec les animaux, leur environnement et leurs produits.<br />
+				Par ailleurs, l'ASA diffuse le logiciel ALISAMPLE qui permet d'évaluer l'efficacité de vos plans de contrôle par échantillonnage et vous aider
+				à concevoir les plans répondant à vos exigences.
+				<a href="w2alisample.shtml">En savoir plus </a><br /><br /><br /><br />
+				</p>
+				
+				
+				
+				<p class="cgtitredecale">Les acteurs de la santé publique vétérinaire</p>
+				<p class="cgimagetexted"><img src="images/AVF.png"
+					alt="Les acteurs de la santé publique vétérinaire"
+					width="150"
+					height="150"
+					/>
+				</p>
+				<p class="cgtexteimaged">
+					<br />
+				<i>La Santé Publique Vétérinaire est l’ensemble des actions qui ont un rapport direct ou indirect avec les animaux
+				et leurs produits dérivés ou avec leurs maladies, dès lors que ces actions ont pour effet ou pour objet de conserver,
+				protéger ou améliorer la santé humaine </i>(Académie Vétérinaire de France, 15 mai 1997).
+				<a href="http://www.academie-veterinaire-defrance.org/" target="_blank">
+					Site le l'Académie Vétérinaire de France
+				</a>
+				<br />
+				L'ASA qui a pour objectif la promotion de la santé publique vétérinaire, travaille,
+				en collaboration étroite avec les inspecteurs de salubrité publique du ministère de l’Agriculture et tous les acteurs
+				de la santé publique vétérinaire (vétérinaires praticiens, médecins, pharmaciens, biologistes, nutritionnistes et qualiticiens)
+				dans l’exercice de leur profession. 
+				<br /><br /><br /><br />
+				</p>
+				
+				
+				
+				<p class="cgtitredecale">Associations de protection animale</p>
+				<p class="cgimagetexted"><img src="images/protecporc.png"
+					alt="Associations de protection animale"
+					width="150"
+					height="150"
+					/>
+				</p>
+				<p class="cgtexteimaged">
+					<br />
+				Les différentes étapes de la production animale, de l’élevage à l’abattage peuvent être à l’origine de la douleur pour un animal de rente.
+				Or il est bien connu que cette souffrance, si d’un point de vue mercantile nuit à sa productivité, choque à juste titre, qu’elle soit volontaire
+				ou fortuite, notre sensibilité. 
+				Sa prise en considération et les moyens de la supprimer sont impératifs. 
+				L’ASA se tient à la disposition des protecteurs pour examiner les solutions techniques et juridiques à ces problèmes de bientraitance animale.
+				<a href="pdf/CIV2-VF.pdf">Publication ASA-CIV sur le bien-être et la protection des animaux, de l'élevage à l'abattoir</a>.<br /><br /><br /><br />
+				</p>
+				
+				
+				
+				<p class="cgtitredecale">Autres domaines scientifiques</p>
+				<p class="cgimagetexted"><img src="images/science01.gif"
+					alt="Autres domaines scientifiques"
+					width="150"
+					height="150"
+					/>
+				</p>
+				<p class="cgtexteimaged">
+					<br />
+				L’ASA est un forum très largement ouvert, un lieu de rencontres et d’échanges entre les personnes,
+				sociétés ou associations qui s’intéressent à la Santé Publique en rapport avec les animaux et la sécurité des aliments.
+				Elle organise des manifestations scientifiques et des journées d’études sur tous les sujets de santé publique en rapport avec les animaux.
+				<br /><br /><br /><br /><br /><br />
+			
+				</p>
+			
+										
+				<p class="cgtitredecale">Publications et ouvrages</p>
+				<p class="cgimagetexted"><img src="images/asacontact.PNG"
+					alt="Publications et ouvrages"
+					width="150"
+					height="75"
+					/>
+				</p>
+				
+				L’ASA publie une lettre d’information <b> « ASACONTACT » </b>chaque semestre où sont développés :
+				<p class="cgtexteimaged">
+				-	des articles de fond<br />
+				-	des comptes-rendus de participation à des manifestations scientifiques<br />
+				-	des analyses de la réglementation en hygiène des aliments et de la Santé Publique Vétérinaire<br />
+				-	des brèves d’articles scientifiques à vocation pluridisciplinaire.
+				<a href="w2pageasacontact.shtml">En savoir plus </a><br /><br /><br /><br />
+				</p>
+				
+				
+				<p class="cgtitredecale"></p>
+				<br />
+				<p class="cgimagetexted"><img src="images/livre.png"
+					width="150"
+					height="150"
+					/>
+				</p>
+				<p class="cgtexteimaged">
+					<br />
+				Vous pourrez en outre consulter la règlementation (Pierre TASSIN) 
+				<a href="w2ouvrage.shtml">En savoir plus </a><br />
+				<br />
+				et les thèses vétérinaires, 
+				<a href="w2ouvrage.shtml">En savoir plus </a><br />
+				<br />
+				et être informés de la parution d’ouvrages en relation avec la Santé Publique Vétérinaire (livre de Xavier DELOMEZ).
+				<a href="publications.shtml">En savoir plus </a><br /><br /><br /><br />
+				<br /><br /><br /><br />
+				</p>
+				
+				<p class="titrepage">
+					Votre adhésion à l'ASA vous permettra de vous inscrire dans son réseau d'experts et ses activités tout en bénéficiant
+					pour vous-même d'une accessibilité à une aide pertinente.
+					<a href="pdf/AdhesionASA.pdf"><u>Adhérer à l'ASA</u></a><br /><br /><br /><br />
+				</p>
+				
+							
+				
+
+		</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+
+		
+				
+		

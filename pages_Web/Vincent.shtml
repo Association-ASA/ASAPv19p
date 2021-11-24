@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html>
+
+	<head>
+		<title>Saisie d'une brève</title>
+		<!-- HeaderASA.shtml-->
+     <meta name="keywords" content="asa, sante, publique, veterinaire, association, hygiene, aliment, 
+      alimentaire, intercomparasion, cofrac, accreditation, abattoir, photographies, asadia, inspection, 
+      médecine, pharmacien, droit" />
+      <meta name="description" content="l'asa a pour but la promotion de la santé publique vétérinaire" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="Pragma" content="no-cache"/>
+      <link href="styles/reset.css" rel="stylesheet" type="text/css" />
+      <link href="styles/style-clarisse.css" rel="stylesheet" type="text/css" />
+      <link href="styles/style-claude.css" rel="stylesheet" type="text/css" />
+      <link href="styles/menucss.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="../nicEdit.js"></script>
+      <script type="text/javascript">
+        bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+      </script>      
+	</head>
+	
+	<body>
+		<div id="headervincent" align="center">
+			<!--#4Dinclude bandeau.shtml-->
+		</div>
+      <div id="corpsbreve">
+        <div class="textedecalebreve">
+          <br /><br /><br /><br />
+          <p class="grandtitrepagebreve">Saisie d'une brève</p>
+          <br /> <br />
+          <form action="mw2WebGereBreves" method="post">
+            <p class="annoncevincent">
+              Titre de la brève
+            </p>
+            <input name="areatb" id="areatb" type="text" class="textegrandbanal" size="100">
+               <br /> <br /><br /> <br />
+              <p class="annoncevincent">
+              Résumé de la brève
+            </p>
+            <textarea name="arearb" id="arearb" >
+            </textarea>
+            <br /> <br />
+            <p class="annoncevincent">
+              Texte complet de la brève
+            </p>
+            <textarea name="areatc" id="areatc" class="areavincent">
+            </textarea>
+               <br /> <br />
+            <p class="boutonpagebreve">
+              <input class="boutonpagebreve" type="submit" value="Enregistrer la brève" name="telecharge">
+            </p>
+          </form>
+          <br />
+      </div>
+     </div>
+		<div id="piedbreve">
+			<!-- pied.shtml-->
+      	Site officiel de l'association Animal - Société - Aliment (ASA) <br /> Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -
+        7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex    FRANCE<br />
+        Téléphone : <b>+ 33 (0)1 56 29 36 30</b>       Fax : <b>+ 33 (0)9 61 24 33 81</b>       
+        e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br />
+        <em>Pour signaler un problème, cliquez sur le lien suivant 
+        <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+        <br />
+		</div>
+ 
+
+	</body>
+	
+</html>

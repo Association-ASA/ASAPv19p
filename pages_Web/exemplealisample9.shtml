@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+		    <div id="contenu1" class="textebanalgrand">
+              <br />
+            <ul class="breadcrumb">
+								<li><a href="w2exemplealisample0.html">Exemple</a></li>
+								<li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+								<li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+								<li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+								<li><a href="w2exemplealisample4.html">Unités classées</a></li>
+								<li><a href="w2exemplealisample5.html">2 classes</a></li>
+								<li><a href="#"></a></li>								
+						</ul>
+          		<br />
+            <ul class="breadcrumb">
+                <li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+                <li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+                <li><a href="w2exemplealisample8.html">Plan simple</a></li>
+                <li><a href="w2exemplealisample9.html">A partir de NQA NQL</a></li>
+            </ul>
+               <br />
+            <p class="titrepage">EXEMPLE</p>
+              <br />
+            <p ALIGN="JUSTIFY">
+              Pour choisir le plan adapté à vos exigences, il faut tout d'abord définir 
+              l'objectif de votre contrôle. Si cet objectif est d'accepter les 
+              lots répondant au niveau de qualité que vous ma&icirc;trisez et 
+              de rejeter les lots ne vérifiant pas les exigences de votre client, il 
+              faut définir les niveaux de qualité acceptable (<I>NQA</I>) et 
+              limite (<I>NQL</I>) ainsi que les risques fournisseur et client consentis.
+            </p>
+           <p ALIGN="JUSTIFY">
+              Vous estimez que dans des conditions de production normales, le pourcentage d'unités 
+              non conformes est inférieur à 1% (<I>NQA</I>) et votre client 
+              vous précise que les lots livrés ne doivent pas contenir plus 
+              de 5% d'unités non conformes (<I>NQL</I>).
+            </p>
+            <p ALIGN="JUSTIFY">
+              <span class= "titrepage">
+                Cliquez sur le bouton "choisir un plan à partir du NQA et du NQL"
+                <br />
+              </span>
+            </p>
+            <br />
+           
+            <p ALIGN="JUSTIFY">
+              <img src="images/Image9.gif" WIDTH=900 HEIGHT=540 border="0" usemap="#Map" /> 
+              <map name="Map">
+                <area shape="rect" coords="50,240,620,290" href="w2exemplealisample10.html" />
+              </map>
+            </p>
+            <br />
+                      
+		    </div>	 
+    </div>
+    <div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+
+</html>
+
+

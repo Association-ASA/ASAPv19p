@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+
+		<div id="corps">
+
+			<div id="contenu1" class="textebanalgrand">
+
+
+
+<div id="contenu">
+ <br /><br />
+    <div id="textegauche" class="tbhautv hautpage ">
+        	Placée sous le Haut patronage de l&#8217;Académie Vétérinaire
+			de France <br />
+			et celui de l'Académie Nationale de Médecine, <br />
+			Conférence sur le rôle de l'inspection en abattoir <br />
+			dans la santé publique vétérinaire<br />
+			à l'amphithéâtre d'honneur de l'Ecole Nationale Vétérinaire
+			d'Alfort, <br />
+			le jeudi 24 novembre 2011 de 14h30 à 17h30
+	</div>
+	<div id="imagedroite">
+        <img src="IMAGES/vet2011acc.jpg" width="158" height="145" />
+    </div>
+    <br />
+    <p class="textecentre">Président de séance Monsieur Pierre ROYER,
+      Président de l'Académie Vétérinaire de France<br />
+      Modérateur Pr Vincent CARLIER </p>
+  <br /><br />
+	<p class="hautpage"> Programme</p>
+  <p class="textedecale30">
+  	- <a href="/pdf/avalrisquepp.pdf">Lévaluation du risque en matière d'inspection
+  	des animaux de boucherie et de charcuterie </a>(Madame Catherine MAGRAS, ONIRIS) ;<br />
+  	- <a href="/pdf/inspectionpp.pdf">L'évolution de l'inspection en abattoir
+  	au vu de l'amélioration de la santé du cheptel et des technologies 
+  	d&#8217;abattage </a>(Mme Pascale DUNOYER, DGAL) ; <br />
+  	- <a href="/pdf/cystipp.pdf">Données actuelles sur la cysticercose en France</a> (Claire MORLOT, ENSV) ;<br />
+  	- <a href="/pdf/AsaDia2pp.pdf">AsaDia 2</a>, l'atlas de lésions des animaux de boucherie et de charcuterie (Michel MAS, VetAgro Sup ENSV) ;<br />
+	- <a href="/pdf/vet2011pp.pdf">Exposé sur Vet 2011</a> (Monsieur Claude Grandmontagne, Vet 2011).</p><br />
+ <p class="textepetit textecentre">
+    	Cliquer sur les liens pour télécharger les présentations
+     	<br/><br/>
+    	Pour lire les fichiers au format PDF, téléchargez <b>Acrobat Reader </b>sur
+  		le <a href="http://www.adobe.fr/products/acrobat/main.html" target="_blank">site d'Adobe </a>
+  		<a href="http://www.adobe.fr/products/acrobat/main.html">
+      	<img src="images/acrobat.gif" width="59" height="21" align="absmiddle" border="0"> </img>
+  		</a>
+	</p>
+  </div>
+
+
+				<br/>
+			</div>
+		</div>
+
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+
+	</body>
+
+</html>

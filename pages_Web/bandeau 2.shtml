@@ -1,0 +1,15 @@
+
+  <img src="images/bandeau.jpg" alt="logo" width="1024" />
+  <br /><br />
+
+  <br />
+
+  <ul id="menubar">
+    <li><a href="http://asa-spv.asso.fr">Site de l'ASA</a></li>
+    <li id="WebEcritPageDiagnose">Rechercher une lésion</li>
+    <li id="WebAbouleListeMotif">Motifs de saisie</li>
+    <li id="WebAbouleListeLesionF">Liste des lésions</li>
+    <li id="WebAbouleListeDiapoF">Liste des photographies</a></li>
+    <li id="WebAbouleListePaniers">Paniers</a></li>
+    <li id="WebEcritTextes">Cours illustrés</a></li>
+  </ul>

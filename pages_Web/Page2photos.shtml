@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html>
+
+	<head>
+		<title>Page 2 photos</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="styles/style-asa.css" rel="stylesheet" type="text/css" />
+		<link href="styles/style-clarisse.css" rel="stylesheet" type="text/css" />
+		<link href="styles/style-claude.css" rel="stylesheet" type="text/css" />
+		<link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+		<link href="styles/asadiagibier.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/asadiagibier.js"></script>
+	</head>
+	
+	<body>
+		<div class="textecentre">
+			<img id="quittephotoengrand" src="images/bandeau.jpg" alt="logo" width="1024" />
+			<br />
+			Pour quitter cet écran, merci de cliquer sur le bandeau ci-dessus.
+			<br /><br />
+		</div>
+		<div id="corpsadg">
+			<p class="adtitrepage">Abcès non spécifiques sur carcasse de sanglier</p>
+			<div id="bloc1" class="blocphotogibier" width="500" taillemax="800px">
+				<img src="dossier test gibier/photo1.png" alt="photo 1" id="photo1" width="550"/>
+				<div id="commentaire1" width="600">
+					<p class="textebanal">
+						Photo n°80001 :  Abcès dans l'échine. <br />
+					</p>
+				</div>
+			</div>
+			<div id="bloc2" class="blocphotogibier" width="500" taillemax="800px">
+				<img src="dossier test gibier/photo2.png" alt="photo 2" id="photo1" width="550"/>
+				<div id="commentaire2" width="600">
+					<p class="textebanal">
+						Photo n°80002 :  Abcès dans l'échine. <br />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="blocinfo">
+			<p class="textebanalgrand">
+				<span class="adtitre0e">Motif de la saisie :</span> Abcès non spécifiques à localisation unique
+			</p>
+			<p class="adtitre0e">
+				Fiche réflexe <img id="gibiercomfr" src="images/trianglebas.jpeg" alt="voir plus" width="10px">
+			</p>
+			<p class="textedecalegibier" id="tgibiercomfr">
+				TexteFR
+			</p>
+			
+			<p class="adtitre0e">
+				Ne pas confondre <img id="gibiercomnpc" src="images/trianglebas.jpeg" alt="voir plus" width="10px">
+			</p>
+			<p class="textedecalegibier" id="tgibiercomnpc">
+				TexteNPC
+			</p>
+			
+			<p class="adtitre0e">
+				Description type de la lésion <img id="gibiercomdl" src="images/trianglebas.jpeg" alt="voir plus" width="10px">
+			</p>
+			<p class="textedecalegibier" id="tgibiercomdl">
+				TexteDTL
+			</p>
+			
+			<p class="adtitre0e">
+				Réglementation <img id="gibiercomre" src="images/trianglebas.jpeg" alt="voir plus" width="10px">
+			</p>
+			<p class="textedecalegibier" id="tgibiercomre">
+				TexteREG
+			</p>
+			
+		</div>
+    </body>
+</html>

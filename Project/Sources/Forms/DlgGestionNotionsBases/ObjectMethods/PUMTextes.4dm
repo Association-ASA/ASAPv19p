@@ -1,0 +1,2 @@
+VarNomGeneral:=PUMTextes{PUMTextes}
+DiaWebTextesAfficheGestion 

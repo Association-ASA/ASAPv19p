@@ -1,0 +1,506 @@
+﻿{
+	"destination": "detailScreen",
+	"formSizeAnchor": "cgmbValidate",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Image1": {
+					"type": "picture",
+					"top": -2,
+					"left": 0,
+					"width": 997,
+					"height": 697,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Fond Blanc.png"
+				},
+				"Image2": {
+					"type": "picture",
+					"top": 500,
+					"left": 642,
+					"width": 197,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/BoutonsFichePE.png"
+				},
+				"cgmbCancel": {
+					"type": "button",
+					"top": 503,
+					"left": 642,
+					"width": 28,
+					"height": 28,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Annuler"
+					},
+					"action": "cancel",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"cgmbValidate": {
+					"type": "button",
+					"top": 503,
+					"left": 808,
+					"width": 31,
+					"height": 28,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 503,
+					"left": 706,
+					"width": 35,
+					"height": 28,
+					"dataSource": "bPrevious",
+					"action": "previousRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 503,
+					"left": 742,
+					"width": 29,
+					"height": 28,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg suivant"
+					},
+					"action": "nextRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 503,
+					"left": 773,
+					"width": 34,
+					"height": 28,
+					"dataSource": "bLast",
+					"action": "lastRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 503,
+					"left": 677,
+					"width": 27,
+					"height": 28,
+					"dataSource": "bFirst",
+					"action": "firstRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"GibierCom": {
+					"type": "input",
+					"top": 378,
+					"left": 149,
+					"width": 663,
+					"height": 97,
+					"dataSource": "[DiaMotifSaisieDGAL:42]InformationChasseurs:15",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"GibierPrécisions": {
+					"type": "input",
+					"top": 250,
+					"left": 149,
+					"width": 663,
+					"height": 97,
+					"dataSource": "[DiaMotifSaisieDGAL:42]PrecisionsGibier:14",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BoucheriePrécisions": {
+					"type": "input",
+					"top": 250,
+					"left": 149,
+					"width": 663,
+					"height": 97,
+					"dataSource": "[DiaMotifSaisieDGAL:42]PrecisionsEleveur:7",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BoucherieComm": {
+					"type": "input",
+					"top": 378,
+					"left": 150,
+					"width": 663,
+					"height": 97,
+					"dataSource": "[DiaMotifSaisieDGAL:42]InformationEleveurs:11",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 11,
+					"left": 49,
+					"width": 96,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Motif du Retrait "
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 71,
+					"left": 58,
+					"width": 85,
+					"height": 127,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Reférence réglementaire européenne"
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 216,
+					"left": 71,
+					"width": 249,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "left",
+					"text": "Classement Sous Produits Animaux : "
+				},
+				"TextePrecision": {
+					"type": "text",
+					"top": 248,
+					"left": 28,
+					"width": 116,
+					"height": 71,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Précisions "
+				},
+				"LibelleMotifRetrait": {
+					"type": "input",
+					"top": 10,
+					"left": 149,
+					"width": 680,
+					"height": 17,
+					"dataSource": "[DiaMotifSaisieDGAL:42]LibelleMotifSaisieDGAL:1",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RefRegEuropeenne": {
+					"type": "input",
+					"top": 73,
+					"left": 149,
+					"width": 663,
+					"height": 129,
+					"dataSource": "[DiaMotifSaisieDGAL:42]RefRegEuropeenne:5",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ClassementNonConsoHumaine": {
+					"type": "input",
+					"top": 216,
+					"left": 298,
+					"width": 180,
+					"height": 17,
+					"dataSource": "[DiaMotifSaisieDGAL:42]ClassementNonConsoHumaine:6",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ": {
+					"type": "input",
+					"top": 512,
+					"left": 23,
+					"width": 38,
+					"height": 16,
+					"dataSource": "[DiaMotifSaisieDGAL:42]Ordre:10",
+					"dataSourceTypeHint": "integer",
+					"class": "default",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"TexteCom": {
+					"type": "text",
+					"top": 376,
+					"left": 43,
+					"width": 101,
+					"height": 71,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Communication aux éleveurs : "
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 29,
+					"left": 23,
+					"width": 122,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "Lésions concernées"
+				},
+				"LibelleMotifRetrait1": {
+					"type": "input",
+					"top": 31,
+					"left": 149,
+					"width": 680,
+					"height": 33,
+					"dataSource": "[DiaMotifSaisieDGAL:42]LesionsLiees:12",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Popup Liste déroulante1": {
+					"type": "dropdown",
+					"top": 601,
+					"left": 16,
+					"width": 129,
+					"height": 18,
+					"dataSource": "PUMLésions",
+					"focusable": false,
+					"choiceList": [
+						"f",
+						"p",
+						"q",
+						"u"
+					],
+					"class": "Champ_grand",
+					"method": "ObjectMethods/Popup Liste déroulante1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 189,
+					"left": 11,
+					"width": 139,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"text": "ReférenceUE Courte"
+				},
+				"RefRegEUECourte": {
+					"type": "input",
+					"top": 191,
+					"left": 156,
+					"width": 663,
+					"height": 17,
+					"dataSource": "[DiaMotifSaisieDGAL:42]IntituleRegCECourt:2",
+					"stroke": "#000000",
+					"class": "Champ_grand",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CaCGibier": {
+					"type": "checkbox",
+					"top": 301,
+					"left": 29,
+					"width": 88,
+					"height": 32,
+					"dataSource": "CaCGibier",
+					"text": "Gibier",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/CaCGibier.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

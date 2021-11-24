@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Espace adhérent </title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 <!--4dinclude menuAsaQuiSommeNous.shtml-->
+				<br /><br />
+				
+		 
+				<table width="75%">
+					<tr>
+						<td width="23%"><img src="images/login.png" width="90px"  />
+						</td>
+						<td width="77%" class="grandhautpage tbhautv">
+							Espace adhérent : <br /><span class="grandhautpagedecale">L'accès à cette partie nécessite un mot de passe</span>
+						</td>
+					</tr>
+				</table>
+				
+					<br /><br />
+				<form name="form1" method="POST" action="VerifAdherent" class="textedecale">
+					<table width="80%" class="textecentre">
+					 
+						<tr> 
+							<td width="30%" class="colonneadroite">Entrez votre n° d'adhérent
+							</td>
+							<br />
+							<td width="70%">
+								<input type="text" name="NumAdh" size="10" />
+								<br />
+								<span class="petittextevert">
+									Si vous n'avez pas de n° d'adhérent, demandez-le à l'association
+								</span>
+								<br /> 
+							</td>
+						</tr>
+						
+						<tr> 
+							<td width="35%" class="colonneadroite">  Entrez votre mot de passe
+							</td>
+							<td width="35%">
+								<input type="text" name="MdP" size="40" />
+								<br />
+								<span class="petittextevert">
+									Si vous n'avez pas de mot de passe ou si vous voulez en changer, laissez cette case vide
+								</span>
+							</td>
+						</tr>
+						
+						<tr> 
+							<td width="35%" class="colonneadroite">  <br />
+							</td>
+							<td width="35%">
+							 <br /><input type="submit" name="Submit" value="Envoyer" class="boutonbleu"></input>
+							</td>
+						</tr>
+						
+					</table>
+			
+				</form>
+        <br /><br />
+        <p class="titrepage">Pas encore adhérent ? <br />Pour nous rejoindre télécharger le 
+                <a href="pdf/adhesionasa.pdf">
+                  formulaire d'adhésion
+                </a>
+               
+        </p>
+			
+       <br />
+      </div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+
+	
+	
+	
+	
+	
+

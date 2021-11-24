@@ -1,0 +1,1 @@
+﻿## COMMANDS_set_restriction($1;$2;$3)---

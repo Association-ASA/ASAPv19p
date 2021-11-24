@@ -1,0 +1,1 @@
+﻿## $0:=TOOLS_collectionToText($1)---

@@ -1,0 +1,329 @@
+﻿{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1000,
+	"height": 800,
+	"markerHeader": 85,
+	"markerBody": 109,
+	"markerBreak": 111,
+	"markerFooter": 141,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Image3": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 1139,
+					"height": 248,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Fond Blanc.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle20": {
+					"type": "rectangle",
+					"top": 62,
+					"left": 9,
+					"width": 972,
+					"height": 49,
+					"sizingX": "grow",
+					"fill": "transparent"
+				},
+				"S1_Texte": {
+					"type": "text",
+					"top": 67,
+					"left": 16,
+					"width": 319,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Etiquette_petite",
+					"text": "Libellé du motif de saisie "
+				},
+				"Ligne18": {
+					"type": "line",
+					"top": 64,
+					"left": 553,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"S4_Texte1": {
+					"type": "text",
+					"top": 68,
+					"left": 558,
+					"width": 306,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Etiquette_petite",
+					"text": "Règlement (CE) n° 854/2004 du 29 avril 2004 Annexe I "
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 25,
+					"left": 194,
+					"width": 809,
+					"height": 24,
+					"stroke": "#555555",
+					"class": "Petite_écriture",
+					"text": "BENARD Geneviève (ENVT - Professeur), BRUGERE Hubert (ENVT - Professeur), CAPPELIER Jean-Michel (ENVN - Maître de conférence), \rCARLIER Vincent (ENVA - Professeur), DEMONT Pierre (ENVL - Professeur)"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 48,
+					"left": 194,
+					"width": 478,
+					"height": 13,
+					"stroke": "#555555",
+					"class": "Petite_écriture",
+					"text": "Michèle CHEVALIER, Claude GRANDMONTAGNE, Michel MAS,Pierre TASSIN"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 25,
+					"left": 62,
+					"width": 127,
+					"height": 14,
+					"stroke": "#555555",
+					"class": "Petit_bouton",
+					"textAlign": "right",
+					"text": "Document établi par :"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 47,
+					"left": 39,
+					"width": 157,
+					"height": 14,
+					"stroke": "#555555",
+					"class": "Petit_bouton",
+					"textAlign": "left",
+					"text": "avec la collaboration des ISPV :"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 5,
+					"left": 0,
+					"width": 796,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Liste des motifs de saisie lors de l’inspection post mortem des ongulés domestiques (liste A)"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 107,
+					"left": 10,
+					"width": 968,
+					"strokeDashArray": "1 1"
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 113,
+					"left": 10,
+					"width": 232,
+					"height": 25,
+					"dataSource": "BouLanceMotif",
+					"shortcutKey": "q",
+					"text": "Ouvrir le fichier des motifs de saisie",
+					"class": "Boutons",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Pop-up/Liste déroulante1": {
+					"type": "dropdown",
+					"top": 113,
+					"left": 537,
+					"width": 227,
+					"height": 25,
+					"dataSource": "PUMTypeMotif",
+					"class": "Boutons",
+					"method": "ObjectMethods/Pop-up%2FListe déroulante1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"S5_Champ1": {
+					"type": "input",
+					"top": 90,
+					"left": 16,
+					"width": 534,
+					"height": 16,
+					"dataSource": "[DiaMotifSaisieDGAL:42]LibelleMotifSaisieDGAL:1",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 62,
+					"left": 864,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"S4_Texte2": {
+					"type": "text",
+					"top": 69,
+					"left": 869,
+					"width": 103,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Etiquette_petite",
+					"textAlign": "left",
+					"text": "Catégorie SPA"
+				},
+				"S5_Champ2": {
+					"type": "input",
+					"top": 90,
+					"left": 869,
+					"width": 108,
+					"height": 16,
+					"dataSource": "[DiaMotifSaisieDGAL:42]ClassementNonConsoHumaine:6",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 113,
+					"left": 241,
+					"width": 292,
+					"height": 25,
+					"dataSource": "BouLanceMotif",
+					"shortcutKey": "q",
+					"text": "Ouvrir le fichier de la table des correspondances",
+					"class": "Boutons",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 41,
+					"left": 590,
+					"width": 314,
+					"height": 18,
+					"dataSource": "Bouton1",
+					"text": "Accéder au Règlement (CE) n° 854/2004",
+					"class": "Boutons",
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"S5_Champ3": {
+					"type": "input",
+					"top": 90,
+					"left": 558,
+					"width": 306,
+					"height": 16,
+					"dataSource": "[DiaMotifSaisieDGAL:42]IntituleRegCECourt:2",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Bouton3": {
+					"type": "button",
+					"top": 113,
+					"left": 813,
+					"width": 166,
+					"height": 25,
+					"dataSource": "BouPrincipal",
+					"action": "cancel",
+					"text": "Retour à l'écran de départ",
+					"class": "Boutons",
+					"method": "ObjectMethods/Bouton3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 83,
+					"left": 10,
+					"width": 969
+				}
+			}
+		}
+	]
+}

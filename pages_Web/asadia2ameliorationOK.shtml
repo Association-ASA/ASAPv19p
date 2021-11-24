@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Identification réussie</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 	
+						<br/><br/><br/>
+				<p class="titrepage">
+          ASADia : identification réussie
+        </p>
+				<p class="textecentre">
+					<a href="asadia.shtml">
+					Retour à l'écran des généralités
+					</a> 
+				</p>
+				<br/><br/>
+				<p class="hautpage">
+					Bonjour.<br/>
+					Vous êtes <!--#4DVAR [UtilisateursAsaDia2]NomUtilisateur-->
+					<br />  
+					 enregistré sur le site de l'ASA <br />
+					 avec <!--#4DVAR [UtilisateursAsaDia2]EMailUtilisateur--> comme
+					 adresse mail d'envoi du code.
+				</p>
+						<br/><br/><br/>
+		
+				<form name="form1" method="POST" action="/mw2AsadiaAccesForm">  
+					<input type="hidden" name="Id" value=<!--#4DVAR VarId--> ></input>
+					
+					<p class="textedecalegrand">
+						Désirez-vous :<br />
+						&nbsp; &nbsp;- Signaler une erreur dans AsaDia ? 
+						<input class="textebanal" type="submit" name="erreur" value="Accéder au formulaire"> </input>
+							<br />
+						&nbsp; &nbsp;- Signaler un dysfonctionnement ?
+						<input class="textebanal" type="submit" name="dys" value="Accéder au formulaire"> </input>
+							<br />
+						&nbsp; &nbsp;- Suggérer une amélioration ?
+						<input class="textebanal" type="submit" name="ameliore" value="Accéder au formulaire" > </input>
+							<br />
+					</p>	
+					
+				</form>
+				
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+
+

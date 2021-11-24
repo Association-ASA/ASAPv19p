@@ -1,0 +1,1 @@
+﻿## $0:=UTIL_Is_Field_Nullable($1)---

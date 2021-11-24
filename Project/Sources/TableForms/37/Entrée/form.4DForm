@@ -1,0 +1,672 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 563,
+	"markerBreak": 563,
+	"markerFooter": 573,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 96,
+					"left": 554,
+					"width": 100,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Police système",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Numéro enreg."
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 93,
+					"left": 24,
+					"width": 515,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "DiaTextesWebParagraphes"
+				},
+				"Line17": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 644,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Premier enreg."
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. précéden"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. suivant"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Dernier enreg."
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 273,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Supprimer enreg"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 336,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Annuler"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 399,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 126,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "IDParagrapheTexteWeb : "
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 153,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "NomEspece : "
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 180,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "NomOrgane : "
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 207,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "GrandTypeLesionnel : "
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 234,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "TypeLesionnelPrecis : "
+				},
+				"Texte23": {
+					"type": "text",
+					"top": 261,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "TitreParagraphe : "
+				},
+				"Texte24": {
+					"type": "text",
+					"top": 288,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "IDTexte : "
+				},
+				"Texte25": {
+					"type": "text",
+					"top": 315,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "CorpsParagraphe : "
+				},
+				"Texte26": {
+					"type": "text",
+					"top": 390,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "FicheReflexe : "
+				},
+				"Texte27": {
+					"type": "text",
+					"top": 465,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "NomLesion : "
+				},
+				"Texte28": {
+					"type": "text",
+					"top": 492,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MotifSaisie : "
+				},
+				"Texte29": {
+					"type": "text",
+					"top": 519,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "OrdreAffichage : "
+				},
+				"Texte30": {
+					"type": "text",
+					"top": 546,
+					"left": 174,
+					"width": 155,
+					"height": 17,
+					"textAlign": "right",
+					"text": "NiveauTitre : "
+				},
+				"IDParagrapheTexteWeb": {
+					"type": "input",
+					"top": 126,
+					"left": 334,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]IDParagrapheTexteWeb:1",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NomEspece": {
+					"type": "input",
+					"top": 153,
+					"left": 334,
+					"width": 160,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]NomEspece:2",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NomOrgane": {
+					"type": "input",
+					"top": 180,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]NomOrgane:3",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"GrandTypeLesionnel": {
+					"type": "input",
+					"top": 207,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]GrandTypeLesionnel:4",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TypeLesionnelPrecis": {
+					"type": "input",
+					"top": 234,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]TypeLesionnelPrecis:5",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TitreParagraphe": {
+					"type": "input",
+					"top": 261,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]TitreParagraphe:6",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"IDTexte": {
+					"type": "input",
+					"top": 288,
+					"left": 334,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]IDTexte:7",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CorpsParagraphe": {
+					"type": "input",
+					"top": 315,
+					"left": 334,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[DiaTextesWebParagraphes:37]CorpsParagraphe:8",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"FicheReflexe": {
+					"type": "input",
+					"top": 390,
+					"left": 334,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[DiaTextesWebParagraphes:37]FicheReflexe:9",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NomLesion": {
+					"type": "input",
+					"top": 465,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]NomLesion:10",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MotifSaisie": {
+					"type": "input",
+					"top": 492,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]MotifSaisie:11",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"OrdreAffichage": {
+					"type": "input",
+					"top": 519,
+					"left": 334,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]OrdreAffichage:12",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"NiveauTitre": {
+					"type": "input",
+					"top": 546,
+					"left": 334,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[DiaTextesWebParagraphes:37]NiveauTitre:13",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

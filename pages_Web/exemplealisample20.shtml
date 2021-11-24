@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+                          <br />
+            <ul class="breadcrumb">
+								<li><a href="w2exemplealisample0.html">Exemple</a></li>
+								<li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+								<li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+								<li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+								<li><a href="w2exemplealisample4.html">Unités classées</a></li>
+								<li><a href="w2exemplealisample5.html">2 classes</a></li>
+								<li><a href="#"></a></li>								
+						</ul>
+						
+					<br />
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+									<li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+									<li><a href="w2exemplealisample8.html">Plan simple</a></li>
+									<li><a href="w2exemplealisample9.html">A partir de NQA NQL</a></li>
+									<li><a href="w2exemplealisample10.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+						
+					<br />
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample11.html">Echantillonnage double</a></li>
+									<li><a href="w2exemplealisample12.html">Loi binomiale</a></li>
+									<li><a href="w2exemplealisample13.html">A partir de NQA NQL</a></li>
+									<li><a href="w2exemplealisample14.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+						<br />
+					
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample0.html">Exemple</a></li>
+									<li><a href="w2exemplealisample15.html">Unités non classées</a></li>
+									<li><a href="w2exemplealisample16.html">Ecart-type connu</a></li>
+									<li><a href="w2exemplealisample17.html">Simple</a></li>
+									<li><a href="w2exemplealisample18.html">Plan simple</a></li>
+									<li><a href="w2exemplealisample19.html">A partir de NQA NQL</a></li>
+									<li><a href="w2exemplealisample20.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+						
+                <br />
+              <p class="titrepage">EXEMPLE <br /><br /></p>
+
+              <P ALIGN="JUSTIFY">Entrez dans 
+                le tableau vos exigences en termes de NQA, NQL, risques fournisseur et client le tableau vous renvoie le plan
+                <I>n</I> = 32, <I>K</I> = 1,875.
+              </P>
+              <P ALIGN="JUSTIFY">Vous accepterez les lots lorsque la moyenne des poids obtenus sur 32 unités sera supérieure 
+                à 104.3 g (on doit avoir <IMG SRC="images/Image21.gif" WIDTH=54 HEIGHT=31 /> 
+                soit <IMG SRC="images/Image22.gif" WIDTH=150 HEIGHT=13 />).
+              </P>
+              <P ALIGN="JUSTIFY"><IMG SRC="images/Image20.gif" WIDTH=970 HEIGHT=586 />
+              </P>
+                <br />
+              <P ALIGN="center">
+                <a href="w2exemplealisample21.html">
+                  Suite de l'exemple
+                </a>
+              </P>
+                             
+              <br />
+			</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

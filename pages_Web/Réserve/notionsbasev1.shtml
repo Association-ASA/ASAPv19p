@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>AsaDia 3</title>
+		<!--4dinclude HeaderAsaDia.shtml-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--
+    <style type="text/css">
+        li.l1{list-style-position: outside; list-style-type: none}
+        p.p1{text-align: center; margin-top: 0px; margin-bottom: 0px}
+        p.p2{margin-top: 0px; margin-bottom: 0px}
+        p.p3{margin-top: 0px; margin-bottom: 0px; margin-right: 26px}
+        p.p4{margin-top: 0px; margin-bottom: 0px; margin-left: 20px; text-indent: -20px}
+        p.p5{margin-top: 0px; margin-bottom: 0px; margin-left: -21px; text-indent: 21px}
+        p.p6{margin-top: 0px; margin-bottom: 0px; margin-left: -21px}
+        font.f1{font-family: Arial; font-size: 22pt}
+        font.f2{font-weight: bold; font-family: Arial; font-size: 9pt}
+        font.f3{font-weight: bold; font-family: Arial; font-size: 12pt}
+        font.f4{font-family: Arial; font-size: 12pt}
+        font.f5{font-style: italic; font-family: Arial; font-size: 12pt}
+        font.f6{font-weight: bold; font-family: Arial; font-size: 12pt; color: #ff0000}
+        font.f7{font-weight: bold; font-family: Arial; font-size: 12pt; color: #0000ff}
+        font.f8{font-weight: bold; font-family: Arial; font-size: 13pt}
+        font.f9{font-weight: bold; font-family: Arial; font-size: 12pt; color: #008000}
+        font.f10{font-weight: bold; font-style: italic; font-family: Arial; font-size: 12pt; color: #008000}
+        font.f11{font-weight: bold; font-family: Arial; font-size: 5pt}
+        font.f12{text-decoration: underline; font-family: Arial; font-size: 12pt}
+        font.f13{font-family: Arial; font-size: 12pt; color: #ff0000}
+        font.f14{font-weight: bold; font-style: italic; font-family: Arial; font-size: 12pt; color: #0000ff}
+        font.f15{font-weight: bold; font-family: Arial; font-size: 10pt}
+        font.f16{font-weight: bold; text-decoration: underline; font-family: Arial; font-size: 12pt}
+    </style>
+    -->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+    <div id="fleches"> 
+           <div id="id_view_image_body"></div>
+           <div id="id_view_image"></div>
+     </div>	  
+		<div id="corps">
+      
+			<div id="contenu1" class="textebanalgrand">
+        
+        <br />
+        <p class="adtitrepage">LESIONS ELEMENTAIRES DE LA CELLULE</p>
+
+        <div id="photolesion" class="textecentre">
+        
+        </div>
+        <div id="textelarge">
+          <p class="adtitre1">  Dégénérescence et nécrose</p>
+            <i>Selon l'intensité et la durée de l'action pathogène des différents facteurs intervenant dans les maladies,
+            les cellules subissent soit des modifications morphologiques d'abord réversibles
+            puis rapidement irréversibles (dégénérescence)
+            soit meurent </i>(<a id="necnec" name="50612">photo 50612</a>) <i>brutalement (nécrose). </i>
+            
+            <p class="adtitre2">a - La dégénérescence cellulaire :</p>
+            <b>Définition</b> : la dégénérescence cellulaire est une lésion incompatible
+            avec le fonctionnement normal d'une cellule qui se manifeste par des lésions
+            soit d'organites spécialisés (mitochondries, réticulum endoplasmique, appareil de Golgi)
+            soit du cytoplasme fondamental<br /> 
+            On signale une lésion de dégénérescence par le suffixe -ose.<br /> 
+            Exemples: on parlera d'arthrose (dégénérescence articulaire), de néphrose (dégénérescence du rein) ......<br /> 
+            
+            <b>Conséquences</b> : si la lésion n'atteint que les mitochondries c'est la TUMEFACTION TROUBLE
+            qui est, en principe réversible. Au-delà de ce stade,
+            la lésion devient irréversible : DEGENERESCENCE GRANULEUSE (accumulation intra-cytoplasmique de protéines)
+            DEGENERESCENCE VACUOLAIRE (lipoprotéines) ou DEGENERESCENCE LIPIDIQUE (lipoprotéines et lipides mis en évidence par le rouge soudan).
+            Parallèlement, le noyau ne subit que peu et tardivement des modifications
+            (condensation périphérique de la chromatine = hyperchromatose marginale voire de la pycnose qui sera décrite lors de l'étude de la nécrose).
+            <br /> 
+            MACROSCOPIQUEMENT, l'organe est profondément modifié par les atteintes de ses cellules. Si le volume et la forme restent pratiquement identiques, la consistance est très nettement diminuée et l'organe est donc plus mou que la normale, la couleur est modifiée dans le sens d'un éclaircissement pour donner des teintes assez pâles et proches de la teinte "chêne clair".
+            <br />             
+            On retiendra donc qu'un organe <b>dégénéré</b> est <b>mou</b> et <b>pâle</b>. 
+            <br />             
+            REMARQUE: ces deux aspects ne sont valables pour une lésion pure et récente : en effet, s'il y a association
+            de la dégénérescence avec d'autres phénomènes, notamment congestifs, l'altération de couleur peut être inversée
+            et on aura alors un organe très sombre (rein pulpeux de l'entérotoxémie). D'autre part, si le phénomène devient chronique,
+            la cellule dégénérée meurt et est remplacée par un tissu de cicatrisation qui est plus dur que le tissu initial.
+            Dans le cas de la dégénerescence musculaire, on a un muscle plus dur : c'est la fibrolipomatose (photo 20377).
+            Causes : elles sont très variées (intoxications, intoxination, causes physiques ou mécaniques, les agents animés ...)
+            mais sont atténuées = soit peu pathogènes soit à faible dose.
+            
+            <p class="adtitre2">b - La nécrose :</p>
+            <b>Définition</b> : ensemble des modifications morphologiques qui font suite à la mort de la cellule,
+            du vivant de l'individu. Cette lésion est donc à distinguer des altérations qui surviennent après la mort de la cellule.
+            <br /> 
+
+            <b>Conséquences</b> : 
+            <br /> 
+            A L'ECHELLE DE LA CELLULE:
+             Les lésions sont surtout nucléaires: la plus précoce est la PYCNOSE qui est une condensation du noyau
+             puis survient la CARYORRHEXIE qui correspond à la fragmentation du noyau en masses irrégulières dispersées
+             dans le cytoplasme, enfin la CARYOLYSE, survenant d'emblée ou succèdant à la pycnose, qui correspond à la disparition du noyau.  
+            Les lésions cytoplasmiques sont d'abord celles décrites dans la dégénérescence. Ensuite, le cytoplasme se transforme
+            en une masse homogène. Enfin, la membrane cytoplasmique se rompt et le tissu nécrosé perd toute sa structure.
+            <br /> 
+            MACROSCOPIQUEMENT:
+            <br /> 
+            Le tissu de nécrose est homogène, d'aspect pâle, terne et de consistance friable, en dépression par rapport
+            à la surface de l'organe et nettement délimité par rapport au tissu sain qui produit
+            une réaction vasculaire qui tend à l'éliminer comme un corps étranger. 
+            Ce tissu nécrosé ainsi éliminé peut être à l'origine d'auto-intoxication s'il reste à l'intérieur de l'organisme.
+            On retiendra donc que les tissus atteints de nécrose sont TERNES, SECS et FRIABLES
+            et ont une tendance à être éliminés par les tissus restés sains.
+              <br /> 
+            <b>Causes</b> : elles sont de même nature que celles qui entraînent des lésions de dégénérescence
+            mais appliquées sur des tissus plus fragiles ou avec une intensité plus grande.
+            <br /> 
+            <br /> 
+            Cas particuliers de nécrose :
+            <br /> 
+            
+            <b>La nécrose caséeuse = de caséification</b> :
+             <br /> 
+            Caractéristique de la tuberculose, cette nécrose est la conséquence de la désintégration de cellules chargées de graisses
+            qui donnent une émulsion plus ou moins hydratée de protéines et de lipides que l'on appelle le caséum en raison de son aspect de fromage.
+            MACROSCOPIQUEMENT, c'est une substance pâteuse et onctueuse de teinte blanc jaunâtre,
+            comparable à du fromage mou (<a id="phneccas" name="20835">photo 20835</a>).
+             <br /> 
+            <br /> 
+           
+            <b>La cytostéatonécrose :</b> 
+             <br /> 
+            Cette lésion est fréquente chez les bovins où on la rencontre surtout au niveau de la graisse péritonéale et péri-rénale.
+            Chez les ovins très gras, on trouve de la cytostéatonécrose sur la graisse de couverture.
+              <br /> 
+           MACROSCOPIQUEMENT, elle se présente sous forme de plages souvent étendues d'un tissu adipeux très modifié.
+           La couleur est blanche à jaune pâle (c'est-à-dire plus terne) tandis que la consistance est sèche et friable (aspect crayeux).
+           On parle de taches de bougie (<a id="cytnec" name="50612">photo 50612</a>) ou de flocons de neige (photo 13902).
+             <br /> 
+            La signification de cette lésion de cytostéatonécrose est originale car elle ne dénote jamais la présence d'un germe à tropisme adipeux. 
+            Chez les bovins, la cytostéatonécrose constitue une lésion de continuité d'une autre lésion telle la pyélonéphrite.
+            Chez les ovins, ce sont des troubles trophiques d'une graisse en excès qui conduisent à cette lésion. 
+					</div>
+			</div>	 
+    </div>
+    
+		<div id="pied">
+				<!-- #4dinclude pied.shtml -->
+		</div>
+
+		
+					
+     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+     <script type="text/javascript" src="js/dataTable.js"></script>
+     <script>
+          
+        function choixNavigateur() 
+        {
+          if (navigator.userAgent.indexOf('MSIE 6')!=-1) 
+          return new ActiveXObject('Microsoft.XMLHTTP');
+          else
+          return new XMLHttpRequest();  
+        }
+        
+        function fliptexte(formule)  
+           {
+              var requete = choixNavigateur();
+              var doc = "testimage"+formule;
+              requete.open("post",doc,false);
+              requete.send(null);
+              // alert(requete.responseText);
+              var reponse = requete.responseText;
+              $('#photolesion').html(reponse);
+            };
+        
+        $(document).ready(function() {
+          $('#texte > a').on('click', function (e)
+            {
+             var image = $(this).attr('name');
+             var hauteurclic = this.offsetTop
+             if (hauteurclic < 400) {
+              var y = 55+ "px";
+             }
+             else{
+               var y = hauteurclic-400 + "px";
+             }
+             
+            
+             fliptexte(image)
+              $('#photolesion').css('margin-top',y);
+            } );
+         
+          $("#photolesion").click(function()  
+            {
+               var cdimage='images/'+$('#imagette').attr('name')+".jpg";
+              $("#id_view_image").html("<img src='"+cdimage+"' class='view_image_img'/>");
+              $("#id_view_image_body").addClass("view_image_body");
+              $("#id_view_image").addClass("view_image");
+            });
+					
+          $(document).keydown(function(event)
+            { 
+              if (event.which == 13) $('.save').click();   // enter (works as expected)
+              if (event.which == 27) {
+                $("#id_view_image").html("");
+                $("#id_view_image_body").removeClass("view_image_body");
+                $("#id_view_image").removeClass("view_image");
+                }
+            });
+         } ); 
+        
+    
+
+    </script>    
+	</body>
+	
+</html>

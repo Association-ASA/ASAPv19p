@@ -1,0 +1,1 @@
+﻿## TOGGLE_Custom_Handler($1;$2;$3;$4;$5;$6)---|*4D Command*|`Form event code`|

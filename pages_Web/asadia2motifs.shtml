@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ASADia : Module utilisation</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 				<br/>
+						<p class="titrepage">AsaDia 2 : Module utilisation</p>
+						<p class="textecentre">
+							<a href="asadia.shtml">
+							Retour &agrave; l'écran des généralités
+							</a> 
+						</p>
+							<br/><br/>
+							
+					
+							<div class="menu">
+								<a class="menucouleur" href="w2asadia2utilisation.shtml">
+								CONNAISSANCES <br /> GENERALES
+								</a>
+							</div>
+							<div class="menuactif" >
+								MOTIFS <br /> DE SAISIE
+							</div>
+							<div class="menu" >
+								<a class="menucouleur" href="w2asadia2dgal.shtml">ILLUSTRATION DES NOTES DE SERVICES DE LA DGAL</a>
+							</div>
+							<div class="menu" >
+								<a class="menucouleur" href="w2asadia2diagnose.shtml">RECONNAITRE <br />UNE LESION</a>
+							</div>
+							<div class="sousmenu" >
+							&nbsp; <br /> &nbsp; <br /> &nbsp; <br /> &nbsp; <br /> 
+							&nbsp; <br /> &nbsp; <br /> &nbsp;
+							</div>
+						
+						<table>
+							<tr>
+								<td class="colonne1" >
+									 <br/><br/>
+				
+									Cette partie donne la liste officielle des motifs de saisie.
+									<br/>
+									Elle permet par double-clic d'en visualiser le contenu détaillé 
+									tel que montré plus bas. 
+									<br/>
+								</td>
+								<td  class="colonne2"  > <img src="IMAGES/motifs.jpg" width="650" 
+									height="377" alt="Motifs" title="Motifs" /> 
+								</td>
+								
+							</tr>
+							<tr>
+								<td class="colonne1" >
+									Le détail de la fiche décrit, outre le nom du motif principal, 
+									la motivation en droit, le classement "Sous-produits animaux",
+									les éléments de communication aux éleveurs 
+									et aux services inspection en abattoir. <br/><br/>
+									Un clic sur le bouton "Exemples de photographies" montre des 
+									images de lésions typiques du motif concerné.
+								
+								</td>
+								<td  class="colonne2"  > <img src="IMAGES/Bronchodef.jpg" width="650" 
+									height="410" alt="Définition bronchopneumonie" 
+									title="Définition bronchopneumonie" /> 
+								</td>
+							</tr>
+								
+						<tr class="Tbbanal"> 
+							<td class="colonne1" > 
+								&nbsp; <br /> &nbsp; 
+							</td>
+						</tr>
+						
+							<tr>
+								<td class="colonne1" >
+									Les photographies d'illustration du motif de la saisie sont issues 
+									des diapositives de référence de la collection d'AsaDia.
+									 <br/><br/>
+									Elles peuvent être visualisées commentées en plein écran 
+									en double-cliquant dessus.
+								
+								</td>
+								<td  class="colonne2"  > <img src="IMAGES/Bronchophotos.jpg" width="650" 
+									height="410" alt="Photographies de bronchopneumonie" 
+									title="Photographies de  bronchopneumonie" /> 
+								</td>
+							</tr>
+						</table>
+						
+						<br/><br/>
+		
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+
+
+

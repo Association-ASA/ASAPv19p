@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Identification</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				<!--4dinclude menuAsadia.shtml-->
+				 		<br/><br/><br/>
+				<p class="titrepage">ASADia : identification</p>
+				<p class="textecentre">
+					<a href="asadia.shtml">
+					Retour à l'écran des généralités
+					</a> 
+				</p>
+				<br/><br/>
+				<p class="hautpage">
+					Pour vous identifier, merci de bien vouloir entrer l'adresse mail
+					<br/>
+					avec laquelle vous êtes enregistré(e) sur le site de l'ASA
+				</p>
+					<br/>
+				<form name="form1" method="POST" action="/mw2AsadiaWebIdent">  
+					<p class="textecentre">
+						<label for="mailid">Adresse mail d'identification </label>
+						<input type="text" name="mailid" size="50"/>
+					<br/><br/>
+						<input class="titrepage" type="submit" name="Submit" value="Envoyer" /> 
+						&nbsp; &nbsp; &nbsp;
+						<input type="reset" name="Submit2" value="Effacer" />
+					</p>
+				</form>
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+			<script src="js/jquery-1.11.3.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/asadia.js"></script>
+	</body>
+	
+</html>
+

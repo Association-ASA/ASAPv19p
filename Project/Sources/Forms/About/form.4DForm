@@ -1,0 +1,92 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Bouton": {
+					"type": "button",
+					"top": 0,
+					"left": 0,
+					"width": 342,
+					"height": 356,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 144,
+					"left": 29,
+					"width": 273,
+					"height": 43,
+					"class": "Titre_petit",
+					"textAlign": "center",
+					"text": "ASAP\rLogiciel de gestion de l'ASA"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 201,
+					"left": 29,
+					"width": 273,
+					"height": 49,
+					"textAlign": "center",
+					"text": "Eloïse RIOUALL\rClaude GRANDMONTAGNE"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 312,
+					"left": 29,
+					"width": 273,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Ce logiciel est basé sur le standard de Qualisoft"
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 54,
+					"left": 111,
+					"width": 104,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Logo ASA icône.png"
+				}
+			}
+		}
+	]
+}

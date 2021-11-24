@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="../lib/codemirror.js"></script>
+<script src="../addon/runmode/runmode.js"></script>
+<script src="../mode/4d/parse4d.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var myProjMethodNames, myCommandNames, myConstantNames;
+
+if (typeof $4d !== 'object') {
+  myProjMethodNames = ['xxxxzzzz'];
+} else if (typeof $4d.zGetProjMethods !== 'function') {
+  myProjMethodNames = ['xxxxzzzz'];
+} else {
+  $4d.zGetProjMethods(function(names){myProjMethodNames = names;});
+}
+
+if (typeof $4d !== 'object') {
+} else if (typeof $4d.zGetCommands !== 'function') {
+} else {
+  $4d.zGetCommands(function(names){myCommandNames = names;});
+}
+
+if (typeof $4d !== 'object') {
+} else if (typeof $4d.zGetConstants !== 'function') {
+} else {
+  $4d.zGetConstants(function(names){myConstantNames = names;});
+}
+
+function parseGetTokens(src4dCode, typFilterList) {
+  var myResults;
+  myResults = [];
+  if (typeof src4dCode !== 'string') return false;
+  CodeMirror.runMode(src4dCode, "text/x-4d", function(tokenTxt, tokenStyle){myResults.push({src: tokenTxt, typ: tokenStyle});})
+  myResults = myResults.filter(item => item.typ != null);
+  if ((typeof typFilterList === "object") && (typFilterList.length > 0)) {
+    myResults = myResults.filter(item => typFilterList.includes(item.typ));
+  }
+  return myResults;
+}
+
+function getMatchRegex(myRegExPattern, mySrcTxt, flags) {
+  var aResult, myRegex;
+  aResult = [];
+  if (typeof myRegExPattern !== 'string') return aResult;
+  if (typeof mySrcTxt !== 'string') return aResult;
+  if (typeof flags !== 'string') {
+    myRegex = new RegExp(myRegExPattern);
+  } else if (flags.length < 1) {
+    myRegex = new RegExp(myRegExPattern);
+  } else {
+    myRegex = new RegExp(myRegExPattern,flags);
+  }
+  aResult = mySrcTxt.match(myRegex);
+  if (aResult == null) aResult = [];
+  return aResult;
+}
+
+function getReplaceRegex(myRegExPattern, mySrcTxt, myReplaceTxt, flags) {
+  var txtResult, myRegex;
+  txtResult = '';
+  if (typeof myRegExPattern !== 'string') return txtResult;
+  if (typeof mySrcTxt !== 'string') return txtResult;
+  if (typeof myReplaceTxt !== 'string') myReplaceTxt = '';
+  if (typeof flags !== 'string') {
+    myRegex = new RegExp(myRegExPattern);
+  } else if (flags.length < 1) {
+    myRegex = new RegExp(myRegExPattern);
+  } else {
+    myRegex = new RegExp(myRegExPattern,flags);
+  }
+  txtResult = mySrcTxt.replace(myRegex, myReplaceTxt);
+  if (txtResult == null) txtResult = '';
+  return txtResult;
+}
+
+</script>
+
+</body>
+</html>

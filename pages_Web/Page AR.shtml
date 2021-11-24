@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../styles/style-asa.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="../js/raema.js" type="text/javascript"></script>
+    <noscript>
+      Votre navigateur semble ne pas accepter le javascript : nous vous recommandons de l'activer afin de bénéficier des fonctionnalités avancées.
+    </noscript>
+    <title>Saisie conforme</title>
+ </head>
+ <body>
+   <div id="header" class="textecentre">
+    <a href="../index.shtml">
+     <img src="../images/logoasa.jpg" alt="logo" width="529" height="119" />
+    </a>
+   </div>
+   <div id="corps">
+    <div id="contenu1">
+        <p class="hautpage"> Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus </p>
+        <br /><br />
+        <p class="titrepage">VERIFICATION DES DONNEES<br /></p>
+        <p class="hautpage">Merci d'avoir complété le questionnaire  du Raema.</p><br />
+        <p class="textecentre">
+            Vous pouvez à présent vérifier que votre réponse a bien été enregistrée <br />en cliquant sur le lien suivant
+                <a href="Labos_Internet.shtml">Accusés de réception</a>.
+        </p>
+        <br />
+        <p class="rougeRAEMA">
+            Il vous est possible de demander un accusé de réception afin de vérifier votre saisie.
+            Veuillez noter que si vous constatez une erreur de saisie après l’édition des rapports, aucune modification ne pourra être apportée.
+        </p>
+        <br />
+        <p class="titrepage">
+            <p class="titrepage">Si vous désirez recevoir un accusé de réception de votre saisie,
+            <br />veuillez compléter les cases ci-dessous avec l'adresse mail souhaitée
+            <br />  et cliquer sur le bouton "Envoyer"<br> (cet envoi prendra quelques secondes)
+        </p><br />
+        <form name="form1" method="Post" action="mw2ResP4MF">
+            <div align="center">
+                <p class="hautpage">Adresse mail 
+                    <input name="textfield" type="text" size="50" value="" />
+                </p>
+               <p class="hautpage">Resaisir l'adresse mail
+                <input name="textfield2" type="text" size="50" value="" />
+              </p>
+              <p> 
+                <input type="checkbox" name="checkbox" value="checkbox">
+                   Se souvenir de mon adresse mail
+              </p>
+              <p class="petittextevert">
+                Si vous souhaitez que l'ASA conserve votre adresse mail <br />
+                et vous la propose la prochaine fois,<br />
+                cochez la case "Se souvenir de mon adresse mail"
+              </p>
+               <br />
+              <p> 
+               <input type="hidden" name="langage" value="F" />
+               <input class="titrepage"type="submit" name="Submit" value="Envoyer">
+               <input type="hidden" name="hiddenField" value=FuQPRPqSYe />
+              </p>
+            </div>
+        </form>
+        <br />
+        <p class="textecentre">Pour toute question, contacter l'association.<br />
+          <a href="mailto:asa-spv@wanadoo.fr">Envoyer un  mail à l'ASA</a>
+        </p>
+    </div>
+   </div>
+   <div id="pied">
+      Site officiel de l'association Animal - Société - Aliment (ASA)  <br />
+      Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex    FRANCE <br />
+      Téléphone : <b>+ 33 (0)1 56 29 36 30</b>       Fax : <b>+ 33 (0)9 61 24 33 81</b>       e-mail :
+      <a href="mailto:asa-spv@wanadoo.fr">
+       <b>asa-spv@wanadoo.fr</b>
+      </a>
+      <br />
+      <em>Pour signaler un problème, cliquez sur le lien suivant <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+      <br /><br />
+   </div>
+  </body>
+</html>

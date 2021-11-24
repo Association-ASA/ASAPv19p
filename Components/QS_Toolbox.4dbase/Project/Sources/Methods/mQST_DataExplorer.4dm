@@ -1,0 +1,2 @@
+//%attributes = {"invisible":true,"shared":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedWeb":false,"publishedSoap":false,"publishedWsdl":false,"publishedSql":false,"executedOnServer":false}
+mQST_executeMethod ("dataExplorer")

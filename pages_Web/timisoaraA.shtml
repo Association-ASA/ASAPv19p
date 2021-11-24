@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Timisoara</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="timisoara.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau français" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+      <div id="contenu1" class="textebanalgrand">
+  
+        <br/> <br/>
+        
+        <p class="titrepage"> The Fifth International Proficiency Testing Conference
+          <br/>Timisoara, Romania  (16th – 18th, September 2015)
+        </p>
+        <p class="imageasa">
+          <img src="images/Timisoara/Timisoaraclocher.jpeg" alt="Séminaire à Timisoara" width="200px" />
+        </p>
+          <br/>
+          <b>The Fifth International Proficiency Testing Conference</b> took place in Timisoara (Romania)
+          from 16th September to 18th September 2015.
+          <b>110 participants from 27 countries</b> were present:
+          Proficiency Testing Providers, accreditation body, laboratories, …
+          <br/><br/>
+          <b>ASA</b> participated to this conference and <b>Leïla ALI MANDJEE</b> presented an oral communication
+          “<b>Development of a gelified matrix, support for proficiency testing schemes in food microbiology</b>”. 
+          <br/><br/>
+          <p class="imageasd textepetitcentre">
+            <a href="pdf/Timisoara.pdf">
+              <img src="images/Timisoara/Timisoarappt.jpeg" alt="Présentation Leîla Ali Mandjee" width="250px" />
+            </a>
+            <br />
+            Click on picture to download the presentation
+          </p>
+          After an introduction of ASA and <b>its interlaboratory comparison RAEMA</b>, that has been well established since 1988;
+          the presentation focused on the work on gelified matrix especially for two microorganisms,
+          <i>Bacillus cereus</i> and Lactic Acid Bacteria. At first, the experimental design was described,
+          then the results were shown. According to ISO 17043, the requirements of homogeneity and stability
+          were reached and ASA has been able to create since 2010, two Proficiency Testing schemes per year,
+          named supplementary RAEMA. Since July 2015, ASA has been accreditated by <b>Cofrac</b>, according to <b>ISO 17043</b>,
+          to organize and supply <b>supplementary RAEMA</b> for the two parameters:
+          enumeration of <b><i>Bacillus cereus</i></b> and <b>Lactic Acid Bacteria</b>.
+          These two parameters have increased the scope of Cofrac accreditation of ASA.
+          (accreditation n°1-1836 <a href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864" target="_blank">
+          available here </a>)
+          <br/><br/>
+          Several oral communications and posters were presented on different field of proficiency testing schemes:
+          water chemistry, clinical microbiology, pesticides, cement industry, data analysis, …
+          <br/><br/>
+          <p class="imageasag">
+            <img src="images/Timisoara/Timisoara1.JPG" alt="Séminaire à Timisoara" width="380px" />
+          </p>
+          Two <b>training courses</b> were organized during the conference. <br/>
+          The first one, coordinated by <b>Mrs Steluta DUTA</b>, was related to the <b>use of reference materials</b>
+          and <b>certified reference materials</b>, according to <b>ISO Guide 35</b>.<br/><br/>
+          The second one was moderated by <b>M. Piotr ROBOUCH</b> and <b>M. Daniel W. THOLEN</b> and focused
+          on the new version of the standard “<b>ISO 13528: 2015 – Statistical methods for use in
+          proficiency testing by interlaboratory comparisons</b>”. The main changes were listed,
+          as well as the axis of development. The statistical methods must be linked to the objectives
+          fixed by providers for their Proficiency Testing scheme. More information must be provided to participants
+          such as <b>uncertainty</b>. Its significance increase and the zeta-score, which includes this parameter,
+          can be considered as an educational tool. This must be highlighted by proficiency testing providers.
+          A presentation of “<b>Bootstrap</b>” completed this training course. This statistical method is based on an estimation
+          of an estimator by resampling the original sample. It makes the calcul of assigned values, standard deviation,
+          uncertainty possible in every conditions (bimodal and asymetric distribution).
+          Then, <b>working groups</b> promoted exchanges between participants and experts.<br/><br/>
+
+          After the opening ceremony, <b>Mrs Virginia Graziela GUSLICOV</b>, president of the steering committee,
+          closed this 5th International Proficiency Testing Conference. The members of steering committee,
+          organization, experts and participants were all thanked.<br/><br/>
+      </div>
+    </div>
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

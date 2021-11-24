@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<!--4dinclude HeaderRaema.shtml-->
+		<title>Erreur de saisie</title>
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+		</div>
+		
+		<div id="corps">
+			
+			<div id="contenu">
+			<br /><br /><br />
+				<p class="hautpage rouge">VERIFICATION DES SAISIES</p>
+					<br /><br />
+				<p class="hautpage">
+						Après vérification des informations que vous avez saisies,<br /> 
+						il apparaît que le formulaire est incorrect <br />
+						pour la raison suivante :<br />
+						  <!--4DVar MotifRefus-->
+						<br /><br />
+						Cliquer sur le bouton ci-dessous pour compléter le formulaire.	  
+						  <input type="button" value="Retour au questionnaire" name="Précédente" onClick="history.go(-1)">
+							<br /><br />
+						<p class="hautpage"> 
+							Si le problème persiste, contacter l'association.
+							<br />
+							<a href="mailto:asa-spv@wanadoo.fr">
+								Envoyer un mail à l'ASA
+							</a>
+						</p>
+					  
+					  
+			</div>
+		
+		</div>
+		
+				<!--4dinclude pied.shtml-->
+		
+		
+	</body>
+</html>

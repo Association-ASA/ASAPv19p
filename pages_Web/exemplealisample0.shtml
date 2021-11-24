@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample</title>
+		<!--4dinclude HeaderASA.shtml-->
+
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				<br />
+				<p class="titrepage">L'exemple développé ici montre quelques unes des fonctionnalités d'Alisample</p>
+				<br />
+				<p class="Textebanalgrand plus">Exemple du contrôle de lot quantitatif avec unités classées en deux classes</p>
+					<p class="textepetit">Vous fabriquez des aliments et vous voulez mettre en place
+						une procédure de contrôle de vos produits finis afin de vérifier que les lots partant en livraison 
+						répondent aux exigences fixées par votre client. Celles-ci comprennent entre autres
+						une exigence sur le poids des unités qui doit être supérieur ou égal à 100 g.
+						
+						<br />
+						Les lots fabriqués sont de taille importante (environ 10 000 unités) et 
+						vous voulez mettre en place une procédure de contrôle par échantillonnage. 
+						Le contrôle sera effectué par un opérateur des expéditions 
+						et doit se limiter à une vérification des unités par pesage 
+						avec comptage des unités conformes (≤ 100 g) et des unités 
+						non conformes (> 100 g).
+					</p>
+						<ul class="breadcrumb">
+								<li><a href="w2exemplealisample0.html">Exemple</a></li>
+								<li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+								<li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+								<li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+								<li><a href="w2exemplealisample4.html">Unités classées</a></li>
+								<li><a href="w2exemplealisample5.html">2 classes</a></li>
+								<li><a href="#"></a></li>								
+						</ul>
+						
+					<p class="textedecale30 plus">Exemple du contrôle de lot quantitatif unités classées en deux classes : échantillonage simple</p>
+						<p class="textepetit">Dans un premier temps, vous choisissez un échantillonnage simple
+							(prélèvement d’un seul échantillon) qui est le plus facile à mettre en œuvre
+						</p>
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+									<li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+									<li><a href="w2exemplealisample8.html">Plan simple</a></li>
+									<li><a href="w2exemplealisample9.html">A partir de NQA NQL</a></li>
+									<li><a href="w2exemplealisample10.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+						
+					<p class="textedecale30 plus">Exemple du contrôle de lot quantitatif unités classées en deux classes : échantillonage double</p>
+						<p class="textepetit">Le nombre d’unités à contrôler étant très important
+							(temps de contrôle non compatible avec le planning de travail),
+							vous pouvez choisir d’utiliser un échantillonnage double.
+						</p>
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample11.html">Echantillonnage double</a></li>
+									<li><a href="w2exemplealisample12.html">Loi binomiale</a></li>
+									<li><a href="w2exemplealisample13.html">A partir de NQA NQL</a></li>
+									<li><a href="w2exemplealisample14.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+						<br />
+					<p class="Textebanalgrand plus">Exemple du contrôle de lot quantitatif unités non classées</p>
+						<p class="textepetit">Vous pouvez également choisir d’utiliser un contrôle des lots par mesurage
+							en raisonnant sur la moyenne des poids mesurés.
+							Vous réalisez alors une enquête pour caractériser la distribution statistique suivie par le poids de vos produits.
+							Après mesure du poids d’un grand nombre d’unités, vous constatez que la distribution est
+							d’allure Normale de moyenne 105 g et d’écart-type 2,3 g.
+							Cela vous permet de constater que dans les conditions normales de fabrication
+							votre pourcentage de non-conformes est égal à 1,5% (NQA = 0.015).
+						</p>
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample0.html">Exemple</a></li>
+									<li><a href="w2exemplealisample15.html">Unités non classées</a></li>
+									<li><a href="w2exemplealisample16.html">Ecart-type connu</a></li>
+									<li><a href="w2exemplealisample17.html">Simple</a></li>
+									<li><a href="w2exemplealisample18.html">Plan simple</a></li>
+									<li><a href="w2exemplealisample19.html">A partir de NQA NQL</a></li>
+									<li><a href="w2exemplealisample20.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+						
+						<br />
+				<p class="Textebanalgrand plus ">Exemple du contrôle d'un processus</p>
+					<p class="textepetit">Après avoir mis en place les plans de contrôle sur vos produits finis,
+						vous décidez de réaliser également un contrôle de la doseuse pour détecter des déréglages de celle-ci.<br />
+						Ce contrôle doit vous permettre de détecter des diminutions du poids des unités pour répondre aux exigences
+						de votre client mais également des augmentations du poids qui se traduisent pour vous par une perte économique.
+					</p>
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample0.html">Exemple</a></li>
+									<li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+									<li><a href="w2exemplealisample21.html">Contrôle d'un processus</a></li>
+									<li><a href="w2exemplealisample22.html">Quantitatif</a></li>
+									<li><a href="w2exemplealisample23.html">Suivi statistique</a></li>
+									<li><a href="w2exemplealisample24.html">Valeur centrale</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+						
+					<p class="textedecale30 plus">Exemple du contrôle d'un processus : déréglage important</p>
+						<p class="textepetit">Vous voulez que la carte de contrôle détecte des déréglages importants
+							avec un délai de détection très court et des déréglages faibles avec un délai de détection moyen.
+						</p>
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample25.html">Déréglage important</a></li>
+									<li><a href="w2exemplealisample26.html">Shewhart</a></li>
+									<li><a href="w2exemplealisample27.html">POM<span class="indice">0</span> POM<span class="indice">1</span></a></li>
+									<li><a href="w2exemplealisample28.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+						
+					<p class="textedecale30 plus">Exemple du contrôle d'un processus : déréglage faible</p>
+						<p class="textepetit">Vous vouliez également que la carte de contrôle
+							détecte des déréglages de la doseuse de faible amplitude.
+						</p>
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample29.html">Déréglage faible</a></li>
+									<li><a href="w2exemplealisample30.html">CUSUM</a></li>
+									<li><a href="w2exemplealisample31.html">POM<span class="indice">0</span> POM<span class="indice">1</span></a></li>
+									<li><a href="w2exemplealisample32.html">Analyse du résultat CUSUM</a></li>
+									<li><a href="w2exemplealisample33.html">Analyse du résultat Shewhart</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+				<br />
+				
+				 
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<title>Qu'est-ce qu'une CIL</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemacilA.shtml">
+        <img  src="images/DrapeauA.gif" alt="english flag" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps" class="textebanalgrand">
+		
+				
+				<p class="textecentre">
+				  <br /> 
+				    <a href="w2raemarenseignement.shtml">retourner aux généralités</a>
+				  <br />
+				</p>
+				
+      <p class="titrepage">
+          Qu’est-ce qu’une Comparaison Inter-Laboratoires (CIL)
+        <br /><br />
+      </p>
+			<p class="imageasadiad">
+				<img width="270px" alt="CIL" src="IMAGES/eil.png" />
+			</p>
+      <p class="textedecale30">
+          Une CIL se définit comme étant l’organisation, l’exécution et l’évaluation de mesurages ou d’essais sur la même entité
+          ou sur des entités similaires par deux laboratoires ou plus selon des conditions prédéterminées (NF EN ISO/CEI 17043).<br />
+          Une CIL peut se décliner selon trois entités :<br />
+          -	Les « Matériaux de référence » qui attribuent une valeur consensuelle à une caractéristique d’un objet.<br />
+          -	La « Performance méthode » qui estime l’exactitude (justesse et fidélité) d’une méthode de mesure ou d’essai.<br />
+          -	Les « Essais d’aptitude » qui évaluent l’aptitude des laboratoires.<br />
+      </p>
+			
+			 <br /><br /><p class="titrepage">
+          Pourquoi y participer
+      </p>
+			 <p class="imageasadia">
+				<img width="310px" alt="laboratoire" src="IMAGES/labo.jpg" />
+			</p>
+			<p class="textedecale30">
+          Le <b>RAEMA</b> (Réseau d’Analyses et d’Echanges en Microbiologie des Aliments) est un <b>Essai d’aptitude</b> qui a pour but :<br />
+          -	L’évaluation et le suivi des performances des laboratoires.<br />
+          -	La comparaison des résultats du laboratoire à ceux obtenus par les autres participants.<br />
+          -	La mise en évidence de travaux non conformes dans les laboratoires donnant lieu à la mise
+          en place d’actions correctives.<br />
+          -	De fournir des informations permettant d’avoir confiance dans la fiabilité des résultats, essentielle pour les laboratoires,
+          leurs clients ainsi que pour les organismes d’accréditation.<br />
+          -	Le maintien de l’accréditation des laboratoires d’analyses. La norme NF EN ISO 17025 et le Guide Technique LAB GTA59 imposent, aux laboratoires accrédités,
+          une participation biannuelle à un essai d’aptitude.
+        </p>
+      <br />
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+</html>

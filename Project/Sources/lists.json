@@ -1,0 +1,1772 @@
+﻿{
+	"ToutEtOuSauf": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "ET",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "OU",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "SAUF",
+				"ref": 3,
+				"editable": true
+			}
+		]
+	},
+	"RubriquesPersonnes": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Nom du laboratoire",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Chorus Poudre",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "Chorus Gel",
+				"ref": 14,
+				"editable": false
+			},
+			{
+				"text": "N° RAEMA",
+				"ref": 10,
+				"editable": false
+			},
+			{
+				"text": "Identificateur",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Association",
+				"ref": 11,
+				"editable": false
+			},
+			{
+				"text": "Ligne adresse",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Code postal",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Ville",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Pays",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "Adresse mail",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "Nom de contact",
+				"ref": 13,
+				"editable": false
+			},
+			{
+				"text": "Facturation spéciale",
+				"ref": 12,
+				"editable": false
+			},
+			{
+				"text": "Paye en deux fois",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "Facture service rendu",
+				"ref": 15,
+				"editable": true
+			},
+			{
+				"text": "Envoi facture courrier",
+				"ref": 16,
+				"editable": true
+			}
+		]
+	},
+	"Comparateurs": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "est",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "contient",
+				"ref": 7,
+				"editable": false
+			},
+			{
+				"text": "n'est pas",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "ne contient pas",
+				"ref": 8,
+				"editable": false
+			},
+			{
+				"text": "Est plus grand que",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "Est plus grand ou égal à",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Est plus petit que",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Est plus petit ou égal à",
+				"ref": 7,
+				"editable": true
+			}
+		]
+	},
+	"Associations": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "ASA-CARSO",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ADILVA",
+				"ref": 0,
+				"editable": false
+			},
+			{
+				"text": "ADRIA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "AFSSA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "AGREN",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "AGRO ANALYSES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ALPA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "AOSTE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA",
+				"ref": 0,
+				"editable": false
+			},
+			{
+				"text": "ASA - AGREN",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - AGRO ANALYSES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - AOSTE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - BELGES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - BROCELIANDE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - CRUDET",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - DELPEYRAT",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - DIANA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - ETATS DAKAR",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - LCAE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - LRAR M",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - MADA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - MARIE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - ONISPA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - PASQUIER",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - SAVEUR",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - SILLIK",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA - TIPIAK",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA-AGREN",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ASA-ALPA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "BELGES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "BIO SPRINGER",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "BROCELIANDE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "CERECO",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "CERVAC",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "CRUDETTES",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "DIANA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ETATS DES SCIENCES DAKAR",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "INRH-MAROC",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "LCAE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "LRAR-MAROC",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "MADA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "MARIE",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "ONISPA",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "PASQUIER",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "SAVEURS",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "SILLIKER",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "TIPIAK",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "DELPEYRAT",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "CARSO",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "BAZIN",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-BAZIN",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "GELAGRI",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - GELAGRI",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-BIOMERIEUX",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - CERECO",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - BIGARD",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "BIGARD",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - ANSES",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ANSES",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - COOPERL",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "COOPERL",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-LABOMAG",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "LABOMAG",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-EUROFINS",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "EUROFINS",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA - LABEYRIE",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "LABOMAG",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "LABEYRIE",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "INST PROVINCIAL",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "ASA-AJINOMOTO",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": -1,
+				"editable": true
+			}
+		]
+	},
+	"Destinataires": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Adhérents",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Partenaires",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Les deux",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"TypeAdhérents": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "ASA",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "RAEMA",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Les deux",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"Mailing": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Personnes",
+				"ref": 1,
+				"editable": true,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "Nom long",
+							"ref": 2,
+							"editable": true
+						},
+						{
+							"text": "Nom court",
+							"ref": 3,
+							"editable": true
+						},
+						{
+							"text": "Numéro adhérent",
+							"ref": 4,
+							"editable": true
+						},
+						{
+							"text": "Email RAEMA",
+							"ref": 5,
+							"editable": true
+						}
+					]
+				}
+			}
+		]
+	},
+	"Auteurs": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "AUBERTOT",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "BONNEAU",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "CAPPELIER",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "CARLIER",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "CNFTSV",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Coll DEMONT",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "COLLOBERT",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "D. Gauthier",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "ddPP 02",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "DDPP 67",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "Demont",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "DENECKERE",
+				"ref": 12,
+				"editable": true
+			},
+			{
+				"text": "DHENNIN",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "DORER",
+				"ref": 14,
+				"editable": true
+			},
+			{
+				"text": "DROMIGNY",
+				"ref": 15,
+				"editable": true
+			},
+			{
+				"text": "ELGROUD",
+				"ref": 16,
+				"editable": true
+			},
+			{
+				"text": "ENVA",
+				"ref": 17,
+				"editable": true
+			},
+			{
+				"text": "ENVL",
+				"ref": 18,
+				"editable": true
+			},
+			{
+				"text": "ENVN",
+				"ref": 19,
+				"editable": true
+			},
+			{
+				"text": "ENVT",
+				"ref": 20,
+				"editable": true
+			},
+			{
+				"text": "FDC 02",
+				"ref": 21,
+				"editable": true
+			},
+			{
+				"text": "FDC 06",
+				"ref": 22,
+				"editable": true
+			},
+			{
+				"text": "FDC 07",
+				"ref": 23,
+				"editable": true
+			},
+			{
+				"text": "FDC 18",
+				"ref": 24,
+				"editable": true
+			},
+			{
+				"text": "FDC 20B",
+				"ref": 25,
+				"editable": true
+			},
+			{
+				"text": "FDC 21",
+				"ref": 26,
+				"editable": true
+			},
+			{
+				"text": "FDC 24",
+				"ref": 27,
+				"editable": true
+			},
+			{
+				"text": "FDC 38",
+				"ref": 28,
+				"editable": true
+			},
+			{
+				"text": "FDC 43",
+				"ref": 29,
+				"editable": true
+			},
+			{
+				"text": "FDC 47",
+				"ref": 30,
+				"editable": true
+			},
+			{
+				"text": "FDC 57",
+				"ref": 31,
+				"editable": true
+			},
+			{
+				"text": "FDC 60",
+				"ref": 32,
+				"editable": true
+			},
+			{
+				"text": "FDC 65",
+				"ref": 33,
+				"editable": true
+			},
+			{
+				"text": "FDC 66",
+				"ref": 34,
+				"editable": true
+			},
+			{
+				"text": "FDC 69",
+				"ref": 35,
+				"editable": true
+			},
+			{
+				"text": "FDC 82",
+				"ref": 36,
+				"editable": true
+			},
+			{
+				"text": "FDC 83",
+				"ref": 37,
+				"editable": true
+			},
+			{
+				"text": "FEYDY",
+				"ref": 38,
+				"editable": true
+			},
+			{
+				"text": "FLACHAT",
+				"ref": 39,
+				"editable": true
+			},
+			{
+				"text": "FNC",
+				"ref": 40,
+				"editable": true
+			},
+			{
+				"text": "GAUTHIER",
+				"ref": 41,
+				"editable": true
+			},
+			{
+				"text": "GOURREAU",
+				"ref": 42,
+				"editable": true
+			},
+			{
+				"text": "GRANDMONTAGNE",
+				"ref": 43,
+				"editable": true
+			},
+			{
+				"text": "IFFA",
+				"ref": 44,
+				"editable": true
+			},
+			{
+				"text": "INFOMA",
+				"ref": 45,
+				"editable": true
+			},
+			{
+				"text": "JOUVE",
+				"ref": 46,
+				"editable": true
+			},
+			{
+				"text": "KECHAD",
+				"ref": 47,
+				"editable": true
+			},
+			{
+				"text": "LVD 03",
+				"ref": 48,
+				"editable": true
+			},
+			{
+				"text": "MARTINEAU",
+				"ref": 49,
+				"editable": true
+			},
+			{
+				"text": "MASSAER",
+				"ref": 50,
+				"editable": true
+			},
+			{
+				"text": "MILLEMANN",
+				"ref": 51,
+				"editable": true
+			},
+			{
+				"text": "ONCFS",
+				"ref": 52,
+				"editable": true
+			},
+			{
+				"text": "ONF 40",
+				"ref": 53,
+				"editable": true
+			},
+			{
+				"text": "PARODI",
+				"ref": 54,
+				"editable": true
+			},
+			{
+				"text": "PEROZ",
+				"ref": 55,
+				"editable": true
+			},
+			{
+				"text": "PERRE",
+				"ref": 56,
+				"editable": true
+			},
+			{
+				"text": "QSA Lyon",
+				"ref": 57,
+				"editable": true
+			},
+			{
+				"text": "PRINTZ",
+				"ref": 68,
+				"editable": false
+			},
+			{
+				"text": "QUENTIN",
+				"ref": 58,
+				"editable": true
+			},
+			{
+				"text": "QUICROIX",
+				"ref": 59,
+				"editable": true
+			},
+			{
+				"text": "ROBLOT",
+				"ref": 60,
+				"editable": true
+			},
+			{
+				"text": "ROZIER",
+				"ref": 61,
+				"editable": true
+			},
+			{
+				"text": "SARBACH",
+				"ref": 62,
+				"editable": true
+			},
+			{
+				"text": "SATTLER",
+				"ref": 63,
+				"editable": true
+			},
+			{
+				"text": "SERY",
+				"ref": 64,
+				"editable": true
+			},
+			{
+				"text": "TASSIN",
+				"ref": 65,
+				"editable": true
+			},
+			{
+				"text": "ULG",
+				"ref": 66,
+				"editable": true
+			},
+			{
+				"text": "ZACHARIE",
+				"ref": 67,
+				"editable": true
+			}
+		]
+	},
+	"Especes": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "Bovins",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Caprins",
+				"ref": 2,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Cerf",
+				"ref": 3,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Chamois",
+				"ref": 4,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "chevreuil",
+				"ref": 5,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Daim",
+				"ref": 6,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Equins",
+				"ref": 7,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Mouflon",
+				"ref": 8,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Ovins",
+				"ref": 9,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Porcins",
+				"ref": 10,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Sanglier",
+				"ref": 11,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"Organes": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "appareil genital femelle",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "appareil genital male",
+				"ref": 2,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "carcasse",
+				"ref": 3,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "coeur",
+				"ref": 4,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "foie",
+				"ref": 5,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "fressure",
+				"ref": 6,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "langue",
+				"ref": 7,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "mamelle",
+				"ref": 8,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "muscles",
+				"ref": 9,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "noeud lymphatique",
+				"ref": 10,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "oesophage",
+				"ref": 11,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "os et articulation",
+				"ref": 12,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "pancreas",
+				"ref": 13,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "peau",
+				"ref": 14,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "pericarde",
+				"ref": 15,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "peritoine",
+				"ref": 16,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "plevre",
+				"ref": 17,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "poumon",
+				"ref": 18,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "rate",
+				"ref": 19,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "rein",
+				"ref": 20,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "surrénales",
+				"ref": 21,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "systeme nerveux",
+				"ref": 22,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "tete",
+				"ref": 23,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "thymus",
+				"ref": 24,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "thyroide",
+				"ref": 25,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "tissu conjonctivo-adipeux",
+				"ref": 26,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "trachee",
+				"ref": 27,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "tube digestif",
+				"ref": 28,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "vaisseaux sanguins",
+				"ref": 29,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "vessie",
+				"ref": 30,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"TypeLésion": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "Absence de lésion",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "anomalie",
+				"ref": 1,
+				"editable": false,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "accident d'abattage",
+							"ref": 11,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "altération",
+							"ref": 12,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "anomalie congénitale",
+							"ref": 13,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "dysfonctionnement",
+							"ref": 14,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "fraude",
+							"ref": 15,
+							"editable": true,
+							"collapsed": true
+						}
+					]
+				}
+			},
+			{
+				"text": "lésion élémentaire ",
+				"ref": 2,
+				"editable": true,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "atrophie",
+							"ref": 21,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "défaut pigments",
+							"ref": 22,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "dégénérescence",
+							"ref": 23,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "hypertrophie",
+							"ref": 24,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "Infiltration de la substance fondamentale",
+							"ref": 25,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "infiltration séreuse",
+							"ref": 26,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "maigreur",
+							"ref": 27,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "nécrose",
+							"ref": 28,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "surcharge graisseuse",
+							"ref": 29,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "surcharge pigments",
+							"ref": 30,
+							"editable": true,
+							"collapsed": true
+						}
+					]
+				}
+			},
+			{
+				"text": "trouble circulatoire",
+				"ref": 3,
+				"editable": true,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "congestion active",
+							"ref": 33,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "congestion passive",
+							"ref": 32,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "hémorragie",
+							"ref": 34,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "Ischémie",
+							"ref": 37,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "oedème",
+							"ref": 31,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "thrombo-embolie",
+							"ref": 35,
+							"editable": true,
+							"collapsed": true
+						}
+					]
+				}
+			},
+			{
+				"text": "lésion inflammatoire",
+				"ref": 4,
+				"editable": true,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "inflammation banale cellulaire",
+							"ref": 46,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "inflammation banale purulente",
+							"ref": 42,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "inflammation banale vasculaire",
+							"ref": 41,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "inflammation gangreneuse",
+							"ref": 45,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "inflammation parasitaire",
+							"ref": 43,
+							"editable": true,
+							"collapsed": true
+						},
+						{
+							"text": "inflammation spécifique",
+							"ref": 44,
+							"editable": true,
+							"collapsed": true
+						}
+					]
+				}
+			},
+			{
+				"text": "lésions tumorales ",
+				"ref": 5,
+				"editable": true,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "Tumeur",
+							"ref": 51,
+							"editable": true,
+							"collapsed": true
+						}
+					]
+				}
+			}
+		]
+	},
+	"TypeLésionPrécis": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "altération",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "dysfonctionnement",
+				"ref": 2,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "anomalie congénitale",
+				"ref": 3,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "atrophie",
+				"ref": 4,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "congestion active",
+				"ref": 5,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "congestion passive",
+				"ref": 6,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "dégénérescence",
+				"ref": 7,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "embolies",
+				"ref": 8,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "hémorragies",
+				"ref": 9,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "hémosidérose",
+				"ref": 10,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "hypertrophie",
+				"ref": 11,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "imprégniation de la S. F.",
+				"ref": 12,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "infarcissement",
+				"ref": 13,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "infarctus",
+				"ref": 14,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "inflammation banale cellulaire",
+				"ref": 15,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "inflammation banale vasculaire",
+				"ref": 16,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "inflammation parasitaire",
+				"ref": 17,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "inflammation spécifique",
+				"ref": 18,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "ischémie",
+				"ref": 19,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "maigreur",
+				"ref": 20,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "nécrose",
+				"ref": 21,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "oedème",
+				"ref": 22,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "sclérose",
+				"ref": 23,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "stéatose",
+				"ref": 24,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "surcharge pigments",
+				"ref": 25,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "thrombus",
+				"ref": 26,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "tumeur bénigne",
+				"ref": 27,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "tumeur maligne",
+				"ref": 28,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"Statut": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Référence",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "Variante",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "A valider",
+				"ref": 2,
+				"editable": false
+			},
+			{
+				"text": "Ecartée",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": "",
+				"ref": 1,
+				"editable": true
+			}
+		]
+	},
+	"Fréquence": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Rare",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Exceptionnel",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Occasionnel",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Fréquent",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Très fréquent (dominante)",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	}
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Les  instances de l'ASA </title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+        <!--4dinclude menuAsaQuiSommeNous.shtml-->
+        <br /><br />
+        <p class="titrepage">Les  instances de l'ASA </p>
+        <br />
+        <table width="100%" border="0" height="68">
+          <tr> 
+            <td width="55%">L'association organise chaque année 
+                  l'assemblée générale 
+                  de tous ses adhérents.
+                A cette occasion, elle rend compte à ses membres de l'activité 
+                de l'année passée. 
+                <br />
+            </td>
+          </tr>
+        </table>
+         <br /><br />
+         
+         <p class="titrepage"><u>Présidents d'honneur de l'AVHA</u> : Pr Charles LABIE, Pr ROZIER</p>
+         
+          <p class="titrepage"><u>Présidents d'honneur de l'ASA</u> : René-Lucien SEYNAVE, René LUIGI,
+          Monique BERTHIAUX, Jacques RIVIERE</p>
+           <br /><br />
+          <p class="titrepage">Composition du d'Administration 2017 (Nom, Année de fin de mandat)</p>
+      
+          <table width="100%" border="0">
+            <!--DWLayoutTable-->
+            <tr> 
+              <td width="289" height="20">Jean-Christophe AUGUSTIN, 2019</td>
+              <td width="275">Brigitte ENRIQUEZ, 2019</td>
+              <td width="289">Gilles QUINET, 2020</td>
+            </tr>
+            <tr> 
+              <td height="20">François BOLNOT, 2018</td>
+              <td>Pierre DEMONT, 2019</td>
+              <td>Michel GAUTHIER, 2020</td>
+            </tr>
+            <tr> 
+              <td height="20">Martine CARLIER, 2018</td>
+              <td>Claude GRANDMONTAGNE, 2020 </td>
+              <td>François SIMON, 2019</td>
+            </tr>
+            <tr> 
+              <td height="20">Vincent CARLIER, 2018</td>
+              <td>Jeanne BRUGERE-PICOUX, 2020</td>
+              <td>Sophie GREEN-THIEBAULT, 2020</td>
+            </tr>
+            <tr> 
+              <td height="20">Nathalie CHESNAIS-BED'HOM, 2018</td>
+              <td valign="top">Michèle CHEVALIER, 2019</td>
+              <td>Michel MAS, 2020</td>
+            </tr>
+            <tr> 
+              <td height="20">Xavier DELOMEZ, 2018</td>
+              <td>Didier PEYROT, 2018</td>
+              <td>Poste à pourvoir</td>
+            </tr>
+          </table>
+      
+          <p>Les membres du Conseil d'administration sont élus pour une période 
+            de 3 ans renouvelable.</p>
+          <br /><br />
+        
+          <p class="titrepage">Composition du Bureau 2017</p>
+          <p class="hautpage">Président : Michel MAS</p>
+          <table width="100%" border="0">
+            <tr > 
+              <td width="45%">Secrétaire Général : Vincent CARLIER
+              <br />
+              Secrétaire Général Adjoint : François SIMON
+              <br />
+              Trésorier : Gilles QUINET
+              <br />
+              Trésorier Adjoint : Brigitte ENRIQUEZ</td>
+              <td width="55%">1er Vice-Président : Martine CARLIER
+                <br />
+                Vice-Présidents : Jean-Christophe AUGUSTIN, Michel GAUTHIER, Claude GRANDMONTAGNE
+                <br />Membres : Jeanne BRUGERE-PICOUX et Didier PEYROT
+              </td>
+            </tr> 
+          </table>
+           <br /><br />
+         
+      
+        <p>Statuts de l'association: 
+          <img src="images/impdf.gif" width="32" height="32" align="absmiddle" /> <a href="pdf/Statuts%202011%20de%20l%27ASA.pdf" target="_blank">Statuts.pdf</a>	
+        </p>
+        <p>Compte-rendu de l'assemblée générale 2017 sur l'exercice 2016 : 
+          <img src="images/impdf.gif" width="32" height="32" align="absmiddle" /> <a href="https://www.dropbox.com/s/n2jo311711w75kt/CRAGEnCours.pdf?dl=0" target="_blank">AG 2017</a>	
+        </p>
+      
+      
+        <br /><br />
+        <p class="textepetit">Pour lire les fichiers au format PDF, téléchargez <span class="plus">Acrobat Reader </span>sur 
+          le <a href="http://www.adobe.fr/products/acrobat/main.html" target="_blank">site 
+          d'Adobe </a><a href="http://www.adobe.fr/products/acrobat/main.html"><img src="images/acrobat.gif" width="59" height="21" /></a>
+        </p>  
+			</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

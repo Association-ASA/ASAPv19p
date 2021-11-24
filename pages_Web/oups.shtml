@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Identification</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+          <p class="grandtitrepage">
+           <br />
+           <img src="images/oops.PNG" alt="oups" />
+           <br />
+           Désolé !<br />
+           Vous n'auriez jamais dû vous retrouver ici.<br /><br />
+          </p>
+          <p class="hautpage">
+            Merci de nous signaler dans quelles circonstances cette erreur s'est produite<br />
+            en cliquant sur le lien suivant
+            <em>
+              <a href="mailto:cegeheme@wanadoo.fr?subject=Erreur sur le site Web de l'ASA
+              &body=Merci de préciser dans quelles circonstances l'erreur s'est produite ...">
+              signaler l'erreur</a>
+            </em>
+            <br /><br />
+          </p>
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+	

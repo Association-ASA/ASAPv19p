@@ -1,0 +1,368 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1000,
+	"height": 640,
+	"menuBar": "Barre #1",
+	"markerBody": 646,
+	"markerBreak": 646,
+	"markerFooter": 646,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1153,
+					"height": 797,
+					"stroke": "transparent"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 9,
+					"left": 258,
+					"height": 21
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 12,
+					"left": 20,
+					"width": 272,
+					"height": 13,
+					"class": "Onglet",
+					"fontWeight": "bold",
+					"text": "Qu'est-ce que AsaDia ? A quoi ça sert ?"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 12,
+					"left": 263,
+					"width": 161,
+					"height": 13,
+					"class": "Onglet",
+					"fontWeight": "bold",
+					"text": "Quels en sont les auteurs ?"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 12,
+					"left": 436,
+					"width": 152,
+					"height": 13,
+					"class": "Onglet",
+					"fontWeight": "bold",
+					"text": "Evolutions et mises à jour "
+				},
+				"Ligne4": {
+					"type": "line",
+					"top": 10,
+					"left": 428,
+					"width": 1,
+					"height": 19
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 9,
+					"left": 15,
+					"width": 243,
+					"height": 21,
+					"dataSource": "Variable1",
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton inversé1": {
+					"type": "button",
+					"top": 9,
+					"left": 258,
+					"width": 169,
+					"height": 21,
+					"dataSource": "Variable2",
+					"display": false,
+					"method": "ObjectMethods/Bouton inversé1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton inversé2": {
+					"type": "button",
+					"top": 9,
+					"left": 428,
+					"width": 160,
+					"height": 20,
+					"dataSource": "Variable3",
+					"display": false,
+					"method": "ObjectMethods/Bouton inversé2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 590,
+					"left": 845,
+					"width": 128,
+					"height": 27,
+					"dataSource": "BouQuitEnreAsaDia2",
+					"text": "Quitter l'écran",
+					"class": "Boutons",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 10,
+					"left": 587,
+					"width": 1,
+					"height": 19
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte2": {
+					"type": "text",
+					"top": 108,
+					"left": 445,
+					"width": 422,
+					"height": 91,
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "ASA\rBâtiment Zundel - Ecole Nationale Vétérinaire d'Alfort\r7, avenue du Général de Gaulle - \r94704 Maisons-Alfort Cedex\rTéléphone et fax : 01 56 29 36 30\re-mail :asa-spv@wanadoo.fr\r\rsite internet : www.asa-spv.asso.fr"
+				},
+				"Variable14": {
+					"type": "checkbox",
+					"top": 661,
+					"left": 30,
+					"width": 386,
+					"height": 16,
+					"dataSource": "VarPlusJamaisCa",
+					"text": "Ne plus afficher cet écran au démarrage",
+					"class": "Champ_normal",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 185,
+					"left": 789,
+					"width": 140,
+					"height": 26,
+					"dataSource": "BouMail",
+					"text": "Nous écrire",
+					"class": "Boutons",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton4": {
+					"type": "button",
+					"top": 216,
+					"left": 789,
+					"width": 140,
+					"height": 26,
+					"dataSource": "BouWeb",
+					"text": "Aller sur le site Web",
+					"class": "Boutons",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 288,
+					"left": 35,
+					"width": 948,
+					"height": 252,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": " L'ASA (association loi 1901 Animal - Société - Aliment), dont la vocation est la promotion de la santé publique vétérinaire, a produit AsaDia 2, DVD-ROM de diapositives de lésions d'abattoir sous l'égide de la Direction Générale de l'Alimentation du Ministère en charge de l'Agriculture.\r\rBien plus qu'un catalogue ou qu'un cours sur les lésions, ce DVD-ROM est un outil évolutif, validé par une commission d'experts fédérant cinq institutions européennes d'enseignement vétérinaire initial (ENVA, ENVT, ONIRIS, ULB, Vetagro Sup), l'ENSV, l'INFOMA et d'autres compétences reconnues. \rIl permet l'apprentissage, la formation et l'aide au diagnostic des lésions d'abattoir des animaux de boucherie et de charcuterie (bovins, équins, ovins et caprins et porcins).\r"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable3": {
+					"type": "input",
+					"top": 127,
+					"left": 540,
+					"width": 271,
+					"height": 264,
+					"dataSource": "VarImageAuteur",
+					"dataSourceTypeHint": "picture",
+					"class": "default",
+					"fill": "transparent",
+					"borderStyle": "double",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 404,
+					"left": 541,
+					"width": 270,
+					"height": 84,
+					"dataSource": "VarPedigree",
+					"class": "default",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "double",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "listbox",
+					"top": 125,
+					"left": 140,
+					"width": 290,
+					"height": 364,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Variable5_Column1",
+							"dataSource": "TbNomsAuteurs",
+							"width": 275,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"dataSource": "Entête1",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 86,
+					"left": 300,
+					"width": 292,
+					"height": 29,
+					"stroke": "#001EFF",
+					"class": "Titre",
+					"text": "Les auteurs du DVD-ROM "
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte10": {
+					"type": "text",
+					"top": 92,
+					"left": 355,
+					"width": 292,
+					"height": 29,
+					"stroke": "#001EFF",
+					"class": "Titre",
+					"text": "Evolutions et mises à jour "
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 154,
+					"left": 37,
+					"width": 913,
+					"height": 600,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Ce DVD-ROM de diapositives de lésions à l'abattoir est un outil évolutif car il permet d'ajouter ses propres photographies à la collection existante.\r\rL'ASA a constitué un groupe d'experts comprenant :\r\r- des experts de cinq institutions européennes d'enseignement vétérinaire, de l'ENSV et de l'INFOMA, chargés de former les professionnels de la santé publique.\r\r- des experts \"de terrain\" chargés d'appliquer la réglementation concernant la santé publique vétérinaire.\r\r- des représentants des professionnels des filières des productions bovines et porcines.\r\rLe groupe d'expert a pour rôle de faire évoluer AsaDia autant que nécessaire.\rIl prend en compte les critiques formulées par les utilisateurs, d'en faire l'analyse et d'y répondre.\rIl valide les nouvelles photographies envoyées par les utilisateurs qui seront alors ajoutées à la collection et envoyées aux utilisateurs enregistrés en mentionnant l'identité de l'auteur.\r\rCe groupe n'est pas figé et accueille, dans l'ambiance conviviale d'une association, toutes les compétences volontaires."
+				}
+			}
+		}
+	]
+}

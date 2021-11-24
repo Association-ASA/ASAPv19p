@@ -1,0 +1,1 @@
+﻿## $0:=SC_DB_checkName---

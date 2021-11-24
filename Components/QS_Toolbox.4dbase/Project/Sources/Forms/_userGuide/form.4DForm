@@ -1,0 +1,81 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 800,
+	"windowMinHeight": 500,
+	"formSizeAnchor": "limite",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"wa_userGuide": {
+					"type": "webArea",
+					"top": 9,
+					"left": 1,
+					"width": 781,
+					"height": 581,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "Web Area_url",
+					"progressSource": "Web Area_progress",
+					"webEngine": "embedded",
+					"borderStyle": "none",
+					"events": [
+						"onEndURLLoading"
+					]
+				},
+				"limite": {
+					"type": "line",
+					"top": 595,
+					"left": 769,
+					"width": 19,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"PommeW": {
+					"type": "button",
+					"top": 97,
+					"left": -15,
+					"width": 10,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ctrlW": {
+					"type": "button",
+					"top": 9,
+					"left": 835,
+					"width": 145,
+					"height": 25,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/_UI"
+					},
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "ctrl-W"
+				}
+			}
+		},
+		null
+	]
+}

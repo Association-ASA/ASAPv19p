@@ -1,0 +1,1 @@
+﻿## $0:=COLL_exportAsText($1)---

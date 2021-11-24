@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Adhérer à l'ASA</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				<br />
+				 <br />
+				 <h1 class="grandhautpage">Adhésion personnelle à l'ASA</h1>
+				 <p class="textegranddecale">
+						Pour adhérer à l'ASA à titre personnel, vous devez remplir le <a href="pdf/AdhesionASA.pdf">formulaire d'adhésion</a>.<br />
+						Selon nos statuts, le Conseil d'administration a mission d'examiner les candidatures.<br />
+						Pour cette raison, nous vous remercions de bien vouloir joindre au formulaire un CV.
+					</p>
+				 <br />
+				 <br />
+				<h1 class="grandhautpage">Adhésion au titre du RAEMA</h1>
+					<p class="textegranddecale">
+						Comme précisé dans le contrat du RAEMA traditionnel (poudre) et dans le bon de commande du RAEMA complémentaire (gel) l'adhésion au RAEMA est liée à celle de l'ASA
+						à l'exception des participants appartenant à l'ADILVA ou au RAEMA Belge.<br />
+						Pour plus de détail, veuiller cliquer ici : <a href="w2raemaabonnement.shtml">Adhésion au RAEMA</a>.<br />
+					</p>
+				 
+				 
+				 
+				 
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

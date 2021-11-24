@@ -1,0 +1,55 @@
+
+
+/*page de CSS du test gibier */
+
+#corpsadg{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.blocphotogibier{
+    margin-top: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.blocinfo{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.adgtitreinfo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    color: #555;
+    display: inline-block;
+    width: 20%;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.adgtexteinfo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+    width:1000px;
+}
+
+.textedecalegibier{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    margin-left: 60px;
+    text-align: left;
+}
+

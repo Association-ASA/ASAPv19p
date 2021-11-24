@@ -1,0 +1,1 @@
+﻿## TOOL_trimCharacters($1)---

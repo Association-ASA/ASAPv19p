@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ILC</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemarenseignement.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau anglais" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps" class="textebanalgrand">
+			<!--4dinclude menuraemaA.shtml-->	
+				 <div id="idnoadherent">
+						<p class="grandhautpage">General points
+						</p>
+                
+            <div class="idblocinfo3">
+							<img src="images/aliment.JPG"
+								alt="Légumes"
+								title="Légumes"
+								width="277"
+								height=="174"
+							/>
+              <p class="textebloc">
+								<br />
+                <span class="plus">What is an Inter-laboratories Comparison and why should you take part?</span><br />
+                The main reasons are:<br />
+                - To demonstrate your analytical expertise<br />
+                - To improve your operating<br />
+                - To answer to requirements of standard ISO 17025 <br />
+                - To make your staff more qualified<br />
+								<br /><br />
+								<p class="texteadroite">
+                 <a href="raemacilA.shtml">Learn more</a><br />
+								</p>
+              </p>
+            </div>
+            
+            <div class="idblocinfo3">
+							<img src="images/raemaconteneur.JPG"
+								alt="Pots RAEMA"
+								title="Pots RAEMA"
+								width="277"
+							/>
+							              <p class="textebloc">
+								<br />
+								<span class="plus">What does RAEMA offer?</span><br />
+                RAEMA offers 4 schemes per year:<br />
+                2 “Powder RAEMA” schemes in March and in October, on milk powder matrix.<br />
+                2 "Gel RAEMA” schemes in May and in December, on gelified matrix.<br />
+
+							</p>
+							<br /><br /><br /><br />
+							 <p class="texteadroite">
+                 <a href="raemapresentationA.shtml">Learn more</a><br />
+              </p>
+            </div>
+            
+            <div class="idblocinfo3">
+							<p class="fondblanccentre">
+								<img src="images/logoASA2.PNG"
+									alt="ASA logo"
+									title="ASA logo"
+									width="253"
+								/>
+
+								<img src="images/logoraema1.gif"
+									alt="ICL"
+									title="Inter-laboratories Comparison"
+									width="270"
+								/>
+							</p>
+              <p class="textebloc">
+								<br />
+                <span class="plus">Why should you choose RAEMA?</span><br />
+                Since 1988, ASA has been organizing RAEMA; therefore ASA has an expertise
+                as a provider of Inter-laboratories Comparison.<br />
+                400 laboratories have been participating to RAEMA for more than 20 years.<br />
+                Since the beginning, ASA has been involving in the work of Cofrac
+                in order to set up the accreditation of Inter-laboratories Comparison providers.<br />
+                Since 2007, ASA has been accreditated by Cofrac, according to ISO 17043
+                (accreditation N°
+                <a href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864">
+                  1-1836
+                </a>)
+                as the RAEMA provider.
+							</p>
+							<br />
+							<p class="texteadroite">
+							 <a href="raemapourquoiA.shtml">Learn more</a><br />
+							</p>
+            </div>
+         </div> 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

@@ -1,0 +1,1713 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1600,
+	"height": 700,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onActivate"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"BouQuitter": {
+					"type": "button",
+					"top": 14,
+					"left": 1235,
+					"width": 94,
+					"height": 33,
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "Champ_normal",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"ListBoxQuestions": {
+					"type": "listbox",
+					"top": 132,
+					"left": 54,
+					"width": 519,
+					"height": 290,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "ListBoxQuestions",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "$ListboxSetQn",
+					"table": 34,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "[QuizzQuestions:34]ID:1",
+							"dataSourceTypeHint": "integer",
+							"width": 47,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "ID",
+								"dataSource": "Entête1",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "[QuizzQuestions:34]IDQuestionnaire:2",
+							"dataSourceTypeHint": "integer",
+							"width": 53,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "IDQaire",
+								"dataSource": "Entête2",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "[QuizzQuestions:34]LibelQuestion:3",
+							"width": 306,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Libellé",
+								"dataSource": "Entête3",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne5",
+							"dataSource": "[QuizzQuestions:34]CodeQuestion:5",
+							"width": 76,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Code",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "OB Lire:C1224([QuizzQuestions:34]Argument:6;\"ModeEvaluation\";Est un entier long:K8:6)",
+							"width": 22,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"textAlign": "left",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "M",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"ListBoxReponses": {
+					"type": "listbox",
+					"top": 132,
+					"left": 583,
+					"width": 645,
+					"height": 475,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "ListBoxReponses",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "$ListboxSetR",
+					"table": 33,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne6",
+							"dataSource": "[QuizzReponses:33]ID:1",
+							"dataSourceTypeHint": "integer",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "ID",
+								"dataSource": "Entête1",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne7",
+							"dataSource": "[QuizzReponses:33]ArgumentaireReponse:4",
+							"width": 178,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Argument",
+								"dataSource": "Entête2",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne8",
+							"dataSource": "[QuizzReponses:33]LibelReponse:3",
+							"width": 213,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Libellé",
+								"dataSource": "Entête3",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne16",
+							"dataSource": "[QuizzReponses:33]CodeReponse:5",
+							"width": 76,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête16",
+								"text": "Code",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied16",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne9",
+							"dataSource": "[QuizzReponses:33]ValeurReponse:6",
+							"dataSourceTypeHint": "integer",
+							"width": 53,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Valeur",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne10",
+							"dataSource": "[QuizzReponses:33]IDQuestion:2",
+							"dataSourceTypeHint": "integer",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête10",
+								"text": "IDQ",
+								"dataSource": "Entête5",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied10",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 103,
+					"left": 59,
+					"width": 156,
+					"height": 20,
+					"class": "Titre_petit",
+					"text": "Les questions"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 103,
+					"left": 583,
+					"width": 156,
+					"height": 20,
+					"class": "Titre_petit",
+					"text": "Les réponses"
+				},
+				"ListBoxPhotos": {
+					"type": "listbox",
+					"top": 471,
+					"left": 54,
+					"width": 509,
+					"height": 136,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "ListBoxPhotos",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "$ListboxSetP",
+					"table": 36,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne11",
+							"dataSource": "[QuizzPhotos:36]ID:1",
+							"dataSourceTypeHint": "integer",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête11",
+								"text": "ID",
+								"dataSource": "Entête1",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied11",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne12",
+							"dataSource": "[QuizzPhotos:36]NumPhotoA:3",
+							"width": 67,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête12",
+								"text": "N°",
+								"dataSource": "Entête2",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied12",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne13",
+							"dataSource": "[QuizzPhotos:36]CommentairePhoto:4",
+							"width": 230,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête13",
+								"text": "Commentaire",
+								"dataSource": "Entête3",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied13",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne14",
+							"dataSource": "[QuizzPhotos:36]CodePhoto:5",
+							"width": 76,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête14",
+								"text": "Code",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied14",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne15",
+							"dataSource": "[QuizzPhotos:36]IDQuestion:2",
+							"dataSourceTypeHint": "integer",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête15",
+								"text": "IDQ",
+								"dataSource": "Entête5",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied15",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 442,
+					"left": 54,
+					"width": 156,
+					"height": 20,
+					"class": "Titre_petit",
+					"text": "Les photos"
+				},
+				"PUMQuestionnaire": {
+					"type": "dropdown",
+					"top": 8,
+					"left": 230,
+					"width": 650,
+					"height": 36,
+					"dataSource": "PUMQuestionnaire",
+					"class": "Titre_petit",
+					"method": "ObjectMethods/PUMQuestionnaire.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouImportTout": {
+					"type": "button",
+					"top": 617,
+					"left": 1094,
+					"width": 134,
+					"height": 33,
+					"text": "Importer tout",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouImportTout.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouExportTout": {
+					"type": "button",
+					"top": 617,
+					"left": 978,
+					"width": 106,
+					"height": 33,
+					"text": "Exporter tout",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouExportTout.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSuivi": {
+					"type": "button",
+					"top": 12,
+					"left": 1022,
+					"width": 61,
+					"height": 33,
+					"action": "nextPage",
+					"text": "Suivi",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouSuivi.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupQuestionnaire": {
+					"type": "button",
+					"top": 8,
+					"left": 885,
+					"width": 35,
+					"height": 33,
+					"text": "-",
+					"class": "Titre",
+					"method": "ObjectMethods/BouSupQuestionnaire.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouImportUn": {
+					"type": "button",
+					"top": 10,
+					"left": 90,
+					"width": 73,
+					"height": 33,
+					"text": "Importer",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouImportUn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouExportUn": {
+					"type": "button",
+					"top": 9,
+					"left": 9,
+					"width": 77,
+					"height": 33,
+					"text": "Exporter",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouExportUn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupQuestion": {
+					"type": "button",
+					"top": 101,
+					"left": 217,
+					"width": 30,
+					"height": 26,
+					"text": "-",
+					"class": "Titre",
+					"focusable": false,
+					"method": "ObjectMethods/BouSupQuestion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupReponse": {
+					"type": "button",
+					"top": 99,
+					"left": 732,
+					"width": 30,
+					"height": 26,
+					"text": "-",
+					"class": "Titre",
+					"focusable": false,
+					"method": "ObjectMethods/BouSupReponse.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouVoirWeb": {
+					"type": "button",
+					"top": 617,
+					"left": 913,
+					"width": 58,
+					"height": 33,
+					"text": "Web",
+					"class": "Titre",
+					"focusable": false,
+					"method": "ObjectMethods/BouVoirWeb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupPhoto": {
+					"type": "button",
+					"top": 438,
+					"left": 378,
+					"width": 30,
+					"height": 26,
+					"text": "-",
+					"class": "Titre",
+					"focusable": false,
+					"method": "ObjectMethods/BouSupPhoto.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouExportTexte": {
+					"type": "button",
+					"top": 10,
+					"left": 167,
+					"width": 53,
+					"height": 33,
+					"text": "Texte",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouExportTexte.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouRetablitCodes": {
+					"type": "button",
+					"top": 617,
+					"left": 776,
+					"width": 125,
+					"height": 33,
+					"text": "Rétablir les codes",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouRetablitCodes.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouVerifCodes": {
+					"type": "button",
+					"top": 617,
+					"left": 57,
+					"width": 158,
+					"height": 33,
+					"text": "Vérifier les codes",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouVerifCodes.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarRapportQD": {
+					"type": "input",
+					"top": 612,
+					"left": 238,
+					"width": 325,
+					"height": 46,
+					"dataSource": "VarRapportQD",
+					"class": "Petite_écriture",
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouCadenas": {
+					"type": "pictureButton",
+					"top": 14,
+					"left": 1140,
+					"width": 25,
+					"height": 30,
+					"dataSource": "BouCadenas",
+					"rowCount": 2,
+					"picture": "/RESOURCES/Images/Buttons/2Etats/Cadenas2.png",
+					"loopBackToFirstFrame": true,
+					"method": "ObjectMethods/BouCadenas.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouPhotos": {
+					"type": "button",
+					"top": 12,
+					"left": 938,
+					"width": 78,
+					"height": 33,
+					"action": "nextPage",
+					"text": "Photos",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouPhotos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouQuizzGeneral": {
+					"type": "button",
+					"top": 617,
+					"left": 589,
+					"width": 178,
+					"height": 33,
+					"text": "Rétablir les codes",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouQuizzGeneral.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 69,
+					"left": 61,
+					"width": 52,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"text": "Auteur"
+				},
+				"Champ3": {
+					"type": "input",
+					"top": 69,
+					"left": 112,
+					"width": 232,
+					"height": 17,
+					"dataSource": "[QuizzQuestionnaires:35]Auteur:2",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Champ3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 69,
+					"left": 402,
+					"width": 71,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"text": "Institution"
+				},
+				"Champ4": {
+					"type": "input",
+					"top": 69,
+					"left": 472,
+					"width": 499,
+					"height": 17,
+					"dataSource": "[QuizzQuestionnaires:35]Institution:4",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Champ4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 69,
+					"left": 991,
+					"width": 71,
+					"height": 17,
+					"class": "Etiquette_grande",
+					"text": "Niveau"
+				},
+				"Champ5": {
+					"type": "input",
+					"top": 69,
+					"left": 1038,
+					"width": 29,
+					"height": 17,
+					"dataSource": "[QuizzQuestionnaires:35]Niveau:8",
+					"dataSourceTypeHint": "integer",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Champ5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"ListBoxSuivi": {
+					"type": "listbox",
+					"top": 111,
+					"left": 8,
+					"width": 912,
+					"height": 475,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "2em",
+					"doubleClickInRowAction": "displaySubrecord",
+					"highlightSet": "$ListboxSet0",
+					"table": 32,
+					"selectionMode": "single",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxSuivi.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Colonne17",
+							"dataSource": "[QuizzSuivi:32]ID:1",
+							"dataSourceTypeHint": "integer",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête17",
+								"text": "ID",
+								"dataSource": "Entête1",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied17",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne19",
+							"dataSource": "[QuizzSuivi:32]Action:5",
+							"width": 498,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête19",
+								"text": "Libellé",
+								"dataSource": "Entête3",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied19",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne20",
+							"dataSource": "[QuizzSuivi:32]DateDebut:3",
+							"dataSourceTypeHint": "date",
+							"width": 76,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête20",
+								"text": "Date",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied20",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne24",
+							"dataSource": "[QuizzSuivi:32]HeureDebut:4",
+							"dataSourceTypeHint": "time",
+							"width": 53,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête24",
+								"text": "Heure",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied24",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne18",
+							"dataSource": "[QuizzSuivi:32]IDQuestionnaire:2",
+							"dataSourceTypeHint": "integer",
+							"width": 96,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête18",
+								"text": "ID\\questionnaire",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied18",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne21",
+							"dataSource": "[QuizzSuivi:32]IDQuestion:7",
+							"dataSourceTypeHint": "integer",
+							"width": 71,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête21",
+								"text": "ID\\question",
+								"dataSource": "Entête4",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied21",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne22",
+							"dataSource": "[QuizzSuivi:32]Ordre:8",
+							"dataSourceTypeHint": "integer",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête22",
+								"text": "Rang",
+								"dataSource": "Entête5",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied22",
+								"timeFormat": "hh_mm_ss",
+								"textAlign": "center",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"PUMSuivi": {
+					"type": "dropdown",
+					"top": 10,
+					"left": 98,
+					"width": 784,
+					"height": 36,
+					"dataSource": "PUMSuivi",
+					"class": "Titre_petit",
+					"method": "ObjectMethods/PUMSuivi.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouSuivi1": {
+					"type": "button",
+					"top": 13,
+					"left": 895,
+					"width": 78,
+					"height": 33,
+					"action": "previousPage",
+					"text": "Quizz",
+					"class": "Champ_normal",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupprime": {
+					"type": "button",
+					"top": 58,
+					"left": 67,
+					"width": 37,
+					"height": 33,
+					"text": "-",
+					"class": "Titre",
+					"method": "ObjectMethods/BouSupprime.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarTitreQuestionnaire": {
+					"type": "input",
+					"top": 84,
+					"left": 58,
+					"width": 1047,
+					"height": 20,
+					"dataSource": "VarTitreQuestionnaire",
+					"class": "Titre_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Champ": {
+					"type": "input",
+					"top": 164,
+					"left": 929,
+					"width": 233,
+					"height": 145,
+					"dataSource": "[QuizzSuivi:32]Argument:6",
+					"dataSourceTypeHint": "object",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 145,
+					"left": 933,
+					"width": 140,
+					"height": 21,
+					"class": "Etiquette_grande",
+					"text": "Argument :"
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 337,
+					"left": 929,
+					"width": 221,
+					"height": 49,
+					"dataSource": "[QuizzSuivi:32]Action:5",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 318,
+					"left": 933,
+					"width": 140,
+					"height": 21,
+					"class": "Etiquette_grande",
+					"text": "Libellé du suivi :"
+				},
+				"Champ2": {
+					"type": "input",
+					"top": 417,
+					"left": 929,
+					"width": 221,
+					"height": 17,
+					"dataSource": "[QuizzQuestions:34]CodeQuestion:5",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 398,
+					"left": 933,
+					"width": 140,
+					"height": 21,
+					"class": "Etiquette_grande",
+					"text": "Code question :"
+				},
+				"BouBilan": {
+					"type": "button",
+					"top": 111,
+					"left": 933,
+					"width": 141,
+					"height": 33,
+					"text": "Bilan",
+					"class": "Titre_petit",
+					"focusable": false,
+					"method": "ObjectMethods/BouBilan.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxSuiviConcepteur": {
+					"type": "listbox",
+					"top": 451,
+					"left": 929,
+					"width": 364,
+					"height": 135,
+					"resizingMode": "legacy",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "TbQui",
+							"dataSource": "TbQui",
+							"width": 63,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête23",
+								"text": "Qui"
+							},
+							"footer": {
+								"name": "Pied23",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbQuand",
+							"dataSource": "TbQuand",
+							"dataSourceTypeHint": "date",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête25",
+								"text": "Quand"
+							},
+							"footer": {
+								"name": "Pied25",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "TbQuoi",
+							"dataSource": "TbQuoi",
+							"width": 220,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête27",
+								"text": "Quoi"
+							},
+							"footer": {
+								"name": "Pied27",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"BouPhotos1": {
+					"type": "button",
+					"top": 13,
+					"left": 984,
+					"width": 78,
+					"height": 33,
+					"action": "nextPage",
+					"text": "Photos",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouPhotos1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte6": {
+					"type": "text",
+					"top": 24,
+					"left": 68,
+					"width": 790,
+					"height": 20,
+					"class": "Titre_petit",
+					"textAlign": "center",
+					"text": "Gestion des photos ajoutées pour les questionnaires"
+				},
+				"PUMSigleInstitution": {
+					"type": "dropdown",
+					"top": 92,
+					"left": 63,
+					"width": 273,
+					"height": 47,
+					"dataSource": "TbSigleInstitution",
+					"focusable": false,
+					"class": "Titre_petit",
+					"method": "ObjectMethods/PUMSigleInstitution.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListBoxPhotosSup": {
+					"type": "listbox",
+					"top": 168,
+					"left": 63,
+					"width": 674,
+					"height": 368,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"movableRows": false,
+					"headerHeight": "2em",
+					"highlightSet": "$ListboxSet",
+					"table": 45,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/ListBoxPhotosSup.4dm",
+					"events": [
+						"onLoad",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Colonne23",
+							"dataSource": "[DiaData:45]XDate:3",
+							"dataSourceTypeHint": "date",
+							"width": 89,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête26",
+								"text": "Date",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied26",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne25",
+							"dataSource": "[DiaData:45]XNom:1",
+							"width": 314,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête28",
+								"text": "Nom du fichier importé",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied28",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne26",
+							"dataSource": "[DiaData:45]XAlpha:14",
+							"width": 123,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête29",
+								"text": "Nom de la photo",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied29",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne27",
+							"dataSource": "QuizzPhotosAfficheQuestionnaire ",
+							"width": 144,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onLoad"
+							],
+							"method": "ObjectMethods/Colonne27.4dm",
+							"header": {
+								"name": "Entête30",
+								"text": "Questionnaires",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied30",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"BouSuivi2": {
+					"type": "button",
+					"top": 13,
+					"left": 895,
+					"width": 78,
+					"height": 33,
+					"action": "firstPage",
+					"text": "Quizz",
+					"class": "Champ_normal",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSuivi3": {
+					"type": "button",
+					"top": 13,
+					"left": 1019,
+					"width": 61,
+					"height": 33,
+					"action": "previousPage",
+					"text": "Suivi",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/BouSuivi3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarPhotoSup": {
+					"type": "input",
+					"top": 168,
+					"left": 850,
+					"width": 369,
+					"height": 369,
+					"dataSource": "VarPhotoSup",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouSupImageSup": {
+					"type": "button",
+					"top": 170,
+					"left": 768,
+					"width": 41,
+					"height": 33,
+					"text": "-",
+					"class": "Titre",
+					"focusable": false,
+					"method": "ObjectMethods/BouSupImageSup.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

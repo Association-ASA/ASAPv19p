@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+          <br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample0.html">Exemple</a></li>
+            <li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+            <li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+            <li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+            <li><a href="w2exemplealisample4.html">Unités classées</a></li>
+            <li><a href="w2exemplealisample5.html">2 classes</a></li>
+            <li><a href="#"></a></li>								
+        </ul>
+					<br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+            <li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+            <li><a href="w2exemplealisample8.html">Plan simple</a></li>
+            <li><a href="w2exemplealisample9.html">A partir de NQA NQL</a></li>
+            <li><a href="w2exemplealisample10.html">Analyse du résultat</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+          <br />
+          <p class="titrepage">EXEMPLE</p>
+          <br />
+          <p ALIGN="JUSTIFY">
+            Entrez dans le tableau le <I>NQA</I> (0,01), le risque fournisseur consenti (ici 0,05), 
+            le <I>NQL</I> (0,05) et le risque client consenti (ici 0,10), le tableau vous 
+            renvoie le plan <I>n</I> = 132, <I>c</I> = 3.
+              <br /><br />
+            En utilisant ce plan, vous accepterez (3 ou moins de 3 unités non conformes parmi 
+            les 132 prélevées) dans 95% des cas les lots contenant 1% d'unités 
+            non conformes et vous rejetterez (plus de 3 unités non conformes parmi 
+            les 132) dans 90% des cas les lots contenant 5% d'unités non conformes.<br /><br />
+          </p>
+          <p class="textecentre">
+            <img src="images/Image10.gif" WIDTH=819 HEIGHT=403 />
+          </p>
+          <br />
+          <p class="titrepage">
+            <a href="w2exemplealisample11.html">
+              <br />Suite de l'exemple
+            </a>
+          </p>
+            <br />
+                            				 
+			</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+
+</html>

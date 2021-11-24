@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Informations pratiques</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemaabonnementA.shtml">
+        <img  src="images/DrapeauA.gif" alt="english flag" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanal">
+				<!--4dinclude menuraema.shtml-->	
+				 <br /><br />
+				<p class="grandhautpage">Schéma général
+				</p>
+				<p class="textedecale30">
+					Pour accéder au schéma général, cliquer sur le lien suivant.
+          <a href="mw2WebSchemaGenP1">Schéma général</a><br />
+				</p>
+        <br /><br />
+				<p class="grandhautpage">Modalités participation
+				</p>
+				<p class="textedecale30">
+					Toute <b>participation</b> à un des <b>réseaux de Comparaison Inter-Laboratoires</b>
+					organisé par l’ASA <b>nécessite</b>, au préalable, <b>l’adhésion à l’association</b>.
+					L’adhésion à l'ASA a une <b>durée d’un an</b>, elle est <b>prolongée par tacite reconduction.</b>.
+					<a href="pdf/adhesionasa.pdf">Télécharger le bulletin d'adhésion à l’ASA</a><br />
+          Les laboratoires qui souhaitent participer au RAEMA doivent remplir une <b>fiche de renseignements</b>.
+          <a href="pdf/FicheRenseignement.pdf">Télécharger la fiche de renseignements</a><br />
+				</p>
+				<br/>
+				<p class="grandhautpagedecale">
+				▪ RAEMA (poudre) :
+				</p>
+				<p class="textedecale30">
+					<u>- Modalités de participation :</u>
+						<br />
+                    <p class="imageasadiad">
+						<img src="IMAGES/ContratRAEMA.jpg" alt="Contrat RAEMA" width="300px"/>
+                    </p>
+						La participation au RAEMA est basée sur un <b>abonnement annuel</b> régi par un <b>contrat</b> établi <b>entre l’ASA et le laboratoire</b>.
+						A l’issue de la signature du contrat, un <b>numéro de laboratoire</b> ainsi qu’un <b>mot de passe</b> sont attribués à chaque participant.
+						La conservation de ces <b>codes</b> est indispensable et permet aux laboratoires de <b>saisir leurs résultats</b>
+						et de <b>télécharger leurs rapports de campagn</b>e en toute <b>confidentialité</b>.
+						<br /><br />
+						D’une <b>durée d’un an</b>, ce <b>contrat</b> est <b>prolongé par tacite reconduction</b> (Article 3 du contrat).
+						Le montant de l’abonnement est voté en début de chaque année par l’Assemblée générale de l’association
+						à laquelle chaque adhérent est convoqué (Article 1 du contrat).
+						Les laboratoires sont alors informés des tarifs votés.
+						<a href="pdf/contratraema.pdf">Télécharger le contrat RAEMA poudre</a>
+						<br /><br />
+						
+					<u>- Colis supplémentaires :</u>
+							<br />
+					
+						Chaque laboratoire a la possibilité de commander des <b>colis supplémentaires. Identiques au colis reçu</b>,
+						ils permettent au laboratoire de disposer de <b>davantage de poudre</b> afin d’évaluer différentes méthodes ou différents techniciens.
+						<br />Deux formules sont proposées :
+						
+					<p class="imageasadiad">
+						<img src="IMAGES/Colis.JPG" alt="Colis RAEMA" width="300px"/>
+					</p>
+				</p>		
+				<p class="textedecale">
+							<u><b>- Colis supplémentaire avec édition de rapport Cofrac</b> </u>
+						<br />
+							Le laboratoire se voit attribuer un <b>second numéro de laboratoire et mot de passe</b>, lui permettant de <b>saisir
+							les deux séries de résultats</b> correspondant à chacun des colis reçus. Il reçoit alors <b>deux rapports individuels Cofrac</b>.
+              Un second numéro de laboratoire et un second mot de passe sont attribués au laboratoire,
+              lui permettant de saisir les résultats de son colis supplémentaire.
+              Le laboratoire recevra alors son rapport individuel associé à son colis supplémentaire.
+						<br />
+						
+							<u><b>	- Colis supplémentaire sans édition de rapport Cofrac :</b> </u>
+								Le laboratoire ne peut saisir qu’une série de résultats correspondant à un seul des colis reçu
+								et un seul rapport individuel est édité. Les résultats du second colis sont traités en interne par le laboratoire.
+								La demande de colis supplémentaire est renouvelée en début d’année par retour de bon de commande dûment complété et signé.
+                Le laboratoire pas la possibilité de saisir les résultats de son colis supplémentaire.
+                Il doit interpréter ses données en interne.
+                A l’issue de la campagne, et pour finaliser son analyse, le laboratoire peut contacter l’ASA
+                afin d’obtenir les informations sur la correspondance de ses méthodes d’analyse avec les groupes constitués.
+						<a href="pdf/raemacolissup.pdf">Télécharger le bon de commande de colis supplémentaires</a>
+				</p>
+						<br />
+						
+				<p class="imageasadia">
+						<img src="IMAGES/Boite isotherme.JPG" alt="Boîte isotherme" width="170px"/>
+					</p>
+				<p class="textedecale30">
+						<u>- Boîte isotherme :</u>
+						<br />
+						Lorsque le délai d’acheminement est allongé en raison d’un passage en douane et que le pays de destination a un climat chaud,
+						le laboratoire a la possibilité de recourir à un transport de ses échantillons en boîte isotherme.
+						La souscription à ce service est renouvelée en début d’année et prise en compte à réception du bon de commande dûment complété et signé
+						<a href="pdf/boiteisobdc.pdf">Télécharger le bon de commande boîte isotherme</a>
+						<br /><br />
+				</p>		
+				<p class="grandhautpagedecale">
+							<br />▪ RAEMA gel :
+				</p>
+				<p class="textedecale30">
+						
+							<u>- Modalités de participation :</u>	<br />
+					<p class="imageasadiad">
+						<img src="IMAGES/bdcRaemagel.jpg" alt="Bon de commande RAEMA gel" width="150px"/>
+					</p>
+						La participation au RAEMA gel requiert une inscription par bon de commande, renouvelée en début de chaque année.<br />
+            Cette inscription se fait en ligne : 
+						<a href="mw2WebDevisEcritPage">S'incrire au RAEMA gel</a>.  <br />
+						Si le laboratoire participe déjà au RAEMA (poudre),   
+						il conserve son numéro de laboratoire et le mot de passe qui lui ont été attribués.
+						<br /><br />
+							<u>- Pots supplémentaires :</u>
+						<p class="imageasadia">
+						<img src="IMAGES/Raemagel.jpeg" alt="RAEMA gel" width="100px"/>
+					</p>
+						Chaque laboratoire a la possibilité de commander des pots supplémentaires sur le
+            bon de commande du RAEMA gel
+						(<a href="pdf/raemagelbdc.pdf">Télécharger le bon de commande du RAEMA gel</a>).
+						<br /><br />
+                        Deux formules sont proposées :<br />
+
+                        - <i>Pot supplémentaire avec édition de rapport</i><br />
+                        Un second numéro de laboratoire et un second mot de passe sont attribués au laboratoire, lui permettant de saisir les résultats de son pot supplémentaire.
+                        Le laboratoire recevra alors son rapport individuel associé à son colis supplémentaire.<br />
+
+                        - <i>Pot supplémentaire sans édition de rapport</i><br />
+                        Le laboratoire pas la possibilité de saisir les résultats de son colis supplémentaire.
+                        Il doit interpréter ses données en interne. A l’issue de la campagne, et pour finaliser son analyse,
+                        le laboratoire peut contacter l’ASA afin d’obtenir les informations sur la correspondance de ses méthodes d’analyse avec les groupes constitués.
+                                    <br /><br />
+
+							<u>- Boîte isotherme :</u><br />
+						Lorsque le délai d’acheminement est allongé en raison d’un passage en douane et que le pays de destination a un climat chaud,
+						le laboratoire a la possibilité de recourir à un transport de ses échantillons en boîte isotherme.
+						La souscription à ce service est renouvelée en début d’année et prise en compte à réception du bon de commande dûment complété et signé.
+				    </p>
+
+				 						<br /><br />
+			</div>	 
+        </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

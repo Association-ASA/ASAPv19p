@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>TARIFF 2015</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raematarifs.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau français" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps"> <!-- Corps de la page -->
+			<div id="contenu1"> <!-- Contenu de la page -->
+        <br />
+        <!--4dinclude menuraemaA.shtml-->	
+        <br /><br />	
+        <p class="grandtitrepage">PRICES 2016</p>
+        <br />
+        <div id="raema"><!-- Partie RAEMA -->			
+          
+          <br /> 
+          <div id="raemapoudre" class="grandhautpage"> <!-- Partie RAEMA Poudre -->
+            RAEMA - POWDER MATRIX
+            <div class="textedecale"><!-- Décale le texte -->
+              <div class="tarifbloc"><!-- Bloc flottant à droite -->          
+                <span class="tarifn3">One scheme (march or october):</span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Wording</th>
+                    <th class="cgcolonne1tarif plus">  Unit price  </th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Une campagne(mars ou octobre)</td>
+                    <td class="tarifprix">670 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Annual adhesion to ASA</td>
+                    <td class="tarifprix">36 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="texteadroite">TOTAL</td>
+                    <td class="tarifprix">706 € HT</td>
+                  </tr>
+                </table>
+              </div><!-- Fin de Bloc flottant à droite -->
+            
+              <p >
+               <span class="tarifn3">Two schemes (march and october ):</span>
+               <table class="cgtbtarif">
+                 <tr >	
+                    <th class="cgcolonne1tarif plus">Wording</th>
+                    <th class="cgcolonne1tarif plus">  Unit price  </th>
+                 </tr>
+                 <tr>
+                   <td class="cgtexteaucentre">Two schemes (march and october )</td>
+                   <td class="tarifprix">940 € HT</td>
+                 </tr>
+                 <tr>
+                   <td class="cgtexteaucentre">Annual adhesion to ASA</td>
+                   <td class="tarifprix">36 € HT</td>
+                 </tr>
+                 <tr>
+                   <td class="texteadroite">TOTAL</td>
+                   <td class="tarifprix">976 € HT</td>
+                 </tr>
+               </table>
+              </p>
+              <br />        
+              <span class="tarifn3">Package delivered by isothermal box: 125 € HT   </span>
+              <br />  <br />    
+              <span class="tarifn3">Additional package for two schemes WITH edition of a COFRAC: 640 € HT</span>
+               <br />        
+              <span class="tarifn3">Additional package for just one scheme WITH edition of a COFRAC report: 455 € HT  </span>
+              <br />
+              <br />        
+              <span class="tarifn3">Additional package per scheme WITHOUT edition of a COFRAC report: 100 € HT</span>
+              <br />        
+            </div><!-- Fin de texte décalé -->
+          </div> <!-- Fin de Partie RAEMA Poudre -->
+        
+          <div id="raemagel" class="grandhautpage">  <!-- Partie RAEMA Gel -->
+            <br />  
+            GEL RAEMA – GELIFIED MATRIX 
+            <div class="textedecale"><!-- Décale le texte -->
+              <div class="tarifbloc"><!-- Bloc flottant à droite -->
+                <span class="tarifn3">One scheme: </span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Wording</th>
+                    <th class="cgcolonne1tarif plus">  Unit price  </th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">1 enumeration</td>
+                    <td class="tarifprix">250 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">2 enumerations</td>
+                    <td class="tarifprix">300 € HT</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="cgtexteaucentre">3 enumerations</td>
+                    <td class="tarifprix">330 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">4 enumerations</td>
+                    <td class="tarifprix">350 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">5 enumerations</td>
+                    <td class="tarifprix">370 € HT</td>
+                  </tr>
+                            
+                </table>
+              </div><!-- Fin de Bloc flottant à droite -->
+              <p>
+                <span class="tarifn3">Two schemes:</span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Wording</th>
+                    <th class="cgcolonne1tarif plus">  Unit price  </th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">1 enumeration</td>
+                    <td class="tarifprix">300 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">2 enumerations</td>
+                    <td class="tarifprix">350 € HT</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="cgtexteaucentre">3 enumerations</td>
+                    <td class="tarifprix">380 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">4 enumerations</td>
+                    <td class="tarifprix">400 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">5 enumerations</td>
+                    <td class="tarifprix">420 € HT</td>
+                  </tr>          
+                </table>
+                <br />
+                <span class="tarifn3">Additional bottle WITHOUT edition of a COFRAC report: 25 € HT</span>
+               <br />        
+              <span class="tarifn3">Additional bottle WITH edition of a COFRAC report: 100 € HT  </span>
+              <br />
+              </p>
+              <br />
+            </div><!-- Fin de texte décalé -->	
+           <br />
+          </div><!-- Fin de Partie RAEMA Gel -->
+        </div><!-- Fin de Partie RAEMA -->
+          <p class="textecentre"><a href="pdf/tarifsAsa2016A.pdf">Download all the prices</a></p>
+          <br />
+      </div> <!-- Fin de Contenu de la page -->
+    </div>  <!-- Fin de Corps de la page -->
+    
+   <div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

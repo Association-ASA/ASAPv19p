@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Asa Contact</title>
+		<!--4dinclude HeaderASA.shtml-->
+	
+	</head>
+	
+	<body>
+				<div id="header" align="center">
+					<!--4dinclude bandeau.shtml-->
+				</div>
+				<div id="corps">
+    <br><br>
+
+<div id="contenu1">
+ <br/><br/>
+ <p class="titrepage">Publications de l'ASA </p>
+ <br/> <br/>
+	
+	<p class="xdtitrepage">NOUVEAU</p>
+	<p class="textebanalgrand"> <SPAN class="plus">Le contr&ocirc;le en santé publique agronomique 
+            et vétérinaire - Analyse d'une politique 
+            publique</SPAN> - par Xavier Delomez - 
+    </p>
+    <p class="textecentre">
+    <a href="w2PresentationOuvrageXD.shtml">Présentation 
+      de l'ouvrage</a> 
+      <br /><a href="pdf/BdCLivreXD.pdf">Pour commander l'ouvrage</a></p>
+      <br /><br />
+<div class="textebanalgrand" align="justify"> 
+ <br/> <br/>
+<p class="xdtitrepage"> ASAContact</p>
+  <p>
+    Dans la lettre d'information (<span class="plus">ASA contact</span>) 
+        sont développés :<br/>
+        - des articles de <font color="#000000">fond</font><br/>
+        - des comptes-rendus de participation à des manifestations scientifiques<br/>
+        - des analyses de la réglementation en hygi&egrave;ne des aliments 
+        et de la Santé Publique Vétérinaire.
+        <br /> <br />
+    </p>
+    
+
+  <p class="titrepage">
+          <a href="w2pageasacontact.shtml">Accéder aux anciens numéros d'ASA contact</a>
+  </p>
+</div>
+ 
+     <br/><br/>
+    <p class="textepetit">
+    Pour lire les fichiers au format PDF, téléchargez <b>Acrobat Reader </b>sur 
+  le <a href="http://www.adobe.fr/products/acrobat/main.html" target="_blank">site 
+  d'Adobe </a>
+  <a href="http://www.adobe.fr/products/acrobat/main.html">
+      <img src="images/acrobat.gif" width="59" height="21" align="absmiddle" border="0">
+          
+      </img>
+  </a>
+</p>
+    
+	</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

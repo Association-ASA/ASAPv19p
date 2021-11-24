@@ -1,0 +1,1 @@
+﻿## QST_initVariables($1)---

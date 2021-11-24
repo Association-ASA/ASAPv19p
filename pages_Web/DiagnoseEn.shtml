@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>AsaDia 3</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link href="styles/table.css" rel="stylesheet" type="text/css" />
+  <link href="styles/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <link href="styles/multiple-select.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/tooltip.css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script>
+    $(function() {
+      $( document ).tooltip();
+    });
+  </script>
+ </head>
+
+ <body>
+  <div id="header" class="textecentre">
+    <img src="images/bandeau.jpg" alt="logo" width="1024" />
+    <br /><br />
+    <br />
+    <input id="mailvisiteur" type="hidden" value="cegeheme@wanadoo.fr" />
+    <ul id="menubar">
+      <li><a href="http://asa-spv.asso.fr">Visit the ASA Website</a></li>
+      <li id="AjaxDiagnoseA">Find a lesion</li>
+      <li id="AjaxLesionA">List of lesions</li>
+      <li id="AjaxDiapoA">List of photos</a></li>
+    </ul>
+  </div>
+  <div id="corps">
+   <p class="adtitrepage" id="titredelapage">Find a lesion
+   </p>
+   <div id="aidepdfvideo">
+    <a href="pdf/DiagnoseA.pdf" target="_blank" >
+      <img type="image" src="images/Aide.png" alt="Help PDF" title="Help PDF"  height="40" />
+    </a>
+    <form method="post" action="mw2WebDiagnoseF">
+     <input id="flagA" width="30px" type="image" src="images/DrapeauF.gif" alt="Envoyer !">
+      <input name="loginasadia" type="hidden" value="cegeheme@wanadoo.fr" />
+    </form>
+   </div>
+      <br />
+  <div id="paveautrequelesions">
+     <p class="choixcritere">Choose species</p>
+        <div class="cac2">
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacbv" name="bovins" />Cattle</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacov" name="ovins" />Sheep</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacca" name="caprins" />Goats</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacpo" name="porcins" />Pigs</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="baceq" name="équins" />Equins</p>
+        </div>
+        
+     <p class="choixcritere">Choose organs</p>
+       <p class="souschoixcritere">Digestive system : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox" class="casorg" id="baclan" name="langue">Tongue</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacoes" name="oesophage">Esophagus</input></p>  
+          <p class="cac"><input type="checkbox" class="casorg" id="bactd" name="tube digestif">Digestive tract</input> </p>    
+          <p class="cac"><input type="checkbox" class="casorg" id="bacfoie" name="foie">Liver</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacpan" name="pancreas">Pancreas</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacpert" name="péritoine">Peritoneum</input> </p>  
+          <p class="cac"><input type="checkbox" class="casorg" id="bacfres" name="fressure">Pluck </input> </p> 
+        </div>
+            
+       <p class="souschoixcritere">Respiratory system :</p>
+        <div class="cacesp"> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactrac" name="trachee" />Trachea</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacpou" name="poumon" />Lung</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacple" name="plèvre" />Pleura</p> 
+        </div>
+        
+       <p class="souschoixcritere">Circulatory system: : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="baccoe" name="coeur" />Heart</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacperc" name="péricarde" />Pericardium</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacvs" name="vaisseaux sanguins" />Blood vessels</p> 
+        </div>
+      
+       <p class="souschoixcritere">musculoskeletal system :</p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacos" name="os et articulation" />Bone and joint</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacmus" name="muscles" />Muscles </p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="baccar" name="carcasse" />Carcass </p> 
+        </div>
+        
+       <p class="souschoixcritere">Genito-urinary system : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacrein" name="rein" />Kidney</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacves" name="vessie" />Bladder</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacagf" name="appareil génital femelle" />Female genital system </p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacagm" name="appareil génital mâle" />Male genital system</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacmam" name="mamelle" />Teat</p>
+        </div>
+        
+       <p class="souschoixcritere">Other :  </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactca" name="tissu conjonctivo-adipeux" />Connective tissue</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacnl" name="noeud lymphatique" />Lymph node</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacrate" name="rate" />Spleen</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacthym" name="thymus" />Thymus</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactet" name="tête" />Head</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacpeau" name="peau" />Skin</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacsur" name="surrenales" />Adrenal gland</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacthyr" name="thyroide" />Thyroid</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacsn" name="système nerveux" />Nervous system</p>
+        </div>
+        
+      </div>
+
+      <div id="pavelesions" class="paveles">
+        <span class="choixcritere">Choose lesions</span><br/>
+        <div  id="criteres" class="changerequete">
+        
+          <select class="textebanal" id="lesion" name="organe" size="50" width="530px" multiple>
+            <option>actinobacillosis/ actinomycosis</option>
+            <option>Adipose xanthosis</option>
+            <option>Amyloidosis</option>
+            <option>Anthracosis</option>
+            <option>Anthrax and Blackleg (lesions associated with)</option>
+            <option>Aortic atheromatosis</option>
+            <option>Aphtha</option>
+            <option>Arthritis</option>
+            <option>Ascaridiosis</option>
+            <option>Atrophic rhinitis (lesions associated with)</option>
+            <option>Blood soaked meat</option>
+            <option>Blood splashing</option>
+            <option>Bovine Viral Diarrhea (lesions associated with)</option>
+            <option>Bronchopneumonia</option>
+            <option>Brucellosis (lesions associated with)</option>
+            <option>Bursitis</option>
+            <option>Cachexia</option>
+            <option>Cadaverous meat</option>
+            <option>Calcinosis</option>
+            <option>Caseous lymphadenitis</option>
+            <option>Cerebral coenurosis</option>
+            <option>Ceroidosis</option>
+            <option>Cholecystitis</option>
+            <option>Chronic interstitial hepatitis</option>
+            <option>Chronic lymphadenitis</option>
+            <option>Congenital abnormality</option>
+            <option>Congenital liver cysts</option>
+            <option>Congenital renal cysts</option>
+            <option>Congestive/exudative peritonitis</option>
+            <option>Congestive/exudative pleuritis</option>
+            <option>Congetive lymphadenitis</option>
+            <option>Contagious ecthyma</option>
+            <option>Cryptorchism</option>
+            <option>Cystic pneumatosis</option>
+            <option>Cystitis</option>
+            <option>Cytosteatonecrosis</option>
+            <option>Damage</option>
+            <option>Dark, firm and dry meat</option>
+            <option>Dead fœtus, aseptic necrosis or momification</option>
+            <option>dermatitis- epidemitis</option>
+            <option>Digestive ulcers</option>
+            <option>Distomatosis / Fasciolosis (lesions associated with)</option>
+            <option>Echinococcus (lesions associated with)</option>
+            <option>Edematous meat</option>
+            <option>Emaciation</option>
+            <option>Emphysematous fœtus </option>
+            <option>Endocarditis</option>
+            <option>Enteritis</option>
+            <option>Eosinophilia</option>
+            <option>Eosinophilic myositis</option>
+            <option>Equine Infectious Anemia (lesions associated with)</option>
+            <option>Esophagial diverticulum</option>
+            <option>esophagostomosis </option>
+            <option>exsudative pericarditis</option>
+            <option>Exudative pneumonia</option>
+            <option>Feverish meat</option>
+            <option>Fibrolipomatosis</option>
+            <option>Fibrous pericardititis</option>
+            <option>Fibrous peritonitis</option>
+            <option>Fibrous pleuritis</option>
+            <option>Fibrous pneumonia</option>
+            <option>Focal myositis</option>
+            <option>Fœtal meat</option>
+            <option>Foot and Mouth disease (lesions associated with)</option>
+            <option>Foreign body</option>
+            <option>Foreign body abscess</option>
+            <option>Fracture</option>
+            <option>Gangrene</option>
+            <option>Gasterophiliosis</option>
+            <option>Gastritis</option>
+            <option>Generalized congestion</option>
+            <option>Glomerulo-epithelial nephritis </option>
+            <option>Hematoma</option>
+            <option>Hemopericardium</option>
+            <option>Hemoperitoneum</option>
+            <option>Hemorrhagic purpura</option>
+            <option>Hemosiderosis</option>
+            <option>Hemothorax</option>
+            <option>Hepatic ischemia</option>
+            <option>Hepatoperitoneal cysticercosis</option>
+            <option>Hydronephrosis</option>
+            <option>Hygroma</option>
+            <option>Hypodermosis (lesion associated with)</option>
+            <option>Icterus</option>
+            <option>ilio-spinal necrosis</option>
+            <option>Infarct</option>
+            <option>Infarction</option>
+            <option>Interstitial fibrous nephritis</option>
+            <option>Interstitial pneumonia</option>
+            <option>Leukosis</option>
+            <option>Lithiasis</option>
+            <option>Liver necrobacillosis</option>
+            <option>Liver sclerosis</option>
+            <option>Localized amyotrophy</option>
+            <option>Macular telangiectasis</option>
+            <option>Malignant catarrhale fever (lesions associated with)</option>
+            <option>Malignant Catharrhal Fever</option>
+            <option>Mastitis</option>
+            <option>Melanosarcoma</option>
+            <option>Melanosis</option>
+            <option>Mesothelioma</option>
+            <option>Metritis</option>
+            <option>Muscular albinism</option>
+            <option>Muscular cysticercosis</option>
+            <option>Muscular degeneration</option>
+            <option>Necrotizing insular hepatitis</option>
+            <option>no lesion</option>
+            <option>Non specific abscess</option>
+            <option>Ochronosis</option>
+            <option>Omphalophlebitic abscess</option>
+            <option>Onchosercosis (lesion associated with )</option>
+            <option>Orchitis, epididymitis, vaginilitis</option>
+            <option>Ostemyelitis</option>
+            <option>Osteodystrophy</option>
+            <option>Ovarian cyst</option>
+            <option>Pale soft exsudative meat (PSE)</option>
+            <option>Papilloma</option>
+            <option>Parakeratosis</option>
+            <option>Paramphistomosis (lesions associated with)</option>
+            <option>Paratuberculosis (lesion associated with)</option>
+            <option>Passive congestion </option>
+            <option>Periarteritis nodosa</option>
+            <option>Phlegmon</option>
+            <option>Pleuropneumonia </option>
+            <option>Pulmonary adenomatosis</option>
+            <option>Pulmonary atelectasis</option>
+            <option>Pulmonary emphysema</option>
+            <option>Pyelonephritis</option>
+            <option>pyemic abscesses</option>
+            <option>Pylephlebitic abscess</option>
+            <option>Renal cysts</option>
+            <option>Right ventricular dilation</option>
+            <option>Rinderpest (lesions associated with)</option>
+            <option>Ringworm (lesions associated to)</option>
+            <option>Roeckl's granuloma</option>
+            <option>Sarcosporidiosis (lesions associated with)</option>
+            <option>Scabies (lesions associated with)</option>
+            <option>Scalded lungs</option>
+            <option>Schwannoma</option>
+            <option>Septic necrotic foci</option>
+            <option>Sero-hemorrhagic infiltration</option>
+            <option>Splenitis</option>
+            <option>Steatosis</option>
+            <option>Stomatitis</option>
+            <option>Stongylosis (abomosal lesion of)</option>
+            <option>Strongylosis (hepatic lesion of)</option>
+            <option>Strongylosis (intestinal lesions of)</option>
+            <option>Strongylosis (peritoneal lesions of)</option>
+            <option>Strongylosis (pulmonary lesions of)</option>
+            <option>Subacute lymphadenitis</option>
+            <option>Suppurative interstitial nephritis</option>
+            <option>Swine Erysepelas (lesions associated with)</option>
+            <option>Swine fever (lesion associated with)</option>
+            <option>Thromboembolic nephritis</option>
+            <option>Thrombus</option>
+            <option>Toxi-infectious liver</option>
+            <option>Traumatism (lesion associated with)</option>
+            <option>Trichinosis (lesions associated with)</option>
+            <option>Tuberculosis (lesions associated with)</option>
+            <option>Tumor</option>
+            <option>Vesicular Disease (lesions associated with)</option>
+            <option>White spotted kidney</option>
+          </select>
+        </div>
+      </div>
+     <p id="typephoto"  class="textecentre">
+               <br />
+        <span class="choixcritere">Choose the type of photography</span>
+        <input type="radio" id="toutesdia" name="typephoto" value="toutes"
+               title="Selects, according to the criteria, among all the photographs of AsaDia" />
+        All photographs      
+        <input type="radio" id="sansvariantedia" name="typephoto" value="sansvariante" checked
+               title="Selects, according to the criteria, only among the photographs of very characteristic aspect of the lesion" />
+        Without variants      
+        <input type="radio" id="seulementvariantesdia" name="typephoto" value="variante"
+               title="Selects, according to the criteria, only among the photographs of aspect not very characteristic of the lesion" />
+        Variants only
+        <br />
+      </p>
+      <!-- Le cadre où se trouve la formule et le résultat de la recherche    -->
+      <p id="formule" class="resrech">
+      </p>
+      
+      <!-- Le paragraphe où se trouve le bouton de visualisation des photographies    -->
+      <p id="boutonvoir" class="textecentre">
+          <button id="bouvisenombreuse" class="textebanalgrand">See photos</button>
+      </p>
+      
+      <!-- La division où se trouve le tableau des résultats de recherche    -->
+      <div id="tbphotos" class="tbphotos">
+      </div>
+      <!-- La division où se trouve la liste des images si < 20    -->
+      <div id="trieusephotos" class="trieuse">
+      </div>
+     <script type="text/javascript" src="js/dataTableE.js"></script><!-- jQuery dataTable    -->
+     <script type="text/javascript" src="js/asadia.js"></script> <!-- jQuery AsaDia    -->
+     <script src="js/multiple-select.js"></script>
+     <script>
+       $('select').multipleSelect({
+         isOpen: true,
+         keepOpen: true,
+         width: 550
+        });
+     </script>
+
+    </div>
+    <div id="pied">
+      <br>
+      Site officiel de l'association Animal - Société - Aliment (ASA) <br> Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -
+      7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex &nbsp;&nbsp;&nbsp;FRANCE<br>
+      Téléphone : <b>+ 33 (0)1 56 29 36 30</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax : <b>+ 33 (0)9 61 24 33 81</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br>
+      <em>Pour signaler un problème, cliquez sur le lien suivant 
+      <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+      <br><br>
+    </div>
+
+    </body>
+  </html>

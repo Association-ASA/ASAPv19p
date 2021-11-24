@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <title>Titre de la page</title>
+   <!--4dinclude HeaderAsa.shtml-->
+</head>
+
+    <body>
+<div id="header" align="center">
+    <a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+</div>
+
+<div id="corps">
+    
+<div id="colonne">    
+<!--4dif <>SaisieOK-->
+    <!--4dinclude colonnesaisie.shtml-->
+<!--4delse-->
+    <!--4dinclude colonnepassaisie.shtml-->
+<!--4dendif-->
+</div>
+
+<div id="contenu">
+ <br /><br />
+   
+    
+    
+    
+</div>
+
+</div>
+
+        <!--4dinclude pied.shtml-->
+
+
+</body>
+</html>

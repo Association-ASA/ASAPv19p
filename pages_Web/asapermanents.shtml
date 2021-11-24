@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ASA : Les permanents</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+
+		<div id="cgcorpsperm" >
+			<!--4dinclude menuAsaQuiSommeNous.shtml-->
+			<div id="LAM1" class="cgLAM1" >
+				<img src="images/LAM1.jpg" alt="Leïla Ali Mandjee" width="300" />
+				<p class="textecentre">
+					<b>Leïla ALI MANDJEE</b> <br />
+					<i>Responsable Administrative</i><br />
+					Encadrement du service administratif<br />
+				</p>
+			</div>
+			<div id="services" class="cgservices">
+				<br /><br />
+				<p class="cgTITREPERM">
+					FONCTION SECRETARIAT
+					<a href="w2asapermanents2.shtml"><br />
+						<i>En savoir plus</i></a>
+				</p>
+				<br /><br /><br /><br /><br />
+				<br /><br /><br /><br /><br />
+
+				<p class="cgTITREPERM">
+					FONCTION TECHNIQUE <br />
+					ET STATISTIQUE<br />
+					<a href="w2asapermanents3.shtml">
+					<i>En savoir plus</i></a>
+				</p>
+
+			</div>
+
+			<div id="SEC" class="cgSEC" >
+				<div class="cgimages">
+					<img class="cgtrombine" src="images/XMini.png" alt="X" width="100px" />
+					<br><b>Poste à pourvoir</b> <br />
+					<i>Secrétaire</i><br /><br /><br>
+				</div>
+				<p class="cgblanc">
+					<br />
+				</p>
+
+				<div class="cgimages">
+					<img class="cgtrombine" src="images/GSmini.jpg" alt="Ghislaine Serveaux" width="100px" />
+					<br /><b>Ghislaine SERVEAUX</b> <br />
+					<i>Agent Administratif</i><br /><br /><br />
+				</div>
+				<p class="cgblanc">
+					<br /><br />
+				</p>
+
+				<div class="cgimages">
+					<img class="cgtrombine" src="images/ERmini.jpg" alt="Eloïse RIOUALL" width="100px" />
+
+					<br><b>Eloïse RIOUALL</b> <br />
+					<i>Technicienne supérieure</i><br />
+					<br /><br />
+
+				</div>
+
+
+
+				<p class="cgblanc">
+					<br /><br />
+				</p>
+				<div class="cgimages">
+					<img class="cgtrombine" src="images/LAM2mini.jpg" alt="Leïla Ali Mandjee" width="100px" />
+
+					<br><b>Leïla ALI MANDJEE</b> <br />
+					<i>Ingénieur d'études</i><br />
+					<br /><br />
+				</div>
+			</div>
+
+		</div>
+
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,421 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 60,
+					"left": 17,
+					"width": 83,
+					"height": 17,
+					"text": "Recherche Fr"
+				},
+				"PUMTraduc": {
+					"type": "dropdown",
+					"top": 9,
+					"left": 301,
+					"width": 373,
+					"height": 40,
+					"dataSource": "PUMTraduc",
+					"class": "Titre",
+					"method": "ObjectMethods/PUMTraduc.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxTraduc": {
+					"type": "listbox",
+					"top": 84,
+					"left": 15,
+					"width": 1407,
+					"height": 649,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "ListBoxTraduc",
+					"hideFocusRing": true,
+					"sortable": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"rowControlSource": "TbLignesMasque",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxTraduc.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Colonne3N",
+							"dataSource": "Colonne3N",
+							"dataSourceTypeHint": "number",
+							"width": 91,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "ID",
+								"dataSource": "Entête1",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "Colonne4",
+							"width": 340,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Référence",
+								"dataSource": "Entête2",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne1",
+							"dataSource": "Colonne1",
+							"width": 339,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Français",
+								"dataSource": "Entête2",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "Colonne2",
+							"width": 320,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Anglais",
+								"dataSource": "Entête3",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "Colonne3",
+							"width": 302,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"truncateMode": "none",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Russe",
+								"dataSource": "Entête4",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"TradTextBouPlus": {
+					"type": "button",
+					"top": 9,
+					"left": 1068,
+					"width": 52,
+					"height": 40,
+					"dataSource": "BouPlus",
+					"text": "+",
+					"class": "Titre",
+					"method": "ObjectMethods/TradTextBouPlus.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TradTextBouMoins": {
+					"type": "button",
+					"top": 9,
+					"left": 1140,
+					"width": 52,
+					"height": 40,
+					"dataSource": "BouMoins",
+					"text": "-",
+					"class": "Titre",
+					"method": "ObjectMethods/TradTextBouMoins.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarTestF": {
+					"type": "input",
+					"top": 60,
+					"left": 112,
+					"width": 141,
+					"height": 17,
+					"dataSource": "VarTestF",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarTestF.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"PUMTaille": {
+					"type": "dropdown",
+					"top": 13,
+					"left": 681,
+					"width": 52,
+					"height": 33,
+					"dataSource": "PUMTaille",
+					"method": "ObjectMethods/PUMTaille.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNbLignes": {
+					"type": "input",
+					"top": 61,
+					"left": 1357,
+					"width": 49,
+					"height": 16,
+					"dataSource": "VarNbLignes",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_normal",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouExporter": {
+					"type": "button",
+					"top": 16,
+					"left": 1236,
+					"width": 170,
+					"height": 27,
+					"text": "Exporter",
+					"method": "ObjectMethods/BouExporter.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TradTextBouStocke": {
+					"type": "button",
+					"top": 9,
+					"left": 996,
+					"width": 52,
+					"height": 40,
+					"text": "=",
+					"class": "Titre",
+					"method": "ObjectMethods/TradTextBouStocke.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouQuitter": {
+					"type": "button",
+					"top": 13,
+					"left": 13,
+					"width": 162,
+					"height": 33,
+					"action": "cancel",
+					"text": "Quitter",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 60,
+					"left": 307,
+					"width": 83,
+					"height": 17,
+					"text": "Recherche En"
+				},
+				"VarTestE": {
+					"type": "input",
+					"top": 60,
+					"left": 402,
+					"width": 141,
+					"height": 17,
+					"dataSource": "VarTestE",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarTestE.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 60,
+					"left": 597,
+					"width": 83,
+					"height": 17,
+					"text": "Recherche Ru"
+				},
+				"VarTestR": {
+					"type": "input",
+					"top": 60,
+					"left": 692,
+					"width": 141,
+					"height": 17,
+					"dataSource": "VarTestR",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/VarTestR.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"VarNbSouligne": {
+					"type": "input",
+					"top": 61,
+					"left": 1278,
+					"width": 49,
+					"height": 16,
+					"dataSource": "VarNbSouligne",
+					"dataSourceTypeHint": "number",
+					"class": "Champ_normal",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CaCMasque": {
+					"type": "checkbox",
+					"top": 56,
+					"left": 924,
+					"width": 280,
+					"height": 21,
+					"dataSource": "CaCMasque",
+					"text": "Ne voir que les lignes selectionnées",
+					"class": "Champ_normal",
+					"method": "ObjectMethods/CaCMasque.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

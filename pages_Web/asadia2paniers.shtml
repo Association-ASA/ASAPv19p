@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ASADia : Module Formation</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 
+				 				<br/>
+				<p class="titrepage">AsaDia 2 : Module formation</p>
+				<p class="textecentre">
+					<a href="asadia.shtml">
+					 Retour à l'écran des généralités
+					</a> 
+				</p>
+				<br/><br/>
+				
+				<div class="menuf">
+					<a class="menucouleur" href="w2asadia2formation.shtml">
+						CONNAISSANCES <br /> GENERALES
+					</a>
+				</div>
+				<div class="menuf" >
+					<a class="menucouleur" href="w2asadia2lesions.shtml">DEFINITION <br />DES LESIONS</a>
+				</div>
+				<div class="menuf" >
+					<a class="menucouleur" href="w2asadia2liste.shtml">LISTE DES PHOTOGRAPHIES</a>
+				</div>
+				<div class="menuf" >
+					<a class="menucouleur" href="w2asadia2diagnose2.shtml">RECONNAITRE <br />UNE LESION</a>
+				</div>
+				<div class="menufactif" >
+					<a class="menufactif" href="w2asadia2paniers.shtml">GERER DES <br />PANIERS</a>
+				</div>
+				<div class="menuf" >
+					<a class="menucouleur" href="w2asadia2texte.shtml">TEXTES <br />ILLUSTRES</a>
+				</div>
+				
+				<div class="sousmenu" >
+				&nbsp; <br /> &nbsp; <br /> &nbsp; <br /> &nbsp; <br /> 
+				&nbsp; <br /> &nbsp; <br /> &nbsp;
+				</div>
+			
+				<table>
+					<tr class="Tbbanal">  
+						<td class="colonne1" >
+							Cette partie permet de sélectionner des photographies 
+							selon le principe décrit 
+							dans la partie "Reconnaitre une lésion".<br /><br />
+							Une fois affichées, les photographies 
+							peuvent être placées 
+							dans la colonne de gauche qui représente le panier virtuel.
+							<br />
+							Il est possible de réaménager l'ordre des diapositives
+							<br /><br />
+							Le panier ainsi constitué pourra Ítre enregistré 
+							pour une utilisation ultérieure  
+							comme montré plus bas.
+							
+						</td>
+						<td  class="colonne2"  > <img src="IMAGES/paniercreer.jpg" width="650" 
+							height="377" alt="crétion de paniers" title="crétion de paniers" /> 
+						</td>
+					</tr>
+					
+					<tr class="Tbbanal"> 
+						<td class="colonne1" > 
+							&nbsp; <br /> &nbsp; 
+						</td>
+					</tr>
+					
+					<tr class="Tbbanal">  
+						<td class="colonne1" >
+							L'ensemble des paniers que vous avez constitués 
+							se retrouvent dans une liste directement accessible 
+							depuis l'écran de démarrage de la partie formation.
+							<br /><br />
+							Un clic sur le nom du panier déclenche 
+							sa projection plein écran.
+							
+						</td>
+						<td  class="colonne2"  > <img src="IMAGES/panierlancer.jpg" width="452" 
+							height="452" alt="utilisation de paniers" title="utilisation de paniers" /> 
+						</td>
+					</tr>
+				</table>
+				<br/><br/>
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+
+
+					
+				 

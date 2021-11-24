@@ -1,0 +1,1 @@
+﻿## SC_listAllObjects---|*4D Command*|`OBJECT Get style sheet`||*4D Command*|`FORM UNLOAD`||*4D Command*|`Form`||*4D Command*|`OBJECT SET TITLE`||*4D Command*|`OBJECT SET HORIZONTAL ALIGNMENT`||*4D Command*|`LISTBOX SET COLUMN WIDTH`|

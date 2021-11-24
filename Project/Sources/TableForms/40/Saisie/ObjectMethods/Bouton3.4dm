@@ -1,0 +1,1 @@
+[Diapositives:40]Commentaires:7:=[Diapositives:40]Commentaires:7+<>ZCR+[Diapositives:40]DescriptionTypeLesion:8

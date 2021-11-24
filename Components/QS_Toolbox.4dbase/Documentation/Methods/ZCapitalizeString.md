@@ -1,0 +1,1 @@
+﻿## $0:=ZCapitalizeString($1;$2;$3)---

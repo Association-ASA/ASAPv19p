@@ -1,0 +1,1 @@
+﻿## $0:=Konstant_getName($1;$2)---

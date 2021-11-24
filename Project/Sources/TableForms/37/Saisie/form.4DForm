@@ -1,0 +1,646 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 507,
+	"markerBreak": 507,
+	"markerFooter": 517,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"IDAnaPathSpe": {
+					"type": "input",
+					"top": 32,
+					"left": 632,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]IDParagrapheTexteWeb:1",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 58,
+					"left": 199,
+					"width": 100,
+					"height": 15,
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Numéro enreg."
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"NomEspèce": {
+					"type": "input",
+					"top": 117,
+					"left": 166,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]NomEspece:2",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PUMEspèce": {
+					"type": "dropdown",
+					"top": 116,
+					"left": 166,
+					"width": 142,
+					"height": 17,
+					"dataSource": "PUMEspèce",
+					"display": false,
+					"class": "Champ_petit",
+					"method": "ObjectMethods/PUMEspèce.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NomOrgane": {
+					"type": "input",
+					"top": 117,
+					"left": 462,
+					"width": 330,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]NomOrgane:3",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PUMOrgane": {
+					"type": "dropdown",
+					"top": 118,
+					"left": 462,
+					"width": 141,
+					"height": 19,
+					"dataSource": "PUMOrgane",
+					"display": false,
+					"class": "Champ_petit",
+					"method": "ObjectMethods/PUMOrgane.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CodeParagraphe": {
+					"type": "input",
+					"top": 141,
+					"left": 166,
+					"width": 90,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]IDTexte:7",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TitreParagraphe": {
+					"type": "input",
+					"top": 141,
+					"left": 464,
+					"width": 330,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]TitreParagraphe:6",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CorpsParagraphe": {
+					"type": "input",
+					"top": 166,
+					"left": 166,
+					"width": 613,
+					"height": 192,
+					"dataSource": "[DiaTextesWebParagraphes:37]CorpsParagraphe:8",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"FicheReflexe": {
+					"type": "input",
+					"top": 370,
+					"left": 166,
+					"width": 612,
+					"height": 112,
+					"dataSource": "[DiaTextesWebParagraphes:37]FicheReflexe:9",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"GrandTypeLésionnel": {
+					"type": "input",
+					"top": 496,
+					"left": 166,
+					"width": 330,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]GrandTypeLesionnel:4",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TypeLesionnelPrécis": {
+					"type": "input",
+					"top": 496,
+					"left": 654,
+					"width": 330,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]TypeLesionnelPrecis:5",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MotifSaisie": {
+					"type": "input",
+					"top": 519,
+					"left": 166,
+					"width": 330,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]MotifSaisie:11",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PUMSDGAL": {
+					"type": "dropdown",
+					"top": 516,
+					"left": 166,
+					"width": 193,
+					"height": 19,
+					"dataSource": "PUMSDGAL",
+					"display": false,
+					"class": "Champ_normal",
+					"method": "ObjectMethods/PUMSDGAL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NomLesion": {
+					"type": "input",
+					"top": 519,
+					"left": 650,
+					"width": 330,
+					"height": 16,
+					"dataSource": "[DiaTextesWebParagraphes:37]NomLesion:10",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/NomLesion.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 10,
+					"left": 535,
+					"width": 565,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "AnapathSpe"
+				},
+				"Ligne15": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 694,
+					"sizingX": "grow"
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 32,
+					"left": 485,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "IDAnaPathSpe : "
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 117,
+					"left": 19,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "NomEspèce : "
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 117,
+					"left": 315,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "NomOrgane : "
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 141,
+					"left": 19,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "CodeParagraphe : "
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 166,
+					"left": 19,
+					"width": 142,
+					"height": 97,
+					"textAlign": "right",
+					"text": "CorpsParagraphe : "
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 370,
+					"left": 19,
+					"width": 142,
+					"height": 65,
+					"textAlign": "right",
+					"text": "FicheReflexe : "
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 496,
+					"left": 19,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "GrandTypeLésionnel : "
+				},
+				"Texte23": {
+					"type": "text",
+					"top": 496,
+					"left": 507,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "TypeLesionnelPrécis : "
+				},
+				"Texte24": {
+					"type": "text",
+					"top": 519,
+					"left": 19,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "MotifSaisie : "
+				},
+				"Texte25": {
+					"type": "text",
+					"top": 519,
+					"left": 503,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "NomLesion : "
+				},
+				"Texte26": {
+					"type": "text",
+					"top": 141,
+					"left": 317,
+					"width": 142,
+					"height": 17,
+					"textAlign": "right",
+					"text": "TitreParagraphe : "
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Premier enreg."
+					},
+					"action": "firstRecord",
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. précéden"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. suivant"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Dernier enreg."
+					},
+					"action": "lastRecord",
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 273,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Supprimer enreg"
+					},
+					"action": "deleteRecord",
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 336,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Annuler"
+					},
+					"action": "cancel",
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 399,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"shortcutKey": "\u0000",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

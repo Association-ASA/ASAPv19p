@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Accès participants</title>
+		<!--4dinclude HeaderRaema.shtml-->
+    <script type="text/javascript" src="../js/raema.js"></script>
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps2" class="textebanalgrand">
+      <!--4dinclude menuraema.shtml-->
+      <p class="reclame">
+        <a  href="pdf/PROG0701EN02.pdf">
+          Télécharger la fiche de réclamation
+        </a>
+      </p>
+      <form name="form1" method="POST" action="mw2WebClicParticipant">
+        <table id="iddrapeau" width="50%" class="textedecale">
+          <!--4dif <>CampagneEnCoursRP-->
+            <tr>
+              <td width="11%" >
+                <a href="w2raemaaccueilA.shtml">
+                  <img src="images/DrapeauA.gif" width="50" 
+                  height="40" border="0" alt="British"/>
+                </a>
+              </td>
+              <td width="89%" class="tbcentrev petittextevert">
+                Click on the flag <br />for the english version
+              </td>
+            </tr>
+          <!--4dendif-->
+        </table>
+        <div id="idadherent">
+          <p class="grandhautpage">Vous êtes adhérents au RAEMA</p>
+          <br />
+          <p class="grandhautpagedecale">Identifiez-vous</p>
+          <p class="textecentre">Veuillez entrer votre code RAEMA
+            <br />
+            <it>(le n° de votre laboratoire dans les rapports de campagne) </it>
+            <br />
+            et le mot de passe qui vous a été communiqué par l'ASA.<br /><br />
+          </p>
+          <p align="center">
+            <input name="hiddenField" type="hidden" value="F" />
+          </p>
+          <table width="98%" border="10" align="center" bordercolor="#0033FF">
+            <tr> 
+              <td class="adroite" width="49%"> 
+                  <b>Code RAEMA</b>
+              </td>
+              <td width="51%"> 
+                <input type="text" name="CodeRaema" size="5" maxlenght="4" onBlur="Verif_nb(this)" /> 
+              </td>
+            </tr>
+            <tr> 
+              <td class="adroite"> 
+                <b>Mot de passe </b>
+              </td>
+              <td> <input type="text" name="MdP" maxlenght="10" onBlur="Verif_mdp(this)" /> </td>
+            </tr>
+          </table>
+          <br /> <br />
+          <p class="grandhautpagedecale">Accédez à vos données </p>
+        </div>
+        
+        <div id="idboutons">
+          <!-- <p class="espacebouton"><input class="boutonbleu" type="submit" name="questionnaire" value="Répondre au questionnaire" /></p> -->
+          <!--4dif <>SaisieOK-->
+            <p class="espacebouton">
+              <a href="pdf/RaemaSaisieRes.pdf">
+                <img
+                     src="images/Aide.png"
+                     title="Télécharger le mode d'emploi"
+                     alt="Télécharger le mode d'emploi"
+                     width="30px"
+                 />
+              </a>
+              <input class="boutonbleu" type="submit" name="saisieraema" value="Répondre à l'enquête puis saisir vos résultats" />
+            </p>
+          <!--4dendif-->
+          <p class="espacebouton">
+              <a href="pdf/RaemaRecupRap.pdf">
+                <img
+                     src="images/Aide.png"
+                     title="Télécharger le mode d'emploi"
+                     alt="Télécharger le mode d'emploi"
+                     width="30px"
+                 />
+              </a>
+              <input class="boutonbleu" type="submit" name="telecharge" value="Télécharger vos rapports et attestations" />
+          </p>
+          <p class="espacebouton">
+            <img
+                src="images/Aide.png"
+                title="Permet de voir les niveaux de contamination des derniers RAEMA"
+                alt="Permet de voir les niveaux de contamination des derniers RAEMA"
+                width="30px"
+            />
+            <input class="boutonbleu" type="submit" name="contamination" value="Accéder aux niveaux de contamination"/>
+          </p>
+          <p class="espacebouton">
+            <img
+                src="images/Aide.png"
+                title="Accès au questionnaire de satisfaction"
+                alt="Accès au questionnaire de satisfaction"
+                width="30px"
+            />
+            <input class="boutonbleu" type="submit" name="questionnaire" value="Accéder au questionnaire de satisfaction"/>
+          </p>
+        </div>
+        <!--4DInclude actualitesparticipant.shtml-->
+      </form>
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

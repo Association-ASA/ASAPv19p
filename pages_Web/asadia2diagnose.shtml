@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ASADia : Module utilisation</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 
+				 
+						<br/>
+						<p class="titrepage">AsaDia 2 : Module utilisation</p>
+						<p class="textecentre">
+							<a href="asadia.shtml">
+							Retour à l'écran des généralités
+							</a> 
+						</p>
+							<br/><br/>
+							
+					
+							<div class="menu">
+								<a class="menucouleur" href="w2asadia2utilisation.shtml">
+								CONNAISSANCES <br /> GENERALES
+								</a>
+							</div>
+							<div class="menu" >
+								<a class="menucouleur" href="w2asadia2motifs.shtml">MOTIFS <br /> DE SAISIE</a>
+							</div>
+							<div class="menu" >
+								<a class="menucouleur" href="w2asadia2dgal.shtml">ILLUSTRATION DES NOTES DE SERVICES DE LA DGAL</a>
+							</div>	<div class="menuactif" >
+								RECONNAITRE <br />UNE LESION
+							</div>
+							<div class="sousmenu" >
+							&nbsp; <br /> &nbsp; <br /> &nbsp; <br /> &nbsp; <br /> 
+							&nbsp; <br /> &nbsp; <br /> &nbsp;
+							</div>
+						
+						<table>
+						<tr>
+								<td class="colonne1" >
+									Cette partie permet, en précisant l'espèce, l'organe, le nom de 
+									la lésion ou un texte contenu dans AsaDia 2, 
+									de visualiser automatiquement la liste des images 
+									des lésions correspondant aux critères proposés.
+									<br/><br/>
+									Ici, la recherche portera sur les lésions de tuberculose 
+									présentes sur le poumon d'un bovin.
+									<br/><br/>
+									En cliquant sur le bouton "Voir les photos", on fera appara&icirc;tre 
+									des planches de 6 photographies comme décrit plus bas.
+								</td>
+								<td  class="colonne2"  > <img src="IMAGES/Ecran1reconnaitre.jpg" 
+									width="650" height="437" alt="Ecran de recherche de photos" 
+									title="Ecran de recherche de photos" /> 
+								</td>
+								
+							</tr>
+							<tr>
+								<td class="colonne1" >
+								&nbsp;<br/>&nbsp;
+								</td>
+								<td  class="colonne2"  > 
+								</td>
+							</tr>
+							<tr>
+								<td class="colonne1" >
+									A partir de ces planches, on peut :<br />
+									- visualiser chaque photo commentée en plein écran<br />
+									- sélectionner certaines photos dans le but de réduire 
+									la sélection initiale<br />
+									- Afficher la palette de description où sont inscrits 
+									la définition des lésions, 
+									le commentaire de la photographie, 
+									la fiche réflexe et la réglementation applicable.
+										
+									<br/><br/>
+									On peut également comparer la photo sélectionnée 
+									avec des lésions ressemblantes en restreignant 
+									éventuellement le champ de la recherche 
+									aux lésions  touchant la même espèce 
+									et / ou le même organe. 
+								</td>
+								<td  class="colonne2"  > 
+								<img src="IMAGES/Ecran2reconnaitre.jpg" width="650" 
+									height="410" alt="Planches de 6 photographies" 
+									title="Planches de 6 photographies" /> 
+								</td>
+							</tr>
+							<tr>
+								<td class="colonne1" >
+								&nbsp;<br/>&nbsp;
+								</td>
+								<td  class="colonne2"  > 
+								</td>
+							</tr>
+							<tr>
+								<td class="colonne1" >
+									Si l'on demande à voir les lésions ressemblantes 
+									à celle sélectionnée, 
+									elle est placée dans une fenêtre mobile 
+									tandis que les lésions ressemblantes 
+									sont présentées 
+									en planches de 6 photographies.
+									<br />
+									Ceci permet de comparer facilement les photographies deux à deux.
+									<br />
+									Si on veut voir le détail de la comparaison, il suffit de 
+									cliquer sur le bouton "Comparer" 
+									pour faire apparaître l'écran
+									représenté plus bas.
+								</td>
+								<td  class="colonne2"  > 
+									<img src="IMAGES/Ecran3reconnaitre.jpg" 
+									width="650" height="437" 
+									alt="Comparaison de photographies" 
+									title="Comparaison de photographies" /> 
+								</td>
+							</tr>
+							<tr>
+								<td class="colonne1" >
+								&nbsp;<br/>&nbsp;
+								</td>
+								<td  class="colonne2"  > 
+								</td>
+							</tr>
+							<tr>
+								<td class="colonne1" >
+									Sur l'écran de comparaison, on peut, grâce aux boutons radios 
+									situés en bas à droite de l'écran, afficher
+									la description type de la lésion, 
+									le commentaire, la fiche réflexe ou la réglementation.
+								</td>
+								<td  class="colonne2"  > 
+									<img src="IMAGES/Ecran4reconnaitre.jpg" 
+									width="650" height="437" 
+									alt="Comparaison de photographies" 
+									title="Comparaison de photographies" /> 
+								</td>
+							</tr>
+						</table>
+						
+						<br/><br/>						
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>

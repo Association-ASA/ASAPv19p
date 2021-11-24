@@ -1,0 +1,359 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "QS_Toolbox: Call Chain Methods",
+	"memorizeGeometry": true,
+	"formSizeAnchor": "limite",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"menuBar": "Barre #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onCloseBox",
+		"onUnload",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 576,
+					"left": 1,
+					"width": 1122,
+					"height": 51,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#C0C0C0",
+					"stroke": "#C0C0C0"
+				},
+				"BT1": {
+					"type": "button",
+					"top": 97,
+					"left": -15,
+					"width": 10,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"limite": {
+					"type": "line",
+					"top": 626,
+					"left": 1104,
+					"width": 19,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"FenetreInformation": {
+					"type": "input",
+					"top": 586,
+					"left": 16,
+					"width": 1100,
+					"height": 32,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ctrlW": {
+					"type": "button",
+					"top": 5,
+					"left": 1168,
+					"width": 145,
+					"height": 25,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/_UI"
+					},
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "ctrl-W"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 1128,
+					"height": 69,
+					"sizingX": "grow",
+					"fill": "#AED581",
+					"stroke": "#6495ED"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 1,
+					"width": 1128,
+					"height": 16,
+					"sizingX": "grow",
+					"fill": "#E2DECB",
+					"stroke": "transparent"
+				},
+				"VersionComposant": {
+					"type": "input",
+					"top": 70,
+					"left": 1022,
+					"width": 88,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_Componant_Version",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bdd": {
+					"type": "input",
+					"top": 23,
+					"left": 352,
+					"width": 594,
+					"height": 25,
+					"sizingX": "grow",
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_DBName+\" - Call Chain Methods\"",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"contextMenu": "none",
+					"enterable": false,
+					"focusable": false
+				},
+				"Image5": {
+					"type": "picture",
+					"top": 2,
+					"left": 1038,
+					"width": 60,
+					"height": 60,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/pictures/QS_Toolbox.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"myLH": {
+					"type": "list",
+					"top": 90,
+					"left": 9,
+					"width": 521,
+					"height": 480,
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"borderStyle": "none",
+					"method": "ObjectMethods/myLH.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"webZone": {
+					"type": "webArea",
+					"top": 90,
+					"left": 533,
+					"width": 590,
+					"height": 487,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "web_URL",
+					"webEngine": "embedded",
+					"borderStyle": "none",
+					"method": "ObjectMethods/webZone.4dm",
+					"events": [
+						"onEndURLLoading"
+					],
+					"methodsAccessibility": "none"
+				},
+				"rd50": {
+					"type": "radio",
+					"top": 4,
+					"left": 16,
+					"width": 113,
+					"height": 25,
+					"text": "Sunburn",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"focusable": false,
+					"radioGroup": "Groupe258578077",
+					"events": [
+						"onClick"
+					]
+				},
+				"rd51": {
+					"type": "radio",
+					"top": 24,
+					"left": 16,
+					"width": 113,
+					"height": 25,
+					"text": "Tree collapse full",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"focusable": false,
+					"radioGroup": "Groupe258578077",
+					"events": [
+						"onClick"
+					]
+				},
+				"rd52": {
+					"type": "radio",
+					"top": 110,
+					"left": 1173,
+					"width": 113,
+					"height": 25,
+					"text": "Tree radial tidy",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"focusable": false,
+					"radioGroup": "Groupe258578077",
+					"events": [
+						"onClick"
+					]
+				},
+				"rd53": {
+					"type": "radio",
+					"top": 70,
+					"left": 1288,
+					"width": 113,
+					"height": 25,
+					"text": "Tree tidy",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"focusable": false,
+					"radioGroup": "Groupe258578077",
+					"events": [
+						"onClick"
+					]
+				},
+				"rd0": {
+					"type": "radio",
+					"top": 45,
+					"left": 16,
+					"width": 113,
+					"height": 25,
+					"text": "Display 4D code",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"radioGroup": "Groupe258578077",
+					"events": [
+						"onClick"
+					]
+				},
+				"rd54": {
+					"type": "radio",
+					"top": 90,
+					"left": 1288,
+					"width": 113,
+					"height": 25,
+					"text": "Edge bundling",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"focusable": false,
+					"radioGroup": "Groupe258578077",
+					"events": [
+						"onClick"
+					]
+				},
+				"btCallees": {
+					"type": "radio",
+					"top": 6,
+					"left": 175,
+					"width": 113,
+					"height": 25,
+					"text": "Callees",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"focusable": false,
+					"radioGroup": "Groupe258578078",
+					"events": [
+						"onClick"
+					]
+				},
+				"btCallers": {
+					"type": "radio",
+					"top": 26,
+					"left": 175,
+					"width": 113,
+					"height": 25,
+					"text": "Callers",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"focusable": false,
+					"radioGroup": "Groupe258578078",
+					"events": [
+						"onClick"
+					]
+				},
+				"maximize": {
+					"type": "button",
+					"text": "Maximize",
+					"top": 71,
+					"left": 533,
+					"width": 94,
+					"height": 16,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe258578078": [
+				"btCallees",
+				"btCallers"
+			],
+			"Group": [
+				"rd50",
+				"rd51",
+				"rd0"
+			]
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 17
+}

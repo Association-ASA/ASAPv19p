@@ -1,0 +1,497 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 60,
+					"left": 20,
+					"width": 393,
+					"height": 181,
+					"fill": "#DBDBDB",
+					"stroke": "#D3D3D3"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 33,
+					"left": 71,
+					"width": 263,
+					"height": 17
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 77,
+					"left": 212,
+					"width": 41,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "Germe"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 77,
+					"left": 290,
+					"width": 27,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "AR"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 77,
+					"left": 354,
+					"width": 27,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "SR"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 107,
+					"left": 141,
+					"width": 49,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "Bacillus cereus"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 131,
+					"left": 105,
+					"width": 85,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "Pseudomonas"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 155,
+					"left": 78,
+					"width": 112,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "Bactéries lactiques"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 180,
+					"left": 25,
+					"width": 165,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "Levure/Moisissure ensemble"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 205,
+					"left": 29,
+					"width": 161,
+					"height": 15,
+					"class": "Champ_normal",
+					"text": "Levure/Moisissure séparées"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 196,
+					"width": 198,
+					"height": 120,
+					"fill": "transparent"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 102,
+					"left": 270,
+					"height": 120
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 102,
+					"left": 333,
+					"height": 120
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 199,
+					"left": 197,
+					"width": 197
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 176,
+					"left": 197,
+					"width": 197
+				},
+				"Ligne4": {
+					"type": "line",
+					"top": 151,
+					"left": 197,
+					"width": 197
+				},
+				"Ligne5": {
+					"type": "line",
+					"top": 126,
+					"left": 197,
+					"width": 197
+				},
+				"CBBacillus": {
+					"type": "checkbox",
+					"top": 106,
+					"left": 226,
+					"width": 22,
+					"height": 18,
+					"dataSource": "CBBacillus",
+					"fontFamily": "Police système Courant",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CBPseudomonas": {
+					"type": "checkbox",
+					"top": 130,
+					"left": 226,
+					"width": 22,
+					"height": 18,
+					"dataSource": "CBPseudomonas",
+					"fontFamily": "Police système Courant",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CBLactique": {
+					"type": "checkbox",
+					"top": 155,
+					"left": 226,
+					"width": 22,
+					"height": 18,
+					"dataSource": "CBLactique",
+					"fontFamily": "Police système Courant",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CBLMens": {
+					"type": "checkbox",
+					"top": 179,
+					"left": 226,
+					"width": 22,
+					"height": 18,
+					"dataSource": "CBLMens",
+					"fontFamily": "Police système Courant",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CBLMsep": {
+					"type": "checkbox",
+					"top": 202,
+					"left": 226,
+					"width": 22,
+					"height": 18,
+					"dataSource": "CBLMsep",
+					"fontFamily": "Police système Courant",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ARBacillus": {
+					"type": "input",
+					"top": 106,
+					"left": 288,
+					"width": 29,
+					"height": 17,
+					"dataSource": "ARBacillus",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ARPseudomonas": {
+					"type": "input",
+					"top": 130,
+					"left": 288,
+					"width": 29,
+					"height": 17,
+					"dataSource": "ARPseudomonas",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ARLactique": {
+					"type": "input",
+					"top": 156,
+					"left": 288,
+					"width": 29,
+					"height": 17,
+					"dataSource": "ARLactique",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ARLMens": {
+					"type": "input",
+					"top": 180,
+					"left": 288,
+					"width": 29,
+					"height": 17,
+					"dataSource": "ARLMens",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ARLMsep": {
+					"type": "input",
+					"top": 203,
+					"left": 288,
+					"width": 29,
+					"height": 17,
+					"dataSource": "ARLMsep",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SRBacillus": {
+					"type": "input",
+					"top": 106,
+					"left": 350,
+					"width": 29,
+					"height": 17,
+					"dataSource": "SRBacillus",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SRPseudomonas": {
+					"type": "input",
+					"top": 130,
+					"left": 350,
+					"width": 29,
+					"height": 17,
+					"dataSource": "SRPseudomonas",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SRLactique": {
+					"type": "input",
+					"top": 156,
+					"left": 350,
+					"width": 29,
+					"height": 17,
+					"dataSource": "SRLactique",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SRLMens": {
+					"type": "input",
+					"top": 180,
+					"left": 350,
+					"width": 29,
+					"height": 17,
+					"dataSource": "SRLMens",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SRLMsep": {
+					"type": "input",
+					"top": 203,
+					"left": 350,
+					"width": 29,
+					"height": 17,
+					"dataSource": "SRLMsep",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTitre": {
+					"type": "input",
+					"top": 22,
+					"left": 25,
+					"width": 363,
+					"height": 17,
+					"dataSource": "VarTitre",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouAnnule": {
+					"type": "pictureButton",
+					"top": 261,
+					"left": 379,
+					"width": 34,
+					"height": 32,
+					"dataSource": "BouAnnule",
+					"tooltip": "Quitter sans enregistrer",
+					"action": "cancel",
+					"picture": "/RESOURCES/Images/Buttons/BoutonAnnuler.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"BouValider": {
+					"type": "pictureButton",
+					"top": 261,
+					"left": 331,
+					"width": 34,
+					"height": 32,
+					"dataSource": "BouValider",
+					"tooltip": "Valider les modifications",
+					"picture": "/RESOURCES/Images/Buttons/BoutonValider.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/BouValider.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSupp": {
+					"type": "pictureButton",
+					"top": 261,
+					"left": 283,
+					"width": 34,
+					"height": 32,
+					"dataSource": "BouSupp",
+					"tooltip": "Supprimer la participation du labo",
+					"picture": "/RESOURCES/Images/Buttons/BoutonSupprimer.png",
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/BouSupp.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

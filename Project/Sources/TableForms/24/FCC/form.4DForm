@@ -1,0 +1,743 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 545,
+	"height": 827,
+	"markerHeader": 4,
+	"markerBody": 781,
+	"markerBreak": 781,
+	"markerFooter": 781,
+	"events": [
+		"onLoad",
+		"onPrintingDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 794,
+					"left": 22,
+					"width": 65,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 9,
+					"left": 134,
+					"width": 241,
+					"height": 66,
+					"fill": "transparent"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 286,
+					"left": -2,
+					"width": 8,
+					"strokeDashArray": "1 1"
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 21,
+					"left": 149,
+					"width": 212,
+					"height": 17,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "ENREGISTREMENT"
+				},
+				"Image10": {
+					"type": "picture",
+					"top": 14,
+					"left": 26,
+					"width": 95,
+					"height": 53,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image10.png"
+				},
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": 9,
+					"left": 374,
+					"width": 130,
+					"height": 66,
+					"fill": "transparent"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 47,
+					"left": 149,
+					"width": 212,
+					"height": 17,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Fiche contact client"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 14,
+					"left": 331,
+					"width": 212,
+					"height": 17,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "MAN30_P1_E1"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 29,
+					"left": 331,
+					"width": 212,
+					"height": 17,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Ex PROG0701EN01"
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 44,
+					"left": 331,
+					"width": 212,
+					"height": 17,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Version 7"
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 58,
+					"left": 331,
+					"width": 212,
+					"height": 17,
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Page 1 sur 1"
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 87,
+					"left": 32,
+					"width": 73,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Fiche n° :"
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 87,
+					"left": 261,
+					"width": 87,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Codification "
+				},
+				"Rectangle11": {
+					"type": "rectangle",
+					"top": 81,
+					"left": 347,
+					"width": 49,
+					"height": 28,
+					"fill": "transparent"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 115,
+					"left": 22,
+					"width": 500,
+					"height": 379,
+					"fill": "transparent"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 124,
+					"left": 32,
+					"width": 223,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Nom et référence du client :"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 142,
+					"left": 32,
+					"width": 223,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Numéro laboratoire :"
+				},
+				"CacASA": {
+					"type": "checkbox",
+					"top": 119,
+					"left": 417,
+					"width": 105,
+					"height": 26,
+					"dataSource": "CacASA",
+					"text": "ASA",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCADILVA": {
+					"type": "checkbox",
+					"top": 137,
+					"left": 417,
+					"width": 105,
+					"height": 26,
+					"dataSource": "CaCADILVA",
+					"text": "ADILVA",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CacAppelTel": {
+					"type": "checkbox",
+					"top": 167,
+					"left": 32,
+					"width": 137,
+					"height": 26,
+					"dataSource": "CacAppelTel",
+					"text": "Appel téléphonique",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCReclamation": {
+					"type": "checkbox",
+					"top": 167,
+					"left": 189,
+					"width": 115,
+					"height": 26,
+					"dataSource": "CaCReclamation",
+					"text": "Réclamation →",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCDemandeInfo": {
+					"type": "checkbox",
+					"top": 198,
+					"left": 189,
+					"width": 159,
+					"height": 26,
+					"text": "Demande d'information",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCRetourInfo": {
+					"type": "checkbox",
+					"top": 198,
+					"left": 374,
+					"width": 143,
+					"height": 26,
+					"text": "Retour d'information",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 172,
+					"left": 300,
+					"width": 59,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "FTNC n°"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 244,
+					"left": 32,
+					"width": 102,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Description :"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 367,
+					"left": 32,
+					"width": 149,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Domaine concerné :"
+				},
+				"CaCTechnique": {
+					"type": "checkbox",
+					"top": 388,
+					"left": 32,
+					"width": 84,
+					"height": 26,
+					"dataSource": "CaCTechnique",
+					"text": "Technique",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCStat": {
+					"type": "checkbox",
+					"top": 388,
+					"left": 127,
+					"width": 84,
+					"height": 26,
+					"dataSource": "CaCStat",
+					"text": "Statistique",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCInformatique": {
+					"type": "checkbox",
+					"top": 388,
+					"left": 223,
+					"width": 94,
+					"height": 26,
+					"dataSource": "CaCInformatique",
+					"text": "Informatique",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCQualite": {
+					"type": "checkbox",
+					"top": 388,
+					"left": 329,
+					"width": 62,
+					"height": 26,
+					"dataSource": "CaCQualite",
+					"text": "Qualité",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CaCAdministratif": {
+					"type": "checkbox",
+					"top": 388,
+					"left": 403,
+					"width": 101,
+					"height": 26,
+					"dataSource": "CaCAdministratif",
+					"text": "Administratif",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 420,
+					"left": 32,
+					"width": 109,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "CIL concernée :"
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 443,
+					"left": 32,
+					"width": 45,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Date :"
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 467,
+					"left": 32,
+					"width": 272,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Nom de la personne qui a reçu la fiche :"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 499,
+					"left": 22,
+					"width": 500,
+					"height": 253,
+					"fill": "transparent"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 514,
+					"left": 32,
+					"width": 192,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Responsable du traitement :"
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 538,
+					"left": 32,
+					"width": 137,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Actions imédiates :"
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 614,
+					"left": 32,
+					"width": 369,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Actions correctives et/ou préventives mises en place :"
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 693,
+					"left": 32,
+					"width": 192,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Date du Comité permanent :"
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 693,
+					"left": 325,
+					"width": 192,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Visa du responsable :"
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 714,
+					"left": 32,
+					"width": 229,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"text": "Référence des courriers joints :"
+				},
+				"Texte23": {
+					"type": "text",
+					"top": 735,
+					"left": 32,
+					"width": 229,
+					"height": 17,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"text": "Copie de la réponse client :"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 757,
+					"left": 22,
+					"width": 500,
+					"height": 54,
+					"fill": "transparent"
+				},
+				"Texte24": {
+					"type": "text",
+					"top": 762,
+					"left": 27,
+					"width": 491,
+					"height": 29,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Revu le 04/01/2021       par Eloïse RIOUALL (fonctione qualité)               Visa : original signé\rRevu le 04/01/2021       par Martine CARLIER (fonction coordonateur)    Visa : original signé"
+				},
+				"Texte25": {
+					"type": "text",
+					"top": 796,
+					"left": 29,
+					"width": 51,
+					"height": 15,
+					"textAlign": "left",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Revu le :"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 794,
+					"left": 86,
+					"width": 88,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 794,
+					"left": 173,
+					"width": 88,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 794,
+					"left": 260,
+					"width": 88,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 794,
+					"left": 347,
+					"width": 88,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 794,
+					"left": 434,
+					"width": 88,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"VarNumFiche": {
+					"type": "input",
+					"top": 86,
+					"left": 100,
+					"width": 103,
+					"height": 18,
+					"dataSource": "VarNumFiche",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNomClient": {
+					"type": "input",
+					"top": 125,
+					"left": 223,
+					"width": 188,
+					"height": 15,
+					"dataSource": "VarNomClient",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNumLabo": {
+					"type": "input",
+					"top": 142,
+					"left": 173,
+					"width": 238,
+					"height": 16,
+					"dataSource": "VarNumLabo",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNumFTNC": {
+					"type": "input",
+					"top": 171,
+					"left": 358,
+					"width": 103,
+					"height": 18,
+					"dataSource": "VarNumFTNC",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDescription": {
+					"type": "input",
+					"top": 262,
+					"left": 32,
+					"width": 472,
+					"height": 97,
+					"dataSource": "VarDescription",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNumCIL": {
+					"type": "input",
+					"top": 420,
+					"left": 142,
+					"width": 149,
+					"height": 17,
+					"dataSource": "VarNumCIL",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDateRetour": {
+					"type": "input",
+					"top": 443,
+					"left": 76,
+					"width": 149,
+					"height": 17,
+					"dataSource": "VarDateRetour",
+					"dataSourceTypeHint": "date",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarCreateurFiche": {
+					"type": "input",
+					"top": 467,
+					"left": 300,
+					"width": 149,
+					"height": 17,
+					"dataSource": "VarCreateurFiche",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

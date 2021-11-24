@@ -1,0 +1,55 @@
+﻿{
+	"editors": [
+		{
+			"type": "method",
+			"id": 2147483637,
+			"previousTabType": "method",
+			"previousTabID": 2147483626,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "PLUGIN_listCommands"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483626,
+			"previousTabType": "method",
+			"previousTabID": 2147483319,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "_Start"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483319,
+			"previousTabType": "method",
+			"previousTabID": 2147483184,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "QS_Toolbox_init_start"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483184,
+			"previousTabType": "method",
+			"previousTabID": 2147482999,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "QS_Init"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147482999,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "QS_TOOLBOX"
+			}
+		},
+		{
+			"type": "explorer"
+		}
+	]
+}

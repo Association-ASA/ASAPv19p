@@ -1,0 +1,29 @@
+  <meta name="keywords" content="asa, sante, publique, veterinaire, association, hygiene, aliment, 
+  alimentaire, intercomparasion, cofrac, accreditation, abattoir, photographies, asadia, inspection, 
+  médecine, pharmacien, droit" />
+  <meta name="description" content="l'asa a pour but la promotion de la santé publique vétérinaire" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <link href="styles/style-asa.css" rel="stylesheet" type="text/css" />
+  <link href="styles/style-clarisse.css" rel="stylesheet" type="text/css" />
+  <link href="styles/style-claude.css" rel="stylesheet" type="text/css" />
+  <link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+  <!--
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  -->
+  <link href="styles/menucss.css" rel="stylesheet" type="text/css" />
+  
+  <script type="text/javascript" src="js/asa.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16544069-1']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>

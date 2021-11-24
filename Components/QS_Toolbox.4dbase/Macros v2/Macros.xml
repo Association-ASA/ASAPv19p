@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+
+<!--
+Description
+This Macro file allows you to start a QS_Toolbox module independently of the QS_Toolbox User Interface
+
+version = 2 allows to use macro created at Component level into host database
+-->
+
+<macros>
+    <!-- QS_Toolbox -->
+	
+    <macro name="-"><text/></macro> <!-- separator line -->
+    
+	<macro name="QST Main" version="2">
+    	<text><method>mQST_MNU_Start</method></text>
+	</macro>
+
+	<macro name="QST 4D Commands" version="2">
+    	<text><method>mQST_4dCommand</method></text>
+	</macro>
+
+	<macro name="QST Methods Explorer" version="2">
+    	<text><method>mQST_methodManager</method></text>
+	</macro>
+
+	<macro name="QST Form Explorer" version="2">
+    	<text><method>mQST_formExplorer</method></text>
+	</macro>
+
+	<macro name="QST DB Overview" version="2">
+    	<text><method>mQST_dbOverview</method></text>
+	</macro>
+
+	<macro name="QST User Navigator" version="2">
+    	<text><method>mQST_dataExplorer</method></text>
+	</macro>
+
+    <macro name="-"><text/></macro> <!-- separator line -->
+
+	<macro name="QST Methods Analyzer" version="2">
+    	<text><method>mQST_methodAnalyser</method></text>
+	</macro>
+
+	<macro name="QST Methods Pallet" version="2">
+    	<text><method>mQST_methodsPallet</method></text>
+	</macro>
+
+	<macro name="QST Methods Call chain" version="2">
+    	<text><method>mQST_methodsCallChain</method></text>
+	</macro>
+
+	<macro name="QST Structure Analysis" version="2">
+    	<text><method>mQST_structureAnalysis</method></text>
+	</macro>
+
+	<macro name="QST Search and Control" version="2">
+    	<text><method>mQST_searchAndControl</method></text>
+	</macro>
+
+    <macro name="-"><text/></macro> <!-- separator line -->
+	
+	<macro name="QST Reports" version="2">
+    	<text><method>mQST_reports</method></text>
+	</macro>
+	
+	<macro name="QST VCS" version="2">
+    	<text><method>mQST_VCS</method></text>
+	</macro>
+	
+	<macro name="QST Converter" version="2">
+    	<text><method>mQST_converter</method></text>
+	</macro>
+	
+	<macro name="-"><text/></macro> <!-- separator line -->
+
+	<macro name="QST New DB analysis" version="2">
+    	<text><method>mQST_dbAnalysis</method></text>
+	</macro>
+	
+	<macro name="QST Callees Callers analysis" version="2">
+    	<text><method>mQST_dbcallees</method></text>
+	</macro>
+	
+	<macro name="-"><text/></macro> <!-- separator line -->
+
+	<macro name="QST Setup" version="2">
+    	<text><method>mQST_setup</method></text>
+	</macro>
+    
+    <macro name="QST Restart" version="2">
+    	<text><method>mQST_restart4D</method></text>
+	</macro>
+	
+    <macro name="-"><text/></macro> <!-- separator line -->
+
+</macros>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Why to choose RAEMA?</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemapourquoi.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau français" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps" class="textebanalgrand">
+			<div id="contenu1" class="textebanalgrand">
+				<!--4dinclude menuraemaA.shtml-->	
+				<br /><br />
+				<p class="titrepage">
+					Why should you choose RAEMA?
+					<br /><br />
+				</p>
+				
+					
+					•	<span class="grandhautpage">For its expertise:</span><br />
+					<p class="imageasadia">
+						<img src="IMAGES/RIFTW.jpg" alt="Rapport individuel" width="125px"/>
+					</p>
+          <b>RAEMA, it is <b>more than 25 years</b> of experience.
+          A system under <b>Cofrac accreditation</b> to help <b>almost 400 public and private laboratories</b>,
+          which repeat their confidence in this Inter-laboratories comparison, every year.<br />
+          RAEMA embodies a tool for the assessment of trueness and precision of analytical techniques of laboratories participating.
+          Robust statistical methods, based on approximately 400 laboratories, public and private,
+          French an international ones, for RAEMA (powder) enable to assess these two parameters.
+          For the Gel RAEMA, these robust methods enable to assess the trueness on 100 laboratories.
+          <p class="imageasadiad">
+						<img src="IMAGES/evolutionperf.jpg" alt="Performance evolution" width="300px"/>
+					</p>
+					It is also a history of laboratories performances. RAEMA enables to follow performances evolution of laboratories during time,
+          in order to assist professionals in the best way.<br />
+					<br /><br />
+					
+					•	<span class="grandhautpage">For its adaptability:</span><br />
+              Since it has been created, RAEMA has been able to adapt itself to laboratories requests:
+          <p class="imageasadiad">
+						<img src="IMAGES/adaptablilite.jpg" alt="adaptability" width="250px"/>
+					</p>
+          - By the inclusion of methods effects, to realize an accurate analysis of laboratories results.<br />
+          - To the requirement of validation of several laboratory technician or several methods, with the possibility to order additive packages:
+               With Cofrac report, allowing the analysis of several set of results.
+               Without Cofrac report, for an internal analysis by the laboratory.<br />
+          <p class="imageasadia">
+						<img src="IMAGES/Raemagel.jpeg" alt="RAEMA gel" width="250px"/>
+					</p>
+          - Regarding the matrix, by offering proficiency testing schemes on gelified matrix,
+          Gel RAEMA, which is closer to the samples regularly analyzed by laboratories.<br />
+          - Participate to RAEMA, it is also be free to choose. Indeed, the choice of microorganisms in Gel RAEMA
+           is made in the menu, in order to agree with laboratories requirements.<br />
+					<br /><br />
+					•	<span class="grandhautpage">For its attractive prices:</span><br />
+					ASA is a non-profit organization.
+          A lot of volunteers work for it, so competitive prices can be proposed to laboratories
+          in the field of proficiency testing scheme in food microbiology.
+          ASA proposes decreasing gradually prices, to give the possibility to laboratories to have an access to schemes each year, as many as possible. 
+
+					<a href="w2raematarifsA.shtml">See prices</a>
+					<br /><br />
+					</p>
+			</div>
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

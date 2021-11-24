@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Animal Health Meeting</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="sa2015.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau français" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+      <div id="contenu1" class="textebanalgrand">
+          <br/> <br/>
+        <p class="titrepage">
+          Monitor and protect wildlife health in Europe
+        </p>
+        <p class="soustitrepage">
+          European working group establishing guidelines for the surveillance, <br/>
+          notification and management of priority threats in wildlife.
+        </p>
+        <p class="textepetit">
+          <br/><b>Experts : </b>Marc ARTOIS (VetAgro Sup, France) , Jean Yves CHOLET (ONCFS, France),
+          Morgane DOMINGUEZ (France), Mike HUTCHINGS (Scotland's Rural College), Annick LINDEN (Université de Liège, Belgique), 
+          Elodie MONCHATRE-LEROY (ANSES Nancy, France), Julien PORTIER (Sciences & Faunes, Moscou),
+          Marie-Pierre RYSER-DEGIORGIS (Vetsuisse Faculty, Berne, Suisse), Patricia TAVARES SANTOS (DGAV Portugal), 
+          Wim HM van der POEL(Université de Lelystad, Pays bas), Eva WARNS-PETIT (DDPP Rennes, France).<br/>
+          <span class="textetoutpetit">
+            NB: the experts were selected and contacted by the president of the group, for their recognized competences
+            in their respective disciplines and to cover the whole field of European wildlife health.
+            The experts were recruited “intuitu personae” and not for their institutional links.
+            Their propositions do not necessarily reflect the views of their employers.
+          </span>
+          <br/>
+          <b>Organizing committee</b><br/>
+          Lisa CAVALERIE (DGAL, France), Fabrice CHEVALIER (DRAFF Bourgogne, France).<br/>
+          Claude GRANDMONTAGNE (ASA), Jean Marie GOURREAU (ASA).<br/>
+        </p>
+        <p class="imageasd">
+          <img src="images/bouquetin.jpg" alt="bouquetin" width="300px" />
+        </p>
+          <br/>
+        ASA proposed to the DGAL (Direction of the French ministry for Agriculture) to support the creation of a working group
+        for proposing guidelines for the surveillance, notification and management of priority threats for wildlife.
+         <br/><br/>
+        This proposal was validated as a DGAL-ASA agreement.
+        <br/><br/>
+        <b>The questions addressed</b> <br />
+        The group met on October 28, 29 and 30 2015 in the ASA headquarters in Maisons-Alfort and addressed the following topics: <br/>
+        <ol id="listeq">
+          <li>Which are the parties implicated in the sanitary surveillance of wildlife in France (and in part in Europe):
+              data providers, specialized laboratories, data managers, and data users?
+          </li>
+          <li>
+            Which are the sanitary threats which should be considered as priorities for surveillance in France and in Europe, for wildlife?
+          </li>
+          <li>In which form, and by whom, should notifications of pathogens and diseases of wildlife be made, in France and in Europe?
+          </li>
+          <li>
+            Which should be the political response to the discovery of an outbreak of one of these pathogens in wildlife?
+          </li>
+          <li>
+            Is there a directory of recognized experts in wildlife health and management? (and how to establish such a directory if necessary?)
+          </li>
+          <li>
+            Which are the main sanitary or medical options available after the discovery of an infectious event in wildlife?
+          </li>
+          <li>
+            Is it possible to establish a decision frame for setting up emergency, waiting, protection, prevention and mitigation measures and communication?
+          </li>
+        </ol>
+        <br/>
+    
+        <b>Methodology</b>
+        <br/>
+        <p class="imageasag">
+          <img src="images/SAoct2015.JPG" alt="Photo of the group" width="300px" />
+        </p>
+          The first two days of the meeting were dedicated to confronting ideas on the proposed topics and resulted in proposing
+          a method for addressing the management of threats in wildlife health.         <br/>
+          This method was validated and completed on the third day in split sessions by using precise examples and entering them into the method.
+          Direct, indirect and vector-borne diseases were addressed each separately.<br/><br/>
+        
+          Several experts remained after the official termination of the meeting to take part in the initial writing of the meeting report (after-noon).
+          
+          Professor Marc Artois (president) and Dr Julien Portier (secretary) then elaborated a report in English,
+          from notes taken during the meeting and commentaries made by participants.<br/><br/>
+        
+          The original report was then translated in French to be presented to the DGAL (contact: Animal Health Office)<br/>
+          The report can be downloaded from this page (in french  only). It is preceded by a two page summary presenting the key comments and recommendations of the report<br/><br/>
+        
+        <b>Propositions</b><br/>
+          Mainly, the experts recommend taking into considerations all management options to mitigate the transmission risk for diseases,
+          starting when relevant with those applicable directly to humans, then to livestock in contact with infected wildlife.<br/>
+          A detailed annex at the end of the report proposes a commented list of all prevention or mitigation measures for infectious events
+          affecting humans or livestock and implicating wild free living animal populations.<br/>
+          
+        <p class="titrepage">
+          <a href="https://www.dropbox.com/s/2qm1qjku1m4qisr/RapportSAS2015fr.pdf?dl=0">Download the report in french</a> 
+        </p>
+        <br />
+        A scientific article (English) is currently being written.<br />
+        ASA will ensure its publication in an international peer-reviewed journal. 
+        <br />        <br />
+
+      </div>
+    </div>
+    
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

@@ -1,0 +1,77 @@
+
+
+/* = MENUS Description AsaDia 2 */
+
+.menu{
+	float:left;
+	width:235px;
+	height:60px;
+	text-align:center;
+	background:#F6F2CF;
+	color: #000000;
+	display:block;
+	padding-top:15px;
+	font-size:14px;
+    font-weight:600;
+    color:black;
+	text-decoration:none;
+}
+
+.menuf{
+	float:left;
+	width:148px;
+	height:60px;
+	text-align:center;
+	background:#F6F2CF;
+	color: #000000;
+	display:block;
+	padding-top:15px;
+	font-size:14px;
+    font-weight:600;
+    color:black;
+	text-decoration:none;
+}
+.menuactif {
+	float:left;
+	width:240px;
+	height:80px;
+	text-align:center;
+	background:#FFFFBD;
+	color: #000000;
+	display:block;
+	padding-top:15px;
+	font-size:14px;
+    font-weight:600;
+}
+.menufactif {
+	float:left;
+	width:210px;
+	height:80px;
+	text-align:center;
+	background:#FFFFBD;
+	color: #000000;
+	display:block;
+	padding-top:15px;
+	font-size:16px;
+    font-weight:600;
+}
+
+.menucouleur {
+color: #F68600; 
+}	
+            
+.sousmenu  
+{
+	width:400
+	height:90px;
+}
+
+        
+ul{}
+
+
+ul.liste2{
+	margin-left:22;
+	padding-left: 44px;
+	}
+

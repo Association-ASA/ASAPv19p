@@ -1,0 +1,35 @@
+
+     <div class="tablebilan">
+       <table>
+        <tr>
+          <th class="tbbilanet" width="25%">Ce qu'il fallait faire</th>
+          <th class="tbbilanet" width="50%">Argumentaire</th>
+          <th class="tbbilanet" width="20%">Ce que vous avez fait</th>
+          <th class="tbbilanet" width="5%">Evaluation</th>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne">Cocher la réponse "intitulé de la réponse"</td>
+          <td class="tbbilanligne">Argumentaire mis au niveau de la réponse</td>
+          <td class="tbbilanligne">Vous avez coché cette réponse</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="bravo">&#128515;</span></td>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne">ne pas cocher la réponse "intitulé de la réponse"</td>
+          <td class="tbbilanligne" >Argumentaire mis au niveau de la réponse</td>
+          <td class="tbbilanligne">Vous n'avez pas coché cette réponse</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="bravo">&#128515;</span></td>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne" >Cocher la réponse "intitulé de la réponse"</td>
+          <td class="tbbilanligne" >Argumentaire mis au niveau de la réponse</td>
+          <td class="tbbilanligne">Vous n'avez pas coché cette réponse</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="ouhh">&#128545;</span></td>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne" >Ne pas cocher la réponse "intitulé de la réponse"</td>
+          <td class="tbbilanligne" >Argumentaire mis au niveau de la réponse</td>
+          <td class="tbbilanligne">Vous avez coché cette réponse</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="ouhh">&#128545;</span></td>
+        </tr>
+      </table>
+     </div>

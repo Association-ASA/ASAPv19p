@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>GEEFSM</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				<br/> 
+        <p class="titrepage">
+          Santé de la faune sauvage de montagne : l’ASA à la rencontre des spécialistes
+        </p>
+        <br/>
+        <div class="imageasadia">
+          <img src="images/GEEFSM1.jpg" alt="Groupe en montagne" />
+        </div>
+        La réunion annuelle du Groupe d’Etudes sur l’Eco-pathologie de la Faune Sauvage de Montagne
+        est une rencontre scientifique et conviviale organisée chaque année dans un pays de l’Arc alpin.<br/>
+        Cette année, cette rencontre était organisée au Centre de vacances de Pont de Camps, dans la vallée d’Ossau.<br/>
+        Les 28 communications orales et 12 communications affichées, ont permis des échanges et discussions
+        entre pathologistes et biologistes, dans une sympathique polyphonie, associant le français,
+        l’italien et l’espagnol (l’anglais est banni de ces rencontres « latines »).<br/><br/>
+        Les sujets présentés couvraient un large éventail de disciplines, allant de la gestion et de la conservation de la faune, 
+        à la parasitologie et à la pathologie. En particulier, les sujets brulants comme la problématique de la brucellose chez les Bouquetins des alpes,
+        découverte en 2012 dans le massif du Bargy, et son plan de gestion sanitaire ont été présentés et discutés.<br/><br/> 
+        Les maladies et parasites importants ou émergents des régions de montagne ont été abordés sur des modèles divers de mammifères et d’oiseaux.<br/><br/>
+        Pour la première fois une maladie fongique des amphibiens, la chytridiomycose (due à <i>Batrachochytridium dendrobatidis</i>, en abrégé Bd)
+        a fait l’objet d’une conférence détaillée présentant la situation épidémiologique de cette maladie redoutable pour les amphibiens autochtones,
+        notamment en Pyrénées. <br/>Depuis peu, un espoir de préservation des populations d’amphibiens atteintes renaît
+        grâce à la découverte du rôle bénéfique du plancton des mares et étangs, qui consomment les spores du Chytride.<br/><br/>
+        Enfin, comme chaque année dans le cadre du concours annuel du GEEFSM,
+        des étudiants de master ou en thèse de doctorat ont été invités à présenter leurs résultats.
+        Un jury, tiré au sort parmi les participants, comme le veut la tradition, a sélectionné les trois meilleurs exposés qui ont été récompensés.<br/><br/>
+        Julien Portier a présenté, au nom de l'ASA, les résultats du groupe de travail interdisciplinaire européen,
+        réuni en octobre dernier à Alfort, sur la gestion sanitaire des crises
+        impliquant la faune sauvage en liberté (<a href="w2sa2015.shtml">groupe de travail ASA</a>).<br/>
+        Devant un auditoire particulièrement attentif, nous avons exposé l’importance de lier surveillance et gestion sanitaire
+        pour mieux « gérer » les maladies impliquant la faune sauvage.<br/>
+        Nous souhaitions avant tout ouvrir les débats sur des points cruciaux du rapport. 
+        nous avons abordé plusieurs points plus particulièrement liés aux problématiques de la gestion des maladies et infections des animaux sauvages en liberté.<br/>
+        Nous avons souligné l’importance de mettre en place des lignes directrices pour la gestion des évènements sanitaires avant que ceux-ci ne se produisent,
+        afin de limiter les conflits potentiels entre les différents acteurs de ces évènements.<br/>
+        Le centre de notre présentation fut le schéma original d’organisation des actions que le groupe propose dans son rapport. 
+        Ce schéma présente les étapes que nous considérons fondamentales : l’<b>évaluation du risque sanitaire</b> préalable à toute action,
+        le <b>choix des objectifs</b> de gestion globalement et pour chaque population sensible ainsi qu’une <b>réévaluation</b> préétablie de l’efficacité
+        et de l’impact des mesures choisies.<br/>
+        Ce schéma, ainsi que la démarche d’aide à la décision qui le complète, ont été développés dans le but de respecter les spécificités épidémiologiques
+        de la faune sauvage ainsi que d’assurer une réponse raisonnée et raisonnable (ne pas «gérer» plus que nécessaire).<br/>
+        Notre présentation a reçu un bon accueil et a engendré des discussions qui montrent l’intérêt que suscite notre travail et la pertinence de l’avoir mené.<br/>
+        Il va sans dire qu’il fut très intéressant pour nous de pouvoir confronter nos propositions à des collègues de terrain pour qui les problématiques sanitaires
+        de la faune sauvage et les relations Homme-Faune sauvage sont des préoccupations du quotidien.<br/>
+        Nos propositions étaient en résonance singulière avec certains problématiques abordées par ailleurs durant le congrès,
+        telle que la gestion en cours du foyer de brucellose des bouquetins du Bargy.<br/><br/>
+        
+        Pour des informations plus détaillées, les résumés des communications et les diaporamas,
+        sont visibles sur le <a href="http://www2.vetagro-sup.fr/ens/epid/actu.html" target="_blank">site des enseignants de VetAgro Sup</a>. <br/><br/>
+        
+        <p class="textecentre plus">
+          Auteurs : Julien Portier, Manon Moullec, Sophie Wasmuth, Clara Bohin et Marc Artois<br/><br/><br/>
+          <img src="images/GEEFSM2.jpg" alt="Groupe sur un pont" />
+        </p>
+        <br/>
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+	

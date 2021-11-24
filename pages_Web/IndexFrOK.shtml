@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Identification</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <link href="styles/style-asa.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+  </head>
+
+<body>
+<div id="header" align="center">
+      
+<a href="https://association.asa-spv.fr:500">
+<img src="images/bandeau.jpg" alt="logo" width="1008" > </img>
+</a>
+<p class="hautpage">
+Cliquer sur l'image pour visiter le site de l'ASA
+</p>
+</div>
+
+<div id="corps2">
+<div id="faqcontenu">
+<a id="flagA" href="asadia3WebA.shtml">
+<img  src="images/DrapeauA.gif" alt="drapeau anglais" width="30px" />
+</a>
+<a id="flagR" href="asadia3WebR.shtml">
+<img
+src="images/DrapeauR.gif" alt="drapeau russe" width="30px"title= " La version russe de cet outil a pu être réalisée grâce à financement octroyé par l’Italie,
+dans le cadre d’un projet de jumelage de l’OIE entre établissements d’enseignement vétérinaire"/>
+</a>
+</div>
+<div id="contenu1" class="textebanalgrand">
+<div id="aidepdfvideo">
+<a href="pdf/AsaDia3WebMdE.pdf" target="_blank">
+<img type="image" src="images/AideF.png" alt="aide"  title="Aide en PDF" height="40" />
+</a>
+<a href="#">
+<img type="image" id="faqpage" src="images/Faq.png" alt="Envoyer un message à l'ASA" title="Envoyer un message à l'ASA"  height="40" />
+</a>
+</div>
+<br/><br/><br/>
+  <p class="titrepage" id="titredelapage">
+          ASADia 3 sur le Web : identification
+  </p>
+<br/><br/>
+<p class="hautpage">
+Pour vous identifier, <span class="titrepage">merci</span> de bien vouloir entrer l'adresse mail<br/>
+avec laquelle vous êtes enregistré(e) sur le site de l'ASA
+</p>
+<br/>
+<form name="form1" method="POST" action="/mw2WebIdentification">  
+<p class="textecentre">
+<label for="mailid">Adresse mail d'identification </label>
+<input type="text" name="mailid" id="mailvisiteur" size="50"/>
+<br/><br/>
+<input class="titrepage" type="submit" name="Submit" value="Envoyer" /> 
+&nbsp; &nbsp; &nbsp;
+<input type="reset" name="Submit2" value="Effacer" />
+</p>
+</form>
+</div> 
+</div>
+<div id="pied">
+ 	<br />
+  Site officiel de l'association Animal - Société - Aliment (ASA) <br /> Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -
+	7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex    FRANCE<br />
+	Téléphone : <b>+ 33 (0)1 56 29 36 30</b>       Fax : <b>+ 33 (0)9 61 24 33 81</b>       
+	e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br />
+	<em>Pour signaler un problème, cliquez sur le lien suivant 
+	<a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+	<br /><br />
+</div>
+<script type="text/javascript" src="js/asadiaP1.js"></script> <!-- jQuery AsaDia    -->
+</body>
+</html>
+
+

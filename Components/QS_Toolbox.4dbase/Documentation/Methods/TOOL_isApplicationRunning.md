@@ -1,0 +1,1 @@
+﻿## TOOL_isApplicationRunning($1)---

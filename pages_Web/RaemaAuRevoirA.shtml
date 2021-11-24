@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		
+		<!--4dinclude HeaderAsa.shtml-->
+		<title><!--4dVAR TitrePage--></title>
+	</head>
+	
+	
+	<body>
+		<div id="header" align="center">
+			<a href="../index.shtml">  <img src="../images/logoasa.jpg" alt="logo" width="529" > </img> </a>
+		</div>
+		
+		<div id="corps">
+			
+		
+			<div id="contenu1">
+				<p class="hautpage">
+          To return to the ASA website, click on the picture above
+				</p>
+					<br /><br /> <br />
+				<p class="hautpage rouge">
+					RECORDING DATA   <br /><br />
+				</p>
+				<p class="hautpage">
+					CAUTION
+						<br /><br />
+					Your work was "saved":
+					<span class="rouge">
+					it wasn't send to us, so we didn't receive it.
+					</span>
+					<br/><br />
+					You can login again, when you like and complete your data processing.
+          <br /><br /> <br />
+          You can else click on the button "Back to the questionnaire" 
+          in order to complete now your entry and send it to us immediately, 
+          clicking on the button "Send to ASA" and not "Save as draft"
+          <br /><br />
+          <input class="titrepage" type="button" name="Précédente"
+            value="Back to the questionnaire" onClick="history.go(-1)" />
+       	</p>
+							<br /><br /><br /><br /><br /><br />
+				<p class="hautpage">
+					Contact the association for any question
+						<br />						
+					<a href="mailto:asa-spv@wanadoo.fr">
+						Send an mail
+            0to ASA
+					</a>
+				</p>
+				
+			</div>
+		
+		</div>
+    <div id="pied">
+				<!--4dinclude pied.shtml-->
+		</div>
+	</body>
+</html>

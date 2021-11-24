@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!--4dinclude HeaderRaema.shtml-->
+    <link href="styles/style-espace-participants.css" rel="stylesheet" type="text/css" />
+    <title>Données personnelles</title>
+  </head>
+
+  <body>
+    <div id="header" align="center">
+     
+      <p class="hautpage">
+      </p>
+    </div>
+    <div id="corps">
+        <br /><br />
+        <p class="GrisEncadre">
+          Vous trouverez ci-dessous vos informations personnelles enregistrées dans notre base de données client. 
+          <br />Si vous souhaitez les modifier ou les compléter, nous vous invitons à <a href="mailto:asa-spv@wanadoo.fr">contacter l'ASA</a>.
+          <br />Pour revenir à l'espace client,  <a href="javascript:history.go(-1)">cliquer ici</a>.
+        </p>
+      <!--<h1>Vos données personnelles</h1>-->
+      <img class="DecaleGauche" src="../images/LivraisonTitre.png" alt="Livraion" width="240px" height="65px"/>
+      <h2>Personne à contacter :</h2>
+      <h2>Adresse de livraison :</h2>
+      <h2>N° de téléphone :</h2>
+      <h2>N° de fax :</h2>
+      <h2 class="MargeBas">Adresse mail de la personne à contacter :</h2>
+      <img class="DecaleGauche" src="../images/FacturationTitre.png" alt="facturation" width="240px" height="65px"/>
+      <h2>Personne à contacter :</h2>
+      <h2>Adresse de facturation :</h2>
+      <h2>N° de téléphone :</h2>
+      <h2>N° de fax :</h2>
+      <h2 class="MargeBas">Adresse mail de la personne à contacter :</h2>
+      <img class="DecaleGauche" src="../images/RapportTitre.png" alt="Récupération des rapports" width="240px" height="65px"/>
+      <h2 class="MargeBas">Adresse mail de la personne à contacter :</h2>
+      <img class="DecaleGauche" src="../images/CommunicationTitre.png" alt="Communication" width="240px" height="65px"/>
+      <h2 class="MargeBas">Adresse mail de la personne à contacter :</h2>
+      <br/>
+    </div>
+   <div id="pied">
+      Site officiel de l'association Animal - Société - Aliment (ASA)  <br />
+      Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex    FRANCE <br />
+      Téléphone : <b>+ 33 (0)1 56 29 36 30</b>       Fax : <b>+ 33 (0)9 61 24 33 81</b>       e-mail :
+      <a href="mailto:asa-spv@wanadoo.fr">
+       <b>asa-spv@wanadoo.fr</b>
+      </a>
+      <br />
+      <em>Pour signaler un problème, cliquez sur le lien suivant <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+      <br /><br />
+   </div>
+  </body>
+</html>

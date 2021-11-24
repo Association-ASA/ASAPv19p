@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menus version="1">
+	
+	<!-- Editor menu bar -->
+	<menu id="editor">
+		<menu text=":xliff:CommonMenuEdit">
+			<item text=":xliff:CommonMenuItemUndo" standard_action="undo" shortcut="Z"/>
+			<item text="-"/>
+			<item text=":xliff:CommonMenuItemCut" standard_action="cut" shortcut="X" enable="1"/>
+			<item text=":xliff:CommonMenuItemCopy" standard_action="copy" shortcut="C" enable="1"/>
+			<item text=":xliff:CommonMenuItemPaste" standard_action="paste" shortcut="V" enable="1"/>
+			<item text=":xliff:CommonMenuItemClear" standard_action="clear"/>
+			<item text=":xliff:CommonMenuItemSelectAll" standard_action="selectAll" shortcut="A"/>
+			<item text="-"/>
+			<item text=":xliff:CommonMenuItemShowClipboard" standard_action="showClipboard"/>
+		</menu>
+	</menu>
+	<menu id="dev">
+		<menu text="Développement">
+			<item text="Mode debug" method="debug_toggle" shortcut="D"/>
+		</menu>
+	</menu>
+	
+</menus>

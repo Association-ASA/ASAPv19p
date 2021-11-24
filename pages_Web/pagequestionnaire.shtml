@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>AsaDia 3</title> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+  <link href="styles/style-asa.css" rel="stylesheet" type="text/css" />
+  <link href="styles/evaluation.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="styles/tooltip.css">
+  <script>
+    $(function() {
+      $( document ).tooltip();
+    });
+  </script>
+ </head>
+
+ <body>
+  <div id="headerquizz" class="textecentre">
+   <img src="images/bandeau.jpg" alt="logo" width="1024" />
+   <br /><br />
+   <br />
+   <input id="mailvisiteur" type="hidden" value="institution" />
+  </div>
+
+  <div id="corpscdf">
+  <div id="detailquestion">
+  </div>
+   <br /><br />
+
+  <p class="titrepage">
+       Institution : ASA<br />
+       Titre de l'évaluation : 
+       <input type="text" id="ET6" size="80px" class="textebanalgrand champquizz" value="Les lésions du foie"><br />
+       Auteur :        <input type="text" id="EA6" size="50px" class="textebanalgrand champquizz" value="cgm"><br />
+     </p>
+     <div id="cdf" class="textebanalgrand">
+      <b>Question 1 : </b><textarea  id="QL6" class="champquizz">Quel est le nom de cette lésion ?</textarea>
+ <img src="images/Chemin de fer voir.png" alt="voir la question" title="voir la question" id="QV6" class="imagesurvol" width="24px" />      
+ <img src="images/Chemin de fer plus.png" alt="ajouter une question" title="ajouter une question" id="QA6" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer égal.png" alt="insérer une question" title="insérer une question" id="QI6" class="imagesurvol" width="24px" /> 
+ <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS6" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR6" class="imagesurvol" width="24px" />  <br /> <br />
+ <div class="textebanalgrand" id="LP6">
+       <p class="champlistephoto">
+        <b>Entrer les n° des photos associées</b> <span class="textenews"> (séparés par un espace)</span>
+        <input type="text" id="QP6" size="40px" class="champquizz" value="" /> 
+       </p>
+       <div class="blocphoto" id="QPa6">
+         <div class="photoquizz">
+          <img src="images/20127i.jpg" alt="images/20127i.jpg" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 11727 :<br />Actinobacillose / actinomycose sur foie chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+         <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 11727 lors du questionnaire :
+          <br />
+          <textarea  id="QCa6" class="textareaphoto"></textarea>
+         </div>
+       </div>
+       <div class="blocphoto" id="QPb6">
+         <div class="photoquizz">
+          <img src="images/31087i.jpg" alt="images/31087" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 31087 :<br />Actinobacillose / actinomycose sur foie chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+         <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 31087 lors du questionnaire :
+          <br />
+          <textarea  id="QCb6" class="textareaphoto"></textarea>
+         </div>
+       </div>
+ </div>
+          <i>Réponse 1.1 : </i><textarea  id="RT50" class="champquizz">C'est un abcès pyohémique</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI50" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS50" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ50" class="imagesurvol" width="24px" />   <br />
+   <div class="reponse" id="A_50">
+                                                         Argumentation<br />
+                                                                  <textarea id="RCa_50" rows="5" cols="50" class="textebanalgrand"></textarea> 
+   </div>
+<br />          <i>Réponse 1.2 : </i><textarea  id="RT80" class="champquizz">C'est une lésion de tuberculose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI80" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS80" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ80" class="imagesurvol" width="24px" />   <br /> <br />
+          <i>Réponse 1.3 : </i><textarea  id="RT85" class="champquizz">C'est un abcès omphalophlébitique</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI85" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS85" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ85" class="imagesurvol" width="24px" />   <br /> <br />
+          <i>Réponse 1.4 : </i><textarea  id="RT51" class="champquizz">Ce n'est aucune de ces réponses</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI51" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS51" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ51" class="imagesurvol" width="24px" />   <br /> <br />
+          <b>Question 1.4 : </b><textarea  id="QL7" class="champquizz">Quel est le nom de cette lésion ?</textarea>
+ <img src="images/Chemin de fer voir.png" alt="voir la question" title="voir la question" id="QV7" class="imagesurvol" width="24px" />      
+ <img src="images/Chemin de fer plus.png" alt="ajouter une question" title="ajouter une question" id="QA7" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer égal.png" alt="insérer une question" title="insérer une question" id="QI7" class="imagesurvol" width="24px" /> 
+ <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS7" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR7" class="imagesurvol" width="24px" />  <br /> <br />
+              <i>Réponse 1.4.1 : </i><textarea  id="RT105" class="champquizz">C'est une lésion d'actinomycose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI105" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS105" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ105" class="imagesurvol" width="24px" />   <br /> <br />
+              <i>Réponse 1.4.2 : </i><textarea  id="RT106" class="champquizz">Je demande à voir d'autres photos de cette lésion</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI106" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS106" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ106" class="imagesurvol" width="24px" />   <br /> <br />
+              <i>Réponse 1.4.3 : </i><textarea  id="RT99" class="champquizz">C'est un abcès pyléphlébitique</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI99" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS99" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ99" class="imagesurvol" width="24px" />   <br /> <br />
+              <i>Réponse 1.4.4 : </i><textarea  id="RT136" class="champquizz">Je voudrais voir d'autres aspects de cette lésion</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI136" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS136" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ136" class="imagesurvol" width="24px" />   <br /> <br />
+              <b>Question 1.4.4 : </b><textarea  id="QL8" class="champquizz">Pouvez-vous donner le nom de cette lésion ?</textarea>
+ <img src="images/Chemin de fer voir.png" alt="voir la question" title="voir la question" id="QV8" class="imagesurvol" width="24px" />      
+ <img src="images/Chemin de fer plus.png" alt="ajouter une question" title="ajouter une question" id="QA8" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer égal.png" alt="insérer une question" title="insérer une question" id="QI8" class="imagesurvol" width="24px" /> 
+ <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS8" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR8" class="imagesurvol" width="24px" />  <br /> <br />
+                  <i>Réponse 1.4.4.1 : </i><textarea  id="RT107" class="champquizz">C'est un abcès pyléphlébitique</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI107" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS107" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ107" class="imagesurvol" width="24px" />   <br /> <br />
+                  <i>Réponse 1.4.4.2 : </i><textarea  id="RT108" class="champquizz">C'est un abcès par corps étranger</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI108" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS108" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ108" class="imagesurvol" width="24px" />   <br /> <br />
+                  <i>Réponse 1.4.4.3 : </i><textarea  id="RT109" class="champquizz">C'est une lésion d'actinomycose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI109" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS109" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ109" class="imagesurvol" width="24px" />   <br /> <br />
+          <i>Réponse 1.5 : </i><textarea  id="RT134" class="champquizz"></textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI134" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS134" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ134" class="imagesurvol" width="24px" />   <br /> <br />
+     </div>
+  </div>
+   <br /><br /><br />
+  <div id="pied">
+   Site officiel de l'association Animal - Société - Aliment (ASA) <br> Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -
+   7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex &nbsp;&nbsp;&nbsp;FRANCE<br>
+   Téléphone : <b>+ 33 (0)1 56 29 36 30</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax : <b>+ 33 (0)9 61 24 33 81</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br>
+   <em>Pour signaler un problème, cliquez sur le lien suivant 
+   <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+   <br /><br />
+  </div>
+  
+  <script src="js/evaluation.js"></script>
+
+ </body>
+</html>

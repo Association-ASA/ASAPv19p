@@ -1,0 +1,1 @@
+﻿## $0:=METHOD_getCleanCode($1)---

@@ -1,0 +1,243 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 496,
+	"height": 272,
+	"markerHeader": 77,
+	"markerBody": 97,
+	"markerBreak": 99,
+	"markerFooter": 129,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 496,
+					"height": 272,
+					"strokeWidth": 0.1
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 56,
+					"left": 2,
+					"width": 411,
+					"height": 43,
+					"fill": "transparent"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 76,
+					"left": 1,
+					"width": 410,
+					"height": 1,
+					"strokeWidth": 0.1,
+					"startPoint": "bottomLeft"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 58,
+					"left": 5,
+					"width": 298,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Nom du panier"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 56,
+					"left": 305,
+					"height": 42
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 58,
+					"left": 349,
+					"width": 51,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Date"
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 55,
+					"left": 344,
+					"height": 44
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 59,
+					"left": 317,
+					"width": 16,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"text": "Nb"
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 82,
+					"left": 6,
+					"width": 295,
+					"height": 16,
+					"dataSource": "[DiaData:45]XNom:1",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ2": {
+					"type": "input",
+					"top": 82,
+					"left": 309,
+					"width": 32,
+					"height": 16,
+					"dataSource": "[DiaData:45]XEntier:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ3": {
+					"type": "input",
+					"top": 82,
+					"left": 347,
+					"width": 62,
+					"height": 16,
+					"dataSource": "[DiaData:45]XDate:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 101,
+					"left": 6,
+					"width": 218,
+					"height": 22,
+					"dataSource": "ZBouChoix",
+					"action": "accept",
+					"text": "Détruire les paniers selectionnés",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 101,
+					"left": 244,
+					"width": 167,
+					"height": 22,
+					"dataSource": "ZBouQuitte",
+					"action": "cancel",
+					"text": "Ne PAS détruire de panier",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Ligne4": {
+					"type": "line",
+					"top": 96,
+					"left": 2,
+					"width": 411,
+					"height": 1,
+					"strokeWidth": 0.1,
+					"strokeDashArray": "1 1",
+					"startPoint": "bottomLeft"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 4,
+					"left": 5,
+					"width": 425,
+					"height": 46,
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"text": "Sélectionnez un (ou plusieurs en maintenant enfoncée la touche Contrôle sous Windows ou Commande sous Mac) panier(s) à supprimer puis cliquez sur le bouton \"Détruire les paniers sélectionnés\""
+				}
+			}
+		}
+	]
+}

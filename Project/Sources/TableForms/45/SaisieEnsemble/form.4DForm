@@ -1,0 +1,197 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 375,
+	"height": 231,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Bouton1": {
+					"type": "button",
+					"top": 204,
+					"left": 50,
+					"width": 307,
+					"height": 27,
+					"dataSource": "Bouton1",
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "Boutons",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 30,
+					"left": 12,
+					"width": 362,
+					"height": 16,
+					"dataSource": "[DiaData:45]XNom:1",
+					"class": "default",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 15,
+					"left": 11,
+					"width": 189,
+					"height": 16,
+					"class": "default",
+					"text": "Nom du panier"
+				},
+				"Champ2": {
+					"type": "input",
+					"top": 64,
+					"left": 12,
+					"width": 67,
+					"height": 16,
+					"dataSource": "[DiaData:45]XEntier:2",
+					"dataSourceTypeHint": "integer",
+					"class": "default",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 49,
+					"left": 11,
+					"width": 189,
+					"height": 16,
+					"class": "default",
+					"text": "Nombre de photographie(s)"
+				},
+				"Champ3": {
+					"type": "input",
+					"top": 98,
+					"left": 12,
+					"width": 363,
+					"height": 16,
+					"dataSource": "[DiaData:45]XDate:3",
+					"dataSourceTypeHint": "date",
+					"class": "default",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 83,
+					"left": 11,
+					"width": 189,
+					"height": 16,
+					"class": "default",
+					"text": "Date de création"
+				},
+				"Champ4": {
+					"type": "input",
+					"top": 132,
+					"left": 12,
+					"width": 362,
+					"height": 16,
+					"dataSource": "[DiaData:45]XTexte:7",
+					"class": "default",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 117,
+					"left": 11,
+					"width": 189,
+					"height": 16,
+					"class": "default",
+					"text": "Auteur du panier"
+				}
+			}
+		}
+	]
+}

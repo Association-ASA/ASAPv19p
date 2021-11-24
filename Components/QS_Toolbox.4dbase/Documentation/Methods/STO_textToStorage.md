@@ -1,0 +1,1 @@
+﻿## STO_textToStorage($1;$2)---

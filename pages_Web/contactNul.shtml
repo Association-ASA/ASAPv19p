@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Identification</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 <br /><br /><br />
+				 <p class="grandtitrepage">
+          Problème de connexion
+         </p>
+				 <p class="textedecale">
+          <br />
+          Nous sommes désolés mais votre message ne nous est pas parvenu suite à un problème de connexion. <br /><br />
+          Merci de bien vouloir renouveler votre demande
+          ou nous contacter directement avec les coordonées en bas de cette page.<br /><br />
+          Avec toutes nos excuses.<br /><br />
+          L'équipe de l'ASA.
+         </p>						 
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+	

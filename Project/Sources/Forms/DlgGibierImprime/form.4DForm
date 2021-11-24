@@ -1,0 +1,231 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 138,
+	"markerBody": 349,
+	"markerBreak": 402,
+	"markerFooter": 402,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 558,
+					"height": 29,
+					"class": "Titre",
+					"textAlign": "center",
+					"text": "Liste des photos d'AsaDia gibier"
+				},
+				"VarLésion": {
+					"type": "input",
+					"top": 75,
+					"left": 11,
+					"width": 527,
+					"height": 22,
+					"dataSource": "VarLésion",
+					"stroke": "#FF0099",
+					"class": "Titre_petit",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarLésion1": {
+					"type": "input",
+					"top": 112,
+					"left": 33,
+					"width": 223,
+					"height": 22,
+					"dataSource": "VarEspèce",
+					"class": "Titre_petit",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarOrgane": {
+					"type": "input",
+					"top": 149,
+					"left": 55,
+					"width": 223,
+					"height": 22,
+					"dataSource": "VarOrgane",
+					"class": "Titre_petit",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage1": {
+					"type": "input",
+					"top": 185,
+					"left": 16,
+					"width": 122,
+					"height": 113,
+					"dataSource": "VarImage1",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDescriptif": {
+					"type": "input",
+					"top": 300,
+					"left": 16,
+					"width": 121,
+					"height": 46,
+					"dataSource": "VarDescriptif1",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage2": {
+					"type": "input",
+					"top": 185,
+					"left": 151,
+					"width": 122,
+					"height": 113,
+					"dataSource": "VarImage2",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDescriptif2": {
+					"type": "input",
+					"top": 300,
+					"left": 151,
+					"width": 121,
+					"height": 46,
+					"dataSource": "VarDescriptif2",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage3": {
+					"type": "input",
+					"top": 185,
+					"left": 286,
+					"width": 122,
+					"height": 113,
+					"dataSource": "VarImage3",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDescriptif3": {
+					"type": "input",
+					"top": 300,
+					"left": 286,
+					"width": 121,
+					"height": 46,
+					"dataSource": "VarDescriptif3",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImage4": {
+					"type": "input",
+					"top": 185,
+					"left": 421,
+					"width": 122,
+					"height": 113,
+					"dataSource": "VarImage4",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDescriptif4": {
+					"type": "input",
+					"top": 300,
+					"left": 421,
+					"width": 121,
+					"height": 46,
+					"dataSource": "VarDescriptif4",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

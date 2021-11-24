@@ -1,0 +1,1 @@
+﻿## TOOLS_SymbolFile_declaration($1;$2;$3)---

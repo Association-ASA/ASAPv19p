@@ -1,0 +1,84 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+  <head>
+       <!--4dinclude HeaderAsa.shtml-->
+       <title>Enregistrement d'AsaDia</title>
+  </head>
+
+  <body>
+  		<div id="header" align="center">
+  			<!--4dinclude bandeau.shtml-->
+  		</div>
+
+  		<div id="corps">
+
+  			<div id="contenu1" class="textebanalgrand">
+      <br />
+      <p class="hautpage">Enregistrement d'AsaDia 2 </p>
+      <p class="petittextevert textedecale"><br />
+        L'enregistrement d'AsaDia 2 est effectué après avoir préalablement obtenu une licence d'utilisation auprès de l'ASA sous forme d'une adresse mail.
+				<br />
+        Une fois cette adresse mail enregistrée, veuillez la saisir dans le premier champ et remplir les autres champs proposés.
+				<br />
+				Cliquer sur le bouton "Envoyer" pour pouvoir recevoir le code permettant d'utiliser AsaDia 2
+      </p>
+        <br />
+
+      <form name="form1" id="form1" method="post" action="mw2AsaDia2WebEnregistre">
+        <p class="textedecale">
+
+         <label for="mailasa">Adresse courriel enregistrée à l'ASA pour l'obtention d'une licence d'utilisation </label>
+         <br />
+        <input type="text" id="mailasa" name="mailasa" size="60"><span class="textebanal">  *</span></input>
+
+
+        <br /><br />
+
+        <label for="nom">Nom de l'utilisateur </label>
+        <input type="text" id="nom" name="nom" size="42"><span class="textebanal">  *</span></input><br />
+        <span class="petittextevert"> NB : Ce nom figurera sur l'écran de pilotage d'AsaDia 2 </span>
+         <br /><br />
+
+        <label for="adresse">Adresse de l'utilisateur</label>
+        <br />
+        <textarea id="adresse" name="adresse" rows="8" cols="70" placeholder="Entrez ici votre adresse complète"></textarea>
+        <br /><br />
+
+        <label for="mailrecept">Adresse courriel où recevoir le mot de passe</label>
+        <input type="text" id="mailrecept" name="mailrecept" size="60"><span class="textebanal">  *</span></input>
+
+        <br /><br />
+
+        </p>
+        <p class="textecentre">
+        <input type="image" src="IMAGES/bouton_envoyer.png" alt="Envoyer"></input>
+        </p>
+      </form>
+
+        <p class="textecentre">
+            Une fois le formulaire envoyé, vous recevrez, <br />à l'adresse indiquée ci-dessus, un mail contenant le mot de passe.
+            <br /><span class="rouge">ATTENTION : ce code est personnalisé et doit être utilisé extemporanément.</span>
+        </p>
+
+        <p class="hautpage"><br />En cas de difficultés, envoyer un email à l'ASA : <a href="mailto:asa-spv@wanadoo.fr">asa-spv@wanadoo.fr</a>
+        <br /><br />
+        </p>
+
+			</div>
+    </div>
+
+		<div id="pied">
+				Site officiel de l'association Animal - Société - Aliment (ASA) <br /> Adresse : Bâtiment Zundel - Ecole Nationale Vétérinaire d'Alfort -
+        7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex    FRANCE<br />
+        Téléphone : <b>+ 33 (0)1 56 29 36 30</b>       Fax : <b>+ 33 (0)9 61 24 33 81</b>       
+        e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br />
+        <em>Pour signaler un problème, cliquez sur le lien suivant
+        <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+        <br />
+		</div>
+
+
+	</body>
+
+</html>

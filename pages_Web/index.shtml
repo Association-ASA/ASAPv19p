@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ASA</title>
+		<meta name="keywords" content="asa, sante, publique, veterinaire, association, hygiene, aliment, 
+      alimentaire, intercomparasion, cofrac, accreditation, abattoir, photographies, asadia, inspection, 
+      médecine, pharmacien, droit" />
+    <meta name="description" content="l'asa a pour but la promotion de la santé publique vétérinaire" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <link href="styles/style-asa.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style-clarisse.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style-claude.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+    <!--
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />  <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    -->
+    <link href="styles/menucss.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="js/asa.js"></script>
+  
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16544069-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+	
+	</head>
+	
+	<body>
+    <div id="header" align="center">
+      <img src="images/logoasa.jpg" alt="logo" width="528" />  
+      <br /><p class="grandtitrecentre">Association de santé publique vétérinaire (asa-spv)</p><br />
+      <div id="menu" >
+          <ul id="menu-demo2" class="textecentre devant">
+                      
+            <li><a href="w2index.shtml" class="titrepage"><img src="images/home.png" alt="Accueil" width="30px" /></a></li>
+            
+            <li><a href="w2contact.shtml">Contact</a></li>
+            
+            
+            <li><a href="#">L'ASA</a>
+              <ul class="ssmenumoyen">
+                <li><a href="w2AsaQuiSommeNous.shtml">  Association</a></li>
+                <li><a href="w2instances.shtml">  Instances</a></li>
+                <li><a href="w2asapermanents.shtml">  Permanents</a></li>
+                <li><a href="w2adherents.shtml">  Espace adhérents</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#">RAEMA</a>
+              <ul class="ssmenuconfort">
+                <li><a href="w2raemarenseignement.shtml">  Généralités sur les CIL</a></li>
+                <li><a href="w2raemapresentation.shtml">  RAEMA poudre et gel</a></li>
+                <li><a href="w2raemarapports.shtml">  Les rapports de campagne</a></li>
+                <li><a href="w2raematarifs.shtml">  Les tarifs du RAEMA</a></li>  
+                <li><a href="w2raemaactualites.shtml">  Agenda des RAEMA</a></li>
+                <li><a href="w2raemapourquoi.shtml">  Pourquoi adhérer au RAEMA</a></li>
+                <li><a href="w2raemaabonnement.shtml">  Informations pratiques</a></li>
+                <li><a href="w2raemaaccueil.shtml">  Accès participants</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#">AsaDia</a>
+              <ul class="ssmenumoyen">
+                <li><a href="w2asadiapresentation.shtml">  Présentation du projet</a></li>
+                <li><a href="w2asadia.shtml">  Découvrir AsaDia 2</a></li>
+                <li><a href="w2asadia2amelioration.shtml">  Améliorer AsaDia 2</a></li>
+                <li><a href="http://78.193.129.45:8080/">  AsaDia 3 sur le Web</a></li>
+              </ul>
+            </li>
+            
+            <li>
+              <a href="w2alisample.shtml">Alisample</a>
+            </li>
+            
+            <li>
+                   <a href="w2pageasacontact.shtml">AsaContact</a>
+            </li>		
+             
+            <li>
+                   <a href="w2activites.shtml">Activités scientifiques</a>
+            </li>		
+                                                                  
+            <li><a href="#">Documentation</a>
+              <ul class="ssmenutoutpetit">
+                <li><a href="w2bib1_index.shtml">  Bibliothèque SPV</a></li>
+                <li><a href="w2tox_index.shtml">  Toxicologie</a></li>
+                <li><a href="w2liens.shtml">  Liens</a></li>
+              </ul>
+            </li>
+            
+              <li><a href="#">Adhérer</a>
+                <ul class="ssmenuconfort">
+                  <li><a href="w2asapresentation.shtml">  Pourquoi adhérer à l'ASA ?</a></li>
+                  <li><a href="w2asaadhesion.shtml">  Comment adhérer à l'ASA ?</a></li>
+                  <li><a href="pdf/AdhesionASA.pdf">  Télécharger le formulaire   d'adhésion à l'ASA</a></li>
+                </ul>
+              </li>
+          
+            <li><a href="#">FAQ</a>
+              <ul class="ssmenumoyen">
+                <li><a href="w2raemafaq.shtml">  Questions sur le RAEMA</a></li>
+                <li><a href="w2asadia.shtml">  Questions sur AsaDia</a></li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div id="corpshome">
+     <!--4Dinclude actualiteshomepage.shtml-->
+      <div id="contenu">
+        <br/> 
+        <div id="idblochome1" class="idblochomep textedecale30">
+          <img src="images/bureau.jpeg"
+               alt="vie associative"
+               title="Bureau de l'ASA"
+               width="320"
+               height="160"
+          />
+          <p class="textebloc">
+            <span class="hometextebanalgrand">une vie associative</span><br />
+            L'ASA réunit ses membres en <b>assemblée générale</b> au moins une fois par an.
+            L'assemblée générale élit un <b>Conseil d'Administration</b>
+            qui désigne le <b>bureau</b> chargé de gérer l'association au quotidien.
+            <br />
+            <p class="texteadroite">
+             <a href="instances.shtml">En savoir plus</a><br />
+            </p>
+          </p>
+        </div>
+        
+        <div id="idblochome2" class="idblochomep textedecale30">
+          <p class="textebloc">
+            <img src="images/puzzle interdisciplinaire.jpeg"
+               alt="activité scientifique"
+               title="activité scientifique"
+               width="320"
+               height="160"
+          />
+            <span class="hometextebanalgrand">une activité scientifique</span><br />
+            L 'ASA est un <b>forum interdisciplinaire</b>, un lieu de rencontres et d’échanges
+            entre les personnes, sociétés ou associations qui s’intéressent
+            à la Santé Publique en rapport avec les animaux et à la sécurité des aliments.<p class="texteadroite">
+             <a href="activites.shtml">En savoir plus</a><br />
+            </p>
+          </p>
+        </div>
+        <div id="idblochome3" class="idblochomep textedecale30">
+          <img src="images/raemapoudre.jpg"
+               alt="comparaison interlaboratoires"
+               title="comparaison interlaboratoires"
+               width="320"
+               height="160"
+          />
+          <p class="textebloc">
+            <span class="hometextebanalgrand">
+              une comparaison interlaboratoires
+            </span><br />
+            Le <b>RAEMA</b> est une comparaison interlaboratoires
+            qui propose 4 campagnes par an :<br />
+            <b>2 campagnes</b>, en mars et en octobre
+            du RAEMA
+            sur support de poudre de lait lyophilisée (<b>RAEMA poudre</b>).<br />
+            <b>2 campagnes</b>, en juin et en décembre
+            du <b>RAEMA </b> sur matrice gélifiée (<b>RAEMA gel</b>).<br />
+            L'ASA est accréditée comme organisateur du RAEMA par le COFRAC depuis 2007 sous le n°
+            <a href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864">1-1836
+            </a>.
+          </p>
+          <p class="texteadroite">
+           <a href="raemapourquoi.shtml">En savoir plus</a><br />
+          </p>
+        </div>
+        
+        <div id="idblochome4" class="idblochomep textedecale30">
+          <img src="images/asadiaabattoirred.jpg"
+               alt="logiciels d'aide"
+               title="logiciels d'aide"
+               width="320"
+               height="160"
+          />
+            <p class="textebloc">
+                    <span class="hometextebanalgrand">des logiciels d'aide</span><br />
+                    <b>Alisample</b> est un outil logiciel, dédié au contrôle
+                    par échantillonnage des produits et procédés, 
+                    qui permet de déterminer les plans de contrôle
+                    par échantillonnage répondant à vos besoins
+                    et d'en évaluer l'efficacité.
+            </p>
+            <p class="texteadroite">
+             <a href="w2alisample.shtml">En savoir plus</a><br />
+            </p>
+            <p class="textebloc">
+              <b>AsaDia</b>, est l'atlas de référence des lésions rencontrées à l'abattoir
+              des animaux de boucherie et de charcuterie, incluant un outil de formation à l'anatomie pathologique.<br />
+            </p>
+            <p class="texteadroite">
+              <a href="w2asadia.shtml">En savoir plus</a><br />
+            </p>
+        </div>
+        
+        <div id="idblochome5" class="idblochomep textedecale30">
+          <img src="images/asacontact.jpg"
+               alt="publications"
+               title="publications"
+               width="320"
+               height="160"
+          />
+          <p class="textebloc">
+            <span class="hometextebanalgrand">des publications</span><br />
+            <b>AsaContact</b>, la lettre de l'ASA, publiée deux fois par an,
+            ouvre ses colonnes aux membres de l'ASA pour s'exprimer en toute indépendance.
+            <p class="texteadroite">
+             <a href="w2pageasacontact.shtml">En savoir plus</a><br />
+            </p>
+          </p>
+          <p class="textebloc">
+            Le livre de <b>Xavier DELOMEZ</b> : Le contrôle en santé publique agronomique et vétérinaire - Analyse d'une politique publique.
+          </p>
+            <p class="texteadroite">
+             <a href="w2PresentationOuvrageXD.shtml">En savoir plus</a><br />
+            </p>
+        </div>
+        
+        <div id="idblochome6" class="idblochomep textedecale30">
+          <img src="images/biblio.jpeg"
+               alt="revue documentaire"
+               title="revue documentaire"
+               width="320"
+               height="160"
+          />
+          <p class="textebloc">
+            <span class="hometextebanalgrand">une revue documentaire</span><br />
+            Le site comprend :<br/>
+            - Une base de données des <b><a href="w2ouvrage.shtml">livres et thèses</a></b> de santé publique vétérinaire.<br />
+            - Une bibliothèque commentée de la <b><a href="w2bib1_index.shtml">santé publique vétérinaire</a>.</b><br />
+            - Une bibliothèque commentée de <b><a href="w2tox_index.shtml">toxicologie vétérinaire.</a></b><br />
+          </p>
+            <p class="texteadroite">
+             <a href="revuedocumentaire.shtml">En savoir plus</a><br />
+            </p>
+        </div>
+          <br /><br /> 
+        
+      </div>
+      <div id="partenaire">
+          <p class="textegrisdroite">
+            Visitez le site de nos partenaires<br /><br />
+            <p class="textecentre">
+              <a href="http://www.adilva.com/" target="_blank">
+                <img src="images/logoAdilva.PNG"
+                     alt="logo SVPF" 
+                     height="55" />
+              </a>
+                  
+              <a href="https://www.anses.fr/fr" target="_blank">
+                <img src="images/logoAnses.png"
+                     alt="logo ANSES" 
+                     height="55" />
+              </a>
+                  
+              <a href="http://www.civ-viande.org" target="_blank">
+                <img src="images/CIV.png"
+                     alt="logo CIV" 
+                     height="55" />
+              </a>
+                  
+              <a href="http://www.ifip.asso.fr/fr" target="_blank">
+                <img src="images/LogoIFIP.PNG"
+                     alt="logo IFIP"
+                     height="55" />
+              </a>
+                  
+              <a href="http://philippecaillaud.wixsite.com/iquares" target="_blank">
+                <img src="images/LogoCaillaud.PNG"
+                     alt="logo IQUARES"
+                     height="55" />
+              </a>
+                  
+               <a href="http://www.servair.fr/demarche-qualite/" target="_blank">
+                <img src="images/Servair.png"
+                     alt="logo Servair"
+                     height="55" />
+              </a>
+                  
+              <a href="http://www.svpf.fr" target="_blank">
+                <img src="images/SVPF.jpg"
+                     alt="logo SVPF" 
+                     height="55" />
+              </a>
+                  
+              <a href="http://www.vetagro-sup.fr/" target="_blank">
+                <img src="images/logoVAS.jpg"
+                     alt="logo VetAgro Sup" 
+                     height="55" />
+              </a>
+                  
+            </p>
+          </p>
+      </div>
+    </div>
+    
+    
+    <div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+	</body>
+</html>

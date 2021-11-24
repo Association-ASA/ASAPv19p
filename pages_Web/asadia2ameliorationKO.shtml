@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Identification</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+      <br/>
+				<p class="titrepage">ASADia : identification</p>
+				<p class="textecentre">
+					<a href="asadia.shtml">
+					Retour &agrave; l'écran des généralités
+					</a> 
+				</p>
+				<br/><br/>
+				<p class="hautpage rouge">
+					Désolé, l'adresse mail saisie n'est pas reconnue
+					par le site de l'ASA : 
+					<br/>
+					Veuillez recommencer
+				</p>
+						<br/><br/><br/>
+		
+				<form name="form1" method=POST action="mw2AsadiaWebIdent">  
+					<p class="textecentre">
+						<label for="CodeRaema">Adresse mail d'identification </label>
+						<input type="text" name="mailid" size="50"/>
+					<br/><br/>
+						<input type="submit" name="Submit" value="Envoyer" /> 
+						&nbsp; &nbsp; &nbsp;
+						<input type="reset" name="Submit2" value="Effacer" />
+					</p>	
+				</form>				 
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+			
+		
+				
+		</div>
+			<!--4dinclude pied.shtml-->
+	
+	</body>
+</html>

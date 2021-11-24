@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Practical Information</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemaabonnement.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau français" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanal">
+				<!--4dinclude menuraemaA.shtml-->	
+				 <br /><br />
+				<p class="grandhautpage">How to participate?
+				</p>
+				<p class="textedecale30">
+                    For every <b>participation</b> to <b>one proficiency testing schemes</b> organized by ASA,
+                    the annual adhesion is <b>required</b> beforehand.
+                    The adhesion is valid <b>for one year</b>, it is <b>extended by tacit agreement</b>.
+                    <a href="pdf/adhesionasaA.pdf">Download the adhesion document to ASA</a><br />
+                    Laboratories wishing to participate in RAEMA must complete an <b>information form</b>. 
+                    <a href="pdf/FicheRenseignementA.pdf">Download the information form</a>				
+                </p>
+				<br/>
+				<p class="grandhautpagedecale">
+				    ▪ RAEMA (powder):
+				</p>
+				<p class="textedecale30">
+					<u>- How to participate?</u>
+						<br />
+                    <p class="imageasadiad">
+						<img src="IMAGES/ContratRAEMAA.jpeg" alt="RAEMA Contrat" width="300px"/>
+					</p>
+                    Participation to RAEMA is based on an <b>annual subscription</b> by <b>contract</b> between <b>ASA and your laboratory</b>.
+                    Following the subscription, a <b>number of laboratory</b> and a <b>password</b> are attributed to each participant.
+                    The preservation of these <b>codes</b> is essential; they enable laboratories to <b>input their results</b>
+                    and to <b>download their report</b>, ensuring <b>confidentiality</b>.
+                                    <br /><br />
+                    Made for <b>one year</b>, this <b>contract</b> is <b>extended by tacit agreement</b> (Article 3 of contract).
+                    The amount of subscription is voted at the beginning of each year by the general assembly
+                    at which each member is invited (Article 1 of contract).
+                    Laboratories are then informed about the voted prices. Download the contract for powder RAEMA.
+                    <a href="pdf/contratraemaA.pdf">Download the contract for powder RAEMA</a>
+						<br /><br />
+						
+					<u>- Additional packages:</u>
+							<br />
+                    Each laboratory can order <b>additional packages</b>. <b>Like the first one</b>, they offer laboratories <b>more powder</b>
+                    to assess different methods or different laboratory technicians.
+						<br />Two options are proposed:
+						
+					<p class="imageasadiad">
+						<img src="IMAGES/Colis.JPG" alt="RAEMA parcel" width="300px"/>
+					</p>
+				</p>		
+				<p class="textedecale">
+							<u><b>- Additional package with edition of a Cofrac report</b> </u>
+						<br />
+                    A <b>second laboratory’s number and a second password</b> are given to the laboratory, that allow to <b>input results</b> of the additional package.
+                    The laboratory will receive an <b>individual report</b> in accordance to its additional package.
+						<br />
+						
+							<u><b>	- Additional package without edition of a Cofrac report:</b> </u>
+                      The laboratory can’t input the results of its additional package. He must interpret its data internally.
+                      At the end of the scheme, in order to finalize its analysis,
+                      the laboratory can contact ASA to obtain information about the link between
+                      its methods of analysis and the groups that have been constituted.
+						<a href="pdf/raemacolissupA.pdf">Download the purchase order for additive packages</a>
+				</p>
+						<br />
+						
+				<p class="imageasadia">
+						<img src="IMAGES/Boite isotherme.JPG" alt="Boîte isotherme" width="170px"/>
+					</p>
+				<p class="textedecale30">
+						<u>- Isothermal box:</u>
+						<br />
+						When the time for delivery is extended because of customs and when the climate of the country is warm,
+                        the laboratory can resort to isothermal box for the transportation of its samples.
+                        The subscription is made by purchase order at the beginning of each year.
+						<a href="pdf/boiteisobdcA.pdf">Download the purchase order for isothermal box</a>
+						<br /><br />
+				</p>		
+				<p class="grandhautpagedecale">
+							<br />▪ Gel RAEMA:
+				</p>
+				<p class="textedecale30">
+						
+							<u>- How to participate?</u>	<br />
+					<p class="imageasadiad">
+						<img src="IMAGES/bdcRaemagelA.jpg" alt="RAEMA gel order" width="150px"/>
+					</p>
+                      Participation to Gel RAEMA requires a subscription by purchase order at the beginning of each year.<br />
+                      This registration is done online:
+                      <a href="w2devisraemagel.shtml">Sign up for RAEMA gel</a>.<br />
+                      If the laboratory already participates to RAEMA (powder), he keeps its laboratory’s number and its password.
+						<br /><br />
+							<u>- Additional bottles:</u>
+						<p class="imageasadia">
+						<img src="IMAGES/Raemagel.jpeg" alt="RAEMA gel" width="100px"/>
+                </p>
+                Each laboratory can order additional bottles on the purchase order for Gel RAEMA
+                (<a href="pdf/raemagelbdcA.pdf">Download the purchase order for Supplementary RAEMA</a>).<br />
+                - <i>Additional bottle with edition of a report</i>:<br />
+                <b>A second laboratory’s number and a second password</b> are given to the laboratory,
+                that allow to <b>input results</b> of the additional bottle.
+                The laboratory will receive an individual report in accordance to its additional bottle.<br />
+                - <i>Additional package without edition of a report</i>:<br />
+                The laboratory can’t input the results of its additional bottle. He must interpret its data internally.
+                At the end of the scheme, in order to finalize its analysis, the laboratory can contact ASA to obtain information
+                about the link between its methods of analysis and the groups that have been constituted.
+                    <br /><br />
+							<u>- Isothermal box:</u><br />
+				When the time for delivery is extended because of customs and when the climate of the country is warm,
+                the laboratory can resort to isothermal box for the transportation of its samples.
+                The subscription is made by purchase order at the beginning of each year.
+				</p>
+
+				 						<br /><br />
+			</div>	 
+        </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

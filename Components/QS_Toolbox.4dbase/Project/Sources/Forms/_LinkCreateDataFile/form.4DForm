@@ -1,0 +1,129 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 18,
+					"left": 13,
+					"width": 56,
+					"height": 16,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Path:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 42,
+					"left": 13,
+					"width": 56,
+					"height": 16,
+					"class": "default",
+					"textAlign": "right",
+					"text": "File Name:"
+				},
+				"CreateDataPath_t": {
+					"type": "input",
+					"top": 19,
+					"left": 84,
+					"width": 216,
+					"height": 16,
+					"class": "default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 17,
+					"left": 313,
+					"width": 70,
+					"height": 19,
+					"text": "...",
+					"class": "default",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DataFilename_t": {
+					"type": "input",
+					"top": 42,
+					"left": 84,
+					"width": 216,
+					"height": 16,
+					"class": "default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 41,
+					"left": 313,
+					"width": 70,
+					"height": 19,
+					"text": "OK",
+					"class": "default",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"b_Cancel": {
+					"type": "button",
+					"top": 65,
+					"left": 313,
+					"width": 70,
+					"height": 19,
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "default",
+					"method": "ObjectMethods/b_Cancel.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

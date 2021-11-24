@@ -1,0 +1,36 @@
+        <div class="comphoto">
+         <span class="petittexte">Commentaire suite à la réponse 1.1 : </span><br />
+         <textarea  id="RC71" class="areaquizz">Le foie d'un bovin ne présente pas de quadrillage.</textarea> <br /><br />
+        </div>
+        <div class="comphoto">
+                <p class="champannoncephotor">
+                  Entrer les n° des photos associées (séparés par un espace)
+                  <input type="text" id="QP1" size="20px" class="champnormal" value="" />
+                </p>
+                <div class="blocphotor id="RP+codereponse"><!-- conteneur du bloc des photos    -->
+                        <div class="comphotor"> <!-- la photo 1    -->
+                                <img src="PhotosAsaDia/+numphoto1i.jpg" alt="Photo n°numphoto1" title="Photo n°NumPhoto1" width="180px" class="imagequizz">
+                                <p class="petittexter">
+                                        Photo n° NumPhoto1 :<br />Leucose sur foie chez un porcin
+                                </p>
+                        </div>
+                        <!-- Photo 1    -->
+                        <div class="comphotor"> <!-- le commentaire souhaité de la photo 1    -->
+                              <span class="petittexter">
+                               Commentaire à faire figurer sous la photo numphoto1 lors du questionnaire :
+                              </span>
+                          <br />
+                          <textarea  id="RC+Codereponse +_Rang(1)" class="textareaphotor">Foie d'un porc</textarea>
+                        </div>
+                        
+                        <div class="comphotor"> <!-- la photo 1    -->
+                                <img src="PhotosAsaDia/+numphoto1i.jpg" alt="Photo n°numphoto1" title="Photo n°NumPhoto1" width="180px" class="imagequizz">
+                                <p class="petittexter">
+                                        Photo n° NumPhoto1 :<br />Leucose sur foie chez un porcin
+                                </p>
+                        </div>
+                        
+                        <!-- fin Photo 1    -->
+                        
+                </div>                    
+        </div>  

@@ -1,0 +1,179 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"message_lb": {
+					"type": "listbox",
+					"top": 5,
+					"left": 5,
+					"width": 507,
+					"height": 159,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "rightToLeft",
+					"focusable": false,
+					"showHeaders": true,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"alternateFill": "#EBEBEB",
+					"borderStyle": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "messages",
+					"selectedItemsSource": "",
+					"currentItemSource": "",
+					"currentItemPositionSource": "",
+					"method": "ObjectMethods/message_lb.4dm",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"selectionMode": "none",
+					"columns": [
+						{
+							"name": "col_message",
+							"width": 130,
+							"minWidth": 130,
+							"maxWidth": 130,
+							"alternateFill": "#EBEBEB",
+							"events": [],
+							"header": {
+								"name": "header1",
+								"text": "Timestamp"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							},
+							"dataSource": "This:C1470.timeStamp",
+							"enterable": false,
+							"resizable": false
+						},
+						{
+							"header": {
+								"name": "header2",
+								"text": "Process"
+							},
+							"name": "Process",
+							"minWidth": 160,
+							"width": 160,
+							"maxWidth": 160,
+							"enterable": false,
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "This:C1470.process"
+						},
+						{
+							"header": {
+								"name": "header3",
+								"text": "Message"
+							},
+							"name": "Message",
+							"enterable": false,
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "This:C1470.message",
+							"minWidth": 200,
+							"width": 200,
+							"maxWidth": 1000
+						}
+					]
+				},
+				"bEraser": {
+					"type": "button",
+					"top": 169,
+					"left": 496,
+					"width": 16,
+					"height": 16,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/debugger/eraser.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bEraser.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"bSave": {
+					"type": "button",
+					"top": 169,
+					"left": 5,
+					"width": 16,
+					"height": 16,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/debugger/databases.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bSave.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 137,
+					"top": 168,
+					"width": 345,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"dataSource": "messages.length",
+					"enterable": false,
+					"focusable": false,
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"sizingX": "grow"
+				},
+				"saveToFile": {
+					"type": "checkbox",
+					"text": "save logs",
+					"top": 168,
+					"left": 32,
+					"width": 95,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"sizingY": "move",
+					"dataSource": "Form:C1466.toSave",
+					"dataSourceTypeHint": "boolean"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 34,
+	"windowTitle": "QST_Follower",
+	"menuBar": "Barre #1"
+}

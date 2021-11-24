@@ -1,0 +1,154 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMaxWidth": 276,
+	"windowMaxHeight": 114,
+	"width": 281,
+	"height": 108,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"RecCouleur": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 4,
+					"width": 272,
+					"height": 98,
+					"fill": "transparent",
+					"strokeWidth": 5
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 13,
+					"left": 64,
+					"width": 143,
+					"height": 18,
+					"fill": "transparent",
+					"strokeWidth": 2
+				},
+				"Texte": {
+					"type": "text",
+					"top": 14,
+					"left": 68,
+					"width": 139,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "A CONSERVER À 4°C"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 88,
+					"left": 14,
+					"width": 253,
+					"height": 10,
+					"fontFamily": "Police système Courant",
+					"fontSize": 7,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "N° A REPORTER IMPERATIVEMENT SUR LA FEUILLE DE RESULTATS"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 30,
+					"left": 98,
+					"width": 74,
+					"height": 18,
+					"fontFamily": "Police système Courant",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "R.A.E.M.A"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 46,
+					"left": 35,
+					"width": 87,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "ENVOI N°"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 67,
+					"left": 26,
+					"width": 141,
+					"height": 20,
+					"fontFamily": "Police système Courant",
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"text": "ÉCHANTILLON n°"
+				},
+				"VarNumCampagne": {
+					"type": "input",
+					"top": 48,
+					"left": 101,
+					"width": 140,
+					"height": 19,
+					"dataSource": "VarNumCampagne",
+					"fontFamily": "Police système Regular",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNumEch": {
+					"type": "input",
+					"top": 66,
+					"left": 156,
+					"width": 91,
+					"height": 22,
+					"dataSource": "[RAEMANumEch:47]NumEch:3",
+					"fontFamily": "System Font Regular",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

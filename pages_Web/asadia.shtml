@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+			<title>ASA : AsaDia 2</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 <!--4dinclude menuAsadia.shtml-->
+            <br/>
+       <p class="grandtitrepage">AsaDia 2</p>
+       <br/>
+      
+       <p class="grandhautpage">Qu'est ce qu'AsaDia 2 ? </p>
+       <p class="imageasadia">
+         <img src="IMAGES/AsadiaPla.JPG" alt="plaquette AsaDia" width="90%"/>
+       </p>
+       <p class="textebanalgrand">AsaDia 2 est une base de données constituant 
+         un atlas de référence 
+         des lésions observées en abattoir 
+         qui regroupe la plupart des lésions des bovins, des porcins, 
+         des ovins, des caprins et des équins.
+         <br />
+         Pour télécharger la plaquette de présentation du logiciel 
+         cliquez sur le lien ci-contre : 
+         <a href="pdf/ASADIAplaquette.pdf" target="_blank">
+           plaquette AsaDia 2
+         </a>
+         <br />
+         AsaDia 2 est une version très améliorée d'AsaDia par
+         des images de qualité quatre fois meilleure permettant une 
+         visualisation des photographies en mode plein écran et des commentaires 
+         qui désignent l'endroit précis où l'on peut voir 
+         un élément de la lésion.
+         <br />
+       </p>
+         <br />
+        <p class="grandhautpage">Contenu d'AsaDia 2</p>
+         <p class="textebanalgrand">
+         AsaDia 2 contient deux modules : utilisation et formation.
+         </p>
+         <p class="imageasadia">
+              <img src="IMAGES/asadiaabattoirred.jpg" alt="Module utilisation" />
+         </p>
+         <p class="textebanalgrand">
+            <span class="plus">Module utilisation </span>
+            : il permet d'acquérir le vocabulaire nécessaire, 
+            de voir la liste officielle illustrée des motifs de saisie, de visualiser 
+            les images des lésions décrites dans les notes de services de la DGAL 
+            et de reconnaître une lésion.
+            <p class="textebanal">
+              
+              <br />Pour en savoir plus :
+               <a href="w2asadia2utilisation.shtml"> 
+                Fonctionnalités de la partie Utilisation
+               </a>
+               <br />
+               Pour voir le mode d'emploi  :
+              <a href="pdf/asadia2mdeutil.pdf" target="_blank">
+                Mode d'emploi de la partie Utilisation d'AsaDia 2
+              </a>
+            </p>
+          </p>
+         
+         
+         
+         <p class="floatright">
+              <img src="images/formationsred.PNG" alt="Module formation" />
+         </p>
+          <p class="textebanalgrand">
+            <br />
+            <span class="plus">Module formation </span>
+            : il permet d'acquérir le vocabulaire nécessaire, 
+            de voir la liste illustrée 
+            de la nomenclature des lésions, de gérer 
+            et utiliser des paniers de diapositives
+            de créer les textes illustrés 
+            avec les photographies d'AsaDia 2 
+            et de  reconna&icirc;tre une lésion. 
+            
+          </p>			
+          <p class="textebanal">
+            Pour en savoir plus :
+              <a href="w2asadia2formation.shtml"> 
+              Fonctionnalités de la partie Formation
+             </a>
+             <br />
+             Pour voir le mode d'emploi  :
+            <a href="pdf/AsaDia2MdEFormation.pdf" target="_blank">
+              Mode d'emploi de la partie Formation d'AsaDia 2
+            </a>
+          </p>
+          <br />
+          <p class="grandhautpage">Amélioration d'AsaDia</p>
+          <p class="textebanalgrand">
+            Si vous êtes utilisateur d'AsaDia 2, vous pouvez accéder 
+            è la partie amélioration du produit en cliquant sur le lien ci-contre : 
+            <a href="w2asadia2amelioration.shtml">
+            Amélioration d'AsaDia 2
+            </a>
+            <br />
+            
+          </p>    
+            <br />  <br /> 
+          <p class="titrepage"><a href="/pdf/asadiabdc.pdf">Commander AsaDia 2</a>
+          <br /><a href="w2EnregistreAsaDia2.html">Enregistrer AsaDia 2</a>
+          </p> 
+            
+            
+            
+            
+            
+            
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+
+
+</head>
+
+ 

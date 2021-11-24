@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>AsaDia 3</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="styles/evaluation.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="styles/tooltip.css">
+  <script>
+    $(function() {
+      $( document ).tooltip();
+    });
+  </script>
+ </head>
+
+ <body>
+  <div id="headerquizz" class="textecentre">
+   <img src="images/bandeau.jpg" alt="logo" width="1024" />
+   <input id="quizzsuivi" type="hidden" value="ASAEA98F67628D349DD9D1E60083FFFB634" />
+   <br /><br />
+
+   <p class="titrepage">
+       Institution : ASA<br />
+       Titre de l'évaluation : 
+       <input type="text" id="ET1" size="80px" class="textebanalgrand champquizz" value="Lésions des bovins"><br />
+       Auteur :        <input type="text" id="EA1" size="50px" class="textebanalgrand champquizz" value="cgm"><br />
+   </p>
+  </div>
+
+  <div id="corpscdf">
+    <div id="dialog">
+    </div>
+     <div id="cdf" class="textebanalgrand">
+      <div id="annoncequestionnaire">
+        <div id="annonce1">
+          Voir le questionnaire sur le Web  <img src="images/oeil.png" alt="Voir le questionnaire sur le Web" title="Voir le questionnaire sur le Web" id="oeil1" class="curseurbouton" width="18px" />  <br /><br />
+          Afficher le mode plan ou détaillé  <img src="images/trianglehaut.jpeg" alt="afficher le mode Plan" title="afficher le mode Plan" id="ModePlan1" class="curseurbouton" width="18px" />  <br />
+          Ajouter une question en bas de ce questionnaire  <img src="images/Chemin de fer plus.png" alt="ajouter une question en bas de ce questionnaire" title="ajouter une question en bas de ce questionnaire" id="EA1" class="imagesurvol" width="24px" />  
+        </div>
+        <div id="annonce2">
+         Objectifs du questionnaire :<br/>
+         <textarea  id="objectifs" class="areaobjectifs" placeholder="Entrer ici les thèmes, à évaluer par le questionnaire, séparés par des retours à la ligne (exemple Abcès du foie)"></textarea>
+        </div>
+      </div>
+      <p class="champquestion">      <b>Question 1 : </b>     <textarea  id="QL1" class="champquizz">Quelle est l'espèce concernée par la lésion ?</textarea>
+       <img src="images/Chemin de fer égal.png" alt="insérer une question" title="insérer une question" id="QI1" class="imagesurvol" width="24px" /> 
+       <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS1" class="imagesurvol" width="24px" />  
+       <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR1" class="imagesurvol" width="24px" />
+       <select id="MdE1.1" class="textebanalgrand">
+         <option selected value="1" >Réponse unique</option>
+         <option value="2" >Réponse multiple</option>
+       </select>     <br /> <br />
+      </p>
+      <div class="textebanalgrand" id="LPP1">
+       <p class="champlistephoto">
+        <b>Entrer les n° des photos associées</b> <span class="textenews"> (séparés par un espace)</span>
+        <input type="text" id="QP1" size="40px" class="champquizz" value="13100" /> 
+       </p>
+       <div class="blocphoto" id="QP203">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/13100i.jpg" alt="Photo n°13100" title="Photo n°13100" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 13100 :<br />Leucose sur foie chez un porcin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 13100 lors du questionnaire :
+          <br />
+          <textarea  id="PC203" class="textareaphoto">Lésion sur le foie</textarea>
+         </div>
+       </div>
+     </div>
+
+          <i>Réponse 1.1 : </i><textarea  id="RT1" class="champquizz">Espèce bovine</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI1" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS1" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ1" class="imagesurvol" width="24px" />
+<select  id="RV1" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.1">
+ <br />                 
+ <span class="textetheme">
+  <b>Thèmes à évaluer dans cette réponse</b> :
+     <input id="cbtheme1.1_1" type="checkbox" />Diagnose d'espèce
+          <input id="cbtheme1.1_2" type="checkbox"/>Leucose   
+          <input id="cbtheme1.1_3" type="checkbox" />Tuberculose <br /> 
+ </span> 
+                               <span class="petittexte">Commentaire suite à la réponse 1.1 : </span><br />
+                                  <textarea  id="RC1" class="areaquizz">Le foie d'un bovin ne présente pas de quadrillage.</textarea> <br /><br />
+</div>          <i>Réponse 1.2 : </i><textarea  id="RT2" class="champquizz">Espèce porcine</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI2" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS2" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ2" class="imagesurvol" width="24px" />
+<select  id="RV2" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option selected="true" value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.2">
+<br />                 <b>Thèmes à évaluer dans cette réponse</b> :   <input id="cbtheme1.2_1" type="checkbox" />Diagnose d'espèce     <input  id="cbtheme1.2_2" type="checkbox"/>Leucose   <input id="cbtheme1.2_3" type="checkbox" />Tuberculose <br />  
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 1.2 : </span><br />
+                                  <textarea  id="RC2" class="areaquizz">Le quadrillage du foie est caractéristique de l'espèce porcine.</textarea> <br /><br />
+</div>     <p class="champquestionsecondaire">             Question liée à la réponse 1.2 :      <textarea  id="QL4" class="champquizz">Quel est le nom de cette lésion ?</textarea>
+     <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS4" class="imagesurvol" width="24px" />  
+      <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR4" class="imagesurvol" width="24px" />
+     <br /> <br />     </p>  <div class="textebanalgrand" id="LPP4">
+       <p class="champlistephoto">
+        <b>Entrer les n° des photos associées</b> <span class="textenews"> (séparés par un espace)</span>
+        <input type="text" id="QP4" size="40px" class="champquizz" value="13100" /> 
+       </p>
+       <div class="blocphoto" id="QP2">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/13100i.jpg" alt="Photo n°13100" title="Photo n°13100" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 13100 :<br />Leucose sur foie chez un porcin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 13100 lors du questionnaire :
+          <br />
+          <textarea  id="PC2" class="textareaphoto">Foie d'un porc</textarea>
+         </div>
+       </div>
+
+  </div>
+
+              <i>Réponse 1.2.1 : </i><textarea  id="RT10" class="champquizz">Hépatite interstitielle fibreuse</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI10" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS10" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ10" class="imagesurvol" width="24px" />
+<select  id="RV10" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.2.1">
+<br />                 <b>Thèmes à évaluer dans cette réponse</b> :   <input id="cbtheme121_1" type="checkbox" />Diagnose d'espèce     <input type="checkbox"/>Leucose   <input type="checkbox" />Tuberculose <br />  
+<br />                                        <span class="petittexte">Commentaire suite à la réponse 1.2.1 : </span><br />
+                                        <textarea  id="RC10" class="areaquizz">Une lésion d'hépatite interstitielle fibreuse se présenterait comme des taches blanches sans répercussion sur le nœud lymphatique.</textarea> <br /><br />
+</div>              <i>Réponse 1.2.2 : </i><textarea  id="RT15" class="champquizz">Lésion de tuberculose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI15" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS15" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ15" class="imagesurvol" width="24px" />
+<select  id="RV15" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.2.2">
+<br />                                        <span class="petittexte">Commentaire suite à la réponse 1.2.2 : </span><br />
+                                        <textarea  id="RC15" class="areaquizz">Une lésion de tuberculose monterait comme des tubercules et des nodules ainsi que des lésions du nœud lymphatique avec la présence d'un caséum.</textarea> <br /><br />
+</div>              <i>Réponse 1.2.3 : </i><textarea  id="RT11" class="champquizz">Lésion de leucose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI11" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS11" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ11" class="imagesurvol" width="24px" />
+<select  id="RV11" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option selected="true" value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.2.3">
+<br />                                        <span class="petittexte">Commentaire suite à la réponse 1.2.3 : </span><br />
+                                        <textarea  id="RC11" class="areaquizz">La lésion de leucose est caractérisée par la présence de cellules tumorales infiltrantes et une lésion du nœud lymphatique de couleur et consistance de la banane mûre.</textarea> <br /><br />
+</div>              <i>Réponse 1.2.4 : </i><textarea  id="RT12" class="champquizz">Je voudrais voir un autre aspect de la même lésion</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI12" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS12" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ12" class="imagesurvol" width="24px" />
+<select  id="RV12" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option selected="true" value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.2.4">
+<br />                                        <span class="petittexte">Commentaire suite à la réponse 1.2.4 : </span><br />
+                                        <textarea  id="RC12" class="areaquizz">La lésion présentée possède tous les éléments nécessaires à son diagnostic. Nous allons toutefois montrer d'autres aspects de la même lésion sur des foies d'animaux d'espèces variées.</textarea> <br /><br />
+</div>     <p class="champquestionsecondaire">                 Question liée à la réponse 1.2.4 :      <textarea  id="QL5" class="champquizz">Quel est le nom de cette lésion ?</textarea>
+     <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS5" class="imagesurvol" width="24px" />  
+      <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR5" class="imagesurvol" width="24px" />
+     <br /> <br />     </p>  <div class="textebanalgrand" id="LPP5">
+       <p class="champlistephoto">
+        <b>Entrer les n° des photos associées</b> <span class="textenews"> (séparés par un espace)</span>
+        <input type="text" id="QP5" size="40px" class="champquizz" value="13100 11933 40494 14071" /> 
+       </p>
+       <div class="blocphoto" id="QP3">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/13100i.jpg" alt="Photo n°13100" title="Photo n°13100" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 13100 :<br />Leucose sur foie chez un porcin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 13100 lors du questionnaire :
+          <br />
+          <textarea  id="PC3" class="textareaphoto">Photo initiale</textarea>
+         </div>
+       </div>
+
+       <div class="blocphoto" id="QP4">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/11933i.jpg" alt="Photo n°11933" title="Photo n°11933" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 11933 :<br />Leucose sur foie chez un porcin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 11933 lors du questionnaire :
+          <br />
+          <textarea  id="PC4" class="textareaphoto">Foie de porc</textarea>
+         </div>
+       </div>
+
+       <div class="blocphoto" id="QP5">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/40494i.jpg" alt="Photo n°40494" title="Photo n°40494" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 40494 :<br />Leucose sur foie chez un equin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 40494 lors du questionnaire :
+          <br />
+          <textarea  id="PC5" class="textareaphoto">Foie de cheval</textarea>
+         </div>
+       </div>
+
+       <div class="blocphoto" id="QP6">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/14071i.jpg" alt="Photo n°14071" title="Photo n°14071" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 14071 :<br />Leucose sur foie chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 14071 lors du questionnaire :
+          <br />
+          <textarea  id="PC6" class="textareaphoto">Foie de bovin</textarea>
+         </div>
+       </div>
+
+  </div>
+
+                  <i>Réponse 1.2.4.1 : </i><textarea  id="RT16" class="champquizz">Hépatite interstitielle fibreuse</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI16" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS16" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ16" class="imagesurvol" width="24px" />
+<select  id="RV16" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.2.4.1">
+<br />                                              <span class="petittexte">Commentaire suite à la réponse 1.2.4.1 : </span><br />
+                                              <textarea  id="RC16" class="areaquizz">Une lésion d'hépatite interstitielle fibreuse se présenterait comme des taches blanches sans répercussion sur le nœud lyphatique</textarea> <br /><br />
+</div>                  <i>Réponse 1.2.4.2 : </i><textarea  id="RT17" class="champquizz">Lésion de tuberculose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI17" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS17" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ17" class="imagesurvol" width="24px" />
+<select  id="RV17" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.2.4.2">
+<br />                                              <span class="petittexte">Commentaire suite à la réponse 1.2.4.2 : </span><br />
+                                              <textarea  id="RC17" class="areaquizz">Une lésion de tuberculose monterait comme des tubercules et des nodules ainsi que des lésions du nœud lymphatique avec la présence d'un caséum.</textarea> <br /><br />
+</div>                  <i>Réponse 1.2.4.3 : </i><textarea  id="RT18" class="champquizz">Lésion de leucose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI18" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS18" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ18" class="imagesurvol" width="24px" />
+<select  id="RV18" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option selected="true" value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.2.4.3">
+<br />                                              <span class="petittexte">Commentaire suite à la réponse 1.2.4.3 : </span><br />
+                                              <textarea  id="RC18" class="areaquizz">La lésion de leucose est caractérisée par la présence de cellules tumorales infiltrantes et une lésion du nœud lymphatique de couleur et consistance de la banane mûre.</textarea> <br /><br />
+</div>          <i>Réponse 1.3 : </i><textarea  id="RT3" class="champquizz">Espèce ovine</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI3" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS3" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ3" class="imagesurvol" width="24px" />
+<select  id="RV3" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.3">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 1.3 : </span><br />
+                                  <textarea  id="RC3" class="areaquizz">Le foie d'un mouton ne présente pas de quadrillage.</textarea> <br /><br />
+</div>          <i>Réponse 1.4 : </i><textarea  id="RT4" class="champquizz">Espèce caprine</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI4" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS4" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ4" class="imagesurvol" width="24px" />
+<select  id="RV4" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.4">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 1.4 : </span><br />
+                                  <textarea  id="RC4" class="areaquizz">Le foie d'un caprin ne présente pas de quadrillage.</textarea> <br /><br />
+</div>          <i>Réponse 1.5 : </i><textarea  id="RT5" class="champquizz">Espèce équine</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI5" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS5" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ5" class="imagesurvol" width="24px" />
+<select  id="RV5" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.1.5">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 1.5 : </span><br />
+                                  <textarea  id="RC5" class="areaquizz">Le foie d'un cheval ne présente pas de quadrillage.</textarea> <br /><br />
+</div>     <p class="champquestion">      <b>Question 2 : </b>     <textarea  id="QL28" class="champquizz">Choisir, parmi ces lésions, lesquelles sont d'origine parasitaire</textarea>
+     <img src="images/Chemin de fer égal.png" alt="insérer une question" title="insérer une question" id="QI28" class="imagesurvol" width="24px" /> 
+     <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS28" class="imagesurvol" width="24px" />  
+      <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR28" class="imagesurvol" width="24px" />
+       <select id="MdE1.2" class="textebanalgrand">
+         <option value="1" >Réponse unique</option>
+         <option selected value="2" >Réponse multiple</option>
+       </select>     <br /> <br />     </p>  <div class="textebanalgrand" id="LPP28">
+       <p class="champlistephoto">
+        <b>Entrer les n° des photos associées</b> <span class="textenews"> (séparés par un espace)</span>
+        <input type="text" id="QP28" size="40px" class="champquizz" value="10728 11654 12131 20063" /> 
+       </p>
+       <div class="blocphoto" id="QP129">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/10728i.jpg" alt="Photo n°10728" title="Photo n°10728" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 10728 :<br />Oesophagostomose (lésions de) sur tube digestif chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 10728 lors du questionnaire :
+          <br />
+          <textarea  id="PC129" class="textareaphoto">Photo 1 : Nodules sphériques de la paroi de l'intestin sur fond de congestion sur tube digestif de bovin.</textarea>
+         </div>
+       </div>
+
+       <div class="blocphoto" id="QP130">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/11654i.jpg" alt="Photo n°11654" title="Photo n°11654" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 11654 :<br />Strongylose (lésions hépatiques de) sur foie chez un ovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 11654 lors du questionnaire :
+          <br />
+          <textarea  id="PC130" class="textareaphoto">Photo 2 : Nodules blanchâtres, calcifiés sur foie de mouton. Nœud lymphatique normal.</textarea>
+         </div>
+       </div>
+
+       <div class="blocphoto" id="QP131">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/12131i.jpg" alt="Photo n°12131" title="Photo n°12131" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 12131 :<br />Abcès pyohémiques sur poumon chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 12131 lors du questionnaire :
+          <br />
+          <textarea  id="PC131" class="textareaphoto">Photo 3 : Très petits abcès, très nombreux, cernés d'une auréole congestive.</textarea>
+         </div>
+       </div>
+
+       <div class="blocphoto" id="QP132">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/20063i.jpg" alt="Photo n°20063" title="Photo n°20063" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 20063 :<br />Cysticercose musculaire sur cœur chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 20063 lors du questionnaire :
+          <br />
+          <textarea  id="PC132" class="textareaphoto">Photo 4 : Petit foyer blanc jaunâtre, partiellement nécrosé, entouré d'une coque fibreuse, enchâssé dans le myocarde.</textarea>
+         </div>
+       </div>
+
+  </div>
+
+          <i>Réponse 2.1 : </i><textarea  id="RT66" class="champquizz">Photo 1</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI66" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS66" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ66" class="imagesurvol" width="24px" />
+<select  id="RV66" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option selected="true" value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.2.1">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 2.1 : </span><br />
+                                  <textarea  id="RC66" class="areaquizz">Lésion typique d'oesophagostomose.</textarea> <br /><br />
+</div>          <i>Réponse 2.2 : </i><textarea  id="RT67" class="champquizz">Photo 2</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI67" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS67" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ67" class="imagesurvol" width="24px" />
+<select  id="RV67" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option selected="true" value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.2.2">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 2.2 : </span><br />
+                                  <textarea  id="RC67" class="areaquizz">Nodules calcifiés sans réaction du nœud lymphatique : strongylose.</textarea> <br /><br />
+</div>          <i>Réponse 2.3 : </i><textarea  id="RT297520" class="champquizz">Photo 3</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI297520" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS297520" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ297520" class="imagesurvol" width="24px" />
+<select  id="RV297520" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.2.3">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 2.3 : </span><br />
+                                  <textarea  id="RC297520" class="areaquizz">Très petits abcès miliaires, cernés d'une auréole congestive caractéristique d'un origine infectieuse.</textarea> <br /><br />
+</div>     <p class="champquestionsecondaire">             Question liée à la réponse 2.3 :      <textarea  id="QL926" class="champquizz">Quelle lésion relève d'une infection aiguë ?</textarea>
+     <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS926" class="imagesurvol" width="24px" />  
+      <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR926" class="imagesurvol" width="24px" />
+     <br /> <br />     </p>  <div class="textebanalgrand" id="LPP926">
+       <p class="champlistephoto">
+        <b>Entrer les n° des photos associées</b> <span class="textenews"> (séparés par un espace)</span>
+        <input type="text" id="QP926" size="40px" class="champquizz" value="30657 14297 40430" /> 
+       </p>
+       <div class="blocphoto" id="QP168">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/30657i.jpg" alt="Photo n°30657" title="Photo n°30657" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 30657 :<br />Télangiectasie maculeuse sur foie chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 30657 lors du questionnaire :
+          <br />
+          <textarea  id="PC168" class="textareaphoto">Photo 1 : Télangiectasie maculeuse sur foie chez un bovin</textarea>
+         </div>
+       </div>
+
+       <div class="blocphoto" id="QP169">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/14297i.jpg" alt="Photo n°14297" title="Photo n°14297" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 14297 :<br />Cytostéatonécrose sur tissu conjonctivo-adipeux chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 14297 lors du questionnaire :
+          <br />
+          <textarea  id="PC169" class="textareaphoto">Photo 2 : Cytostéatonécrose sur tissu conjonctivo-adipeux chez un bovin</textarea>
+         </div>
+       </div>
+
+       <div class="blocphoto" id="QP170">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/40430i.jpg" alt="Photo n°40430" title="Photo n°40430" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 40430 :<br />Abcès pyohémiques sur foie chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 40430 lors du questionnaire :
+          <br />
+          <textarea  id="PC170" class="textareaphoto">Photo 3 : Abcès pyohémiques sur foie chez un bovin</textarea>
+         </div>
+       </div>
+
+  </div>
+
+              <i>Réponse 2.3.1 : </i><textarea  id="RT297643" class="champquizz">Photo 1</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI297643" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS297643" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ297643" class="imagesurvol" width="24px" />
+<select  id="RV297643" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.2.3.1">
+<br />                                        <span class="petittexte">Commentaire suite à la réponse 2.3.1 : </span><br />
+                                        <textarea  id="RC297643" class="areaquizz">La télangiectasie maculeuse est une lésion vasculaire sans rapport avec une infection aiguë.</textarea> <br /><br />
+</div>              <i>Réponse 2.3.2 : </i><textarea  id="RT297644" class="champquizz">Photo 2</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI297644" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS297644" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ297644" class="imagesurvol" width="24px" />
+<select  id="RV297644" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.2.3.2">
+<br />                                        <span class="petittexte">Commentaire suite à la réponse 2.3.2 : </span><br />
+                                        <textarea  id="RC297644" class="areaquizz">La cytostéatonécrose est une lésion du tissu conjonctivo-adipeux sans rapport avec une infection aiguë.</textarea> <br /><br />
+</div>              <i>Réponse 2.3.3 : </i><textarea  id="RT297645" class="champquizz">Photo 3</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI297645" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS297645" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ297645" class="imagesurvol" width="24px" />
+<select  id="RV297645" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option selected="true" value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.2.3.3">
+<br />                                        <span class="petittexte">Commentaire suite à la réponse 2.3.3 : </span><br />
+                                        <textarea  id="RC297645" class="areaquizz">Les abcès pyohémiques sont une lésion liée une infection aiguë.</textarea> <br /><br />
+</div>          <i>Réponse 2.4 : </i><textarea  id="RT297521" class="champquizz">Photo 4</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI297521" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS297521" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ297521" class="imagesurvol" width="24px" />
+<select  id="RV297521" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option selected="true" value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.2.4">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 2.4 : </span><br />
+                                  <textarea  id="RC297521" class="areaquizz">Lésion typique de cysticercose.</textarea> <br /><br />
+</div>     <p class="champquestion">      <b>Question 3 : </b>     <textarea  id="QL925" class="champquizz">Comment s'appelle cette lésion</textarea>
+     <img src="images/Chemin de fer égal.png" alt="insérer une question" title="insérer une question" id="QI925" class="imagesurvol" width="24px" /> 
+     <img src="images/Chemin de fer moins.png" alt="supprimer la question" title="supprimer la question" id="QS925" class="imagesurvol" width="24px" />  
+      <img src="images/Chemin de fer plus.png" alt="ajouter une réponse" title="ajouter une réponse" id="QR925" class="imagesurvol" width="24px" />
+       <select id="MdE1.3" class="textebanalgrand">
+         <option selected value="1" >Réponse unique</option>
+         <option value="2" >Réponse multiple</option>
+       </select>     <br /> <br />     </p>  <div class="textebanalgrand" id="LPP925">
+       <p class="champlistephoto">
+        <b>Entrer les n° des photos associées</b> <span class="textenews"> (séparés par un espace)</span>
+        <input type="text" id="QP925" size="40px" class="champquizz" value="10680" /> 
+       </p>
+       <div class="blocphoto" id="QP167">
+         <div class="photoquizz">
+          <img src="PhotosAsaDia/10680i.jpg" alt="Photo n°10680" title="Photo n°10680" class="imagequizz">
+          <p class="petittexte">
+           Photo n° 10680 :<br />Actinobacillose / actinomycose sur langue chez un bovin<br /><br /><br /><br /><br /><br />
+          </p>
+         </div>
+        <!-- le commentaire souhaité    -->
+        <div class="photoquizz">
+          Commentaire à faire figurer sous la photo 10680 lors du questionnaire :
+          <br />
+          <textarea  id="PC167" class="textareaphoto">Langue de bovin</textarea>
+         </div>
+       </div>
+
+  </div>
+
+          <i>Réponse 3.1 : </i><textarea  id="RT297640" class="champquizz">Tuberculose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI297640" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS297640" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ297640" class="imagesurvol" width="24px" />
+<select  id="RV297640" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.3.1">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 3.1 : </span><br />
+                                  <textarea  id="RC297640" class="areaquizz">La tuberculose se présente sous forme de nodules caséeux avec des lésions similaires sur les nœuds lymphatiques .</textarea> <br /><br />
+</div>          <i>Réponse 3.2 : </i><textarea  id="RT297641" class="champquizz">Actinomycose</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI297641" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS297641" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ297641" class="imagesurvol" width="24px" />
+<select  id="RV297641" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option selected="true" value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.3.2">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 3.2 : </span><br />
+                                  <textarea  id="RC297641" class="areaquizz">L’actinomycose se présente sous forme de grains enchâssés dans un tissu conjonctif dense et abondant.</textarea> <br /><br />
+</div>          <i>Réponse 3.3 : </i><textarea  id="RT297642" class="champquizz">Fièvre aphteuse</textarea>
+ <img src="images/Chemin de fer égal.png" alt="insérer une réponse" title="insérer une réponse" id="RI297642" class="imagesurvol" width="24px" />  
+ <img src="images/Chemin de fer moins.png" alt="supprimer la réponse" title="supprimer la réponse" id="RS297642" class="imagesurvol" width="24px" />  
+   <img src="images/Chemin de fer plus.png" alt="ajouter une question la réponse" title="ajouter une question la réponse" id="RQ297642" class="imagesurvol" width="24px" />
+<select  id="RV297642" class="selectquizz">
+  <option value="0">Réponse non évaluée</option>
+  <option value="1">Bonne réponse</option>
+  <option value="2">Réponse incomplète</option>
+  <option selected="true" value="3">Mauvaise réponse</option>
+</select><br />
+<div id="LPP1.3.3">
+<br />                                  <span class="petittexte">Commentaire suite à la réponse 3.3 : </span><br />
+                                  <textarea  id="RC297642" class="areaquizz">La fièvre aphteuse se présente sous forme de vésicules qui se rompent pour donner des aphtes.</textarea> <br /><br />
+</div>     </div>
+  </div>
+   <br /><br /><br />
+  <div id="pied">
+   Site officiel de l'association Animal - Société - Aliment (ASA) <br> Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -
+   7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex &nbsp;&nbsp;&nbsp;FRANCE<br>
+   Téléphone : <b>+ 33 (0)1 56 29 36 30</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax : <b>+ 33 (0)9 61 24 33 81</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br>
+   <em>Pour signaler un problème, cliquez sur le lien suivant 
+   <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+   <br /><br />
+  </div>
+  
+  <script src="js/evaluation.js"></script>
+
+ </body>
+</html>

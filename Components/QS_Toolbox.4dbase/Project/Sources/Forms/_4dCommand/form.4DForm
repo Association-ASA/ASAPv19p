@@ -1,0 +1,362 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "QS_Toolbox: 4D Commands",
+	"memorizeGeometry": true,
+	"formSizeAnchor": "limite",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"menuBar": "Barre #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onCloseBox",
+		"onUnload",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 576,
+					"left": 1,
+					"width": 1122,
+					"height": 51,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#C0C0C0",
+					"stroke": "#C0C0C0"
+				},
+				"BT1": {
+					"type": "button",
+					"top": 97,
+					"left": -15,
+					"width": 10,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"limite": {
+					"type": "line",
+					"top": 626,
+					"left": 1104,
+					"width": 19,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"FenetreInformation": {
+					"type": "input",
+					"top": 586,
+					"left": 16,
+					"width": 1100,
+					"height": 32,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ctrlW": {
+					"type": "button",
+					"top": 5,
+					"left": 1168,
+					"width": 145,
+					"height": 25,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/_UI"
+					},
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "ctrl-W"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 1128,
+					"height": 69,
+					"sizingX": "grow",
+					"fill": "#7986CB",
+					"stroke": "transparent"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 1,
+					"width": 1128,
+					"height": 16,
+					"sizingX": "grow",
+					"fill": "#E2DECB",
+					"stroke": "transparent"
+				},
+				"VersionComposant": {
+					"type": "input",
+					"top": 70,
+					"left": 1022,
+					"width": 88,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_Componant_Version",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bdd": {
+					"type": "input",
+					"top": 22,
+					"left": 273,
+					"width": 594,
+					"height": 25,
+					"sizingX": "grow",
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_DBName+\" - 4D command\"",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"contextMenu": "none",
+					"enterable": false,
+					"focusable": false,
+					"fontTheme": "normal"
+				},
+				"Image5": {
+					"type": "picture",
+					"top": 2,
+					"left": 1038,
+					"width": 60,
+					"height": 60,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/pictures/QS_Toolbox.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"searchCommands": {
+					"type": "subform",
+					"top": 95,
+					"left": 210,
+					"width": 205,
+					"height": 30,
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/searchCommands.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"myLH": {
+					"type": "list",
+					"top": 157,
+					"left": 9,
+					"width": 521,
+					"height": 413,
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"borderStyle": "none",
+					"method": "ObjectMethods/myLH.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"btn_n_next": {
+					"type": "button",
+					"top": 95,
+					"left": 79,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/images/buttons/btn_ff.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_n_previous": {
+					"type": "button",
+					"top": 95,
+					"left": 44,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/images/buttons/btn_rew.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_n_last": {
+					"type": "button",
+					"top": 95,
+					"left": 114,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/images/buttons/btn_last.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_n_first": {
+					"type": "button",
+					"top": 95,
+					"left": 9,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/images/buttons/btn_first.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"events": [
+						"onClick"
+					]
+				},
+				"webZone": {
+					"type": "webArea",
+					"top": 157,
+					"left": 533,
+					"width": 590,
+					"height": 413,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "web_URL",
+					"webEngine": "embedded",
+					"contextMenu": "automatic",
+					"method": "ObjectMethods/webZone.4dm",
+					"events": [
+						"onEndURLLoading"
+					]
+				},
+				"btn_n_redo": {
+					"type": "button",
+					"top": 94,
+					"left": 154,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/images/buttons/btn_redo.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_property": {
+					"type": "pictureButton",
+					"top": 90,
+					"left": 428,
+					"width": 38,
+					"height": 38,
+					"tooltip": "Property filter",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/commands/btn_idle.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"property_info": {
+					"type": "input",
+					"top": 100,
+					"left": 479,
+					"width": 630,
+					"height": 53,
+					"sizingX": "grow",
+					"fontSize": 11,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					],
+					"fontTheme": "normal"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 131,
+					"left": 1,
+					"width": 155,
+					"height": 14,
+					"class": "plainText",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Navigation by command id"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 3
+}

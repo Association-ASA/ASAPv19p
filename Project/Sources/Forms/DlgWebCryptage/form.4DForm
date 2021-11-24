@@ -1,0 +1,208 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BouQuitter": {
+					"type": "button",
+					"top": 390,
+					"left": 417,
+					"width": 125,
+					"height": 29,
+					"action": "cancel",
+					"text": "Quitter",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 93,
+					"left": 29,
+					"width": 128,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Nom de domaine :"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 125,
+					"left": 29,
+					"width": 128,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Code pays :"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 125,
+					"left": 219,
+					"width": 58,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Ville :"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 157,
+					"left": 29,
+					"width": 128,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Département :"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 203,
+					"left": 29,
+					"width": 128,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Raison sociale :"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 253,
+					"left": 29,
+					"width": 128,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"textAlign": "right",
+					"text": "Service :"
+				},
+				"VarNom": {
+					"type": "input",
+					"top": 94,
+					"left": 165,
+					"width": 326,
+					"height": 17,
+					"dataSource": "VarNom",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarPays": {
+					"type": "input",
+					"top": 126,
+					"left": 165,
+					"width": 39,
+					"height": 17,
+					"dataSource": "VarPays",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarVille": {
+					"type": "input",
+					"top": 126,
+					"left": 285,
+					"width": 206,
+					"height": 17,
+					"dataSource": "VarVille",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarNom3": {
+					"type": "input",
+					"top": 204,
+					"left": 165,
+					"width": 326,
+					"height": 17,
+					"dataSource": "VarRS",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarService": {
+					"type": "input",
+					"top": 254,
+					"left": 165,
+					"width": 326,
+					"height": 17,
+					"dataSource": "VarService",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDépartement": {
+					"type": "input",
+					"top": 159,
+					"left": 165,
+					"width": 326,
+					"height": 17,
+					"dataSource": "VarDépartement",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouQuitter1": {
+					"type": "button",
+					"top": 390,
+					"left": 102,
+					"width": 209,
+					"height": 29,
+					"text": "Générer le certificat",
+					"method": "ObjectMethods/BouQuitter1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

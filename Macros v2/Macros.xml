@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+
+<!--
+Description
+Ce fichier est créé dans le dossier 4D lors du premier lancement de la base.
+Il crée automatiquement plusieurs macro-commandes qui peuvent être enrichies ou modifiées.
+Il est également possible d’en ajouter pour vos besoins de programmation spécifiques.
+
+Liste des macro-commandes par défaut.
+
+Blocs logiques
+_________________________________________________________________________________
+"Si" bloc  logique "Si"
+"SiSinon" bloc logique "Si" avec une proposition "Sinon"
+"AuCasOu" bloc logique "Au cas ou"
+"TantQue" bloc logique "Tant que"
+"Boucle" bloc logique "Boucle"
+"Repeter" bloc logique "Repeter"
+
+Blocs courants en base de données
+_________________________________________________________________________________
+"BoucleTable" Boucle sur la sélection d’une table avec sauvegarde de l’enregistrement (utilise un nom de table en sélection).
+"BoucleTablePasSauve" Boucle sur la sélection d’une table sans sauvegarde de l’enregistrement (utilise un nom de table en sélection).
+
+Blocs utiles
+_________________________________________________________________________________
+"Entete" En-tête d’une méthode
+ "CodeModif" Ajoute le nom de l’utilisateur 4D et la date du jour pour un développement en environnement multi-utilisateur.
+-->
+
+<macros>
+<macro name="evt">
+<text>
+$evt:=evenement formulaire
+au cas ou
+:($evt=sur chargement)
+
+:($evt=sur validation)
+
+fin de cas
+</text>
+</macro>
+
+<macro name="Vu par ">
+<text>
+` Vu par : cgm (<date format="1"/>)
+</text>
+</macro>
+
+
+<macro name="Vu et modifié par ">
+<text>
+` Vu et modifié par : cgm (<date format="1"/>)
+</text>
+</macro>
+
+
+<!-- Blocs logiques -->
+<macro name="Si">
+<text>
+Si(<caret/>)
+<selection/>
+Fin de si
+</text>
+</macro>
+
+<macro name="SiSinon">
+<text>
+Si(<caret/>)
+<selection/>
+Sinon
+
+Fin de si
+</text>
+</macro>
+
+<macro name="AuCasOu">
+<text>
+Au cas ou
+:(<caret/>)
+<selection/>
+Fin de cas
+</text>
+</macro>
+
+<macro name="TantQue">
+<text>
+Tant que(<caret/>)
+<selection/>
+Fin tant que
+</text>
+</macro>
+
+<macro name="Boucle">
+<text>
+Boucle(<caret/>;;)
+<selection/>
+Fin de boucle
+</text>
+</macro>
+
+
+<macro name="BoucleSimple$Salé">
+<text>
+c_ENTIER LONG($Salé;$FT)
+
+Boucle($Salé;1;$FT)
+
+
+
+Fin de boucle
+</text>
+</macro>
+
+
+<macro name="Repeter">
+<text>
+Repeter
+<selection/>
+Jusque(<caret/>)
+</text>
+</macro>
+
+
+<!-- Blocs courants en base de données -->
+<macro name="BoucleTable">
+<text>
+Tant que (Non(Fin de selection(<selection/>)))
+<caret/>
+STOCKER ENREGISTREMENT(<selection/>)
+ENREGISTREMENT SUIVANT(<selection/>)
+Fin tant que
+</text>
+</macro>
+
+<macro name="BoucleTablePasSauve">
+<text>
+Tant que (Non(Fin de selection(<selection/>)))
+<caret/>
+ENREGISTREMENT SUIVANT(<selection/>)
+Fin tant que
+</text>
+</macro>
+
+<macro name="BoucleTable$Salé">
+<text>
+c_ENTIER LONG($Salé;$FT)
+DEBUT SELECTION(<selection/>)
+Boucle($Salé;1;$FT)
+
+
+STOCKER ENREGISTREMENT(<selection/>)
+ENREGISTREMENT SUIVANT(<selection/>)
+Fin de boucle
+</text>
+</macro>
+<!-- Blocs utiles -->
+<macro name="Entete">
+<text>
+` ----------------------------------------------------
+` Nom utilisateur : cgm 
+` Date et heure : <date format="0"/>, <time format="0"/>
+` ----------------------------------------------------
+` Méthode : <method_name/>
+` Description
+` <caret/>
+`
+` Paramètres
+` ----------------------------------------------------
+
+</text>
+</macro>
+
+<macro name="CodeModif">
+<text>
+` Modifié par : cgm (<date format="1"/>)
+
+</text>
+</macro>
+
+<!-- Useful SQL statements -->
+<macro name="SQL_USE_4D_Function" type_ahead="true" in_menu = "true">
+<text>SELECT ID, {fn My4DFunction() AS NUMERIC} /* My4DFunction must have activated the 'Available through SQL' property */
+  FROM table
+  LIMIT 1 /* Remove or modify this line if you want to apply the function to all or a part of the records */
+  INTO :aArray1, :aArray2;
+</text>
+</macro>
+  
+<macro name="SQL_USE_FILTERS" type_ahead="true" in_menu = "true">
+<text>SELECT *
+  FROM table
+  LIMIT 30 /* Restrict to 30 the number of returned records */
+  OFFSET 4 /* Skip the first 4 records before beginning to count for the LIMIT clause */
+  INTO :listbox;
+</text>
+</macro>
+  
+<macro name="SQL_EXPLICIT_INNER_JOIN" type_ahead="true" in_menu = "true">
+<text>SELECT name, department
+  FROM employees
+  INNER JOIN departments
+    ON employees.depID = departments.depID
+  INTO LISTBOX :aListbox;
+</text>
+</macro>
+ 
+<macro name="SQL_IMPLICIT_INNER_JOIN" type_ahead="true" in_menu = "true">
+<text>SELECT name, department
+  FROM employees, departments
+  WHERE employees.depID = departments.depID
+  INTO LISTBOX :aListbox;
+</text>
+</macro>
+ 
+<macro name="SQL_CROSS_JOIN" type_ahead="true" in_menu = "true">
+<text>SELECT name, department
+  FROM employees
+  CROSS JOIN departments
+  INTO LISTBOX :aListbox;
+</text>
+</macro>
+ 
+<macro name="SQL_LEFT_OUTER_JOIN" type_ahead="true" in_menu = "true">
+<text>SELECT name, department
+  FROM employees
+  LEFT OUTER JOIN departments
+    ON employees.depID = departments.depID
+  INTO LISTBOX :aListbox;
+</text>
+</macro>
+ 
+<macro name="SQL_RIGHT_OUTER_JOIN" type_ahead="true" in_menu = "true">
+<text>SELECT name, department
+  FROM employees
+  RIGHT OUTER JOIN departments
+    ON employees.depID = departments.depID
+  INTO LISTBOX :aListbox;
+</text>
+</macro>
+ 
+<macro name="SQL_FULL_OUTER_JOIN" type_ahead="true" in_menu = "true">
+<text>SELECT name, department
+  FROM employees
+  FULL OUTER JOIN departments
+    ON employees.depID = departments.depID
+  INTO LISTBOX :aListbox;
+</text>
+</macro>
+ 
+<macro name="SQL_REPLICATE_IN_ARRAYS_SHORT" type_ahead="true" in_menu = "true">
+<text>REPLICATE id, field1, field2, field3
+  FROM remoteTable
+  FOR REMOTE STAMP :vRemote_Stamp
+  REMOTE OVER LOCAL
+  LATEST REMOTE STAMP :vLatest_Remote_Stamp
+  INTO :aID, :aField1, :aField2, :aField3;
+</text>
+</macro>
+ 
+<macro name="SQL_REPLICATE_IN_FIELDS_SHORT" type_ahead="true" in_menu = "true">
+<text>REPLICATE id, field1, field2, field3
+  FROM remoteTable
+  FOR REMOTE STAMP :vRemote_Stamp
+  REMOTE OVER LOCAL
+  LATEST REMOTE STAMP :vLatest_Remote_Stamp
+  INTO localTable (id, field1, field2, field3);
+</text>
+</macro>
+ 
+<macro name="SQL_REPLICATE_IN_ARRAYS_FULL" type_ahead="true" in_menu = "true">
+<text>REPLICATE id, field1, field2, field3
+  FROM remoteTable
+  WHERE remoteTable.id >= :vComparison_Value /*optionnal*/
+  LIMIT :vLimit_Value /*optionnal*/
+  OFFSET:vOffset_Value /*optionnal*/
+  FOR REMOTE STAMP :vRemote_Stamp,
+    LOCAL STAMP :vLocal_Stamp /*optionnal*/
+  REMOTE OVER LOCAL /*optionnal*/
+  /* or LOCAL OVER REMOTE */
+  LATEST REMOTE STAMP :vLatest_Remote_Stamp, /*optionnal*/
+    LATEST LOCAL STAMP :vLatest_Local_Stamp /*optionnal*/
+  INTO :aID, :aField1, :aField2, :aField3;
+</text>
+</macro>
+ 
+<macro name="SQL_REPLICATE_IN_FIELDS_FULL" type_ahead="true" in_menu = "true">
+<text>REPLICATE id, field1, field2, field3
+  FROM remoteTable
+  WHERE remoteTable.id >= :vComparison_Value /*optionnal*/
+  LIMIT :vLimit_Value /*optionnal*/
+  OFFSET :vOffset_Value /*optionnal*/
+  FOR REMOTE STAMP :vRemote_Stamp,
+    LOCAL STAMP :vLocal_Stamp /*optionnal*/
+  REMOTE OVER LOCAL /*optionnal*/
+  /* or LOCAL OVER REMOTE */
+  LATEST REMOTE STAMP :vLatest_Remote_Stamp, /*optionnal*/
+    LATEST LOCAL STAMP :vLatest_Local_Stamp /*optionnal*/
+  INTO localTable (id, field1, field2, field3);
+</text>
+</macro>
+ 
+<macro name="SQL_SYNCHRONIZE" type_ahead="true" in_menu = "true">
+<text>SYNCHRONIZE
+  LOCAL localTable (id, field1, field2, field3)
+  WITH
+  REMOTE remoteTable (id, field1, field2, field3)
+  FOR REMOTE STAMP :vRemote_Stamp,
+    LOCAL STAMP :vLocal_Stamp /*optionnal*/
+  REMOTE OVER LOCAL /*optionnal*/
+  /* or LOCAL OVER REMOTE */
+  LATEST REMOTE STAMP :vLatest_Remote_Stamp, /*optionnal*/
+    LATEST LOCAL STAMP :vLatest_Local_Stamp; /*optionnal*/
+</text>
+</macro>
+
+</macros>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		 <!--4dinclude HeaderAsa.shtml-->
+	<title><!--4dVAR TitrePage--></title>
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+		</div>
+		
+		<div id="corps">
+			
+		
+			<div id="contenu1">
+				<p class="hautpage">
+					Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus
+				</p>
+					<br /><br /> <br /><br />
+				<p class="hautpage rouge">
+					Problème de connexion
+				</p>
+				<p class="hautpage">
+					Suite à l'envoi de la page précédente, <br />
+					un problème est apparu qui ne nous permet pas de traiter vos données
+				</p>
+						<br />
+				<p class='textecentre'>
+						<br />
+					Cliquer sur le bouton ci-dessous pour retourner recommencer votre saisie
+          <br />
+          <a href="w2raemaaccueil.shtml"><img src="images/retour.jpg" alt="retour" /></a>
+				</p>
+							<br /><br /><br />
+				<p class="hautpage"> 
+					Si le problème persiste, contacter l'association
+						<br />						
+					<a href="mailto:asa-spv@wanadoo.fr">
+						Envoyer un mail à l'ASA
+					</a>
+				</p>
+				
+			</div>
+		
+		</div>
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+	</body>
+</html>

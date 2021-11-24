@@ -1,0 +1,1 @@
+﻿## TOOLS_SymbolFile_analyze($1;$2)---

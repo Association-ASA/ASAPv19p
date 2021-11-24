@@ -1,0 +1,1 @@
+[DiaTextesWebParagraphes:37]MotifSaisie:11:=Self:C308->{Self:C308->}

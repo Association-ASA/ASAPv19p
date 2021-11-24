@@ -1,0 +1,1 @@
+  // FIXER TEXTE DANS CONTENEUR(Chaîne([Diapositives]NumOrdreDiapos))

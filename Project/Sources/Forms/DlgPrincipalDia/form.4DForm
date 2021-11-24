@@ -1,0 +1,473 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1200,
+	"height": 650,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "594pt",
+		"paperHeight": "841pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle125": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2181,
+					"height": 1314
+				},
+				"BouFVI1": {
+					"type": "button",
+					"top": 828,
+					"left": 99,
+					"width": 200,
+					"height": 62,
+					"dataSource": "BouFVI",
+					"shortcutKey": "q",
+					"shortcutAlt": true,
+					"text": "QSToolbox",
+					"focusable": false,
+					"method": "ObjectMethods/BouFVI1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouWeb": {
+					"type": "button",
+					"top": 828,
+					"left": 347,
+					"width": 200,
+					"height": 62,
+					"dataSource": "BouWeb",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Web",
+					"focusable": false,
+					"method": "ObjectMethods/BouWeb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouTextesWeb": {
+					"type": "button",
+					"top": 828,
+					"left": 594,
+					"width": 200,
+					"height": 62,
+					"dataSource": "BouTextesWeb",
+					"shortcutKey": "t",
+					"shortcutAccel": true,
+					"text": "Textes Web",
+					"focusable": false,
+					"method": "ObjectMethods/BouTextesWeb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cgmBouton5": {
+					"type": "button",
+					"top": 1318,
+					"left": 44,
+					"width": 141,
+					"height": 23,
+					"dataSource": "BouTB",
+					"text": "Sans personne",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/cgmBouton5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cgmhghBouton1": {
+					"type": "button",
+					"top": 1318,
+					"left": 190,
+					"width": 160,
+					"height": 25,
+					"dataSource": "BouSS",
+					"text": "Premiere utilisation",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/cgmhghBouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"hghBouton2": {
+					"type": "button",
+					"top": 1318,
+					"left": 359,
+					"width": 160,
+					"height": 25,
+					"dataSource": "BouChangeConcepteur",
+					"shortcutKey": "b",
+					"shortcutAccel": true,
+					"text": "Change concepteur",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/hghBouton2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1178": {
+					"type": "button",
+					"top": 1392,
+					"left": 38,
+					"width": 125,
+					"height": 48,
+					"dataSource": "Nouvelle variable167",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/Variable1178.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte6": {
+					"type": "groupBox",
+					"top": 38,
+					"left": 644,
+					"width": 466,
+					"height": 266,
+					"class": "Titre_petit",
+					"text": "Utilisation en formation"
+				},
+				"Texte5": {
+					"type": "groupBox",
+					"top": 38,
+					"left": 75,
+					"width": 466,
+					"height": 264,
+					"class": "Titre_petit",
+					"text": "Utilisation en abattoir"
+				},
+				"Texte8": {
+					"type": "groupBox",
+					"top": 316,
+					"left": 75,
+					"width": 466,
+					"height": 264,
+					"class": "Titre_petit",
+					"text": "Gestion"
+				},
+				"BouLésions": {
+					"type": "button",
+					"top": 117,
+					"left": 891,
+					"width": 207,
+					"height": 28,
+					"dataSource": "BouLésions",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Definition"
+					},
+					"text": "Définition des lésions",
+					"class": "Bouton_grand",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/BouLésions.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouBoutonRL1": {
+					"type": "button",
+					"top": 167,
+					"left": 322,
+					"width": 207,
+					"height": 28,
+					"dataSource": "BouMotifRetrait",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Motif retrait"
+					},
+					"text": "Motifs de saisie",
+					"class": "Bouton_grand",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/BouBoutonRL1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouVisionneuse": {
+					"type": "button",
+					"top": 165,
+					"left": 891,
+					"width": 207,
+					"height": 28,
+					"dataSource": "BouVisionneuse",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/photos"
+					},
+					"text": "Liste des photographies",
+					"class": "Bouton_grand",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/BouVisionneuse.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouAsaDiaUtilisateurs": {
+					"type": "button",
+					"top": 362,
+					"left": 171,
+					"width": 229,
+					"height": 28,
+					"text": "Les utilisateurs",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouAsaDiaUtilisateurs.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouAsaDiaWebSuivi1": {
+					"type": "button",
+					"top": 400,
+					"left": 171,
+					"width": 229,
+					"height": 28,
+					"text": "Suivi d'utilisation",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouAsaDiaWebSuivi1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouQuizz1": {
+					"type": "button",
+					"top": 438,
+					"left": 171,
+					"width": 229,
+					"height": 28,
+					"text": "Questionnaires",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouQuizz1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouAntichambre3": {
+					"type": "button",
+					"top": 434,
+					"left": 734,
+					"width": 229,
+					"height": 28,
+					"text": "Gestion des candidates",
+					"class": "Bouton_grand",
+					"method": "ObjectMethods/BouAntichambre3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouAntichambre4": {
+					"type": "button",
+					"top": 480,
+					"left": 734,
+					"width": 229,
+					"height": 28,
+					"text": "Incorporation dans AsaDia ",
+					"class": "Bouton_grand",
+					"method": "ObjectMethods/BouAntichambre4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouSauvegarder1": {
+					"type": "button",
+					"top": 497,
+					"left": 171,
+					"width": 229,
+					"height": 28,
+					"text": "Sauvegarder",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouSauvegarder1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouAsaDiaDebug1": {
+					"type": "button",
+					"top": 535,
+					"left": 171,
+					"width": 229,
+					"height": 28,
+					"text": "Débuggage arrêté",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/BouAsaDiaDebug1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouQuitter": {
+					"type": "button",
+					"top": 606,
+					"left": 991,
+					"width": 182,
+					"height": 28,
+					"dataSource": "BouQuitter",
+					"shortcutKey": "q",
+					"shortcutAccel": true,
+					"text": "Quitter AsaDia",
+					"class": "Bouton_grand",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/BouQuitter.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PermCon": {
+					"type": "checkbox",
+					"top": 658,
+					"left": 15,
+					"width": 78,
+					"height": 20,
+					"dataSource": "PermCon",
+					"text": "Auteur",
+					"class": "default",
+					"focusable": false,
+					"method": "ObjectMethods/PermCon.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 754,
+					"left": 156,
+					"width": 134,
+					"height": 28,
+					"dataSource": "Bouton",
+					"text": "Ouvrir ...",
+					"class": "Bouton_grand",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte4": {
+					"type": "groupBox",
+					"top": 383,
+					"left": 644,
+					"width": 461,
+					"height": 153,
+					"class": "Titre_petit",
+					"text": "Ajout de photographies"
+				},
+				"Image586": {
+					"type": "picture",
+					"top": 66,
+					"left": 84,
+					"width": 230,
+					"height": 230,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/DlgPrincipal1.png"
+				},
+				"Image587": {
+					"type": "picture",
+					"top": 64,
+					"left": 653,
+					"width": 230,
+					"height": 230,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/DlgPrincipal2.png"
+				},
+				"Variable4": {
+					"type": "pictureButton",
+					"top": 612,
+					"left": 398,
+					"width": 65,
+					"height": 37,
+					"dataSource": "Variable1",
+					"picture": "/RESOURCES/Images/LogoASAComplet.png",
+					"loopBackToFirstFrame": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Image581": {
+					"type": "picture",
+					"top": 612,
+					"left": 708,
+					"width": 49,
+					"height": 37,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image581.png"
+				},
+				"Image582": {
+					"type": "picture",
+					"top": 615,
+					"left": 846,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/DlgPrincipal1Gibier.png"
+				},
+				"Image584": {
+					"type": "picture",
+					"top": 615,
+					"left": 771,
+					"width": 45,
+					"height": 31,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/DlgPrincipal1Russe.png"
+				},
+				"Image591": {
+					"type": "picture",
+					"top": 617,
+					"left": 653,
+					"width": 43,
+					"height": 29,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image591.png"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 622,
+					"left": 469,
+					"width": 208,
+					"height": 17,
+					"class": "Champ_grand",
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "AsaDia version 18.0  Web"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+﻿## SC_checkDeclrVariables---|*4D Command*|`Form`||*4D Command*|`OBJECT SET TITLE`||*4D Command*|`LISTBOX SET COLUMN WIDTH`|

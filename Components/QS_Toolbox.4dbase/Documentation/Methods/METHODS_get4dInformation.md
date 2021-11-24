@@ -1,0 +1,1 @@
+﻿## METHODS_get4dInformation($1)---

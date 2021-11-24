@@ -1,0 +1,430 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 851,
+	"markerBreak": 851,
+	"markerFooter": 851,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"VarTriplette": {
+					"type": "input",
+					"top": 6,
+					"left": 2,
+					"width": 563,
+					"height": 17,
+					"dataSource": "VarTriplette",
+					"class": "Champ_grand",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImageImp": {
+					"type": "input",
+					"top": 49,
+					"left": 200,
+					"width": 350,
+					"height": 350,
+					"dataSource": "VarImageImp",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarDescriptionImp": {
+					"type": "input",
+					"top": 49,
+					"left": 15,
+					"width": 176,
+					"height": 351,
+					"dataSource": "VarDescriptionImp",
+					"class": "Etiquette_normale",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImageImp1": {
+					"type": "input",
+					"top": 431,
+					"left": 14,
+					"width": 150,
+					"height": 100,
+					"dataSource": "VarImageAD1",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImageImp2": {
+					"type": "input",
+					"top": 431,
+					"left": 207,
+					"width": 150,
+					"height": 100,
+					"dataSource": "VarImageAD2",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImageImp3": {
+					"type": "input",
+					"top": 431,
+					"left": 400,
+					"width": 150,
+					"height": 100,
+					"dataSource": "VarImageAD3",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette1": {
+					"type": "input",
+					"top": 512,
+					"left": 116,
+					"width": 45,
+					"height": 16,
+					"dataSource": "VarTripletteAD1",
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette2": {
+					"type": "input",
+					"top": 512,
+					"left": 309,
+					"width": 45,
+					"height": 16,
+					"dataSource": "VarTripletteAD2",
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette3": {
+					"type": "input",
+					"top": 512,
+					"left": 502,
+					"width": 45,
+					"height": 16,
+					"dataSource": "VarTripletteAD3",
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarCDImp": {
+					"type": "input",
+					"top": 24,
+					"left": 2,
+					"width": 557,
+					"height": 24,
+					"dataSource": "VarCDImp",
+					"class": "Petite_écriture",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 409,
+					"left": 16,
+					"width": 356,
+					"height": 17,
+					"class": "Champ_grand",
+					"text": "Diapositives existantes dans AsaDia :"
+				},
+				"VarImageImp4": {
+					"type": "input",
+					"top": 557,
+					"left": 14,
+					"width": 100,
+					"height": 150,
+					"dataSource": "VarImageAD1",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette4": {
+					"type": "input",
+					"top": 688,
+					"left": 66,
+					"width": 45,
+					"height": 16,
+					"dataSource": "VarTripletteAD1",
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImageImp5": {
+					"type": "input",
+					"top": 557,
+					"left": 123,
+					"width": 100,
+					"height": 150,
+					"dataSource": "VarImageAD2",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette5": {
+					"type": "input",
+					"top": 688,
+					"left": 175,
+					"width": 45,
+					"height": 16,
+					"dataSource": "VarTripletteAD2",
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImageImp6": {
+					"type": "input",
+					"top": 557,
+					"left": 232,
+					"width": 100,
+					"height": 150,
+					"dataSource": "VarImageAD3",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette6": {
+					"type": "input",
+					"top": 688,
+					"left": 284,
+					"width": 45,
+					"height": 16,
+					"dataSource": "VarTripletteAD3",
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImageImp7": {
+					"type": "input",
+					"top": 557,
+					"left": 341,
+					"width": 100,
+					"height": 150,
+					"dataSource": "VarImageAD4",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette7": {
+					"type": "input",
+					"top": 688,
+					"left": 393,
+					"width": 45,
+					"height": 16,
+					"dataSource": "VarTripletteAD4",
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarImageImp8": {
+					"type": "input",
+					"top": 557,
+					"left": 450,
+					"width": 100,
+					"height": 150,
+					"dataSource": "VarImageAD5",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarTriplette8": {
+					"type": "input",
+					"top": 688,
+					"left": 502,
+					"width": 45,
+					"height": 16,
+					"dataSource": "VarTripletteAD5",
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 723,
+					"left": 13,
+					"width": 356,
+					"height": 17,
+					"class": "Champ_grand",
+					"text": "Aucune diapositive d'AsaDia n'a été trouvée"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 753,
+					"left": 13,
+					"width": 356,
+					"height": 17,
+					"class": "Champ_grand",
+					"text": "Diapositives existantes dans AsaDia (suite) :"
+				},
+				"VarTriplette9": {
+					"type": "input",
+					"top": 62,
+					"left": 296,
+					"width": 152,
+					"height": 13,
+					"dataSource": "VarTailleImage",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

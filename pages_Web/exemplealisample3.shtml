@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+		  <!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+        <div id="contenu1" class="textebanalgrand">
+              <br />
+          <ul class="breadcrumb">
+              <li><a href="w2exemplealisample0.html">Exemple</a></li>
+              <li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+              <li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+              <li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+                        
+          </ul>
+          <br />
+          <p class="textecentre"><b>Le caractère contrôlé est  (poids des unités)</b>
+          &#151;
+          <span class="titrepage">cliquez sur le bouton "quantitatif" pour poursuivre</span>
+          </p>
+              <br />
+       
+          <p class="textecentre">
+            <img SRC="images/Image3.gif" WIDTH=900 HEIGHT=540 border="0" usemap="#Map" /> 
+            <map name="Map">
+              <area shape="rect" coords="305,90,500,180" href="w2exemplealisample4.html" />
+            </map>
+          </p>
+          <br />
+
+        </div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

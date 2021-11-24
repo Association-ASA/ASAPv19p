@@ -1,0 +1,1 @@
+﻿## LOG_CreateLine($1)---

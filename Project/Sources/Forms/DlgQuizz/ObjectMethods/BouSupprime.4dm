@@ -1,0 +1,3 @@
+READ WRITE:C146([QuizzSuivi:32])
+ALL RECORDS:C47([QuizzSuivi:32])
+DELETE SELECTION:C66([QuizzSuivi:32])

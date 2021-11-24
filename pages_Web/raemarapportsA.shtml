@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Reports of RAEMA</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemarapports.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau français" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+        
+				<!--4dinclude menuraemaA.shtml-->					
+				<br />
+        <p class="grandtitrepage">
+            Reports of RAEMA
+        </p>
+				<br />
+        Each scheme leads to the edition of two reports for all participants: a <b>general report</b> and an <b>individual report</b>.
+       
+        <p class="grandhautpage">
+         <br />
+         The general report
+        </p>
+				<div class="imageasadiad">
+          <a href="pdf/RG60.pdf">
+            <img width="150" alt="general report" src="images/RG.PNG" />
+          </a>
+          <p class="textepetitcentre">
+            Click on the picture <br />to download an exemple
+          </p>
+        </div>
+        <div class="cgtexteimaged taille16">
+          The general report contains three parts:
+          
+          <p class="grandhautpagedecale">
+            The general data
+          </p>
+          This part includes the <b>number of participants</b>, the distribution (in days) of the <b>sending delays</b> of the packages,
+          the <b>level of concentration</b> for each microorganism, the <b>size</b> of the samples,
+          the terms of <b>homogeneity and stability control</b>, the <b>microorganisms</b> that can be enumerated.
+          
+          <br />
+          
+          <p class="grandhautpagedecale">
+            Data on analytical techniques
+          </p>
+          It includes details concerning the <b>treatment of samples</b> as they are communicated by laboratories,
+          and <b>parameters</b> (such as method, culture medium, preparation, incubation temperature and duration)
+          for each microorganism.
+          
+          <p class="grandhautpagedecale">
+            Performance assessment
+          </p>
+          Performance assessment is based on the evaluation of the <b>trueness</b> for all RAEMA schemes.<br />
+          Evaluation of the <b>precision</b> is also realized for Powder RAEMA.<br />
+          The <b>assigned value</b> for the contamination, <b>standard deviation</b> for proficiency assessment and <b>interlaboratorie’s standard deviation</b>
+          are given for each microorganism in log CFU/g.<br />
+          Additionally, the <b>standard deviation of precision</b> and <b>reproducibility</b>
+          are supplied for Powder RAEMA.
+        </div>
+        
+        <p class="grandhautpage">
+         <br />
+         The individual report
+        </p>
+				<div class="imageasadiad">
+          <a href="pdf/cr individuel raema49.pdf">
+            <img width="150" alt="Individual report" src="images/RI.PNG" />
+          </a>
+          <p class="textepetitcentre">
+            Click on the picture to <br />download an example
+          </p>
+        </div>
+        <div class="cgtexteimaged taille16">
+          The individual report contains three parts:
+          
+          <p class="grandhautpagedecale">
+            <b>Trueness</b> data
+          </p>
+          For each microorganism, one page gives the result obtained by the laboratory (in CFU/g and log CFU/g),
+          the <b>z-score</b> and general data on results from all participants for this microorganism
+          (number of laboratories participating to the test, number of laboratories included in the statistical analysis,
+          assigned value for the contamination, standard deviation for proficiency assessment, number of laboratories which obtain satisfactory,
+          questionable and unsatisfactory results). A graphic represents results of all participants; a star symbolizes the result of the concerned laboratory.
+          
+         
+          <p class="grandhautpagedecale">
+            <b>Precision</b> data
+          </p>
+          For Powder RAEMA, the individual report gives precision data.<br />
+          For each enumeration of microorganism, the <b>55 results</b> (in CFU/g and log CFU/g),
+          the <b>standard deviation</b> and the precision <b>indication</b> are related.
+          Like the trueness, a graphic represents results of all participants; and a star symbolizes the result of the concerned laboratory.
+
+          <br />
+          
+          <p class="grandhautpagedecale">
+            Evolution of proficiency
+          </p>
+          For Powder RAEMA, data of trueness, precision and qualitative analysis are <b>followed in time</b>.
+          In this way, the laboratory can see the evolution of its performances.
+          <br /><br />
+        </div>
+      </div>
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+	

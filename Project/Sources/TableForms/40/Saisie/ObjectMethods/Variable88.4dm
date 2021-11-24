@@ -1,0 +1,1 @@
+[Diapositives:40]Frequence:17:=Self:C308->{Self:C308->}

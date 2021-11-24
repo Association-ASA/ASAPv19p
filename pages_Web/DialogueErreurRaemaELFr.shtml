@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		 <!--4dinclude HeaderAsa.shtml-->
+	<title><!--4dVAR TitrePage--></title>
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+		</div>
+		
+		<div id="corps">
+			
+		
+			<div id="contenu1">
+				<p class="hautpage">
+					Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus
+				</p>
+					<br /><br /> <br /><br />
+				<p class="hautpage rouge">
+					Vérification des données
+				</p>
+				<p class="hautpage bleu">
+					Après vérification des informations que vous avez saisies, 
+					<br />
+					il apparait que le formulaire est incorrect 
+          			pour la raison suivante :
+				</p>
+						<br />
+				<p class="hautpage">
+					<!--4DVar MotifRefus-->
+						<br /><br /> <br /><br />
+					Cliquer sur le bouton ci-dessous pour remplir le formulaire					
+					<br />
+					<input class="textebanalgrand" type="button" 
+						value="Retourner au formulaire" 
+						name="Précédente" onClick="history.go(-1)" />
+				</p>
+							<br /><br /><br /><br /><br /><br />
+				<p class="hautpage"> 
+					Si le problème persiste, contacter l'association
+						<br />						
+					<a href="mailto:asa-spv@wanadoo.fr">
+						Envoyer un mail à l'ASA
+					</a>
+				</p>
+				
+			</div>
+		
+		</div>
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+		
+	</body>
+</html>

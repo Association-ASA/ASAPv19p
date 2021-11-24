@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>AsaContact</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps2" class="textebanalgrand">
+      <br /><br /><br /><br />
+      <p class="titrepage">ASA Contact 45 est arrivé !!!</p>
+			<br /><br />
+      <div width="25%" class="imageasag textedecale">
+        <img src="IMAGES/AsaContact45.png" width="250" />
+      </div>
+      <div width="30%" class="textedecale">
+        <span class="plus">SOMMAIRE</span> <br /><br />
+Edito p. 1 <br /><br />
+<b>ARTICLES DE FOND </b><br />
+Premier cas clinique vMCJ chez un hétorozygote p. 3 - 4 par <b>Jeanne BRUGERE-PICOUX</b> <br />
+ Les controverses de la cynophagie actuelle   p. 5 - 6 par <b>Brigitte ENRIQUEZ</b> <br />
+Abattoirs d’animaux de boucherie  p. 7 à 9 par <b>Gilles QUINET</b> <br /><br />
+<b>BREVES</b> <br />
+Biofutur n° 378-380 p. 10 - 11 <br />
+Un clin d’oeil sur l’Ecole Vétérinaire d’Alfort de ... 1832 !  p. 12 par <b>Gilles QUINET</b> <br /><br />
+<b>VIE DE L’ASSOCIATION</b> <br />
+Vie de l’Association p. 13 - 14 par <b>Gilles QUINET</b> <br />
+      </div>
+          
+      <br /><br />
+      <p class="hautpage">
+					Pour télécharger AsaContact 45, cliquez sur le lien suivant : <br />
+					<a id="ac" href="https://www.dropbox.com/s/v044bbfkhvtvpn5/AsaContact45%202.pdf?dl=0">AsaContact 45</a>
+			</p>
+				
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+    
+      <script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery     -->
+			<script type="text/javascript" src="/js/asacontact.js"></script>
+
+	</body>
+	
+</html>

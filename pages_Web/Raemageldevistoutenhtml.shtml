@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Devis RAEMA Gel</title>
+		<meta name="keywords" content="asa, sante, publique, veterinaire, association, hygiene, aliment, 
+			alimentaire, intercomparasion, cofrac, accreditation, abattoir, photographies, asadia, inspection, 
+			médecine, pharmacien, droit" />
+		<meta name="description" content="l'asa a pour but la promotion de la santé publique vétérinaire" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Pragma" content="no-cache"/>
+		<link href="styles/style-asa.css" rel="stylesheet" type="text/css" />
+		<link href="styles/style-clarisse.css" rel="stylesheet" type="text/css" />
+		<link href="styles/style-claude.css" rel="stylesheet" type="text/css" />
+		<link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+		<link href="styles/menucss.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	
+	<body>
+    
+		<div id="header" align="center">
+			
+					<img src="images/logoasa.jpg" alt="logo" width="528" />  
+					<br /><p class="grandtitrecentre">Association de santé publique vétérinaire (asa-spv)</p><br />
+					<div id="menu" >
+							<ul id="menu-demo2" class="textecentre devant">
+								<li><a href="w2index.shtml" class="titrepage"><img src="images/home.png" alt="Accueil" width="30px" /></a></li>
+						    <li><a href="w2contact.shtml">Contact</a></li>
+						    <li><a href="#">L'ASA</a>
+									<ul class="ssmenumoyen">
+										<li><a href="w2AsaQuiSommeNous.shtml">  Association</a></li>
+										<li><a href="w2instances.shtml">  Instances</a></li>
+										<li><a href="w2asapermanents.shtml">  Permanents</a></li>
+										<li><a href="w2adherents.shtml">  Espace adhérents</a></li>
+									</ul>
+								</li>
+    
+								<li><a href="#">RAEMA</a>
+									<ul class="ssmenuconfort">
+										<li><a href="w2raemarenseignement.shtml">  Généralités sur les CIL</a></li>
+										<li><a href="w2raemapresentation.shtml">  RAEMA poudre et gel</a></li>
+										<li><a href="w2raemarapports.shtml">  Les rapports de campagne</a></li>
+										<li><a href="w2raematarifs.shtml">  Les tarifs du RAEMA</a></li>  
+										<li><a href="w2raemaactualites.shtml">  Agenda des RAEMA</a></li>
+										<li><a href="w2raemapourquoi.shtml">  Pourquoi adhérer au RAEMA</a></li>
+										<li><a href="w2raemaabonnement.shtml">  Informations pratiques</a></li>
+										<li><a href="w2raemaaccueil.shtml">  Accès participants</a></li>
+									</ul>
+								</li>
+								<li><a href="#">AsaDia</a>
+									<ul class="ssmenumoyen">
+										<li><a href="w2asadiapresentation.shtml">  Présentation du projet</a></li>
+										<li><a href="w2asadia.shtml">  Découvrir AsaDia 2</a></li>
+										<li><a href="w2asadia2amelioration.shtml">  Améliorer AsaDia 2</a></li>
+									</ul>
+								</li>
+    
+							<li>
+								<a href="w2alisample.shtml">Alisample</a>
+							</li>
+							
+							<li>
+										 <a href="w2pageasacontact.shtml">AsaContact</a>
+							</li>		
+							 
+							<li>
+										 <a href="w2activites.shtml">Activités scientifiques</a>
+							</li>		
+																																		
+							<li><a href="#">Documentation</a>
+								<ul class="ssmenutoutpetit">
+									<li><a href="w2bib1_index.shtml">  Bibliothèque SPV</a></li>
+									<li><a href="w2tox_index.shtml">  Toxicologie</a></li>
+									<li><a href="w2liens.shtml">  Liens</a></li>
+								</ul>
+							</li>
+							
+								<li><a href="#">Adhérer</a>
+									<ul class="ssmenuconfort">
+										<li><a href="w2asapresentation.shtml">  Pourquoi adhérer à l'ASA ?</a></li>
+										<li><a href="w2asaadhesion.shtml">  Comment adhérer à l'ASA ?</a></li>
+										<li><a href="pdf/AdhesionASA.pdf">  Télécharger le formulaire   d'adhésion à l'ASA</a></li>
+									</ul>
+								</li>
+						
+							<li><a href="#">FAQ</a>
+								<ul class="ssmenumoyen">
+									<li><a href="w2raemafaq.shtml">  Questions sur le RAEMA</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+		</div>
+		
+		<div id="corps">
+			<br/><br/>
+			<p class="grandtitrepage">Devis RAEMA gel : année 2018</p>
+			<div id="devarticle" class="textebanalgrand">
+			 <br />
+			  <p class="grandhautpage">Participez-vous déjà au RAEMA ?</p>
+				<p class="textecentre">
+				  <input type="radio" id="raemaok" name="radio" >Oui</input>     
+				  <input type="radio" id="raemako" name="radio" >Non</input>
+				</p>
+				<form action="mw2WebDevisRecevoir" method="post">
+				  <div id="identificationlabo">
+					  <p class="grandhautpagedecale">Identifiez-vous</p>
+					  <label for="numlabo">   Entrer votre n° de labo</label>
+					  <input type="text" id="numlabo" name="numlabo" size="6px" maxlength="3" />
+					  <label for="mdplabo">    et votre mot de passe</label>
+					  <input type="text" id="mdplabo" name="mdplabo" maxlength="10" />
+					  <button id="envoi"  class="boutonbleu" >Envoyer</button>
+					  <p id="detaillabo" class="textecentre"></p>
+				  </div>
+				  <div id="nouveaulabo" class="textedecale30">
+						<p class="grandhautpagedecale">Précisez nom et coordonnées de votre laboratoire </p>
+						<table>
+							<tr> 
+								<td class="colonneadroite"> 
+									<label for="Nom">Nom du laboratoire<span class="rouge">*</span> </label>
+								</td>
+								<td class="colonneagauchel"> 
+									<input class="colonneagauchel" type="text" name="Nom" id="devlabnom" size="85" /> 
+								</td>
+							</tr>
+							<tr> 
+								<td class="colonneadroite"> 
+									 <label for="adresse">Adresse postale<span class="rouge">*</span> </label>
+								</td>
+								<td class="colonneagauchel"> 
+									<input class="colonneagauchel" type="text" name="adresse" id="devlabadresse" size="85" /> 
+								</td>
+							</tr>
+							<tr> 
+								<td class="colonneadroite"> 
+									 <label for="cp">code postal et ville <span class="rouge">*</span> </label>
+								</td>
+								<td class="colonneagauchel"> 
+									<input class="colonneagauchel" type="text" name="cp" id="devlabcp" size="5" />
+									<input class="colonneagauchel" type="text" name="ville" id="devlabville" size="55" /> 
+								</td>
+							</tr>
+							<tr> 
+								<td class="colonneadroite"> 
+									 <label for="pays">Pays</label>
+								</td>
+								<td class="colonneagauchel"> 
+									<input class="colonneagauchel" type="text" name="pays" id="pays" size="55" /> 
+								</td>
+							</tr>
+							<tr> 
+								<td class="colonneadroite"> 
+									<label for="mail">Adresse mail <span class="rouge">*</span> </label>
+								</td>
+								<td class="colonneagauchel"> 
+									<input class="colonneagauchel" type="text" name="mail" id="devlabmail" size="65" maxlenght="65" onChange="verif_mail(this)"/> 
+								</td>
+							</tr>
+						</table>
+				  </div>
+				  <div id="detailraemagel">
+						<br /><br />
+						<p class="grandhautpage">Campagne de mai 2018</p>
+						<table class="tbdeviscentre">
+							<tr >
+								<td class="ettbdevis" width="20%"></td>
+								<td class="ettbdevis" width="12%">Bacillus cereus *</td>
+								<td class="ettbdevis" width="12%">Pseudo-<br/>monas</td>
+								<td class="ettbdevis" width="15%">Flore<br/>lactiques *</td>
+								<td class="ettbdevis" width="18%">Levures-<br/>Moississures<br/>ensemble</td>
+								<td class="ettbdevis" width="18%">Levures-<br/>Moississures<br/>séparément</td>
+							</tr>
+							<tr class="ligneimpaire">
+								<td class="litbdevis">Envoi principal</td>
+								<td class="litbdevis"><input type="checkbox" name="cbmaibacillus"></td>
+								<td class="litbdevis"><input type="checkbox" name="cbmaipseudo"></td>
+								<td class="litbdevis"><input type="checkbox" name="cbmailactiques"></td>
+								<td class="litbdevis"><input type="checkbox" name="cbmailmensemble"></td>
+								<td class="litbdevis"><input type="checkbox" name="cbmailmsepare"></td>
+							</tr>
+							<tr class="lignepaire">
+								<td class="litbdevis">Pots supplémentaires <b>AVEC</b> rapport</td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsuparmaibacillus"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsuparmaipseudo"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsuparmailactiques"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsuparmailmensemble"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsuparmailmsepare"></td>
+							</tr>
+							<tr class="ligneimpaire">
+								<td class="litbdevis">Pots supplémentaires <b>SANS</b> rapport</td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrmaibacillus"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrmaipseudo"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrmailactiques"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrmailmensemble"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrmailmsepare"></td>
+							</tr>
+						</table>
+						<span class="petittextevert">
+													* sous accréditation Cofrac (Accréditation N° 1-1836,
+							<a target="_blank" href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864"><i><u>portée disponible sur le site du Cofrac</u></i></a> )
+						</span>
+						<br /><br />
+						<p class="grandhautpage">Campagne de décembre 2018</p>
+						<table class="tbdeviscentre">
+							<tr >
+								<td class="ettbdevis" width="20%"></td>
+								<td class="ettbdevis" width="12%">Bacillus cereus *</td>
+								<td class="ettbdevis" width="12%">Pseudo-<br/>monas</td>
+								<td class="ettbdevis" width="15%">Flore<br/>lactiques*</td>
+								<td class="ettbdevis" width="18%">Levures-<br/>Moississures<br/>ensemble</td>
+								<td class="ettbdevis" width="18%">Levures-<br/>Moississures<br/>séparément</td>
+							</tr>
+							<tr class="ligneimpaire">
+								<td class="litbdevis">Envoi principal</td>
+								<td class="litbdevis"><input type="checkbox" name="cbdecbacillus"></td>
+								<td class="litbdevis"><input type="checkbox" name="cbdecpseudo"></td>
+								<td class="litbdevis"><input type="checkbox" name="cbdeclactiques"></td>
+								<td class="litbdevis"><input type="checkbox" name="cbdeclmensemble"></td>
+								<td class="litbdevis"><input type="checkbox" name="cbdeclmsepare"></td>
+							</tr>
+								<tr class="lignepaire">
+								<td class="litbdevis">Pots supplémentaires <b>AVEC</b> rapport</td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupardecbacillus"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupardecpseudo"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupardeclactiques"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupardeclmensemble"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupardeclmsepare"></td>
+							</tr>
+								<tr class="ligneimpaire">
+								<td class="litbdevis">Pots supplémentaires <b>SANS</b> rapport</td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrdecbacillus"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrdecpseudo"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrdeclactiques"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrdeclmensemble"></td>
+								<td class="litbdevis"><input type="text" size="1px" name="nbpotsupsrdeclmsepare"></td>
+							</tr>
+						</table>
+						<span class="petittextevert">
+													* sous accréditation Cofrac (Accréditation N° 1-1836,
+							<a target="_blank" href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864"><i><u>portée disponible sur le site du Cofrac</u></i></a> )
+						</span>
+						<br /><br />
+						<input id="totalht" type="hidden" name="valht" value="" />
+						<p id="totalht1" class="grandtitrepage">
+							ici bientôt le HT
+						</p>
+						
+						<br/><br/>
+						<p class="textecentre">
+							<input type="submit" name="envoyer" value="Envoyer la demande de devis" class="paragraphe" />
+						</p>
+						<br /><br />
+				  </div>
+				</form>
+			</div>
+			<div id="devaside" class="textebanal">
+			  <br /><br />
+			  <span class="textebanalgrand"><b>Les Tarifs 2018</b><br/></span><br />
+			  <b>Pour les 2 campagnes</b><br />
+			  - 305 € H.T. pour 1 essai <br />
+			  - 355 € H.T. pour 2 essais<br />
+			  - 386 € H.T. pour 3 essais<br/>
+			  - 406 € H.T. pour 4 essais<br/>
+			  - 427 € H.T. pour 5 essais<br/>         
+			  <b>Pour une seule campagne</b><br/> 
+			  - 254 € H.T. pour 1 essai<br />
+			  - 305 € H.T. pour 2 essais<br />
+			  - 335 € H.T. pour 3 essais<br />
+			  - 355 € H.T. pour 4 essais<br />
+			  - 376 € H.T. pour 5 essais<br />
+			 <br />
+			  Pot supplémentaire <b>AVEC</b> rapport 102 € H.T. par pot.<br />
+			  Pot supplémentaire <b>SANS</b> rapport 25 € H.T. par pot.<br/> 
+			 <br />
+			 <br />
+			  <b>Principe de facturation</b><br/>
+			  Pour une demande sur une seule campagne, le tarif est appliqué pour les pots de l’envoi principal,
+			  le ou les envois secondaires avec rapport COFRAC ou non et les pots supplémentaires.<br/>
+			  Pour une demande sur les deux campagnes, le prix est calculé sur le nombre commun de détermination
+			  et l’excédent est compté comme pot supplémentaire sans rapport.<br/>
+			 <br />
+			  <b>Pourquoi ces tarifs ?</b><br/>
+			  Il est de l’intérêt des laboratoires que le nombre de participants soit suffisant
+			  pour permettre d’obtenir des résultats statistiquement robustes.<br/>
+			  C’est pourquoi, les tarifs indiqués les incitent fortement à participer
+			  aux deux campagnes (mai et décembre) et à la détermination d’un grand nombre de germes.<br/>
+			 <br />
+			</div>	 
+		</div>
+   
+		<div id="pied">
+				Site officiel de l'association Animal - Société - Aliment (ASA) <br /> Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -
+				7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex    FRANCE<br />
+				Téléphone : <b>+ 33 (0)1 56 29 36 30</b>       Fax : <b>+ 33 (0)9 61 24 33 81</b>       
+				e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br />
+				<em>Pour signaler un problème, cliquez sur le lien suivant 
+				<a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+				<br /><br />
+		</div>
+		<!-- <script type="text/javascript" src="js/devisraemagel.js"></script>   -->
+	</body>
+    
+</html>
+
+

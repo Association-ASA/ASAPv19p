@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<title>ILC, what is it ?</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemacil.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau français" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps" class="textebanalgrand">
+		
+				
+				<p class="textecentre">
+				  <br /> 
+				    <a href="w2raemarenseignementA.shtml">Back to General points</a>
+				  <br />
+				</p>
+				
+      <p class="titrepage">
+          Inter-laboratories Comparison (ILC), what is it?
+        <br /><br />
+      </p>
+			<p class="imageasadiad">
+				<img width="270px" alt="ILC" src="IMAGES/eilA.png" />
+			</p>
+      <p class="textedecale30">
+        An Inter-laboratories Comparison is defined as follows : organization, execution and assessment of measurement
+        or tests on the same samples or similar samples by two laboratories or more, according to predetermined conditions (NF EN ISO/CEI 17043).<br />
+        An Inter-laboratories Comparison can be classified in three entities:<br />
+        - “Reference materials” which assign a consensual value to a characteristic of an item.<br />
+        - “Performance method” which evaluate the accuracy (trueness and precision) of a measurement method or a test method.<br />
+        - “Proficiency testing” which evaluate the ability of laboratories.<br />
+      </p>
+			
+			 <br /><br /><p class="titrepage">
+          Participate, what for?
+      </p>
+			 <p class="imageasadia">
+				<img width="310px" alt="Laboratory" src="IMAGES/labo.jpg" />
+			</p>
+			<p class="textedecale30">
+        <b>RAEMA</b> (Réseau d’Analyses et d’Echanges en Microbiologie des Aliments) is a <b>Proficiency testing</b>. <br />
+        Its goals are:<br />
+        - Assessment and aftercare of laboratorie’s performances.<br />
+        - Comparison of the laboratory’s results to those obtained by other participants.<br />
+        - Highlight no-conform works in laboratories that lead to the setting up of corrective actions.<br />
+        - Supply informations required for being confident in the fiability of the results, which is essential for laboratories, their customers and accreditation bodies.<br />
+        - Keeping the accreditation of analysis laboratories. The standard NF EN ISO 17025 and the technical guide LAB GTA 59 order, to accreditaded laboratories,
+        a participation, twice a year, to a proficiency testing scheme.
+        </p>
+      <br />
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+</html>

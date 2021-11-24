@@ -1,0 +1,79 @@
+<br /><br />         <div class="textebilan">
+            <b>Bilan de vos réponses au questionnaire</b>:<br />
+            Le questionnaire a permis de tester vos connaissances dans les domaines suivants : Diagnose de l'espèce, Lésions parasitaires, Actinomycose<br /><br />     <div class="tablebilan">
+       <b>Pour le thème "Actinomycose"</b> : 
+       <table>
+        <tr>
+          <th class="tbbilanet" width="35%">Question</th>
+          <th class="tbbilanet" width="25%">Votre réponse</th>
+          <th class="tbbilanet" width="25%">La bonne réponse</th>
+          <th class="tbbilanet" width="15%">Evaluation*</th>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne" >Question 3 : Comment s'appelle cette lésion</td>
+          <td class="tbbilanligne" >Actinomycose</td>
+          <td class="tbbilanligne">Actinomycose</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="L’actinomycose se présente sous forme de grains enchâssés dans un tissu conjonctif dense et abondant.">&#128515;</span></td>
+        </tr>
+      </table>
+       <div class="textenews">
+       * Vous pouvez faire apparaitre le motif de l'évaluation en glissant la souris sur l'émoticon
+       </div>
+     <div class="tablebilan">
+       <b>Pour le thème "Diagnose de l'espèce"</b> : 
+       <table>
+        <tr>
+          <th class="tbbilanet" width="35%">Question</th>
+          <th class="tbbilanet" width="25%">Votre réponse</th>
+          <th class="tbbilanet" width="25%">La bonne réponse</th>
+          <th class="tbbilanet" width="15%">Evaluation*</th>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne" >Question 1 : Quelle est l'espèce concernée par la lésion ?</td>
+          <td class="tbbilanligne" >Espèce bovine</td>
+          <td class="tbbilanligne">Espèce porcine</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="Le foie d'un bovin ne présente pas de quadrillage.">&#128545;</span></td>
+        </tr>
+      </table>
+       <div class="textenews">
+       * Vous pouvez faire apparaitre le motif de l'évaluation en glissant la souris sur l'émoticon
+       </div>
+     <div class="tablebilan">
+       <b>Pour le thème "Lésions parasitaires"</b> : 
+       <table>
+        <tr>
+          <th class="tbbilanet" width="35%">Question</th>
+          <th class="tbbilanet" width="25%">Votre réponse</th>
+          <th class="tbbilanet" width="25%">La bonne réponse</th>
+          <th class="tbbilanet" width="15%">Evaluation*</th>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne" >Question 2 : Choisir, parmi ces lésions, lesquelles sont d'origine parasitaire</td>
+          <td class="tbbilanligne" >Photo 1</td>
+          <td class="tbbilanligne">Photo 1, Photo 2, Photo 4</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="Lésion typique d'oesophagostomose.">&#128515;</span></td>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne" >Question 2 : Choisir, parmi ces lésions, lesquelles sont d'origine parasitaire</td>
+          <td class="tbbilanligne" >Photo 2<br /><b>Case non cochée</b></td>
+          <td class="tbbilanligne">Photo 1, Photo 2, Photo 4</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="Nodules calcifiés sans réaction du nœud lymphatique : strongylose.">&#128545;</span></td>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne" >Question 2 : Choisir, parmi ces lésions, lesquelles sont d'origine parasitaire</td>
+          <td class="tbbilanligne" >Photo 3<br /><b>Case non cochée</b></td>
+          <td class="tbbilanligne">Photo 1, Photo 2, Photo 4</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="Très petits abcès miliaires, cernés d'une auréole congestive caractéristique d'un origine infectieuse.">&#128515;</span></td>
+        </tr>
+        <tr class="tbbilanligne">
+          <td class="tbbilanligne" >Question 2 : Choisir, parmi ces lésions, lesquelles sont d'origine parasitaire</td>
+          <td class="tbbilanligne" >Photo 4</td>
+          <td class="tbbilanligne">Photo 1, Photo 2, Photo 4</td>
+          <td class="tbbilanligne"><span class="emoticonbilan" title="Lésion typique de cysticercose.">&#128515;</span></td>
+        </tr>
+      </table>
+       <div class="textenews">
+       * Vous pouvez faire apparaitre le motif de l'évaluation en glissant la souris sur l'émoticon
+       </div>
+Bilan général : <br />
+</div><br /><br />

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <title>Photos commentées</title>
+ 
+     <style type="text/css">
+       #fleche1{
+          position: absolute;
+          z-index: 50;
+        }
+       #fleche2{
+          position: absolute;
+          z-index: 50;
+        }
+        #fleche3{
+          position: absolute;
+          z-index: 50;
+        }
+        #fleche4{
+          position: absolute;
+          z-index: 50;
+        }
+        #photo{
+          position: relative;
+          z-index: 10;
+        }
+    </style>
+  </head>
+
+  <body>
+    <input type="text" id="numdiapo" placeholder="n° de diapo">
+    <input type="text" id="pch" placeholder="% horizontal">
+    <input type="text" id="pcv" placeholder="% vertical">
+    <button id="majPremier">Chercher la diapo</button>
+    <button id="majDeuxieme">Mettre les flèches</button><br /><br />
+    
+    <div id="photo"  width="1200px">
+        <img
+             id="fleche1"
+             src="images/flecheadroite.PNG"
+             alt="flèche à droite"
+             width="35px"
+             title=""
+         />
+        <img
+             id="fleche2"
+             src="images/flecheenbas.PNG"
+             alt="flèche en bas"
+             width="35px"
+             title=""
+         />
+        <img
+             id="fleche3"
+             src="images/flecheagauche.PNG"
+             alt="flèche à gauche"
+             width="35px"
+             title=""
+         />
+        <img
+             id="fleche4"
+             src="images/flecheenhaut.PNG"
+             alt="flèche en haut"
+             width="35px"
+             title=""
+         />
+      <img id="photodia" src="images/11582.jpg" width="1200px">
+    </div>
+    
+    
+
+    <script src="jquery.js"></script>
+    <script>
+      function choixNavigateur() 
+      {
+        if (navigator.userAgent.indexOf('MSIE 6')!=-1) 
+        return new ActiveXObject('Microsoft.XMLHTTP');
+        else
+        return new XMLHttpRequest();  
+      }
+  
+      $(function() {
+        $('#majPremier').click(function() {
+          var numdia = $('#numdiapo').val();
+          var lasrc = "images/"+numdia+".jpg"
+          $('#photodia').attr('src',lasrc);
+        });
+    
+        $('#majDeuxieme').click(function() {
+          var numdia = $('#numdiapo').val();
+          var lasrc = "images/"+numdia+".jpg"
+          $('#photodia').attr('src',lasrc);
+          var doc = "WebAfficheFleche"+numdia;
+          var requete = choixNavigateur();
+          requete.open("post",doc,false);
+          requete.send(null);
+          var reponse = requete.responseText;
+          /*
+           réponse type
+           "flecheadroite.PNG;X;Y;commentaire$
+           flecheenbas.PNG;X;Y;commentaire$ ...
+          */
+         
+          for (var i=1;i<5;i=i+1) 
+          {
+          /* Traitement de la ligne */
+            var pos = reponse.indexOf('£');
+            var ligne = reponse.substring(0,pos);
+             // raccourcissement de la chaine
+            reponse = reponse.substring(pos+1);
+          /* type d'image */
+            var pos = ligne.indexOf(';');
+            var lasrc = 'images/'+ligne.substring(0,pos);
+            varcible = '#fleche'+i
+            $(varcible).attr('src',lasrc);
+          /* coordonnées */
+            var largeur = $('#photodia').width();
+            var hauteur = $('#photodia').height();
+            ligne = ligne.substring(pos+1);
+            var pos = ligne.indexOf(';');
+            var coordX =  ligne.substring(0,pos);
+            ligne = ligne.substring(pos+1);
+            var pos = ligne.indexOf(';');
+            var coordY =  ligne.substring(0,pos);
+            if (coordX+coordY=="") {
+              $(varcible).hide();
+            }
+            else{
+              var dX = 0;
+              var dY = 0;
+              switch (i) {
+                case 1 :
+                  dX =-35;
+                  dY=-14;
+                break;
+              
+                case 2 :
+                dX=-14;
+                dY=-35;
+                break;
+              
+              case 3 :
+                dY=-14;
+                break;
+              
+              case 4 :
+                dX=-14;
+                break;
+              }
+              $(varcible).show();
+              var haut = Math.round(hauteur*coordY)+dY;
+              var droite = Math.round(largeur*coordX) + dX;
+            /* déplacement */
+              $(varcible).css({
+                top: haut,
+                left: droite,
+              });
+            /* le commentaire */
+              var com = ligne.substring(pos+1);
+              $(varcible).attr('title',com);
+              $(varcible).attr('alt',com);
+            }
+          }
+        });
+      });
+    </script>
+ 
+
+  </body>
+
+</html>

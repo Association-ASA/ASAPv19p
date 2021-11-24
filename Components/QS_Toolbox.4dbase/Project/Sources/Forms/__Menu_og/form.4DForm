@@ -1,0 +1,255 @@
+﻿{
+	"destination": "detailScreen",
+	"memorizeGeometry": true,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Limite",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 51,
+					"left": 0,
+					"width": 141,
+					"height": 97,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Image1701470810": {
+					"type": "picture",
+					"top": 0,
+					"left": 8,
+					"width": 79,
+					"height": 33,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/pictures/logo_QS.png"
+				},
+				"web": {
+					"type": "button",
+					"top": 0,
+					"left": 4,
+					"width": 83,
+					"height": 34,
+					"display": false,
+					"method": "ObjectMethods/web.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Version": {
+					"type": "input",
+					"top": 6,
+					"left": 88,
+					"width": 48,
+					"height": 10,
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_Componant_Version",
+					"class": "Summit_18",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"QS_TBX_4DVersion": {
+					"type": "input",
+					"top": 17,
+					"left": 88,
+					"width": 48,
+					"height": 10,
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_4DVersion",
+					"class": "Summit_18",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"visuCollection": {
+					"type": "button",
+					"top": 1,
+					"left": 88,
+					"width": 49,
+					"height": 33,
+					"shortcutKey": "h",
+					"display": false,
+					"method": "ObjectMethods/visuCollection.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Limite": {
+					"type": "line",
+					"top": 174,
+					"left": 105,
+					"width": 35,
+					"visibility": "hidden",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"btn_action": {
+					"type": "pictureButton",
+					"top": 84,
+					"left": 37,
+					"width": 64,
+					"height": 64,
+					"tooltip": "Action - right click to choose in a popup",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/main/btn_4Dcommand.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_action.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_systemInfo": {
+					"type": "pictureButton",
+					"top": 54,
+					"left": 73,
+					"width": 24,
+					"height": 24,
+					"tooltip": "System information",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/menu/btn_si.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_systemInfo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_camera": {
+					"type": "pictureButton",
+					"top": 54,
+					"left": 13,
+					"width": 24,
+					"height": 24,
+					"tooltip": "Screen shoot",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/menu/btn_camera.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_camera.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_bugs": {
+					"type": "pictureButton",
+					"top": 54,
+					"left": 43,
+					"width": 24,
+					"height": 24,
+					"tooltip": "Fixed bugs",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/menu/btn_bug.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_bugs.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_help": {
+					"type": "pictureButton",
+					"top": 54,
+					"left": 103,
+					"width": 24,
+					"height": 24,
+					"tooltip": "Help",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/menu/btn_help.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_help.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"progress": {
+					"type": "input",
+					"top": 36,
+					"left": 5,
+					"width": 130,
+					"height": 15,
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none"
+				},
+				"lastUpdate": {
+					"type": "input",
+					"top": 149,
+					"left": 2,
+					"width": 138,
+					"height": 23,
+					"dataSource": "Storage:C1525.text.update",
+					"textAlign": "center",
+					"fontFamily": "tahoma",
+					"fontSize": 8,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

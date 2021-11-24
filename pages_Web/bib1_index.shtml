@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Bibliothèque SPV : Présentation</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 					<br /> <br />
+					<P class="grandhautpage">Bibliographie</P>
+					<br /> 
+					<P class="textebanal">
+					Vous trouverez ici une douzaine de références bibliographiques pouvant 
+					constituer le noyau d'une petite bibliothèque de santé publique 
+					vétérinaire. Dans le souci de donner du sens &agrave; leur présentation, 
+					elles ont été regroupées par thèmes. On pourra toujours 
+					discuter 
+					une telle classification qui constitue en soi un parti pris. La
+					vocation de l'association Animal-Société-Aliment est de susciter, 
+					de soutenir, d'amplifier de telles controverses sur le thème de la 
+					santé publique vétérinaire : c'est de la confrontation 
+					des
+					idées et des points de vue que naît le mouvement.
+					</P>
+					<br /> <br />
+					<div class="xddecaleindex">
+						<P class="plus">1 Généralités</P>
+						<P class="textedecale30">1-1 Histoire</P>
+						<P class="xdn3 plusbleu"><A HREF="BIB1-1-1.shtml">1-1-1 Histoire de la santé publique 
+							vétérinaire et de la médecine vétérinaire</A>
+						</P>
+						<P class="xdn3 plusbleu"><A HREF="BIB1-1-2.shtml">1-1-2 Histoire de l'alimentation</A></P>
+						<P class="textedecale30">
+						<A HREF="BIB1-2.shtml">1-2 Droit de la SPV et droit vétérinaire
+						</A>
+						</P>
+						<P class="textedecale30 plusbleu">
+						<A HREF="BIB1-3.shtml">1-3 Anthropologie de la relation &agrave;   l'animal et de l'alimentation
+						</A>
+						</P>
+						<P class="plus">2 Les maladies animales</P>
+						<P class="textedecale30">2-1 Epidémiologie</P>
+						<P class="textedecale30">2-2 Sécurité économique des productions animales</P>
+						<P class="textedecale30">2-3 Zoonoses</P>
+						<P class="plus">3 <A HREF="BIB3.shtml">La sécurité sanitaire des aliments</A></P>
+						<P class="plus">4 La protection de l'animal</P>
+						<P class="plus">5 Les animaux dangereux</P>
+						<P class="plus">6 L'identification animale</P>
+						<P class="plus">7 L'alimentation animale</P>
+						<P class="plus">8 La pharmacie vétérinaire</P>
+						<P class="plus">9 Animal et environnement</P>
+						<br />
+					</div>
+			</div>
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	

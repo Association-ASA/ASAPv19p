@@ -1,0 +1,599 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1000,
+	"height": 650,
+	"markerBody": 480,
+	"markerBreak": 480,
+	"markerFooter": 480,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Image80": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 1185,
+					"height": 840,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Buttons/Fond Blanc.png"
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 603,
+					"left": 835,
+					"width": 162,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image1.png"
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 608,
+					"left": 832,
+					"width": 25,
+					"height": 20,
+					"dataSource": "ZZ9",
+					"action": "cancel",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 608,
+					"left": 859,
+					"width": 26,
+					"height": 20,
+					"dataSource": "ZZ1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Premier enreg"
+					},
+					"action": "firstRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 608,
+					"left": 891,
+					"width": 25,
+					"height": 25,
+					"dataSource": "ZZ2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg précédent"
+					},
+					"action": "previousRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 608,
+					"left": 920,
+					"width": 28,
+					"height": 25,
+					"dataSource": "ZZ3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Enreg. suivant"
+					},
+					"action": "nextRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable20": {
+					"type": "button",
+					"top": 606,
+					"left": 948,
+					"width": 21,
+					"height": 25,
+					"dataSource": "ZZ4",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Dernier enreg"
+					},
+					"action": "lastRecord",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 594,
+					"left": 968,
+					"width": 29,
+					"height": 45,
+					"stroke": "#FFFFFF",
+					"strokeWidth": 0.1
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte19": {
+					"type": "text",
+					"top": 18,
+					"left": 93,
+					"width": 111,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Nom Lésion : "
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 87,
+					"left": 20,
+					"width": 184,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Grand Type Lésionnel : "
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 87,
+					"left": 439,
+					"width": 171,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Type Lésionnel Précis : "
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 113,
+					"left": 39,
+					"width": 165,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Description Macro : "
+				},
+				"NomLésion": {
+					"type": "input",
+					"top": 18,
+					"left": 209,
+					"width": 470,
+					"height": 16,
+					"dataSource": "[DiaLesions:44]NomLesion:1",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ28": {
+					"type": "input",
+					"top": 43,
+					"left": 209,
+					"width": 377,
+					"height": 46,
+					"dataSource": "[DiaLesions:44]LesionsApparentees:10",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DescriptionType": {
+					"type": "input",
+					"top": 113,
+					"left": 209,
+					"width": 756,
+					"height": 106,
+					"dataSource": "[DiaLesions:44]DescriptionTypeMacro:4",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ17": {
+					"type": "input",
+					"top": 206,
+					"left": 210,
+					"width": 755,
+					"height": 91,
+					"dataSource": "[DiaLesions:44]FicheReflexe:12",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ18": {
+					"type": "input",
+					"top": 292,
+					"left": 209,
+					"width": 455,
+					"height": 16,
+					"dataSource": "[DiaLesions:44]Etiologie:6",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ26": {
+					"type": "input",
+					"top": 392,
+					"left": 209,
+					"width": 211,
+					"height": 16,
+					"dataSource": "[DiaLesions:44]JustificationConduite:8",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ59": {
+					"type": "input",
+					"top": 392,
+					"left": 516,
+					"width": 146,
+					"height": 16,
+					"dataSource": "[DiaLesions:44]Frequence:11",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 419,
+					"left": 209,
+					"width": 594,
+					"height": 64,
+					"dataSource": "[DiaLesions:44]ReferenceReglementaireUE:17",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Zone de défilement2": {
+					"type": "listbox",
+					"top": 492,
+					"left": 209,
+					"width": 264,
+					"height": 72,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Zone de défilement2.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Zone de défilement2_Column1",
+							"dataSource": "ZdDNLR",
+							"width": 249,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Arial",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"dataSource": "Entête1",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 12,
+								"fontWeight": "bold",
+								"fontStyle": "italic"
+							}
+						}
+					]
+				},
+				"GrandTypeLésionnel": {
+					"type": "input",
+					"top": 86,
+					"left": 209,
+					"width": 221,
+					"height": 16,
+					"dataSource": "[DiaLesions:44]GrandTypeLesionnel:2",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TypeLésionnelPrécis": {
+					"type": "input",
+					"top": 86,
+					"left": 615,
+					"width": 350,
+					"height": 16,
+					"dataSource": "[DiaLesions:44]TypeLesionnelPrecis:3",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 206,
+					"left": 85,
+					"width": 119,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Fiche réflexe : "
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 293,
+					"left": 94,
+					"width": 111,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Etiologie : "
+				},
+				"Texte31": {
+					"type": "text",
+					"top": 392,
+					"left": 39,
+					"width": 165,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Justification conduite : "
+				},
+				"Texte32": {
+					"type": "text",
+					"top": 494,
+					"left": 53,
+					"width": 151,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Ne Pas Confondre : "
+				},
+				"FrTexte37": {
+					"type": "text",
+					"top": 43,
+					"left": 93,
+					"width": 111,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Synonymes : "
+				},
+				"Texte68": {
+					"type": "text",
+					"top": 392,
+					"left": 419,
+					"width": 91,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Fréquence : "
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 419,
+					"left": 33,
+					"width": 172,
+					"height": 113,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Référence réglementaire : "
+				},
+				"Champ3": {
+					"type": "input",
+					"top": 316,
+					"left": 209,
+					"width": 455,
+					"height": 76,
+					"dataSource": "[DiaLesions:44]MotifSaisieDGAL:15",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 316,
+					"left": 68,
+					"width": 137,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Motif de saisie : "
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+﻿## SC_lookAtEvents---|*4D Command*|`FORM UNLOAD`||*4D Command*|`Form`||*4D Command*|`OBJECT SET TITLE`||*4D Command*|`Create menu`||*4D Command*|`Pop up menu`||*4D Command*|`LISTBOX SET COLUMN WIDTH`||*4D Command*|`LISTBOX SET ROWS HEIGHT`|

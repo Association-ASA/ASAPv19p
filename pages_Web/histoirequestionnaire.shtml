@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>AsaDia 3</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="styles/evaluation.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="styles/tooltip.css">
+  <script>
+    $(function() {
+      $( document ).tooltip();
+    });
+  </script>
+ </head>
+
+ <body>
+  <div id="alerte"></div>
+  <div id="headerquizz" class="textecentre">
+     <img src="images/bandeau.jpg" alt="logo" width="1024" />
+     <br /><br />
+     <p class="titrepage">
+         Récupération des données sauvegardées du questionnaire<br />
+         Lésions diverses
+     </p>
+  </div>
+
+    <div class="tablehistoire">
+     <br /><br /><br />
+     <i>Cliquez sur l'icône de la version que vous souhaitez récupérer ou revenez à la version actuelle en cliquant
+     <a href="histoire_"></i>ici</a>
+     <table class="tablehistoire">
+      <tr class="tbhistoireet">
+       <td class="tbhistoireet" width="40%">Date de la version</td>
+       <td class="tbhistoireet" width="40%">Heure de la version</td>
+       <td class="tbhistoireet" width="20%">Récupérer</td>
+      </tr>
+      <tr class="tbhistoireligne">
+       <td class="tbhistoireligne"> 30/05/2020</td>
+       <td class="tbhistoireligne">11:41</td>
+       <td class="tbhistoireligne">
+          <img src="images/flecheenbas.png" alt="Récupérer l'ancienne version" title="Récupérer l'ancienne version"  id="histoire261" class="imagesurvol" width="24px" />
+       </td>
+      </tr>
+      </table>
+      <br /><br /><br />
+   </div>
+   <br /><br /><br />
+   <br /><br /><br />
+  <div id="pied">
+   Site officiel de l'association Animal - Société - Aliment (ASA) <br> Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -
+   7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex &nbsp;&nbsp;&nbsp;FRANCE<br>
+   Téléphone : <b>+ 33 (0)1 56 29 36 30</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax : <b>+ 33 (0)9 61 24 33 81</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   e-mail : <a href="mailto:asa-spv@wanadoo.fr"><b>asa-spv@wanadoo.fr</b></a> <br>
+   <em>Pour signaler un problème, cliquez sur le lien suivant 
+   <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+   <br /><br />
+  </div>
+  <script src="js/evaluation.js"></script>
+
+ </body>
+</html>

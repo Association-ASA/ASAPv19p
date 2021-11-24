@@ -1,0 +1,1 @@
+﻿## $0:=getParseResult4DCode($1;$2)---

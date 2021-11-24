@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ASA : Les permanents</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		<br />
+		<div id="cgcorpsperm" >
+			
+			<br /> <br />
+			<ul class="breadcrumb">
+				<li><a href="w2asapermanents.shtml">organigramme</a></li>
+				<li><a href="w2asapermanents2.shtml">Fonction secrétariat</a></li>
+				<li><a href="w2asapermanents3.shtml">Fonction technique</a></li>			
+			</ul>
+			
+			<br /> <br />
+				
+			<p class="cgTITREPERM cgmarges">
+				FONCTION TECHNIQUE <br />
+				ET STATISTIQUE<br />
+			</p>
+					
+			<div id="SEC" class="cgSEC2" width="800px">	
+				<div class="cgimages">
+					<img src="images/ER.jpg" alt="Eloïse RIOUALL" width="300" />
+									
+					<b>Eloïse RIOUALL</b> <br />
+					<i>Technicienne supérieure</i><br /><br />
+					Fabrique vos échantillons RAEMA poudre et RAEMA gel
+					<p class="textepetit">  <br /> <br /> <br /> <br />   </p>	
+			</div>
+										
+				
+			</div>
+			<div id="SEC2" class="cgSEC2">
+				<div class="cgimages">
+					<img src="images/LAM2.jpg" alt="Leïla Ali Mandjee" width="300" />
+					<b>Leïla ALI MANDJEE</b> <br />
+					<i>Ingénieur d'études</i><br />	<br />
+
+					<ul class="cgLISTESEC">
+						<li>est votre interlocutrice pour les informations techniques et les questions statistiques</li>
+						<li>réalise l'analyse statistique de vos résultats du RAEMA poudre et RAEMA gel</li>
+						<li>fabrique vos échantillons RAEMA poudre et RAEMA gel (suppléante)</li>
+						<br />
+					</ul>
+				</div>
+			
+			</div>		
+			
+					
+							
+	
+		</div>			 
+		
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+
+</html>

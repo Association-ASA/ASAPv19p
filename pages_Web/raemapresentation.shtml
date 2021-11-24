@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Présentation du RAEMA</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemapresentationA.shtml">
+        <img  src="images/DrapeauA.gif" alt="english flag" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps" class="textebanalgrand">
+			
+			<div id="contenu1" class="textebanalgrand">
+				<!--4dinclude menuraema.shtml-->
+				
+				<br />  
+				
+				<p class="textecentre">
+						<img src="IMAGES/boites.png" alt="Boîtes" width="100%"/>
+							<br />  <br />
+				</p>
+				<p class="imageasadiad">
+						<img src="IMAGES/cofraccil.gif" alt="Logo COFRAC" width="70px"/>
+			
+				</p>
+					
+					Le <b>RAEMA</b> (Réseau d’Analyses et d’Echanges en Microbiologie des Aliments) est
+					un réseau d'intercomparaison en microbiologie des aliments.
+					Créé en 1988, il permet aujourd'hui à environ <b>400 laboratoires participants</b>
+					de vérifier la qualité de leurs prestations.
+					L’ASA, organisateur du réseau est <b>accrédité par le Cofrac</b>
+					sous le N°<a  href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864"
+					target="_blank">1-1836 portée disponible sur www.cofrac.fr
+					</a>
+					depuis 2007 selon le <b>référentiel ISO 17043</b>.
+					<br />  <br />
+					Le RAEMA permet aux laboratoires d'analyse d'évaluer leur compétence pour :<br />
+				    -   la <b>recherche</b> de <b><i>Salmonella</i></b> et <b><i>Listeria monocytogenes</i></b><br />
+				   - le <b>dénombrement</b> des <b><i>micro-organismes aérobies mésophiles</i></b>, des <b><i>entérobactéries</i></b>,
+						des <b><i>coliformes</i></b>, d'<b><i>Escherichia coli</i></b>, de <b><i>Clostridium perfringens</i></b>,
+						des <b><i>staphylocoques à coagulase positive</i></b> et de <b><i>L. monocytogenes.</i></b>
+					<br /><br />                                                                        
+					<p class="imageasadiad">
+						<img src="IMAGES/biopouch.JPG" alt="Colis RAEMA" width="250px"/>
+					</p>
+					<br />Lors des deux campagnes annuelles d'intercomparaison, cinq échantillons artificiellement contaminés
+					sont envoyés aux participants et l'interprétation de leurs résultats permet d'évaluer
+					la <b>fidélité</b> et la <b>justesse</b> de leurs essais.
+					Chaque envoi donne lieu à un rapport qui permet aux laboratoires d'exploiter leurs résultats
+					et de les comparer à l’ensemble des résultats obtenus par les laboratoires participants. 
+					<br />  <br />  
+					<br /><br />
+					<p class="imageasadia">
+						<img src="IMAGES/Raemagel.jpeg" alt="RAEMA gel" width="250px"/>
+					</p>
+					
+					Pour compléter cette offre classique, le <b>RAEMA gel</b> incluant
+					deux campagnes d’intercomparaison annuelles supplémentaires a été mis en place en 2010.
+					Environ <b>100 laboratoires</b> participent à ces campagnes et dénombrent les germes de leur choix parmi :
+					<b><i>Bacillus cereus</i></b>, <b><i>Pseudomonas</i></b>, <b>Bactéries lactiques</b> et <b>Levures / Moisissures</b>.
+					Seule l’évaluation de la justesse est proposée lors de ces essais
+					et l’interprétation donne lieu à un rapport détaillant les résultats des laboratoires.
+					
+					<br /><br />     <br />                                                                   
+				<p class="titrepage">
+					Télécharger la plaquette <a href="pdf/Plaquette_ASA_RAEMA_FR.pdf"><u>français</u></a>
+					et  <a href="pdf/Plaquette_ASA_RAEMA_UK.pdf"><u>english</u></a>
+				</p>
+					<br />
+			</div>	 
+
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+
+
+
+

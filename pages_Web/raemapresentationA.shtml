@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>RAEMA Presentation</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemapresentation.shtml">
+        <img  src="images/DrapeauF.gif" alt="drapeau français" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps" class="textebanalgrand">
+			
+			<div id="contenu1" class="textebanalgrand">
+				<!--4dinclude menuraemaA.shtml-->
+				
+				<br />  
+				
+				<p class="textecentre">
+						<img src="IMAGES/boites.png" alt="Boxes" width="100%"/>
+							<br />  <br />
+				</p>
+				<p class="imageasadiad">
+						<img src="IMAGES/cofraccil.gif" alt="COFRAC Logo" width="70px"/>
+			
+				</p>
+					<b>RAEMA</b> (Réseau d’Analyses et d’Echanges en Microbiologie des Aliments) is a Proficiency Testing scheme in food microbiology.
+          Created in 1988, it enables approximately <b>400 laboratories</b> to check the quality of their services.
+          Since 2007, ASA has been <b>accreditated by Cofrac</b> according to ISO 17043 (accreditation N°
+          <a  href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864"
+					target="_blank">1-1836 </a> scope available on www.cofrac.fr) as the provider of RAEMA.
+
+					<br />  <br />
+          RAEMA enables laboratories to assess their performance for: <br />
+          - <b>Detection</b> of <b><i>Salmonella</i></b> and <b><i>Listeria monocytogenes</i></b>
+          - <b>Enumeration</b> of <b><i>Aerobic microorganisms at 30°C</i></b>, <b><i>Enterobacteriaceae</i></b>, <b><i>coliforms</i></b>, <b><i>Escherichia coli</i></b>,
+          <b><i>Clostridium perfringens</i></b>, <b><i>coagulase positive staphylococci</i></b> and <b><i>Listeria monocytogenes</i></b>.
+		
+					<br /><br />                                                                        
+					<p class="imageasadiad">
+						<img src="IMAGES/biopouch.JPG" alt="RAEMA Parcel" width="250px"/>
+					</p>
+          <br />During the two annual schemes, five samples are artificially contaminated and are sent to participants.
+          The analysis of their results enables to assess the <b>precision</b> and the <b>trueness</b> of their assays.
+          Each sending leads to a report which allows laboratories to use their results and compare them to all the results obtained by all the participants. 
+					<br />  <br />  
+					<br /><br />
+					<p class="imageasadia">
+						<img src="IMAGES/Raemagel.jpeg" alt="RAEMA gel" width="250px"/>
+					</p>
+					
+          In order to complete this offer, the <b>Gel RAEMA</b> has been setting up since 2010, with 2 annual schemes.
+          Approximately <b>100 laboratories</b> participate to these schemes and choose the flora in the menu among:
+          <b><i>Bacillus cereus</i></b>, <b><i>Pseudomonas</i></b>, <b><i>Lactic acid bacteria</i></b> and <b><i>yeast/moulds</i></b>.
+          Assessement of the trueness is only proposed during these tests and the analysis of the results leads to a report including the results of all participants.
+					
+					<br /><br />     <br />                                                                   
+				<p class="titrepage">
+					Download the brochure <a href="pdf/Plaquette_ASA_RAEMA_UK.pdf"><u>here</u></a>
+				</p>
+					<br />
+			</div>	 
+
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+
+
+
+

@@ -1,0 +1,72 @@
+	<ul id="menu-demo2" class="textecentre devant">
+                          
+    <li><a href="w2index.shtml" class="titrepage"><img src="images/home.png" alt="Accueil" width="30px" /></a></li>
+    
+    <li><a href="w2contact.shtml">Contact</a></li>
+    
+    
+    <li><a href="#">L'ASA</a>
+      <ul class="ssmenumoyen">
+        <li><a href="w2AsaQuiSommeNous.shtml">  Association</a></li>
+        <li><a href="w2instances.shtml">  Instances</a></li>
+        <li><a href="w2asapermanents.shtml">  Permanents</a></li>
+        <li><a href="w2adherents.shtml">  Espace adhérents</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="#">RAEMA</a>
+      <ul class="ssmenuconfort">
+        <li><a href="w2raemarenseignement.shtml">  Généralités sur les CIL</a></li>
+        <li><a href="w2raemapresentation.shtml">  RAEMA poudre et gel</a></li>
+        <li><a href="w2raemarapports.shtml">  Les rapports de campagne</a></li>
+        <li><a href="w2raematarifs.shtml">  Les tarifs du RAEMA</a></li>  
+        <li><a href="w2raemaactualites.shtml">  Agenda des RAEMA</a></li>
+        <li><a href="w2raemapourquoi.shtml">  Pourquoi adhérer au RAEMA</a></li>
+        <li><a href="w2raemaabonnement.shtml">  Informations pratiques</a></li>
+        <li><a href="w2raemaaccueil.shtml">  Accès participants</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="#">AsaDia</a>
+      <ul class="ssmenumoyen">
+        <li><a href="w2asadiapresentation.shtml">  Présentation du projet</a></li>
+        <li><a href="w2asadia.shtml">  Découvrir AsaDia 2</a></li>
+        <li><a href="w2asadia2amelioration.shtml">  Améliorer AsaDia 2</a></li>
+      </ul>
+    </li>
+    
+    <li>
+      <a href="w2alisample.shtml">Alisample</a>
+    </li>
+    
+    <li>
+           <a href="w2pageasacontact.shtml">AsaContact</a>
+    </li>		
+     
+    <li>
+           <a href="w2activites.shtml">Activités scientifiques</a>
+    </li>		
+                                                          
+    <li><a href="#">Documentation</a>
+      <ul class="ssmenutoutpetit">
+        <li><a href="w2bib1_index.shtml">  Bibliothèque SPV</a></li>
+        <li><a href="w2tox_index.shtml">  Toxicologie</a></li>
+        <li><a href="w2liens.shtml">  Liens</a></li>
+      </ul>
+    </li>
+    
+      <li><a href="#">Adhérer</a>
+        <ul class="ssmenuconfort">
+          <li><a href="w2asapresentation.shtml">  Pourquoi adhérer à l'ASA ?</a></li>
+          <li><a href="w2asaadhesion.shtml">  Comment adhérer à l'ASA ?</a></li>
+          <li><a href="pdf/AdhesionASA.pdf">  Télécharger le formulaire   d'adhésion à l'ASA</a></li>
+        </ul>
+      </li>
+  
+    <li><a href="#">FAQ</a>
+      <ul class="ssmenumoyen">
+        <li><a href="w2raemafaq.shtml">  Questions sur le RAEMA</a></li>
+        <li><a href="w2asadia.shtml">  Questions sur AsaDia</a></li>
+      </ul>
+    </li>
+	</ul>

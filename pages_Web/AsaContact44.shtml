@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>AsaContact</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps2" class="textebanalgrand">
+      <br /><br /><br /><br />
+      <p class="titrepage">ASA Contact 44 est arrivé !!!</p>
+			<br /><br />
+      <div width="25%" class="imageasag textedecale">
+        <img src="IMAGES/AsaContact44.png" width="250" />
+      </div>
+      <div width="30%" class="textedecale">
+        <span class="plus">SOMMAIRE</span> <br />
+        Page 1 : Edito par Brigitte ENRIQUEZ. <br /><br />
+        <b>ARTICLE DE FOND</b>
+        Colloque de L'ARET 2016 <i>par Marie Pierre BERLEUR</i> p. 3-4<br />
+        Enquête sur l'utilisation d'AsaDia dans les abattoirs par Michèle CHEVALLIER et Claude GRANDMONTAGNE p. 5 à 9<br />
+        Santé de la Faune Sauvage de montagne : l'ASA à la rencontre des spécialistes
+        par Julien PORTIER, Manon MOULLEC, Sophie WASMUCH, ClaraBOHIN et MarcARTOIS p. 10<br />
+        VIIIè séminaire International - Institut des sciences vétérinaires Constantine 1 : sur la filière Lait - 26 et 27 novembre 2016 par Rachid ELGROUD p. 11<br />
+        Séminaire abattoir des 31 mai, 1er juin et 2 juin 2016 - Direction Générale de l'Alimentation par Gille QUINET et Pierre TASSIN p. 12 à 16<br /><br />
+        <b>BREVES</b> :  Biofutur n°378-380 par François SIMON p. 17-18.<br /><br />
+        <b>L'ASSOCIATION</b> : Vie de l’Association par Gilles QUINET p. 19-20.<br />
+      </div>
+          
+      <br /><br />
+      <p class="hautpage">
+					Pour télécharger AsaContact 44, cliquez sur le lien suivant : <br />
+					<a id="ac" href="https://www.dropbox.com/s/p5cymv3ixqfowo9/ASAContact44.pdf?dl=1">AsaContact 44</a>
+			</p>
+				
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+    
+      <script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery     -->
+			<script type="text/javascript" src="/js/asacontact.js"></script>
+
+	</body>
+	
+</html>

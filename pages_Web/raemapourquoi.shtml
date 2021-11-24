@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Pourquoi le RAEMA ?</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemapourquoiA.shtml">
+        <img  src="images/DrapeauA.gif" alt="english flag" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps" class="textebanalgrand">
+			<div id="contenu1" class="textebanalgrand">
+				<!--4dinclude menuraema.shtml-->	
+				<br /><br />
+				<p class="titrepage">
+					Pourquoi choisir le RAEMA ?
+					<br /><br />
+				</p>
+				
+					
+					•	<span class="grandhautpage">Pour son savoir-faire :</span><br />
+					<p class="imageasadia">
+						<img src="IMAGES/RIFTW.jpg" alt="Rapport individuel" width="125px"/>
+					</p>
+					Le RAEMA, c’est plus de 25 ans d’expérience. Un système sous accréditation COFRAC au service de presque 400 laboratoires publics et privés,
+					qui réitèrent chaque année leur confiance en ce réseau de Comparaison Inter-Laboratoires (CIL).<br />
+					Le RAEMA représente un outil d’évaluation de la justesse et de la fidélité des techniques d’analyse des laboratoires participants.
+					Des méthodes statistiques robustes, basées sur environ 400 laboratoires, publics et privés, français et internationaux, pour le RAEMA (poudre) permettent d’évaluer ces deux paramètres,
+					et permettent d’évaluer la justesse sur 100 laboratoires pour le RAEMA gel.<br />
+					<p class="imageasadiad">
+						<img src="IMAGES/evolutionperf.jpg" alt="plaquette AsaDia" width="300px"/>
+					</p>
+					C’est également un historique des performances des laboratoires. Le RAEMA permet de suivre dans le temps
+					l’évolution des performances des laboratoires afin d’accompagner au mieux les professionnels.<br />
+					<br /><br />
+					
+					•	<span class="grandhautpage">Pour sa capacité d’adaptation :</span><br />
+					Depuis son existence, le RAEMA a su s’adapter à la demande des laboratoires :<br />
+					<p class="imageasadiad">
+						<img src="IMAGES/adaptablilite.jpg" alt="adaptabilité" width="250px"/>
+					</p>
+					- Par la prise en compte des effets des méthodes, afin de réaliser une analyse précise des résultats des laboratoires.<br />
+					
+					- Au besoin de valider plusieurs manipulateurs ou méthodes, avec la possibilité de commander des colis supplémentaires
+					avec rapport COFRAC, permettant l’analyse de plusieurs séries de résultats, ou bien sans rapport COFRAC, pour une analyse en interne par le laboratoire.<br />
+					<p class="imageasadia">
+						<img src="IMAGES/Raemagel.jpeg" alt="RAEMA gel" width="250px"/>
+					</p>
+					- Concernant la matrice, en proposant des campagnes de Comparaison Inter-Laboratoires sur matrice gélifiée,
+					RAEMA gel, plus proche des échantillons couramment analysés en laboratoire. <br />
+					- Participer au RAEMA, c’est aussi être libre de choisir. En effet, le choix des germes du RAEMA gel 
+					s’est voulu à la carte, afin d’être au plus proche des besoins des laboratoires.<br />
+					<br /><br />
+					•	<span class="grandhautpage">Pour ses tarifs attractifs :</span><br />
+					L’ASA est une association, pour laquelle œuvrent de nombreux bénévoles, 
+					ce qui permet de proposer aux laboratoires des tarifs compétitifs,
+					dans le domaine de l’inter-comparaison en microbiologie des aliments.<br />
+					L’ASA propose des tarifs dégressifs, afin de permettre aux laboratoires adhérents, 
+					d’avoir accès au plus grand nombre de campagnes chaque année.
+					<a href="w2raematarifs.shtml">Voir les tarifs</a>
+					<br /><br />
+					</p>
+			</div>
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

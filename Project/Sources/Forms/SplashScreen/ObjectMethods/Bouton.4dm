@@ -1,0 +1,1 @@
+OPEN URL:C673("mailto: asa-spv@wanadoo.fr")

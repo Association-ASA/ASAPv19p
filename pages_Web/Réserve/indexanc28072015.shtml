@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>AsaDia 3</title>
+		<!--4dinclude HeaderAsaDia.shtml-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="styles/table.css" rel="stylesheet" type="text/css" />
+
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				
+				<br />
+        <p class="paveles">
+             <span class="textebanalgrand">Choisissez  les lésions</span>
+             <p>
+             <select class="textebanal" id="nomenclature" name="nomenclature" size="2">
+               <option>Nomenclature scientifique</option>
+                <option>Nomenclature opérationnelle</option>
+             </select>
+             </p>
+             <br />
+             <p id=listelesion" >
+                <select class="textebanal" id="lesion" name="organe" size="15" multiple >
+                  <option name="bl"></option>
+                  <option>abcès non spécifiques</option>
+                  <option>abcès omphalophlébitiques</option>
+                  <option>abcès par corps étranger</option>
+                  <option>abcès pyléphlébitiques</option>
+                  <option>abcès pyohémiques</option>
+                  <option>absence de lésion</option>
+                  <option>actinobacillose / actinomycose</option>
+                  <option>adénomatose pulmonaire</option>
+                  <option>adipoxanthose</option>
+                  <option>albinisme musculaire</option>
+                  <option>altération</option>
+                  <option>amyloïdose</option>
+                  <option>amyotrophie localisée</option>
+                  <option>anémie infectieuse des équidés (lésions de)</option>
+                  <option>anomalie congénitale</option>
+                  <option>anthracose</option>
+                  <option>aphtes</option>
+                  <option>arthrite</option>
+                  <option>ascaridose</option>
+                  <option>atélectasie pulmonaire</option>
+                  <option>athérosclérose de l'aorte</option>
+                  <option>bronchopneumonie</option>
+                  <option>brucellose (lésions de)</option>
+                  <option>bursite</option>
+                  <option>cachexie</option>
+                  <option>calcinose</option>
+                  <option>cénurose cérébrale</option>
+                  <option>céroïdose</option>
+                  <option>charbon (lésions de)</option>
+                  <option>cholécystite</option>
+                  <option>coeur en besace</option>
+                  <option>congestion généralisée</option>
+                  <option>congestion passive</option>
+                  <option>corps étranger</option>
+                  <option>coryza gangreneux</option>
+                  <option>cryptorchidie</option>
+                  <option>cysticercose hépatopéritonéale</option>
+                  <option>cysticercose musculaire</option>
+                  <option>cystite</option>
+                  <option>cytostéatonécrose</option>
+                  <option>dégénérescence musculaire</option>
+                  <option>dermo-épidermite</option>
+                  <option>distomatose (lésions de)</option>
+                  <option>diverticule oesophagien</option>
+                  <option>échinococcose (lésions de)</option>
+                  <option>écoffrage</option>
+                  <option>ecthyma contagieux</option>
+                  <option>emphysème pulmonaire</option>
+                  <option>endocardite</option>
+                  <option>entérite</option>
+                  <option>éosinophilie</option>
+                  <option>fibrolipomatose</option>
+                  <option>fièvre aphteuse (lésions de)</option>
+                  <option>fièvre catarrhale maligne (lésions de)</option>
+                  <option>foetus emphysémateux</option>
+                  <option>foetus mort, nécrose aseptique ou momification</option>
+                  <option>foie toxi-infectieux</option>
+                  <option>foyer de nécrose septique</option>
+                  <option>fracture</option>
+                  <option>gale (lésions)</option>
+                  <option>gangrène</option>
+                  <option>gastérophilose</option>
+                  <option>gastrite</option>
+                  <option>granulome de ROECKL</option>
+                  <option>hématome</option>
+                  <option>hémopéricarde</option>
+                  <option>hémoperitoine</option>
+                  <option>hémosidérose</option>
+                  <option>hémothorax</option>
+                  <option>hépatite insulaire nécrosante</option>
+                  <option>hépatite interstitielle chronique</option>
+                  <option>hydronéphrose</option>
+                  <option>hygroma</option>
+                  <option>hypodermose (lésions de)</option>
+                  <option>ictère</option>
+                  <option>infarcissement</option>
+                  <option>infarctus</option>
+                  <option>infiltration séro-hémorragique</option>
+                  <option>ischemie hépatique</option>
+                  <option>kyste acquis du rein</option>
+                  <option>kyste congénital du foie</option>
+              </select>
+             </p>
+          </p>
+				 <form Name="form1" action="mw2WebDiagnose" method="post">
+          <p id="paveespecetout" class="pavespece textebanal">
+            <span class="textebanalgrand">Choisissez  les espèces</span>
+            <input type="checkbox" class="casesp" id="bacbv" name="Bovins" />Bovins
+            <input type="checkbox" class="casesp" id="bacov" name="Ovins" />Ovins
+            <input type="checkbox" class="casesp" id="bacca" name="Caprins" />Caprins
+            <input type="checkbox" class="casesp" id="bacpo" name="Ovins" />Porcins
+            <input type="checkbox" class="casesp" id="baceq" name="Caprins" />Equins
+          <br /><br />
+             <span class="textebanalgrand">Choisissez  les organes</span>
+            <br />
+              <b>Appareil digestif : </b>
+            <input type="checkbox" class="casorg" id="baclan" name="Langue" />Langue
+            <input type="checkbox" class="casorg" id="bacoes" name="oesophage" />Œsophage   
+            <input type="checkbox" class="casorg" id="bactd" name="td" />Tube digestif
+            <br />                               
+            <input type="checkbox" class="casorg" id="bacfoie" name="Foie" />Foie  
+            <input type="checkbox" class="casorg" id="bacpan" name="Pancreas" />Pancréas  
+            <input type="checkbox" class="casorg" id="bacpert" name="peritoine" />Péritoine  
+            <br />
+              <b>Appareil respiratoire : </b>
+            <input type="checkbox" class="casorg" id="bactrac" name="Trachee" />Trachée
+            <input type="checkbox" class="casorg" id="bacpou" name="Poumon" />Poumon
+            <input type="checkbox" class="casorg" id="bacple" name="Plevre" />Plèvre
+            <br />
+              <b>Appareil circulatoire : </b>
+            <input type="checkbox" class="casorg" id="baccoe" name="Coeur" />Cœur
+            <input type="checkbox" class="casorg" id="bacperc" name="Pericarde" />Péricarde
+            <input type="checkbox" class="casorg" id="bacvs" name="Vaisseaux" />Vaisseaux sanguins
+          <br />
+              <b>Appareil urinaire : </b>
+            <input type="checkbox" class="casorg" id="bacrein" name="Rein" />Rein  
+            <input type="checkbox" class="casorg" id="bacves" name="Vessie" />Vessie  
+            <input type="checkbox" class="casorg" id="bacvu" name="Voies" />Voies urinaires
+          <br />
+             <b>Appareil ostéo-musculaire : </b>
+            <input type="checkbox" class="casorg" id="bacos" name="Os" />Os et articulation  
+            <input type="checkbox" class="casorg" id="bacmus" name="Muscles" />Muscles
+            <input type="checkbox" class="casorg" id="baccar" name="Carcasse" />Carcasse
+          <br />
+             <b>Appareil génital :  </b>
+            <input type="checkbox" class="casorg" id="bacagf" name="agf" />Femelle  
+            <input type="checkbox" class="casorg" id="bacagm" name="Muscles" />Mâle   
+            <input type="checkbox" class="casorg" id="bacmam" name="Mamelle" />Mamelle
+          <br />
+             <b>Autres :   </b>
+            <input type="checkbox" class="casorg" id="bactca" name="tca" />Tissu conjonctivo-adipeux  
+            <input type="checkbox" class="casorg" id="bacnl" name="Voies" />Nœud lymphatique   
+            <input type="checkbox" class="casorg" id="bacrate" name="Voies" />Rate   
+            <input type="checkbox" class="casorg" id="bacthym" name="Thymus" />Thymus
+            <br />             
+            <input type="checkbox" class="casorg" id="bactet" name="Tete" />Tête   
+            <input type="checkbox" class="casorg" id="bacpeau" name="Peau" />Peau   
+            <input type="checkbox" class="casorg" id="bacsur" name="Surrenales" />Surrénales   
+            <input type="checkbox" class="casorg" id="bacthyr" name="Thyroide" />Thyroide   
+            <input type="checkbox" class="casorg" id="bacsn" name="sn" />Système nerveux
+          </p>
+          
+					
+					<p id="formule">
+					 
+					</p>
+				 				 
+				 </form>
+				 
+				<div id="tbphotos" class="tbphotos">
+          
+        </div>
+				
+				<div id="photolesion" class="textebanal">
+          
+        </div>
+				 
+			</div>	 
+    </div>
+		<div id="pied">
+				<!--4dinclude pied.shtml-->
+		</div>
+
+		
+					
+     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+     <script type="text/javascript" src="js/dataTable.js"></script>
+     <script>
+        function formulerequete()
+        {
+            var esp=""
+            $('.casesp').each(function(index) {
+            if ($(this).is(':checked')==true) {
+            esp=esp+','+$(this).attr('name');
+            }
+            }) ;
+            if (esp.length>0) {
+            esp=esp.substring(1);
+            }
+            
+             var org=""
+            $('.casorg').each(function(index) {
+            if ($(this).is(':checked')==true) {
+            org=org+','+$(this).attr('name');
+            }
+            }) ;
+            if (org.length>0) {
+            org=org.substring(1);
+            }
+  
+  
+           var les = $('#lesion').val(); 
+            if (les==null) {
+              les=""
+            }
+            
+            var formule = 'Espèces : '+esp+"<br />"+'Organes : '+org+"<br />"+'Lésions : '+les
+            $('#formule').html(formule);
+            flipflop(formule);
+            
+          }
+          
+        function choixNavigateur() 
+        {
+          if (navigator.userAgent.indexOf('MSIE 6')!=-1) 
+          return new ActiveXObject('Microsoft.XMLHTTP');
+          else
+          return new XMLHttpRequest();  
+        }
+        
+        function flipflop(formule)  
+            {
+              var requete = choixNavigateur();
+              var doc = "flipflop"+formule;
+              requete.open("post",doc,false);
+              requete.send(null);
+              // alert(requete.responseText);
+              var reponse = requete.responseText;
+              $('#tbphotos').html(reponse)
+              $('#photolesion').html("")
+              $(document).ready(function() {
+                $('#TbRes').dataTable({
+                  "pagingType": "full_numbers"
+                });
+                $('#TbRes_length').html('Liste des photographies');
+                
+                /*
+                 *var maintenant = prem.replace(/First/,"Premier");
+                $('#TbRes_first').html(maintenant);
+                */
+                $('#TbRes tbody').on('click', 'tr', function () {
+                  $('tr.TbCorpsL').removeClass('selected');
+                  $(this).toggleClass('selected');
+                  var numimage = $('td', this).eq(0).text();
+									var doc = "image"+numimage;
+									var requete = choixNavigateur();
+									requete.open("post",doc,false);
+									requete.send(null);
+									var reponse = requete.responseText;
+									$('#photolesion').html(reponse);
+                } );
+              } );
+            }
+        $('#photolesion').on('click', function () {
+					var docu = $('#photolesion').text;
+					alert(docu);
+         } );
+        
+        
+         $('.casesp').click(function()
+        {
+          formulerequete()
+         });      
+        $('.casorg').click(function()
+        {
+          formulerequete()
+         });   
+          $('#lesion').click(function()
+        {
+          formulerequete()
+         });  
+
+    </script>    
+	</body>
+	
+</html>

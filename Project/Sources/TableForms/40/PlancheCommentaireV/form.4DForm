@@ -1,0 +1,322 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 556,
+	"markerBreak": 629,
+	"markerFooter": 683,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Flechedroite": {
+					"type": "picture",
+					"top": 978,
+					"left": 352,
+					"width": 33,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/Flechedroite.png"
+				},
+				"Flechebas": {
+					"type": "picture",
+					"top": 971,
+					"left": 414,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/Flechebas.png"
+				},
+				"Flechegauche": {
+					"type": "picture",
+					"top": 976,
+					"left": 494,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/Flechegauche.png"
+				},
+				"Flechehaut": {
+					"type": "picture",
+					"top": 974,
+					"left": 721,
+					"width": 35,
+					"height": 34,
+					"pictureFormat": "scaled",
+					"picture": "Images/Flechehaut.png"
+				},
+				"Champ24": {
+					"type": "input",
+					"top": 518,
+					"left": 658,
+					"width": 117,
+					"height": 29,
+					"dataSource": "[Diapositives:40]NumOrdreDiapos:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "Titre",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 11,
+					"left": 384,
+					"width": 383,
+					"height": 22,
+					"dataSource": "VarTriplette",
+					"class": "Titre_petit",
+					"textAlign": "center",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 11,
+					"left": 13,
+					"width": 360,
+					"height": 540,
+					"dataSource": "VarImage",
+					"dataSourceTypeHint": "picture",
+					"class": "default",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 59,
+					"left": 384,
+					"width": 383,
+					"height": 288,
+					"dataSource": "VarCom",
+					"class": "default",
+					"textAlign": "left",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"C11": {
+					"type": "input",
+					"top": 968,
+					"left": 233,
+					"width": 119,
+					"height": 57,
+					"dataSource": "VarC11",
+					"class": "Petite_écriture",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C11.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C21": {
+					"type": "input",
+					"top": 917,
+					"left": 374,
+					"width": 119,
+					"height": 57,
+					"dataSource": "VarC21",
+					"class": "Petite_écriture",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C21.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C31": {
+					"type": "input",
+					"top": 965,
+					"left": 528,
+					"width": 120,
+					"height": 57,
+					"dataSource": "VarC31",
+					"class": "Petite_écriture",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C31.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"C41": {
+					"type": "input",
+					"top": 1007,
+					"left": 678,
+					"width": 120,
+					"height": 57,
+					"dataSource": "VarC41",
+					"class": "Petite_écriture",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FEFF5F",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/C41.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"B11": {
+					"type": "button",
+					"top": 978,
+					"left": 384,
+					"width": 30,
+					"height": 35,
+					"dataSource": "Variable2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre"
+					},
+					"display": false,
+					"method": "ObjectMethods/B11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"B21": {
+					"type": "button",
+					"top": 1004,
+					"left": 418,
+					"width": 30,
+					"height": 32,
+					"dataSource": "Variable2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre"
+					},
+					"display": false,
+					"method": "ObjectMethods/B21.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"B31": {
+					"type": "button",
+					"top": 977,
+					"left": 467,
+					"width": 30,
+					"height": 32,
+					"dataSource": "Variable2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre"
+					},
+					"display": false,
+					"method": "ObjectMethods/B31.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"B41": {
+					"type": "button",
+					"top": 944,
+					"left": 723,
+					"width": 30,
+					"height": 32,
+					"dataSource": "Variable2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre"
+					},
+					"display": false,
+					"method": "ObjectMethods/B41.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 354,
+					"left": 384,
+					"width": 383,
+					"height": 156,
+					"dataSource": "VarDescription",
+					"class": "default",
+					"textAlign": "left",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

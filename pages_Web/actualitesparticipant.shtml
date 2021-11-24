@@ -1,0 +1,22 @@
+<div id="colonne">
+    <p class="ETtextebloc">Dernières nouvelles</p>
+    <div class="textebanal">
+    <div class="Nouveaute">
+    	<p class="Block"><img src="images/EtoileRouge.jpg" width="15" height="15" alt="Etoile rouge" /></p>
+    	<p class="Rouge Block"><u><b>Nouveauté</b></u><br /></p>
+    	<p class="Block"><img src="images/EtoileRouge.jpg" width="15" height="15" alt="Etoile rouge" /></p>
+    </div>
+    	<p class="Rouge"><b>Enquête de satisfaction</b><br /></p>
+         Afin de répondre toujours au mieux à vos besoin, l'ASA met en place une enquête de satisfaction.<br />
+        <p class="Orange"><u><b>Important :</b> Cette enquête vous est proposée avant de saisir vos résultats de la campagne 65.</u><br /></p>
+         Nous vous remercions d'avance pour votre contribution.<br /><br />
+        <b>Campagne N° 65 :</b><br />
+         Les échantillons seront envoyés le mardi 3 octobre 2017.<br />
+         <br />
+         
+        <b>Campagne N° 65A :</b><br />
+         Les échantillons seront envoyés le mardi 28 novembre 2017<br />
+        <br />
+        
+    </div>
+</div>

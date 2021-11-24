@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+	  <title>ASA : Alisample (exemple)</title>
+	  <!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+		    <div id="contenu1" class="textebanal">	
+          <p class="titrepage"><br /><br />
+           <ul class="breadcrumb">
+              <li><a href="w2exemplealisample0.html">Exemple</a></li>
+              <li><a href="w2exemplealisample1.html">Arbre de décison</a></li>		
+            </ul>
+          </p>
+            <br />
+          <p>Vous fabriquez des aliments et vous voulez mettre en place une procédure de contrôle 
+              de vos produits finis afin de vérifier que les lots partant en livraison 
+              répondent aux exigences fixées par votre client. Celles-ci comprennent 
+              entre autres une exigence sur le poids des unités qui doit être 
+              supérieur ou égal à 100 g. 
+          </p>
+            <br />
+          <p>Les lots fabriqués sont de taille importante (environ 10 000 unités) et 
+              vous voulez mettre en place une procédure de contrôle par échantillonnage. 
+              Le contrôle sera effectué par un opérateur des expéditions 
+              et doit se limiter à une vérification des unités par pesage 
+              avec comptage des unités conformes (≥ 100 g) et des unités 
+              non conformes (< 100 g).<br />
+          </p>
+          <p>
+            <br />
+            <p class="textecentre">
+              <u><b>Ouvrez le fichier d'accueil d'alisample</b></u> :<br />
+            </p>
+            <br />
+            <p class="textecentre">
+              <span class="titrepage"> Cliquez sur le bouton "ARBRE DE DECISION" pour choisir le plan de contrôle adapté</span>
+            </p>
+            <br />	<br />
+            <p class="textecentre">
+              <img src="images/Image1.gif" width="900" height="540" border="0" usemap="#Map" /> 
+              <map name="Map">
+                <area shape="rect" coords="70,382,320,443" href="w2exemplealisample2.html" />
+              </map> 
+            </p>
+          </p>
+          <br />	<br />
+		    </div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+
+ 
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+          <div id="header" align="center">
+                  <!--4dinclude bandeau.shtml-->
+          </div>
+          
+          <div id="corps">
+                           
+            <div id="contenu1" class="textebanalgrand">
+                  <br />
+                <ul class="breadcrumb">
+                    <li><a href="w2exemplealisample0.html">Exemple</a></li>
+                    <li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+                    <li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+                    <li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+                    <li><a href="w2exemplealisample4.html">Unités classées</a></li>
+                        					
+                </ul>
+                <br />
+                <p align="center"><b>Les unités sont classées en conformes (&#8805; 100 g) et non conformes (< 100 g)</b> <br />
+                  <span class= "titrepage">cliquez sur le bouton "les unités sont classées" pour poursuivre</span>
+                </p>
+                <br />
+                <p class="textecentre">
+                  <img src="images/Image4.gif" width=900 height=540 border="0" usemap="#Map" /> 
+                  <map name="Map">
+                    <area shape="rect" coords="50,90,321,238" href="w2exemplealisample5.html" />
+                  </map>
+                 </p>
+                <br />
+        
+            </div>	 
+          </div>
+
+          <div id="pied">
+                  <!--4dinclude pied.shtml-->
+          </div>
+			
+	</body>
+	
+</html>

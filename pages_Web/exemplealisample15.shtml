@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+          <br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample0.html">Exemple</a></li>
+            <li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+            <li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+            <li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+            <li><a href="w2exemplealisample4.html">Unités classées</a></li>
+            <li><a href="w2exemplealisample5.html">2 classes</a></li>
+            <li><a href="#"></a></li>								
+        </ul>
+        
+          <br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+            <li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+            <li><a href="w2exemplealisample8.html">Plan simple</a></li>
+            <li><a href="w2exemplealisample9.html">A partir de NQA NQL</a></li>
+            <li><a href="w2exemplealisample10.html">Analyse du résultat</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+          <br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample11.html">Echantillonnage double</a></li>
+            <li><a href="w2exemplealisample12.html">Loi binomiale</a></li>
+            <li><a href="w2exemplealisample13.html">A partir de NQA NQL</a></li>
+            <li><a href="w2exemplealisample14.html">Analyse du résultat</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+          <br />
+        <ul class="breadcrumb">
+            <li><a href="w2exemplealisample0.html">Exemple</a></li>
+            <li><a href="w2exemplealisample15.html">Unités non classées</a></li>
+        </ul>
+          <p class="titrepage">EXEMPLE <br /><br /></p>
+          <p ALIGN="JUSTIFY">
+            Vous pouvez également choisir d'utiliser 
+            un contrôle des lots par mesurage en raisonnant sur la moyenne des poids 
+            mesurés. Vous réalisez alors une enquête pour caractériser 
+            la distribution statistique suivie par le poids de vos produits. Après 
+            mesure du poids d'un grand nombre d'unités, vous constatez 
+            que la distribution est d'allure Normale de moyenne 105 g et d'écart-type 
+            2,3 g. Cela vous permet de constater que dans les conditions normales de fabrication 
+            votre pourcentage de non-conformes est égal à 1,5% (<I>NQA</I> = 0.015).
+          </p>
+          <p ALIGN="JUSTIFY">
+            Reprenons l'arbre de décision à l'étape du choix du type 
+            de caractère mesuré.
+          </p>  
+          <p ALIGN="JUSTIFY">
+            Cette fois-ci la décision sera prise à partir de la moyenne et de l'écart-type 
+            des mesures effectuées &#151;
+            <font COLOR="#0000ff">
+              cliquez sur le bouton pour poursuivre
+            </font>
+          </p>
+          <p ALIGN="JUSTIFY"><IMG SRC="images/Image15.gif" WIDTH=1000 HEIGHT=600 border="0" usemap="#Map" /> 
+            <map name="Map">
+              <area shape="rect" coords="398,107,664,320" href="w2exemplealisample16.html" />
+            </map>
+          </p>
+      </div>
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

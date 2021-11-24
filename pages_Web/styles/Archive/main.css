@@ -1,0 +1,74 @@
+a:hover
+	{	color: #7B8D3B}
+
+	#copyright
+	{	width: 80%;
+		min-width: 650px;
+		margin: 0 auto;
+		padding: 20px 35px;
+		background: #B6C28B;
+		font: 12px tahoma, arial;
+		color: #324143;
+	
+		}
+
+	#copyright a
+	{	color: #324143}
+
+	#copyright a:hover
+	{	color: #171F26}
+  
+  #jsddm {	margin: 0;
+	display: inline-block;
+	padding: 0;
+  z-index: 150;
+
+}
+
+	#jsddm li
+	{	float: left;
+		list-style: none;
+		font: 12px Tahoma, Arial;
+    z-index: 150;
+}
+
+	#jsddm li a
+	{	display: block;
+		background: #6E6B6E;
+		padding: 5px 12px;
+		text-decoration: none;
+		border-right: 1px solid white;
+		width: auto;
+		color: #EAFFED;
+		white-space: nowrap;
+    z-index: 150;
+}
+
+	#jsddm li a:hover
+	{	background: #24313C}
+		
+		#jsddm li ul
+		{	margin: 0;
+			padding: 0;
+			position: absolute;
+			visibility: hidden;
+			border-top: 1px solid white;
+      z-index: 150;
+}
+		
+			#jsddm li ul li
+			{	float: none;
+				display: inline;
+        z-index: 150;
+}
+			
+			#jsddm li ul li a
+			{	width: auto;
+				background: #929094;
+				color: #FFFFFF;
+        text-align: left;
+        z-index: 150;
+}
+			
+			#jsddm li ul li a:hover
+			{	background: #727371}

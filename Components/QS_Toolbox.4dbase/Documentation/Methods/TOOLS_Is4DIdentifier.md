@@ -1,0 +1,1 @@
+﻿## $0:=TOOLS_Is4DIdentifier($1)---

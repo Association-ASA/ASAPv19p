@@ -1,0 +1,1 @@
+﻿## $0:=Collection_Extract($1;$2;$3)---

@@ -1,0 +1,1 @@
+		function TestEch(nb) {var mp_c = nb.value;var lgmdp = mp_c.length;var guil="'";var mess="";if ((mp_c!="") && (lgmdp!=6)) {mess="Le code comporte 6 CHIFFRES et non "+lgmdp;alert(mess);nb.value="";return false;}}		

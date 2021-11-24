@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Identification</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 				 
+								<br/>
+				<p class="titrepage">AsaDia 2 : Module utilisation</p>
+				<p class="textecentre">
+					<a href="asadia.shtml">
+					Retour à l'écran des généralités
+					</a> 
+				</p>
+					<br/><br/>
+					
+			
+					<div class="menu">
+						<a class="menucouleur" href="w2asadia2utilisation.shtml">
+						CONNAISSANCES <br /> GENERALES
+						</a>
+					</div>
+					<div class="menu" >
+						<a class="menucouleur" href="w2asadia2motifs.shtml">MOTIFS DE SAISIE</a>
+					</div>
+					<div class="menuactif" >
+						ILLUSTRATION DES NOTES DE SERVICES DE LA DGAL
+					</div>
+					<div class="menu" >
+						<a class="menucouleur" href="w2asadia2diagnose.shtml">RECONNAITRE <br />UNE LESION</a>
+					</div>
+					<div class="sousmenu" >
+					&nbsp; <br /> &nbsp; <br /> &nbsp; <br /> &nbsp; <br /> 
+					&nbsp; <br /> &nbsp; <br /> &nbsp;
+					</div>
+				
+				<table>
+					<tr>
+						<td class="colonne1" >
+							 <br/><br/>
+		
+							Cette partie donne la liste des notes de service de la DGAL
+							concernant l'inspection en abattoir.
+							<br/>
+							Elle permet, par sélection d'une note dans la liste, 
+							d'en visualiser le contenu illustré
+							tel que montré plus bas. 
+							<br/>
+						</td>
+						<td  class="colonne2"  > <img src="IMAGES/Listendsdgal.jpg" 
+							width="650" height="114" alt="Notes de services de la DGAL" 
+							title="Notes de services de la DGAL" /> 
+						</td>
+						
+					</tr>
+					<tr>
+						<td class="colonne1" >
+							Les éléments 
+							de la note de service de la DGAL concernÈe 
+							sont exposés sous forme d'un tableau.
+							<br/><br/>
+							Il est possible, comme montré ci-dessous, de visualiser
+							des photographies commentées en plein écran 
+							en cliquant sur les liens en bleu.
+						</td>
+						<td  class="colonne2"  > <img src="IMAGES/NdsPorcdgal.jpg" width="650" 
+							height="410" alt="Notes de services de la DGAL séreuses porc" 
+							title="Notes de services de la DGAL séreuses porc" /> 
+						</td>
+					</tr>
+					<tr>
+						<td class="colonne1" >
+							Exemple de photographie plein écran commentée.
+						</td>
+						<td  class="colonne2"  > <img src="IMAGES/NdsPorcPhotodgal.jpg" width="650" 
+							height="437" alt="Photo séreuses porc" 
+							title="Photo séreuses porc" /> 
+						</td>
+					</tr>
+				</table>
+				
+				<br/><br/>
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>

@@ -1,0 +1,320 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1004,
+	"height": 203,
+	"markerHeader": 19,
+	"markerBody": 41,
+	"markerBreak": 42,
+	"markerFooter": 71,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1004,
+					"height": 203,
+					"stroke": "transparent"
+				},
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 947,
+					"height": 43,
+					"fill": "transparent"
+				},
+				"Ligne9": {
+					"type": "line",
+					"top": 40,
+					"left": 1,
+					"width": 946,
+					"strokeDashArray": "1 1"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 18,
+					"left": 1,
+					"width": 946,
+					"strokeDashArray": "1 1"
+				}
+			}
+		},
+		{
+			"objects": {
+				"EtNomLesion": {
+					"type": "text",
+					"top": 3,
+					"left": 10,
+					"width": 280,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"text": "Nom de la Lésion"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 4,
+					"left": 357,
+					"width": 144,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"text": "Grand Type Lésionnel"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 3,
+					"left": 555,
+					"width": 195,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"text": "Type Lésionnel Précis"
+				},
+				"NomLésion": {
+					"type": "input",
+					"top": 23,
+					"left": 10,
+					"width": 346,
+					"height": 18,
+					"dataSource": "[DiaLesions:44]NomLesion:1",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"GrandTypeLésionnel": {
+					"type": "input",
+					"top": 23,
+					"left": 357,
+					"width": 190,
+					"height": 18,
+					"dataSource": "[DiaLesions:44]GrandTypeLesionnel:2",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TypeLésionnelPrécis": {
+					"type": "input",
+					"top": 23,
+					"left": 555,
+					"width": 286,
+					"height": 18,
+					"dataSource": "[DiaLesions:44]TypeLesionnelPrecis:3",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 23,
+					"left": 868,
+					"width": 71,
+					"height": 18,
+					"dataSource": "VarNbPhotos",
+					"stroke": "#000000",
+					"class": "Champ_normal",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BouAjouteEnr": {
+					"type": "button",
+					"top": 46,
+					"left": 17,
+					"width": 90,
+					"height": 23,
+					"dataSource": "BouAjouteEnr",
+					"shortcutKey": "n",
+					"text": "Nouvelle",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/BouAjouteEnr.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"ZBouToutVoir": {
+					"type": "button",
+					"top": 44,
+					"left": 127,
+					"width": 83,
+					"height": 25,
+					"dataSource": "ZBouToutVoir",
+					"shortcutKey": "!",
+					"shortcutAccel": true,
+					"text": "Tout voir",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/ZBouToutVoir.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouRechTotale": {
+					"type": "button",
+					"top": 44,
+					"left": 217,
+					"width": 120,
+					"height": 25,
+					"dataSource": "ZBouRechTotale",
+					"shortcutKey": "r",
+					"text": "Recherches ...",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/ZBouRechTotale.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouListeSel": {
+					"type": "button",
+					"top": 44,
+					"left": 346,
+					"width": 201,
+					"height": 25,
+					"dataSource": "ZBouListeSel",
+					"shortcutKey": "l",
+					"text": "Sélection sur liste",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/ZBouListeSel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZBouImpSel": {
+					"type": "button",
+					"top": 44,
+					"left": 624,
+					"width": 120,
+					"height": 25,
+					"dataSource": "ZBouImpSel",
+					"shortcutKey": "i",
+					"text": "Imprimer",
+					"class": "Boutons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/ZBouImpSel.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"ZBouQuitteListe": {
+					"type": "button",
+					"top": 44,
+					"left": 773,
+					"width": 174,
+					"height": 25,
+					"dataSource": "ZBouQuitteListe",
+					"action": "cancel",
+					"shortcutKey": "q",
+					"text": "Retour à l'écran de départ",
+					"class": "Boutons",
+					"textAlign": "center",
+					"focusable": false,
+					"method": "ObjectMethods/ZBouQuitteListe.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 2,
+					"left": 861,
+					"width": 83,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "Etiquette_normale",
+					"textAlign": "center",
+					"text": "Nbre photos"
+				}
+			}
+		}
+	]
+}

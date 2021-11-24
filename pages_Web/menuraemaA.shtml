@@ -1,0 +1,17 @@
+<br />
+<div style="backgroung-image:url(images/boites.png);">
+<p class="textecentre">
+    <img src="images/logoraema1.gif" width="472" height="83" />
+</p>
+<br />
+<ul id="cgmenuraema" class="cgmenuraema">
+    <li><a href="w2raemarenseignementA.shtml">General points</a></li>
+    <li><a href="w2raemapresentationA.shtml">RAEMA</a></li>
+    <li><a href="w2raemarapportsA.shtml">Reports</a></li>
+    <li><a href="w2raematarifsA.shtml">Prices</a></li>
+    <li><a href="w2raemaactualites.shtml">Agenda</a></li>
+    <li><a href="w2raemapourquoiA.shtml">Why join us?</a></li>
+    <li><a href="w2raemaabonnementA.shtml">Practical information</a></li>
+    <li><a href="w2raemaaccueilA.shtml">Participant access</a></li>				
+</ul>
+</div>

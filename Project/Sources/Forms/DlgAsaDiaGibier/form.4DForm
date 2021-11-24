@@ -1,0 +1,672 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1832,
+	"height": 1007,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 23,
+					"left": 13,
+					"width": 222,
+					"height": 29,
+					"class": "Titre",
+					"textAlign": "center",
+					"text": "AsaDia Gibier"
+				},
+				"ListBoxPhotos": {
+					"type": "listbox",
+					"top": 75,
+					"left": 13,
+					"width": 552,
+					"height": 671,
+					"resizingMode": "legacy",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"rowFillSource": "TbCouleurFondAdG",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxPhotos.4dm",
+					"events": [
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "TbRef1",
+							"dataSource": "TbRef",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête8",
+								"text": "Ref",
+								"dataSource": "Entête1",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied8",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbLien",
+							"dataSource": "TbLien",
+							"width": 56,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Lien",
+								"dataSource": "Entête1",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbNomLésion",
+							"dataSource": "TbNomLésion",
+							"width": 236,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Nom de la lésion",
+								"dataSource": "Entête2",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbEspèce",
+							"dataSource": "TbEspèce",
+							"width": 96,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Espèce",
+								"dataSource": "Entête3",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbOrgane",
+							"dataSource": "TbOrgane",
+							"width": 98,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Organe",
+								"dataSource": "Entête4",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbAuteur",
+							"dataSource": "TbAuteur",
+							"width": 91,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête9",
+								"text": "Auteur",
+								"dataSource": "Entête5",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied9",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbDimensions",
+							"dataSource": "TbDimensions",
+							"width": 91,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": "Dimensions",
+								"dataSource": "Entête5",
+								"fontFamily": "Arial",
+								"fontSize": 14
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbChemin",
+							"dataSource": "TbChemin",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": "Chemin",
+								"dataSource": "Entête6",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "TbDescription",
+							"dataSource": "TbDescription",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Arial",
+							"fontSize": 14,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": "Commentaire",
+								"dataSource": "Entête7",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 14,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"BouQuitte": {
+					"type": "button",
+					"top": 17,
+					"left": 815,
+					"width": 106,
+					"height": 40,
+					"action": "cancel",
+					"text": "Quitter",
+					"class": "Titre_petit",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarImage": {
+					"type": "input",
+					"top": 8,
+					"left": 1032,
+					"width": 800,
+					"height": 800,
+					"dataSource": "VarImage",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/VarImage.4dm",
+					"events": [
+						"onDoubleClick"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 358,
+					"left": 573,
+					"width": 169,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"text": "Données techniques"
+				},
+				"VarComImage": {
+					"type": "input",
+					"top": 381,
+					"left": 573,
+					"width": 263,
+					"height": 161,
+					"dataSource": "VarComImage",
+					"class": "Champ_grand",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 582,
+					"left": 573,
+					"width": 169,
+					"height": 19,
+					"class": "Etiquette_grande",
+					"text": "Commentaire"
+				},
+				"VarCom": {
+					"type": "input",
+					"top": 605,
+					"left": 573,
+					"width": 385,
+					"height": 129,
+					"dataSource": "VarCom",
+					"class": "Champ_grand",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarValeurTech": {
+					"type": "input",
+					"top": 360,
+					"left": 748,
+					"width": 24,
+					"height": 17,
+					"dataSource": "VarValeurTech",
+					"focusable": false,
+					"fill": "#008000",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none"
+				},
+				"VarCDPhotos": {
+					"type": "input",
+					"top": 239,
+					"left": 579,
+					"width": 394,
+					"height": 97,
+					"dataSource": "VarCDPhotos",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouCreationTb": {
+					"type": "button",
+					"top": 20,
+					"left": 260,
+					"width": 177,
+					"height": 35,
+					"text": "Création des tableaux",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/BouCreationTb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarTriplette": {
+					"type": "input",
+					"top": 85,
+					"left": 579,
+					"width": 448,
+					"height": 85,
+					"dataSource": "VarTriplette",
+					"class": "Titre",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouCréationListe2": {
+					"type": "button",
+					"top": 961,
+					"left": 1103,
+					"width": 295,
+					"height": 40,
+					"text": "Création des tableaux",
+					"class": "Titre_petit",
+					"method": "ObjectMethods/BouCréationListe2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ExportPhotos": {
+					"type": "button",
+					"top": 956,
+					"left": 104,
+					"width": 297,
+					"height": 25,
+					"dataSource": "BouExporTbPhotosMM",
+					"text": "Exporter les photos pour Michel MAS",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/ExportPhotos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouExporTbPZ": {
+					"type": "button",
+					"top": 982,
+					"left": 104,
+					"width": 297,
+					"height": 25,
+					"dataSource": "BouExporTbPZ",
+					"text": "Exporter les tableaux pour Pierre Zacharie",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/BouExporTbPZ.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouListePhoto": {
+					"type": "button",
+					"top": 759,
+					"left": 19,
+					"width": 134,
+					"height": 23,
+					"text": "Liste des photos",
+					"method": "ObjectMethods/BouListePhoto.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarCDListePhotos": {
+					"type": "input",
+					"top": 754,
+					"left": 173,
+					"width": 532,
+					"height": 33,
+					"dataSource": "VarCDListePhotos",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouDossierPhoto": {
+					"type": "button",
+					"top": 812,
+					"left": 19,
+					"width": 134,
+					"height": 23,
+					"text": "Dossier des photos",
+					"method": "ObjectMethods/BouDossierPhoto.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarCDDossierPhotos": {
+					"type": "input",
+					"top": 807,
+					"left": 173,
+					"width": 532,
+					"height": 33,
+					"dataSource": "VarCDDossierPhotos",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarRef": {
+					"type": "input",
+					"top": 171,
+					"left": 579,
+					"width": 116,
+					"height": 22,
+					"dataSource": "VarRef",
+					"class": "Titre_petit",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarAuteur": {
+					"type": "input",
+					"top": 207,
+					"left": 579,
+					"width": 199,
+					"height": 22,
+					"dataSource": "VarAuteur",
+					"class": "Titre_petit",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouImprimeAntichambre": {
+					"type": "button",
+					"top": 21,
+					"left": 626,
+					"width": 160,
+					"height": 32,
+					"text": "Imprimer les photos",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/BouImprimeAntichambre.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouCreationCandidats": {
+					"type": "button",
+					"top": 20,
+					"left": 440,
+					"width": 177,
+					"height": 35,
+					"text": "Création des candidats",
+					"class": "Champ_grand",
+					"method": "ObjectMethods/BouCreationCandidats.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NbDia": {
+					"type": "input",
+					"top": 58,
+					"left": 503,
+					"width": 41,
+					"height": 13,
+					"dataSource": "NbDia",
+					"dataSourceTypeHint": "number",
+					"class": "Petite_écriture",
+					"textAlign": "center",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 1,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

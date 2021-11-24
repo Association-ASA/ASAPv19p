@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+			<br />
+          <ul class="breadcrumb">
+            <li><a href="w2exemplealisample0.html">Exemple</a></li>
+            <li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+            <li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+            <li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+            <li><a href="w2exemplealisample4.html">Unités classées</a></li>
+            <li><a href="w2exemplealisample5.html">2 classes</a></li>
+            <li><a href="#"></a></li>								
+					</ul>
+						<br />
+					
+          <ul class="breadcrumb">
+            <li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+            <li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+          </ul>
+          <p class="titrepage">EXEMPLE</p><br />
+          <p class="textecentre"><b>Vous choisissez la loi Binomiale (utilisée par défaut)</b>
+          <span class="titrepage">
+          cliquez sur le bouton "Binomiale" pour poursuivre
+          </span>
+          </p>
+          <br />
+          <p class="textecentre"><img src="images/Image7.gif" WIDTH=900 HEIGHT=540 border="0" usemap="#Map" /> 
+            <map name="Map">
+              <area shape="rect" coords="50,110,435,200" href="w2exemplealisample8.html" />
+            </map>
+          </p>
+          <br />
+			</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

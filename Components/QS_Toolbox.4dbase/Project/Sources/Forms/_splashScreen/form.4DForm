@@ -1,0 +1,71 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 350,
+	"height": 80,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"infoText": {
+					"type": "text",
+					"top": 43,
+					"left": 84,
+					"width": 255,
+					"height": 30,
+					"stroke": "#888888",
+					"textAlign": "left",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"fontWeight": "bold"
+				},
+				"Image4": {
+					"type": "picture",
+					"top": 12,
+					"left": 7,
+					"width": 57,
+					"height": 55,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/pictures/QS_Toolbox.png"
+				},
+				"Version": {
+					"type": "input",
+					"top": 12,
+					"left": 84,
+					"width": 346,
+					"height": 25,
+					"dataSource": "\"QS_Toobox - \"+Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_DBName",
+					"stroke": "#808080",
+					"textAlign": "left",
+					"fontFamily": "Courrier Gras",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>TARIFS 2015</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps"> <!-- Corps de la page -->
+			<div id="contenu1"> <!-- Contenu de la page -->
+        <br />
+        <!--4dinclude menuraema.shtml-->	
+        <br /><br />	
+        <p class="grandtitrepage">TARIFS 2015</p>
+        <br />
+        <div id="raema"><!-- Partie RAEMA -->			
+          <p class="grandhautpage">
+            RAEMA
+          </p>
+          <br /> 
+          <div id="raemapoudre" class="grandhautpagedecale"> <!-- Partie RAEMA Poudre -->
+            RAEMA POUDRE
+            <div class="textedecale"><!-- Décale le texte -->
+              <div class="tarifbloc"><!-- Bloc flottant à droite -->          
+                <span class="tarifn3">Une campagne(mars ou octobre) :</span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Libellé</th>
+                    <th class="cgcolonne1tarif plus">Prix Unitaire</th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Une campagne(mars ou octobre)</td>
+                    <td class="tarifprix">660 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Cotisation à l' ASA</td>
+                    <td class="tarifprix">35 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="texteadroite">TOTAL</td>
+                    <td class="tarifprix">695 € HT</td>
+                  </tr>
+                </table>
+              </div><!-- Fin de Bloc flottant à droite -->
+            
+              <p >
+               <span class="tarifn3">Deux campagnes (mars et octobre ) :</span>
+               <table class="cgtbtarif">
+                 <tr >	
+                   <th class="cgcolonne1tarif plus">Libellé</th>
+                   <th class="plus">Prix Unitaire</th>
+                 </tr>
+                 <tr>
+                   <td class="cgtexteaucentre">Deux campagnes (mars et octobre)</td>
+                   <td class="tarifprix">930 € HT</td>
+                 </tr>
+                 <tr>
+                   <td class="cgtexteaucentre">Cotisation à l' ASA</td>
+                   <td class="tarifprix">35 € HT</td>
+                 </tr>
+                 <tr>
+                   <td class="texteadroite">TOTAL</td>
+                   <td class="tarifprix">965 € HT</td>
+                 </tr>
+               </table>
+              </p>
+              <br />        
+              <span class="tarifn3">Colis transport boîte isotherme : </span>125 € HT
+              <br />  <br />    
+              <span class="tarifn3">Colis supplémentaire pour deux campagnes
+              AVEC édition de rapport COFRAC : </span>640 € HT
+               <br />        
+              <span class="tarifn3">Colis supplémentaire pour une seule campagne
+              (mars ou octobre) AVEC édition de rapport COFRAC : </span>455 € HT
+              <br />
+              <br />        
+              <span class="tarifn3">Colis supplémentaire par campagne
+              SANS édition de rapport COFRAC : </span>100 € HT
+              <br />        
+            </div><!-- Fin de texte décalé -->
+          </div> <!-- Fin de Partie RAEMA Poudre -->
+        
+          <div id="raemagel" class="grandhautpagedecale">  <!-- Partie RAEMA Gel -->
+            <br />  
+            RAEMA GEL
+            <div class="textedecale"><!-- Décale le texte -->
+              <div class="tarifbloc"><!-- Bloc flottant à droite -->
+                <span class="tarifn3">Une campagne : </span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Libellé</th>
+                    <th class="plus">Prix Unitaire</th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">1 dénombrement</td>
+                    <td class="tarifprix">250 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">2 dénombrements</td>
+                    <td class="tarifprix">300 € HT</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="cgtexteaucentre">3 dénombrements</td>
+                    <td class="tarifprix">330 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">4 dénombrements</td>
+                    <td class="tarifprix">350 € HT</td>
+                  </tr>
+                            
+                </table>
+              </div><!-- Fin de Bloc flottant à droite -->
+              <p>
+                <span class="tarifn3">Deux campagnes :</span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Libellé</th>
+                    <th class="plus">Prix Unitaire</th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">1 dénombrement</td>
+                    <td class="tarifprix">300 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">2 dénombrements</td>
+                    <td class="tarifprix">350 € HT</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="cgtexteaucentre">3 dénombrements</td>
+                    <td class="tarifprix">380 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">4 dénombrements</td>
+                    <td class="tarifprix">400 € HT</td>
+                  </tr>
+                            
+                </table>
+              </p>
+              <br />
+            </div><!-- Fin de texte décalé -->	
+           <br />
+          </div><!-- Fin de Partie RAEMA Gel -->
+        </div><!-- Fin de Partie RAEMA -->
+        <div id="asadia"><!-- Partie AsaDia -->
+          <p class="grandhautpage">
+            DVD-ROM ASADIA 2
+          </p>
+          <div id="dvdasadia" class="grandhautpagedecale"> 
+            <div class="textedecale"><!-- Décale le texte -->
+              <p>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Libellé</th>
+                    <th class="plus">Prix Unitaire</th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Unitaire public (de 1 à 3 exemplaires)</td>
+                    <td class="texteadroite">350 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Quantité public (de 4 à 6 exemplaires)</td>
+                    <td class="texteadroite">300 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Quantité public (de 7 à 9 exemplaires)</td>
+                    <td class="texteadroite">250 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Quantité public (10 ou plus exemplaires)</td>
+                    <td class="texteadroite">200 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Adhérent ou possesseur d'une licence AsaDia 1 payante</td>
+                    <td class="texteadroite">200 € HT</td>
+                  </tr>					
+                </table>
+              </p>
+                <br />
+            </div>
+             <br />
+          </div>
+        </div><!-- Fin de Partie AsaDia -->
+        <div id="raema"><!-- Partie RAEMA -->			
+          <p class="grandhautpage">
+            RAEMA
+          </p>
+          <br /> 
+          <div id="livre" class="grandhautpagedecale"> <!-- Partie Livre -->
+            LIVRE
+            <div class="textedecale"><!-- Décale le texte -->
+            <span class="tarifn3"> Le contrôle en santé publique agronomique et vétérinaire</pan>
+            Analyse d’une politique publique : 30,43 € HT  
+            </div>
+          </div>
+            
+      </div> <!-- Fin de Contenu de la page -->
+    </div>  <!-- Fin de Corps de la page -->
+    
+   <div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+
+<!--
+     
+       
+      
+        
+         <br />
+             <div>			
+                <p class="textebanal">
+           <br />
+             LIVRE XAVIER DELOMEZ
+             <table class="cgtbtarif">
+             <tr >	
+               <th class="cgcolonne1tarif tbbordure plus">Libellé</th>
+               <th class="tbbordure plus">Prix Unitaire</th>
+             </tr>
+             <tr>
+               <td class="cgtexteaucentre">Livre Xavier Delomez</td>
+               <td class="texteadroite">30,43 € HT</td>
+             </tr>
+             <tr>
+               <td class="cgtbtotal">TOTAL</td>
+               <td class="cgtbtotal">30,43 € HT</td>
+             </tr>
+             </table>
+           <p/>
+           </div>
+				</div>
+				-->
+       
+		  

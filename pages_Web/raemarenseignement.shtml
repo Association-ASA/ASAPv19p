@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>CIL Généralités</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raemarenseignementA.shtml">
+        <img  src="images/DrapeauA.gif" alt="english flag" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps" class="textebanalgrand">
+			<!--4dinclude menuraema.shtml-->	
+				 <div id="idnoadherent">
+						<p class="grandhautpage">Généralités
+						</p>
+                
+            <div class="idblocinfo3">
+							<img src="images/aliment.JPG"
+								alt="Légumes"
+								title="Légumes"
+								width="277"
+								height=="174"
+							/>
+              <p class="textebloc">
+								<br />
+                <span class="plus">Qu'est-ce qu'une Comparaison interlabo- ratoires (CIL) et pourquoi y participer ?</span><br />
+                Les principales raisons sont :<br />
+                 - Prouver sa capacité analytique<br />
+                 - Améliorer son fonctionnement<br />
+                 - Répondre aux exigences de la norme ISO 17025<br />
+                 - Qualifier son personnel<br />
+                
+								<br /><br />
+								<p class="texteadroite">
+                 <a href="raemacil.shtml">En savoir plus</a><br />
+								</p>
+              </p>
+            </div>
+            
+            <div class="idblocinfo3">
+							<img src="images/raemaconteneur.JPG"
+								alt="Pots RAEMA"
+								title="Pots RAEMA"
+								width="277"
+							/>
+							              <p class="textebloc">
+								<br />
+								<span class="plus">Que propose le RAEMA ?</span><br />
+                Le RAEMA propose 4 campagnes par an :<br />
+                2 campagnes, en mars et en octobre du RAEMA "poudre" sur support de poudre de lait lyophilisée<br />
+                2 campagnes, en mai et en décembre du RAEMA "gel" sur matrice gélifiée
+							</p>
+							<br /><br /><br /><br />
+							 <p class="texteadroite">
+                 <a href="raemapresentation.shtml">En savoir plus</a><br />
+              </p>
+            </div>
+            
+            <div class="idblocinfo3">
+							<p class="fondblanccentre">
+								<img src="images/logoASA2.PNG"
+									alt="logo ASA"
+									title="logo ASA"
+									width="253"
+								/>
+
+								<img src="images/logoraema1.gif"
+									alt="CIL"
+									title="Comparaisons interlaboratoires"
+									width="270"
+								/>
+							</p>
+              <p class="textebloc">
+								<br />
+                <span class="plus">Pourquoi choisir le RAEMA ?</span><br />
+                L'ASA a un savoir faire dans le domaine de l'organisation d'une intercomparaison
+                puisque qu'elle propose le RAEMA depuis 1988.<br />
+                Depuis plus de 20 ans, quelque 400 laboratoires participent au RAEMA poudre.<br />
+                L'ASA a participé depuis l'origine aux travaux du COFRAC pour mettre en place
+                l'accéditation des organisateurs d'intercomparaison.<br />
+                L'ASA est accréditée comme organisateur du RAEMA, selon la norme ISO 17043,
+                par le COFRAC depuis 2007 sous le n°
+                <a href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864">1-1836
+                </a>.
+							</p>
+							<br />
+							<p class="texteadroite">
+							 <a href="raemapourquoi.shtml">En savoir plus</a><br />
+							</p>
+            </div>
+         </div> 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

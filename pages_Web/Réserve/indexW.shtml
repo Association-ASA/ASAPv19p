@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>AsaDia 3</title>
+		<!--4dinclude HeaderAsaDia.shtml-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="styles/table.css" rel="stylesheet" type="text/css" />
+    <link href="styles/jquery-ui.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body> 
+		<div id="header" class="textecentre">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				
+				<br />
+				<input type="hidden" id="idpage" value="bouh !">
+        <p id="pumtypeles" class="paveles">
+					<span class="choixcritere">Choisissez  les lésions</span><br/>
+					<span class="textebanal">
+						Nomenclature : <input type="radio" id="dgal" name="nom" value="operationnel" checked />réglementaire    
+						<input type="radio" id="asa" name="nom" value="scientifique" />anatomo-pathologique
+					</span>
+					
+				 <br />
+					<select class="textebanal" id="lesion" name="organe" size="15" multiple >
+						<option name="bl"></option>
+						<option>Abcès non spécifique à localisation unique</option>
+						<option>Abcès non spécifiques à localisations multiples</option>
+						<option>Abcès omphalophlébitiques</option>
+						<option>Abcès par corps étranger</option>
+						<option>Abcès pyléphlébitiques</option>
+						<option>Abcès pyohémiques</option>
+						<option>Actinobacillose/Actinomycose</option>
+						<option>Altérations et anomalies : moisissures</option>
+						<option>Altérations et anomalies : putréfaction profonde (puanteur d'os)</option>
+						<option>Altérations et anomalies : putréfaction superficielle (limon)</option>
+						<option>Altérations et anomalies : souillures autres que liées au contenu digestif</option>
+						<option>Altérations et anomalies : tiquetage musculaire</option>
+						<option>Altérations et anomalies : tiquetage pulmonaire</option>
+						<option>Altérations et anomalies : tiquetage rénal </option>
+						<option>Altérations et anomalies souillures d'origine digestive</option>
+						<option>Amyotrophie localisée</option>
+						<option>Arthrite unique</option>
+						<option>Arthrites multiples</option>
+						<option>Broncho-pneumonie fibreuse</option>
+						<option>Broncho-pneumonie fibrinocongestive</option>
+						<option>Broncho-pneumonie gangreneuse</option>
+						<option>Broncho-pneumonie mucopurulente</option>
+						<option>Brucellose aiguë (Lésions de)</option>
+						<option>Cachexie</option>
+						<option>Calcinose</option>
+						<option>Charbon (lésions de)</option>
+						<option>Congestion diffuse de l’intestin </option>
+						<option>Congestion généralisée</option>
+						<option>Congestion généralisée avec hémorragies multiples</option>
+						<option>Congestion passive</option>
+						<option>Couleur anormale</option>
+						<option>Couleur anormale : anthracose pulmonaire</option>
+						<option>Couleur anormale : céroïdose</option>
+						<option>Couleur anormale : mélanose</option>
+						<option>Couleur anormale : ochronose</option>
+						<option>Couleur anormale : ostéohémochromatose</option>
+						<option>Cysticercose hépatopéritonéale</option>
+						<option>Cysticercose musculaire généralisée</option>
+						<option>Cysticercose musculaire localisée : forme dégénérée</option>
+						<option>Cysticercose musculaire localisée : forme vivante</option>
+						<option>Cytostéatonécrose</option>
+						<option>Dermite non parasitaire (ou lésions de )</option>
+						<option>Distomatose avec observation de douves à l’ouverture des canaux biliaires (Lésions de)</option>
+						<option>Distomatose sans observation de douves à l’ouverture des canaux biliaires (Lésions de)</option>
+						<option>Echinococcose (Lésions d')</option>
+						<option>Emphysème pulmonaire</option>
+						<option>Endocardite fibreuse</option>
+						<option>Endocardite fibrineuse</option>
+						<option>Entérite congestive</option>
+						<option>Entérite fibreuse</option>
+						<option>Entérite hypertrophiante</option>
+						<option>Escarres et autres plaies cutanées</option>
+						<option>Gale (lésions de)</option>
+						<option>Gangrène</option>
+						<option>Hémarthrose</option>
+						<option>Hépatite insulaire nécrosante</option>
+						<option>Hépatite interstitielle fibreuse</option>
+						<option>Hépatite toxi-infectieuse</option>
+						<option>Hydronéphrose</option>
+						<option>Hypodermose (ou lésion d')</option>
+						<option>Ictère</option>
+						<option>Infiltration hémorragique</option>
+						<option>Infiltration hémorragique liée à une fracture</option>
+						<option>Infiltration séreuse du tissu conjonctif</option>
+						<option>Kyste</option>
+						<option>Lymphadénite caséeuse des petits ruminants</option>
+						<option>Lymphadénite généralisée</option>
+						<option>Mammite</option>
+						<option>Métrite</option>
+						<option>Morve (lésions de)</option>
+						<option>Myosite éosinophilique</option>
+						<option>Myosite localisée</option>
+						<option>Myosite oedémateuse des jeunes bovins</option>
+						<option>Néphrite glomérulo-épithéliale</option>
+						<option>Néphrite interstitielle fibreuse</option>
+						<option>Néphrite maculeuse</option>
+						<option>Néphrite thrombo-embolique</option>
+						<option>Odeur anormale</option>
+						<option>Odeur sexuelle prononcée</option>
+						<option>Oedème</option>
+						<option>Ostéodystrophie</option>
+						<option>Ostéomyélite</option>
+						<option>Péricardite congestive</option>
+						<option>Péricardite fibreuse</option>
+						<option>Péricardite fibrineuse</option>
+						<option>Péricardite gangreneuse</option>
+						<option>Péricardite purulente</option>
+						<option>Péritonite congestive</option>
+						<option>Péritonite fibreuse</option>
+						<option>Péritonite fibrineuse</option>
+						<option>Péritonite gangreneuse</option>
+						<option>Péritonite purulente</option>
+						<option>Phlegmon</option>
+						<option>Pleurésie congestive</option>
+						<option>Pleurésie fibreuse</option>
+						<option>Pleurésie fibrineuse</option>
+						<option>Pleurésie purulente</option>
+						<option>Pneumonie congestive</option>
+						<option>Pneumonie fibreuse</option>
+						<option>Processus tumoral généralisé</option>
+						<option>Processus tumoral généralisé : lymphosarcome</option>
+						<option>Processus tumoral généralisé : mélanosarcome</option>
+						<option>Processus tumoral localisé</option>
+						<option>Pyélonéphrite</option>
+						<option>Réticulopéritonite stabilisée</option>
+						<option>Rouget (Lésions de)</option>
+						<option>Sarcosporidiose (Lésions de)</option>
+						<option>Schwannome</option>
+						<option>Sclérose hépatique</option>
+						<option>Sclérose musculaire</option>
+						<option>Sclérose musculaire iatrogène</option>
+						<option>Stéatose</option>
+						<option>Stomatite</option>
+						<option>Strongylose (Lésions de)</option>
+						<option>Teigne (ou lésions de)</option>
+						<option>Télangiectasie maculeuse</option>
+						<option>Tuberculose généralisée (Lésion fortement évocatrice de )</option>
+						<option>Tuberculose localisée (Lésion fortement évocatrice de )</option>
+						<option>Viande à évolution anormale : myopathie exsudative dépigmentaire</option>
+						<option>Viande à évolution anormale : viande fiévreuse</option>
+						<option>Viande à évolution anormale : viande surmenée</option>
+						<option>Viande immature</option>
+						<option>Viande saigneuse</option>
+						<option>Viandes résultant du parage de la plaie de saignée</option>
+					</select>
+        </p>
+				
+				<p id="paveespecetout" class="pavespece textebanal">
+					<span class="choixcritere">Choisissez  les espèces</span>
+					<br />
+					<input type="checkbox" class="casesp" id="bacbv" name="Bovins" />Bovins 
+					<input type="checkbox" class="casesp" id="bacov" name="Ovins" />Ovins 
+					<input type="checkbox" class="casesp" id="bacca" name="Caprins" />Caprins 
+					<input type="checkbox" class="casesp" id="bacpo" name="Porcins" />Porcins 
+					<input type="checkbox" class="casesp" id="baceq" name="Equins" />Equins
+				
+					<br /><br />
+					
+						 <span class="choixcritere">Choisissez  les organes</span>
+					<br />
+							<span class="souschoixcritere">Appareil digestif : </span>
+						<input type="checkbox" class="casorg" id="baclan" name="Langue" />Langue  
+						<input type="checkbox" class="casorg" id="bacoes" name="oesophage" />Œsophage  
+						<input type="checkbox" class="casorg" id="bactd" name="tube digestif" />Tube digestif
+					
+					<br />                               
+						<input type="checkbox" class="casorg" id="bacfoie" name="Foie" />Foie  
+						<input type="checkbox" class="casorg" id="bacpan" name="Pancreas" />Pancréas  
+						<input type="checkbox" class="casorg" id="bacpert" name="peritoine" />Péritoine  
+						<input type="checkbox" class="casorg" id="bacfres" name="fressure" />Fressure
+					
+					<br />
+							<span class="souschoixcritere">Appareil respiratoire : </span>
+						<input type="checkbox" class="casorg" id="bactrac" name="Trachee" />Trachée  
+						<input type="checkbox" class="casorg" id="bacpou" name="Poumon" />Poumon  
+						<input type="checkbox" class="casorg" id="bacple" name="Plevre" />Plèvre
+					
+					<br />
+							<span class="souschoixcritere">Appareil circulatoire : </span>
+						<input type="checkbox" class="casorg" id="baccoe" name="Coeur" />Cœur  
+						<input type="checkbox" class="casorg" id="bacperc" name="Pericarde" />Péricarde  
+						<input type="checkbox" class="casorg" id="bacvs" name="Vaisseaux sanguins" />Vaisseaux sanguins
+					
+					<br />
+						 <span class="souschoixcritere">Appareil ostéo-musculaire : </span>
+						<input type="checkbox" class="casorg" id="bacos" name="os et articulation" />Os et articulation 
+						<input type="checkbox" class="casorg" id="bacmus" name="Muscles" />Muscles 
+						<input type="checkbox" class="casorg" id="baccar" name="Carcasse" />Carcasse
+					
+					<br />
+							<span class="souschoixcritere">Appareil urinaire : </span>
+						<input type="checkbox" class="casorg" id="bacrein" name="Rein" />Rein  
+						<input type="checkbox" class="casorg" id="bacves" name="Vessie" />Vessie  
+					
+					<br />
+						 <span class="souschoixcritere">Appareil génital :  </span>
+						<input type="checkbox" class="casorg" id="bacagf" name="appareil génital femelle" />Femelle  
+						<input type="checkbox" class="casorg" id="bacagm" name="appareil génital mâle" />Mâle   
+						<input type="checkbox" class="casorg" id="bacmam" name="Mamelle" />Mamelle
+					<br />
+						 <span class="souschoixcritere">Autres :   </span>
+						<input type="checkbox" class="casorg" id="bactca" name="tissu conjonctivo-adipeux" />Tissu conjonctivo-adipeux  
+						<input type="checkbox" class="casorg" id="bacnl" name="noeud lymphatique" />Nœud lymphatique   
+						<br />     
+						<input type="checkbox" class="casorg" id="bacrate" name="Rate " />Rate   
+						<input type="checkbox" class="casorg" id="bacthym" name="Thymus" />Thymus
+						<br />     
+						<input type="checkbox" class="casorg" id="bactet" name="Tete" />Tête   
+						<input type="checkbox" class="casorg" id="bacpeau" name="Peau" />Peau   
+						<input type="checkbox" class="casorg" id="bacsur" name="Surrenales" />Surrénales   
+						<input type="checkbox" class="casorg" id="bacthyr" name="Thyroide" />Thyroide   
+						<input type="checkbox" class="casorg" id="bacsn" name="système nerveux" />Système nerveux
+				</p>
+          <input type="button" id="btnOuvrir" value="ouvrir" />
+          
+				<p id="critere" class="choixresultat">
+					Critère de la recherche
+				</p>
+				
+				<p id="formule">
+				 
+				</p>
+				<p id="resultat" class="choixresultat">
+					Résultat de la recherche
+          <button id="bouvisetrieuse" class="textebanalgrand">Voir les photographies</button>
+				</p> 				 				 
+				<div id="tbphotos" class="tbphotos">
+          
+        </div>
+				
+				<div id="photolesion" class="textecentre">
+          
+        </div>
+        
+				<div id="boutontrieusephotos" class="textecentre">
+          <br /><br /><br />
+         
+					<br /><br />  <br /><br />  <br /><br />  <br /><br />  <br /><br />  <br /><br />
+          <!--
+					<br /><br />  <br /><br />  <br /><br />  <br /><br />  <br /><br />  <br /><br />
+          <br /><br />
+          -->
+        </div>
+        <div id="trieusephotos" class="trieuse">
+          
+        </div>
+			</div>	 
+    </div>
+		<div id="fleche">
+      <div id="id_view_image_body"></div>
+      <div id="id_view_image"></div>
+    </div>
+     <script type="text/javascript" src="js/jquery.min.js"></script> 
+     <script type="text/javascript" src="js/dataTable.js"></script>
+     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+     <script>
+			function generateUUID() {
+				var d = new Date().getTime();
+				var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+						var r = (d + Math.random()*16)%16 | 0;
+						d = Math.floor(d/16);
+						return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+				});
+				return uuid;
+			};
+
+			function choixNavigateur() 
+			 {
+				 if (navigator.userAgent.indexOf('MSIE 6')!=-1) 
+				 return new ActiveXObject('Microsoft.XMLHTTP');
+				 else
+				 return new XMLHttpRequest();  
+			 }
+        
+			$(function() {
+        
+        $(document).ready(function() {
+          
+          $("#dialog").dialog({
+               autoOpen: false,
+               show: "blind",
+               hide: "explode",
+               height: 340,
+               modal: true,
+               buttons: {
+                  "Vrai": function() {
+                     $(this).dialog("close");
+                  },
+                  "faux": function() {
+                     $(this).dialog("close");
+                  }
+               }
+            });
+
+            $("#btnOuvrir").click(function() {
+               $("#dialog").dialog("open");
+            });
+          
+          $(".choixresultat").hide();
+					var uuid = generateUUID()
+					$('#idpage').attr('value',uuid)
+        });
+        
+        function formulerequete()
+        {
+            var esp=""
+            $('.casesp').each(function(index) {
+							if ($(this).is(':checked')==true) {
+								esp=esp+', '+$(this).attr('name');
+							}
+            }) ;
+						
+						if (esp.length>0) {
+							esp=esp.substring(2);
+							afficheesp = esp;
+						}
+						else
+						{
+							afficheesp ='toutes les espèces '
+						}
+            
+            var org=""
+            $('.casorg').each(function(index) {
+            if ($(this).is(':checked')==true) {
+            org=org+', '+$(this).attr('name');
+            }
+            }) ;
+            if (org.length>0) {
+							org=org.substring(2);
+							afficheorg = org;
+						}
+						else
+						{
+							afficheorg ='tous les organes '
+						}
+  
+  
+           var les = $('#lesion').val();
+					 afficheles = les
+            if (les=="" || les==null) {
+              les=""
+							 afficheles = 'Toutes les lésions '
+            }
+						var liste= ($('#asa').is(':checked')==true) ? 'a' : 'd' ;
+						 
+            var formule = liste+'Espèces : '+esp+"<br />"+'Organes : '+org+"<br />"+'Lésions : '+les
+						var afficheres = afficheles +' sur '+ afficheorg +' chez les '+ afficheesp +'<br /><br />';
+            $('#formule').html(afficheres);
+            flipflop(formule);
+             $(".choixresultat").show();
+          }
+          
+       
+        
+        function flipflop(formule)  
+         {
+            var requete = choixNavigateur();
+            var doc = "flipflop"+formule;
+            requete.open("post",doc,false);
+            requete.send(null);
+            var reponse = requete.responseText;
+            $('#tbphotos').html(reponse)
+            $('#photolesion').html("")
+            $('#TbRes').dataTable({
+                "pagingType": "full_numbers"
+              });
+            $('#TbRes_length').html('Liste des photographies');
+            $('#TbRes tbody').on('click', 'tr', function () {
+                $('tr.TbCorpsL').removeClass('selected');
+                $(this).toggleClass('selected');
+                var numimage = $('td', this).eq(0).text();
+                var doc = "image"+numimage;
+                var requete = choixNavigateur();
+                requete.open("post",doc,false);
+                requete.send(null);
+                var reponse = requete.responseText;
+                $('#photolesion').html(reponse);
+              } );
+            
+         };
+        
+        $("#photolesion").click(function()  
+				{
+					 var cdimage='images/'+$('#imagette').attr('name')+".jpg";
+					$("#id_view_image").html("<img src='"+cdimage+"' class='view_image_img'/>");
+					$("#id_view_image_body").addClass("view_image_body");
+					$("#id_view_image").addClass("view_image");
+				});
+					
+				$(document).keydown(function(event) { 
+					if (event.which == 13) $('.save').click();   // enter (works as expected)
+					if (event.which == 27) {
+						$("#id_view_image").html("");
+						$("#id_view_image_body").removeClass("view_image_body");
+						$("#id_view_image").removeClass("view_image");
+						}
+				});
+
+			
+        
+        
+         $('.casesp').click(function()
+        {
+          formulerequete()
+        });
+				 
+        $('.casorg').click(function()
+        {
+          formulerequete()
+        });
+				
+          $('#lesion').click(function()
+        {
+          formulerequete()
+        });  
+
+        $('#asa').on('click', function()
+				{
+					var nomenclat= 'nomenclature asa';
+					var requete = choixNavigateur();
+					requete.open("post",nomenclat,false);
+					requete.send(null);
+					// alert(requete.responseText);
+					var reponse = requete.responseText;
+					$('#lesion').html(reponse);
+				});
+				
+				$('#dgal').on('click', function()
+				{
+					var nomenclat= 'nomenclature dgal';
+					var requete = choixNavigateur();
+					requete.open("post",nomenclat,false);
+					requete.send(null);
+					// alert(requete.responseText);
+					var reponse = requete.responseText;
+					$('#lesion').html(reponse);
+				});
+				
+				$('#bouvisetrieuse').click(function()
+        {
+					$('#trieusephotos').html("")
+          $('#TbRes tbody > tr').each(function() {
+          var ligneimage = $(this).eq(0).text();
+					var numimage = parseInt(ligneimage);
+          $('<p class="inlinebloc"> <img id="img1" width="250" alt="image" src="images/'+numimage+'i.jpg" /> <br />'+ligneimage+'</p>').appendTo('#trieusephotos');
+         });                           
+           
+        });
+
+			});												
+    </script>    
+	</body>
+	
+</html>

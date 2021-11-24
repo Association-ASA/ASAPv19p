@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+     <!--4dinclude HeaderRaema.shtml-->
+<title><!--4dVAR TitrePage--></title>
+</head>
+
+<body>
+	<div id="header" align="center">
+    	<a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+	</div>
+
+	<div id="corps">
+    
+
+	<div id="contenu">
+		<p class="hautpage">Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus</p>
+		<br /><br />
+		<p class="titrepage">LISTE DES UTILISATEURS D'ASADIA 2<br /><br /><br />
+  			<form name="form1" id="form1" method="post" action="mw2WebAsadia2Liste">
+
+    	<table align="center" width="100%" border="0">
+     	<tr> 
+        <td width="25%" align="center" class="cellulebord2"> 
+        <div align="center">
+        <a href="../index.shtml"> 
+            <input type="submit" class="titrepage" name="bouvoir" value="Voir" />
+            </a> 
+        </div>
+        </td>
+        
+         <td width="25%" align="center" class="cellulebord2"> 
+        <div align="center">
+        <a href="../index.shtml"> 
+            <input type="submit" class="titrepage" name="bouajoute" value="Ajouter" />
+            </a> 
+        </div>
+        </td>
+        
+        <td width="25%" class="cellulebord2"> 
+        <div align="center">
+        <a href="../index.shtml"> 
+            <input type="submit" class="titrepage" name="boumodif" value="Modifier" />
+        </a> 
+        </div>
+        </td>
+        
+        <td width="25%" class="cellulebord2"> 
+        <div align="center">
+        <a href="../index.shtml"> 
+            <input type="submit" class="titrepage" name="boudelete" value="Supprimer" />
+        </a> 
+        </div>
+        </td>
+        
+      </tr>
+    </table>
+    
+	</form>
+</p>
+    
+</div>
+
+</div>
+        <!--4dinclude pied.shtml-->
+</body>
+</html>

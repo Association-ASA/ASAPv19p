@@ -1,0 +1,1 @@
+﻿## $0:=Object_GetType($1)---## Restrictions**Current 4D version: 4D v18R6**Cannot be preemptif due to following information, ***except if*** there is/are called by a CALL FORM command:|Type|Variable / Method name||------|------||*4D Command*|`OBJECT Get type`||*4D Command*|`OBJECT Get type`|

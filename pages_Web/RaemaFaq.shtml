@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+    <title>FAQ du RAEMA</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				<br />
+				<div id="idconta" class="conta">
+					<p class="titrepage">Recommandations découlant des retours d'information
+						<p class="textebanal">
+							Les difficultés signalées par les laboratoires lors de l'utilisation du site, pour saisir leurs résultats
+							ou pour télécharger leurs rapports, nous conduisent à vous recommander les éléments suivants :<br /><br />
+							<ul class="facligne">
+								 <li>Eviter l'utilisation les versions antérieures à 9 de MicroSoft Internet Explorer™ comme navigateur Web et, par conséquent, l'utilisation de Windows XP™.</li> 
+								 <li>Activez Javascript afin de rendre la page plus réactive suite à la saisie de données non conformes.</li> 
+								 <li>Réglez, dans les options du navigateur Web, la modalité de téléchargement
+										 et de visualisation des documents pdf qui vous convient le mieux.</li>
+								 <li>Installez le programme gratuit TeamViewer™ sur votre ordinateur
+										 si vous désirez un dépannage à distance par l'ASA.    </li>
+							</ul>
+						</p>
+					</p>
+				</div>
+				
+				 <br /><br />
+				 
+				<div id="idfaq" class="conta">
+					<p class="titrepage">
+						Questions le plus souvent posées concernant le RAEMA
+					</p>
+					 <br />
+					<p class="faqtitrepage">
+						Question concernant les dates du RAEMA
+					</p>
+					<p class="factexteimage">
+							<img src="IMAGES/calendrier2.png" alt="Calendrier" width="136" height="92" 	/>
+					</p>
+					<p class="factextequestion">
+						Les dates d'envoi des colis, de dates limites pour les réponses
+						concernant les RAEMA à venir ainsi que les dates de disponibilité des rapports
+						et le lien pour les rapports généraux pour les RAEMA passés
+						font périodiquement l'objet de questions de la part des laboratoires.<br />
+					</p>
+					<p class="factextequestion">
+						 <span class="faqtitrepage">
+							Réponse de l'ASA :
+						 </span>
+						 La ligne "Agenda des RAEMA", dans l'onglet RAEMA du bandeau latéral du site,
+						 vous permet de connaître tous ces éléments.
+					 </p>
+					
+					
+					<br /><br />
+					
+					<p class="faqtitrepage"> Question concernant l'accès au site de l'ASA </p>
+					<p class="factexteimage">
+							<img src="IMAGES/SiteAsa.jpg" alt="Site" width="185" height="105" 	/>
+					</p>
+					<p class="factextequestion"> Quelques laboratoires nous ont signalé que
+						 lors de l'accès au site (soit par l'adresse IP 217.128.177.16
+						 soit par sa traduction littérale www.asa-spv.asso.fr) les liens ne fonctionnaient pas.
+						 Parfois l'écran était incomplet (manque du menu de navigation).<br />
+						 Dans tous les cas, cliquer sur un lien entraînait l'apparition d'une erreur (Service indisponible ).<br />
+						 <span class="faqtitrepage">Réponse de l'ASA : </span>
+						 L'image qui apparaît sur l'écran est celle  mise en mémoire par le navigateur.
+						 Vous pouvez donc réactualiser la page et si la manoeuvre est inopérante, vider le cache de votre navigateur.    <br />
+						 <span class="petittextevert">
+							 NB : Les modalités de réalisation des manoeuvres proposées sont différentes
+							 selon les navigateurs et décrites dans leur mode d'emploi.
+						 </span>
+					 </p>
+					
+					
+					<br /><br />
+					
+					<p class="faqtitrepage"> Précisions concernant le remplissage du formulaire</p>
+					<p class="factexteimage">
+							<img src="IMAGES/javascript.jpg" alt="Site" width="391" height="159" 	/>
+					</p>
+					<p class="factextequestion"> Le remplissage des données chiffrées ne doivent pas comporter d'unité.
+						 Si Javascript est activé sur votre ordinateur, il vous en informera tout de suite après la saisie.
+						 Dans le cas contraire, un écran apparaîtra après l'envoi du questionnaire.<br />
+						 C'est pourquoi nous vous conseillons de maintenir l'utilisation de Javascript dans votre navigateur.<br />
+						 Pour ce qui est des résultats chiffrés des germes, veillez à bien entrer 0.1 (zéro point un)
+						 et non 0,1 (zéro virgule un) qui est susceptible de provoquer une alerte.<br />
+						 <span class="petittextevert">NB : Les modalités d'activation désactivation de Javascript
+							 sont différentes selon les navigateurs et décrites dans leur mode d'emploi.
+						 </span>
+					 </p>
+					 
+					 <br /><br />
+					
+					 <p class="faqtitrepage"> Question concernant l'envoi de l'accusé réception</p>
+					 <p class="factexteimage">
+							<img src="IMAGES/ar.jpg" alt="Site" width="400" height="159" 	/>
+					</p>
+					 <p class="factextequestion"> L'envoi de l'accusé de réception n'est pas suivi, dans les minutes
+						 qui suivent de la réception à l'adresse souhaitée.<br />
+						 <span class="faqtitrepage">Réponse de l'ASA : </span>
+						 Le mail est envoyé à l'adresse que vous indiquez
+						 : le premier réflexe est donc de vérifier la validité de cette adresse.<br />
+						 <span class="petittextevert">NB : L'adresse peut être enregistrée lors de votre envoi de façon
+							 à ce que le programme vous la propose par lors des prochaines visites. <br />
+							 Cette adresse peut être modifiée sans inconvénient.
+						 </span>
+					 </p>
+					 
+					 <br /><br />
+					 
+					 <p class="faqtitrepage"> Question concernant la récupération des rapports</p>
+					<p class="factexteimage">
+							<img src="IMAGES/ClicDroit.jpg" alt="Site" width="300" height="150" 	/>
+					</p>
+					 <p class="factextequestion"> Quelques laboratoires nous ont signalé que,
+							 lors de la récupération des rapports, les liens ne fonctionnaient pas.
+							<br />
+							 <span class="faqtitrepage">Réponse de l'ASA : </span>
+							 Les navigateurs Web ont récemment changé le fonctionnement du téléchargement.
+							 Fréquemment, ils enregistrent sans l'indiquer à l'utilisateur le fichier qui se trouve sous le lien de la page.
+								<br />
+							 Il s'en suit une impression de non-téléchargement.
+							 <br />
+							 Pour visualiser où le navigateur enregistre le rapport de campagne désigné,
+							 faîtes un clic droit sur le lien et demandez le menu local qui propose d'enregistrer la cible du lien
+							 sur votre disque dur. Dans le dialogue que vous proposera alors le navigateur,
+							 choisissez un emplacement où vous retrouverez facilement le fichier souhaité.
+							 <br />
+							 <span class="petittextevert">NB : Les modalités de téléchargement sont différentes et modifiables
+							 par l'utilisateur selon les types et versions des navigateurs. Elles sont décrites dans les modes d'emploi.</span>
+						</p>
+							<br /><br /> <br />
+
+							<p class="titrepage"> Pour poser une question ou suggérer une amélioration, cliquer
+								<a href="w2contact.shtml">
+									<u>ICI</u>
+								</a>
+							</p>
+							
+							<br /><br />
+					</div>	
+			</div>
+			
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+

@@ -1,0 +1,257 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 516,
+					"height": 355,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"top": 6,
+					"left": 14,
+					"width": 425,
+					"height": 22,
+					"class": "Titre_petit",
+					"textAlign": "center",
+					"text": "Choix des paramètres\r du texte à publier sur le Web"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 72,
+					"left": 16,
+					"width": 108,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Titre du texte"
+				},
+				"VarNomGeneral": {
+					"type": "input",
+					"top": 88,
+					"left": 17,
+					"width": 425,
+					"height": 17,
+					"dataSource": "VarNomGeneral",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 168,
+					"left": 15,
+					"width": 257,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Nom du fichier (sans extension)"
+				},
+				"VarNomFichier": {
+					"type": "input",
+					"top": 185,
+					"left": 17,
+					"width": 424,
+					"height": 17,
+					"dataSource": "VarNomFichier",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"BouQuitte": {
+					"type": "button",
+					"top": 311,
+					"left": 17,
+					"width": 154,
+					"height": 27,
+					"dataSource": "BouQuitte",
+					"action": "cancel",
+					"text": "Annuler",
+					"class": "Boutons",
+					"events": [
+						"onClick"
+					]
+				},
+				"BouOK": {
+					"type": "button",
+					"top": 311,
+					"left": 287,
+					"width": 154,
+					"height": 27,
+					"dataSource": "BouOK",
+					"action": "cancel",
+					"text": "Valider",
+					"class": "Titre_petit",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 211,
+					"left": 16,
+					"width": 354,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Référence de la source"
+				},
+				"VarTexteRevue": {
+					"type": "input",
+					"top": 227,
+					"left": 17,
+					"width": 424,
+					"height": 17,
+					"dataSource": "VarTexteRevue",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 253,
+					"left": 15,
+					"width": 437,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Auteur de la revue avec le titre  (complément de \"revu par \")"
+				},
+				"VarAuteurRevue": {
+					"type": "input",
+					"top": 270,
+					"left": 17,
+					"width": 424,
+					"height": 17,
+					"dataSource": "VarAuteurRevue",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 116,
+					"left": 15,
+					"width": 108,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Organe"
+				},
+				"VarNomOrgane": {
+					"type": "input",
+					"top": 132,
+					"left": 16,
+					"width": 269,
+					"height": 17,
+					"dataSource": "VarNomOrgane",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 116,
+					"left": 297,
+					"width": 108,
+					"height": 15,
+					"class": "Etiquette_normale",
+					"text": "Espèce"
+				},
+				"VarNomEspece": {
+					"type": "input",
+					"top": 132,
+					"left": 298,
+					"width": 144,
+					"height": 17,
+					"dataSource": "VarNomEspece",
+					"class": "Champ_grand",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PUMEspèce": {
+					"type": "dropdown",
+					"top": 132,
+					"left": 300,
+					"width": 142,
+					"height": 17,
+					"dataSource": "PUMEspèce",
+					"display": false,
+					"class": "Champ_petit",
+					"method": "ObjectMethods/PUMEspèce.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PUMOrgane": {
+					"type": "dropdown",
+					"top": 132,
+					"left": 17,
+					"width": 141,
+					"height": 18,
+					"dataSource": "PUMOrgane",
+					"display": false,
+					"class": "Champ_petit",
+					"method": "ObjectMethods/PUMOrgane.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1301 @@
+@import "reset.css";
+
+/* Feuille de style Asadia */
+
+/*         =GLOBAL            */
+
+
+body {
+    color:#333333;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:1.5;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#FFFFFF;
+  }
+
+/*  gestion des liens	*/
+a{
+    text-decoration:none;
+    color:#0B8293;
+  }
+
+a:hover{
+    text-decoration:underline;
+  }
+
+
+
+
+/* =ARCHI GENERALE */
+/*        MENU            */
+
+#menubar{
+    display: inline-block;
+  }
+
+#menubar li{
+    float: left;
+    list-style: none;
+    font: 16px Tahoma, Arial;
+    background: #586263;
+    color: #e6f0f1;
+    padding: 5px 12px;
+    border-right: 3px solid white;
+
+  }
+  
+#menubar li:hover{
+    background: #24313C;
+    cursor:  pointer;
+  }
+  
+  
+#menubar li a{
+		background: #586263;
+		padding: 5px 12px;
+		text-decoration: none;
+		/* border-right: 3px solid white;  */
+		color: #e6f0f1;
+  }
+  
+#menubar li a:hover{
+    background: #24313C
+  }
+  
+/*        Fin du menu            */		
+
+
+/*   BANDEAU SUP  */
+#header {
+    background-color:#fff;
+    width:1009px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+		/*
+    border-top:1px solid #C8AD7F;
+    border-left:1px solid #C8AD7F;
+    border-right:1px solid #C8AD7F;
+    */
+    padding-top: 10px;
+  }
+
+
+/*   PIED de la page  */
+#pied{
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    border:1px solid #C8AD7F;
+  }
+
+/*  présentation avec article et aside  actuellement inusitée  */	
+/* le corps contient le contenu et la colonne    */
+.corpsr{
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+    background-color:#fff;
+		/*
+    border-left:1px solid #C8AD7F;
+    border-right:1px solid #C8AD7F;
+    border-bottom:1px solid #C8AD7F;
+    */
+    min-height:750px;
+    padding-right:25px;
+    padding-left:25px;
+    position:relative;
+  }
+
+.corpsp{
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
+    background-color:#fff;
+		/*
+    border-left:1px solid #C8AD7F;
+    border-right:1px solid #C8AD7F;
+    border-bottom:1px solid #C8AD7F;
+    */
+    min-height:750px;
+    padding-right:25px;
+    padding-left:25px;
+    position:relative;
+  }
+  
+  #corpsdep {
+    background-color: #fff;
+    border-bottom: 1px solid #c8ad7f;
+    border-left: 1px solid #c8ad7f;
+    border-right: 1px solid #c8ad7f;
+    margin: auto;
+    min-height: 450px;
+    width: 1009px;
+    position: relative;
+  }
+  
+/*  aSide possible  */
+#colonne{
+    float:left;
+    width:170px;
+    padding:3px;
+  }
+
+/*  article   */
+#contenu{
+    margin-left:180px;
+    width:800px;
+    padding:3px;
+    color: black;
+    position: relative;
+  }
+
+/*  Fin de ARCHI GENERALE  */
+
+
+
+/* ARCHI page DIAGNOSE (index.shtml)  */
+/*
+ #paveautrequelesions{
+    width: 400px;
+    display: inline-block;
+  }
+*/
+.pavautrequelesions{
+    width: 400px;
+    display: inline-block;
+  }
+  
+.pavespeceorgane{
+    width: 210px;
+    display: inline-block;
+  }
+  
+  #pavephotoorgane{
+    width: 900px;
+    /*display: inline-block;*/
+  }
+  
+  .grandephotoorganessains{
+    width: 100%;
+    
+  }
+  
+  .pavautrequelesionsG{
+    width: 260px;
+    display: inline-block;
+    margin-left: 55px;
+  }
+  
+.pavautrequelesionsR{
+    width: 525px;
+    display: inline-block;
+  }
+  
+/*
+#pavelesions{
+    width: 530px;
+    display: inline-block;
+  }
+*/
+.paveles{
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+  }
+  
+.pavelesR{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 120px;
+  }
+  
+  #pavephotos{
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    
+  }
+  .pavelesG{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 120px;
+  }
+  
+#lesion{
+  padding-left: 5px;
+  }
+
+/* pavé des choix hors lésions (espèce, organe)   */
+#paveespecetout{
+    width: 500px;  
+  }
+
+
+/* Formule  */
+#formule{
+ /*
+    border: 10px solid #ccc;
+    padding: 5px;
+   -webkit-border-radius: 12px / 24px;
+   -moz-border-radius: 12px / 24px; 
+    border-radius: 12px / 24px;
+    width: 890px;
+ */
+    border: thick ridge #618b90;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #749195 inset;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    line-height: 115%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: auto;
+    padding: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 100%;
+
+ }
+  
+  
+  #npcformule{
+ /*
+    border: 10px solid #ccc;
+    padding: 5px;
+   -webkit-border-radius: 12px / 24px;
+   -moz-border-radius: 12px / 24px; 
+    border-radius: 12px / 24px;
+    width: 890px;
+ */
+    border: thick ridge #618b90;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #749195 inset;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    line-height: 115%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: auto;
+    padding: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 100%;
+
+ }
+  
+/*    Fin de ARCHI page DIAGNOSE */
+
+/*    Styles page DIAGNOSE */
+
+.resrech{
+  /*
+    color: #777777;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    background-color: #CBE8EB;
+    margin-top: 20px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    */
+  }
+
+#flagA {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#flagR{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+#aidepdfvideo {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+pre {
+    border: thick ridge #83c04a;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #c6dfa5 inset;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 90%;
+    line-height: 115%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: justify;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: auto;
+    padding: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+
+.cacesp{
+    font-size: 16px;
+    width: auto;
+    background-color: #F1F1F1;
+    margin-left: 22px;
+  }
+
+
+.choixcritere {
+    font-size: 18px;
+    font-weight: 600;
+    color: #b1b1b1;
+    padding-top: 5px;
+    clear: left;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+  }
+
+.souschoixcritere {
+    color: #777777;
+    font-weight: 600;
+    font-size: 16px;
+    /*float: left;*/
+    padding-top: 4px;
+    margin-left: 4px;
+    clear: both;
+  }
+
+.cac{
+    /*float: left;*/
+    display: inline-block;
+    background-color: #F1F1F1;
+    font-size: 14px;
+    margin-left: 1px;
+    padding:2px;
+    padding-right: 10px; 
+  }
+.cac1{
+    display: inline-block;
+    background-color: #F1F1F1;
+    font-size: 14px;
+    margin-left: 1px;
+    padding:2px;
+  }
+ .cac2{
+    background-color: #F1F1F1;
+    font-size: 14px;
+    margin-left: 1px;
+    padding:2px;
+  }
+  
+.grise{
+    opacity: 0.5;  
+  }
+
+.choixresultat {
+    font-size: 24px;
+    font-weight: 600;
+    color: #a1a1a1;
+    padding-top: 5px;
+    clear: left;
+  }
+
+.imageenliste {
+    cursor: zoom-in;
+  }
+  
+.imageenlistenpc {
+    cursor: zoom-in;
+  }
+
+#boutonsphotoengrand{
+  position: fixed;
+  top: 0px;
+  left:0px;
+  height: 60px;
+  z-index: 20;
+}
+
+#barrenavigation{
+   position: fixed;
+   bottom: 10px;
+   text-align: center;
+   height: 60px;
+   z-index: 20;
+ }
+ 
+  #barrenavigation p{
+   text-align: center;
+ }
+  
+ #com{
+   z-index: 120;
+   position: absolute;
+   width: 645px;
+   margin-top: 0px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   border: 10px solid #fff;
+   padding: 5px;
+   -webkit-border-radius: 12px / 24px;
+   -moz-border-radius: 12px / 24px; 
+   border-radius: 14px;
+   background-color: #fff;
+   opacity: 0.8;
+  }
+  
+#listeboutons li{
+    display: inline-block;
+    padding: 8px;
+    width: auto;
+    background-color: #ccc;
+  }
+
+#fermeture{
+  z-index: 150;
+  width: 35px;
+  position: absolute;
+  top: 69px;
+  left: 651px;
+}
+#fleche1{
+          position: absolute;
+          z-index: 50;
+  }
+  
+#fleche2{
+    position: absolute;
+    z-index: 50;
+  }
+  
+#fleche3{
+    position: absolute;
+    z-index: 50;
+  }
+  
+#fleche4{
+    position: absolute;
+    z-index: 50;
+  }
+  
+#photo{
+    position: relative;
+    z-index: 10;
+  }
+        
+.view_image_body {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    opacity: 0.8;
+  }
+
+.view_image{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+  }
+
+.view_image_img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 95%;
+    max-width: 95%;
+  }
+
+/* AFFICHAGE des photos  */
+
+/* espace d'affichage ds photos */
+.trieuse{
+    clear: both;
+    margin-left: 25px;
+  }
+
+/* Style photo  */
+.lignephoto1{
+    display: inline-block;
+    padding: 4px;
+    font-size: 9pt;
+    vertical-align: top;
+    width: 250px;
+    text-align: center;
+    position: relative;
+  }
+/* Style images de rubrique   */
+.lignephoto2{
+    display: inline-block;
+    padding: 4px;
+    font-size: 6pt;
+    vertical-align: top;
+    width: 30px;
+  }
+/* Style texte de rubrique   */  
+.lignephoto3{
+    display: inline-block;
+    padding: 4px;
+    font-size: 12pt;
+    line-height: 16px;
+    vertical-align: top;
+    width: 580px;
+    font-family:Times;
+    position: relative;
+  }
+  
+.photosnpc{
+  width:400px;
+  height: 200px;
+  background-color: #F1F1F1;
+  position: absolute;
+  top:2px;
+  left:190px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.cadrephoto{
+  height:250px;
+  width : 250px;
+  background-color: white;
+}
+
+.imagefond{
+  z-index: 10;
+  width:250px;
+}
+
+.photocadreh{
+  z-index: 20;
+  position: absolute;
+  top: 64px;
+  left: 5px;
+}
+
+.photocadrev{
+  z-index: 20;
+  position: absolute;
+  top: 5px;
+  left: 48px;
+}
+
+.npcpetitephoto{
+  display: inline-block;
+  vertical-align: top;
+  width: 170px;
+  height: 250px;
+  padding: 2px;
+}
+
+.petitephoto{
+  width: 170px;
+  height: 170px;
+}
+
+.petitephotoH{
+  width: 170px;
+}
+
+.npcligne2{
+  display: inline-block;
+  vertical-align: top;
+  width: 450px;
+}
+
+.npcgrandephoto{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.grandephotoH{
+  width: 390px;
+}
+
+.grandephotoV{
+  height: 390px;
+}
+
+.npccomphoto{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.grandephotonormale{
+  margin-top: 30px;
+}
+
+/*  Photo en grand */
+
+/*  Boutons en haut */
+.bouton{
+  display: inline-block;
+  margin: 10px;
+  width: 50px;
+  vertical-align: top;
+}
+
+.resize{
+  position: fixed;
+  right: 100px;
+  top: 10px;
+  width: 50px;
+}
+
+.quitte{
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  width: 60px;
+}
+
+.boutonnpcgi{
+  position: absolute;
+  top: 25px;
+  left: 280px;
+}
+
+#photossup {
+  float: right;
+  margin-top: 1px;
+}
+
+.imagesuph{
+    vertical-align: top;
+    margin-top: 10px;
+
+}
+
+.imagesupv{
+    vertical-align: top;
+    margin-top: 0px;
+
+}
+
+
+/*  Gestion des flèches de commentaires */
+
+#fleche1{
+    position: absolute;
+    left:0px;
+    z-index: 50;
+    display:none;
+  }
+
+#fleche2{
+    position: absolute;
+    left:0px;
+    z-index: 50;
+    display:none;
+  }
+
+#fleche3{
+    position: absolute;
+    left:0px;
+    z-index: 50;
+    display:none;
+  }
+#fleche4{
+    position: absolute;
+    left:0px;
+    z-index: 50;
+    display:none;
+  }
+
+/* Style du champ de recherche sur le pavé des lésions */
+.champ{
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*  Styles utilisés par DataTable : ne pas supprimer */
+/* En-têtes du tableau
+  
+*/
+.TbETG{
+    background-color: #cecece;
+  }
+
+.TbETL{
+    background-color: #cecece;
+  }
+
+.TbETC1{
+    text-align: center;
+  }
+
+.TbETC2{
+    text-align: center;
+  }
+
+.TbETC3{
+    text-align: center;
+  }
+
+.TbETC4{
+    text-align: left;
+    padding-left: 12px;
+  }
+
+/* Lignes du corps du tableau */
+.TbCorpsL{
+    font-size: 14px;
+  }
+
+/* colonnes du corps du tableau */
+
+.TbCorpsC1{
+    text-align: center;
+    width: 5%;
+    vertical-align: middle;
+  }
+
+.TbCorpsC2{
+    text-align: center;
+    width: 20%;
+    vertical-align: middle;
+ }
+
+.TbCorpsC3{
+    text-align: center;
+    width: 5%;
+  }
+
+.TbCorpsC4{
+    text-align: left;
+    padding-left: 12px;
+    width: 70%;
+  }
+
+/* Fin des styles du tableau DataTable  */
+
+
+/*    Fin de styles page DIAGNOSE */
+
+
+
+
+/* =CONTENU général */
+
+
+.textebanal{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+.textebanalgrand{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+.textecentre{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+  }
+
+.tbphotos{
+    /*
+     float:left;
+     */
+    width: 100%;
+    font-size: 12px;
+    z-index: 0;
+  }
+
+
+/*  Partie TEXTES ILLUSTRES   */
+/*  ARCHI Textes illustrés */
+
+#texte {
+    width: 640px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+/* PHOTO en face du texte   */
+#photolesion{
+    float:right;
+    width: 300px;
+  }
+  
+  
+/* Styles des textes illustrés */
+
+/*  texte de plus bas niveau  */
+.description{
+    padding-left: 5px;
+    padding-right: 5px;
+    display: none;
+  }
+
+/*  Style des mots indexés  */
+.index{
+    font-size: 14pt;
+    font-family: times;
+    font-style: italic;
+    color: #111;
+    text-decoration: none;
+  }
+
+
+/* Les boutons de choix de style des Textes illustrés*/
+.radiostyle{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight:600;
+    font-size: 18px;
+    color: #aaa;
+  }
+
+/*   Elégant    */
+.adtitrepage{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight:600;
+    font-size: 36px;
+		color: #9C3500;
+  }
+
+.adsoustitrepage{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight:600;
+    font-size: 24px;
+		color: #9C3500;
+  }
+  
+.adtitre0e{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:300;
+    font-size: 20px;
+    color: #555;
+    padding-top: 24px;
+  }
+
+.adtitre1e{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:400;
+    font-size: 18px;
+    color: #888;
+    padding-left: 10px;
+  }
+
+.adtitre2e{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:500;
+    font-size: 16px;
+    color: #aaa;
+    padding-left: 20px;
+  }
+
+.adtitre3e{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:600;
+    font-size: 14px;
+    color: #ccc;
+    padding-left: 30px;
+  }
+
+.adtitre4{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:600;
+    font-size: 14px;
+    color: #ccc;
+    padding-left: 40px;
+  }
+.descriptione{
+    background-color: #f8f8f8;
+  }
+
+/*   Flashy    */
+
+.adtitre0f{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:600;
+    font-size: 28px;
+    color: #f00;
+    padding-top: 24px;
+  }
+
+.adtitre1f{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:600;
+    font-size: 24px;
+    color: #00f;
+    padding-left: 10px;
+  }
+
+.adtitre2f{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight:600;
+    font-size: 20px;
+    color: #0f0;
+    padding-left: 20px;
+  }
+
+.adtitre3f{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight:600;
+    font-size: 18px;
+    color: #ccc;
+    padding-left: 30px;
+  }
+
+.descriptionf{
+    background-color: #F2F0DA;
+  }
+
+/*  Classique  */
+
+.adtitre0c{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:600;
+    font-size: 24px;
+    color: #000;
+  }
+
+.adtitre1c{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight:600;
+    font-size: 22px;
+    color: #000;
+    padding-left: 5px;
+  }
+
+.adtitre2c{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight:600;
+    font-size: 20px;
+    color: #000;
+    padding-left: 10px;
+  }
+
+.adtitre3c{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight:600;
+    font-size: 14px;
+    color: #ccc;
+    padding-left: 30px;
+    
+  }
+  /* LISTES DES PANIERS */
+  
+ #corpspanier{
+    margin-left:auto;
+    margin-right:auto;
+    width:959px;
+    background-color:#fff;
+		/*
+    border-left:1px solid #C8AD7F;
+    border-right:1px solid #C8AD7F;
+    border-bottom:1px solid #C8AD7F;
+    */
+    min-height:750px;
+    padding-right:25px;
+    padding-left:25px;
+    position:relative;
+    display: inline-block;
+  }
+  
+ #listepanier{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+#colonnepanier{
+   display: inline-block;
+   width: 40%;
+  }
+  
+ 
+ #boutonspanier{
+   margin-top: 42px;
+   padding-bottom: 5px;
+  }
+ 
+#ledetailpanier{
+    width: 40%;
+    padding: 8px;
+    width:405px;
+    background: #feffea;
+    border-left:1px solid #C8AD7F;
+    box-shadow: 8px 8px 12px #555555;
+    vertical-align: top;
+    /*
+     overflow: auto;
+    max-height: 470px;
+    */
+  }
+  
+#voirdescriptifpanier{
+    width: 40%;
+    padding: 8px;
+    width:405px;
+    vertical-align: top;
+    
+  }
+  
+.pluspum{
+   font-weight: 600;
+   font-size: 10pt;
+  }
+ 
+ .photopanier{
+      display: inline-block;
+      width:90px;
+      height:90px;
+      background: #ccc;
+      text-align: center;
+      font-size: 7pt;
+      font-weight: 600;
+      line-height: 1;
+      padding: 2px;
+      vertical-align: top;
+      margin: 2px;
+      position: relative;
+    }
+  
+ .diapanierh{
+    margin-top: 10px;
+  }
+    
+ .diapanierv{
+    margin-top: 2px;
+  }
+    
+   .information {
+    width : 16px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+   }
+   
+   .poubelle {
+    width : 12px;
+    position: absolute;
+    bottom: 3px;
+    left: 5px;
+   }
+   
+   .loupe {
+    width : 16px;
+    position: absolute;
+    top : 2px;
+    right: 2px;
+   }
+   
+  .panierconsigne{
+    line-height: 1;
+      color: #aaaaaa;
+      font-size: 10pt;
+    }
+    
+  /* LISTES DES LESIONS  ET DES MOTIFS DE SAISIE */
+  #listelesion{
+    width: 60%;
+    display: inline-block;
+  }
+  
+  #listemotif{
+    width: 85%;
+    display: inline-block;
+  }
+
+   #ledetaillesion{
+    width: 30%;
+    padding: 8px;
+    margin-top:55px;
+    margin-left:14px;
+    width:370px;
+    background: #feffea;
+    border-left:1px solid #C8AD7F;
+    box-shadow: 8px 8px 12px #555555;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    overflow: auto;
+    max-height: 470px;
+    
+  }
+  
+  #ledetailmotif{
+    width: 25%;
+    padding: 8px;
+    margin-top:55px;
+    margin-left:14px;
+    width:370px;
+    background: #feffea;
+    border-left:1px solid #C8AD7F;
+    box-shadow: 8px 8px 12px #555555;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    overflow: auto;
+    max-height: 470px;
+    
+  }
+  .detailles{
+    width: 20%;
+    vertical-align: middle;
+  }
+  
+  .tbdetail{
+    padding: 1px;
+    text-align: center;
+    width: 3%;
+    vertical-align: middle;
+  }
+  
+  .titredetail{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #9c3500;
+    line-height: 20px;
+  }
+
+  .textedetail{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 12px;
+    color: #592C16;
+    line-height: 14px;
+  }
+  .even{
+    background-color: #ececec;
+  }
+  
+   
+  .odd{
+    background-color: #fefefe;
+  }
+  
+  .lignechoisie{
+    color: #ff0000;
+  }
+  
+  .textepetit{
+    font-size: 10px;
+  }
+  
+  .textenews{
+    text-align: center;
+    line-height: 12px;
+    font-size: 14px;
+    color:green;
+  }
+  
+  .boutonbas{
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+   
+  
+   /* LISTES DES DIAPOSITIVES  */
+   
+  #listephoto{
+    width: 70%;
+    display: inline-block;
+  }
+  #laphoto{
+    width: 75px;
+    margin-top:5px;
+    margin-left:114px;
+    position: absolute;
+  }
+  
+  #ledetailphoto{
+    width: 30%;
+    padding: 8px;
+    margin-top:55px;
+    margin-left:14px;
+    width:30%;
+    background: #feffea;
+    border-left:1px solid #C8AD7F;
+    box-shadow: 8px 8px 12px #555555;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    overflow: auto;
+    max-height: 470px;
+  }
+  
+  .interligne1{
+    line-height: 1;
+  }
+  
+  .chainetrouve{
+    /*
+    color: blue;
+    font-weight: 600;
+    font-size: 10pt;
+    */
+    text-decoration: underline;
+  }
+  
+  .erreur{
+   color: red;
+   font-weight: 600
+  }
+  
+  #faqcontenu{
+   width: 50%;
+   text-align: center;
+   margin-left:auto;
+   margin-right:auto;
+  }
+  
+   .faqengrand{
+   width: 80%;
+   text-align: center;
+   margin-left:auto;
+   margin-right:auto;
+  }

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>ASADia : Module Formation</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				 
+				 
+						
+				 <br/>
+				 <p class="titrepage">AsaDia 2 : Module formation</p>
+				 <p class="textecentre">
+					 <a href="asadia.shtml">
+					 Retour à l'écran des généralités
+					 </a> 
+				 </p>
+				 <br/><br/>
+				 
+				 <div class="menuf">
+					 <a class="menucouleur" href="w2asadia2formation.shtml">
+						 CONNAISSANCES <br /> GENERALES
+					 </a>
+				 </div>
+				 
+				 <div class="menuf" >
+					 <a class="menucouleur" href="w2asadia2lesions.shtml">DEFINITION <br />DES LESIONS</a>
+				 </div>
+				 <div class="menufactif" >
+					 LISTE DES PHOTOGRAPHIES
+				 </div>
+				 <div class="menuf" >
+					 <a class="menucouleur" href="w2asadia2diagnose2.shtml">RECONNAITRE <br />UNE LESION</a>
+				 </div>
+				 <div class="menuf" >
+					 <a class="menucouleur" href="w2asadia2paniers.shtml">GERER DES PANIERS</a>
+				 </div>
+				 <div class="menuf" >
+					 <a class="menucouleur" href="w2asadia2texte.shtml">TEXTES <br />ILLUSTRES</a>
+				 </div>
+				 
+				 <div class="sousmenu" >
+				 &nbsp; <br /> &nbsp; <br /> &nbsp; <br /> &nbsp; <br /> 
+				 &nbsp; <br /> &nbsp; <br /> &nbsp;
+				 </div>
+			 
+				 <table>
+						 <tr>
+							 <td class="colonne1" >
+									<br/><br/>
+			 
+								 Cette partie donne la liste des photographies.
+								 <br/>
+								 Elle possède une large gamme de modalités de sélection
+									des photographies, offre la possibilité d'imprimer 
+									la liste sous différentes formes, permet d'exporter 
+									les images pour une utilisation extérieure.
+									<br/><br/>
+								 Elle permet par double-clic d'en visualiser 
+								 le contenu détaillé 
+								 tel que montré plus bas. 
+								 <br/>
+							 </td>
+							 <td  class="colonne2"  > <img src="IMAGES/photoliste.jpg" width="650" 
+								 height="377" alt="Motifs" title="Motifs" /> 
+							 </td>
+							 
+						 </tr>
+							 
+					 <tr class="Tbbanal"> 
+						 <td class="colonne1" > 
+							 &nbsp; <br /> &nbsp; 
+						 </td>
+					 </tr>
+					 
+						 <tr>
+							 <td class="colonne1" >
+								 Le détail de la fiche décrit, 
+								 outre le nom de la lésion et la photographie,
+									le statut de la photographie 
+								 (référence ou variante), l'Auteur 
+								 et la fréuence, 
+								 le type anatomopathologique, le motif de retrait, 
+								 la justification de la conduite,  
+								 les références réglementaires, 
+								 la description type, le commentaire spécifique, 
+								 la fiche réflexe, 
+								 et les lésions avec lesquelles 
+								 il ne faut pas la confondre <br/><br/>
+								 Un clic sur le bouton "Plein écran" montre 
+								 la lésion commentée.
+							 
+							 </td>
+							 <td  class="colonne2"  > <img src="IMAGES/photofiche.jpg" width="650" 
+								 height="410" alt="Photographie néphrite glomérulo-
+								 épithéliale" 
+								 title="Photographie néphrite glomérulo-
+								 épithéliale" /> 
+							 </td>
+						 </tr>
+						 
+					 </table>
+					 
+			 <br/><br/>
+				 
+				 
+				 
+				 
+				 
+				 
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+		
+	</body>
+	
+</html>
+

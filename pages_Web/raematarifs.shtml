@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>TARIFS 2015</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="raematarifsA.shtml">
+        <img  src="images/DrapeauA.gif" alt="english flag" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps"> <!-- Corps de la page -->
+			<div id="contenu1"> <!-- Contenu de la page -->
+        <br />
+        <!--4dinclude menuraema.shtml-->	
+        <br /><br />	
+        <p class="grandtitrepage">TARIFS 2017</p>
+        <br />
+        <div id="raema"><!-- Partie RAEMA -->			
+          
+          <br /> 
+          <div id="raemapoudre" class="grandhautpage"> <!-- Partie RAEMA Poudre -->
+            RAEMA POUDRE
+            <div class="textedecale"><!-- Décale le texte -->
+              <div class="tarifbloc"><!-- Bloc flottant à droite -->          
+                <span class="tarifn3">Une campagne(mars ou octobre) :</span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Libellé</th>
+                    <th class="cgcolonne1tarif plus">Prix Unitaire</th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Une campagne(mars ou octobre)</td>
+                    <td class="tarifprix">675 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">Cotisation à l' ASA</td>
+                    <td class="tarifprix">37 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="texteadroite">TOTAL</td>
+                    <td class="tarifprix">712 € HT</td>
+                  </tr>
+                </table>
+              </div><!-- Fin de Bloc flottant à droite -->
+            
+              <p >
+               <span class="tarifn3">Deux campagnes (mars et octobre ) :</span>
+               <table class="cgtbtarif">
+                 <tr >	
+                   <th class="cgcolonne1tarif plus">Libellé</th>
+                   <th class="plus">Prix Unitaire</th>
+                 </tr>
+                 <tr>
+                   <td class="cgtexteaucentre">Deux campagnes (mars et octobre)</td>
+                   <td class="tarifprix">945 € HT</td>
+                 </tr>
+                 <tr>
+                   <td class="cgtexteaucentre">Cotisation à l' ASA</td>
+                   <td class="tarifprix">37 € HT</td>
+                 </tr>
+                 <tr>
+                   <td class="texteadroite">TOTAL</td>
+                   <td class="tarifprix">982 € HT</td>
+                 </tr>
+               </table>
+              </p>
+              <br />        
+              <span class="tarifn3">Colis transport boîte isotherme : 125 € HT   </span>
+              <br />  <br />    
+              <span class="tarifn3">Colis supplémentaire pour deux campagnes
+              AVEC édition de rapport COFRAC : 640 € HT</span>
+               <br />        
+              <span class="tarifn3">Colis supplémentaire pour une seule campagne
+              AVEC édition de rapport COFRAC : 455 € HT  </span>
+              <br />
+              <br />        
+              <span class="tarifn3">Colis supplémentaire par campagne
+              SANS édition de rapport COFRAC : 100 € HT</span>
+              <br />        
+            </div><!-- Fin de texte décalé -->
+          </div> <!-- Fin de Partie RAEMA Poudre -->
+        
+          <div id="raemagel" class="grandhautpage">  <!-- Partie RAEMA Gel -->
+            <br />  
+            RAEMA GEL
+            <div class="textedecale"><!-- Décale le texte -->
+              <div class="tarifbloc"><!-- Bloc flottant à droite -->
+                <span class="tarifn3">Une campagne : </span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Libellé</th>
+                    <th class="plus">Prix Unitaire</th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">1 dénombrement</td>
+                    <td class="tarifprix">250 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">2 dénombrements</td>
+                    <td class="tarifprix">300 € HT</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="cgtexteaucentre">3 dénombrements</td>
+                    <td class="tarifprix">330 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">4 dénombrements</td>
+                    <td class="tarifprix">350 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">5 dénombrements</td>
+                    <td class="tarifprix">370 € HT</td>
+                  </tr>
+                            
+                </table>
+              </div><!-- Fin de Bloc flottant à droite -->
+              <p>
+                <span class="tarifn3">Deux campagnes :</span>
+                <table class="cgtbtarif">
+                  <tr >	
+                    <th class="cgcolonne1tarif plus">Libellé</th>
+                    <th class="plus">Prix Unitaire</th>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">1 dénombrement</td>
+                    <td class="tarifprix">300 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">2 dénombrements</td>
+                    <td class="tarifprix">350 € HT</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="cgtexteaucentre">3 dénombrements</td>
+                    <td class="tarifprix">380 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">4 dénombrements</td>
+                    <td class="tarifprix">400 € HT</td>
+                  </tr>
+                  <tr>
+                    <td class="cgtexteaucentre">5 dénombrements</td>
+                    <td class="tarifprix">420 € HT</td>
+                  </tr>          
+                </table>
+                <br />   
+              <span class="tarifn3">Pot supplémentaire SANS édition de rapport COFRAC : 25 € HT</span>
+               <br />        
+              <span class="tarifn3">Pot supplémentaire AVEC édition de rapport COFRAC : 100 € HT  </span>
+              <br />
+              </p>
+              <br />
+            </div><!-- Fin de texte décalé -->	
+           <br />
+          </div><!-- Fin de Partie RAEMA Gel -->
+        </div><!-- Fin de Partie RAEMA -->
+          <p class="textecentre"><a href="pdf/TarifsEnCoursASA.pdf">télécharger tous les tarifs</a></p>
+          <br />
+      </div> <!-- Fin de Contenu de la page -->
+    </div>  <!-- Fin de Corps de la page -->
+    
+   <div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

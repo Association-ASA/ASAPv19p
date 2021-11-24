@@ -1,0 +1,255 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 543,
+	"height": 58,
+	"markerHeader": 18,
+	"markerBody": 37,
+	"markerBreak": 40,
+	"markerFooter": 65,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 543,
+					"height": 44,
+					"fill": "transparent"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 21,
+					"left": 2,
+					"width": 538,
+					"height": 19,
+					"stroke": "transparent"
+				},
+				"Ligne14": {
+					"type": "line",
+					"top": 37,
+					"left": 1,
+					"width": 540,
+					"stroke": "#AAAAAA"
+				},
+				"Ligne6": {
+					"type": "line",
+					"top": 0,
+					"left": 54,
+					"height": 17
+				},
+				"Ligne10": {
+					"type": "line",
+					"top": 18,
+					"left": 54,
+					"height": 18,
+					"stroke": "#AAAAAA"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 3,
+					"left": 3,
+					"width": 49,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "N° diapo"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 3,
+					"left": 58,
+					"width": 479,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "Nom de la lésion - organe - espèce"
+				},
+				"NumOrdreDiapos": {
+					"type": "input",
+					"top": 22,
+					"left": 3,
+					"width": 48,
+					"height": 13,
+					"dataSource": "[Diapositives:40]NumOrdreDiapos:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "Champ_petit",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 45,
+					"left": 40,
+					"width": 256,
+					"height": 12,
+					"dataSource": "ZvDateEd",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 46,
+					"left": 513,
+					"width": 18,
+					"height": 12,
+					"dataSource": "ZvPageEd",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 45,
+					"left": 2,
+					"width": 36,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "Edité le"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 46,
+					"left": 490,
+					"width": 27,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "Page "
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 22,
+					"left": 56,
+					"width": 482,
+					"height": 13,
+					"dataSource": "VarTriple",
+					"class": "Champ_petit",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onPrintingDetail"
+					]
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 36,
+					"left": 2,
+					"width": 539
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 17,
+					"left": 2,
+					"width": 539
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe2": [
+				"Rectangle13",
+				"Rectangle5",
+				"Ligne14"
+			]
+		}
+	}
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+     <!--4dinclude HeaderAsa.shtml-->
+<title>ASA : AsaDia</title>
+</head>
+
+    <body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+
+
+
+<div id="contenu">
+    <br/>
+    <p class="titrepage">Produits de l'ASA : ASADia </p>
+    <br/>
+ </div>
+ 
+ 
+  
+ 
+    <p class="textebanal"><span class="plus"> ASADIA </span> est une base de données constituant 
+        un atlas de référence des lésions d'abattoir.
+    <br/><br/>
+        Elle regroupe la plupart des lésions observées chez les bovins, les ovins, les caprins, 
+        les équins et les porcins.
+    </p>
+
+    <p class="textebanal">Pour télécharger la plaquette de présentation du logiciel ou son mode d'emploi complet, 
+    cliquez sur le lien adéquat ci-dessous.
+    </p>
+  <table width="72%" border="0">
+    <tr> 
+      <td class="tbcentrev" width="6%" height="35">
+          <img src="images/impdf.gif" width="32" height="32"></img>
+      </td>
+      <td width="30%">
+          <div class="textecentre"><a href="pdf/ASADIAplaquette.pdf" target="_blank">plaquette de présentation d'AsaDia</a></div>
+      </td>
+      <td width="21%">
+          <div class="textecentre"><a href="pdf/AsaDia2MdE.pdf" target="_blank">mode d'emploi AsaDia</a> </div>
+      </td>
+    </tr>
+  </table>
+  
+<p class="textebanal">AsaDia 2 est une version très améliorée d'AsaDia car elle 
+  renferme des images de qualité quatre fois meilleure ce qui permet une 
+  visualisation des photographies en mode plein écran.<br />
+
+D'autre part, toutes les photographies peuvent être commentées 
+  directement en projection plein écran avec des flèches et des 
+  commentaires qui apparaissent pour désigner l'endroit précis où 
+  l'on peut voir un élément de la lésion.<br /><br />
+AsaDia 2 contient deux modules : utilisation et formation.</p>
+<p class="xdtitrepage">Module utilisation</p>
+<p class="textebanal"><span class="plus">CONNAISSANCES GENERALES </span> : 
+	Permet d'acquérir le vocabulaire nécéssaire à 
+	la compréhension des lésions constatées.</p>
+<p class="textebanal"><span class="plus">MOTIFS DE SAISIE </span> : 
+	Donne la liste officielle des motifs de saisie et permet d'en visualiser des exemples.
+</p>    
+<p class="textebanal"><span class="plus">ILLUSTRATION DES NOTES DE SERVICES DE LA DGAL </span> : 
+Permet de visualiser les images des lésions décrites dans les notes de services de la DGAL.
+</p>    
+<p class="textebanal"><span class="plus">RECONNAITRE UNE LESION </span> : 
+	Permet, en précisant l'espèce, l'organe, le nom de
+  
+  
+      la lésion ou un texte contenu dans AsaDia 2, de visualiser les images des lésions correspondant 
+      aux critères proposés.
+</p>  
+    <br /> 
+ 
+ <p class="xdtitrepage">Module formation</p>
+ 
+<p class="textebanal"><span class="plus">CONNAISSANCES GENERALES </span> : 
+	Permet d'acquérir le vocabulaire nécéssaire à 
+	la compréhension des lésions constatées.
+</p>
+
+<p class="textebanal"><span class="plus">DEFINITION DES LESIONS </span> : 
+	Permet de gérer la liste des lésions.
+</p>
+
+<p class="textebanal"><span class="plus">ATLAS DES LESIONS </span> : 
+	Permet de gérer la liste des photographies de lésions.
+</p>
+
+<p class="textebanal"><span class="plus">RECONNAITRE UNE LESION </span> : 
+	Permet, en précisant l'espèce, l'organe, le nom de 
+      la lésion ou un texte contenu dans AsaDia 2, de visualiser les images des lésions correspondant 
+      aux critères proposés.
+</p>  
+
+<p class="textebanal"><span class="plus">GERER DES PANIERS DE PHOTOGRAPHIES</span> : 
+	Permet de sélectionner des photographies dans un ordre déterminé 
+      dans le but de s'en servir ultérieurement (paniers virtuels).
+</p>  
+ 
+<p class="textebanal"><span class="plus">UTILISER DES PANIERS DE PHOTOGRAPHIES</span> : 
+	Permet de projeter un panier virtuel préalablement constitué 
+      dans la partie précédente.
+</p> 
+
+<p class="textebanal"><span class="plus">LIER DES TEXTES AVEC DES PHOTOGRAPHIES</span> : 
+	Permet de créer un texte et de l'illustrer avec des images de lésions incluses dans AsaDia 2.
+</p> 
+    
+</div>
+				 
+			</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>
+

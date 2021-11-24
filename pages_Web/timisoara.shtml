@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Timisoara</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+      <a id="flagA" href="timisoaraA.shtml">
+        <img  src="images/DrapeauA.gif" alt="drapeau anglais" width="30px" />
+      </a>
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+      <div id="contenu1" class="textebanalgrand">
+  
+        <br/> <br/>
+        
+        <p class="titrepage"> <b>La 5ème Conférence Internationale sur les Essais d’Aptitude</b>
+          <br/>à Timisoara (Roumanie)
+          du 16 au 18 septembre 2015
+        </p>
+        <p class="imageasa">
+          <img src="images/Timisoara/Timisoaraclocher.jpeg" alt="Séminaire à Timisoara" width="200px" />
+        </p>
+          <br/>
+          La 5ème Conférence Internationale sur les Essais d’Aptitude
+          s’est déroulée à Timisoara (Roumanie) du 16 au 18 septembre 2015.<br/>
+          Elle a réuni <b>110 participants</b> : organisateurs d’essais d’aptitude,
+          organismes d’accréditation, laboratoires, venus de <b>27 pays </b>différents.
+          <br/><br/>
+          L’<b>ASA</b> a participé à cet évènement et, à cette occasion, <b>Leïla ALI MANDJEE</b>
+          a présenté une communication orale devant l’assemblée.
+          <br/><br/>
+          <p class="imageasd textepetitcentre">
+            <a href="pdf/Timisoara.pdf">
+              <img src="images/Timisoara/Timisoarappt.jpeg" alt="Présentation Leîla Ali Mandjee" width="250px" />
+            </a>
+            <br />
+            Cliquer sur l'image pour télécharger la présentation
+          </p>
+          Cette communication avait pour thème « <b>Développement d’une matrice gélifiée,
+          support pour des essais d’aptitude en microbiologie des aliments</b> ».<br/>
+          Après une présentation de l’ASA et de son <b>circuit d’intercomparaison RAEMA</b> bien implanté depuis 1988,
+          l’accent a été mis sur les travaux de développement menés sur la matrice gélifiée plus particulièrement
+          pour le germe <b><i>Bacillus cereus</i></b> et la <b>flore lactique</b>.<br/>
+          Un descriptif des manipulations effectuées en laboratoire a conduit à l’exposition des résultats obtenus.<br/>
+          Les exigences d’homogénéité et de stabilité requises par le référentiel ISO 17043 ont été atteintes
+          et ont permis la mise en place des campagnes RAEMA complémentaire depuis 2010.<br/>
+          Depuis juillet 2015, les deux paramètres, dénombrement de <b><i>Bacillus</i></b> et de la flore lactique,
+          sont venus élargir la portée d’accréditation Cofrac de l’ASA
+          (accréditation n°1-1836 <a href="http://www.cofrac.fr/fr/organismes/fiche.php?entite_id=12085864" target="_blank">
+          portée consultable ici </a>)
+          en tant qu’organisateur d’essais d’aptitude
+          .<br/><br/>
+          A travers l’ensemble des communications orales et posters présentés,
+          divers domaines d’essais d’aptitude ont été abordés :
+          chimie de l’eau, microbiologie clinique, pesticides, industrie du ciment, analyse des données, …
+          <br/><br/>
+          <p class="imageasag">
+            <img src="images/Timisoara/Timisoara1.JPG" alt="Séminaire à Timisoara" width="380px" />
+          </p>
+          Deux <b>sessions de formation</b> se sont déroulées pendant la conférence. <br/>
+          La première, dispensée par <b>Mme Steluta DUTA (Dr)</b>, concernait l’<b>utilisation des matériaux de référence
+          et des matériaux de référence certifiés</b> avec, comme support, le <b>Guide ISO 35</b>.<br/>
+          La seconde session de formation, coordonnée par <b>M. Piotr ROBOUCH (PhD) et M. Daniel W. THOLEN (Prof)</b>,
+          était axée sur la nouvelle version de la norme <b>ISO 13528 : 2015
+          « <i>Méthodes statistiques utilisées dans les essais d’aptitude par comparaison interlaboratoires</i> »</b>. 
+          Les principaux changements ont été énumérés de même que les axes de développement.                       
+          Cette nouvelle version précise que les méthodes statistiques utilisées
+          par les organisateurs d’essais d’aptitude doivent être en lien avec les objectifs fixés par ces derniers.<br/>
+          Cette nouvelle version tend également à fournir aux participants davantage d’information,
+          à l’image de l’<b>incertitude</b>. Son importance accroît et le calcul du zeta-score, qui intègre cette valeur,
+          apparaît comme un outil pédagogique, que doivent mettre en avant les organisateurs d’essais d’aptitude.<br/>
+          Une présentation du « <b>Bootstrap </b>» est venue compléter cette session de formation.
+          Méthode statistique permettant de calculer les valeurs assignées,
+          écart-type et incertitudes à partir des résultats de l’ensemble des participants,
+          elle se base sur un échantillonnage de l’échantillon original
+          et peut être employée dans toutes les conditions (distribution bimodale, asymétrique).<br/>
+          Des <b>groupes de travail</b> ont succédé à cette session de formation
+          et ont favorisé les échanges entre les participants et les experts présents.<br/><br/>
+          Après son ouverture, <b>Mme Virginia Graziela GUSLICOV</b>,
+          présidente du comité de direction, a clôturé cette 5ème Conférence Internationale
+          en remerciant l’ensemble des membres du comité consultatif, les membres organisateurs
+          ainsi que les intervenants et tous les participants.<br/><br/>
+
+          
+      </div>
+    </div>
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

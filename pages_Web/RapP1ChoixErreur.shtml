@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<!--4dinclude HeaderRaema.shtml-->
+		<title>Identification</title>
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+		</div>
+		
+		<div id="corps">
+			
+			<div id="contenu">
+				<p class="hautpage">Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus
+				</p>
+				 <br /><br /> 
+				<p class="hautpage">Veuillez entrer votre <span class="plusbleu">code RAEMA</span>
+					<br />
+					<em>(le n° de votre laboratoire dans les rapports de campagne) </em>
+					<br />
+					et le <span class="plusbleu">mot de passe</span> qui vous a 
+					été communiqué par l'ASA
+				</p>
+				<form name="form1" method=POST action="mw2RapP1MF">
+					<p class="textecentre plusbleu">
+					 <br /><span class="plusbleu">Code RAEMA</span>
+						<input name="CodeRaema" value=<!--4DVAR TbValeurs{1}--> type="text" maxlength="3">
+					 <br /><br />
+					 <span class="plusbleu">Mot de passe  
+					 <input name="MdP" type="text" value=<!--4DVAR TbValeurs{2}--> maxlength="10"></span>
+					 <br /><br />
+					 </p>
+					 
+					 <p class="hautpage">Puis choisir entre récupérer le 
+						<span class="plusbleu">dernier rapport de campagne</span> 
+						<br />
+						ou les <span class="plusbleu">rapports antérieurs</span> 
+						en cliquant sur le bouton radio pertinent 
+						<br /><br />
+						<input type=RADIO name=SECTEUR1 value="DerRap"> Dernier rapport de campagne
+					  	<input type=RADIO name=SECTEUR1 value="AntRap"> Rapports antérieurs 
+					  	<br /><br />
+					</p>
+					<p class="titrepage rouge">
+						Merci de bien vouloir préciser si vous désirez accéder  <br />
+						aux rapports de l'actuelle campagne ou aux rapports antérieurs 
+						<br /><br />
+					</p>
+					  <p class="textecentre">
+						<input class="plusbleu" type="submit" name="Submit" value="Envoyer"> 
+						<input type="reset" name="Submit2" value="Effacer">
+					  </p>	
+						<input name="hiddenField" type="hidden" value="F">
+				</form>
+			</div>
+		
+		</div>
+		
+				<!--4dinclude pied.shtml-->
+		
+		
+	</body>
+</html>
+

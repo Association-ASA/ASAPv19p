@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Identification</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				<!--4dinclude menuAsaQuiSommeNous.shtml-->	
+				<br /><br />
+					<p class="textecentre">
+							<img src="images/asabat.jpg"
+						alt="Batiment ASA"
+						title="Batiment ASA"
+						width="666"
+						height="330"
+						/>
+					</p>
+					<p>
+						<br /><br />
+						
+						L 'ASA a pour vocation essentielle de se consacrer à l'examen de tous les rapports de la Santé Publique avec les Animaux,
+						leur environnement et leurs produits. Elle est au service des personnes, des sociétés et des associations
+						qui attendent une réponse impartiale d'expert à leurs questions. <br />
+						C'est un lieu de rencontres et d'échanges entre les personnes, sociétés ou associations qui s'intéressent à la Santé Publique Vétérinaire*.
+						<br />
+	
+						Elle a pris la suite de l'ASPESA (association Animal, Santé Publique et Sécurité des Aliments)
+						et de l'AVHA (Association Vétérinaire d'Hygiène Alimentaire) dont les résultats sont reconnus depuis plus de 25 ans,
+						pour les services qu'elle rend dans le domaine de l'agro-alimentaire, en particulier aux laboratoires d'analyses.
+						<br />
+	
+						L'ASA gère le RAEMA (Réseau d'Analyses et d'Echanges en Microbiologie des Aliments) qui permet,
+						depuis 1988, à quelque 400 laboratoires, français et international, de vérifier la qualité de leurs prestations en microbiologie des aliments.
+						<br />
+	
+						L'ASA organise également des manifestations scientifiques et des journées d'études sur tous les sujets de santé publique en rapport avec les animaux.
+						<br /><br />
+					</p>		
+					<p class="textepetit">* Définition de la Santé Publique Vétérinaire :
+					<br />
+					la Santé Publique Vétérinaire est l'ensemble des actions qui ont un rapport direct ou indirect
+					avec les animaux et leurs produits dérivés ou avec leurs maladies,
+					dès lors que ces actions ont pour effet ou pour objet de conserver,
+					protéger ou améliorer la santé humaine. (Académie Vétérinaire de France, 15 mai 1997)
+					</p>
+				 <br />
+				 
+				 
+				 
+				 
+				 
+			</div>	 
+    </div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+			<script src="js/jquery-1.11.3.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/asadia.js"></script>
+	</body>
+	
+</html>
+	

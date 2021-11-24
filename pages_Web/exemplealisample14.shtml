@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<title>Alisample (exemple)</title>
+		<!--4dinclude HeaderASA.shtml-->
+	</head>
+	
+	<body>
+		<div id="header" align="center">
+			<!--4dinclude bandeau.shtml-->
+		</div>
+		
+		<div id="corps">
+				 
+			<div id="contenu1" class="textebanalgrand">
+				
+                                <br />
+            <ul class="breadcrumb">
+								<li><a href="w2exemplealisample0.html">Exemple</a></li>
+								<li><a href="w2exemplealisample1.html">Arbre de décison</a></li>
+								<li><a href="w2exemplealisample2.html">Contrôle d'un lot</a></li>
+								<li><a href="w2exemplealisample3.html">Quantitatif</a></li>
+								<li><a href="w2exemplealisample4.html">Unités classées</a></li>
+								<li><a href="w2exemplealisample5.html">2 classes</a></li>
+								<li><a href="#"></a></li>								
+						</ul>
+                <br />
+					
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample6.html">Echantillonnage simple</a></li>
+									<li><a href="w2exemplealisample7.html">Loi binomiale</a></li>
+									<li><a href="w2exemplealisample8.html">Plan simple</a></li>
+									<li><a href="w2exemplealisample9.html">A partir de NQA NQL</a></li>
+									<li><a href="w2exemplealisample10.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+                <br />
+					
+							<ul class="breadcrumb">
+									<li><a href="w2exemplealisample11.html">Echantillonnage double</a></li>
+									<li><a href="w2exemplealisample12.html">Loi binomiale</a></li>
+									<li><a href="w2exemplealisample13.html">A partir de NQA NQL</a></li>
+									<li><a href="w2exemplealisample14.html">Analyse du résultat</a></li>
+									<li><a href="#"></a></li>
+							</ul>
+                  <br />
+              <p class="titrepage">EXEMPLE <br /><br /></p>
+              <p ALIGN="JUSTIFY">
+                Entrez dans le tableau vos exigences en termes de <I>NQA</I>, <I>NQL</I>, risques fournisseur 
+                et client, le tableau vous renvoie le plan <I>n</I><SUB>1</SUB> = 45, <I>c</I><SUB>1</SUB> 
+                = 0, <I>c</I><SUB>1</SUB>' = 2, <I>n</I><SUB>2</SUB> = 308, <I>c</I><SUB>2</SUB> 
+                = 6.
+              </p>
+              <p ALIGN="JUSTIFY">Si après 
+                prélèvement d'un premier échantillon d'effectif 
+                45, vous n'obtenez aucune unité non conforme, vous accepterez le 
+                lot, si vous obtenez plus de 2 unités non conformes, vous le rejetterez 
+                et si vous en avez 1 ou 2, vous prélèverez un deuxième 
+                échantillon d'effectif 308. A l'issu de ce contr&ocirc;le, 
+                votre lot sera accepté si vous obtenez moins de 6 unités non conformes 
+                dans vos 2 échantillons.
+              </p>
+                <br />
+              <p ALIGN="JUSTIFY"></p>
+              <p class="textecentre"><img src="images/Image14.gif" WIDTH=855 HEIGHT=445 />
+              </p>
+              <p ALIGN="center">
+                <a href="w2exemplealisample15.html">
+                  <br />Suite 
+                de l'exemple
+                </a>
+              </p>
+                <br /><br />
+			</div>	 
+		</div>
+   
+		<div id="pied">
+			<!--4dinclude pied.shtml-->
+		</div>
+			
+	</body>
+	
+</html>

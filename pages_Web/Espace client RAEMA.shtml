@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!--4dinclude HeaderRaema.shtml-->
+    <link href="styles/style-espace-participants.css" rel="stylesheet" type="text/css" />
+    <title>Accès participants</title>
+  </head>
+
+  <body>
+    <div id="header" align="center">
+      <a href="../index.shtml">
+        <img src="../images/LOGOASA.gif"alt="logo" width="529" height="119" />
+      </a>
+      <p class="hautpage">
+        Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus
+      </p>
+    </div>
+
+    <div id="corps">
+      <div class="TitreRenseignements">
+        <br />
+        <p class="textecentre">
+          <input type="checkbox" id="FactureKO" value="Pas payé">Pas payé         
+            <input type="checkbox" id="ParticipeOK" value="Participe">Participe      
+            <select id="statut" >
+                <option value="nn">Saison morte</option> 
+                <option selected value="ff">Saisie des résultats</option> 
+                <option value="msie">Niveaux de contamination</option> 
+                <option value="msie6">Récupération des rapports</option> 
+            </select>
+        </p>
+        <br />Bienvenue laboratoire<br />
+      </div>
+      
+      <div class="acces">
+          <div class="TitreEncadre">Accès</div>
+          <br />
+          <div class="LienAcces">
+            <img src="images/DonneesPerso.png" alt="Saisie résultats" width="30px" /><br />
+              Accéder à vos données personnelles
+          </div>
+          <br />
+       
+          <div class="TitreEncadre">Commande</div><br />
+            <div class="LienAcces">
+              <img src="images/DevisRaemaGel.png" alt="Devis RAEMA Gel" width="30px"/><br />
+              Générer mon devis RAEMA  Gel
+            </div><br />
+          <div class="LienAcces">
+            <img src="images/BoiteIsotherme.png" alt="Boite isotherme" width="30px"/><br />
+              Télécharger le bon de commande des boites isothermes
+          </div><br />
+          <div class="LienAcces">
+            <img src="images/ColisSupplementaire.png" alt="Colis supplémentaire" width="30px"/><br />
+              Télécharger le bon de commande des colis supplémentaires
+          </div><br />
+          <div class="TitreEncadre">Documents</div><br />
+          <div class="LienAcces">
+            <img src="images/TelechargerRapport.png" alt="Téléchargement rapport" width="30px"/><br />
+              Télécharger un rapport
+          </div><br />
+          <div class="LienAcces">
+          <img src="images/TelechargerAttestation.jpg" alt="Téléchargement attestation" width="30px"/><br />
+              Télécharger une attestation
+          </div><br />
+          <div class="LienAcces">
+            <img src="images/Reclamation.png" alt="Fiche de réclamation" width="30px"/><br />
+              Télécharger la fiche de réclamation
+          </div><br />
+          <div class="LienAcces">
+            <img src="images/DocumentAccompagnement.png" alt="Document d'accompagnement" width="30px"/><br />
+              Télécharger les documents d'accompagnement
+          </div><br />
+            <div class="LienAcces">
+              <img src="images/Facturation.png" alt="Facturation" width="30px"/><br />
+              Télécharger vos factures
+            </div><br />
+      </div>
+      
+      <div class="AccesRapideNews">
+        
+          <div class="news">
+            <p class="TitreEncadreNews">Où en sommes-nous ?</p>
+            <p class="Informations">Les niveaux anticipés de contamination sont à présent disponible :</p>
+            <p class="LienAcces">
+              <img src="images/NiveauConta.png" alt="Saisie résultats" width="40px"/><br />
+                Accéder au niveaux anticipés de contamination
+            </p>
+          </div>
+            
+          <div class="news">
+            <p class="TitreEncadreNews">Accès rapide au téléchargement</p>
+            <p class="Informations">Cliquez sur les boutons des documents désirés :</p>
+              <table class="Tableau">
+                <tr>
+                  <th>Campagne</th>
+                  <th>Rapport individuel</th>
+                  <th>Rapport général</th>
+                  <th>Attestation</th>
+                </tr>
+                
+                <tr>
+                  <td class="Plus">66</td>
+                  <td>
+                    <img src="images/TelechargerRapport.png" alt="Téléchargement rapport" width="30px"/>          </td>
+                  <td>
+                    <img src="images/RapportGeneral.png" alt="Téléchargement rapport" width="30px" />
+                  </td>
+                  <td>
+                    <img src="images/TelechargerAttestation.jpg" alt="Téléchargement attestation" width="30px" />
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td class="Plus">66A</td>
+                  <td>
+                    <img src="images/TelechargerRapport.png" alt="Téléchargement rapport" width="30px"/>
+                  </td>
+                  <td>
+                    <img src="images/RapportGeneral.png" alt="Téléchargement rapport" width="30px"/>
+                  </td>
+                  <td>
+                    <img src="images/TelechargerAttestation.jpg" alt="Téléchargement attestation" width="30px"/>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td class="Plus">67</td>
+                  <td>
+                    <img src="images/TelechargerRapport.png" alt="Téléchargement rapport" width="30px"/>
+                  </td>
+                  <td>
+                    <img src="images/RapportGeneral.png" alt="Téléchargement rapport" width="30px"/>
+                  </td>
+                  <td>
+                    <img src="images/TelechargerAttestation.jpg" alt="Téléchargement attestation" width="30px"/>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td class="Plus">67A</td>
+                  <td>
+                    <img src="images/TelechargerRapport.png" alt="Téléchargement rapport" width="30px"/>
+                  </td>
+                  <td>
+                    <img src="images/RapportGeneral.png" alt="Téléchargement rapport" width="30px"/>
+                  </td>
+                  <td>
+                    <img src="images/TelechargerAttestation.jpg" alt="Téléchargement attestation" width="30px"/>
+                  </td>
+                </tr>
+                
+              </table>
+          </div>
+          
+          <div class="news">
+              <p class="TitreEncadreNews">Calendrier des RAEMA</p>
+            <div class="Bloc">
+              <p class="Informations">Campagne N° 65 :</p>
+              <p class="TextGris">Les échantillons seront envoyés le mardi 3 octobre 2017.</p>
+            </div>
+            <div class="Bloc">
+              <p class="Informations">Campagne N° 64A :</p>
+              <p class="TextGris">Les rapports de campagne sont à présent en ligne !</p><br />
+            </div>
+            <div class="Bloc">
+              <p class="Informations">Campagne 66A :</p>
+              <p class="TextGris">Les échantillons du RAEMA Gel 66A ont été envoyés le mardi 29 mai 2018<br />
+                La date limite de rendu des résultats est fixée au lundi 11 juin 2018
+              </p>
+            </div>
+          </div>
+          
+          <div class="news">
+            <p class="TitreEncadreNews">Participation</p>
+            <p class="Informations">Vous êtes inscrit aux RAEMA :</p>
+            <table class="Tableau">
+              <tr>
+                <td class="Plus">Campagne</td>
+                <td>66</td>
+                <td>66A</td>
+                <td>67</td>
+                <td>67A</td>
+              </tr>
+              <tr>
+                <td class="Plus">Inscription</td>
+                <td><img src="images/Valider.png" alt="Valider" width="30px"/> </td>
+                <td><img src="images/Annuler.png" alt="Annuler" width="30px"/></td>
+                <td> <img src="images/Valider.png" alt="Valider" width="30px"/></td>
+                <td><img src="images/Annuler.png" alt="Annuler" width="30px"/></td>
+              </tr>
+            </table>
+          </div>
+      </div>
+    </div>
+   <div id="pied">
+      Site officiel de l'association Animal - Société - Aliment (ASA)  <br />
+      Adresse : Bâtiment Jean GIRARD - Ecole Nationale Vétérinaire d'Alfort -7 avenue du Général de Gaulle - 94704 Maisons-Alfort Cedex    FRANCE <br />
+      Téléphone : <b>+ 33 (0)1 56 29 36 30</b>       Fax : <b>+ 33 (0)9 61 24 33 81</b>       e-mail :
+      <a href="mailto:asa-spv@wanadoo.fr">
+       <b>asa-spv@wanadoo.fr</b>
+      </a>
+      <br />
+      <em>Pour signaler un problème, cliquez sur le lien suivant <a href="mailto:cegeheme@wanadoo.fr"> écrire au webmaster</a></em>
+      <br /><br />
+   </div>
+  </body>
+</html>

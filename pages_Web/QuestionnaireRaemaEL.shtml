@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+  <head>
+       <!--4dinclude HeaderRaema.shtml-->
+  <title>Questionnaire</title>
+  </head>
+
+  <body>
+    <div id="header" align="center">
+        <a href="../index.shtml">  <img src="../images/LOGOASA.gif" alt="logo" width="529" height="119"> </img> </a>
+    </div>
+    
+    <div id="corps">
+        
+    
+    <div id="contenu" class="textebanalgrand">
+    <p class="hautpage">Pour revenir au site de l'ASA, cliquer sur le dessin ci-dessus</p>   
+    <br /><br />
+    <p class="titrepage">QUESTIONNAIRE SUR LE RAEMA</p>
+    <p class="hautpage">
+          Comme annoncé, l'ASA vous propose de remplir ce questionnaire afin 
+          de mieux cerner <br /> les besoins réels de votre laboratoire vis-&agrave;-vis 
+          du RAEMA.<br /><br />
+          Pour cela, il vous suffit de répondre aux questions situées 
+          sur cette page : <br />cela ne vous prendra que quelques minutes mais nous permettra 
+          de mieux conna&icirc;tre vos besoins <br />et, en fonction des réponses 
+          obtenues, de modifier éventuellement le RAEMA pour mieux vous satisfaire 
+          <br /><br />
+        </p>
+        <form action="<!--4dvar MethodeASuivre-->" method="post" name="form1" id="form1">
+          <p>
+            <input type="hidden" name="hiddenField" value="<!--4dVAR MotDePasseActuel-->" />
+          </p>
+    
+          <p class="plusbleu">Désirez-vous :</p>
+          <p>Poursuivre les essais d&#8217;intercomparaison dans leur configuration 
+            actuelle, &agrave; savoir :</p>
+          
+          <table width="100%" border="0">
+            <tr> 
+              <td width="4%" rowspan="2" valign="top"> 
+              <input type="radio" name="radiogene" value="radiocontinue" />
+              </td>
+              <td width="2%" valign="top">-
+              </td>
+              <td width="94%">Essais de recherche dans 25 g de Salmonella et Listeria 
+                monocytogenes<br />
+                Ces essais permettent d&#8217;évaluer la performance du laboratoire 
+                en recherche pour un seul jeu de résultats <br />(1 méthode/technicien).
+                </td>
+            </tr>
+            <tr> 
+              <td valign="top">-</td>
+              <td>Essais de dénombrement de la flore aérobie mésophile, 
+                des entérobactéries, des coliformes totaux et thermotolérants, 
+                d&#8217;Escherichia coli beta-glucuronidase positive, des anaérobies 
+                sulfito-réducteurs, de Clostridium perfringens, des staphylocoques 
+                &agrave; coagulase positive, de Listeria monocytogenes.<br />
+                Ces essais permettent d&#8217;évaluer la fidélité 
+                et la justesse du laboratoire pour un seul jeu de 5 résultats 
+                par flore (une méthode/technicien par flore).</td>
+            </tr>
+          </table>
+               <p class="plusbleu">
+                Si vous désirez poursuivre les essais d&#8217;intercomparaison dans leur configuration 
+                actuelle, vous pouvez directement valider le questionnaire.<br /><br />>
+                OU</p>
+                <p>
+                  <input type="radio" name="radiogene" value="radiomodifie" />
+                  Modifier la configuration selon les options suivantes &agrave; préciser 
+                  et &agrave; prioriser.
+                <p />
+                  <br />
+            <p class="plusbleu">Si vous désirez modifier la configuration du RAEMA, 
+            continuez &agrave; remplir le questionnaire.</p>
+            <p class="textebanal">
+            Les valeurs possibles pour la priorité sont :</p>
+            <p class="textedecale30">
+            1 - Impérative, c'est-&agrave;-dire répondant &agrave; un 
+            besoin impératif de votre laboratoire.<br />
+            2 - Utile, c'est-&agrave;-dire répondant &agrave; un besoin important 
+            de votre laboratoire.<br />
+            3 - Eventuelle, c'est-&agrave;-dire répondant &agrave; un besoin 
+            mineur de votre laboratoire.</p>
+          <p><br />
+          
+            <strong>Recherche des micro-organismes pathogènes</strong></p>
+          <table width="100%" border="0">
+            <tr> 
+              <td width="4%">
+              <input type="radio" name="mop" value="mop1meth" />
+              </td>
+              <td width="96%">Continuer &agrave; évaluer la recherche de Salmonella 
+                et L. monocytogenes avec une seule méthode/technicien
+              </td>
+            </tr>
+            
+            <tr> 
+              <td><input type="radio" name="mop" value="mopnoperf" /></td>
+              <td>Ne pas évaluer la performance pour la recherche des pathogènes
+              </td>
+            </tr>
+            
+            <tr> 
+              <td><input type="radio" name="mop" value="mopmodifqqch" /></td>
+              <td>Evaluer la performance pour la recherche des pathogènes avec 
+                éventuellement plusieurs méthodes/techniciens<br />
+                Dans ce cas, précisez le germe concerné, 
+                le nombre de méthodes et la priorité accordée 
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="mopmodifsalmo" value="checkbox" />
+                Salmonella : nombre 
+                <input name="mopmodifsalmonb" type="text" size="5" maxlength="2" />
+                et priorité <select name="pummopmodifsalmo">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select></td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="mopmodiflist" value="checkbox" />
+                L. monocytogenes : nombre 
+                <input name="mopmodiflistnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="pummopmodiflist">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select></td>
+            </tr>
+          </table>
+       
+       
+          <br /><br />
+          <p><strong>Evaluation de la fidélité</strong></p>
+          <table width="100%" border="0">
+            <tr> 
+              <td width="4%">
+                <input type="radio" name="fid" value="fid1meth" />
+              </td>
+              <td width="96%">Continuer &agrave; évaluer la fidélité 
+                sur toutes les flores avec une seule méthode/technicien</td>
+            </tr>
+            <tr> 
+              <td><input type="radio" name="fid" value="fidnoperf" /></td>
+              <td>Ne pas évaluer la fidélité</td>
+            </tr>
+            <tr> 
+              <td><input type="radio" name="fid" value="fidmodifqqch" /></td>
+              <td>Evaluer la fidélité sur les flores suivantes avec 
+                éventuellement plusieurs méthodes/techniciens<br />
+                Dans ce cas, précisez le germe concerné, 
+                le nombre de méthodes et la priorité accordée 
+              </td>
+            </tr>
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+              <input type="checkbox" name="fidmodiffam" value="checkbox" />
+                Flore aérobie mésophile : nombre 
+                <input name="fidmodifamnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodiffampum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> <input type="checkbox" name="fidmodifent" value="checkbox" />
+                Entérobactéries : nombre 
+                <input name="fidmodifentnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodifentpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="fidmodifct" value="checkbox" />
+                Coliformes totaux : nombre 
+                <input name="fidmodifctnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodifctpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="fidmodifcth" value="checkbox" />
+                Coliformes thermotolérants : nombre 
+                <input name="fidmodifcthnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodifcthpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> <input type="checkbox" name="fidmodifec" value="checkbox" />
+                E. coli beta-glucuronidase positive : nombre 
+                <input name="fidmodifecnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodifecpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="fidmodifasr" value="checkbox" />
+                ASR : nombre 
+                <input name="fidmodifasrnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodifasrpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="fidmodifcp" value="checkbox" />
+                C. perfringens : nombre 
+                <input name="fidmodifcpnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodifcppum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="fidmodifst" value="checkbox" />
+                Staphylocoques &agrave; coagulase positive : nombre 
+                <input name="fidmodifstnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodifstpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="fidmodifstli" value="checkbox" />
+                L. monocytogenes : nombre 
+                <input name="fidmodifstlinb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="fidmodifstlipum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+          </table>
+          
+    <br /><br /> 
+    
+        <p><strong>Evaluation de la justesse</strong></p>
+          <table width="100%" border="0">
+            <tr> 
+              <td width="4%">
+                <input type="radio" name="just" value="just1meth" /></td>
+              <td width="96%">Continuer &agrave; évaluer la justesse sur toutes 
+                les flores avec une seule méthode/technicien</td>
+            </tr>
+            <tr> 
+              <td><input type="radio" name="just" value="justnoperf" /></td>
+              <td>Ne pas évaluer la justesse</td>
+            </tr>
+            <tr> 
+              <td><input type="radio" name="just" value="justmodif" /></td>
+              <td>Evaluer la justesse sur les flores suivantes avec éventuellement 
+                plusieurs méthodes/techniciens<br />
+                Dans ce cas, précisez le germe concerné, 
+                le nombre de méthodes et la priorité accordée 
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodiffam" value="checkbox" />
+                Flore aérobie mésophile : nombre 
+                <input name="justmodiffamnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodiffampum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            <tr> 
+            
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodifent" value="checkbox" />
+                Entérobactéries : nombre 
+                <input name="justmodifentnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodifentpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodifcft" value="checkbox" />
+                Coliformes totaux : nombre 
+                <input name="justmodifcftnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodifcftpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodifctr" value="checkbox" />
+                Coliformes thermotolérants : nombre 
+                <input name="justmodifctrnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodifctrpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodifec" value="checkbox" />
+                E. coli beta-glucuronidase positive : nombre
+                <input name="justmodifecnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodifecpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodifasr" value="checkbox" />
+                ASR : nombre 
+                <input name="justmodifasrnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodifasrpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodifcp" value="checkbox" />
+                C. perfringens : nombre 
+                <input name="justmodifcpnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodifcppum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodifst" value="checkbox" />
+                Staphylocoques &agrave; coagulase positive : nombre 
+                <input name="justmodifstnb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodifstpum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>&nbsp;</td>
+              <td valign="middle"> 
+                <input type="checkbox" name="justmodifli" value="checkbox" />
+                L. monocytogenes : nombre 
+                <input name="justmodiflinb" type="text" size="5" maxlength="2" />
+                et priorité 
+                <select name="justmodiflipum">
+                  <option value="0" selected="selected">Choisir ...</option>
+                  <option value="1">1 - Impérative</option>
+                  <option value="2">2 - Utile</option>
+                  <option value="3">3 - Eventuelle</option>
+                </select></td>
+            </tr>
+          </table>
+          
+          <p>
+            <br />La possibilité d&#8217;évaluer la performance des laboratoires 
+            sur plusieurs flores microbiennes et selon plusieurs méthodes/techniciens 
+            avec l&#8217;édition de rapports relatifs &agrave; chacun de ces 
+            résultats ne sera pas offerte pour l&#8217;ensemble des essais 
+            et s&#8217;accompagnera d&#8217;éventuels surco&ucirc;ts.
+            <br />Les résultats obtenus lors de cette première enquête 
+            permettront d&#8217;envisager d&#8217;éventuelles modifications 
+            qui seront chiffrées et soumises &agrave; vos commentaires lors 
+            d&#8217;une deuxième enquête.
+          </p>
+          
+            <br />
+            
+          <p class="plusbleu">Autres évolutions 
+          </p>
+          <p>Précisez les essais supplémentaires que vous aimeriez réaliser
+          </p>
+          <table width="65%">
+            <tr> 
+              <td width="25%" valign="middle">Campylobacter</td>
+              <td width="20%" valign="middle">
+              <input type="checkbox" name="supcamprech" value="checkbox" />
+                Recherche</td>
+              <td width="25%" valign="middle">
+                <input type="checkbox" name="supcampden" value="checkbox" />
+                Dénombrement
+              </td>
+            </tr>
+            
+            <tr> 
+              <td>Bacillus cereus</td>
+              <td>
+                <input type="checkbox" name="supcerden" value="checkbox" />
+                Dénombrement
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr> 
+              <td>Enterobacter sakazakii</td>
+              <td width="15%">
+                <input type="checkbox" name="supsakrec" value="checkbox" />
+                Recherche
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr> 
+              <td>Levures et moisissures</td>
+              <td>
+                <input type="checkbox" name="suplevden" value="checkbox" />
+                Dénombrement
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr> 
+              <td>Salmonella</td>
+              <td>
+                <input type="checkbox" name="supsalden" value="checkbox" />
+                Dénombrement
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+          
+          <br /><br />
+          <p class="plusbleu">
+            Quels sont les éléments autres que vous souhaitez voir prendre en compte ?
+          </p>
+          <p> 
+            <textarea name="textarea" cols="120" rows="20"></textarea>
+          </p>
+          <br /><br />
+          <p class="titrepage"> 
+            <input class="titrepage" type="submit" name="Submit" value="Envoyer" />
+          </p>
+          <p class="titrepage"> 
+            Merci d'avoir répondu &agrave; ce questionnaire ! <br />
+          </p>
+          
+        </form>
+            <br /><br /> <br /><br />
+    
+        
+        
+        
+      </div>
+    
+    </div>
+
+        <!--4dinclude pied.shtml-->
+  </body>
+</html>

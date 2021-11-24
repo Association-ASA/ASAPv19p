@@ -1,0 +1,1 @@
+﻿## $0:=QS_miniVersionR($1)---

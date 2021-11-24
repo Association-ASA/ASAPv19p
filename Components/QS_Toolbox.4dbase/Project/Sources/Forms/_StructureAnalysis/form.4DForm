@@ -1,0 +1,1550 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "QS_Toolbox: Structure Analysis",
+	"memorizeGeometry": true,
+	"formSizeAnchor": "limite",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Barre #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onUnload",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 570,
+					"left": 14,
+					"width": 1254,
+					"height": 54,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#C0C0C0",
+					"stroke": "#C0C0C0"
+				},
+				"ListeTables": {
+					"type": "listbox",
+					"top": 133,
+					"left": 16,
+					"width": 201,
+					"height": 437,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "2em",
+					"dataSource": "Form:C1466.structure",
+					"currentItemSource": "Form:C1466.currentTable",
+					"currentItemPositionSource": "Form:C1466.posCurrentTable",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"verticalLineStroke": "#EEEEEE",
+					"alternateFill": "#D1DFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/ListeTables.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne4",
+							"dataSource": "This:C1470.name",
+							"width": 186,
+							"minWidth": 10,
+							"maxWidth": 186,
+							"resizable": false,
+							"truncateMode": "none",
+							"alternateFill": "#D1DFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "QST_HeaderTable",
+								"text": "Table",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Onglet": {
+					"type": "tab",
+					"top": 94,
+					"left": 564,
+					"width": 703,
+					"height": 25,
+					"sizingX": "grow",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Structure",
+						"Table Relations",
+						"Check & Update",
+						"4DLink Editor"
+					],
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"limite": {
+					"type": "line",
+					"top": 623,
+					"left": 1248,
+					"width": 19,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"BT1": {
+					"type": "button",
+					"top": 97,
+					"left": -15,
+					"width": 10,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"BT2": {
+					"type": "button",
+					"top": 130,
+					"left": -15,
+					"width": 10,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"FenetreInformation": {
+					"type": "input",
+					"top": 581,
+					"left": 21,
+					"width": 1246,
+					"height": 33,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ctrlW": {
+					"type": "button",
+					"top": 156,
+					"left": 1348,
+					"width": 145,
+					"height": 25,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/_UI"
+					},
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "ctrl-W"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 1282,
+					"height": 69,
+					"fill": "#F2C929",
+					"stroke": "transparent"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 1,
+					"width": 1282,
+					"height": 16,
+					"sizingX": "grow",
+					"fill": "#E2DECB",
+					"stroke": "transparent"
+				},
+				"VersionComposant": {
+					"type": "input",
+					"top": 70,
+					"left": 1182,
+					"width": 88,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_Componant_Version",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bdd": {
+					"type": "input",
+					"top": 22,
+					"left": 105,
+					"width": 921,
+					"height": 25,
+					"dataSource": "Storage:C1525.QS_TBX_SHARED_DATA.QS_TBX_DBName+\" - Structure Analysis\"",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"contextMenu": "none",
+					"fontTheme": "normal"
+				},
+				"Image5": {
+					"type": "picture",
+					"top": 2,
+					"left": 1198,
+					"width": 60,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/pictures/QS_Toolbox.png"
+				},
+				"lb_result": {
+					"type": "listbox",
+					"top": 133,
+					"left": 227,
+					"width": 1041,
+					"height": 437,
+					"listboxType": "collection",
+					"movableRows": false,
+					"hideExtraBlankRows": true,
+					"headerHeight": "2em",
+					"dataSource": "Form:C1466.result",
+					"currentItemSource": "Form:C1466.currentElement",
+					"currentItemPositionSource": "Form:C1466.currentPosElement",
+					"metaSource": "STRCT_colorizer ()",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"columns": []
+				},
+				"Image1701470811": {
+					"type": "picture",
+					"top": 3,
+					"left": 3,
+					"width": 64,
+					"height": 64,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/icons/icn_puzzle_w.png"
+				},
+				"struct_Get_Info_Structure": {
+					"type": "button",
+					"top": 91,
+					"left": 65,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/images/buttons/btn_search.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/struct_Get_Info_Structure.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"struct_copyTo": {
+					"type": "button",
+					"top": 91,
+					"left": 30,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/images/buttons/btn_copy.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/struct_copyTo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"struct_toolStructure": {
+					"type": "button",
+					"top": 91,
+					"left": 100,
+					"width": 32,
+					"height": 32,
+					"focusable": false,
+					"icon": "/RESOURCES/images/buttons/btn_settings.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/struct_toolStructure.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"NbEnrTable": {
+					"type": "input",
+					"top": 111,
+					"left": 1178,
+					"width": 82,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Zone_Web": {
+					"type": "webArea",
+					"top": 134,
+					"left": 227,
+					"width": 1041,
+					"height": 436,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"contextMenu": "automatic",
+					"webEngine": "embedded"
+				},
+				"val1": {
+					"type": "input",
+					"top": 666,
+					"left": 14,
+					"width": 54,
+					"height": 16,
+					"class": "default",
+					"textAlign": "center",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Tables": {
+					"type": "text",
+					"top": 107,
+					"left": 368,
+					"width": 77,
+					"height": 17,
+					"class": "Buttons_13",
+					"fontWeight": "bold",
+					"text": "Tables"
+				},
+				"Fields": {
+					"type": "text",
+					"top": 108,
+					"left": 261,
+					"width": 60,
+					"height": 17,
+					"class": "Buttons_13",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Fields"
+				},
+				"container1": {
+					"type": "input",
+					"top": 107,
+					"left": 322,
+					"width": 45,
+					"height": 20,
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"pictureFormat": "scaled",
+					"dragging": "none",
+					"method": "ObjectMethods/container1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"button": {
+					"type": "input",
+					"top": 109,
+					"left": 322,
+					"width": 20,
+					"height": 16,
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/button.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseMove"
+					]
+				}
+			},
+			"entryOrder": [
+				"Zone_Web"
+			]
+		},
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 133,
+					"left": 226,
+					"width": 1041,
+					"height": 437,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#C0C0C0",
+					"stroke": "transparent"
+				},
+				"TypeDebug": {
+					"type": "input",
+					"top": 707,
+					"left": 147,
+					"width": 30,
+					"height": 26,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 18,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"encours": {
+					"type": "picture",
+					"top": 575,
+					"left": 1248,
+					"width": 16,
+					"height": 16,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/images/icons/icns_redBubble.png"
+				},
+				"LibraryImport": {
+					"type": "button",
+					"top": 712,
+					"left": 247,
+					"width": 179,
+					"height": 34,
+					"fontFamily": "lucida grande",
+					"fontSize": 12,
+					"focusable": false,
+					"text": "Import picture Library",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/LibraryImport.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectanglerond": {
+					"type": "rectangle",
+					"top": 167,
+					"left": 282,
+					"width": 433,
+					"height": 371,
+					"sizingY": "grow",
+					"fill": "transparent",
+					"borderRadius": 5
+				},
+				"SQLCommands": {
+					"type": "input",
+					"top": 188,
+					"left": 292,
+					"width": 402,
+					"height": 289,
+					"sizingY": "grow",
+					"class": "default",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ExecuteSQL": {
+					"type": "button",
+					"top": 492,
+					"left": 571,
+					"width": 117,
+					"height": 31,
+					"sizingY": "move",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"focusable": false,
+					"text": "Execute SQL",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/ExecuteSQL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Execute4D": {
+					"type": "button",
+					"top": 492,
+					"left": 316,
+					"width": 117,
+					"height": 31,
+					"sizingY": "move",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"focusable": false,
+					"text": "Execute 4D",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/Execute4D.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 153,
+					"left": 735,
+					"height": 391,
+					"sizingY": "grow",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"searchCheck": {
+					"type": "button",
+					"top": 91,
+					"left": 144,
+					"width": 43,
+					"height": 37,
+					"focusable": false,
+					"icon": "/RESOURCES/v",
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/searchCheck.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"4DFolders": {
+					"type": "dropdown",
+					"top": 213,
+					"left": 796,
+					"width": 29,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"choiceList": [
+						"",
+						"Active 4D Folder",
+						"Licences Folder",
+						"Extras (Obsolete)",
+						"4D Client database folder",
+						"Database folder",
+						"Database folder Unix syntax",
+						"Current resources folder",
+						"Logs folder",
+						"HTML Root folder",
+						"Data folder",
+						"Macro v2 folder"
+					],
+					"class": "default",
+					"method": "ObjectMethods/4DFolders.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 216,
+					"left": 842,
+					"width": 221,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "left",
+					"text": "Show 'Get 4D folders...'"
+				},
+				"SystemFolders": {
+					"type": "dropdown",
+					"top": 244,
+					"left": 796,
+					"width": 29,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"choiceList": [
+						"",
+						"System",
+						"Fonts\t",
+						"User preferences_all",
+						"User preferences_user",
+						"Startup Win_all",
+						"Startup Win_user",
+						"-",
+						"-",
+						"Start menu Win_all",
+						"Start menu Win_user",
+						"-",
+						"-",
+						"System Win",
+						"System32 Win",
+						"Favorites Win",
+						"Desktop",
+						"Applications or program files",
+						"Documents folder"
+					],
+					"class": "default",
+					"method": "ObjectMethods/SystemFolders.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 245,
+					"left": 842,
+					"width": 221,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "left",
+					"text": "Show 'System folders...'"
+				},
+				"TemporaryFolder": {
+					"type": "dropdown",
+					"top": 274,
+					"left": 796,
+					"width": 29,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"choiceList": [
+						"",
+						"Temporary folder"
+					],
+					"class": "default",
+					"method": "ObjectMethods/TemporaryFolder.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 275,
+					"left": 842,
+					"width": 221,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "left",
+					"text": "Show 'Temporary folder'"
+				},
+				"4DFile": {
+					"type": "dropdown",
+					"top": 304,
+					"left": 796,
+					"width": 29,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"choiceList": [
+						"",
+						"Backup configuration file",
+						"Last backup file",
+						"User settings file",
+						"User structure settings file for data",
+						"Verification log file",
+						"Compacting log file",
+						"Repair log file",
+						"Web request log file",
+						"HTTP debug log file",
+						"Request log file",
+						"Diagnostic log file",
+						"Debug log file",
+						"Backup log file",
+						"Build application log file"
+					],
+					"class": "default",
+					"method": "ObjectMethods/4DFile.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"4DFileFolders_t": {
+					"type": "text",
+					"top": 305,
+					"left": 842,
+					"width": 221,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "left",
+					"text": "Show 'Get 4D file...'"
+				},
+				"btn_rw": {
+					"type": "pictureButton",
+					"top": 93,
+					"left": 240,
+					"width": 32,
+					"height": 32,
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/btn_rw0.png",
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_rw.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"viewLogFile": {
+					"type": "dropdown",
+					"top": 413,
+					"left": 796,
+					"width": 192,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"choiceList": [
+						"",
+						"Verification log file",
+						"Compacting log file",
+						"Repair log file",
+						"Build application log file"
+					],
+					"class": "default",
+					"method": "ObjectMethods/viewLogFile.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"txtViewLogile": {
+					"type": "text",
+					"top": 387,
+					"left": 796,
+					"width": 221,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "left",
+					"text": "Open a log file..."
+				},
+				"redoSQL": {
+					"type": "pictureButton",
+					"top": 183,
+					"left": 240,
+					"width": 32,
+					"height": 32,
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/btn_clean.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/redoSQL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"searchSQL": {
+					"type": "pictureButton",
+					"top": 148,
+					"left": 240,
+					"width": 32,
+					"height": 32,
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/btn_search.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/searchSQL.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 133,
+					"left": 226,
+					"width": 1041,
+					"height": 437,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#C0C0C0",
+					"stroke": "transparent"
+				},
+				"GroupBox4": {
+					"type": "groupBox",
+					"top": 142,
+					"left": 770,
+					"width": 487,
+					"height": 366,
+					"class": "default",
+					"text": "View of all properties used to create/update a 4DLINK file"
+				},
+				"GroupBox3": {
+					"type": "groupBox",
+					"top": 142,
+					"left": 486,
+					"width": 274,
+					"height": 197,
+					"class": "default",
+					"text": "Settings for Local Database"
+				},
+				"Lcl_open_in_custom_mode_b": {
+					"type": "checkbox",
+					"top": 162,
+					"left": 496,
+					"width": 142,
+					"height": 15,
+					"text": "Open In Custom Mode",
+					"class": "default",
+					"method": "ObjectMethods/Lcl_open_in_custom_mode_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Lcl_open_tools_b": {
+					"type": "checkbox",
+					"top": 187,
+					"left": 496,
+					"width": 166,
+					"height": 15,
+					"text": "Open the MSC upon launch",
+					"class": "default",
+					"method": "ObjectMethods/Lcl_open_tools_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lcl_getStructure_btn": {
+					"type": "button",
+					"top": 209,
+					"left": 620,
+					"width": 130,
+					"height": 19,
+					"text": "Structure File Path",
+					"class": "default",
+					"method": "ObjectMethods/lcl_getStructure_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lcl_getData_btn": {
+					"type": "button",
+					"top": 234,
+					"left": 620,
+					"width": 130,
+					"height": 19,
+					"text": "Data File Path",
+					"class": "default",
+					"method": "ObjectMethods/lcl_getData_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Lcl_skip_onstartup_method_b": {
+					"type": "checkbox",
+					"top": 260,
+					"left": 496,
+					"width": 152,
+					"height": 15,
+					"text": "Skip OnStartup Method",
+					"class": "default",
+					"method": "ObjectMethods/Lcl_skip_onstartup_method_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Lcl_defImport_btn": {
+					"type": "button",
+					"top": 283,
+					"left": 620,
+					"width": 130,
+					"height": 19,
+					"text": "Definition Import File",
+					"class": "default",
+					"method": "ObjectMethods/Lcl_defImport_btn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Lcl_data_opening_mode_li": {
+					"type": "dropdown",
+					"top": 309,
+					"left": 495,
+					"width": 120,
+					"height": 20,
+					"choiceList": [
+						"Default Data File",
+						"Select Other Data File",
+						"Create New Data File"
+					],
+					"class": "default",
+					"method": "ObjectMethods/Lcl_data_opening_mode_li.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Lcl_structure_file_t": {
+					"type": "input",
+					"top": 212,
+					"left": 496,
+					"width": 120,
+					"height": 17,
+					"class": "default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Lcl_structure_file_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Lcl_data_file_t": {
+					"type": "input",
+					"top": 236,
+					"left": 496,
+					"width": 120,
+					"height": 17,
+					"class": "default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Lcl_data_file_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Lcl_definition_import_file_t": {
+					"type": "input",
+					"top": 285,
+					"left": 496,
+					"width": 120,
+					"height": 17,
+					"class": "default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Lcl_definition_import_file_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lcl_Text6": {
+					"type": "text",
+					"top": 311,
+					"left": 620,
+					"width": 116,
+					"height": 16,
+					"class": "default",
+					"text": "Data Opening Mode"
+				},
+				"ShortcutProperties": {
+					"type": "listbox",
+					"top": 165,
+					"left": 777,
+					"width": 466,
+					"height": 331,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"headerHeight": "2em",
+					"dataSource": "Form:C1466.linkProperties",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"columns": [
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.propName",
+							"width": 200,
+							"minWidth": 200,
+							"maxWidth": 200,
+							"fontFamily": "Tahoma",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "QST_Property_List",
+								"text": "Property List",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Colonne6",
+							"dataSource": "This:C1470.propValue",
+							"width": 251,
+							"minWidth": 142,
+							"maxWidth": 251,
+							"fontFamily": "Tahoma",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "QST_Property_Value",
+								"text": "Property Value",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"GroupBox5": {
+					"type": "groupBox",
+					"top": 338,
+					"left": 234,
+					"width": 526,
+					"height": 75,
+					"class": "default",
+					"text": "Create New..."
+				},
+				"create_structure_file_b": {
+					"type": "checkbox",
+					"top": 361,
+					"left": 244,
+					"width": 90,
+					"height": 15,
+					"text": "Structure File",
+					"class": "default",
+					"method": "ObjectMethods/create_structure_file_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"create_data_file_b": {
+					"type": "checkbox",
+					"top": 386,
+					"left": 244,
+					"width": 63,
+					"height": 15,
+					"text": "Data File",
+					"class": "default",
+					"method": "ObjectMethods/create_data_file_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"c_structure_file_t": {
+					"type": "input",
+					"top": 361,
+					"left": 335,
+					"width": 415,
+					"height": 17,
+					"class": "default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/c_structure_file_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"c_data_file_t": {
+					"type": "input",
+					"top": 386,
+					"left": 312,
+					"width": 438,
+					"height": 17,
+					"class": "default",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/c_data_file_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GroupBox1": {
+					"type": "groupBox",
+					"top": 142,
+					"left": 232,
+					"width": 234,
+					"height": 123,
+					"class": "default",
+					"text": "Global Settings"
+				},
+				"is_remote_b": {
+					"type": "checkbox",
+					"top": 162,
+					"left": 242,
+					"width": 145,
+					"height": 15,
+					"text": "Database Is Remote",
+					"class": "default",
+					"method": "ObjectMethods/is_remote_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"user_name_t": {
+					"type": "input",
+					"top": 187,
+					"left": 246,
+					"width": 120,
+					"height": 17,
+					"class": "default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/user_name_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"password_t": {
+					"type": "input",
+					"top": 211,
+					"left": 246,
+					"width": 120,
+					"height": 17,
+					"class": "default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/password_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 186,
+					"left": 372,
+					"width": 58,
+					"height": 16,
+					"class": "default",
+					"text": "Username"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 210,
+					"left": 372,
+					"width": 58,
+					"height": 16,
+					"class": "default",
+					"text": "Password"
+				},
+				"structure_opening_mode_li": {
+					"type": "dropdown",
+					"top": 235,
+					"left": 245,
+					"width": 120,
+					"height": 20,
+					"choiceList": [
+						"Normal",
+						"Interpreted",
+						"Compiled"
+					],
+					"class": "default",
+					"method": "ObjectMethods/structure_opening_mode_li.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 237,
+					"left": 372,
+					"width": 88,
+					"height": 16,
+					"class": "default",
+					"text": "Structure Mode"
+				},
+				"GroupBox2": {
+					"type": "groupBox",
+					"top": 428,
+					"left": 237,
+					"width": 520,
+					"height": 134,
+					"class": "default",
+					"text": "Settings for Remote Database"
+				},
+				"Rmt_server_database_name_t": {
+					"type": "input",
+					"top": 454,
+					"left": 247,
+					"width": 503,
+					"height": 17,
+					"class": "default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Rmt_server_database_name_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rmt_server_path_t": {
+					"type": "input",
+					"top": 492,
+					"left": 248,
+					"width": 502,
+					"height": 17,
+					"class": "default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Rmt_server_path_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"rmt_Text4": {
+					"type": "text",
+					"top": 471,
+					"left": 248,
+					"width": 248,
+					"height": 17,
+					"stroke": "#696969",
+					"class": "default",
+					"text": "Server DB Name (without extension)"
+				},
+				"rmt_Text5": {
+					"type": "text",
+					"top": 510,
+					"left": 249,
+					"width": 176,
+					"height": 17,
+					"stroke": "#696969",
+					"class": "default",
+					"text": "IP Address or DNS Name"
+				},
+				"Rmt_open_login_dialog_b": {
+					"type": "checkbox",
+					"top": 536,
+					"left": 249,
+					"width": 164,
+					"height": 16,
+					"text": "Open Login Dialog",
+					"class": "default",
+					"method": "ObjectMethods/Rmt_open_login_dialog_b.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ShortcutDB": {
+					"type": "listbox",
+					"top": 133,
+					"left": 14,
+					"width": 202,
+					"height": 435,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"headerHeight": "2em",
+					"dataSource": "Form:C1466.linksdb",
+					"currentItemSource": "Form:C1466.linkName",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"alternateFill": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/ShortcutDB.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "LinksDB",
+							"dataSource": "This:C1470.short_name",
+							"width": 202,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "automatic",
+							"fontFamily": "Tahoma",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "QST_4DLinks",
+								"text": "4D Links",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"ChangeDetected": {
+					"type": "input",
+					"top": 119,
+					"left": 1357,
+					"width": 120,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btn_clean": {
+					"type": "pictureButton",
+					"top": 520,
+					"left": 1168,
+					"width": 32,
+					"height": 32,
+					"sizingX": "move",
+					"sizingY": "move",
+					"tooltip": "Annuler",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/btn_clean.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_clean.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_save": {
+					"type": "pictureButton",
+					"top": 520,
+					"left": 1211,
+					"width": 32,
+					"height": 32,
+					"sizingX": "move",
+					"sizingY": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/btn_save.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_save.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 86,
+					"left": 1,
+					"width": 1267,
+					"height": 51,
+					"sizingX": "grow",
+					"fill": "#C0C0C0",
+					"stroke": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Lb_Balance": {
+					"type": "listbox",
+					"top": 137,
+					"left": 14,
+					"width": 1254,
+					"height": 438,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Lb_Balance",
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#DDDDDD",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"events": [
+						"onBeginDragOver"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"width": 1254,
+							"minWidth": 10,
+							"maxWidth": 1266,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DDDDDD",
+							"fontFamily": "Tahoma",
+							"fontSize": 12,
+							"header": {
+								"name": "QST_headerEmpty",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"copyResult": {
+					"type": "button",
+					"top": 91,
+					"left": 16,
+					"width": 43,
+					"height": 37,
+					"focusable": false,
+					"icon": "/RESOURCES/images/bevels/btn_export.png",
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/copyResult.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_power": {
+					"type": "pictureButton",
+					"top": 582,
+					"left": 1226,
+					"width": 32,
+					"height": 32,
+					"sizingX": "move",
+					"sizingY": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/buttons/btn_rew.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/btn_power.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 4
+}

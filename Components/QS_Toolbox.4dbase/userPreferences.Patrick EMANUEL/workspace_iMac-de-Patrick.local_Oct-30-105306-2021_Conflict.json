@@ -1,0 +1,25 @@
+﻿{
+	"editors": [
+		{
+			"type": "method",
+			"id": 2147483184,
+			"previousTabType": "method",
+			"previousTabID": 2147482999,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "QS_Init"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147482999,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "QS_TOOLBOX"
+			}
+		},
+		{
+			"type": "explorer"
+		}
+	]
+}

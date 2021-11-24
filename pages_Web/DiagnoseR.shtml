@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>AsaDia 3</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="styles/style-asadia.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link href="styles/table.css" rel="stylesheet" type="text/css" />
+  <link href="styles/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <link href="styles/multiple-select.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/tooltip.css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script>
+    $(function() {
+      $( document ).tooltip();
+    });
+  </script>
+ </head>
+
+ <body>
+  <div id="header" class="textecentre">
+
+  <img src="images/bandeau.jpg" alt="logo" width="1024" />
+  <br /><br />
+  <br />
+  <input id="mailvisiteur" type="hidden" value="cegeheme@wanadoo.fr" />
+  <ul id="menubar">
+    <li><a href="http://asa-spv.asso.fr">ASA</a></li>
+    <li id="AjaxDiagnose">Определить поражение</li>
+    <li id="AjaxLesionR">Список повреждений</li>
+    <li id="AjaxDiapoR">Список рисунков</a></li>
+    <li id="AjaxPaniersR">Корзины</a></li>
+  </ul>
+
+  </div>
+  <div id="corps">
+<p class="adtitrepage">
+     Определить поражение
+   </p>
+   <div id="aidepdfvideo">
+    <a href="pdf/DiagnoseR.pdf" target="_blank" >
+      <img type="image" src="images/AideR.png" alt="Помощь PDF" title="Помощь PDF"  height="40" />
+    </a>
+  </div>
+     <input id="flagA" width="30px" type="image" src="images/DrapeauA.gif" alt="Envoyer !" style="display: none;">
+      <input id="languecourante" type="hidden" value="R" />
+      <br />
+  <div id="paveautrequelesions" class="pavautrequelesionsR">
+     <p class="choixcritere">Выбрать вид животных</p>
+        <div class="cac2">
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacbv" name="bovins" />Крупный рогатый скот</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacov" name="ovins" />Овцы</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacca" name="caprins" />Козы</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="bacpo" name="porcins" />Свиньи</p>
+          <p class="cac1"><input type="checkbox" class="casesp" id="baceq" name="équins" />Лошади</p>
+        </div>
+
+     <p class="choixcritere">Выбрать органы</p>
+       <p class="souschoixcritere">Пищеваритальная система : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox" class="casorg" id="baclan" name="langue">Язык</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacoes" name="oesophage">Пищевод</input></p>  
+          <p class="cac"><input type="checkbox" class="casorg" id="bactd" name="tube digestif">Пищеварительный тракт</input> </p>    
+          <p class="cac"><input type="checkbox" class="casorg" id="bacfoie" name="foie">Печень</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacpan" name="pancreas">Поджелудочная железа</input></p> 
+          <p class="cac"><input type="checkbox" class="casorg" id="bacpert" name="péritoine">Брюшина</input> </p>  
+          <p class="cac"><input type="checkbox" class="casorg" id="bacfres" name="fressure">Потроха </input> </p> 
+        </div>
+
+       <p class="souschoixcritere">Респираторная система :</p>
+        <div class="cacesp"> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactrac" name="trachee" />Трахея</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacpou" name="poumon" />Легкое</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacple" name="plèvre" />Плевра</p> 
+        </div>
+
+       <p class="souschoixcritere">Кровеносная система : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="baccoe" name="coeur" />Сердце</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacperc" name="péricarde" />Перикард</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacvs" name="vaisseaux sanguins" />Кровеносные сосуды</p> 
+        </div>
+
+       <p class="souschoixcritere">Костно-мышечная система :</p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacos" name="os et articulation" />Кости и суставы</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacmus" name="muscles" />Мышцы </p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="baccar" name="carcasse" />Скелет </p> 
+        </div>
+
+       <p class="souschoixcritere">Мочеполовая система : </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacrein" name="rein" />Почка</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacves" name="vessie" />Мочевой пузырь</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacagf" name="appareil génital femelle" />Половая система самок</p> 
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacagm" name="appareil génital mâle" />Половая система самцов</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacmam" name="mamelle" />Сосок</p>
+        </div>
+
+       <p class="souschoixcritere">Другие :  </p>
+        <div class="cacesp">
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactca" name="tissu conjonctivo-adipeux" />Соединительная ткань</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacnl" name="noeud lymphatique" />Лимфатический узел</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacrate" name="rate" />Селезенка</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacthym" name="thymus" />Тимус</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bactet" name="tête" />Голова</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacpeau" name="peau" />Кожа</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacsur" name="surrenales" />Надпочечник</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacthyr" name="thyroide" />Щитовидная железа</p>
+          <p class="cac"><input type="checkbox"  class="casorg" id="bacsn" name="système nerveux" />Нервная система</p>
+        </div>
+
+      </div>
+
+      <div id="pavelesions" class="pavlesR">
+        <span class="choixcritere">Выбрать повреждения</span><br/>
+        <div  id="criteres" class="changerequete">
+        
+          <select class="textebanal" id="lesion" name="organe" size="50" width="400px" multiple>
+            <option>Абсцесс  инородного тела</option>
+            <option>Актинобактериоз/актиномикоз</option>
+            <option>Амилоидоз</option>
+            <option>Антракоз</option>
+            <option>Аортальный атероматоз</option>
+            <option>Артрит</option>
+            <option>Аскаридоз</option>
+            <option>Атрофический ринит (повреждения)</option>
+            <option>Афта</option>
+            <option>Бледное мягкое экссудативное мясо (PSE)</option>
+            <option>Бронхопневмония</option>
+            <option>Бруцеллез (повреждения)</option>
+            <option>Бурсит</option>
+            <option>Везикулярная болезнь (повреждения)</option>
+            <option>Вирусная диарея крупного рогатого скота (повреждения)</option>
+            <option>Врожденная аномалия</option>
+            <option>Врожденные печеночные цисты</option>
+            <option>Врожденные почечные цисты</option>
+            <option>Вяленое мясо</option>
+            <option>Гангрена</option>
+            <option>Гастрит</option>
+            <option>Гастрофиллез</option>
+            <option>Гематома</option>
+            <option>Гемоперикардиум</option>
+            <option>Гемоперитонеум</option>
+            <option>Геморрагическая пурпура</option>
+            <option>Гемосидероз</option>
+            <option>Гемоторах</option>
+            <option>Генерализованный застой</option>
+            <option>Гигрома</option>
+            <option>Гидронефроз</option>
+            <option>Гиподермоз (повреждения)</option>
+            <option>Гломеруло-эпителиальный нефрит</option>
+            <option>Гнойный интерстициальный нефрит</option>
+            <option>Гранулома Roeckl-а</option>
+            <option>Дерматит-эпидемит</option>
+            <option>Дивертикул пищевода</option>
+            <option>Дистоматоз/Фасциолез (повреждения)</option>
+            <option>Желтуха</option>
+            <option>Жировая ксантохромия</option>
+            <option>Застойный лимфаденит</option>
+            <option>Застойный/экссудативный перитонит</option>
+            <option>Застойный/экссудативный плеврит</option>
+            <option>Злокачественная катаральная лихорадка</option>
+            <option>Злокачественная катаральная лихорадка (повреждения)</option>
+            <option>Инородное тело</option>
+            <option>Интерстициальная пневмония</option>
+            <option>Интерстициальный фиброзный нефрит</option>
+            <option>Инфаркт</option>
+            <option>Инфаркт</option>
+            <option>Инфекционная анемия лошадей (повреждения)</option>
+            <option>Истощение</option>
+            <option>Казеозный лимфаденит</option>
+            <option>Кальциноз</option>
+            <option>Кахексия</option>
+            <option>Кишечные язвы</option>
+            <option>Контагиозная эктима</option>
+            <option>Крипторхизм</option>
+            <option>Легочная эмфизема</option>
+            <option>Легочный аденоматоз</option>
+            <option>Легочный ателектаз</option>
+            <option>Лейкоз</option>
+            <option>Лихорадочное мясо</option>
+            <option>Локализованная амиотрофия</option>
+            <option>Макулярная телеангиэктазия</option>
+            <option>Маркировка</option>
+            <option>Мастит</option>
+            <option>Мезотелиома</option>
+            <option>Меланоз</option>
+            <option>Меланосаркома</option>
+            <option>Мертвый плод асептический некроз или мумификация</option>
+            <option>Метрит</option>
+            <option>Мышечная дегенерация</option>
+            <option>Мышечный альбинизм</option>
+            <option>Мышечный цистицеркоз</option>
+            <option>Мясо плода</option>
+            <option>Некробактериоз печени</option>
+            <option>Некротический островковый гепатит</option>
+            <option>Неспецифический абсцесс</option>
+            <option>Образование камней</option>
+            <option>Ожог легких</option>
+            <option>Онхоцеркоз (повреждения)</option>
+            <option>Опухоль</option>
+            <option>Орхитэпидидимитперидидимит</option>
+            <option>Остеодистрофия</option>
+            <option>Остеомиелит</option>
+            <option>Отечное мясо</option>
+            <option>Отсутствие повреждения</option>
+            <option>Офтальмофлебический абсцесс</option>
+            <option>Охроноз</option>
+            <option>Очаговый миозит</option>
+            <option>Папилома</option>
+            <option>Паракератоз</option>
+            <option>Парамфистомоз (повреждения)</option>
+            <option>Паратуберкулез (повреждения)</option>
+            <option>Пассивный застой</option>
+            <option>Перелом</option>
+            <option>Печеночная ишемия</option>
+            <option>Печеночно-перитонеальный цистицеркоз</option>
+            <option>Пиелонефрит</option>
+            <option>Пиелофлебический абсцесс</option>
+            <option>Пиемический абсцесс</option>
+            <option>Плевропневмония</option>
+            <option>Плохо обескровленное мясо</option>
+            <option>Повреждение</option>
+            <option>Подвздошно-спинальный некроз</option>
+            <option>Подострый лимфаденит</option>
+            <option>Почечные цисты</option>
+            <option>Пятнистая почка</option>
+            <option>Расширение правого жедудочка</option>
+            <option>Рожа свиней (повреждения)</option>
+            <option>Саркоспоридиоз (повреждения)</option>
+            <option>Свиная лихорадка (повреждения)</option>
+            <option>Септические некротические очаги</option>
+            <option>Серозно-геморрагическая инфильтрация</option>
+            <option>Сероидоз</option>
+            <option>Сибирская язва (повреждения)</option>
+            <option>Склероз печени</option>
+            <option>Спленит</option>
+            <option>Стеатоз</option>
+            <option>Стоматит</option>
+            <option>Стригущий лишай (повреждения)</option>
+            <option>Стронгилятоз (повреждения брюшины)</option>
+            <option>Стронгилятоз (повреждения кишечника)</option>
+            <option>Стронгилятоз (повреждения легких)</option>
+            <option>Стронгилятоз (повреждения печени)</option>
+            <option>Стронгилятоз (повреждения сычуга)</option>
+            <option>Токсико-инфекционная печень</option>
+            <option>Травматизм (повреждения)</option>
+            <option>Трихинеллез (повреждения)</option>
+            <option>Тромб</option>
+            <option>Тромбо-эмболический нефрит</option>
+            <option>Трупное мясо</option>
+            <option>Туберкулез (повреждения)</option>
+            <option>Узловатый периартериит</option>
+            <option>Фиброзная пневмония</option>
+            <option>Фиброзный перикардит</option>
+            <option>Фиброзный перитонит</option>
+            <option>Фиброзный плеврит</option>
+            <option>Фибролипоматоз</option>
+            <option>Флегмона</option>
+            <option>Холецистит</option>
+            <option>Хронический интерстициальный гепатит</option>
+            <option>Хронический лимфаденит</option>
+            <option>Церебральный ценуроз</option>
+            <option>Циста яичника</option>
+            <option>Цистит</option>
+            <option>Цистный пневматоз</option>
+            <option>Цитостетонекроз</option>
+            <option>Чесотка (повреждения)</option>
+            <option>Чума крупного рогатого скота (повреждения)</option>
+            <option>Шваннома</option>
+            <option>Экссудативная пневмония</option>
+            <option>Экссудативный перикардит</option>
+            <option>Эмфизематозный плод</option>
+            <option>Эндокардит</option>
+            <option>Энтерит</option>
+            <option>Эозинофилия</option>
+            <option>Эозинофильный миозит</option>
+            <option>Эозофагостомоз</option>
+            <option>Эхинококк (повреждениясвязанные с ним)</option>
+            <option>Ящур (повреждения)</option>
+          </select>
+        </div>
+      </div>
+     <p id="typephoto"  class="textecentre">
+               <br />
+        <span class="choixcritere">Выбрать тип фотографии</span>
+        <input type="radio" id="toutesdia" name="typephoto" value="toutes"
+               title="Отобрать, согласно критериям,среди всех фотографий AsaDia" />
+        Все фотографии      
+        <input type="radio" id="sansvariantedia" name="typephoto" value="sansvariante" checked
+               title="Отобрать, согласно критериям, только среди фотографий с очень специфическими признаками поражения" />
+        Без вариантов      
+        <input type="radio" id="seulementvariantesdia" name="typephoto" value="variante"
+               title="Отобрать, согласно критериям,только среди всех фотографий с неспецифическими  признаками поражения" />
+        Только варианты
+        <br />
+      </p>
+      <!-- Le cadre où se trouve la formule et le résultat de la recherche    -->
+      <p id="formule" class="resrech">
+      </p>
+      
+      <!-- Le paragraphe où se trouve le bouton de visualisation des photographies    -->
+      <p id="boutonvoir" class="textecentre">
+          <button id="bouvisenombreuse" class="textebanalgrand">Смотреть фотографии</button>
+      </p>
+      
+      <!-- La division où se trouve le tableau des résultats de recherche    -->
+      <div id="tbphotos" class="tbphotos">
+      </div>
+      <!-- La division où se trouve la liste des images si < 20    -->
+      <div id="trieusephotos" class="trieuse">
+      </div>
+     <script type="text/javascript" src="js/dataTableE.js"></script><!-- jQuery dataTable    -->
+     <script type="text/javascript" src="js/asadia.js"></script> <!-- jQuery AsaDia    -->
+     <script src="js/multiple-select.js"></script>
+     <script>
+       $('select').multipleSelect({
+         isOpen: true,
+         keepOpen: true,
+         width: 550
+        });
+     </script>
+
+    </div>
+<div id="pied">
+    <!--4dinclude piedR.shtml-->
+   </div>
+    </body>
+  </html>
