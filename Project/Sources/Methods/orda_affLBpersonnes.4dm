@@ -1,5 +1,5 @@
 //%attributes = {"executedOnServer":true}
-#DECLARE($es : Object)->$coll : Collection
+#DECLARE($es : Object)
 
 var $coll : Collection
 $coll:=New collection:C1472

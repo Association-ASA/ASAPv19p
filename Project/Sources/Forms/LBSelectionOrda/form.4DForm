@@ -150,7 +150,7 @@
 								"fontFamily": "Arial",
 								"fontSize": 12
 							},
-							"dataSource": "This:C1470.entity.NomLong"
+							"dataSource": "This:C1470.NomLong"
 						},
 						{
 							"header": {
@@ -161,7 +161,7 @@
 							"footer": {
 								"name": "Pied2"
 							},
-							"dataSource": "This:C1470.entity.NomCourt"
+							"dataSource": "This:C1470.NomCourt"
 						},
 						{
 							"header": {
@@ -172,7 +172,7 @@
 							"footer": {
 								"name": "Pied3"
 							},
-							"dataSource": "This:C1470.entity.Caduc",
+							"dataSource": "This:C1470.Caduc",
 							"dataSourceTypeHint": "boolean"
 						},
 						{
@@ -184,7 +184,7 @@
 							"footer": {
 								"name": "Pied4"
 							},
-							"dataSource": "This:C1470.entity.Identificateur"
+							"dataSource": "This:C1470.Identificateur"
 						},
 						{
 							"header": {
@@ -197,7 +197,7 @@
 							"footer": {
 								"name": "Pied5"
 							},
-							"dataSource": "This:C1470.recupAdr"
+							"dataSource": "This:C1470.recupAdresse(\"Livraison\"; \"Facturation\")"
 						},
 						{
 							"header": {
@@ -208,7 +208,7 @@
 							"footer": {
 								"name": "Pied6"
 							},
-							"dataSource": "This:C1470.recupMailRAEMA"
+							"dataSource": "This:C1470.recupMail(\"EmailRAEMA\")"
 						},
 						{
 							"header": {
@@ -219,7 +219,7 @@
 							"footer": {
 								"name": "Pied7"
 							},
-							"dataSource": "This:C1470.recupMailFac"
+							"dataSource": "This:C1470.recupMail(\"EmailCompta\")"
 						},
 						{
 							"header": {
@@ -230,7 +230,7 @@
 							"footer": {
 								"name": "Pied8"
 							},
-							"dataSource": "This:C1470.num",
+							"dataSource": "Formula from string:C1601(Form:C1466.formula).call(This:C1470)",
 							"dataSourceTypeHint": "number",
 							"enterable": false
 						}

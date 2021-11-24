@@ -1,6 +1,6 @@
 //%attributes = {"lang":"fr"}
 
-RELOAD PROJECT:C1739
+// RELOAD PROJECT
 
 //$ValeurCourante:="@cuire@"
 

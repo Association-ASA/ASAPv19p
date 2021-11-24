@@ -1,10 +1,6 @@
 Class extends Entity
 
 
-//This.Arguments:=New object
-//This.Arguments.emailRAEMA:=""
-
-
 Function recupAdresse($type : Text)->$result : Text
 /*
 $Type : Critère principal de recherche de l'adresse
@@ -34,6 +30,7 @@ $Type : Critère principal de recherche de l'adresse
 		$result:=$e.CodePostal+" "+$e.Pays
 	End if 
 	
+	// -------------------
 	
 Function recupMail($type : Text)->$mail : Text
 	$mail:="---------------"

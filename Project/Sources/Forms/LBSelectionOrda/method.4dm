@@ -29,8 +29,8 @@ Case of
 		//OBJECT SET VISIBLE(*; "ens@"; ZGereEnsemble)
 		
 		OBJECT SET VISIBLE:C603(*; "lapin@"; Form:C1466["Méthode lapin"].length>0)
-		Form:C1466.formula:="cs.cryptage.new().cracheNumLaboN(This.Identificateur; \"labo\")"
 		Form:C1466.tableNumber:=ds:C1482[Form:C1466.table].getInfo().tableNumber
+		Form:C1466.formula:="cs.cryptage.new().cracheNumLaboN(This.Identificateur; \"labo\")"
 		
 		Form:C1466.quickView:=False:C215
 		OBJECT GET COORDINATES:C663(*; $lbName; $gauche; $haut; $droit; $bas)
@@ -51,8 +51,10 @@ Case of
 	: ($event=On Timer:K2:25)
 		SET TIMER:C645(0)
 		
-		var $es : Object
-		$es:=ds:C1482[Form:C1466.table].query("TypePersonne =:1 and Caduc=:2"; "laboratoire"; False:C215).orderBy(Form:C1466["Champ significatif"]+" "+Form:C1466.tri)
+		// $es : issu de la fonction menu de la classe interface
+		// orda_affLBpersonnes($es)  //ZFenetreActualiseTitre
+		// 
+		Form:C1466.esColl:=ds:C1482[Form:C1466.table].query("TypePersonne =:1 and Caduc=:2"; "laboratoire"; False:C215).orderBy(Form:C1466["Champ significatif"]+" "+Form:C1466.tri)
 		
 		If (Form:C1466.premiereOuverture)
 			Form:C1466.selection:=$es
@@ -60,8 +62,7 @@ Case of
 			Form:C1466.premiereOuverture:=False:C215
 		End if 
 		
-		// $es : issu de la fonction menu de la classe interface
-		Form:C1466.esColl:=orda_affLBpersonnes($es)  //ZFenetreActualiseTitre
+		// orda_affLBpersonnes2($es)
 		
 	: ($event=On Clicked:K2:4)
 		$objetName:=$objet.objectName
