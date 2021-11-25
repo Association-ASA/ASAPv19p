@@ -6,12 +6,10 @@ Case of
 		ASAPSurChargementSaisieLabo
 		
 		If (Form:C1466.visiteurOne)
-			OBJECT SET ENABLED:C1123("@"; False:C215)
-			OBJECT SET ENABLED:C1123("bCancel"; True:C214)
-			OBJECT SET ENABLED:C1123("bouP@"; True:C214)
+			OBJECT SET ENABLED:C1123(*; "@"; False:C215)
+			OBJECT SET ENABLED:C1123(*; "bCancel"; True:C214)
+			OBJECT SET ENABLED:C1123(*; "bouP@"; True:C214)
 		End if 
-		
-		
 		
 	: ($evt=On Validate:K2:3)
 		ASAPSurValidationSaisieLabo
