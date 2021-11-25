@@ -35,7 +35,7 @@ Création de la structure de LB sous forme de collection
 A faire sur le client
 */
 //$tt1:=Milliseconds
-
+// Sert à mettre les objets sous forme de collection
 $coll:=New collection:C1472
 For each ($personne; $n)
 	$coll.push(New object:C1471("UUID"; $personne; \
