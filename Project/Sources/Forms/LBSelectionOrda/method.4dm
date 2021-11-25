@@ -120,10 +120,8 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 					entity_enregistrement(Form:C1466.table)
 					personnes2storage  // va très très vite
 					sendStorageDataToAllClients("tableaux")  // Execute sendStorageDataToAllClients depuis le serveur pour le paramètre Tableaux
-					DELAY PROCESS:C323(Current process:C322; 30)
-					wLBpersonnes
-					Form:C1466.esColl:=Form:C1466.esColl
 				End if 
+				$statusUnLock:=$_Data.entity.unlock()  // Unlock entity
 				
 			Else 
 				C_TEXT:C284($machine; $qui)
