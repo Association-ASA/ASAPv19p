@@ -118,7 +118,7 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 				$txt:="L'enregistrement est déjà en cours d'édition par '"+$qui+"' sur l'ordinateur '"+$machine+"'."
 				$txt:=$txt+"\nSeule la consultation est possible."
 				ALERT:C41($txt)
-				Form:C1466.visiteurOne:=True:C214
+				$_Data.visiteurOne:=True:C214
 			End if 
 			
 			$_Data.changed:=False:C215
