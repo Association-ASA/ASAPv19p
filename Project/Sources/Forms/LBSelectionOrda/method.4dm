@@ -107,7 +107,7 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 			
 			$_Data:=New object:C1471
 			$_Data.entity:=Form:C1466.overview
-			Form:C1466.visiteurOne:=False:C215
+			$_Data.visiteurOne:=False:C215
 			
 			$statusLock:=$_Data.entity.lock()  // Lock entity
 			If ($statusLock.success=False:C215)
