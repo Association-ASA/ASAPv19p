@@ -114,10 +114,12 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 				$PtrTable:=Table:C252(Form:C1466.tableNumber)
 				$Win:=Open form window:C675($PtrTable->; "SaisieOrda"; *)
 				DIALOG:C40($PtrTable->; "SaisieOrda"; $_Data)
+				
 				If ($_Data.changed)
 					entity_enregistrement(Form:C1466.table)
 					personnes2storage  // va très très vite
 					sendStorageDataToAllClients("tableaux")  // Execute sendStorageDataToAllClients depuis le serveur pour le paramètre Tableaux
+					CALL FORM:C1391(Current form window:C827; "wLBpersonnes")
 				End if 
 				
 			Else 
