@@ -17,7 +17,7 @@ Case of
 	: ($event=On Load:K2:1)
 		var $file : 4D:C1709.file
 		$file:=File:C1566("/LOGS/request.json")
-		SET DATABASE PARAMETER:C642(Client log recording:K37:44; 2)
+		SET DATABASE PARAMETER:C642(Client log recording:K37:44; 3)
 		ds:C1482.startRequestLog($file)
 		
 		var $image : Picture
@@ -38,37 +38,19 @@ Case of
 		OBJECT SET COORDINATES:C1248(*; "quickView"; $g; $haut; $droit; $bas)
 		OBJECT SET SUBFORM:C1138(*; "quickView"; Table:C252(Form:C1466.tableNumber)->; "quickView")
 		FORM GET PROPERTIES:C674(Table:C252(Form:C1466.tableNumber)->; "quickView"; $largeur; $hauteur)
+		CALL FORM:C1391(Current form window:C827; "wLBpersonnes")
 		
 		//SET TIMER(1)
+		
 		//: ($event=On Timer)
 		//SET TIMER(0)
 		
-		// $es : issu de la fonction menu de la classe interface
-		// orda_affLBpersonnes($es)  //ZFenetreActualiseTitre
-		//// 
-		//Form.esColl:=ds[Form.table].query("TypePersonne =:1 and Caduc=:2"; "laboratoire"; False).orderBy(Form["Champ significatif"]+" "+Form.tri)
+/*
+// $es : issu de la fonction menu de la classe interface
+ // orda_affLBpersonnes($es)  //ZFenetreActualiseTitre 
+Ancienne version, ne pas utiliser car génère un trafique important sur le réseau
+*/
 		
-		$coll:=New collection:C1472
-		$data:=Storage:C1525.tableaux
-		For each ($personne; $data)
-			$coll.push(New object:C1471("uuid"; $personne; \
-				"labo"; $data[$personne].labo; \
-				"nom"; $data[$personne].nom; \
-				"raema"; $data[$personne].recupMailRAEMA; \
-				"fac"; $data[$personne].recupMailFac; \
-				"pays"; $data[$personne].pays; \
-				"adr"; $data[$personne].adr))
-		End for each 
-		Form:C1466.esColl:=$coll.copy()
-		
-		If (Form:C1466.premiereOuverture)
-			Form:C1466.selection:=$es
-			Form:C1466.esInitiale:=$es
-			Form:C1466.premiereOuverture:=False:C215
-		End if 
-		
-		$val:=$coll.length
-		OBJECT SET VALUE:C1742("combien"; $val)
 		
 	: ($event=On Unload:K2:2)
 		SET DATABASE PARAMETER:C642(Client log recording:K37:44; 0)
@@ -121,10 +103,36 @@ Case of
 	: ($event=On Double Clicked:K2:5)
 		$objetName:=$objet.objectName
 		
-		If (Form:C1466.current#Null:C1517)
-			$workerName:=String:C10(Form:C1466.current.UUID)
+		If (Form:C1466.overview#Null:C1517)
 			
+			$_Data:=New object:C1471
+			$_Data.entity:=Form:C1466.overview
 			
+			$statusLock:=$_Data.entity.lock()  // Lock entity
+			If ($statusLock.success)
+				$_Data.changed:=False:C215
+				$PtrTable:=Table:C252(Form:C1466.tableNumber)
+				$Win:=Open form window:C675($PtrTable->; "SaisieOrda"; *)
+				DIALOG:C40($PtrTable->; "SaisieOrda"; $_Data)
+				If ($_Data.changed)
+					entity_enregistrement(Form:C1466.table)
+					personnes2storage  // va très très vite
+					sendStorageDataToAllClients("tableaux")  // Execute sendStorageDataToAllClients depuis le serveur pour le paramètre Tableaux
+					CALL FORM:C1391(Current form window:C827; "wLBpersonnes")
+				End if 
+				
+			Else 
+				C_TEXT:C284($machine; $nom; $qui)
+				
+				$qui:=$statusLock.lockInfo.user_name
+				$machine:=$statusLock.lockInfo.host_name
+				
+				C_OBJECT:C1216($txt)
+				$txt:=txtAlerte:="L'enregistrement est déjà en cours d'édition par '"+$qui+"' sur l'ordinateur '"+$machine+"'."
+				$txt.txtAlerte:=$txt.txtAlerte+"\nRéessayer l'édition dans quelques minutes."
+				ALERT:C41(->$txt)
+				
+			End if 
 			
 			
 		End if 
