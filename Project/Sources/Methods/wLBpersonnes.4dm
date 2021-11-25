@@ -1,4 +1,5 @@
 //%attributes = {}
+
 $coll:=New collection:C1472
 $data:=Storage:C1525.tableaux
 For each ($personne; $data)

@@ -118,7 +118,6 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 					entity_enregistrement(Form:C1466.table)
 					personnes2storage  // va très très vite
 					sendStorageDataToAllClients("tableaux")  // Execute sendStorageDataToAllClients depuis le serveur pour le paramètre Tableaux
-					CALL FORM:C1391(Current form window:C827; "wLBpersonnes")
 				End if 
 				
 			Else 
@@ -128,9 +127,9 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 				$machine:=$statusLock.lockInfo.host_name
 				
 				C_OBJECT:C1216($txt)
-				$txt:=txtAlerte:="L'enregistrement est déjà en cours d'édition par '"+$qui+"' sur l'ordinateur '"+$machine+"'."
+				$txt.txtAlerte:="L'enregistrement est déjà en cours d'édition par '"+$qui+"' sur l'ordinateur '"+$machine+"'."
 				$txt.txtAlerte:=$txt.txtAlerte+"\nRéessayer l'édition dans quelques minutes."
-				ALERT:C41(->$txt)
+				ALERT:C41($txt.txt)
 				
 			End if 
 			
