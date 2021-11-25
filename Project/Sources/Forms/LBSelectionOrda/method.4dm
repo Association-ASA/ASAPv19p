@@ -120,6 +120,7 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 					entity_enregistrement(Form:C1466.table)
 					personnes2storage  // va très très vite
 					sendStorageDataToAllClients("tableaux")  // Execute sendStorageDataToAllClients depuis le serveur pour le paramètre Tableaux
+					EXECUTE ON CLIENT:C651("@"; "updatePersonnesLB")
 				End if 
 				$statusUnLock:=$_Data.entity.unlock()  // Unlock entity
 				
