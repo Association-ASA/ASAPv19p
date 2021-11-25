@@ -114,24 +114,26 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 				$PtrTable:=Table:C252(Form:C1466.tableNumber)
 				$Win:=Open form window:C675($PtrTable->; "SaisieOrda"; *)
 				DIALOG:C40($PtrTable->; "SaisieOrda"; $_Data)
+				CLOSE WINDOW:C154($Win)
 				
 				If ($_Data.changed)
 					entity_enregistrement(Form:C1466.table)
 					personnes2storage  // va très très vite
 					sendStorageDataToAllClients("tableaux")  // Execute sendStorageDataToAllClients depuis le serveur pour le paramètre Tableaux
-					CALL FORM:C1391(Current form window:C827; "wLBpersonnes")
+					DELAY PROCESS:C323(Current process:C322; 30)
+					wLBpersonnes
+					Form:C1466.esColl:=Form:C1466.esColl
 				End if 
 				
 			Else 
-				C_TEXT:C284($machine; $nom; $qui)
+				C_TEXT:C284($machine; $qui)
 				
 				$qui:=$statusLock.lockInfo.user_name
 				$machine:=$statusLock.lockInfo.host_name
 				
-				C_OBJECT:C1216($txt)
-				$txt.txtAlerte:="L'enregistrement est déjà en cours d'édition par '"+$qui+"' sur l'ordinateur '"+$machine+"'."
-				$txt.txtAlerte:=$txt.txtAlerte+"\nRéessayer l'édition dans quelques minutes."
-				ALERT:C41($txt.txt)
+				$txt:="L'enregistrement est déjà en cours d'édition par '"+$qui+"' sur l'ordinateur '"+$machine+"'."
+				$txt:=$txt+"\nRéessayer l'édition dans quelques minutes."
+				ALERT:C41($txt)
 				
 			End if 
 			

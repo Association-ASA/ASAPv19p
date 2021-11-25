@@ -8,3 +8,4 @@
 //End if 
 
 Form:C1466.changed:=True:C214
+CANCEL:C270
