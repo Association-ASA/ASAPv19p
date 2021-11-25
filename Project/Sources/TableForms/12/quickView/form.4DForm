@@ -52,7 +52,7 @@
 					"top": 31,
 					"width": 355,
 					"height": 33,
-					"dataSource": "Form:C1466.current.entity.Factures_Personnes.NumBonCommande+\" \"+Form:C1466.current.entity.Factures_Personnes.CP"
+					"dataSource": "Form:C1466.NomLong"
 				},
 				"titre1": {
 					"type": "input",
@@ -60,7 +60,7 @@
 					"top": 84,
 					"width": 355,
 					"height": 33,
-					"dataSource": "Form:C1466.current.entity.PersonnesAdresses_Personnes.CodePostal"
+					"dataSource": "Form:C1466.Identificateur"
 				}
 			}
 		}
@@ -72,5 +72,6 @@
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"method": "method.4dm"
 }

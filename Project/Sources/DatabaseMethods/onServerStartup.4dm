@@ -16,4 +16,7 @@ ZInitTbDiamant
 DiaInitTbDiamant
 ZAmnistieInternationale
 ZConfiguration_Demarrage
+
+personnes2storage
+
 $ProcessDuJour:=New process:C317("ZProcessPipeletteServeur"; 0; "Pipelette Serveur"; *)

@@ -1,4 +1,5 @@
 //%attributes = {"lang":"fr"}
+// wgetStorageFromServer("tableaux")
 
 // RELOAD PROJECT
 

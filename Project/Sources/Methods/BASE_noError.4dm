@@ -47,7 +47,7 @@ Case of
 		
 		// Store the error in a file located in the database logs folder
 		$timestamp_t:=Replace string:C233($timestamp_t; ":"; "-")
-		$file:=Folder:C1567(fk dossier fichiers d'historique; *).file("error/error_"+$timestamp_t+".json")
+		$file:=Folder:C1567(fk logs folder:K87:17; *).file("error/error_"+$timestamp_t+".json")
 		$file.setText(JSON Stringify:C1217($error))
 		
 		// ----> keep in QST instance

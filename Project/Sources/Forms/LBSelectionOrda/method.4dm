@@ -39,22 +39,27 @@ Case of
 		OBJECT SET SUBFORM:C1138(*; "quickView"; Table:C252(Form:C1466.tableNumber)->; "quickView")
 		FORM GET PROPERTIES:C674(Table:C252(Form:C1466.tableNumber)->; "quickView"; $largeur; $hauteur)
 		
-		SET TIMER:C645(1)
-		
-		
-	: ($event=On Unload:K2:2)
-		SET DATABASE PARAMETER:C642(Client log recording:K37:44; 0)
-		ds:C1482.stopRequestLog()
-		SHOW ON DISK:C922(Get 4D folder:C485(Logs folder:K5:19))
-		
-		
-	: ($event=On Timer:K2:25)
-		SET TIMER:C645(0)
+		//SET TIMER(1)
+		//: ($event=On Timer)
+		//SET TIMER(0)
 		
 		// $es : issu de la fonction menu de la classe interface
 		// orda_affLBpersonnes($es)  //ZFenetreActualiseTitre
-		// 
-		Form:C1466.esColl:=ds:C1482[Form:C1466.table].query("TypePersonne =:1 and Caduc=:2"; "laboratoire"; False:C215).orderBy(Form:C1466["Champ significatif"]+" "+Form:C1466.tri)
+		//// 
+		//Form.esColl:=ds[Form.table].query("TypePersonne =:1 and Caduc=:2"; "laboratoire"; False).orderBy(Form["Champ significatif"]+" "+Form.tri)
+		
+		$coll:=New collection:C1472
+		$data:=Storage:C1525.tableaux
+		For each ($personne; $data)
+			$coll.push(New object:C1471("uuid"; $personne; \
+				"labo"; $data[$personne].labo; \
+				"nom"; $data[$personne].nom; \
+				"raema"; $data[$personne].recupMailRAEMA; \
+				"fac"; $data[$personne].recupMailFac; \
+				"pays"; $data[$personne].pays; \
+				"adr"; $data[$personne].adr))
+		End for each 
+		Form:C1466.esColl:=$coll.copy()
 		
 		If (Form:C1466.premiereOuverture)
 			Form:C1466.selection:=$es
@@ -62,13 +67,28 @@ Case of
 			Form:C1466.premiereOuverture:=False:C215
 		End if 
 		
+		$val:=$coll.length
+		OBJECT SET VALUE:C1742("combien"; $val)
 		
-	: ($event=On Clicked:K2:4)
+	: ($event=On Unload:K2:2)
+		SET DATABASE PARAMETER:C642(Client log recording:K37:44; 0)
+		ds:C1482.stopRequestLog()
+		SHOW ON DISK:C922(Get 4D folder:C485(Logs folder:K5:19))
+		
+		
+	: ($event=On Selection Change:K2:29)
 		$objetName:=$objet.objectName
 		
 		If (Form:C1466.current#Null:C1517)
-			// TRACE
+			$val:=Form:C1466.current.uuid
+			OBJECT SET VALUE:C1742("combien"; $val)
+			
+			Form:C1466.overview:=ds:C1482[Form:C1466.table].get($val)
 		End if 
+		
+		
+	: ($event=On Clicked:K2:4)
+		$objetName:=$objet.objectName
 		
 		Case of 
 			: ($objetName="LapinZBouLapin")
@@ -102,7 +122,7 @@ Case of
 		$objetName:=$objet.objectName
 		
 		If (Form:C1466.current#Null:C1517)
-			$workerName:=String:C10(Form:C1466.current.entity.UUID)
+			$workerName:=String:C10(Form:C1466.current.UUID)
 			
 			
 			

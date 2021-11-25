@@ -1,5 +1,6 @@
 //%attributes = {"executedOnServer":true}
 // 1 - A executer au démarrage du serveur
+var $n : Object
 
 $table:="Personnes"
 $es:=ds:C1482[$table].query("TypePersonne =:1 and Caduc=:2"; "laboratoire"; False:C215)
@@ -27,16 +28,30 @@ pour être stocké dans le storage du client
 */
 
 
+
+
 /* --------------------
 Création de la structure de LB sous forme de collection
-
+A faire sur le client
 */
+//$tt1:=Milliseconds
 
+$coll:=New collection:C1472
+For each ($personne; $n)
+	$coll.push(New object:C1471("UUID"; $personne; \
+		"labo"; $n[$personne].labo; \
+		"nom"; $n[$personne].nom; \
+		"raema"; $n[$personne].recupMailRAEMA; \
+		"Fac"; $n[$personne].recupMailFac; \
+		"pays"; $n[$personne].pays; \
+		"adr"; $n[$personne].pays))
+	
+End for each 
 
+//$tt2:=Milliseconds
+//ALERT(String($tt2-$tt1))
 
-
-
-
+// -> jusqu'ici
 
 
 /* --------------------
@@ -47,11 +62,9 @@ sur clic => $e:=ds[$table].get($myUUID) // $myUUID = Form.current.UUID -> $myUUI
 */
 
 
-
 $myUUID:="3F3F3540B75D423BA2D066084B5549B7"
 $table:="Personnes"
 $es:=ds:C1482[$table].query("UUID =:1"; $myUUID)
-
 
 $tt1:=Milliseconds:C459
 
@@ -60,23 +73,8 @@ For ($a; 1; 1000)
 	//$myUUID:="01A06FAAD70445FFBC68AEA181444114"
 	$table:="CampagneParticipations"
 	
-	
-	////Placeholders nommés pour les chemins d'attributs
-	//$querySettings:=New object
-	//$querySettings.attributes:=New object("attName"; "UUIDPersonne")
-	//// boucle
-	
-	
-	//// fin de boucle
-	
-	
-	$querySettings.parameters:=New object:C1471("givenName"; $myUUID)
-	$es:=ds:C1482.Employee.query(":attName= :givenName"; $querySettings)
-	
-	
 	$es:=ds:C1482[$table].query("UUIDPersonne =:1 and NumCampagne in :2"; $myUUID; New collection:C1472("71"; "72"; "71A"; "72A"))
-	$n:=$es.length
-	If ($n>0)
+	If ($es.length>0)
 		$i:=-1
 		For each ($e; $es)
 			$i:=$i+1
@@ -111,7 +109,7 @@ For ($a; 1; 1000)
 		
 	Else 
 		$table:="Personnes"
-		$es:=ds:C1482[$table].query("UUID =:1"$myUUID)
+		$es:=ds:C1482[$table].query("UUID =:1"; $myUUID)
 	End if 
 	
 End for 
@@ -151,8 +149,7 @@ For ($a; 1; 1000)
 	$es:=ds:C1482[$table].query("UUID =:1"; $myUUID)
 	$es2:=$es.CampagneParticipations_Personnes
 	
-	$n:=$es2.length
-	If ($n>0)
+	If ($es.length>0)
 		$i:=-1
 		For each ($e; $es2)
 			$i:=$i+1
@@ -187,7 +184,7 @@ For ($a; 1; 1000)
 		
 	Else 
 		$table:="Personnes"
-		$es:=ds:C1482[$table].query("UUID =:1"$myUUID)
+		$es:=ds:C1482[$table].query("UUID =:1"; $myUUID)
 	End if 
 End for 
 $tt2:=Milliseconds:C459

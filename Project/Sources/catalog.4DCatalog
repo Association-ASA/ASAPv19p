@@ -249,7 +249,7 @@
 		<table_extra trigger_delete="true" input_form="Global" output_form="ListeTout">
 			<editor_table_info displayable_fields_count="9">
 				<color red="168" green="206" blue="226" alpha="255"/>
-				<coordinates left="422.16790771485" top="19.653594970703" width="163.375" height="236.6171875"/>
+				<coordinates left="549.97122192383" top="2.2342071533202" width="163.375" height="236.6171875"/>
 			</editor_table_info>
 		</table_extra>
 	</table>

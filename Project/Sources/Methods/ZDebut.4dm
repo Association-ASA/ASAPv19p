@@ -15,6 +15,7 @@
 CALL WORKER:C1389("SplashScreen"; "ZSplash")
 
 z_demarreWorkersStart  // démonstration du worker et signal
+wgetObjectFromServerStorage("tableaux")
 
 ZDeclareVarDiamant
 DiaDeclareVarDiamant
