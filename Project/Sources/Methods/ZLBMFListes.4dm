@@ -33,7 +33,7 @@ Case of
 		OBJECT SET VISIBLE:C603(*; "ens@"; ZGereEnsemble)
 		OBJECT SET VISIBLE:C603(*; "lapin@"; (Size of array:C274(TbMethodeLapin)>0))
 		
-	: ($event=On Unload:K2:2)
+	: (Form event code:C388=On Unload:K2:2)
 		SET DATABASE PARAMETER:C642(Client log recording:K37:44; 0)
 		ds:C1482.stopRequestLog()
 		SHOW ON DISK:C922(Get 4D folder:C485(Logs folder:K5:19))
