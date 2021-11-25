@@ -1,5 +1,6 @@
 //%attributes = {"preemptive":"capable"}
 
+
 $coll:=New collection:C1472
 $data:=Storage:C1525.tableaux
 For each ($personne; $data)
@@ -18,3 +19,5 @@ If (Form:C1466.premiereOuverture)
 	Form:C1466.esInitiale:=$es
 	Form:C1466.premiereOuverture:=False:C215
 End if 
+
+Form:C1466.esColl:=Form:C1466.esColl
