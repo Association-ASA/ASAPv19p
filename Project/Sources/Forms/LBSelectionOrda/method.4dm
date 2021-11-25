@@ -107,35 +107,35 @@ Ancienne version, ne pas utiliser car génère un trafique important sur le rés
 			
 			$_Data:=New object:C1471
 			$_Data.entity:=Form:C1466.overview
+			Form:C1466.visiteurOne:=False:C215
 			
 			$statusLock:=$_Data.entity.lock()  // Lock entity
-			If ($statusLock.success)
-				$_Data.changed:=False:C215
-				$PtrTable:=Table:C252(Form:C1466.tableNumber)
-				$Win:=Open form window:C675($PtrTable->; "SaisieOrda"; *)
-				DIALOG:C40($PtrTable->; "SaisieOrda"; $_Data)
-				CLOSE WINDOW:C154($Win)
-				
-				If ($_Data.changed)
-					entity_enregistrement(Form:C1466.table)
-					personnes2storage  // va très très vite
-					sendStorageDataToAllClients("tableaux")  // Execute sendStorageDataToAllClients depuis le serveur pour le paramètre Tableaux
-					EXECUTE ON CLIENT:C651("@"; "updatePersonnesLB")
-				End if 
-				$statusUnLock:=$_Data.entity.unlock()  // Unlock entity
-				
-			Else 
+			If ($statusLock.success=False:C215)
 				C_TEXT:C284($machine; $qui)
-				
 				$qui:=$statusLock.lockInfo.user_name
 				$machine:=$statusLock.lockInfo.host_name
 				
 				$txt:="L'enregistrement est déjà en cours d'édition par '"+$qui+"' sur l'ordinateur '"+$machine+"'."
-				$txt:=$txt+"\nRéessayer l'édition dans quelques minutes."
+				$txt:=$txt+"\nSeule la consultation est possible."
 				ALERT:C41($txt)
-				
+				Form:C1466.visiteurOne:=True:C214
 			End if 
 			
+			$_Data.changed:=False:C215
+			$PtrTable:=Table:C252(Form:C1466.tableNumber)
+			$Win:=Open form window:C675($PtrTable->; "SaisieOrda"; *)
+			DIALOG:C40($PtrTable->; "SaisieOrda"; $_Data)
+			CLOSE WINDOW:C154($Win)
+			
+			If ($_Data.changed)
+				entity_enregistrement(Form:C1466.table)
+				personnes2storage  // va très très vite
+				sendStorageDataToAllClients("tableaux")  // Execute sendStorageDataToAllClients depuis le serveur pour le paramètre Tableaux
+				EXECUTE ON CLIENT:C651("@"; "updatePersonnesLB")
+			End if 
+			If ($statusLock.success)
+				$statusUnLock:=$_Data.entity.unlock()  // Unlock entity
+			End if 
 			
 		End if 
 		
