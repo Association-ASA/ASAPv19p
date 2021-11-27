@@ -1,0 +1,285 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 460,
+					"height": 380,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"dataclass": {
+					"type": "input",
+					"top": 20,
+					"left": 40,
+					"width": 410,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.dataclass",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"placeholder": "dataclass name",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/dataclass.4dm",
+					"events": [
+						"onLosingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onAfterEdit"
+					]
+				},
+				"LB": {
+					"type": "listbox",
+					"top": 100,
+					"left": 10,
+					"width": 440,
+					"height": 270,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"hideExtraBlankRows": true,
+					"showHeaders": false,
+					"dataSource": "Form:C1466.LB",
+					"currentItemSource": "Form:C1466.LB_current",
+					"currentItemPositionSource": "Form:C1466.LB_currentPos",
+					"selectedItemsSource": "Form:C1466.LB_selected",
+					"metaSource": "This:C1470.meta",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/LB.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.name",
+							"width": 220,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"truncateMode": "none",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "This:C1470.relatedDataClass",
+							"width": 220,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"truncateMode": "none",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"path": {
+					"type": "input",
+					"top": 50,
+					"left": 40,
+					"width": 410,
+					"height": 40,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.path",
+					"fill": "transparent",
+					"placeholder": "drag and drop to code",
+					"dragging": "custom",
+					"dropping": "none",
+					"method": "ObjectMethods/path.4dm",
+					"events": [
+						"onGettingFocus",
+						"onBeginDragOver"
+					]
+				},
+				"previous": {
+					"type": "button",
+					"top": 49,
+					"left": 10,
+					"width": 20,
+					"height": 20,
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"stroke": "#808080",
+					"focusable": false,
+					"text": "◀️",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/previous.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"debugFormName": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 60,
+					"height": 12,
+					"visibility": "hidden",
+					"stroke": "#FF0000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/debugFormName.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"LB_dcList": {
+					"type": "listbox",
+					"top": 221,
+					"left": 91,
+					"width": 360,
+					"height": 150,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"hideExtraBlankRows": true,
+					"showHeaders": false,
+					"dataSource": "Form:C1466.LB_dcList",
+					"currentItemSource": "Form:C1466.LB_dcList_current",
+					"currentItemPositionSource": "Form:C1466.LB_dcList_currentPos",
+					"metaSource": "This:C1470.meta",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/LB_dcList.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.name",
+							"width": 360,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"truncateMode": "none",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": "Entête1"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"pathMenu": {
+					"type": "button",
+					"top": 69,
+					"left": 10,
+					"width": 20,
+					"height": 20,
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"stroke": "#808080",
+					"focusable": false,
+					"text": "⏬",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/pathMenu.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

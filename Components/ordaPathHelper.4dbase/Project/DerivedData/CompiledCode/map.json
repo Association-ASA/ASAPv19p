@@ -1,0 +1,93 @@
+﻿{
+	"map": [
+		{
+			"id": 2147483647,
+			"path": "Sources/Methods/OSmac_darkMode.4dm"
+		},
+		{
+			"id": 2147483646,
+			"path": "Sources/Methods/xxForm_hierarchy.4dm"
+		},
+		{
+			"id": 2147483645,
+			"path": "Sources/Methods/00_arno.4dm"
+		},
+		{
+			"id": 2147483644,
+			"path": "Sources/Methods/Win_waitUntilOpened.4dm"
+		},
+		{
+			"id": 2147483643,
+			"path": "Sources/Methods/debugFormName_MO.4dm"
+		},
+		{
+			"id": 2147483642,
+			"path": "Sources/Methods/xxRes_fieldIcons.4dm"
+		},
+		{
+			"id": 2147483641,
+			"path": "Sources/Methods/Mnu_Load.4dm"
+		},
+		{
+			"id": 2147483640,
+			"path": "Sources/Methods/HostContext.4dm"
+		},
+		{
+			"id": 2147483639,
+			"path": "Sources/Methods/Dev_openWithCmdeK.4dm"
+		},
+		{
+			"id": 2147483638,
+			"path": "Sources/Methods/xxDoa_methodExists.4dm"
+		},
+		{
+			"id": 2147483637,
+			"path": "Sources/Methods/Mnu_Release.4dm"
+		},
+		{
+			"id": 2147483636,
+			"path": "Sources/Methods/Mnu_LoadFromFile.4dm"
+		},
+		{
+			"id": 2147483635,
+			"path": "Sources/Methods/CmdK.4dm"
+		},
+		{
+			"id": 2147483634,
+			"path": "Sources/Methods/OPH_mng.4dm"
+		},
+		{
+			"id": 2147483633,
+			"path": "Sources/Forms/OrdaPathHelper/method.4dm"
+		},
+		{
+			"id": 2147483632,
+			"path": "Sources/Forms/OrdaPathHelper/ObjectMethods/pathMenu.4dm"
+		},
+		{
+			"id": 2147483631,
+			"path": "Sources/Forms/OrdaPathHelper/ObjectMethods/LB_dcList.4dm"
+		},
+		{
+			"id": 2147483630,
+			"path": "Sources/Forms/OrdaPathHelper/ObjectMethods/debugFormName.4dm"
+		},
+		{
+			"id": 2147483629,
+			"path": "Sources/Forms/OrdaPathHelper/ObjectMethods/previous.4dm"
+		},
+		{
+			"id": 2147483628,
+			"path": "Sources/Forms/OrdaPathHelper/ObjectMethods/path.4dm"
+		},
+		{
+			"id": 2147483627,
+			"path": "Sources/Forms/OrdaPathHelper/ObjectMethods/LB.4dm"
+		},
+		{
+			"id": 2147483626,
+			"path": "Sources/Forms/OrdaPathHelper/ObjectMethods/dataclass.4dm"
+		}
+	],
+	"arch64": true
+}

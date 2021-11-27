@@ -1,0 +1,49 @@
+﻿{
+	"methods": {
+		"OSmac_darkMode": {
+			"timeStamp": "2021-11-26T16:44:04.265Z"
+		},
+		"xxForm_hierarchy": {
+			"timeStamp": "2021-11-26T16:44:04.266Z"
+		},
+		"00_arno": {
+			"timeStamp": "2021-11-26T16:44:04.259Z"
+		},
+		"Win_waitUntilOpened": {
+			"timeStamp": "2021-11-26T16:44:04.265Z"
+		},
+		"debugFormName_MO": {
+			"timeStamp": "2021-11-26T16:44:04.261Z"
+		},
+		"xxRes_fieldIcons": {
+			"timeStamp": "2021-11-26T16:44:04.267Z"
+		},
+		"Mnu_Load": {
+			"timeStamp": "2021-11-26T16:44:04.262Z"
+		},
+		"HostContext": {
+			"timeStamp": "2021-11-26T16:44:04.267Z"
+		},
+		"Dev_openWithCmdeK": {
+			"timeStamp": "2021-11-26T16:44:04.261Z"
+		},
+		"xxDoa_methodExists": {
+			"timeStamp": "2021-11-26T16:44:04.266Z"
+		},
+		"Mnu_Release": {
+			"timeStamp": "2021-11-26T16:44:04.263Z"
+		},
+		"Mnu_LoadFromFile": {
+			"timeStamp": "2021-11-26T16:44:04.263Z"
+		},
+		"CmdK": {
+			"timeStamp": "2021-11-26T16:44:04.260Z"
+		},
+		"OPH_mng": {
+			"timeStamp": "2021-11-26T16:44:04.264Z",
+			"attributes": {
+				"shared": true
+			}
+		}
+	}
+}

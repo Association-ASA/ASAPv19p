@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="ordaPathHelper" uuid="75BDDCF32FF345B6BB3EE0850373FDC1" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="ordaPathHelper" structure_file_name="ordaPathHelper" data_file_path=":ordaPathHelper.4DD">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

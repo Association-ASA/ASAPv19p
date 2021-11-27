@@ -1,0 +1,98 @@
+﻿{
+	"Sources/Methods/00_arno.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/CmdK.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/debugFormName_MO.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 1097,
+		"height": 1002
+	},
+	"Sources/Methods/Dev_openWithCmdeK.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 800,
+		"height": 736
+	},
+	"Sources/Methods/Mnu_Load.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/Mnu_LoadFromFile.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/Mnu_Release.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/OPH_mng.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/OSmac_darkMode.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/Win_waitUntilOpened.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/xxDoa_methodExists.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 990,
+		"height": 573
+	},
+	"Sources/Methods/xxForm_hierarchy.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/xxRes_fieldIcons.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Methods/HostContext.4dm": {
+		"left": 436,
+		"top": 309,
+		"width": 685,
+		"height": 400
+	},
+	"Sources/Forms/OrdaPathHelper/method.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	},
+	"Sources/Forms/OrdaPathHelper/ObjectMethods/LB_dcList.4dm": {
+		"left": 564,
+		"top": 228,
+		"width": 685,
+		"height": 612
+	}
+}

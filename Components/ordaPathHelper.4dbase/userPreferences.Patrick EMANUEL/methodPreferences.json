@@ -1,0 +1,146 @@
+﻿{
+	"Sources/Methods/00_arno.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.259Z"
+	},
+	"Sources/Methods/CmdK.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.260Z"
+	},
+	"Sources/Methods/debugFormName_MO.4dm": {
+		"startSelection": 28,
+		"endSelection": 28,
+		"firstSelectedLine": 164,
+		"lastSelectedLine": 164,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.261Z"
+	},
+	"Sources/Methods/Dev_openWithCmdeK.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 17,
+		"lastSelectedLine": 17,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.261Z"
+	},
+	"Sources/Methods/Mnu_Load.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 80,
+		"lastSelectedLine": 80,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.262Z"
+	},
+	"Sources/Methods/Mnu_LoadFromFile.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 43,
+		"lastSelectedLine": 43,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.263Z"
+	},
+	"Sources/Methods/Mnu_Release.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 31,
+		"lastSelectedLine": 31,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.263Z"
+	},
+	"Sources/Methods/OPH_mng.4dm": {
+		"startSelection": 33,
+		"endSelection": 33,
+		"firstSelectedLine": 276,
+		"lastSelectedLine": 276,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.264Z"
+	},
+	"Sources/Methods/OSmac_darkMode.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 26,
+		"lastSelectedLine": 26,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.265Z"
+	},
+	"Sources/Methods/Win_waitUntilOpened.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 29,
+		"lastSelectedLine": 29,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.265Z"
+	},
+	"Sources/Methods/xxDoa_methodExists.4dm": {
+		"startSelection": 23,
+		"endSelection": 23,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.266Z"
+	},
+	"Sources/Methods/xxForm_hierarchy.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 63,
+		"lastSelectedLine": 63,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.266Z"
+	},
+	"Sources/Methods/xxRes_fieldIcons.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 71,
+		"lastSelectedLine": 71,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.267Z"
+	},
+	"Sources/Methods/HostContext.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.267Z"
+	},
+	"Sources/Forms/OrdaPathHelper/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.274Z"
+	},
+	"Sources/Forms/OrdaPathHelper/ObjectMethods/LB_dcList.4dm": {
+		"startSelection": 0,
+		"endSelection": 7,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-11-26T16:44:04.284Z"
+	}
+}

@@ -1,0 +1,1 @@
+OPH_mng (New object:C1471("objectName";Current form name:C1298;"code";FORM Event:C1606.code))
