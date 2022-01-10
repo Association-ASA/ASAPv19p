@@ -1,1 +1,0 @@
-﻿## SND_TextToSpeech($1)---

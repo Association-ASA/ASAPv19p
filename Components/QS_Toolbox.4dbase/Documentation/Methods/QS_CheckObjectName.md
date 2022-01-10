@@ -1,1 +1,0 @@
-﻿## $0:=QS_CheckObjectName($1;$2)---

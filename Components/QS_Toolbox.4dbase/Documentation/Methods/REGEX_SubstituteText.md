@@ -1,1 +1,0 @@
-﻿## $0:=REGEX_SubstituteText($1;$2;$3;$4)---

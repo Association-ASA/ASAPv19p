@@ -1,1 +1,0 @@
-﻿## METHODS_analyseOne($1)---

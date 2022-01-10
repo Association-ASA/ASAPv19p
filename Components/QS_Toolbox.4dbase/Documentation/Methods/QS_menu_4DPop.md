@@ -1,1 +1,0 @@
-﻿## QS_menu_4DPop---## Restrictions**Current 4D version: 4D v18R6**Cannot be preemptif due to following information, ***except if*** there is/are called by a CALL FORM command:|Type|Variable / Method name||------|------||*4D Command*|`Self`||*4D Command*|`Self`|

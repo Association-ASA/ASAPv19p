@@ -1,1 +1,0 @@
-﻿## COMMANDS_LH_set_restriction($1;$2;$3;$4)---

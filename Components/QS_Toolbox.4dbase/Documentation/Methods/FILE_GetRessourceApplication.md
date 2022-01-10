@@ -1,1 +1,0 @@
-﻿## $0:=FILE_GetRessourceApplication---

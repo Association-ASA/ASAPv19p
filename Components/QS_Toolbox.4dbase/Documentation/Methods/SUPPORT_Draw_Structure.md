@@ -1,1 +1,0 @@
-﻿## $0:=SUPPORT_Draw_Structure($1;$2)---

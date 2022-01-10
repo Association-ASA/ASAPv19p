@@ -1,1 +1,0 @@
-﻿## QS_pushPropertiesValue($1;$2;$3)---

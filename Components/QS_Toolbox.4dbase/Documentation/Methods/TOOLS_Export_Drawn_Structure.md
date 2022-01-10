@@ -1,1 +1,0 @@
-﻿## TOOLS_Export_Drawn_Structure($1;$2)---

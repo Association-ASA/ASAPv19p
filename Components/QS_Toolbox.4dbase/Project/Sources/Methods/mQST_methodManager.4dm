@@ -1,2 +1,0 @@
-//%attributes = {"invisible":true,"shared":true,"preemptive":"capable","executedOnServer":false,"publishedSql":false,"publishedWsdl":false,"publishedSoap":false,"publishedWeb":false,"published4DMobile":{"scope":"none"}}
-mQST_executeMethod ("methodManager")

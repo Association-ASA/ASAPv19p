@@ -1,1 +1,0 @@
-﻿## $0:=collectionToGetDocType($1)---

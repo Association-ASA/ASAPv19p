@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<tools id="QST" name="QS_Toolbox " popup="true" picture="4DPop.png" helptip="Help for QS_Toolbox...">
-<tool name="QS_Toobox" method="QS_TOOLBOX_4Dpop"/>
-</tools>

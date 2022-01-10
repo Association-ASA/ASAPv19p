@@ -1,1 +1,0 @@
-﻿## $0:=IsTableJournaled($1;$2)---

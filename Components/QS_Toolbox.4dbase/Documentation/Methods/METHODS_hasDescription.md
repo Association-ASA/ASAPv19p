@@ -1,1 +1,0 @@
-﻿## METHODS_hasDescription($1)---

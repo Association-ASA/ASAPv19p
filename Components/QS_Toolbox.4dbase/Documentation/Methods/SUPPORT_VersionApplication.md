@@ -1,1 +1,0 @@
-﻿## $0:=SUPPORT_VersionApplication($1)---

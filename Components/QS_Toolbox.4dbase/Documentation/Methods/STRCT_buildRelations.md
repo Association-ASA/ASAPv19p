@@ -1,1 +1,0 @@
-﻿## STRCT_buildRelations($1;$2;$3)---

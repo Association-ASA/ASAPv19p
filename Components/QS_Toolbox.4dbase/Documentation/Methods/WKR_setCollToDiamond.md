@@ -1,1 +1,0 @@
-﻿## WKR_setCollToDiamond($3)---

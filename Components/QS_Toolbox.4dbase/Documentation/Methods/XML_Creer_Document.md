@@ -1,1 +1,0 @@
-﻿## $0:=XML_Creer_Document($1)---

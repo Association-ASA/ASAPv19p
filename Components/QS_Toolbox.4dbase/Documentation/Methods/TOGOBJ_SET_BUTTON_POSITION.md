@@ -1,1 +1,0 @@
-﻿## TOGOBJ_SET_BUTTON_POSITION($1;$2)---

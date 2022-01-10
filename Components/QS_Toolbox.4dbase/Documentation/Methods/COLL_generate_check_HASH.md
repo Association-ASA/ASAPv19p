@@ -1,1 +1,0 @@
-﻿## $0:=COLL_generate_check_HASH($1;$2)---

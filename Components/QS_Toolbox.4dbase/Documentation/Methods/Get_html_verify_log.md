@@ -1,1 +1,0 @@
-﻿## $0:=Get_html_verify_log($1;$2)---

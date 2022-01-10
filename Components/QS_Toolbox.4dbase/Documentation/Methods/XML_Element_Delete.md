@@ -1,1 +1,0 @@
-﻿## XML_Element_Delete($1;$2)---

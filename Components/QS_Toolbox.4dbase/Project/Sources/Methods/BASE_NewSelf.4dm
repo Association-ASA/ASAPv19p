@@ -1,2 +1,0 @@
-//%attributes = {"invisible":true,"published4DMobile":{"scope":"none"},"publishedWeb":false,"publishedSoap":false,"publishedWsdl":false,"shared":false,"publishedSql":false,"executedOnServer":false,"preemptive":"indifferent"}
-$0:=OBJECT Get pointer:C1124(Object current:K67:2)->{OBJECT Get pointer:C1124(Object current:K67:2)->}  // Not preemptive

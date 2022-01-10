@@ -1,1 +1,0 @@
-﻿## $0:=UTIL_IS_TEXT_AN_OBJECT($1)---

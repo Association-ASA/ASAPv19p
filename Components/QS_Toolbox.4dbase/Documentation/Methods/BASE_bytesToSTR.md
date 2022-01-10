@@ -1,1 +1,0 @@
-﻿## $0:=BASE_bytesToSTR($1)---

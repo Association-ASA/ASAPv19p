@@ -1,1 +1,0 @@
-﻿## SC_list_OpenClosureCommand---|*4D Command*|`Form`||*4D Command*|`LISTBOX SET COLUMN WIDTH`|

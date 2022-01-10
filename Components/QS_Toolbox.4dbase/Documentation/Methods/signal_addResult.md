@@ -1,1 +1,0 @@
-﻿## signal_addResult($1;$2)---

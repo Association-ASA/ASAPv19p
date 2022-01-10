@@ -1,1 +1,0 @@
-﻿## BASE_OpenAForm($1;$2)---|*4D Command*|`BRING TO FRONT`||*4D Command*|`SHOW WINDOW`||*4D Command*|`WINDOW LIST`||*4D Command*|`Get window title`||*4D Command*|`POST KEY`||*4D Command*|`POST CLICK`|

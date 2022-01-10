@@ -1,7 +1,0 @@
-	COMMITMENT -> NEED 4D version >= V17.4	=======================================		This component is under COMMERCIAL LICENCE.	Any commercial use of any part of QS_TOOLBOX is absolutely forbidden.			WHAT DO I NEED TO DO TO INSTALL QS_TOOLBOX?	MAC:	-> Graphviz must be installed on your machine, command line need to be installed too.	-> QS_Toolbox.4DB (or its Alias) must be place inside the Components folder of 4D database	PC:	-> You need to insert into the Ressources folder of QS_Toolbox.4DB the folder unzipped 'graphviz-pc' without changing its name.	-> QS_Toolbox.4DB (or its shortcut) must be place inside the Components folder of the database		So, to summarize: 	* For OS X system, QS_TOOLBOX require Graphviz tool installed on the computer.	* For PC system, Graphviz folder must be set inside the Ressources folder.			HOW TO START QS_TOOLBOX?
-	=========================	To call QS_Toolbox from your hosted database, you have to insert this command line in a project method:	QS_TOOLBOX if you want to start the Menu Pallet.
-	QS_TOOLBOX is automatically started if you use 4D POP and integrated to the 4D POP menu bar.
-
-	CONTACT	=======
-	you can get more information by mail at: info (at) association-qualisoft.eu
-	

@@ -1,1 +1,0 @@
-﻿## FE_GetObjectDetails---|*4D Command*|`OBJECT GET COORDINATES`||*4D Command*|`OBJECT Get horizontal alignment`||*4D Command*|`Is license available`||*4D Command*|`OBJECT GET BEST SIZE`||*4D Command*|`OBJECT Get format`||*4D Command*|`LISTBOX Get property`|

@@ -33,3 +33,10 @@
 
 //$es1:=ds.WebConnexions.query("DateConnexion =:1"; !03/10/2021!)
 //$neededRelations:=ob_getByPath($es1; "CampagneParticipations_WebConnexions.Personnes_CampagneParticipations.NomLong")
+
+// 72A
+$e:=ds:C1482.Personnes.query("UUID =:1 and CampagneParticipations_Personnes.UUID =:2"; "F90226EF5C4C72469E12661209E02D6D"; "351DF12F37734D75ABA674CB6B6E2424")
+$e:=ds:C1482.Personnes.query("CampagneParticipations_Personnes.UUID =:1"; "351DF12F37734D75ABA674CB6B6E2424")
+
+
+$e2:=

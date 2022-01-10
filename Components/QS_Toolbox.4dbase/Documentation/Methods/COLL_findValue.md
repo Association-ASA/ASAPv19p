@@ -1,1 +1,0 @@
-﻿## COLL_findValue($1;$2)---

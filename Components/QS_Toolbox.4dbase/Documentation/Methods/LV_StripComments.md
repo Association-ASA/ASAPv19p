@@ -1,1 +1,0 @@
-﻿## $0:=LV_StripComments($1)---

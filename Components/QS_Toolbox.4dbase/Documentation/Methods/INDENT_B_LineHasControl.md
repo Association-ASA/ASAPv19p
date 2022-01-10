@@ -1,1 +1,0 @@
-﻿## $0:=INDENT_B_LineHasControl($1;$2)---

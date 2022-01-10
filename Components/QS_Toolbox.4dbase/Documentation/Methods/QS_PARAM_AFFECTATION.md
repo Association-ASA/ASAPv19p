@@ -1,1 +1,0 @@
-﻿## QS_PARAM_AFFECTATION---

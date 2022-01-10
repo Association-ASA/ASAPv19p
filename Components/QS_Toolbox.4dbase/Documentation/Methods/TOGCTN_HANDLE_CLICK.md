@@ -1,1 +1,0 @@
-﻿## TOGCTN_HANDLE_CLICK($1)---

@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "QS_Toolbox";
-CFBundleShortVersionString = "17.4 (44)" ;
-CFBundleGetInfoString = "17.4 (44)";NSHumanReadableCopyright = "© Ass. QualiSoft 1993-2020";

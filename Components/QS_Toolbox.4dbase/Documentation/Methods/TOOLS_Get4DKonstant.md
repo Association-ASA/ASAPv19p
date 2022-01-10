@@ -1,1 +1,0 @@
-﻿## TOOLS_Get4DKonstant($1;$2)---

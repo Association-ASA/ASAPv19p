@@ -1,1 +1,0 @@
-﻿## $0:=x_btnPopup_coll($1;$2;$3;$4;$5;$6)---|*4D Command*|`Create menu`||*4D Command*|`APPEND MENU ITEM`||*4D Command*|`RELEASE MENU`||*4D Command*|`SET MENU ITEM ICON`|

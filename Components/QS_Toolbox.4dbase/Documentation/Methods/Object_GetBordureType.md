@@ -1,1 +1,0 @@
-﻿## $0:=Object_GetBordureType($1)---

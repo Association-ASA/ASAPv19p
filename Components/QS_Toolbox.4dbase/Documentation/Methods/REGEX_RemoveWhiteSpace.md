@@ -1,1 +1,0 @@
-﻿## $0:=REGEX_RemoveWhiteSpace($1)---

@@ -1,1 +1,0 @@
-﻿## $0:=Config_getLanguage---

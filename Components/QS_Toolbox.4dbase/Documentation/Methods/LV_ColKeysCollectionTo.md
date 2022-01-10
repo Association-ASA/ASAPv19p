@@ -1,1 +1,0 @@
-﻿## $0:=LV_ColKeysCollectionTo($1;$2)---

@@ -68,10 +68,10 @@ $es:=ds:C1482[$table].query("UUID =:1"; $myUUID)
 
 $tt1:=Milliseconds:C459
 
+$table:="CampagneParticipations"
 For ($a; 1; 1000)
 	
 	//$myUUID:="01A06FAAD70445FFBC68AEA181444114"
-	$table:="CampagneParticipations"
 	
 	$es:=ds:C1482[$table].query("UUIDPersonne =:1 and NumCampagne in :2"; $myUUID; New collection:C1472("71"; "72"; "71A"; "72A"))
 	If ($es.length>0)

@@ -1,2 +1,0 @@
-//%attributes = {"invisible":true,"shared":true,"preemptive":"capable","published4DMobile":{"scope":"none"},"publishedWeb":false,"publishedSoap":false,"publishedWsdl":false,"publishedSql":false,"executedOnServer":false}
-CALL WORKER:C1389("QS_Init"; "QS_Toolbox")

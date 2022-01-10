@@ -1,1 +1,0 @@
-﻿## RAPPORT_exportStructure($1)---

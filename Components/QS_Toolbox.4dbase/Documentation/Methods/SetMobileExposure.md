@@ -1,1 +1,0 @@
-﻿## $0:=SetMobileExposure($1;$2)---

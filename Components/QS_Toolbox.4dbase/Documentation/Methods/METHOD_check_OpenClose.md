@@ -1,1 +1,0 @@
-﻿## $0:=METHOD_check_OpenClose($1)---

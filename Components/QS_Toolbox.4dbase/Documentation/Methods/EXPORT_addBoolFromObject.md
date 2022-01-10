@@ -1,1 +1,0 @@
-﻿## $0:=EXPORT_addBoolFromObject($1;$2;$3)---

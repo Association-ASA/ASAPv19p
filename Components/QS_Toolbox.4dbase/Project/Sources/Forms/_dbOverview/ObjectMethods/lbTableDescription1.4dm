@@ -1,1 +1,0 @@
-stat_rightClick (Form:C1466.indexDescription;"Index description")

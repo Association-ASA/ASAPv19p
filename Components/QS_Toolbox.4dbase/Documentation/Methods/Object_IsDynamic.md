@@ -1,1 +1,0 @@
-﻿## $0:=Object_IsDynamic($1)---

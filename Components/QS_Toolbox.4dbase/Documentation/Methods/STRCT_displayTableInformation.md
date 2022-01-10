@@ -1,1 +1,0 @@
-﻿## STRCT_displayTableInformation---|*4D Command*|`Form`||*4D Command*|`OBJECT SET VISIBLE`|
